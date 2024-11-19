@@ -1,3 +1,0 @@
-titleraw @s[scores={m249=16..100}] actionbar {"rawtext":[{"text":"§7§l< §a"},{"score":{"name":"@s","objective":"m249"}},{"text":"/100§7§l >"}]}
-titleraw @s[scores={m249=1..15}] actionbar {"rawtext":[{"text":"§7§l< §c"},{"score":{"name":"@s","objective":"m249"}},{"text":"/100§7§l >"}]}
-titleraw @s[scores={m249=0}] actionbar {"rawtext":[{"text":"§7§l< §4"},{"score":{"name":"@s","objective":"m249"}},{"text":"/100§7§l >"}]}

@@ -1,3 +1,0 @@
-titleraw @s[scores={mp5=11..30}] actionbar {"rawtext":[{"text":"§7§l< §a"},{"score":{"name":"@s","objective":"mp5"}},{"text":"/30§7§l >"}]}
-titleraw @s[scores={mp5=1..10}] actionbar {"rawtext":[{"text":"§7§l< §c"},{"score":{"name":"@s","objective":"mp5"}},{"text":"/30§7§l >"}]}
-titleraw @s[scores={mp5=0}] actionbar {"rawtext":[{"text":"§7§l< §4"},{"score":{"name":"@s","objective":"mp5"}},{"text":"/30§7§l >"}]}

@@ -1,3 +1,0 @@
-titleraw @s[scores={svi=4..8}] actionbar {"rawtext":[{"text":"§7§l< §a"},{"score":{"name":"@s","objective":"svi"}},{"text":"/8§7§l >"}]}
-titleraw @s[scores={svi=1..3}] actionbar {"rawtext":[{"text":"§7§l< §c"},{"score":{"name":"@s","objective":"svi"}},{"text":"/8§7§l >"}]}
-titleraw @s[scores={svi=0}] actionbar {"rawtext":[{"text":"§7§l< §4"},{"score":{"name":"@s","objective":"svi"}},{"text":"/8§7§l >"}]}
