@@ -1,0 +1,31 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mocreatures:scorpswordfrost"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"~~",
+			"~#"
+		],
+		"key": {
+			"~": {
+				"item": "mocreatures:scorpstingfrost"
+			},
+			"#": {
+				"item": "minecraft:diamond_sword"
+			}
+		},
+		"result": [
+			{
+				"item": "mocreatures:scorpswordfrost",
+				"data": 0,
+				"count": 1
+			}
+		]
+	}
+}

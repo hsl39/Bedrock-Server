@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "new:long_bow"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            " E",
+            "E ",
+            " E"
+        ],
+		"key": {
+			"E": {
+				"item": "minecraft:bow"
+			}
+		},
+		"result": {
+			"item": "new:long_bow"
+		}
+	}
+}

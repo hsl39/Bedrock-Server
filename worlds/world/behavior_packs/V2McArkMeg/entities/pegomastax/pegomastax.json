@@ -1,0 +1,6360 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mc_ark:pegomastax",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false, 
+	  "scripts": { 
+	    "animate": [   
+{
+    "metodo_espera_mc_ark":"query.mark_variant == 777 && query.is_illager_captain"
+    
+} ,     
+	        
+{
+    "descomposicion_rapida_mc_ark":"query.mark_variant == 777 && query.is_sheared"
+    
+} ,  
+{
+    "pudriendose_mc_ark":"query.mark_variant == 777"
+    
+} ,  
+{
+    "running":"!query.is_tamed && query.mark_variant != 777"
+    
+} ,
+{
+    "riding":"query.is_tamed && query.mark_variant != 777"
+    
+} ,
+{
+    "close_inventory":"query.is_illager_captain && query.is_tamed && query.mark_variant != 777"
+    
+} ,
+"pickup_respaldo_mc_ark",
+	        
+	        
+{ 
+    "remove_eating":"query.is_sheared && query.is_tamed && query.mark_variant != 777"
+    
+} ,  
+{
+    "feed_controller":"query.is_tamed && !query.is_baby && query.mark_variant != 777"
+    
+} ,
+{
+    "remove_tag_mc_ark":"!query.is_saddled && query.is_baby && query.mark_variant != 777"
+     
+} ,
+{
+    "remove_eating":"query.is_sheared && query.is_baby && query.mark_variant != 777"
+     
+} ,
+	        
+{ 
+    "normal_baby_mc_ark":"query.is_baby && query.mark_variant != 777"
+    
+} ,
+{ 
+    "inicial_points_baby_mc_ark":"query.is_baby && query.mark_variant != 777"
+    
+} ,
+"hunger_baby_mc_ark",
+{ 
+    "desaparecer_coc_mc_ark":"!query.is_tamed && !query.is_baby && query.mark_variant != 777"
+    
+} 
+	    ] 
+	   },   
+	  "animations": {   
+	    	    "metodo_espera_mc_ark": "animation.metodo_espera_mc_ark", 
+	      
+"descomposicion_rapida_mc_ark": "animation.descomposicion_rapida_mc_ark",
+	    	    "pudriendose_mc_ark": "animation.pudriendose_mc_ark_bigpq",
+	    	    "desaparecer_coc_mc_ark": "animation.desaparecer_coc_mc_ark_pegomastax",
+
+
+	    "close_inventory": "animation.close_inventory",
+	    "running_per_time": "animation.running_per_time",
+	    "riding_off": "animation.riding_off",
+	    "break_riding_mc_ark": "animation.break_riding_mc_ark",
+	    "running": "controller.animation.running_pegomastax",
+	    "pickup_respaldo_mc_ark": "controller.animation.pickup_respaldo_mc_ark",
+	    "riding": "controller.animation.riding_controller_mc_ark",
+	      
+				"feed_controller": "controller.animation.feed_controller_pegomastax",  
+	    "normal_baby_mc_ark": "controller.animation.normal_baby_mc_ark",
+	    "inicial_points_baby_mc_ark": "controller.animation.inicial_points_baby_mc_ark",
+	    "age_growing": "animation.age_growing",
+	    "hunger_baby_mc_ark": "controller.animation.hunger_baby_mc_ark",
+	    "hunger_particles_mc_ark": "animation.hunger_particles_mc_ark",
+	    "hunger_progress_mc_ark": "animation.hunger_progress_mc_ark",
+	    "bad_temperature_progress_mc_ark": "animation.bad_temperature_progress_mc_ark",
+	    "hunger_time_mc_ark": "animation.hunger_time_mc_ark",
+	    
+	    "remove_eating": "animation.remove_eating_baby",
+	    
+	    	    "remove_tag_mc_ark": "animation.remove_tag_mc_ark"
+    }    
+    },      
+    
+    
+    "component_groups": {     
+        
+        "minecraft:xp_lvl10":{ 
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(1.7,1.7) : 0"
+        }
+        },
+        "minecraft:xp_lvl50":{
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(3.2,3.2) : 0"
+        }
+        },
+        "minecraft:xp_lvl100":{
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(5.2,5.2) : 0"
+        }
+        },
+        "minecraft:xp_lvl150":{
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(7.7,7.7) : 0"
+        }
+        },
+        "minecraft:xp_lvl200":{
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(9.2,9.2) : 0"
+        }
+        }, 
+        "minecraft:xp_lvl250":{
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(12.95,12.95) : 0" 
+        }    
+        }, 
+        
+        "minecraft:desaparecer_coc":{
+				"minecraft:timer": {
+					"looping": true,
+					"time": 60.0,
+					"time_down_event": {
+						"event": "minecraft:desaparecer_on"
+					}
+        }
+        },
+        
+        "minecraft:pegomastax_inventory_off":{
+        "minecraft:sittable": {
+        }
+        },  
+        "minecraft:pegomastax_inventory_on":{ 
+"minecraft:is_illager_captain": {}
+        }, 
+        
+        "minecraft:can_pickup":{
+"minecraft:item_hopper": {
+        },
+      "minecraft:shareables": {
+        "all_items": true,
+        "all_items_max_amount": 0,
+        "items": [
+          { "item": "minecraft:sweet_berries", "priority": 0, "max_amount": 0 },
+          { "item": "minecraft:glow_berries", "priority": 0, "max_amount": 0 }
+        ]
+      },
+"minecraft:behavior.pickup_items": {
+        "priority": 1,
+        "max_dist": 30,
+        "goal_radius": 1.0,
+        "speed_multiplier": 2.0
+      }
+        },
+        "minecraft:cant_pickup":{
+            
+        },
+          
+        "minecraft:domado_can_riding":{
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob" , "tamed_adult" , "tamed"  , "parrot_tame"]
+      },
+"minecraft:behavior.find_mount": {
+          "priority": 8,
+          "within_radius": 4,
+          "avoid_water": true,
+          "start_delay": 300,
+          "target_needed": false,
+          "mount_distance": 1.0
+        }
+        },
+         
+        "minecraft:domado_cant_riding":{
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob" , "tamed_adult" , "tamed"  ]
+      }
+        }, 
+        
+        
+       "minecraft:running":{ 
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 3, 
+        "remove_target": false,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "mob"
+                }
+              ]
+            },
+            "max_dist": 1, 
+            "max_flee": 1,
+            "walk_speed_multiplier": 2.5,
+            "sprint_speed_multiplier": 2.5
+          }  
+        ],  
+          "probability_per_strength": 1.0,
+        "on_escape_event": {
+          "event": "become_calm_event",
+          "target": "self"
+        }, 
+        "avoid_mob_sound": "retreat",
+        "sound_interval": {
+          "range_min": 2.0,
+          "range_max": 5.0
+        }
+      }
+       },
+         
+        
+        
+        
+        
+        "minecraft:can_eat":{
+        "minecraft:interact": { 
+          "interactions": [
+                  { 
+            "on_interact": {
+              "filters": {
+                "all_of": [
+{ "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_illager_captain"},
+{ "test": "is_sneaking", "subject": "other", "operator": "equals", "value": true },
+
+                  
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:pegomastax_inventory_off",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Close Inventory",
+             "play_sounds": "block.composter.ready"
+        },
+        
+          { 
+            "on_interact": {
+              "filters": {
+                "all_of": [
+{ "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_illager_captain"},
+{ "test": "is_sneaking", "subject": "other", "operator": "equals", "value": true },
+
+                  
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:pegomastax_inventory_on",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Close Inventory",
+             "play_sounds": "block.composter.ready"
+        },
+        
+            { 
+              "on_interact": {
+                "filters": { 
+                  "any_of": [
+                    { "test" :  "has_equipment", "domain": "hand","subject" : "other", "value" :  "sweet_berries"}
+                  ]
+                },
+                "event": "minecraft:eating_1",
+                "target": "self"
+              },
+              "use_item": true,
+              "interact_text": "action.interact.feed"
+            }
+          ]
+        }
+        },
+        
+        "minecraft:cant_eat":{
+            
+        "minecraft:interact": { 
+          "interactions": [
+                  { 
+            "on_interact": {
+              "filters": {
+                "all_of": [
+{ "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_illager_captain"},
+{ "test": "is_sneaking", "subject": "other", "operator": "equals", "value": true },
+
+                  
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:pegomastax_inventory_off",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Close Inventory",
+             "play_sounds": "block.composter.ready"
+        },
+        
+          { 
+            "on_interact": {
+              "filters": {
+                "all_of": [
+{ "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_illager_captain"},
+{ "test": "is_sneaking", "subject": "other", "operator": "equals", "value": true },
+
+                  
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:pegomastax_inventory_on",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Close Inventory",
+             "play_sounds": "block.composter.ready"
+        }
+          ]
+        }
+        },
+
+        "minecraft:v1":{
+                "minecraft:variant": {
+          "value": 0
+                }
+        },
+        "minecraft:v2":{
+                "minecraft:variant": {
+          "value": 1
+                } 
+        },
+        "minecraft:v3":{
+                "minecraft:variant": {
+          "value": 2
+                }
+        },
+        "minecraft:v4":{
+                "minecraft:variant": {
+          "value": 3
+                }
+        },  
+        "minecraft:v5":{
+                "minecraft:variant": {
+          "value": 4
+                }
+        },  
+        "minecraft:v6":{
+                "minecraft:variant": {
+          "value": 5
+                } 
+        },  
+        
+      "minecraft:pegomastax_baby_despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      }, 
+      
+      "minecraft:mc_ark_baby_age_1":{
+        "minecraft:scale": {
+          "value": 0.7
+        }
+      },
+      "minecraft:mc_ark_baby_age_2":{
+        "minecraft:scale": {
+          "value": 0.75
+        }
+      },
+      "minecraft:mc_ark_baby_age_3":{
+        "minecraft:scale": {
+          "value": 0.8
+        }
+      },
+      "minecraft:mc_ark_baby_age_4":{
+        "minecraft:scale": {
+          "value": 0.85
+        } 
+      },  
+      
+      "minecraft:pegomastax_baby_lvl10":{
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob" , "tamed_adult" , "tamed", "chicken" , "mc_ark_babylvl10" ]
+      }
+      },
+      "minecraft:pegomastax_baby_lvl50":{
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob" , "tamed_adult" , "tamed", "chicken" , "mc_ark_babylvl50" ]
+      }
+      }, 
+
+      "minecraft:pegomastax_baby_lvl100":{
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob" , "tamed_adult" , "tamed", "chicken" , "mc_ark_babylvl100" ]
+      }
+      },
+      "minecraft:pegomastax_baby_lvl150":{
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob" , "tamed_adult" , "tamed", "chicken" , "mc_ark_babylvl150" ]
+      }
+      },
+      "minecraft:pegomastax_baby_lvl200":{
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob" , "tamed_adult" , "tamed", "chicken" , "mc_ark_babylvl200" ]
+      } 
+      },
+      "minecraft:pegomastax_baby_lvl250":{
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob" , "tamed_adult" , "tamed", "chicken" , "mc_ark_babylvl250" ]
+      }
+      },
+         
+        "minecraft:pegomastax_baby":{
+        "minecraft:is_baby": {
+        },   
+
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 10.0,
+        "max_distance": 14.0
+      },
+      "minecraft:follow_range": {
+        "value": 30
+      },  
+      "minecraft:knockback_resistance": {
+        "value": 0.0
+      }, 
+      "minecraft:attack": { 
+        "damage": 0
+      },
+      "minecraft:movement": {
+        "value": 0.19
+      },
+	    "minecraft:health": {
+          "value": 8,
+          "max": 8
+        },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      }
+        }, 
+         
+        "minecraft:temperature_controller":{ 
+      "minecraft:environment_sensor": {
+            "triggers": [      {            "on_damage": {              "filters": {                "test": "is_block",                "subject": "block",                "value": "minecraft:cactus"              }            },  "deals_damage": true,					"damage_modifier": -9999          },
+          { 
+            "filters":{ 
+            "all_of": [
+{ "test": "is_temperature_value", "operator": ">=", "value": 0.4 },
+{ "test": "is_temperature_value", "operator": "<=", "value": 0.8 }
+            ]
+            },
+            "event":"minecraft:bad_temperature_off"
+          },
+          
+          { 
+            "filters":{ 
+            "all_of": [  
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "!=",
+              "value": "good_egg"
+             }
+            ],
+            "any_of": [
+{ "test": "is_temperature_value", "operator": "<", "value": 0.4 },
+{ "test": "is_temperature_value", "operator": ">", "value": 0.8 }
+            ]
+            },
+            "event":"minecraft:bad_temperature_on"
+          }
+          ]
+      }
+        },
+        
+        "minecraft:bad_temperature":{
+        "minecraft:is_saddled": {
+        }
+        },
+        
+        "minecraft:hunger_on":{
+      "minecraft:behavior.tempt": {
+        "priority": 4,
+        "speed_multiplier": 1.0,
+        "items": [
+          "sweet_berries"
+        ] 
+      },
+        "minecraft:interact": {
+          "interactions": [
+              
+            { 
+              "on_interact": {
+                "filters": { 
+                  "any_of": [
+                    { "test" :  "has_equipment", "domain": "hand","subject" : "other", "value" :  "sweet_berries"}
+                  ]
+                }, 
+                "event": "minecraft:hunger_off",
+                "target": "self"
+              },
+              "use_item": true,
+              "interact_text": "action.interact.feed"
+            }
+          ]
+        },
+			"minecraft:is_illager_captain": {}
+        },
+        "minecraft:hunger_off":{
+              
+        },  
+        "minecraft:eating":{
+			"minecraft:is_sheared": {}
+        },
+
+        "minecraft:scale1":{
+        "minecraft:scale": {
+          "value":1.2
+        }
+        }, 
+        
+        "minecraft:on_attack":{
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "speed_multiplier": 1.0,
+        "track_target": true
+      }
+        },
+        "minecraft:off_attack":{
+        },
+        
+        "minecraft:from_farm":{
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 10.0,
+        "max_distance": 14.0
+      },
+        "minecraft:tameable": {
+          "probability": 0.8,
+          "tame_items": [
+          "sweet_berries"
+          ], 
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        } 
+        },
+ 
+"minecraft:not_from_farm":{
+      "minecraft:behavior.tempt": {
+        "priority": 4,
+        "speed_multiplier": 1.0,
+        "items": [
+          "sweet_berries"
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "speed_multiplier": 1.8,
+        "track_target": true
+      },
+
+
+	    "minecraft:behavior.nearest_attackable_target": { 
+          "priority": 3,
+        "reselect_targets": true,
+          "within_radius": 30,  
+          "entity_types": [ 
+{
+              "filters": {
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cadaver"},
+             {                                            "test": "has_tag",                         "subject": "other",
+              "operator": "!=",
+              "value": "metodo_espera"
+             } 
+                ]  
+              },
+              "max_dist": 30
+            },
+            {
+              "filters": {
+                "all_of": [
+             {                                            "test": "has_tag",                         "subject": "other",
+              "operator": "!=",
+              "value": "camuflaje_armor_efecto"
+             } ,
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+                ] 
+              },
+              "max_dist": 30
+            },
+            {
+              "filters": {
+                "all_of": [
+             {                                            "test": "has_tag",                         "subject": "other",
+              "operator": "==",
+              "value": "camuflaje_armor_efecto"
+             } ,
+     { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+                ] 
+              },
+              "max_dist": 15
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "dodo"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "chicken"}
+                ] 
+              },
+              "max_dist": 30
+            }
+          ],
+          "must_see": true
+        }
+        }, 
+        
+        "minecraft:lvl10_t":{
+        "minecraft:tameable": { 
+          "probability": 0.3,
+          "tame_items": [
+            "sweet_berries"
+            ], 
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        } 
+        },
+        
+        "minecraft:lvl50_t":{
+        "minecraft:tameable": { 
+          "probability": 0.15,
+          "tame_items": [
+            "sweet_berries"
+            ], 
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        } 
+        },
+        
+        
+
+        
+        "minecraft:lvl100_t":{
+        "minecraft:tameable": { 
+          "probability": 0.075,
+          "tame_items": [
+            "sweet_berries"
+            ], 
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        } 
+        },
+        
+        "minecraft:lvl150_t":{
+        "minecraft:tameable": { 
+          "probability": 0.05,
+          "tame_items": [
+            "sweet_berries"
+            ], 
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        } 
+        },
+        
+        "minecraft:lvl200_t":{
+        "minecraft:tameable": { 
+          "probability": 0.03,
+          "tame_items": [
+            "sweet_berries"
+            ], 
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        } 
+        },
+        
+        "minecraft:lvl250_t":{
+        "minecraft:tameable": { 
+          "probability": 0.01,
+          "tame_items": [
+            "sweet_berries"
+            ], 
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        } 
+        },
+        
+ 
+        "minecraft:despierto":{
+            
+            
+      "minecraft:type_family": {
+        "family": [ "pegomastax", "mob", "criatura_salvaje"  ]
+      },
+            
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": {
+              "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "pegomastax_wild"
+          },
+          "max_dist": 30
+        } 
+      },
+
+
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 4,
+        "speed_multiplier": 1.0
+      }
+        },
+        
+        "minecraft:neutral":{
+        },
+        
+        "minecraft:seguir":{
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+
+        "minecraft:behavior.breed": {
+          "priority": 3,
+          "speed_multiplier": 1.0
+        },
+
+        "minecraft:sittable": {
+ 
+        }, 
+        "minecraft:behavior.follow_owner": {
+          "priority": 1,
+          "speed_multiplier": 1.7,
+          "start_distance": 6,
+          "stop_distance": 4
+        }
+        }, 
+        
+        "minecraft:sit":{
+        "minecraft:on_target_escape": {
+          "event": "minecraft:on_calm",
+          "target": "self"
+        },
+      "minecraft:follow_range": {
+        "value": 2
+      }
+        }, 
+        
+        "minecraft:im_calm":{
+            
+"minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+        },
+        
+        "minecraft:up":{
+        "minecraft:on_target_escape": {
+          "event": "minecraft:on_calm",
+          "target": "self"
+        }, 
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "speed_multiplier": 1.0,
+        "track_target": false
+      }, 
+      "minecraft:follow_range": {
+        "value": 16
+      },  
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 2
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 4
+        },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+
+"minecraft:behavior.find_mount": {
+          "priority": 0,
+          "within_radius": 7,
+          "avoid_water": true,
+          "start_delay": 300,
+          "target_needed": false,
+          "mount_distance": 1.0
+        } 
+        }, 
+         
+"minecraft:im_angry": {
+
+        "minecraft:angry": {
+          "duration": 5,
+          "broadcast_anger": false,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self" 
+          }
+        },
+        "minecraft:on_target_acquired": {
+        }
+      },
+        
+        "minecraft:default":{
+      "minecraft:knockback_resistance": {
+        "value": 0.1
+      }, 
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      }
+        },
+        
+  "minecraft:off_attack_sistem":{
+  
+    },
+     
+"minecraft:lvl10":{
+        "minecraft:inventory": { 
+        "container_type": "container",
+        "inventory_size": 10,
+   "restrict_to_owner": true,
+					"private": false
+        },
+    
+        "minecraft:mark_variant": {
+          "value": 0
+          
+        },
+
+        "minecraft:breedable": {
+          "require_tame": true, 
+          "breeds_with": {
+            "mate_type": "mc_ark:pegomastax",
+            "baby_type": "mc_ark:fertile_pegomastax_egg",
+            "breed_event": {
+              "event": "minecraft:lvl10",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+          "sweet_berries"
+          ]
+        },
+      "minecraft:attack": { 
+        "damage": 1
+      },
+      "minecraft:movement": {
+        "value": 0.21
+      },
+	    "minecraft:health": {
+          "value":4,
+          "max": 4
+        }
+},  
+"minecraft:lvl50":{
+        "minecraft:inventory": { 
+        "container_type": "container",
+        "inventory_size": 14,
+   "restrict_to_owner": true,
+					"private": false
+        },
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:breedable": {
+          "require_tame": true, 
+          "breeds_with": {
+            "mate_type": "mc_ark:pegomastax",
+            "baby_type": "mc_ark:fertile_pegomastax_egg",
+            "breed_event": {
+              "event": "minecraft:lvl50",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+          "sweet_berries"
+          ]
+        },
+      "minecraft:attack": { 
+        "damage": 1
+      },
+      "minecraft:movement": {
+        "value": 0.21
+      },
+	    "minecraft:health": {
+          "value": 6,
+          "max": 6
+        }
+},
+
+"minecraft:lvl100":{
+        "minecraft:inventory": { 
+        "container_type": "container",
+        "inventory_size": 20,
+   "restrict_to_owner": true,
+					"private": false
+        },
+    
+        "minecraft:mark_variant": {
+          "value": 3
+        },
+        "minecraft:breedable": {
+          "require_tame": true, 
+          "breeds_with": {
+            "mate_type": "mc_ark:pegomastax",
+            "baby_type": "mc_ark:fertile_pegomastax_egg",
+            "breed_event": {
+              "event": "minecraft:lvl100",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+          "sweet_berries"
+          ]
+        },
+      "minecraft:attack": { 
+        "damage": 1
+      },
+      "minecraft:movement": {
+        "value": 0.215
+      },
+	    "minecraft:health": {
+          "value": 6,
+          "max": 6
+        } 
+},
+"minecraft:lvl150":{
+        "minecraft:inventory": { 
+        "container_type": "container",
+        "inventory_size": 24,
+   "restrict_to_owner": true,
+					"private": false
+        },
+        "minecraft:mark_variant": {
+          "value": 4
+        },
+        "minecraft:breedable": {
+          "require_tame": true, 
+          "breeds_with": {
+            "mate_type": "mc_ark:pegomastax",
+            "baby_type": "mc_ark:fertile_pegomastax_egg",
+            "breed_event": {
+              "event": "minecraft:lvl150",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+          "sweet_berries"
+          ]
+        },
+      "minecraft:attack": { 
+        "damage": 2
+      },
+      "minecraft:movement": {
+        "value": 0.215
+      },
+	    "minecraft:health": {
+          "value": 8,
+          "max": 8
+        }
+}, 
+"minecraft:lvl200":{
+        "minecraft:inventory": { 
+        "container_type": "container",
+        "inventory_size": 27,
+   "restrict_to_owner": true,
+					"private": false
+        },
+        "minecraft:mark_variant": {
+          "value": 5
+        },
+        "minecraft:breedable": {
+          "require_tame": true, 
+          "breeds_with": {
+            "mate_type": "mc_ark:pegomastax",
+            "baby_type": "mc_ark:fertile_pegomastax_egg",
+            "breed_event": {
+              "event": "minecraft:lvl200",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+          "sweet_berries"
+          ]
+        },
+      "minecraft:attack": { 
+        "damage": 3
+      },
+      "minecraft:movement": {
+        "value": 0.215
+      },
+	    "minecraft:health": {
+          "value": 10,
+          "max": 10
+        }
+}, 
+"minecraft:lvl250":{ 
+        "minecraft:inventory": { 
+        "container_type": "container",
+        "inventory_size": 30,
+   "restrict_to_owner": true,
+					"private": false
+        },
+        "minecraft:mark_variant": {
+          "value": 6
+        }, 
+        "minecraft:breedable": {
+          "require_tame": true, 
+          "breeds_with": {
+            "mate_type": "mc_ark:pegomastax",
+            "baby_type": "mc_ark:fertile_pegomastax_egg",
+            "breed_event": {
+              "event": "minecraft:lvl250",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+          "sweet_berries"
+          ]
+        },
+      "minecraft:attack": { 
+        "damage": 4
+      },
+      "minecraft:movement": {
+        "value": 0.215
+      },
+	    "minecraft:health": {
+          "value": 12,
+          "max": 12
+        }
+},
+
+  "minecraft:pegomastax-wild_adult":{
+
+  },
+  
+  "minecraft:pegomastax_adult_inventory":{
+
+  },
+   
+  "minecraft:pegomastax-tamed_adult":{
+				"minecraft:damage_sensor": {
+					    "triggers": [  
+          {
+            "on_damage": {
+              "filters": {
+                "test": "is_block",
+                "subject": "block",
+                "value": "minecraft:sweet_berry_bush"
+              }
+            },
+            "deals_damage": false
+          },
+					        {            "on_damage": {              "filters": {                "test": "is_block",                "subject": "block",                "value": "minecraft:cactus"              }            },  "deals_damage": true,					"damage_modifier": -9999          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {"test": "has_damage",               "operator": "!=", "value": "fatal"}
+                ]
+              },
+
+              "event": "minecraft:hurt_sound"
+            },
+            					"deals_damage": true
+            },
+					    
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "operator": "!=", "value" :  "player"},
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "!=",
+              "value": "tamed"
+             },
+                  {"test": "has_damage", "value": "fatal"}
+                ]
+              },
+
+              "event": "minecraft:muriendo_mc_ark"
+            },
+"deals_damage": false
+            },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "operator": "==", "value" :  "player"},
+                  {"test": "has_damage", "value": "fatal"}
+                ]
+              },
+
+              "event": "minecraft:muriendo_mc_ark_and_tag"
+            },
+"deals_damage": false
+            },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "tamed"
+             },
+                  {"test": "has_damage", "value": "fatal"}
+                ]
+              },
+
+              "event": "minecraft:muriendo_mc_ark_and_tag"
+            },
+"deals_damage": false
+            }
+
+
+					]
+				},
+      "minecraft:behavior.tempt": {
+        "priority": 4,
+        "speed_multiplier": 1.0,
+        "items": [
+          "sweet_berries"
+        ] 
+      }, 
+        "minecraft:is_tamed": {
+        },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 10.0,
+        "max_distance": 14.0
+      }
+  },
+
+          "minecraft:mc_ark_muerto":{
+            "minecraft:leashable": {
+                "soft_distance": 4.0,
+                "hard_distance": 6.0,
+                "max_distance": 10.0
+            },
+        "minecraft:scale": { 
+          "value": 1.35
+        },
+        "minecraft:mark_variant": {
+          "value": 777 
+        },
+      "minecraft:type_family": {
+        "family": [ "cadaver", "mob" , "muerto" , "muerto_mc_ark" , "pegomastax_cadaver" , "cadaver_pq", "inanimate"]
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      }, 
+	    "minecraft:health": {
+          "value": 2,
+          "max": 2
+        }
+          },
+          "minecraft:muerto_1":{
+				"minecraft:damage_sensor": {
+					    "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "test": "is_block",
+                "subject": "block",
+                "value": "minecraft:sweet_berry_bush"
+              }
+            },
+            "deals_damage": false
+          },
+					        {            "on_damage": {              "filters": {                "test": "is_block",                "subject": "block",                "value": "minecraft:cactus"              }            },  "deals_damage": true,					"damage_modifier": -9999          },
+  {
+       "on_damage": { 
+         "filters": {
+     "all_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:iron_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:golden_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:stone_sword"
+                },
+                
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:iron_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:golden_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:stone_axe"
+                },
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ] 
+             },
+              "event": "minecraft:muerto_2_manos_vacias"
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+					    
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_sword"
+                }
+             ],
+     "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_2_sword_diamond"
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_axe"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_2_axe_diamond"
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+          },  
+
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:golden_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:iron_sword"
+                }
+             ],
+     "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_2_sword_iron"
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:golden_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:iron_axe"
+                }
+             ],
+     "all_of": [
+         
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_2_axe_iron"
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:stone_sword"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_2_sword_stone"
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:stone_axe"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_2_axe_stone"
+            },
+ 
+					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+          
+          {
+            "on_damage": {
+              "filters": {
+"any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "criatura_salvaje"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "criatura_salvaje_usual"}
+
+
+                ]
+              },
+
+              "event": "minecraft:muerto_2"
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+            },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "criatura_salvaje"},
+{ "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "criatura_salvaje_usual"},
+                  { "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "player"}
+
+                ]
+              }
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+            }
+
+					]
+				} 
+          },
+          "minecraft:muerto_2":{
+				"minecraft:damage_sensor": {
+					    "triggers": [ 
+          {
+            "on_damage": {
+              "filters": {
+                "test": "is_block",
+                "subject": "block",
+                "value": "minecraft:sweet_berry_bush"
+              }
+            },
+            "deals_damage": false
+          },
+					        {            "on_damage": {              "filters": {                "test": "is_block",                "subject": "block",                "value": "minecraft:cactus"              }            },  "deals_damage": true,					"damage_modifier": -9999          },
+  {
+       "on_damage": { 
+         "filters": {
+     "all_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:iron_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:golden_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:stone_sword"
+                },
+                
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:iron_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:golden_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:stone_axe"
+                },
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ] 
+             },
+              "event": "minecraft:muerto_3_manos_vacias"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+					    
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_sword"
+                }
+             ],
+     "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_3_sword_diamond"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_axe"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_3_axe_diamond"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },  
+
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:golden_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:iron_sword"
+                }
+             ],
+     "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_3_sword_iron"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:golden_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:iron_axe"
+                }
+             ],
+     "all_of": [
+         
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_3_axe_iron"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:stone_sword"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_3_sword_stone"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:stone_axe"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_3_axe_stone"
+            },
+ 
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+          
+          {
+            "on_damage": {
+              "filters": {
+"any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "criatura_salvaje"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "criatura_salvaje_usual"}
+
+
+                ]
+              },
+
+              "event": "minecraft:muerto_3"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+            },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "criatura_salvaje"},
+{ "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "criatura_salvaje_usual"},
+                  { "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "player"}
+
+                ]
+              }
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+            }
+					]
+				} 
+          },
+          "minecraft:muerto_3":{
+				"minecraft:damage_sensor": {
+					    "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "test": "is_block",
+                "subject": "block",
+                "value": "minecraft:sweet_berry_bush"
+              }
+            },
+            "deals_damage": false
+          },
+					        {            "on_damage": {              "filters": {                "test": "is_block",                "subject": "block",                "value": "minecraft:cactus"              }            },  "deals_damage": true,					"damage_modifier": -9999          },
+					    
+  {
+       "on_damage": { 
+         "filters": {
+     "all_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:iron_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:golden_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:stone_sword"
+                },
+                
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:iron_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:golden_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:stone_axe"
+                },
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ] 
+             },
+              "event": "minecraft:muerto_final_manos_vacias"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+					    
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_sword"
+                }
+             ],
+     "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_final_sword_diamond"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:diamond_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:netherite_axe"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_final_axe_diamond"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },  
+
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:golden_sword"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:iron_sword"
+                }
+             ],
+     "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_final_sword_iron"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:golden_axe"
+                },
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:iron_axe"
+                }
+             ],
+     "all_of": [
+         
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_final_axe_iron"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:stone_sword"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_final_sword_stone"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+  {
+       "on_damage": { 
+         "filters": {
+     "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:stone_axe"
+                }
+             ],
+     "all_of": [
+
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+             ]
+             },
+              "event": "minecraft:muerto_final_axe_stone"
+            },
+ 
+            					"deals_damage": true,					"damage_modifier": -9999
+          },
+            
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+             {                                           "test": "has_tag",                         "subject": "other",
+              "operator": "==",
+              "value": "carcharodontosaurus_wild"
+             },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "by_player"
+             }
+
+                ]
+              }
+            },
+					"deals_damage": true,
+					"damage_modifier": -9999
+            },   
+          {
+            "on_damage": {
+              "filters": {
+"any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "criatura_salvaje"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "criatura_salvaje_usual"}
+
+
+                ],
+                "all_of": [
+             {                                           "test": "has_tag",                         "subject": "other",
+              "operator": "!=",
+              "value": "carcharodontosaurus_wild"
+             }
+                ]
+              },
+
+              "event": "minecraft:muerto_final"
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+            },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+             {                                           "test": "has_tag",                         "subject": "other",
+              "operator": "!=",
+              "value": "carcharodontosaurus_wild"
+             },
+                  { "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "criatura_salvaje"},
+{ "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "criatura_salvaje_usual"},
+                  { "test" :  "is_family", "subject" : "other",               "operator": "!=", "value" :  "player"}
+
+                ]
+              } 
+            },
+            					"deals_damage": true,					"damage_modifier": -9999
+            } 
+
+					]
+				}   
+          },
+
+			"minecraft:narcotic_system": {
+				"minecraft:damage_sensor": {
+					    "triggers": [ 
+          {
+            "on_damage": {
+              "filters": {
+                "test": "is_block",
+                "subject": "block",
+                "value": "minecraft:sweet_berry_bush"
+              }
+            },
+            "deals_damage": false
+          },
+					        {            "on_damage": {              "filters": {                "test": "is_block",                "subject": "block",                "value": "minecraft:cactus"              }            },  "deals_damage": true,					"damage_modifier": -9999          },
+					    
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {"test": "has_damage",               "operator": "!=", "value": "fatal"}
+                ]
+              },
+
+              "event": "minecraft:hurt_sound"
+            },
+            					"deals_damage": true
+            },
+			
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "operator": "!=", "value" :  "player"},
+             {                                           "test": "has_tag",                         "subject": "other",
+              "operator": "!=",
+              "value": "tamed"
+             },
+                  {"test": "has_damage", "value": "fatal"}
+                ]
+              },
+
+              "event": "minecraft:muriendo_mc_ark"
+            },
+"deals_damage": false
+            },
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:crossbow"
+                },
+                
+                
+                             {
+                "test": "has_mob_effect",
+                "operator": "!=",
+                "value": "weakness"
+                }
+                ] ,
+                  
+                "all_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:bow"
+                },
+                  { "test" :  "is_family", "subject" : "other", "operator": "==", "value" :  "player"},
+                  {"test": "has_damage", "value": "fatal"}
+                ] 
+              },
+
+              "event": "minecraft:muriendo_mc_ark_and_tag"
+            },
+"deals_damage": false
+            },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+             {                                           "test": "has_tag",                         "subject": "other",
+              "operator": "==",
+              "value": "tamed"
+             },
+                  {"test": "has_damage", "value": "fatal"}
+                ]
+              },
+
+              "event": "minecraft:muriendo_mc_ark_and_tag"
+            },
+"deals_damage": false
+            },
+
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:bow"
+                },
+                
+                
+                             {
+                "test": "has_mob_effect",
+                "operator": "!=",
+                "value": "weakness"
+                }
+                ] ,
+                  
+                "all_of": [
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "!=",
+                  "domain": "hand",
+                  "value": "minecraft:crossbow"
+                },
+                  { "test" :  "is_family", "subject" : "other", "operator": "==", "value" :  "player"},
+                  {"test": "has_damage", "value": "fatal"}
+                ] 
+              },
+
+              "event": "minecraft:muriendo_mc_ark_and_tag"
+            },
+"deals_damage": false
+            }, 
+            
+          
+  {
+       "on_damage": {  
+         "filters": {  
+    
+     "all_of": [   
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:is_sheared"},
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "mc_ark:wooden_club"
+                }
+             ]
+             },
+              "event": "minecraft:torpor_wooden_club"
+            },
+            "deals_damage": true
+          }, 
+          
+  {
+       "on_damage": {  
+         "filters": {  
+    
+     "all_of": [    
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:is_sheared"},
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:bow"
+                },
+                             {
+                "test": "has_mob_effect",
+                "value": "weakness"
+                }
+             ]
+             },
+              "event": "minecraft:torpor_bow"
+            },
+            					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+  {
+       "on_damage": {  
+         "filters": {   
+    
+     "all_of": [   
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:is_sheared"},
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:crossbow"
+                },
+                             {
+                "test": "has_mob_effect",
+                "value": "weakness"
+                }
+             ]
+             },
+              "event": "minecraft:torpor_crossbow"
+            },
+            					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+          
+  {
+       "on_damage": {  
+         "filters": {  
+    
+     "all_of": [    
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:is_sheared"},
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:bow"
+                },
+                  {"test": "has_damage", "value": "fatal"},
+                             {
+                "test": "has_mob_effect",
+                "value": "weakness"
+                }
+             ]
+             },
+              "event": "minecraft:torpor_bow"
+            },
+            					"deals_damage": true,
+					"damage_modifier": -9999
+          },
+  {
+       "on_damage": {  
+         "filters": {  
+    
+     "all_of": [   
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:is_sheared"},
+                             {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "operator": "==",
+                  "domain": "hand",
+                  "value": "minecraft:crossbow"
+                },
+                  {"test": "has_damage", "value": "fatal"},
+                             {
+                "test": "has_mob_effect",
+                "value": "weakness"
+                }
+             ]
+             },
+              "event": "minecraft:torpor_crossbow"
+            },
+            				 	"deals_damage": true,
+					"damage_modifier": -9999
+          }
+
+					]
+				}  
+			},
+          "minecraft:descomposicion_rapida":{
+			"minecraft:is_sheared": {}
+          },
+          "minecraft:metodo_espera":{
+			"minecraft:is_illager_captain": {}
+          },
+      
+"minecraft:sin_montura":
+{
+}
+  
+    }, 
+   
+  
+    "components": {
+			"minecraft:jump.static": {}, 
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/mc_ark/pegomastax/equipment.json"
+        },
+ 
+
+
+
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.6
+      }, 
+        
+        
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+        "minecraft:scale": {
+          "value": 0.0
+        },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:breathable": {
+        "total_supply": 30,
+        "suffocate_time": 0
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+  
+    "events": { 
+        
+ "minecraft:hurt_sound": {
+		"run_command": {
+          "command": [
+              "playanimation @s hurt_sound_animation"
+          ],
+          "target": "self"
+		},
+            "add": {
+            },  
+            "remove": {
+            }
+}, 
+        
+ "minecraft:muriendo_mc_ark_and_tag": {
+		"run_command": {
+          "command": [
+              "playanimation @s hurt_sound_animation",
+    "event entity @e[family=carcharodontosaurus,r=6] minecraft:subiendo_habilidad"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:mc_ark_muerto",
+"minecraft:metodo_espera",
+"minecraft:muerto_1"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:desaparecer_coc",
+"minecraft:can_eat",
+"minecraft:cant_eat",
+"minecraft:dodo_baby_despawn",
+"minecraft:mc_ark_baby_age_1",
+"minecraft:mc_ark_baby_age_2",
+"minecraft:mc_ark_baby_age_3",
+"minecraft:mc_ark_baby_age_4",
+"minecraft:dodo_baby_lvl10",
+"minecraft:dodo_baby",
+"minecraft:temperature_controller",
+"minecraft:bad_temperature",
+"minecraft:hunger_on",
+"minecraft:hunger_off",
+"minecraft:eating",
+"minecraft:on_attack",
+"minecraft:off_attack",
+"minecraft:from_farm",
+"minecraft:despierto",
+"minecraft:sleeping",
+"minecraft:neutral",
+"minecraft:seguir",
+"minecraft:sit",
+"minecraft:im_calm",
+"minecraft:up",
+"minecraft:im_angry",
+"minecraft:default",
+"minecraft:off_attack_sistem",
+"minecraft:lvl10",
+"minecraft:dodo-wild_adult",
+"minecraft:dodo_adult_inventory",
+"minecraft:dodo-tamed_adult",
+"minecraft:sin_montura",
+"minecraft:torpor_normal",
+"minecraft:torpor_wooden_club",
+"minecraft:torpor_bow",
+"minecraft:torpor_crossbow",
+"minecraft:narcotic_system"
+              ]
+            }
+},
+        
+ "minecraft:muriendo_mc_ark": { 
+		"run_command": {
+          "command": [
+              "playanimation @s hurt_sound_animation",
+    "event entity @e[family=carcharodontosaurus,r=6] minecraft:subiendo_habilidad"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:mc_ark_muerto",
+"minecraft:muerto_1"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:desaparecer_coc",
+"minecraft:can_eat",
+"minecraft:cant_eat",
+"minecraft:dodo_baby_despawn",
+"minecraft:mc_ark_baby_age_1",
+"minecraft:mc_ark_baby_age_2",
+"minecraft:mc_ark_baby_age_3",
+"minecraft:mc_ark_baby_age_4",
+"minecraft:dodo_baby_lvl10",
+"minecraft:dodo_baby",
+"minecraft:temperature_controller",
+"minecraft:bad_temperature",
+"minecraft:hunger_on",
+"minecraft:hunger_off",
+"minecraft:eating",
+"minecraft:on_attack",
+"minecraft:off_attack",
+"minecraft:from_farm",
+"minecraft:despierto",
+"minecraft:sleeping",
+"minecraft:neutral",
+"minecraft:seguir",
+"minecraft:sit",
+"minecraft:im_calm",
+"minecraft:up",
+"minecraft:im_angry",
+"minecraft:default",
+"minecraft:off_attack_sistem",
+"minecraft:lvl10",
+"minecraft:dodo-wild_adult",
+"minecraft:dodo_adult_inventory",
+"minecraft:dodo-tamed_adult",
+"minecraft:sin_montura",
+"minecraft:torpor_normal",
+"minecraft:torpor_wooden_club",
+"minecraft:torpor_bow",
+"minecraft:torpor_crossbow",
+"minecraft:narcotic_system"
+              ]
+            }
+},
+        
+ "minecraft:muerto_2": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_monster_mc_ark @a[r=12]",
+              
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_hierro] ~~~ give @p[r=12] leather 1 1",
+    
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_diamante] ~~~ give @p[r=12] leather 1 1",
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_diamante] ~~~ give @p[r=12] mutton 1 1",
+    "effect @e[family=criatura_salvaje,r=12] regeneration 2 2 true"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+                  
+"minecraft:muerto_2"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3": {
+     
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_monster_mc_ark @a[r=12]",
+              
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_hierro] ~~~ give @p[r=12] leather 1 1",
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_hierro] ~~~ give @p[r=12] mutton 1 1",
+    
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_diamante] ~~~ give @p[r=12] leather 1 1",
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_diamante] ~~~ give @p[r=12] mutton 1 1",
+    "effect @e[family=criatura_salvaje,r=12] regeneration 2 2 true"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:muerto_3"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final": {
+		"run_command": {
+          "command": [
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_hierro] ~~~ give @p[r=12] leather 1 1",
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_hierro] ~~~ give @p[r=12] mutton 1 1",
+    
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_diamante] ~~~ give @p[r=12] leather 3 1",
+    "execute @s[tag=tamed] ~~~ execute @s[tag=corte_diamante] ~~~ give @p[r=12] mutton 2 1",
+    
+              "playsound sound.cuerpo_final_mc_ark @a[r=12]", 
+    "effect @e[family=criatura_salvaje,r=12] regeneration 2 3 true"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+ "minecraft:muerto_2_axe_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+                  
+"minecraft:muerto_2"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_axe_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]",
+    "give @p[r=8] leather 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:muerto_3"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_axe_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] leather 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+ "minecraft:muerto_2_axe_iron": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]",
+    "give @p[r=8] leather 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+                  
+"minecraft:muerto_3"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_axe_iron": {
+		"run_command": {
+          "command": [
+    "give @p[r=8] leather 2 1",
+"playsound sound.cuerpo_final_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_axe_iron": {
+		"run_command": {
+          "command": [ 
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] leather 2 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+ "minecraft:muerto_2_axe_diamond": {
+		"run_command": {
+          "command": [
+    "give @p[r=8] leather 5 1",
+"playsound sound.cuerpo_final_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [ 
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_axe_diamond": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] leather 5 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_axe_diamond": {
+		"run_command": {
+          "command": [ 
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] leather 5 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+
+ "minecraft:muerto_2_manos_vacias": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+                  
+"minecraft:muerto_2"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_manos_vacias": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:muerto_3"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_manos_vacias": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+            
+    "give @p[r=8] mutton 1 1",
+    "give @p[r=8] leather 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+}, 
+
+
+ "minecraft:muerto_2_sword_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+                  
+"minecraft:muerto_2"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_sword_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]",
+    "give @p[r=8] mutton 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:muerto_3"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_sword_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] mutton 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+ "minecraft:muerto_2_sword_iron": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+                  
+"minecraft:muerto_3"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_sword_iron": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+              
+    "give @p[r=8] mutton 2 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_sword_iron": {
+		"run_command": {
+          "command": [ 
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+              
+    "give @p[r=8] mutton 2 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+ "minecraft:muerto_2_sword_diamond": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+              
+    "give @p[r=8] mutton 4 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_sword_diamond": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+              
+    "give @p[r=8] mutton 4 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_sword_diamond": {
+		"run_command": {
+          "command": [ 
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+             
+    "give @p[r=8] mutton 4 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+
+ "minecraft:muerto_2_pickaxe_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+                  
+"minecraft:muerto_2"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_pickaxe_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:muerto_3"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_pickaxe_stone": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] mutton 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+ "minecraft:muerto_2_pickaxe_iron": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_hit_mc_ark @a[r=12]"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+                  
+"minecraft:muerto_3"
+              ]
+            },  
+            "remove": {
+              "component_groups": [
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_pickaxe_iron": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] mutton 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_pickaxe_iron": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] mutton 1 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+
+ "minecraft:muerto_2_pickaxe_diamond": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+              
+    "give @p[r=8] mutton 3 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_3_pickaxe_diamond": {
+		"run_command": {
+          "command": [
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] mutton 3 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            }
+},
+ "minecraft:muerto_final_pickaxe_diamond": {
+		"run_command": {
+          "command": [ 
+"playsound sound.cuerpo_final_mc_ark @a[r=12]",
+    "give @p[r=8] mutton 3 1"
+          ],
+          "target": "self"
+		},
+            "add": {
+              "component_groups": [
+"minecraft:descomposicion_rapida"
+              ]
+            },   
+            "remove": { 
+              "component_groups": [
+"minecraft:muerto_3",
+"minecraft:muerto_2",
+"minecraft:muerto_1"
+              ]
+            } 
+},
+        
+ "minecraft:desaparecer_on": {
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax_baby_despawn"
+              ]
+            },  
+            "remove": {
+
+            }
+},
+ "minecraft:desaparecer_disable": {
+            "remove": {
+              "component_groups": [
+"minecraft:desaparecer_coc"
+              ]
+            },  
+            "add": {
+
+            }
+},
+ "minecraft:desaparecer_enable": {
+            "add": {
+              "component_groups": [
+"minecraft:desaparecer_coc"
+              ]
+            },  
+            "remove": {
+
+            }
+},
+        
+      "minecraft:attack_salvaje": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 50,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] sweet_berries 0 3"
+					]
+				}
+              },
+              {
+                "weight": 50,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] sweet_berries 0 2"
+					]
+				}
+              },
+              {
+                "weight": 50
+              }
+              
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] beef 0 2"
+					]
+				}
+              },
+              {
+                "weight": 20,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] wheat 0 3"
+					]
+				}
+              },
+              {
+                "weight": 50,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] bone 0 3"
+					]
+				}
+              },
+              {
+                "weight": 50,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] porkchop 0 2"
+					]
+				}
+              },
+              {
+                "weight": 60,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] rotten_flesh 0 4"
+					]
+				}
+              },
+              {
+                "weight": 55,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] feather 0 8"
+					]
+				}
+              },
+              {
+                "weight": 55,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] leather 0 4"
+					]
+				}
+              },
+              {
+                "weight": 45,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] mutton 0 4"
+					]
+				}
+              },
+              {
+                "weight": 30,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] cod 0 6"
+					]
+				}
+              },
+              {
+                "weight": 20,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] slime_ball 0 2"
+					]
+				}
+              },
+              {
+                "weight": 55
+              }
+            ]
+          },  
+          {
+            "randomize": [
+              {
+                "weight": 50,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] torch 0 3"
+					]
+				}
+              },
+              {
+                "weight": 45,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] string 0 3"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] stick 0 5"
+					]
+				}
+              },
+              {
+                "weight": 45,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] lead 0 1"
+					]
+				}
+              },
+              {
+                "weight": 45,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] iron_ingot 0 2"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] iron_nugget 0 6"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] gold_ingot 0 2"
+					]
+				}
+              },
+              {
+                "weight": 45,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] gold_nugget 0 6"
+					]
+				}
+              },
+              {
+                "weight": 50,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] arrow 0 4"
+					]
+				}
+              },
+              {
+                "weight": 50,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] coal 0 4"
+					]
+				}
+              },
+              {
+                "weight": 55
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] apple 0 3"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] baked_potato 0 4"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] cooked_beef 0 2"
+					]
+				}
+              },
+              {
+                "weight": 35,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] cooked_chicken 0 1"
+					]
+				}
+              },
+              {
+                "weight": 43,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] cooked_mutton 0 4"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] cooked_porkchop 0 3"
+					]
+				}
+              },
+              {
+                "weight": 38,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] cooked_rabbit 0 2"
+					]
+				}
+              },
+              {
+                "weight": 45,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] egg 0 8"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] gunpowder 0 4"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] log 0 4"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] log2 0 4"
+					]
+				}
+              },
+              {
+                "weight": 35,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] paper 0 5"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] potato 0 13"
+					]
+				}
+              },
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] wool 0 4"
+					]
+				}
+              },  
+              {
+                "weight": 40,
+				"run_command": {
+					"command": [
+			"clear @p[r=3] planks 0 8"
+					]
+				}
+              },
+              
+              {
+                "weight": 50
+              }
+            ]
+          }
+        ]
+      },
+
+      "minecraft:pegomastax_inventory_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:pegomastax_inventory_off"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:pegomastax_inventory_on"
+          ]
+        }
+      },
+      
+      "minecraft:pegomastax_inventory_off": {
+        "remove": {
+          "component_groups": [
+            "minecraft:pegomastax_inventory_on"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:pegomastax_inventory_off"
+          ]
+        }
+      },
+        
+      "minecraft:can_pickup": {
+        "remove": {
+          "component_groups": [
+            "minecraft:cant_pickup"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:can_pickup"
+          ]
+        }
+      },
+      "minecraft:cant_pickup": {
+        "remove": {
+          "component_groups": [
+            "minecraft:can_pickup"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:cant_pickup"
+          ]
+        }
+      },
+      
+        
+      "minecraft:domado_can_riding": {
+        "remove": {
+          "component_groups": [
+            "minecraft:domado_cant_riding"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:domado_can_riding"
+          ]
+        }
+      },
+      "minecraft:domado_cant_riding": {
+        "remove": {
+          "component_groups": [
+            "minecraft:domado_can_riding"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:domado_cant_riding"
+          ]
+        }
+      },
+        
+      "minecraft:on_riding_player": {
+        "remove": {
+          "component_groups": [
+            "minecraft:pegomastax_not_riding_player"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:pegomastax_riding_player"
+          ]
+        }
+      },
+      "minecraft:on_not_riding_player": {
+        "remove": {
+          "component_groups": [
+            "minecraft:pegomastax_riding_player"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:pegomastax_not_riding_player"
+          ]
+        }
+      },
+ 
+			"minecraft:running_pegomastax": {
+        "randomize": [
+          {
+            "weight": 80,
+				"remove": {
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:running"
+					]  
+				}
+          },
+          { 
+            "weight": 150,
+				"remove": {
+					"component_groups": [
+						"minecraft:running"
+					]  
+				},
+				"add": {
+				}
+          }
+          ]
+			},
+
+        
+      "minecraft:become_angry": {
+        "remove": {
+          "component_groups": [
+            "minecraft:im_calm"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:im_angry"
+          ]
+        } 
+      },
+      "minecraft:on_calm": {
+
+        "remove": {
+          "component_groups": [
+            "minecraft:im_angry"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:im_calm"
+          ]
+        }
+      },
+         
+      "minecraft:sit": {
+        "remove": {
+          "component_groups": [
+    "minecraft:up"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:sit"
+          ]
+        }
+      },
+      "minecraft:up": {
+		"run_command": {
+          "command": [
+              "tp @s ~~0.2~"
+          ], 
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+    "minecraft:sit"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:up"
+          ]
+        }
+      },
+        
+      "minecraft:can_eat": {
+        "remove": {
+          "component_groups": [
+    "minecraft:cant_eat"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:can_eat"
+          ]
+        }
+      },
+      "minecraft:cant_eat": {
+        "remove": {
+          "component_groups": [
+    "minecraft:can_eat"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:cant_eat"
+          ] 
+        }
+      },
+      "minecraft:eating_1": {
+		"run_command": {
+          "command": [
+              "playsound sound.raptor_eating @a[r=10]", 
+    "effect @s regeneration 2 10 true"
+          ],
+          "target": "self"
+		},
+        "add": {
+          "component_groups": [
+    "minecraft:eating"
+          ]
+        },
+        "remove": {
+        }
+      },
+        
+      "minecraft:give_tag": {
+		"run_command": {
+          "command": [
+    "tag @s add good_egg"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+ "minecraft:bad_temperature"
+          ]
+        },
+        "add": {
+        }
+      },
+        
+        
+        
+      "minecraft:bad_temperature_off": {
+        "remove": {
+          "component_groups": [
+ "minecraft:bad_temperature"
+          ]
+        },
+        "add": { 
+        }
+      },
+      "minecraft:bad_temperature_on": {
+        "add": {
+          "component_groups": [
+ "minecraft:bad_temperature"
+          ]
+        },
+        "remove": { 
+        }
+      },
+        
+      "minecraft:hunger_off": {
+        "randomize": [
+          {
+		"run_command": { 
+          "command": [
+  "playsound sound.pegomastax_eating @a[r=16]"
+          ],
+          "target": "self"
+		},
+            "weight": 2,
+            "remove": {
+            },  
+            "add": {
+              "component_groups": [
+"minecraft:eating"
+              ]
+            }
+          },
+          { 
+		"run_command": { 
+          "command": [
+  "playsound sound.pegomastax_eating @a[r=16]"
+          ],
+          "target": "self"
+		},
+            "weight": 1,
+            "remove": {
+              "component_groups": [
+"minecraft:hunger_on"
+              ]
+            }, 
+            "add": {
+              "component_groups": [
+ "minecraft:hunger_off",
+ "minecraft:eating"
+              ]
+            } 
+          }
+        ]
+},
+        
+      "minecraft:remove_eating": {
+        "remove": {
+          "component_groups": [
+ "minecraft:eating"
+          ]
+        },
+        "add": { 
+        }
+      },
+        
+        
+
+      "minecraft:hunger_on": {
+        "randomize": [
+          {
+            "weight": 1,
+            "remove": {
+            },   
+            "add": {
+            }
+          },
+          { 
+            "weight": 3,
+        "remove": {
+          "component_groups": [
+ "minecraft:hunger_off"
+          ]
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:hunger_on"
+          ]
+        }
+          }
+        ]
+},
+        
+      "minecraft:on_attack": {
+        "remove": {
+          "component_groups": [
+ "minecraft:off_attack"
+          ]
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:on_attack"
+          ]
+        }
+      },
+      "minecraft:off_attack": {
+        "remove": {
+          "component_groups": [
+ "minecraft:on_attack"
+          ]
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:off_attack"
+          ]
+        }
+      },
+        
+
+
+      "minecraft:mc_ark_baby_age_1": {
+        "remove": {
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:mc_ark_baby_age_1"
+          ]
+        }
+      },
+      "minecraft:mc_ark_baby_age_2": {
+        "remove": {
+          "component_groups": [
+ "minecraft:mc_ark_baby_age_1"
+          ]
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:mc_ark_baby_age_2"
+          ]
+        }
+      },
+      "minecraft:mc_ark_baby_age_3": {
+        "remove": {
+          "component_groups": [
+ "minecraft:mc_ark_baby_age_1",
+ "minecraft:mc_ark_baby_age_2"
+          ]
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:mc_ark_baby_age_3"
+          ]
+        } 
+      },
+      "minecraft:mc_ark_baby_age_4": {
+        "remove": {
+          "component_groups": [
+ "minecraft:mc_ark_baby_age_1",
+ "minecraft:mc_ark_baby_age_2",
+ "minecraft:mc_ark_baby_age_3" 
+          ]
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:mc_ark_baby_age_4"
+          ]
+        }
+      }, 
+        
+			"minecraft:adult_summon_lvl": {
+		"run_command": { 
+          "command": [ 
+    "execute @s[tag=v1, tag=lvl10] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl10_v1 §3Pegomastax_lvl.10",
+    "execute @s[tag=v2, tag=lvl10] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl10_v2 §3Pegomastax_lvl.10",
+    "execute @s[tag=v3, tag=lvl10] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl10_v3 §3Pegomastax_lvl.10",
+    "execute @s[tag=v4, tag=lvl10] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl10_v4 §3Pegomastax_lvl.10",
+    "execute @s[tag=v5, tag=lvl10] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl10_v5 §3Pegomastax_lvl.10",
+    "execute @s[tag=v6, tag=lvl10] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl10_v6 §3Pegomastax_lvl.10",
+    
+    "execute @s[tag=v1, tag=lvl50] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl50_v1 §3Pegomastax_lvl.50",
+    "execute @s[tag=v2, tag=lvl50] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl50_v2 §3Pegomastax_lvl.50",
+    "execute @s[tag=v3, tag=lvl50] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl50_v3 §3Pegomastax_lvl.50",
+    "execute @s[tag=v4, tag=lvl50] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl50_v4 §3Pegomastax_lvl.50",
+    "execute @s[tag=v5, tag=lvl50] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl50_v5 §3Pegomastax_lvl.50",
+    "execute @s[tag=v6, tag=lvl50] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl50_v6 §3Pegomastax_lvl.50",
+    
+
+    
+    "execute @s[tag=v1, tag=lvl100] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl100_v1 §3Pegomastax_lvl.100",
+    "execute @s[tag=v2, tag=lvl100] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl100_v2 §3Pegomastax_lvl.100",
+    "execute @s[tag=v3, tag=lvl100] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl100_v3 §3Pegomastax_lvl.100",
+    "execute @s[tag=v4, tag=lvl100] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl100_v4 §3Pegomastax_lvl.100",
+    "execute @s[tag=v5, tag=lvl100] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl100_v5 §3Pegomastax_lvl.100",
+    "execute @s[tag=v6, tag=lvl100] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl100_v6 §3Pegomastax_lvl.100",
+    
+    "execute @s[tag=v1, tag=lvl150] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl150_v1 §3Pegomastax_lvl.150",
+    "execute @s[tag=v2, tag=lvl150] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl150_v2 §3Pegomastax_lvl.150",
+    "execute @s[tag=v3, tag=lvl150] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl150_v3 §3Pegomastax_lvl.150",
+    "execute @s[tag=v4, tag=lvl150] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl150_v4 §3Pegomastax_lvl.150",
+    "execute @s[tag=v5, tag=lvl150] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl150_v5 §3Pegomastax_lvl.150",
+    "execute @s[tag=v6, tag=lvl150] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl150_v6 §3Pegomastax_lvl.150",
+    
+    "execute @s[tag=v1, tag=lvl200] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl200_v1 §3Pegomastax_lvl.200",
+    "execute @s[tag=v2, tag=lvl200] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl200_v2 §3Pegomastax_lvl.200",
+    "execute @s[tag=v3, tag=lvl200] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl200_v3 §3Pegomastax_lvl.200",
+    "execute @s[tag=v4, tag=lvl200] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl200_v4 §3Pegomastax_lvl.200",
+    "execute @s[tag=v5, tag=lvl200] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl200_v5 §3Pegomastax_lvl.200",
+    "execute @s[tag=v6, tag=lvl200] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl200_v6 §3Pegomastax_lvl.200",
+    
+    "execute @s[tag=v1, tag=lvl250] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl250_v1 §3Pegomastax_lvl.250",
+    "execute @s[tag=v2, tag=lvl250] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl250_v2 §3Pegomastax_lvl.250",
+    "execute @s[tag=v3, tag=lvl250] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl250_v3 §3Pegomastax_lvl.250",
+    "execute @s[tag=v4, tag=lvl250] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl250_v4 §3Pegomastax_lvl.250",
+    "execute @s[tag=v5, tag=lvl250] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl250_v5 §3Pegomastax_lvl.250",
+    "execute @s[tag=v6, tag=lvl250] ~~~ summon mc_ark:pegomastax ~~~ minecraft:lvl250_v6 §3Pegomastax_lvl.250",
+     
+    "execute @s ~~~ event entity @s minecraft:pegomastax_baby_despawn"
+          ],
+          "target": "self"
+		},
+				"remove": {
+
+				},
+				"add": {
+  
+				}
+			},
+			 
+      "minecraft:lvl10_v1": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl10"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl10",	"minecraft:xp_lvl10",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v1",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl10_v2": {
+        "sequence": [
+          {
+            "randomize": [ 
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl10"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl10",	"minecraft:xp_lvl10",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v2",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl10_v3": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl10"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl10",	"minecraft:xp_lvl10",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v3",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl10_v4": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl10"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl10",	"minecraft:xp_lvl10",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v4",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl10_v5": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl10"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl10",	"minecraft:xp_lvl10",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v5",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl10_v6": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl10"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl10",	"minecraft:xp_lvl10",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v6",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      
+      "minecraft:lvl50_v1": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl50"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl50",	"minecraft:xp_lvl50",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v1",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl50_v2": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl50"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl50",	"minecraft:xp_lvl50",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v2",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl50_v3": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl50"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl50",	"minecraft:xp_lvl50",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v3",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl50_v4": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl50"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl50",	"minecraft:xp_lvl50",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v4",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl50_v5": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl50"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl50",	"minecraft:xp_lvl50",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v5",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl50_v6": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl50"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl50",	"minecraft:xp_lvl50",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v6",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      
+
+      
+      "minecraft:lvl100_v1": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl100"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl100",	"minecraft:xp_lvl100",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v1",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl100_v2": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl100"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl100",	"minecraft:xp_lvl100",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v2",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl100_v3": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl100"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl100",	"minecraft:xp_lvl100",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v3",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl100_v4": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl100"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl100",	"minecraft:xp_lvl100",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v4",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl100_v5": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl100"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl100",	"minecraft:xp_lvl100",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v5",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl100_v6": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl100"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl100",	"minecraft:xp_lvl100",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v6",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      
+      "minecraft:lvl150_v1": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl150"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl150",	"minecraft:xp_lvl150",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v1",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl150_v2": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl150"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl150",	"minecraft:xp_lvl150",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v2",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl150_v3": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl150"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl150",	"minecraft:xp_lvl150",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v3",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl150_v4": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl150"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl150",	"minecraft:xp_lvl150",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v4",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl150_v5": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl150"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl150",	"minecraft:xp_lvl150",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v5",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl150_v6": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl150"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl150",	"minecraft:xp_lvl150",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v6",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      
+      "minecraft:lvl200_v1": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl200"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl200",	"minecraft:xp_lvl200",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v1",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl200_v2": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl200"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl200",	"minecraft:xp_lvl200",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v2",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl200_v3": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl200"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl200",	"minecraft:xp_lvl200",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v3",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl200_v4": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl200"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl200",	"minecraft:xp_lvl200",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v4",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl200_v5": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl200"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl200",	"minecraft:xp_lvl200",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v5",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl200_v6": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl200"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl200",	"minecraft:xp_lvl200",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v6",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      
+      "minecraft:lvl250_v1": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl250"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl250",	"minecraft:xp_lvl250",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v1",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl250_v2": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl250"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl250",	"minecraft:xp_lvl250",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v2",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl250_v3": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl250"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl250",	"minecraft:xp_lvl250",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v3",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl250_v4": {
+        "sequence": [
+          {
+            "randomize": [ 
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl250"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl250",	"minecraft:xp_lvl250",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v4",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl250_v5": {
+        "sequence": [
+          {
+            "randomize": [ 
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl250"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl250",	"minecraft:xp_lvl250",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v5",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl250_v6": {
+        "sequence": [
+          {
+            "randomize": [ 
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl250"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl250",	"minecraft:xp_lvl250",
+	"minecraft:despierto",
+		"minecraft:default",
+		"minecraft:v6",
+		"minecraft:from_farm",
+	"minecraft:scale1"
+              ]
+            }
+          } 
+            ]
+          }
+        ]
+      },
+      
+			 
+			"minecraft:pegomastax_baby_despawn": {
+				"remove": {
+
+				},
+				"add": {
+					"component_groups": [
+"minecraft:pegomastax_baby_despawn"
+					]
+				} 
+			},  
+ 
+        
+      "minecraft:babylvl10": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+	"minecraft:pegomastax_baby",
+	"minecraft:temperature_controller",
+	"minecraft:pegomastax_baby_lvl10"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+		"run_command": {
+          "command": [
+    "tag @s add v1"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v2"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v3"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v4"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v5"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v6"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:babylvl50": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+	"minecraft:pegomastax_baby",
+	"minecraft:temperature_controller",
+	"minecraft:pegomastax_baby_lvl50"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+		"run_command": {
+          "command": [
+    "tag @s add v1"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v2"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v3"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v4"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v5"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v6"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+
+      "minecraft:babylvl100": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+	"minecraft:pegomastax_baby",
+	"minecraft:temperature_controller",
+	"minecraft:pegomastax_baby_lvl100"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+		"run_command": {
+          "command": [
+    "tag @s add v1"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v2"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v3"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v4"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v5"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v6"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:babylvl150": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+	"minecraft:pegomastax_baby",
+	"minecraft:temperature_controller",
+	"minecraft:pegomastax_baby_lvl150"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+		"run_command": {
+          "command": [
+    "tag @s add v1"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v2"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v3"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v4"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v5"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v6"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:babylvl200": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+	"minecraft:pegomastax_baby",
+	"minecraft:temperature_controller",
+	"minecraft:pegomastax_baby_lvl200"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+		"run_command": {
+          "command": [
+    "tag @s add v1"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v2"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v3"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v4"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v5"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v6"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:babylvl250": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+	"minecraft:pegomastax_baby",
+	"minecraft:temperature_controller",
+	"minecraft:pegomastax_baby_lvl250"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+		"run_command": {
+          "command": [
+    "tag @s add v1"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v2"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v3"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v4"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v5"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+		"run_command": {
+          "command": [
+    "tag @s add v6"
+          ],
+          "target": "self"
+		},
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+        
+
+			"minecraft:get_up": {
+				"remove": {
+					"component_groups": [
+
+						"minecraft:narcotic_20",
+						"minecraft:sleeping"
+					] 
+				},
+				"add": {
+					"component_groups": [
+"minecraft:ataque_usual",
+						"minecraft:despierto",
+  
+						"minecraft:narcotic_system",
+						"minecraft:despierto",
+ 
+ "minecraft:on_attack"
+					]
+				}
+			},
+			
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              
+              {
+                "weight": 160,
+		"run_command": { 
+          "command": [
+    "summon mc_ark:pegomastax ~~~ minecraft:lvl10_spawn §3Pegomastax_lvl.10",
+    "execute @s ~~~ event entity @s minecraft:pegomastax_baby_despawn"
+          ],
+          "target": "self"
+		},
+                "add": { 
+					"component_groups": [
+"minecraft:pegomastax_baby_despawn"
+					]
+                }
+              },
+              {
+                "weight": 70,
+		"run_command": { 
+          "command": [
+    "summon mc_ark:pegomastax ~~~ minecraft:lvl50_spawn §3Pegomastax_lvl.50",
+    "execute @s ~~~ event entity @s minecraft:pegomastax_baby_despawn"
+          ],
+          "target": "self"
+		},
+                "add": { 
+					"component_groups": [
+"minecraft:pegomastax_baby_despawn"
+					]
+                }
+              },
+
+              {
+                "weight": 15,
+		"run_command": { 
+          "command": [
+    "summon mc_ark:pegomastax ~~~ minecraft:lvl100_spawn §3Pegomastax_lvl.100",
+    "execute @s ~~~ event entity @s minecraft:pegomastax_baby_despawn"
+          ],
+          "target": "self"
+		},
+                "add": { 
+					"component_groups": [
+"minecraft:pegomastax_baby_despawn"
+					]
+                }
+              },
+              {
+                "weight": 6,
+		"run_command": { 
+          "command": [
+    "summon mc_ark:pegomastax ~~~ minecraft:lvl150_spawn §3Pegomastax_lvl.150",
+    "execute @s ~~~ event entity @s minecraft:pegomastax_baby_despawn"
+          ],
+          "target": "self"
+		},
+                "add": { 
+					"component_groups": [
+"minecraft:pegomastax_baby_despawn"
+					]
+                }
+              }
+            ] 
+          }
+        ]
+      },
+       
+      "minecraft:lvl10_spawn": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl10",
+    "tag @s add pegomastaxwild"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl10",	"minecraft:xp_lvl10",
+	"minecraft:despierto",
+		"minecraft:default",
+	"minecraft:scale1",
+ "minecraft:off_attack",
+ "minecraft:not_from_farm",
+ "minecraft:lvl10_t",
+ "minecraft:desaparecer_coc"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl50_spawn": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl50",
+    "tag @s add pegomastaxwild"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl50",	"minecraft:xp_lvl50",
+	"minecraft:despierto",
+		"minecraft:default",
+	"minecraft:scale1",
+ "minecraft:off_attack",
+ "minecraft:not_from_farm",
+ "minecraft:lvl50_t",
+ "minecraft:desaparecer_coc"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+
+      "minecraft:lvl100_spawn": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl100",
+    "tag @s add pegomastaxwild"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl100",	"minecraft:xp_lvl100",
+	"minecraft:despierto",
+		"minecraft:default",
+	"minecraft:scale1",
+ "minecraft:off_attack",
+ "minecraft:not_from_farm",
+ "minecraft:lvl100_t",
+ "minecraft:desaparecer_coc"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl150_spawn": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl150",
+    "tag @s add pegomastaxwild"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl150",	"minecraft:xp_lvl150",
+	"minecraft:despierto",
+		"minecraft:default",
+	"minecraft:scale1",
+ "minecraft:off_attack",
+ "minecraft:not_from_farm",
+ "minecraft:lvl150_t",
+ "minecraft:desaparecer_coc"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl200_spawn": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl200",
+    "tag @s add pegomastaxwild"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl200",	"minecraft:xp_lvl200",
+	"minecraft:despierto",
+		"minecraft:default",
+	"minecraft:scale1",
+ "minecraft:off_attack",
+ "minecraft:not_from_farm",
+ "minecraft:lvl200_t",
+ "minecraft:desaparecer_coc"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:lvl250_spawn": {
+        "sequence": [
+          {
+            "randomize": [
+          {
+		"run_command": { 
+          "command": [
+    "tag @s add lvl250",
+    "tag @s add pegomastaxwild"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:pegomastax-wild_adult",
+	"minecraft:narcotic_system",
+	"minecraft:ataque_usual",
+	"minecraft:lvl250",	"minecraft:xp_lvl250",
+	"minecraft:despierto",
+		"minecraft:default",
+	"minecraft:scale1",
+ "minecraft:off_attack",
+ "minecraft:not_from_farm",
+ "minecraft:lvl250_t",
+ "minecraft:desaparecer_coc"
+              ]
+            }
+          } 
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "minecraft:v1" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v2" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v3" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v4" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v5" ] }
+              },
+              {
+                "weight": 40,
+                "add": { "component_groups": [ "minecraft:v6" ] }
+              }
+            ]
+          }
+        ]
+      },
+     
+      "minecraft:on_tame": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode",
+    "tag @s remove pegomastaxwild",
+    "tag @s add tamed"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+"minecraft:running", 
+ "minecraft:not_from_farm",
+"minecraft:ataque_usual",
+"minecraft:ataque_especial",
+    "minecraft:pegomastax-wild_adult",
+ "minecraft:default_attack_sistem",
+ "minecraft:despierto",
+ "minecraft:despierto_alfa",
+ "minecraft:sleeping",
+ "minecraft:on_attack",
+ "minecraft:off_attack",
+ "minecraft:desaparecer_coc"
+          ] 
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:domado_can_riding",
+ "minecraft:pegomastax_inventory_off",
+ "minecraft:ataque_usual_tamed",
+ "minecraft:pegomastax_adult_inventory",
+ "minecraft:adult_controladores",
+ "minecraft:neutral",
+ "minecraft:seguir",
+ "minecraft:default", 
+   "minecraft:pegomastax-tamed_adult",
+ "minecraft:off_attack_sistem",
+      "minecraft:can_pickup",
+ "minecraft:ataque_usual_tamed",
+ "minecraft:pegomastax_adult_inventory",
+ "minecraft:adult_controladores",
+ "minecraft:neutral",
+ "minecraft:seguir",
+ "minecraft:default", 
+   "minecraft:pegomastax-tamed_adult",
+ "minecraft:off_attack_sistem",
+      "minecraft:pegomastax-off_saddle",
+    "minecraft:im_calm",
+    "minecraft:up"
+          ] 
+        }
+      },
+			"minecraft:narcotic_final": { 
+    
+		"run_command": { 
+          "command": [
+    "effect @s slow_falling 0 255 true",
+    "effect @s slowness 1 255 true",
+						"effect @s weakness 0 253 true"
+          ],
+          "target": "self"
+		},
+    
+				"remove": {
+					"component_groups": [
+"minecraft:torpor_wooden_club",
+"minecraft:torpor_bow",
+"minecraft:torpor_crossbow",
+"minecraft:ataque_usual",
+"minecraft:ataque_especial",
+						"minecraft:narcotic_system",
+						"minecraft:despierto",
+"minecraft:ataque_usual",
+"minecraft:ataque_especial",
+		"minecraft:from_farm",
+ "minecraft:on_attack",
+ "minecraft:off_attack"
+					]
+				},
+				"add": {
+					"component_groups": [
+"minecraft:torpor_normal" ,
+						"minecraft:sleeping",
+ "minecraft:en_piso_salvaje"
+					]  
+				}
+			}
+    }
+  }
+}

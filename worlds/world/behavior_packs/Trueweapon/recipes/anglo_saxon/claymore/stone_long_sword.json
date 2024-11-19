@@ -1,0 +1,34 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "stone_claymore"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "B",
+			"B",
+			"A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stone_sword"
+			},
+			"B": {
+				"item": "minecraft:cobblestone"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:cobblestone"
+			}
+		],
+		"result": [
+			{
+				"item": "true:stone_claymore"
+			}
+		]
+	}
+}

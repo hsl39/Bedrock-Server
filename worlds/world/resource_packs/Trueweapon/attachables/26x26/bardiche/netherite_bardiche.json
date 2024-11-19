@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+      "description": {
+        "identifier": "true:netherite_bardiche",
+        "materials": {
+          "default": "entity_alphatest",
+          "enchanted": "entity_alphatest_glint"
+        },
+        "textures": {
+          "default": "textures/items/bardiche/netherite",
+          "enchanted": "textures/misc/enchanted_item_glint"
+        },
+        "geometry": {
+          "default": "geometry.tw.26x26"
+        },
+        "animations": {
+          "vision": "animation.tw.item_animated_true.vision"
+        },
+        "scripts": {
+          "animate": [
+            "vision"
+          ]
+        },
+        "render_controllers": [ "controller.render.drowned" ]
+      }
+    }
+  }
+  

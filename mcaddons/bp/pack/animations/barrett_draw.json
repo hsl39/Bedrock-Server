@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.barrett_draw": {
+			"timeline": {
+				"0.0": [
+                                 "/playsound pixelpoly.barrett_cloth @s"
+				],
+				"0.42": [
+                                 "/playsound pixelpoly.barrett_movement @s",
+                                 "/camerashake add @s 0.0345 0.3 rotational"
+				],
+				"0.5": [
+                                 "/camerashake add @s 0.0145 0.7 rotational"
+				]
+			},
+			"animation_length": 1.9,
+			"loop": false
+		}
+	}
+}

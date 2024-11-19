@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.treeitem": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/tag @s[name=\"Fire Wyvern Egg\"] add fire_wyvern",
+            "/tag @s[name=\"Poison Wyvern Egg\"] add poison_wyvern",
+            "/tag @s[name=\"Wither Wyvern Egg\"] add wither_wyvern",
+            "/tag @s[name=\"Ender Wyvern Egg\"] add ender_wyvern",
+            "/tag @s[name=\"Ice Wyvern Egg\"] add ice_wyvern",
+            "/tag @s[name=\"Ground Wyvern Egg\"] add ground_wyvern"
+          ]
+        }
+      }
+    }
+  }
+}

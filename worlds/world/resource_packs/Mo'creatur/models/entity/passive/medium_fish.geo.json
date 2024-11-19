@@ -1,0 +1,78 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.medium_fish",
+				"texture_width": 128,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "todo",
+					"pivot": [-12, -6, -1]
+				},
+				{
+					"name": "cabeza",
+					"parent": "todo",
+					"pivot": [-14, 6, 2],
+					"rotation": [0, 0, -7.5],
+					"cubes": [
+						{"origin": [-23, 5, -1], "size": [10, 6, 6], "pivot": [-18, 8, 1], "rotation": [0, 0, -10], "uv": [0, 20]},
+						{"origin": [-22.9, 2.6, -1], "size": [8, 6, 6], "inflate": 0.1, "pivot": [-18.9, 5.6, 2], "rotation": [0, 0, 25], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "torso",
+					"parent": "todo",
+					"pivot": [8.2, 7.8, 2],
+					"cubes": [
+						{"origin": [-15.8, 0.8, -2], "size": [18, 11, 8], "uv": [0, 0]},
+						{"origin": [-14.8, -5.2, 2], "size": [7, 6, 0], "uv": [58, 32]},
+						{"origin": [-7.8, -5.2, 2], "size": [14, 7, 0], "uv": [92, 40]},
+						{"origin": [-13.8, 10.8, 2], "size": [29, 8, 0], "uv": [0, 44]}
+					]
+				},
+				{
+					"name": "aleta1",
+					"parent": "torso",
+					"pivot": [-10.8, 2.8, -2],
+					"rotation": [-40, 0, 10],
+					"cubes": [
+						{"origin": [-13.8, -3.2, -2], "size": [8, 6, 0], "uv": [56, 26]}
+					]
+				},
+				{
+					"name": "aleta2",
+					"parent": "torso",
+					"pivot": [-10.8, 2.8, 6],
+					"rotation": [40, 0, -10],
+					"cubes": [
+						{"origin": [-13.8, -3.2, 6], "size": [8, 6, 0], "uv": [56, 26]}
+					]
+				},
+				{
+					"name": "subtorso",
+					"parent": "torso",
+					"pivot": [2.2, 6.8, 2.5],
+					"cubes": [
+						{"origin": [1.2, 1.8, -1], "size": [16, 6, 6], "inflate": 0.01, "pivot": [8.2, 4.8, 2], "rotation": [0, 0, -5], "uv": [52, 12]},
+						{"origin": [1.2, 4.6, -1], "size": [16, 6, 6], "pivot": [8.2, 7.6, 2], "rotation": [0, 0, 5], "uv": [52, 0]},
+						{"origin": [8.2, -3.2, 2], "size": [7, 6, 0], "uv": [112, 32]}
+					]
+				},
+				{
+					"name": "cola",
+					"parent": "subtorso",
+					"pivot": [17.2, 5.8, 2.5],
+					"cubes": [
+						{"origin": [17.2, -1.2, 2], "size": [10, 16, 0], "uv": [96, 12]}
+					]
+				}
+			]
+		}
+	]
+}

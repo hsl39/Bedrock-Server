@@ -1,0 +1,21 @@
+{
+    "format_version": 1,
+    "header": { 
+        "description": "§2Mc Ark Mega Bug Fix Update V1.0 §r §lCreated by @Leonard98617179 (Gato Ruso) and @Alexvr587", 
+        "name": "V2 §2§lMc Ark Mega Bug Fix Update V1.0 §bRP§a",    
+        "uuid": "61d5b473-4871-4ff3-8dbe-517aa995de5a",
+        "version": [1, 0, 0],
+        "min_engine_version":[1,10,0]
+    },
+    "min_engine_version" : [ 0, 0, 1, 1, 2, 5 ],
+    "modules": [
+        {  
+        "description": "§2Mc Ark Mega Bug Fix Update V1.0 §r §lCreated by @Leonard98617179 (Gato Ruso) and @Alexvr587", 
+            "type": "resources",
+            "uuid": "ac8c595e-5bc2-4bf2-a4db-8c2a1de3777e",
+            "version": [0, 1, 0]
+        }
+    ]
+}
+
+

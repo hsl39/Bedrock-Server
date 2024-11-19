@@ -1,0 +1,34 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:ant",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/ant"
+			},
+			"geometry": {
+				"default": "geometry.ant"
+			},
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			},
+			"animations": {
+				"move": "controller.animation.mob.move",
+				"moving": "animation.ant.move"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#00FF7F",
+				"overlay_color": "#C09E7D"
+			}
+		}
+	}
+}

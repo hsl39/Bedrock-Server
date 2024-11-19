@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:wildpolarbear",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/bearpolar"
+			},
+			"geometry": {
+				"default": "geometry.bear",
+				"sitting": "geometry.bear_sitting"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"walk": "animation.quadruped.walk",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.bear"
+			],
+			"spawn_egg": {
+				"base_color": "#D5EFFF",
+				"overlay_color": "#8B7B6E"
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mocreatures:ostrichcooked",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:use_duration": 1.6,
+			"minecraft:food": {
+				"nutrition": 6,
+				"saturation_modifier": "normal"
+			},
+			"minecraft:icon": {
+				"texture": "cooked_ostrich"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.cookedFood"
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:render_offsets": "apple",
+			"minecraft:allow_off_hand": true,
+			"minecraft:display_name": {
+				"value": "item.mocreatures:ostrichcooked.name"
+			}
+		},
+		"events": {}
+	}
+}

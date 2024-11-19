@@ -1,0 +1,192 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "twm:block_breaker",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"twm:speed": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:facing_direction"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							-90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'down' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'north' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'south' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'east' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'west' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_block_breaker_speed1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							40,
+							40
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/block_breaker/speed1.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_block_breaker_speed2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							20,
+							20
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/block_breaker/speed2.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_block_breaker_speed3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							10,
+							10
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/block_breaker/speed3.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_block_breaker_speed4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							5,
+							5
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/block_breaker/speed4.json"
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.twm_block_2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "twm_block_breaker",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"twm:machine_upgrades",
+				"twm:block_breaker"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					80,
+					80
+				]
+			}
+		}
+	}
+}

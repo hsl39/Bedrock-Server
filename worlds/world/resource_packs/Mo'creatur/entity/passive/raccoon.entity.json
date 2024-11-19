@@ -1,0 +1,40 @@
+//bridge-file-version: #18
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:raccoon",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/raccoon"
+			},
+			"geometry": {
+				"default": "geometry.raccoon"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target",
+					{
+						"walk": "query.modified_move_speed"
+					}
+				],
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				]
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"walk": "animation.raccon.walk"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#E16941",
+				"overlay_color": "#D1CE00"
+			}
+		}
+	}
+}

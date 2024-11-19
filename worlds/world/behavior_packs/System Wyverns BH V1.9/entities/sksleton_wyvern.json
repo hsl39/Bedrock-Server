@@ -1,0 +1,200 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "new:skeleton_wyvern",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups":{
+      "despawn":{
+        "minecraft:despawn":{}
+      },
+      "wyvern_scale1":{
+        "minecraft:scale":{
+          "value": 1
+        }
+      },
+      "wyvern_scale2":{
+        "minecraft:scale":{
+          "value": 0.75
+        }
+      },
+      "wyvern_scale5":{
+        "minecraft:scale":{
+          "value": 0.85
+        }
+      },
+      "wyvern_scale7":{
+        "minecraft:scale":{
+          "value": 0.95
+        }
+      },
+      "wyvern_scale6":{
+        "minecraft:scale":{
+          "value": 0.35
+        }
+      },
+      "wyvern_scale8":{
+        "minecraft:scale":{
+          "value": 0.35
+        }
+      },
+      "wyvern_scale3":{
+        "minecraft:scale":{
+          "value": 0.5
+        }
+      },
+      "wyvern_scale4":{
+        "minecraft:scale":{
+          "value": 0.25
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "wyvern_dead" ]
+      },
+      "minecraft:collision_box": {
+        "width": 2,
+        "height": 2
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:knockback_resistance":{
+        "value": 1000
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": [
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "player" }
+                  ]
+                }
+              ],
+              "event": "loot_spawn"
+            },
+            "interact_text": "Collect",
+            "swing": true
+          }
+        ]
+      },
+      "minecraft:damage_sensor":{
+        "triggers":[
+          {
+            "on_damage":{
+            },
+            "deals_damage": false
+          }
+        ]
+      }
+    },
+
+    "events": {
+      "minecraft:entity_spawned":{
+        "randomize":[
+          {
+            "weight": 84,
+            "add":{
+              "component_groups":[
+                "despawn"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "add":{
+              "component_groups":[
+                "scale1"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "add":{
+              "component_groups":[
+                "scale2"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "add":{
+              "component_groups":[
+                "scale3"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "add":{
+              "component_groups":[
+                "scale4"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "add":{
+              "component_groups":[
+                "scale5"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "add":{
+              "component_groups":[
+                "scale6"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "add":{
+              "component_groups":[
+                "scale7"
+              ]
+            }
+          },
+          {
+            "weight": 2,
+            "add":{
+              "component_groups":[
+                "scale8"
+              ]
+            }
+          }
+        ]
+      },
+      "loot_spawn":{
+        "queue_command":{
+          "command":[
+            "loot spawn ~~1~ loot \"skeleton_wyvern\"",
+            "event entity @s despawn"
+          ]
+        }
+      },
+      "despawn":{
+        "add":{
+          "component_groups":[
+            "despawn"
+          ]
+        }
+      }
+    }
+  }
+}

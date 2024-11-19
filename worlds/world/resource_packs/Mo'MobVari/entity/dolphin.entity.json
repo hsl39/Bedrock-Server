@@ -1,0 +1,45 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "minecraft:dolphin",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "a": "textures/entity/dolphin/a",
+                "b": "textures/entity/dolphin/b",
+                "c": "textures/entity/dolphin/c",
+                "d": "textures/entity/dolphin/d",
+                "e": "textures/entity/dolphin/e",
+                "f": "textures/entity/dolphin/f",
+                "g": "textures/entity/dolphin/g",
+                "h": "textures/entity/dolphin/h",
+                "i": "textures/entity/dolphin/i",
+                "j": "textures/entity/dolphin/j",
+                "k": "textures/entity/dolphin/k",
+                "l": "textures/entity/dolphin/l",
+                "m": "textures/entity/dolphin/m",
+                "n": "textures/entity/dolphin/n"
+            },
+            "geometry": {
+                "default": "geometry.dolphin"
+            },
+            "animations": {
+                "move": "animation.dolphin.move"
+            },
+            "animation_controllers": [
+                {
+                    "general": "controller.animation.dolphin.general"
+                }
+            ],
+            "render_controllers": [
+                "controller.render.dolphin"
+            ],
+            "spawn_egg": {
+                "texture": "spawn_egg",
+                "texture_index": 49
+            }
+        }
+    }
+}

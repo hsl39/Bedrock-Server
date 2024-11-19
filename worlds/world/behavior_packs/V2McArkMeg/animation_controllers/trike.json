@@ -1,0 +1,310 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.trike_attack": {
+			"initial_state": "default",
+			"states": {
+				"end": {
+					"on_entry": [
+ "@s minecraft:trike_remove_attacks"
+					]
+				},
+				"sleep": {
+					"transitions": [
+						{
+							"default": "(!query.is_sheared)"
+						}
+					],
+					"on_entry": [
+ "@s minecraft:trike_remove_attacks"
+					],
+					"on_exit": [
+ "@s minecraft:trike_attack_after"
+					]  
+				},
+				"default": {
+					"transitions": [
+						{
+							"special_attack": "(query.skin_id == 2) && !query.is_tamed"
+						}
+					]  
+				},
+				"special_attack": {
+					"transitions": [
+						{
+							"end": "query.is_sheared"
+						},
+						{
+							"default": "query.is_tamed"
+						},
+						{
+							"special_attack_on": "query.all_animations_finished"
+						}
+					],
+          "animations": [
+              "trike_especial_ataque_cargando"
+              ],
+					"on_entry": [
+ "@s minecraft:ataque_especial_on"
+					] ,
+					"on_exit": [
+ "@s minecraft:ataque_especial_on2"
+					] 
+				},
+				"special_attack_on": {
+					"transitions": [
+						{
+							"default": "query.is_tamed"
+						},
+						{
+							"end": "query.is_sheared"
+						},
+						{
+							"default": "query.all_animations_finished"
+						},
+						{
+							"default": "!query.has_target"
+						}
+					],
+					"on_exit": [
+          "/tag @s remove trike_especial_ataque_cargado",
+ "@s minecraft:trike_attack_after",
+						"/effect @s slowness 3 0 true"
+					],
+          "animations": [
+						{ 
+							"ataque_empuje": "variable.attack_time >= 0.1"
+						},
+						{ 
+							"trike_especial_ataque_en_ataque": "query.is_on_ground && query.has_target"
+						},
+
+						"trike_especial_ataque_en_ataque_off_time"
+              ]
+				}
+			}
+		},
+		"controller.animation.trike_attack_tamed": {
+			"initial_state": "default",
+			"states": {
+				"end": {
+					"on_entry": [
+ "@s minecraft:trike_remove_attacks"
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"special_attack": "(query.skin_id == 2) && query.is_tamed && !query.has_rider"
+						}
+					]  
+				},
+				"special_attack": {
+					"transitions": [
+						{
+							"default": "!query.is_tamed"
+						},
+						{
+							"default": "query.has_rider"
+						},
+						{
+							"special_attack_on": "query.all_animations_finished"
+						}
+					],
+          "animations": [
+              "trike_especial_ataque_cargando"
+              ],
+					"on_entry": [
+ "@s minecraft:ataque_especial_on_tamed"
+					] ,
+					"on_exit": [
+ "@s minecraft:ataque_especial_on2_tamed"
+					] 
+				},
+				"special_attack_on": {
+					"transitions": [
+						{
+							"default": "!query.is_tamed"
+						},
+						{
+							"default": "query.has_rider"
+						},
+						{
+							"default": "query.all_animations_finished"
+						},
+						{
+							"default": "!query.has_target"
+						}
+					],
+					"on_exit": [
+          "/tag @s remove trike_tamed_start" ,
+          "/tag @s remove trike_especial_ataque_cargado",
+ "@s minecraft:trike_attack_after_tamed",
+						"/effect @s slowness 3 0 true"
+					],
+          "animations": [
+						{ 
+							"ataque_empuje_tamed": "variable.attack_time >= 0.1"
+						},
+						{ 
+							"start_moving_tamed": "query.is_moving"
+						},
+						{ 
+							"stop_moving_tamed": "!query.is_moving"
+						},
+						{ 
+							"trike_especial_ataque_en_ataque_tamed": "query.is_on_ground && query.has_target && query.is_moving"
+						},
+
+						"trike_especial_ataque_en_ataque_off_time_tamed"
+              ]
+				}
+			}
+		},
+    "controller.animation.ataque_trike_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "remove_ataque_normal": "(query.is_illager_captain) && (query.is_on_ground) && query.has_rider && (query.skin_id == 0) && query.mark_variant == 0"
+            }, 
+            {
+              "remove_ataque_especial": "(query.is_illager_captain) && (query.is_on_ground) && query.has_rider && query.skin_id == 0 && query.mark_variant == 1" 
+            }
+          ], 
+          "on_entry": [
+                        "variable.trike_can_attack = 1.0; return variable.trike_can_attack;",
+                        "@s minecraft:ataque_empuje_off_tamed"
+                    ] 
+        },
+        "remove_ataque_normal": {
+          "transitions": [
+            {
+              "default": "!query.is_illager_captain && (query.skin_id >= 2)" 
+            } , 
+            {
+              "default": "!(query.is_illager_captain)"
+            } ,
+            {
+              "default": "!(query.has_rider)"
+            } 
+          ],
+					"on_exit": [  
+       "@s minecraft:remove_ataque_normal"
+					] , 
+                    "animations": [
+               "remove_ataque_normal"
+                        ]
+        },
+        "remove_ataque_normal2": {
+          "transitions": [
+
+            {
+              "default": "!query.is_illager_captain && (query.skin_id >= 2) && query.all_animations_finished" 
+            } ,
+            {
+              "default": "!(query.is_illager_captain) && query.all_animations_finished"
+            } ,
+            {
+              "default": "!(query.has_rider) && query.all_animations_finished"
+            }  
+          ],
+                    "animations": [
+              "ataque_empuje_tamed"
+                        ],
+					"on_exit": [  
+       "@s minecraft:remove_ataque_normal"
+					] , 
+					"on_entry": [ 
+						"/effect @s slowness 2 10 true"
+					] 
+        },
+        "remove_ataque_especial": {
+          "transitions": [
+            {
+              "default": "!query.is_illager_captain && (query.skin_id < 2)"
+            } ,
+            {
+              "remove_ataque_normal2": "query.is_illager_captain && (variable.trike_can_attack == 2.0)"
+            } , 
+            {
+              "default": "!(query.has_rider) && query.all_animations_finished" 
+            }  
+          ], 
+					"on_exit": [  
+
+          "/tag @p[r=5] remove in_attack_trike",
+          "/tag @s remove in_attack_trike",
+          "/tag @p[r=5] remove trike_rider_possible_attack",
+ "/effect @s speed 0 5 true", 
+      "variable.trike_can_attack = 1.0; return variable.trike_can_attack;",
+          "/tag @s remove trike_tamed_start" , 
+            "/tag @p[r=5] remove in_attack",
+          "/tag @s remove in_attack",
+          "/tag @s remove trike_especial_ataque_cargado" ,
+          "@s minecraft:remove_ataque_especial_whip",
+						"/effect @s slowness 0 101 true"
+					] , 
+					"on_entry": [ 
+"@s minecraft:in_attack_especial"
+					] ,
+                    "animations": [ 
+						{ 
+							"trike_especial_ataque_en_ataque_tamed_rider": "query.skin_id == 3"
+						},
+						{  
+							"start_moving_tamed": "query.is_moving"
+						},
+						{ 
+							"stop_moving_tamed": "!query.is_moving"
+						},
+               "remove_ataque_especial"
+                        ]
+        }
+      }
+    }, 
+    
+		"controller.animation.trike_attack_time_tamed": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"time": "(query.is_tamed) && !query.has_rider"
+						}
+					]  
+				},
+				"time": {
+					"transitions": [
+						{
+							"default": "!query.is_tamed"
+						},
+						{
+							"default": "query.has_rider"
+						}
+					],
+          "animations": [
+              "trike_attack_por_tiempo_tamed"
+              ],
+					"on_exit": [
+ "@s minecraft:ataque_empuje_tamed_off"
+					] 
+				}
+			}
+		},
+    
+    
+        "controller.animation.trike_roarcoc": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "damage_roar_trike_mc_ark":"(query.is_roaring == 1)" }
+                    ]
+                }
+            }
+        }
+    
+	}
+} 

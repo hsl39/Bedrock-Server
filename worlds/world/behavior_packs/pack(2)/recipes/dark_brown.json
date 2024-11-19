@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "dark_brown"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+            {
+                "item": "heavy:multi_backpack"
+            },
+			{
+                "item": "minecraft:brown_dye"
+            },
+			{
+                "item": "minecraft:black_dye"
+            }
+		],
+		"unlock": {
+            "context": "AlwaysUnlocked"
+          },
+		"result": [
+			{
+				"item": "heavy:multi_backpack_dark_brown"
+			}
+		]
+	}
+}

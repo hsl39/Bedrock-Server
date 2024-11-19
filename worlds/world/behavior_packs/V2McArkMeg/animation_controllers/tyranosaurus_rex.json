@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+    
+    "controller.animation.ataque_tyranosaurus_rex_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            { 
+              "remove_ataque_normal": "(query.is_illager_captain) && (query.is_on_ground) && query.mark_variant == 0"
+            },
+            {
+              "remove_ataque_especial": "(query.is_illager_captain) && (query.is_on_ground) && query.mark_variant == 1"
+            }
+          ] 
+        },
+        "remove_ataque_normal": {
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain) && query.all_animations_finished"
+            }   
+          ],
+                    "animations": [
+               "remove_ataque_normal"
+                        ]
+        },
+        "remove_ataque_especial": {
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }   
+          ],  
+					"on_exit": [ 
+            "/tag @p[r=5] remove in_attack",
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+"@s minecraft:remove_ataque_especial_whip",
+						"/effect @s slowness 1 101 true"
+					] ,
+                    "animations": [
+            {
+              "roar_tamed": "query.is_tamed && query.is_illager_captain"
+            } ,
+               "remove_ataque_especial"
+                        ]
+        }
+      }
+    }
+	}
+}

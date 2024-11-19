@@ -1,0 +1,1 @@
+{"format_version":"1.20.80","minecraft:item":{"description":{"identifier":"gabrielaplok:blueprint_guns","menu_category":{"category":"items","group":"itemGroup.name.blueprint"}},"components":{"minecraft:display_name":{"value":"item.blueprint_guns.name"},"minecraft:icon":"blueprint_guns","minecraft:glint":true}}}

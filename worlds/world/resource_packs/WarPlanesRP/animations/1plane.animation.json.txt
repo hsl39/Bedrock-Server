@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.plane.rot": {
+			"loop": true,
+			"animation_length": 0.0417,
+			"bones": {
+				"plane": {
+					"rotation": {
+					    "0.0": ["(math.hermite_blend((q.property('adn:x_rot') / 360) +0.5) - 0.5) * 360", 
+					0.0, "(math.hermite_blend((q.property('adn:z_rot') / 360) +0.5) - 0.5) * 360"]
+					}
+				}
+			}
+		}
+	}
+}
+q.bone_orientation_trs('rightarm')

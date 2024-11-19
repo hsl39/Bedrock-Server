@@ -1,0 +1,119 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.carcharodontosaurus_farol",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 2.75, 0]
+			},
+			"bones": [
+				{
+					"name": "barra",
+					"pivot": [0, 58, -3],
+					"cubes": [
+						{
+							"origin": [-5, 58, -3],
+							"size": [10, 2, 0.9],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [10, 2]},
+								"east": {"uv": [14, 6], "uv_size": [1, 2]},
+								"south": {"uv": [0, 2], "uv_size": [10, 2]},
+								"west": {"uv": [14, 10], "uv_size": [1, 2]},
+								"up": {"uv": [8, 8], "uv_size": [10, 1]},
+								"down": {"uv": [8, 10], "uv_size": [10, -1]}
+							}
+						},
+						{
+							"origin": [-5, 74, -3],
+							"size": [10, 2, 0.9],
+							"uv": {
+								"north": {"uv": [4, 4], "uv_size": [10, 2]},
+								"east": {"uv": [0, 16], "uv_size": [1, 2]},
+								"south": {"uv": [4, 6], "uv_size": [10, 2]},
+								"west": {"uv": [1, 16], "uv_size": [1, 2]},
+								"up": {"uv": [10, 0], "uv_size": [10, 1]},
+								"down": {"uv": [10, 2], "uv_size": [10, -1]}
+							}
+						},
+						{
+							"origin": [7, 62, -3],
+							"size": [2, 10, 0.9],
+							"uv": {
+								"north": {"uv": [0, 4], "uv_size": [2, 10]},
+								"east": {"uv": [8, 10], "uv_size": [1, 10]},
+								"south": {"uv": [2, 4], "uv_size": [2, 10]},
+								"west": {"uv": [9, 10], "uv_size": [1, 10]},
+								"up": {"uv": [12, 14], "uv_size": [2, 1]},
+								"down": {"uv": [14, 13], "uv_size": [2, -1]}
+							}
+						},
+						{
+							"origin": [-9, 62, -3],
+							"size": [2, 10, 0.9],
+							"uv": {
+								"north": {"uv": [4, 8], "uv_size": [2, 10]},
+								"east": {"uv": [10, 10], "uv_size": [1, 10]},
+								"south": {"uv": [6, 8], "uv_size": [2, 10]},
+								"west": {"uv": [11, 10], "uv_size": [1, 10]},
+								"up": {"uv": [14, 16], "uv_size": [2, 1]},
+								"down": {"uv": [16, 16], "uv_size": [2, -1]}
+							}
+						},
+						{
+							"origin": [5, 60, -3],
+							"size": [2, 2, 0.9],
+							"uv": {
+								"north": {"uv": [10, 2], "uv_size": [2, 2]},
+								"east": {"uv": [14, 13], "uv_size": [1, 2]},
+								"south": {"uv": [12, 2], "uv_size": [2, 2]},
+								"west": {"uv": [15, 6], "uv_size": [1, 2]},
+								"up": {"uv": [15, 10], "uv_size": [2, 1]},
+								"down": {"uv": [15, 12], "uv_size": [2, -1]}
+							}
+						},
+						{
+							"origin": [-7, 60, -3],
+							"size": [2, 2, 0.9],
+							"uv": {
+								"north": {"uv": [14, 2], "uv_size": [2, 2]},
+								"east": {"uv": [3, 16], "uv_size": [1, 2]},
+								"south": {"uv": [14, 4], "uv_size": [2, 2]},
+								"west": {"uv": [16, 5], "uv_size": [1, 2]},
+								"up": {"uv": [16, 7], "uv_size": [2, 1]},
+								"down": {"uv": [16, 13], "uv_size": [2, -1]}
+							}
+						},
+						{
+							"origin": [5, 72, -3],
+							"size": [2, 2, 0.9],
+							"uv": {
+								"north": {"uv": [12, 10], "uv_size": [2, 2]},
+								"east": {"uv": [12, 15], "uv_size": [1, 2]},
+								"south": {"uv": [12, 12], "uv_size": [2, 2]},
+								"west": {"uv": [13, 15], "uv_size": [1, 2]},
+								"up": {"uv": [15, 13], "uv_size": [2, 1]},
+								"down": {"uv": [14, 16], "uv_size": [2, -1]}
+							}
+						},
+						{
+							"origin": [-7, 72, -3],
+							"size": [2, 2, 0.9],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 2]},
+								"east": {"uv": [2, 16], "uv_size": [1, 2]},
+								"south": {"uv": [2, 14], "uv_size": [2, 2]},
+								"west": {"uv": [16, 2], "uv_size": [1, 2]},
+								"up": {"uv": [15, 14], "uv_size": [2, 1]},
+								"down": {"uv": [16, 5], "uv_size": [2, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

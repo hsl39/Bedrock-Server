@@ -1,0 +1,114 @@
+{
+	"format_version": "1.10.0",
+	"geometry.rat": {
+		"texturewidth": 64,
+		"textureheight": 32,
+		"visible_bounds_width": 5,
+		"visible_bounds_height": 2.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "all",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "Head",
+				"parent": "all",
+				"pivot": [0, 5, -6],
+				"cubes": [
+					{"origin": [-1.5, 2, -12], "size": [3, 4, 6], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "WhiskerL",
+				"parent": "Head",
+				"pivot": [0, 5, -6],
+				"cubes": [
+					{"origin": [1.5, 3, -12], "size": [3, 3, 1], "uv": [24, 20]}
+				]
+			},
+			{
+				"name": "WhiskerR",
+				"parent": "Head",
+				"pivot": [0, 5, -6],
+				"cubes": [
+					{"origin": [-4.5, 3, -12], "size": [3, 3, 1], "uv": [24, 16]}
+				]
+			},
+			{
+				"name": "EarR",
+				"parent": "Head",
+				"pivot": [0, 5, -6],
+				"cubes": [
+					{"origin": [-3.5, 5, -8], "size": [3, 3, 1], "uv": [16, 26]}
+				]
+			},
+			{
+				"name": "EarL",
+				"parent": "Head",
+				"pivot": [0, 5, -6],
+				"cubes": [
+					{"origin": [0.5, 5, -8], "size": [3, 3, 1], "uv": [24, 26]}
+				]
+			},
+			{
+				"name": "Body",
+				"parent": "all",
+				"pivot": [0, 4, 3],
+				"rotation": [89.99998, 0, 0],
+				"cubes": [
+					{"origin": [-4, -1, 0], "size": [8, 8, 8], "uv": [24, 0]}
+				]
+			},
+			{
+				"name": "Tail",
+				"parent": "all",
+				"pivot": [0, 4, 8],
+				"rotation": [89.99998, 0, 0],
+				"cubes": [
+					{"origin": [-1, -14, 7], "size": [2, 18, 2], "uv": [56, 0]}
+				]
+			},
+			{
+				"name": "FrontL",
+				"parent": "all",
+				"pivot": [3, 1, -4],
+				"cubes": [
+					{"origin": [1, 0, -7], "size": [2, 1, 4], "uv": [0, 18]}
+				]
+			},
+			{
+				"name": "FrontR",
+				"parent": "all",
+				"pivot": [-3, 1, -4],
+				"cubes": [
+					{"origin": [-3, 0, -7], "size": [2, 1, 4], "uv": [0, 18]}
+				]
+			},
+			{
+				"name": "RearL",
+				"parent": "all",
+				"pivot": [4, 1, 5],
+				"cubes": [
+					{"origin": [2, 0, 1], "size": [2, 1, 5], "uv": [0, 24]}
+				]
+			},
+			{
+				"name": "RearR",
+				"parent": "all",
+				"pivot": [-4, 1, 5],
+				"cubes": [
+					{"origin": [-4, 0, 1], "size": [2, 1, 5], "uv": [0, 24]}
+				]
+			},
+			{
+				"name": "BodyF",
+				"parent": "all",
+				"pivot": [0, 4, 1],
+				"cubes": [
+					{"origin": [-3, 1, -6], "size": [6, 6, 6], "uv": [32, 16]}
+				]
+			}
+		]
+	}
+}

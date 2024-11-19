@@ -1,0 +1,71 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.pegomastax.general" : {
+			"initial_state" : "default",
+			"states" : {  
+			"default" : {
+					"animations" : [
+						{
+							"idle" : "(variable.attack_time < 0.1) && !query.is_illager_captain"}
+					], 
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						},
+						{
+							"attacking" : "query.is_illager_captain && (query.is_on_ground)"
+						},
+						{
+							"sitting" : "(query.is_sitting) || query.is_riding"}
+					],
+					"blend_transition": 0.2
+				},
+			"sitting" : { 
+					"animations" : [ 
+						{
+							"idle" : "(variable.attack_time < 0.1) && !query.is_illager_captain"},
+					    "sitting" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						},
+						{
+							"attacking" : "query.is_illager_captain && (query.is_on_ground)"
+						},
+						{
+							"default" : "(!query.is_sitting) && (!query.is_riding)"}
+					],
+					"blend_transition": 0.2
+				},
+				"attacking" : { 
+					"animations" : [
+					    "attack" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "variable.attack_time < 0.1 && query.all_animations_finished && !query.is_illager_captain" 
+						}, 
+						{
+							"default" : "(query.is_sheared) && (!query.is_tamed)"
+						}
+					],  
+					"blend_transition": 0.2
+				}, 
+			"muerto" : {
+					"animations" : [ 
+					 
+					    "muerto" ],
+					"blend_transition": 0.2
+			} 
+			}
+		}
+	}
+} 
+
+ 

@@ -1,0 +1,61 @@
+
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:dodo",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"dodo1": "textures/dodo/variant1",
+				"dodo2": "textures/dodo/variant2",
+				"dodo3": "textures/dodo/variant3",
+				"dodo4": "textures/dodo/variant4",
+				"dodo5": "textures/dodo/variant5",
+				"dodo6": "textures/dodo/variant6"
+			},
+			"geometry": { 
+				"default": "geometry.dodo"
+			},
+	"sound_effects": {
+	"hurt_sound": "mob.dodo_mc_ark",
+	"idle_sound": "mob.dodo_mc_ark"
+	},
+			"animations": {  
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.dodo.general",
+				"idle": "animation.dodo.idle",
+				"walk": "animation.dodo.walk", 
+				"run": "animation.dodo.run",
+				"sitting": "animation.dodo.sitting",
+				"eating": "animation.dodo.eating",
+				"roar": "animation.dodo.roar",
+				"sleep": "animation.dodo.sleep",
+				"walk_controller":
+				"controller.animation.general.walk_mc_ark"
+			}, 
+			"scripts": {
+				"animate": [
+{
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+				    
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.dodo"
+			],  
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index": 1
+      }
+		}
+	}
+}

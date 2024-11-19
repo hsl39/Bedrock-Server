@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "mc_ark:mc_ark",
+      "item": { "mc_ark:ghillie_boots": "query.owner_identifier == 'minecraft:player'" },
+      "materials": {
+        "default": "armor" 
+      },
+      "textures": {
+        "default": "textures/models/armor/mc_ark/ghillie_armor"
+      },
+      "geometry": {
+        "default": "geometry.ghillie_boots"
+      },
+      "scripts": {
+        "parent_setup": "variable.chest_layer_visible = 0.0;" 
+      },
+      "render_controllers": [ "controller.render.mc_ark_armor" ]
+    }
+  }
+}

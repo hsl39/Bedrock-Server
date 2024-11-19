@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:air_conditioner"
+    },
+
+     
+    "tags": [ "crafting_table" ],
+    "pattern": [
+     "III",
+      "IRI",
+      "ICI" 
+    ], 
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "minecraft:copper_ingot"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "mc_ark:air_conditioner"
+    }
+  }
+}

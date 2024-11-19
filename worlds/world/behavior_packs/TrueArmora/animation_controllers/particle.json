@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.50",
+	"animation_controllers": {
+		"controller.animation.pa.dark_essence_particle": {
+			"states": {
+			  "default": {
+				"transitions": [
+				  {
+					"cushion": "(1.0)"
+				  }
+				],
+                "on_entry": [
+                  ]
+			  },
+			  "cushion": {
+				"transitions": [
+				  {
+					"default": "(q.life_time - v.delay) >= 1.2"
+				  }
+				],
+				"on_entry": [
+                  "v.delay=q.life_time;",
+				  "/particle pa:dark_essence_particle"
+				]
+			  }
+			}
+		}
+	}
+}

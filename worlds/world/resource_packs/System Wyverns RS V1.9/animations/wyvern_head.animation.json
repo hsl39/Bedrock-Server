@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wyvern_armor.head": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"scale": 3
+				},
+				"mouth": {
+					"rotation": [20, 0, 0],
+					"position": [0, 3, 9.7]
+				},
+				"bone": {
+					"rotation": [-20, 0, 0],
+					"position": [0, 2, -5]
+				}
+			}
+		}
+	}
+}

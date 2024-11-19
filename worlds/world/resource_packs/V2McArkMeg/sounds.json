@@ -1,0 +1,433 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "mc_ark:compy": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",
+          "hurt": "",
+          "death": "",
+          "step": "mob.pig.step"
+        }
+      },
+        
+      "mc_ark:dodo": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",
+          "hurt": "",
+          "death": "", 
+          "step": "mob.chicken.step"
+        }
+      }, 
+        
+      "mc_ark:rhyniognatha": { 
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",    
+          "hurt": "",    
+          "death": "",    
+          "step": ""
+        }
+      },
+        
+      "mc_ark:carcharodontosaurus": { 
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",    
+          "hurt": "",    
+          "death": "",    
+          "step": "sound.big_step_mc_ark"
+        }
+      },
+        
+      "mc_ark:spinosaurus": { 
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",    
+          "hurt": "",    
+          "death": "",    
+          "step": "sound.big_step_mc_ark"
+        }
+      },
+         
+      "mc_ark:pteranodon": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",    
+          "hurt": "",    
+          "death": "",    
+          "step": "mob.sheep.chicken"
+        }
+      },
+        
+      "mc_ark:dilophosaurus": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",    
+          "hurt": "",    
+          "death": "",    
+          "step": "mob.sheep.step"
+        }
+      },
+        
+      "mc_ark:therizino": {
+        "volume": 1.0,
+        "pitch": [ 0.6, 1.5 ],
+        "events": {
+          "ambient": "",    
+          "hurt": "",
+          "death":"",
+          "step": "sound.big_step_mc_ark"
+        }
+      }, 
+      "mc_ark:tyranosaurus_rex": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",     
+          "hurt": "",
+          "death": "",
+          "step": "sound.big_step_mc_ark"
+        }
+      },
+      "mc_ark:yutyrannus": {
+        "volume": 1.0, 
+        "pitch": [ 0.6, 1.0 ],
+        "events": {
+          "ambient": "",    
+          "hurt": "",
+          "death": "",
+          "step": "sound.big_step_mc_ark"
+        }
+      },
+        
+         "mc_ark:celacanto" : {
+            "events" : {
+               "flop" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.fish.flop",
+                  "volume" : 1.0
+               },
+               "hurt" : "mob.fish.hurt",
+               "hurt.in.water" : "mob.fish.hurt",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.fish.step",
+                  "volume" : 0.150
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+        
+
+      "mc_ark:pegomastax": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "", 
+          "hurt": "",
+          "death": "",
+          "step": "mob.chicken.step"
+        }
+      },  
+      "mc_ark:parasaurus": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": { 
+          "ambient": "",
+          "hurt": "",
+          "death": "",
+          "step": "mob.polar_bear.step"
+        }
+      }, 
+      "mc_ark:moschops": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",
+          "hurt": "",
+          "death": "",
+          "step": "mob.cow.step"
+        }
+      }, 
+      "mc_ark:raptor_tek": { 
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient":"" ,   
+          "hurt": "",
+          "death": "",
+          "step": "mob.sheep.step"
+        }
+      },
+      "mc_ark:raptor": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",   
+          "hurt": "", 
+          "death": "", 
+          "step": "mob.sheep.step"
+        }
+      },
+
+      "mc_ark:trike": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",
+          "hurt": "",
+          "death": "",
+          "step": "mob.ravager.step"
+        }
+      },
+        
+      "mc_ark:wyvern_poison": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.wyvern_mc_ark_normal",
+          "hurt": "mob.wyvern_mc_ark_damage",
+          "death": "mob.wyvern_mc_ark_damage",
+          "step": "mob.ravager.step",
+          
+          "attack.strong": "mob.ravager.bite"
+        }
+      },
+      "mc_ark:wyvern_ice": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.wyvern_mc_ark_normal",
+          "hurt": "mob.wyvern_mc_ark_damage",
+          "death": "mob.wyvern_mc_ark_damage",
+          "step": "mob.ravager.step",
+          
+          "attack.strong": "mob.ravager.bite"
+        }
+      },
+      "mc_ark:wyvern_electric": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.wyvern_mc_ark_normal",
+          "hurt": "mob.wyvern_mc_ark_damage",
+          "death": "mob.wyvern_mc_ark_damage",
+          "step": "mob.ravager.step",
+          
+          "attack.strong": "mob.ravager.bite"
+        }
+      },
+      "mc_ark:wyvern_fire": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.wyvern_mc_ark_normal",
+          "hurt": "mob.wyvern_mc_ark_damage",
+          "death": "mob.wyvern_mc_ark_damage",
+          "step": "mob.ravager.step",
+          
+          "attack.strong": "mob.ravager.bite"
+        }
+      },
+      
+      
+"mc_ark:fertile_dodo_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_pteranodon_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_trike_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_compy_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_raptor_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_raptor_tek_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_moschops_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_parasaurus_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_pegomastax_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_tyranosaurus_rex_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_therizino_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_yutyrannus_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			},
+"mc_ark:fertile_dilophosaurus_egg": {
+				"volume": 1,
+				"pitch": [
+					0.8, 
+					1.2
+				],
+				"events": {
+					"ambient": "",
+					"hurt": "",
+					"death": "",
+					"attack": "",
+					"step": ""
+				}
+			}
+			
+			
+			
+			 
+      
+}
+  }
+}

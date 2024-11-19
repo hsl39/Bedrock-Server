@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:ender_wyvern_wand"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AA",
+      " BA",
+      "B  "
+    ],
+    "key": {
+      "A": {
+        "item": "new:ender_wyvern_eye"
+      },
+      "B": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "new:ender_wyvern_wand"
+    }
+  }
+}

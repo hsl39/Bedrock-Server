@@ -1,0 +1,35 @@
+{
+  "format_version": "1.16.100",
+  "sound_definitions": {
+    "random.wyvern.hurt": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/wyvern/hurt"
+      ]
+    },
+    "random.wyvern.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/wyvern/death"
+      ]
+    },
+    "random.wyvern.roar": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/wyvern/roar"
+      ]
+    },
+    "random.wyvern.say": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/wyvern/say"
+      ]
+    },
+    "random.wyvern.attack": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/wyvern/attack"
+      ]
+    }
+  }
+}

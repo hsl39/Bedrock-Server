@@ -1,0 +1,58 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.item_animated_true.vision": {
+			"loop": true,
+			"bones": {
+			  "rightitem": {
+				"position": [ 
+				  "c.is_first_person ? 0.15 : 0.0",
+				  "c.is_first_person ? -6 : -5.0",
+				  "c.is_first_person ? 2.0 : -6.0"
+				],
+				"rotation": [ 
+				  "c.is_first_person ? -13.0 : 0.0",
+				  "c.is_first_person ? 68.0 : 0.0",
+				  "c.is_first_person ? -50.0 : 0.0"
+				]
+			  }
+			}
+		  },
+		"animation.kama_yari.3": {
+			"loop": true,
+			"bones": {
+				"spear": {
+					"rotation": [88.56544, 2.04767, -125.02564],
+					"position": [0, -5.05, -26]
+				}
+			}
+		},
+		"animation.kama_yari.1": {
+			"loop": true,
+			"bones": {
+				"spear": {
+					"rotation": [168.25331, 24.05076, -16.42286],
+					"position": [-6, -17, -4]
+				}
+			}
+		},
+		"animation.landsknecht.3": {
+			"loop": true,
+			"bones": {
+				"spear": {
+					"rotation": [88.56544, 2.04767, -125.02564],
+					"position": [0, -4.8, -14]
+				}
+			}
+		},
+		"animation.landsknecht.1": {
+			"loop": true,
+			"bones": {
+				"spear": {
+					"rotation": [168.25331, 24.05076, -16.42286],
+					"position": [-4, -5, 0]
+				}
+			}
+		}
+	}
+}

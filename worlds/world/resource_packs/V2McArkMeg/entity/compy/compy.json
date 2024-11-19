@@ -1,0 +1,60 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:compy",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"compy1": "textures/compy/variant1",
+				"compy2": "textures/compy/variant2",
+				"compy3": "textures/compy/variant3",
+				"compy4": "textures/compy/variant4",
+				"compy5": "textures/compy/variant5",
+				"compy6": "textures/compy/variant6"
+			},
+			"geometry": { 
+				"default": "geometry.compy"
+			},
+	"sound_effects": {
+	"hurt_sound": "mob.compy_mc_ark",
+	"idle_sound": "mob.compy_mc_ark"
+	},
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.compy.general",
+				"idle": "animation.compy.idle",
+				"walk": "animation.compy.walk", 
+				"run": "animation.compy.run",
+				"sitting": "animation.compy.sitting",
+				"swimming": "animation.compy.swimming",
+				"attack": "animation.compy.attack",
+				"sleep": "animation.compy.sleep", 
+				"muerto": "animation.compy.muerto",
+				"walk_controller":
+				"controller.animation.general.walk_and_swimming_mc_ark"
+			},
+			"scripts": {
+				"animate": [
+{
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+							
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.compy"
+			],
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index": 3
+      }
+		}
+	}
+}

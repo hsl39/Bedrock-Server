@@ -1,0 +1,38 @@
+//bridge-file-version: #19
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:boar",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/boara",
+				"baby": "textures/models/boarb"
+			},
+			"geometry": {
+				"default": "geometry.boar"
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"walk": "animation.quadruped.walk"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target"
+				]
+			},
+			"render_controllers": [
+				"controller.render.jabali"
+			],
+			"spawn_egg": {
+				"base_color": "#E16941",
+				"overlay_color": "#8B7B6E"
+			}
+		}
+	}
+}

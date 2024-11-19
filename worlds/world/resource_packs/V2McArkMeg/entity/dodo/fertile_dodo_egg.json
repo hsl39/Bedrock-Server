@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:fertile_dodo_egg",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/dodo/egg/variant1"
+ 
+			},
+			"geometry": {
+				"default": "geometry.fertile_dodo_egg"
+			},
+			"animations": { 
+				"spawn": "animation.fertile_dodo_egg.spawn",
+				"static": "animation.fertile_dodo_egg.static"
+			},
+			"scripts": {
+        "scale": "1.2",
+				"animate": [
+				    "spawn",
+				    "static"
+				]
+			},
+			"render_controllers": [
+				"controller.render.cow"
+			],
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index": 1
+      }
+		}
+	}
+}

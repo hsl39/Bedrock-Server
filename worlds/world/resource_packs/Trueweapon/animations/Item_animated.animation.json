@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.tw.item_animated_true.vision": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"position": ["c.is_first_person ? 0.15 : 0.0", "c.is_first_person ? -6 : -5.0", "c.is_first_person ? 2.0 : -6.0"],
+					"rotation": ["c.is_first_person ? -13.0 : 0.0", "c.is_first_person ? 68.0 : 0.0", "c.is_first_person ? -50.0 : 0.0"]
+				}
+			}
+		},
+		"animation.tw.16x16.vision": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"position": ["c.is_first_person ? 0.15 : 0.0", "c.is_first_person ? 3.5 : 0.0", "c.is_first_person ? 2.0 : 0.0"],
+					"rotation": ["c.is_first_person ? -13.0 : 0.0", "c.is_first_person ? 68.0 : 0.0", "c.is_first_person ? -50.0 : 0.0"]
+				}
+			}
+		},
+		"animation.tw.20x20.vision": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": ["c.is_first_person ? -13.0 : 0.0", "c.is_first_person ? 68.0 : 0.0", "c.is_first_person ? -50.0 : 0.0"],
+					"position": ["c.is_first_person ? 0 : 1", "c.is_first_person ? 0 : -2", "c.is_first_person ? 0 : -5"]
+				}
+			}
+		}
+	}
+}

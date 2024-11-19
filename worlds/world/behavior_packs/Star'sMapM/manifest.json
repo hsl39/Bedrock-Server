@@ -1,0 +1,32 @@
+{
+    "format_version": 2,
+
+    "header": {
+        "description": "§dA Banner Map Markers addon by §e@ayy_star",
+        "name": "§6Star's Map Markers §eV1.21.3",
+        "uuid": "d58a588d-c6f3-43ca-8e05-f4fe143736f0",
+        "version": [1, 21, 3],
+        "min_engine_version": [ 1, 21, 2 ]
+    },
+
+    "modules": [
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "ade05bd7-5de7-4e85-b23d-fb81a179a6c6",
+            "version": [0, 0, 1],
+            "entry": "scripts/main.js"
+        }
+    ],
+
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.14.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.2.0"
+        }
+    ]
+}

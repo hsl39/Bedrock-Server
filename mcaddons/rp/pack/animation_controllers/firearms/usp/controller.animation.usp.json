@@ -1,0 +1,375 @@
+// Coded by @JustAsh0005 for ActualGuns3D, you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.usp.first_person": {
+			"initial_state": "draw",
+			"states" : {
+				"draw": {
+					"animations": [
+						{
+							"usp.first_person.draw": "v.usp && v.is_first_person"
+						}
+					],
+					"transitions": [
+						{
+							"first_person": "q.all_animations_finished && v.usp && v.is_first_person"
+						}
+					]
+				},
+				"first_person" : {
+					"animations" : [
+						{ 
+						    "usp.first_person.holding": "v.is_first_person && v.usp"
+						}
+					],
+					"transitions" : [
+						{
+							"aim": "v.is_first_person && v.usp && v.s"
+						},
+						{
+							"sprinting": "v.is_first_person && v.usp && v.m && !v.r"
+						},
+						{
+							"reloading": "v.is_first_person && v.is_holding_uspempty && v.r"
+						},
+						{
+							"firing": "v.is_first_person && v.is_holding_usp && v.u"
+						},
+						{
+							"draw": "!v.usp || v.is_third_person"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"firing": {
+					"animations": [
+						{
+							"usp.first_person.fire": "v.is_first_person && v.is_holding_usp"
+						}
+					],
+					"transitions": [
+						{
+							"first_person": "v.is_holding_uspempty && v.is_first_person"
+						},
+						{
+							"draw": "!v.usp || v.is_third_person"
+						},
+						{
+							"first_person": "v.is_first_person && v.usp && v.s"
+						},
+						{
+							"firing.delay": "v.is_first_person && v.is_holding_usp && q.all_animations_finished"
+						}
+					]
+				},
+				"firing.delay": {
+					"on_entry": [ "v.t = q.life_time;" ],
+					"animations": [
+						{
+							"usp.first_person.holding": "v.is_first_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"firing": "(q.life_time - v.t) >= 0.00001 && v.is_holding_usp && v.u"
+						},
+						{
+							"first_person": "v.is_first_person && (!v.is_holding_usp || v.is_holding_uspempty) || !v.u"
+						},
+						{
+							"draw": "!v.usp || v.is_third_person"
+						}
+					]
+				},
+				"firing.aimed": {
+					"animations": [
+						{
+							"usp.first_person.aim_fire": "v.is_first_person && v.is_holding_usp"
+						}
+					],
+					"transitions": [
+						{
+							"aim": "v.is_holding_uspempty && v.is_first_person"
+						},
+						{
+							"draw": "!v.usp || v.is_third_person"
+						},
+						{
+							"aim": "v.is_first_person && v.usp && !v.s"
+						},
+						{
+							"firing.delay.aimed": "v.is_first_person && v.is_holding_usp && q.all_animations_finished"
+						}
+					]
+				},
+				"firing.delay.aimed": {
+					"on_entry": [ "v.t = q.life_time;" ],
+					"animations": [
+						{
+							"usp.first_person.aim": "v.is_first_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"firing.aimed": "(q.life_time - v.t) >= 0.00001 && v.is_holding_usp && v.u"
+						},
+						{
+							"aim": "v.is_first_person && (!v.is_holding_usp || v.is_holding_uspempty) || !v.u"
+						},
+						{
+							"draw": "!v.usp || v.is_third_person"
+						}
+					]
+				},
+				"reloading": {
+					"animations": [
+						{
+							"usp.first_person.reload": "v.is_first_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"draw": "!v.usp || v.is_third_person"
+						},
+						{
+							"first_person": "q.all_animations_finished && !v.r && v.usp"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"sprinting": {
+					"animations": [
+						{
+							"usp.first_person.sprinting": "v.is_first_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"draw": "!v.usp || v.is_third_person"
+						},
+						{
+							"aim": "v.is_first_person && v.usp && v.s"
+						},
+						{
+							"first_person": "v.is_first_person && v.usp && !v.m"
+						},
+						{
+							"reloading": "v.is_first_person && v.is_holding_uspempty && v.r"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"aim": {
+					"animations": [
+						{
+							"usp.first_person.aim": "v.is_first_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"first_person": "v.is_first_person && v.usp && !v.s"
+						},
+						{
+							"draw": "!v.usp || v.is_third_person"
+						},
+						{
+							"firing.aimed": "v.is_first_person && v.is_holding_usp && v.u && v.s"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"controller.animation.usp.third_person": {
+			"initial_state": "draw",
+			"states" : {
+				"draw": {
+					"animations": [
+						{
+							"usp.third_person.draw": "v.usp && v.is_third_person"
+						}
+					],
+					"transitions": [
+						{
+							"third_person": "q.all_animations_finished && v.usp && v.is_third_person"
+						}
+					]
+				},
+				"third_person" : {
+					"animations" : [
+						{ 
+						    "usp.third_person.holding": "v.is_third_person && v.usp"
+						}
+					],
+					"transitions" : [
+						{
+							"aim": "v.is_third_person && v.usp && v.s"
+						},
+						{
+							"sprinting": "v.is_third_person && v.usp && v.m && !v.r"
+						},
+						{
+							"reloading": "v.is_third_person && v.is_holding_uspempty && v.r"
+						},
+						{
+							"firing": "v.is_third_person && v.is_holding_usp && v.u"
+						},
+						{
+							"draw": "!v.usp || v.is_first_person"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"firing": {
+					"animations": [
+						{
+							"usp.third_person.fire": "v.is_third_person && v.is_holding_usp"
+						}
+					],
+					"transitions": [
+						{
+							"third_person": "v.is_holding_uspempty && v.is_third_person"
+						},
+						{
+							"draw": "!v.usp || v.is_first_person"
+						},
+						{
+							"third_person": "v.is_third_person && v.usp && v.s"
+						},
+						{
+							"firing.delay": "v.is_third_person && v.is_holding_usp && q.all_animations_finished"
+						}
+					]
+				},
+				"firing.delay": {
+					"on_entry": [ "v.t = q.life_time;" ],
+					"animations": [
+						{
+							"usp.third_person.holding": "v.is_third_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"firing": "(q.life_time - v.t) >= 0.00001 && v.is_holding_usp && v.u"
+						},
+						{
+							"third_person": "v.is_third_person && (!v.is_holding_usp || v.is_holding_uspempty) || !v.u"
+						},
+						{
+							"draw": "!v.usp || v.is_first_person"
+						}
+					]
+				},
+				"firing.aimed": {
+					"animations": [
+						{
+							"usp.third_person.aim_fire": "v.is_third_person && v.is_holding_usp"
+						}
+					],
+					"transitions": [
+						{
+							"aim": "v.is_holding_uspempty && v.is_third_person"
+						},
+						{
+							"draw": "!v.usp || v.is_first_person"
+						},
+						{
+							"aim": "v.is_third_person && v.usp && !v.s"
+						},
+						{
+							"firing.delay.aimed": "v.is_third_person && v.is_holding_usp && q.all_animations_finished"
+						}
+					]
+				},
+				"firing.delay.aimed": {
+					"on_entry": [ "v.t = q.life_time;" ],
+					"animations": [
+						{
+							"usp.third_person.aim": "v.is_third_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"firing.aimed": "(q.life_time - v.t) >= 0.00001 && v.is_holding_usp && v.u"
+						},
+						{
+							"aim": "v.is_third_person && (!v.is_holding_usp || v.is_holding_uspempty) || !v.u"
+						},
+						{
+							"draw": "!v.usp || v.is_first_person"
+						}
+					]
+				},
+				"reloading": {
+					"animations": [
+						{
+							"usp.third_person.reload": "v.is_third_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"draw": "!v.usp || v.is_first_person"
+						},
+						{
+							"third_person": "q.all_animations_finished && !v.r && v.usp"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"sprinting": {
+					"animations": [
+						{
+							"usp.third_person.sprinting": "v.is_third_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"draw": "!v.usp || v.is_first_person"
+						},
+						{
+							"aim": "v.is_third_person && v.usp && v.s"
+						},
+						{
+							"third_person": "v.is_third_person && v.usp && !v.m"
+						},
+						{
+							"reloading": "v.is_third_person && v.is_holding_uspempty && v.r"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"aim": {
+					"animations": [
+						{
+							"usp.third_person.aim": "v.is_third_person && v.usp"
+						}
+					],
+					"transitions": [
+						{
+							"third_person": "v.is_third_person && v.usp && !v.s"
+						},
+						{
+							"draw": "!v.usp || v.is_first_person"
+						},
+						{
+							"firing.aimed": "v.is_third_person && v.is_holding_usp && v.u && v.s"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}
+
+// This code is exclusive to ActualGuns3D and can not be used by anybody else.

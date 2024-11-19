@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "diamond_knife"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A",
+			"B"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"A": {
+				"item": "minecraft:diamond"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:diamond"
+			}
+		],
+		"result": [
+			{
+				"item": "true:diamond_knife"
+			}
+		]
+	}
+}

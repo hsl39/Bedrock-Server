@@ -1,0 +1,23 @@
+{
+	"file_path": "C:\\Users\\elcha\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Raiyon'sGl\\functions\\tick.json",
+	"file_type": "function_tick",
+	"format_version": 1,
+	"file_uuid": "ada45da0_4dca_4f9e_8136_0bb50002e4cd",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"values": [
+						"ore_replace_raiyon"
+					]
+				},
+				"key": "values",
+				"is_minified": true,
+				"children": [
+					"ore_replace_raiyon"
+				]
+			}
+		]
+	}
+}

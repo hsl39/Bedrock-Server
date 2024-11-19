@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"gabrielaplok:grip"},"tags":["crafting_table"],"pattern":["AAA","BAA"],"key":{"A":{"item":"gabrielaplok:gunmetal_ingot"},"B":{"item":"minecraft:lever"}},"unlock":[{"item":"gabrielaplok:gunmetal_ingot"}],"result":{"item":"gabrielaplok:grip"}}}

@@ -1,0 +1,190 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    
+    "animation.torpor_wooden_club_mc_ark_animation": {
+     "animation_length":0.7,
+      "loop": false,
+      "timeline": { 
+        "0.5": [ 
+"variable.torpor = variable.torpor - 1.0;"
+            ]    
+      }       
+    },  
+    "animation.torpor_bow_mc_ark_animation": {
+     "animation_length":2.6,
+      "loop": false,
+      "timeline": { 
+        "0.00": [ 
+"variable.torpor = variable.torpor - 2.0;"
+            ],   
+        "1.5": [ 
+"variable.torpor = variable.torpor - 2.0;"
+            ]   
+      }         
+    },   
+    "animation.torpor_crossbow_mc_ark_animation": {
+     "animation_length":0.3, 
+      "loop": false,  
+      "timeline": {    
+        "0.0": [   
+            "/effect @s weakness 0 253 true",
+"variable.torpor = variable.torpor - 8.0;"
+            ] 
+      }        
+    },  
+      
+    "animation.detect_and_fly": {
+     "animation_length": 10.4, 
+      "loop": true,   
+      "timeline": { 
+        "3.0": [  
+                "/execute @s ~~~ detect ~~-1~ water 0 event entity @s minecraft:fly_salvaje_piso",
+"/execute @e[r=6] ~~~ event entity @s minecraft:fly_salvaje_piso" 
+            ]
+      }
+    },   
+      
+    "animation.pteradon_salvaje_random_fly_suelo": {
+     "animation_length": 10.4, 
+      "loop": true, 
+      "timeline": { 
+        "10.0": [ 
+       "@s minecraft:random_fly_salvaje_suelo"
+            ]
+      }
+    }, 
+    "animation.pteradon_salvaje_random_fly_air": {
+     "animation_length": 10.4, 
+      "loop": true, 
+      "timeline": { 
+        "10.0": [ 
+       "@s minecraft:random_fly_salvaje_air"
+            ]
+      }
+    }, 
+      
+    "animation.remove_ataque_normal_pteradon": {
+     "animation_length": 0.36, 
+      "loop": true, 
+      "timeline": { 
+          "0.1":[ 
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 7 entity_attack entity @s",
+     
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      } 
+    },  
+ 
+
+    "animation.velocidad_0_pteranodon": {
+     "animation_length": 0.4,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+    "/effect @s levitation 0 254 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_1_pteranodon": {
+      "animation_length": 1.0, 
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 5 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 6 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 9 true",
+            
+        "/effect @s levitation 1 0 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_2_pteranodon": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 5 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 6 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 10 true",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 0 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 0 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 1 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 1 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 2 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 2 true",
+            
+
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_3_pteranodon": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [ 
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 6 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 10 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 11 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 12 true",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 2 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 2 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 3 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 4 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 4 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 5 true",
+            
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },  
+    "animation.velocidad_4_pteranodon": {
+      "animation_length": 0.2,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 10 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 11 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 12 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 12 true",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 5 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 5 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 6 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 7 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 8 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 9 true",
+            
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    }
+  } 
+}

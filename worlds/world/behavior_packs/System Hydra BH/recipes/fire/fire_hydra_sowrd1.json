@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:fire_hydra_sword1"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A",
+      "A",
+      "P"
+    ],
+    "key": {
+      "A": {
+        "item": "new:fire_hydra_scale"
+      },
+      "P": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "new:fire_hydra_sword1"
+    }
+  }
+}

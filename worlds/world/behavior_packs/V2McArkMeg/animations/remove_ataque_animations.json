@@ -1,0 +1,561 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+      
+    "animation.remove_ataque_normal_carcharodontosaurus_mc_ark": {  
+     "animation_length": 0.36, 
+      "loop": true,   
+      "timeline": {      
+          "0.00":[   
+    "/tag @s add esperando_jssd23",
+						"/execute @p[tag=!in_attack,r=6] ~~~ tag @s add in_attack"
+              ],   
+          "0.10":[   
+              "/execute @s[tag=carcha_hability_lvl1] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl2] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl3] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl4] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl5] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl6] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl7] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl8] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl9] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              "/execute @s[tag=carcha_hability_lvl10] ~~~ tag @p[r=8] add mostrarpuntos_r",
+              
+              "/execute @s[tag=carcha_hability_lvl1] ~~~ effect @s speed 5 1 true", 
+              "/execute @s[tag=carcha_hability_lvl2] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl3] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl4] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl5] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl6] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl7] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl8] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl9] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl10] ~~~ effect @s speed 5 1 true",
+              
+              
+"/execute @s[tag=carcha_hability_lvl1] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_1_text" ,
+"/execute @s[tag=carcha_hability_lvl2] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_2_text" ,
+"/execute @s[tag=carcha_hability_lvl3] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_3_text" ,
+"/execute @s[tag=carcha_hability_lvl4] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_4_text" ,
+"/execute @s[tag=carcha_hability_lvl5] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_5_text" ,
+"/execute @s[tag=carcha_hability_lvl6] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_6_text" ,
+"/execute @s[tag=carcha_hability_lvl7] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_7_text" ,
+"/execute @s[tag=carcha_hability_lvl8] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_8_text" ,
+"/execute @s[tag=carcha_hability_lvl9] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_9_text" ,
+"/execute @s[tag=carcha_hability_lvl10] ~~~ title @p[r=8,tag=in_attack] title carcha_bar_10_text" ,
+
+
+              "/execute @s[tag=carcharodontosaurus_wild] ~~~ execute @e[r=8, family=cadaver_pq, tag=by_player] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:puntos_animales_pequenos",
+ 
+
+            
+
+              "/execute @s[tag=carcharodontosaurus_wild] ~~~ execute @e[r=8, family=cadaver_md, tag=by_player] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:puntos_animales_medianos",
+              
+
+              "/execute @s[tag=carcharodontosaurus_wild] ~~~ execute @e[r=8, family=cadaver_gd, tag=by_player] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:puntos_animales_grandes",
+              
+
+              "/execute @s[tag=carcharodontosaurus_wild] ~~~ execute @e[r=8, family=cadaver_egd, tag=by_player] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:puntos_animales_extra_grandes",
+              
+              
+              "/execute @s[tag=carcharodontosaurus_wild] ~~~ execute @e[r=8, family=cadaver] ~~~ kill @s", 
+              
+  "/effect @s slowness 100 100 true",
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 16 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 16 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 17 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 18 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 18 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 20 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ], 
+           "0.20":[
+    "/execute @s[tag=carcha_hability_lvl1] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl2] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+ 
+    "/execute @s[tag=carcha_hability_lvl3] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl3] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl4] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl4] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s"
+               ], 
+        "0.30": [  
+             
+    "/tag @s remove esperando_jssd23",
+              "/tag @p[r=6] remove in_attack",
+            "/tag @s remove in_attack",
+
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true"
+            ] 
+      } 
+    }, 
+       
+    "animation.remove_ataque_normal_therizino_mc_ark": {
+     "animation_length": 0.36, 
+      "loop": true, 
+      "timeline": {  
+          "0.1":[ 
+  "/effect @s slowness 100 100 true",
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 8 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 9 entity_attack entity @s",
+ 
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 10 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 10 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 12 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=8] 12 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],
+        "0.30": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true"
+            ]
+      }
+    }, 
+      
+    "animation.remove_ataque_normal_yutyrannus_mc_ark": {
+     "animation_length": 0.39, 
+      "loop": true, 
+      "timeline": { 
+          "0.1":[ 
+  "/effect @s slowness 100 100 true",
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 8 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 9 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 10 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 11 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],
+        "0.30": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true"
+            ]
+      }
+    }, 
+  "animation.remove_ataque_especial_yutyrannus_mc_ark": {
+   "animation_length": 4.4,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[   
+       "@s minecraft:in_attack_especial",
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+
+              "/tag @s add in_attack" 
+            ],  
+      "4.0": [ 
+            "/tag @p[r=5] remove in_attack",
+            
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true",
+       "@s minecraft:remove_ataque_especial_whip"
+          ]
+       }
+      },
+      
+    "animation.remove_ataque_normal_allosaurus_mc_ark": {
+     "animation_length": 0.39, 
+      "loop": true, 
+      "timeline": { 
+          "0.1":[ 
+  "/effect @s slowness 100 100 true",
+            "/tag @s add attacking",
+    "/execute @s ~~~ effect @e[type=!item, tag=!in_attack ,r=6] wither 15 0 true",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 10 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 13 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 14 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 15 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],
+        "0.30": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true"
+            ]
+      }
+    }, 
+  "animation.remove_ataque_especial_allosaurus_mc_ark": {
+   "animation_length": 4.4,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[   
+       "@s minecraft:in_attack_especial",
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+
+              "/tag @s add in_attack" 
+            ],  
+      "4.0": [ 
+            "/tag @p[r=5] remove in_attack",
+            
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true",
+       "@s minecraft:remove_ataque_especial_whip"
+          ]
+       }
+      },
+      
+
+    "animation.remove_ataque_normal_spinosaurus_mc_ark": {
+     "animation_length": 0.36, 
+      "loop": true, 
+      "timeline": {  
+          "0.10":[ 
+  "/effect @s slowness 100 100 true",
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 13 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 14 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 16 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 17 entity_attack entity @s", 
+                "/tag @s add in_attack"
+              ],
+        "0.30": [   
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true"
+            ]
+      }
+    }, 
+ 
+    "animation.remove_ataque_normal_parasaurus": {
+     "animation_length": 1.4, 
+      "loop": true, 
+      "timeline": {   
+          "0.4":[
+              "/playsound mob.ravager.bite @a[r=8]",
+            "/tag @s add attacking",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "0.9": [ 
+            "/tag @s remove attacking"
+            ] ,
+        "1.2": [ 
+            "@s minecraft:remove_ataque_normal"
+            ] 
+      }
+    }, 
+
+
+  "animation.remove_ataque_especial_parasaurus": {
+   "animation_length": 3.9,  
+    "loop": false,  
+    "timeline": {
+        "0.0":[  
+            "/playsound mob.parasaurus_mc_ark.alert @a[r=5]" ,
+       "@s minecraft:in_attack_especial",
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+              "/tag @s add in_attack" ,
+              "/execute @e[family=zombie, r=45] ~~~ particle mc_ark:parasaurus_s",
+              "/execute @e[family=spider, r=45] ~~~ particle mc_ark:parasaurus_s",
+              "/execute @e[family=skeleton, r=45] ~~~ particle mc_ark:parasaurus_s",
+              "/execute @e[family=creeper, r=45] ~~~ particle mc_ark:parasaurus_s",
+              "/execute @e[family=criatura_salvaje, r=45,tag=!tamed] ~~~ particle mc_ark:parasaurus_s",
+              "/execute @e[family=wild_adult, r=45] ~~~ particle mc_ark:parasaurus_s", 
+              "/execute @e[type=player, r=45,tag=!in_attack] ~~~ particle mc_ark:parasaurus_s"
+            ],   
+      "3.5": [  
+            "/tag @p[r=5] remove in_attack",
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true",
+       "@s minecraft:remove_ataque_especial_whip"
+          ]
+       }
+      },
+      
+    "animation.remove_ataque_normal_tyranosaurus_rex_mc_ark": {
+     "animation_length": 0.36, 
+      "loop": true, 
+      "timeline": { 
+          "0.1":[ 
+  "/effect @s slowness 100 100 true",
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 10 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 10 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 11 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 11 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 14 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true"
+            ]
+      }
+    }, 
+  "animation.remove_ataque_especial_tyranosaurus_rex_mc_ark": {
+   "animation_length": 3.9,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[   
+       "@s minecraft:in_attack_especial",
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+              "/tag @s add in_attack" 
+            ],  
+      "3.5": [ 
+            "/tag @p[r=5] remove in_attack",
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true",
+       "@s minecraft:remove_ataque_especial_whip"
+          ]
+       }
+      },
+
+      
+    "animation.remove_ataque_normal_raptor_mc_ark": {
+     "animation_length": 0.36, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!in_attack ,r=2] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!in_attack ,r=2] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!in_attack ,r=2] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=2] 7 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!in_attack ,r=2] 8 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=2] 10 entity_attack entity @s",
+    
+                "/tag @s add in_attack",
+  "/playsound sound.raptor_attacksound @a[r=16]"
+              ], 
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    }, 
+  "animation.remove_ataque_especial_raptor_mc_ark": {
+   "animation_length": 1.4,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[  
+       "@s minecraft:in_attack_especial",
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+              "/tag @s add in_attack" 
+            ],  
+        "0.3":[   
+  "/tp @e[type=!item, tag=!in_attack , r=5] ~~-0.85~" 
+            ],  
+                    "0.4": [ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 2 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 2 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    
+    "/execute @s[tag=alfa] ~~~ damage @e[type=!item, tag=!in_attack , r=4] 7 entity_attack entity @s",
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 2"
+          ],  
+                    "0.6": [ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 2 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 2 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 2"
+          ],  
+                    "0.75": [ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 2 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 2 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 2"
+          ],  
+      "1.2": [ 
+            "/tag @p[r=5] remove in_attack",
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true",
+       "@s minecraft:remove_ataque_especial_whip"
+          ]
+       }
+      },
+      
+  "animation.remove_ataque_especial_wyvern_mc_ark": {
+   "animation_length": 1.4,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[  
+       "@s minecraft:in_attack_especial",
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+              "/tag @s add in_attack" 
+            ],  
+      "1.2": [ 
+            "/tag @p[r=5] remove in_attack",
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+  "/effect @s slowness 0 101 true",
+       "@s minecraft:remove_ataque_especial_whip"
+          ]
+       }
+      },
+
+    "animation.remove_ataque_normal_fire_wyvern_mc_ark": {
+     "animation_length": 1.4, 
+      "loop": true, 
+      "timeline": {   
+          "0.4":[
+              "/playsound mob.ravager.bite @a[r=8]",
+            "/tag @s add attacking",
+    "/damage @e[type=!item, tag=!in_attack , r=4] 18 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "0.9": [ 
+            "/tag @s remove attacking"
+            ] ,
+        "1.2": [ 
+            "@s minecraft:remove_ataque_normal"
+            ] 
+      }
+    }, 
+      
+    "animation.remove_ataque_normal_ice_wyvern_mc_ark": {
+     "animation_length": 1.4, 
+      "loop": true, 
+      "timeline": { 
+          "0.4":[
+              "/playsound mob.ravager.bite @a[r=8]",
+            "/tag @s add attacking",
+    "/damage @e[type=!item, tag=!in_attack , r=4] 15 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "0.9": [ 
+            "/tag @s remove attacking"
+            ] ,
+        "1.2": [ 
+            "@s minecraft:remove_ataque_normal"
+            ] 
+      }
+    },
+    "animation.remove_ataque_normal_poison_wyvern_mc_ark": {
+     "animation_length": 1.6,
+      "loop": true,
+      "timeline": { 
+          "0.0":[
+              "/playsound mob.ravager.bite @a[r=8]",
+    "/damage @e[type=!item, tag=!in_attack , r=4] 10 entity_attack entity @s",
+    "/effect @e[type=!item, tag=!in_attack , r=4] poison 10 1",
+            "/execute @e[type=!item, tag=!in_attack,r=4] ~~~ particle mc_ark:particle_wyvern_poison_proyectil ~~1~",
+            "/tag @s add attacking",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "1.2": [ 
+            "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ] 
+      }
+    }, 
+    
+    "animation.remove_ataque_normal_wyvern_electric_mc_ark": {
+     "animation_length": 1.6,
+      "loop": true,
+      "timeline": { 
+          "0.0":[
+              "/playsound mob.ravager.bite @a[r=8]",
+    "/damage @e[type=!item, tag=!in_attack , r=4] 25 entity_attack entity @s",
+            "@s minecraft:summon_lightning",
+            "/execute @e[type=!item, tag=!in_attack,r=4] ~~~ particle mc_ark:particle_wyvern_lightning_proyectil ~~1~",
+            "/tag @s add attacking",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "1.2": [ 
+            "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ] 
+      }
+    }
+  } 
+}

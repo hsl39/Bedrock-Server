@@ -1,0 +1,20 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "mocreatures:vanilla_wool"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "mocreatures:fur"
+			}
+		],
+		"result": {
+			"item": "minecraft:white_wool",
+			"count": 1
+		}
+	}
+}

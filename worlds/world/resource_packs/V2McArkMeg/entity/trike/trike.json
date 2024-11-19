@@ -1,0 +1,59 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:trike",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"trike1": "textures/trike/variant1"
+			},
+			"geometry": {
+				"default": "geometry.trike"
+			},  
+	"sound_effects": {
+	"hurt_sound": "mob.trike.hurt",
+	"idle_sound": "mob.trike.hurt",
+	"attack1_sound": "mob.trike.attack1",
+	"attack2_sound": "mob.trike.attack2"
+	},  
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"attack2_sound": "animation.trike.attack2_sound", 
+				"general": "controller.animation.trike.general",
+				"sitting": "animation.trike.sitting",
+				"idle": "animation.trike.idle",
+				"walk": "animation.trike.walk", 
+				"run": "animation.trike.run",
+				"attack": "animation.trike.attack",
+				"attack2": "animation.trike.cargando",
+				"sleep": "animation.trike.sleep",
+				"muerto": "animation.trike.muerto",
+				"walk_controller":
+				"controller.animation.trike.walk_mc_ark"
+			},
+			"scripts": {
+				"animate": [
+{ 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+				    
+        { "attack2_sound": "query.is_roaring == 1" },
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.trike"
+			],
+"spawn_egg": { 
+        "texture": "mc_ark_eggs",
+        "texture_index": 4
+      }
+		}
+	}
+}

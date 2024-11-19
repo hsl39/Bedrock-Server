@@ -1,0 +1,69 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.plane.spitfire": {
+			"loop": true,
+			"bones": {
+				"wingControl1": {
+					"rotation": ["v.planeRotZ * 0.6", 0, 0]
+				},
+				"wingControl2": {
+					"rotation": ["v.planeRotZ * -0.6", 0, 0]
+				},
+				"lowerTailControl": {
+					"rotation": ["v.lowerTaiControl * -0.6", 0, 0]
+				},
+				"tailControl": {
+					"rotation": [0, "v.planeRotZ * 0.6", 0]
+				}
+			}
+		},
+		"animation.plane.spitfire.shoot": {
+			"animation_length": 0.1,
+			"particle_effects": {
+				"0.0": [
+					{
+						"effect": "muzzle",
+						"locator": "gun1",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun2",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun3",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun4",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun5",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun6",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun7",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun8",
+						"pre_effect_script": "query.body_y_rotation;"
+					}
+				]
+			}
+		}
+	}
+}

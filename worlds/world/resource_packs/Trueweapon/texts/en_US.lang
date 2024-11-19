@@ -1,0 +1,302 @@
+pack.name=§dTrue weapons RP (v1.21)
+pack.description=The Resource Pack for §dTrue weapons§r Add-On by §l§4True Cowboy§r!
+
+tile.advanced_crafting_table.name=Advanced crafting Table
+tile.true:advanced_crafting_table.name=Advanced Crafting Table
+
+item.true:barrier=Without arm
+
+item.true:wooden_barbed_mace=Wooden Barbed Mace
+item.true:stone_barbed_mace=Stone Barbed Mace
+item.true:iron_barbed_mace=Iron Barbed Mace
+item.true:gold_barbed_mace=Gold Barbed Mace
+item.true:diamond_barbed_mace=Diamond Barbed Mace
+item.true:netherite_barbed_mace=Netherite Barbed Mace
+
+item.true:wooden_katana=Wooden Katana
+item.true:stone_katana=Stone Katana
+item.true:gold_katana=Gold Katana
+item.true:iron_katana=Iron Katana
+item.true:diamond_katana=Diamond Katana
+item.true:netherite_katana=Netherite Katana
+
+item.true:wooden_knife=Wooden Knife
+item.true:stone_knife=Stone Knife
+item.true:iron_knife=Iron Knife
+item.true:gold_knife=Gold Knife
+item.true:diamond_knife=Diamond Knife
+item.true:netherite_knife=Netherite Knife
+
+item.true:wooden_claymore=Wooden Claymore
+item.true:stone_claymore=Stone Claymore
+item.true:iron_claymore=Iron Claymore
+item.true:gold_claymore=Gold Claymore
+item.true:diamond_claymore=Diamond Claymore
+item.true:netherite_claymore=Netherite Claymore
+
+item.true:bō=Bō
+
+item.true:tonfa=Tonfa
+
+item.true:tessen_war_fan=Tessen War Fan
+
+item.true:wooden_kama=Wooden Kama
+item.true:gold_kama=Gold Kama
+item.true:stone_kama=Stone Kama
+item.true:iron_kama=Iron Kama
+item.true:diamond_kama=Diamond Kama
+item.true:netherite_kama=Netherite Kama
+
+item.true:wooden_bearded_axe=Wooden Bearbed Axe
+item.true:gold_bearded_axe=Gold Bearbed Axe
+item.true:stone_bearded_axe=Stone Bearbed Axe
+item.true:iron_bearded_axe=Iron Bearbed Axe
+item.true:diamond_bearded_axe=Diamond Bearbed Axe
+item.true:netherite_bearded_axe=Netherite Bearbed Axe
+
+item.true:wooden_dane_axe=Wooden Dane Axe
+item.true:gold_dane_axe=Gold Dane Axe
+item.true:stone_dane_axe=Stone Dane Axe
+item.true:iron_dane_axe=Iron Dane Axe
+item.true:diamond_dane_axe=Diamond Dane Axe
+item.true:netherite_dane_axe=Netherite Dane Axe
+
+item.true:wooden_machete=Wooden Machete
+item.true:gold_machete=Gold Machete
+item.true:stone_machete=Stone Machete
+item.true:iron_machete=Iron Machete
+item.true:diamond_machete=Diamond Machete
+item.true:netherite_machete=Netherite Machete
+
+item.true:wooden_wakizashi=Wooden Wakizashi
+item.true:gold_wakizashi=Gold Wakizashi
+item.true:stone_wakizashi=Stone Wakizashi
+item.true:iron_wakizashi=Iron Wakizashi
+item.true:diamond_wakizashi=Diamond Wakizashi
+item.true:netherite_wakizashi=Netherite Wakizashi
+
+item.true:wooden_ninjatō=Wooden Ninjatō
+item.true:gold_ninjatō=Gold Ninjatō
+item.true:stone_ninjatō=Stone Ninjatō
+item.true:iron_ninjatō=Iron Ninjatō
+item.true:diamond_ninjatō=Diamond Ninjatō
+item.true:netherite_ninjatō=Netherite Ninjatō
+
+item.true:wooden_ōdachi=Wooden ōdachi
+item.true:gold_ōdachi=Gold ōdachi
+item.true:stone_ōdachi=Stone ōdachi
+item.true:iron_ōdachi=Iron ōdachi
+item.true:diamond_ōdachi=Diamond ōdachi
+item.true:netherite_ōdachi=Netherite ōdachi
+item.true:amethyst_ōdachi=Amethyst ōdachi
+
+item.true:wooden_zweihander=Wooden Zweihander
+item.true:gold_zweihander=Gold Zweihander
+item.true:stone_zweihander=Stone Zweihander
+item.true:iron_zweihander=Iron Zweihander
+item.true:diamond_zweihander=Diamond Zweihander
+item.true:netherite_zweihander=Netherite Zweihander
+
+item.true:wooden_seitengewehr=Wooden Seitengewehr
+item.true:gold_seitengewehr=Gold Seitengewehr
+item.true:stone_seitengewehr=Stone Seitengewehr
+item.true:iron_seitengewehr=Iron Seitengewehr
+item.true:diamond_seitengewehr=Diamond Seitengewehr
+item.true:netherite_seitengewehr=Netherite Seitengewehr
+
+entity.true:wakizashi_sweep=Wakizashi Sweep
+entity.heavy:ninjato_sweep=Ninjatō Sweep
+entity.heavy:sweep_odachi=ōdachi Sweep
+entity.heavy:sweep_odachi=ōdachi Sweep
+entity.true:katana_sweep=Katana Sweep
+entity.heavy:fan_attack=Wind cut
+entity.true:bō_sweep=Bō Punch
+
+item.true:wooden_club=Club
+
+item.true:spiked_club=Spiked Club
+
+item.true:iron_bō=Iron Bō
+
+item.true:wooden_lumberjack_axe=Wooden Lumberjack Axe
+item.true:gold_lumberjack_axe=Gold Lumberjack Axe
+item.true:stone_lumberjack_axe=Stone Lumberjack Axe
+item.true:iron_lumberjack_axe=Iron Lumberjack Axe
+item.true:diamond_lumberjack_axe=Diamond Lumberjack Axe
+item.true:netherite_lumberjack_axe=Netherite Lumberjack Axe
+
+item.true:wooden_cyclone_dagger=Wooden Cyclone Dagger
+item.true:gold_cyclone_dagger=Gold Cyclone Dagger
+item.true:stone_cyclone_dagger=Stone Cyclone Dagger
+item.true:iron_cyclone_dagger=Iron Cyclone Dagger
+item.true:diamond_cyclone_dagger=Diamond Cyclone Dagger
+item.true:netherite_cyclone_dagger=Netherite Cyclone Dagger
+
+item.true:wooden_bardiche=Wooden Bardiche
+item.true:gold_bardiche=Gold Bardiche
+item.true:stone_bardiche=Stone Bardiche
+item.true:iron_bardiche=Iron Bardiche
+item.true:diamond_bardiche=Diamond Bardiche
+item.true:netherite_bardiche=Netherite Bardiche
+
+item.true:wooden_gladius=Wooden Gladius
+item.true:gold_gladius=Gold Gladius
+item.true:stone_gladius=Stone Gladius
+item.true:iron_gladius=Iron Gladius
+item.true:diamond_gladius=Diamond Gladius
+item.true:netherite_gladius=Netherite Gladius
+
+item.true:wooden_jaw=Wooden Jaw
+item.true:gold_jaw=Gold Jaw
+item.true:stone_jaw=Stone Jaw
+item.true:iron_jaw=Iron Jaw
+item.true:diamond_jaw=Diamond Jaw
+item.true:netherite_jaw=Netherite Jaw
+
+item.true:punicher=Punisher
+
+item.true:wooden_combat_shovel=Wooden Combat Shovel
+item.true:gold_combat_shovel=Gold Combat Shovel
+item.true:stone_combat_shovel=Stone Combat Shovel
+item.true:iron_combat_shovel=Iron Combat Shovel
+item.true:diamond_combat_shovel=Diamond Combat Shovel
+item.true:netherite_combat_shovel=Netherite Combat Shovel
+
+item.true:wooden_kopesh=Wooden Kopesh
+item.true:gold_kopesh=Gold Kopesh
+item.true:stone_kopesh=Stone Kopesh
+item.true:iron_kopesh=Iron Kopesh
+item.true:diamond_kopesh=Diamond Kopesh
+item.true:netherite_kopesh=Netherite Kopesh
+
+item.true:wooden_falcata=Wooden Falcata
+item.true:gold_falcata=Gold Falcata
+item.true:stone_falcata=Stone Falcata
+item.true:iron_falcata=Iron Falcata
+item.true:diamond_falcata=Diamond Falcata
+item.true:netherite_falcata=Netherite Falcata
+
+item.true:wooden_epee=Wooden Epee
+item.true:gold_epee=Gold Epee
+item.true:stone_epee=Stone Epee
+item.true:iron_epee=Iron Epee
+item.true:diamond_epee=Diamond Epee
+item.true:netherite_epee=Netherite Epee
+
+item.true:wooden_rapier=Wooden Rapier
+item.true:gold_rapier=Gold Rapier
+item.true:stone_rapier=Stone Rapier
+item.true:iron_rapier=Iron Rapier
+item.true:diamond_rapier=Diamond Rapier
+item.true:netherite_rapier=Netherite Rapier
+
+item.true:wooden_pilum=Wooden Pilum
+item.true:gold_pilum=Gold Pilum
+item.true:stone_pilum=Stone Pilum
+item.true:iron_pilum=Iron Pilum
+item.true:diamond_pilum=Diamond Pilum
+item.true:netherite_pilum=Netherite Pilum
+
+item.true:wooden_katzbalger=Wooden Katzbalger
+item.true:gold_katzbalger=Gold Katzbalger
+item.true:stone_katzbalger=Stone Katzbalger
+item.true:iron_katzbalger=Iron Katzbalger
+item.true:diamond_katzbalger=Diamond Katzbalger
+item.true:netherite_katzbalger=Netherite Katzbalger
+
+item.true:wooden_landsknecht_pike=Wooden Landsknecht Pike
+item.true:gold_landsknecht_pike=Gold Landsknecht Pike
+item.true:stone_landsknecht_pike=Stone Landsknecht Pike
+item.true:iron_landsknecht_pike=Iron Landsknecht Pike
+item.true:diamond_landsknecht_pike=Diamond Landsknecht Pike
+item.true:netherite_landsknecht_pike=Netherite Landsknecht Pike
+
+item.true:wooden_sledgehammer=Wooden Sledgehammer
+item.true:gold_sledgehammer=Gold Sledgehammer
+item.true:stone_sledgehammer=Stone Sledgehammer
+item.true:iron_sledgehammer=Iron Sledgehammer
+item.true:diamond_sledgehammer=Diamond Sledgehammer
+item.true:netherite_sledgehammer=Netherite Sledgehammer
+
+item.true:wooden_crowbar=Wooden Crowbar
+item.true:gold_crowbar=Gold Crowbar
+item.true:stone_crowbar=Stone Crowbar
+item.true:iron_crowbar=Iron Crowbar
+item.true:diamond_crowbar=Diamond Crowbar
+item.true:netherite_crowbar=Netherite Crowbar
+
+item.true:wooden_makeshift_spear=Wooden Makeshift Spear
+item.true:gold_makeshift_spear=Gold Makeshift Spear
+item.true:stone_makeshift_spear=Stone Makeshift Spear
+item.true:iron_makeshift_spear=Iron Makeshift Spear
+item.true:diamond_makeshift_spear=Diamond Makeshift Spear
+item.true:netherite_makeshift_spear=Netherite Makeshift Spear
+
+item.true:wooden_jian_sword=Wooden Jian Sword
+item.true:gold_jian_sword=Gold Jian Sword
+item.true:stone_jian_sword=Stone Jian Sword
+item.true:iron_jian_sword=Iron Jian Sword
+item.true:diamond_jian_sword=Diamond Jian Sword
+item.true:netherite_jian_sword=Netherite Jian Sword
+
+item.true:wooden_hammer=Wooden Hammer
+item.true:gold_hammer=Gold Hammer
+item.true:stone_hammer=Stone Hammer
+item.true:iron_hammer=Iron Hammer
+item.true:diamond_hammer=Diamond Hammer
+item.true:netherite_hammer=Netherite Hammer
+
+item.true:wooden_kama_yari=Wooden Kama Yari
+item.true:gold_kama_yari=Gold Kama Yari
+item.true:stone_kama_yari=Stone Kama Yari
+item.true:iron_kama_yari=Iron Kama Yari
+item.true:diamond_kama_yari=Diamond Kama Yari
+item.true:netherite_kama_yari=Netherite Kama Yari
+
+item.true:wooden_scythe=Wooden Scythe
+item.true:gold_scythe=Gold Scythe
+item.true:stone_scythe=Stone Scythe
+item.true:iron_scythe=Iron Scythe
+item.true:diamond_scythe=Diamond Scythe
+item.true:netherite_scythe=Netherite Scythe
+
+item.true:wooden_scimitar=Wooden Scimitar
+item.true:gold_scimitar=Gold Scimitar
+item.true:stone_scimitar=Stone Scimitar
+item.true:iron_scimitar=Iron Scimitar
+item.true:diamond_scimitar=Diamond Scimitar
+item.true:netherite_scimitar=Netherite Scimitar
+
+item.true:wooden_modern_axe=Wooden Modern Axe
+item.true:gold_modern_axe=Gold Modern Axe
+item.true:stone_modern_axe=Stone Modern Axe
+item.true:iron_modern_axe=Iron Modern Axe
+item.true:diamond_modern_axe=Diamond Modern Axe
+item.true:netherite_modern_axe=Netherite Modern Axe
+
+item.yumi:bow=Yumi
+
+trueweapons.amputation.line1= You have lost your arm.
+trueweapons.amputation.line2= You feel a tingling sensation in your left hand.
+trueweapons.amputation.line3= Your arm went for a walk.
+trueweapons.amputation.line4= You no longer have an arm; it's better to flee.
+trueweapons.amputation.line5= You feel an incredible pain.
+
+trueweapons.broken_bone.line1= You feel your bones crunching.
+trueweapons.broken_bone.line2= One of your bones has broken.
+trueweapons.broken_bone.line3= That hurt; your bones start to crunch.
+trueweapons.broken_bone.line4= You have taken a severe blow.
+trueweapons.broken_bone.line5= You have lost some strength.
+
+trueweapons.contusion.line1= A bruise!
+trueweapons.contusion.line2= Pain invades your head.
+trueweapons.contusion.line3= Don't go towards the light!
+trueweapons.contusion.line4= It's better to take cover.
+
+trueweapons.bleeding.line1= You are bleeding.
+trueweapons.bleeding.line2= You feel the blood flowing through your body.
+trueweapons.bleeding.line3= It's better not to move.
+trueweapons.bleeding.line4= It's better to slip away.
+
+trueweapons.terror.line4=A presence is lurking.
+trueweapons.weight.line=Very heavy!

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "twm:wrench",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "twm_wrench",
+			"minecraft:display_name": {
+				"value": "Wrench\n§7Uses\n- Removes the upgrades from machines\n- Removes vehicles"
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": 2
+		}
+	}
+}

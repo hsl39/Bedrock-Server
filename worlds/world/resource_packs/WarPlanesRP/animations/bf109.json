@@ -1,0 +1,44 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.plane.bf109": {
+			"loop": true,
+			"bones": {
+				"wingControl": {
+					"rotation": ["v.planeRotZ * 0.6", 0, 0]
+				},
+				"wingControl2": {
+					"rotation": ["v.planeRotZ * -0.6", 0, 0]
+				},
+				"lowerTailControl": {
+					"rotation": ["v.lowerTaiControl * -0.6", 0, 0]
+				},
+				"tailControl": {
+					"rotation": [0, "v.planeRotZ * 0.6", 0]
+				}
+			}
+		},
+		"animation.plane.bf109.shoot": {
+			"animation_length": 0.1,
+			"particle_effects": {
+				"0.0": [
+					{
+						"effect": "muzzle",
+						"locator": "gun1",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun2",
+						"pre_effect_script": "query.body_y_rotation;"
+					},
+					{
+						"effect": "muzzle",
+						"locator": "gun3",
+						"pre_effect_script": "query.body_y_rotation;"
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§l§nCreator Info§r\n   §2Mcpedl: L4ggcrafter\n   §4Youtube: ned2z§r",
+    "name": "WW2 War Planes Beta 0.3",
+    "uuid": "4b722612-194f-413c-b582-eccb4632f87b",
+		"version": [0, 1, 2],
+        "min_engine_version": [ 1, 21, 0 ]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "data",
+      "uuid": "e9205560-475b-410a-8c93-3405288ba036",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "type": "script",
+      "uuid": "14b067ef-e4a3-4339-bcb7-bed9727bdf53",
+      "version": [
+        1,
+        1,
+        0
+      ],
+      "entry": "scripts/Main.js"
+    }
+  ],
+  "dependencies": [
+      {
+        "module_name": "@minecraft/server",
+        "version": "1.13.0"
+      },
+{
+    "module_name": "@minecraft/server-ui",
+    "version": "1.1.0"
+}
+  ],
+  "capabilities": [
+    "script_eval"
+  ]
+}

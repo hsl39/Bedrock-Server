@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:whip"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+        "",
+      " #",
+      "# X" 
+    ], 
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "mc_ark:whip"
+    }
+  }
+}

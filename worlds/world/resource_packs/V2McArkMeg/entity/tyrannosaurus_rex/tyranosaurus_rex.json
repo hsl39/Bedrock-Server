@@ -1,0 +1,60 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:tyranosaurus_rex",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"tyranosaurus_rex1": "textures/tyranosaurus_rex/variant1"
+			},
+			"geometry": { 
+				"default": "geometry.tyranosaurus_rex"
+			},
+	"sound_effects": {
+	"hurt_sound": "sound.tyranosaurus_rex_hurt_mc_ark",
+	"idle_sound": "sound.idle_sound_tyranosaurus_rex_mc_ark",
+	    
+	"tyranosaurus_rex_attacksound": "sound.tyranosaurus_rex_attacksound",
+	"tyranosaurus_rex_roar": "sound.tyranosaurus_rex_roar"
+	},  
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.tyranosaurus_rex.idle_sound",
+			    
+				"general": "controller.animation.tyranosaurus_rex.general",
+				"idle": "animation.tyranosaurus_rex.idle",
+				"walk": "animation.tyranosaurus_rex.walk", 
+				"run": "animation.tyranosaurus_rex.run",
+				"sitting": "animation.tyranosaurus_rex.sitting",
+				"attack": "animation.tyranosaurus_rex.attack",
+ 
+				"roar": "animation.tyranosaurus_rex.roar",
+				"sleep": "animation.tyranosaurus_rex.sleep",
+				"muerto": "animation.tyranosaurus_rex.muerto",
+				"walk_controller":
+				"controller.animation.general.walk_mc_ark"
+			},
+			"scripts": {
+				"animate": [
+				    
+{ 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+							
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.tyranosaurus_rex"
+			],  
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index":10
+      }
+		}
+	}
+}

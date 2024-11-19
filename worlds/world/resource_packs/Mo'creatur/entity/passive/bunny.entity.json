@@ -1,0 +1,44 @@
+//bridge-file-version: #41
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:bunny",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/bunny",
+				"bunny1": "textures/models/bunnyb",
+				"bunny2": "textures/models/bunnyc",
+				"bunny3": "textures/models/bunnyd",
+				"bunny4": "textures/models/bunnye"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				],
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"walk": "animation.bunny.walk",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"geometry": {
+				"default": "geometry.bunny"
+			},
+			"render_controllers": [
+				"controller.render.bunny"
+			],
+			"spawn_egg": {
+				"base_color": "#C09E7D",
+				"overlay_color": "#8B7B6E"
+			}
+		}
+	}
+}

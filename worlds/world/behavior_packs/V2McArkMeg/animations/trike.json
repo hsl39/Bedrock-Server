@@ -1,0 +1,270 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+      
+    "animation.damage_roar_trike_mc_ark": {
+     "animation_length": 1.8, 
+      "loop": false, 
+      "timeline": {  
+          "0.0":[ 
+    "/execute @s[tag=lvl10, tag=trike_wild] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+    "/execute @s[tag=lvl50, tag=trike_wild] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100, tag=trike_wild] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=6] 14 entity_attack entity @s",
+    "/execute @s[tag=lvl150, tag=trike_wild] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=6] 16 entity_attack entity @s",
+    "/execute @s[tag=lvl200, tag=trike_wild] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=6] 18 entity_attack entity @s", 
+    "/execute @s[tag=lvl250, tag=trike_wild] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=6] 20 entity_attack entity @s", 
+     
+    "/execute @s[tag=lvl10, tag=!trike_wild] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+    "/execute @s[tag=lvl50, tag=!trike_wild] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100, tag=!trike_wild] ~~~ damage @e[type=!item,tag=!in_attack ,r=6] 14 entity_attack entity @s",
+    "/execute @s[tag=lvl150, tag=!trike_wild] ~~~ damage @e[type=!item,tag=!in_attack ,r=6] 16 entity_attack entity @s",
+    "/execute @s[tag=lvl200, tag=!trike_wild] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 18 entity_attack entity @s", 
+    "/execute @s[tag=lvl250, tag=!trike_wild] ~~~ damage @e[type=!item,tag=!in_attack ,r=6] 20 entity_attack entity @s"
+              ]
+      }
+    },    
+   
+    "animation.remove_ataque_normal_trike_mc_ark": {
+     "animation_length": 0.36, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+          "/tag @p[r=5] remove trike_rider_possible_attack",
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=5] 6 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=5] 6 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=5] 7 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=5] 8 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=5] 9 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=5] 10 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+          "/tag @p[r=5] remove trike_rider_possible_attack",
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },   
+  "animation.remove_ataque_especial_trike_mc_ark": {
+   "animation_length": 18.3,  
+    "loop": false,  
+    "timeline": { 
+        "0.0":[  
+       "@s minecraft:in_attack_especial",
+          "/tag @p[r=5] add in_attack_trike",
+          "/tag @s add in_attack_trike",
+          "/tag @p[r=5] add trike_rider_possible_attack",
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+              "/tag @s add in_attack" 
+            ],    
+                    "2.6": [ 
+  "/effect @s slowness 0 101 true",
+          "/tag @s add trike_especial_ataque_cargado" ,
+       "@s minecraft:in_attack_especial2"
+          ],   
+      "2.8": [   
+       "@s minecraft:remove_ataque_especial_whip2",
+      "variable.trike_can_attack = 2.0; return variable.trike_can_attack;",
+          "/tag @s remove attacking"
+          ],
+      "16.0": [ 
+          "/tag @s remove trike_especial_ataque_cargado" ,
+          "/tag @p[r=5] remove trike_rider_possible_attack",
+       "@s minecraft:remove_ataque_especial_whip"
+          ]
+       }
+      }, 
+   
+  "animation.trike_especial_ataque_en_ataque_tamed_rider": { 
+   "animation_length": 0.05,  
+    "loop": true, 
+    "timeline": {
+        "0.00":[   
+ "/execute @s[tag=!trike_tamed_start] ~~~ effect @s speed 0 3 true", 
+ "/execute @s[tag=trike_tamed_start] ~~~ effect @s speed 1 4 true",
+ 
+    "/execute @s[tag=lvl10, tag=trike_tamed_start] ~~~ damage @e[type=!item, tag=!in_attack ,r=2] 1 entity_attack entity @s", 
+    "/execute @s[tag=lvl50, tag=trike_tamed_start] ~~~ damage @e[type=!item, tag=!in_attack ,r=2] 2 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100, tag=trike_tamed_start] ~~~ damage @e[type=!item, tag=!in_attack ,r=2] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl150, tag=trike_tamed_start] ~~~ damage @e[type=!item, tag=!in_attack ,r=2] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl200, tag=trike_tamed_start] ~~~ damage @e[type=!item, tag=!in_attack ,r=2] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl250, tag=trike_tamed_start] ~~~ damage @e[type=!item, tag=!in_attack ,r=2] 4 entity_attack entity @s",
+    
+"/execute @s[tag=trike_tamed_start] ~~~ effect @e[type=!item, tag=!in_attack_trike,  r=2] slowness 5 4 true"
+            ] 
+      }   
+    }, 
+     
+      
+      
+  "animation.ataque_empuje": {
+   "animation_length": 1.9,  
+    "loop": false, 
+    "timeline": {
+        "0.0":[  
+          "@s minecraft:ataque_empuje"
+            ]
+    }
+  },
+  
+  "animation.carga_respaldo_trike_mc_ark": {
+   "animation_length": 2.6,  
+    "loop": false, 
+    "timeline": { 
+        "1.85":[  
+          "/tag @s add trike_especial_ataque_cargado" ,
+ "@s minecraft:ataque_especial_on"
+            ]
+    }
+  }, 
+      
+  "animation.trike_especial_ataque_cargando": {
+   "animation_length": 2.4,  
+    "loop": false, 
+    "timeline": { 
+        "1.85":[  
+          "/tag @s add trike_especial_ataque_cargado"
+            ]
+    }
+  },
+  "animation.trike_especial_ataque_en_ataque": {
+   "animation_length": 0.4,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[  
+ "/execute @s[tag=!trike_tamed_start] ~~~ effect @s speed 0 3 true", 
+ "/execute @s[tag=trike_tamed_start] ~~~ effect @s speed 1 4 true",
+ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 1 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 2 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl200, tag=trike_tamed_start] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl25] ~~~ damage @e[type=!item,tag=!trike_wild, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 4 entity_attack entity @s",
+    
+
+    "/effect @e[type=!item, tag=!trike_wild, tag=!trike_especial_ataque_cargado , r=4] slowness 5 4 true"
+            ] 
+      } 
+    },
+    
+    
+  "animation.trike_especial_ataque_en_ataque_off_time": {
+   "animation_length": 10.0,  
+    "loop": false, 
+    "timeline": {
+        "9.7":[  
+            "@s minecraft:trike_attack_after"
+            ] 
+      }
+    },
+    
+    "animation.trike_attack_por_tiempo": {
+     "animation_length": 21.5,
+      "loop": true,
+      "timeline": {
+        "20.0": [
+            "@s minecraft:trike_attack_por_tiempo"
+            ]
+      }
+    },
+    
+    
+    
+  "animation.ataque_empuje_tamed": {
+   "animation_length": 1.9,  
+    "loop": false, 
+    "timeline": {
+        "0.0":[  
+          "@s minecraft:ataque_empuje_tamed"
+            ]
+    }
+  },
+      
+  "animation.trike_especial_ataque_cargando_tamed": {
+   "animation_length": 1.9,  
+    "loop": false, 
+    "timeline": {
+        "1.85":[  
+          "/tag @s add trike_especial_ataque_cargado_tamed" 
+            ]
+    }
+  },
+  "animation.trike_especial_ataque_en_ataque_off_time_tamed": {
+   "animation_length": 10.0,  
+    "loop": false, 
+    "timeline": {
+        "9.7":[  
+            "@s minecraft:trike_attack_after_tamed"
+            ] 
+      }
+    },
+    
+  "animation.start_moving_tamed": {
+   "animation_length": 1.3,  
+    "loop": true, 
+    "timeline": {
+        "0.4":[  
+    "/execute @s[tag=trike_tamed_start] ~~~ effect @s speed 10 1",
+          "/tag @s add trike_tamed_start" 
+            ]
+    }
+  },
+      
+  "animation.stop_moving_tamed": {
+   "animation_length": 1.3,  
+    "loop": true, 
+    "timeline": {
+        "0.5":[   
+    "/execute @s[tag=!trike_tamed_start] ~~~ effect @s speed 0 2",
+          "/tag @s remove trike_tamed_start" 
+            ]
+    }
+  },
+      
+      
+  "animation.trike_especial_ataque_en_ataque_tamed": {
+   "animation_length": 0.2,  
+    "loop": true, 
+    "timeline": {
+        "0.00":[  
+ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 1 entity_attack entity @s", 
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 2 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 3 entity_attack entity @s",
+    "/execute @s[tag=lvl200, tag=trike_tamed_start] ~~~ damage @e[type=!item, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 4 entity_attack entity @s",
+    "/execute @s[tag=lvl25] ~~~ damage @e[type=!item, tag=!in_attack ,r=4, tag=!trike_especial_ataque_cargado] 4 entity_attack entity @s",
+    
+
+    "/effect @e[type=!item, tag=!trike_especial_ataque_cargado , r=4] slowness 5 4 true"
+            ] 
+      } 
+    },
+ 
+    "animation.trike_attack_por_tiempo_tamed": {
+     "animation_length": 21.5,
+      "loop": true,
+      "timeline": {
+        "20.0": [
+            "@s minecraft:trike_attack_por_tiempo_tamed"
+            ]
+      }
+    }
+  }
+}
+ 
+
+
+
+

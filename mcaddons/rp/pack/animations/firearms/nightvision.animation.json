@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.nightvision.first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [1, -1, -3]
+				},
+				"rightArmA": {
+					"rotation": [-12.5, -10, 0],
+					"position": [0, -2.28125, -1.09375]
+				},
+				"rightArm": {
+					"rotation": [-90, 0, 10],
+					"position": [0, 0, -5]
+				},
+				"ngv2": {
+					"rotation": [79.96875, 85.40625, -169.5625],
+					"position": [-2.4375, -16.15625, -2.71875],
+					"scale": 0.6
+				},
+				"leftArmA": {
+					"rotation": [-15, 10, 0],
+					"position": [0, -2.59375, -0.1875]
+				},
+				"leftArm": {
+					"rotation": [-90, 0, -10],
+					"position": [0, 0, -5]
+				}
+			}
+		},
+		"animation.nightvision.third_person": {
+			"loop": true,
+			"bones": {
+				"ngv2": {
+					"rotation": [-2.5, 0, 0],
+					"position": [-2, 0, 0],
+					"scale": 0.9
+				},
+				"ngv": {
+					"rotation": [0, 92.5, -87.5],
+					"position": [5.78125, -15.90625, 5.5]
+				}
+			}
+		}
+	}
+}

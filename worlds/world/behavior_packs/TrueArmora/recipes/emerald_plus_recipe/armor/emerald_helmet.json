@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "true_ep:emerald_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"A A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:emerald"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:emerald"
+			}
+		],
+		"result": [
+			{
+				"item": "true_ep:emerald_helmet"
+			}
+		]
+	}
+}

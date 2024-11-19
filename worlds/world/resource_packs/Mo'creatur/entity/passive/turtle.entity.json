@@ -1,0 +1,50 @@
+//bridge-file-version: #26
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:turtle",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/turtle",
+				"donatello": "textures/models/turtled",
+				"leonardo": "textures/models/turtlel",
+				"michelangelo": "textures/models/turtlem",
+				"raphael": "textures/models/turtler"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					{
+						"hide": "query.variant == 1"
+					},
+					{
+						"down": "query.variant == 2"
+					}
+				],
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				]
+			},
+			"animations": {
+				"walk": "animation.turtle.walk",
+				"hide": "animation.turtle.hide",
+				"down": "animation.turtle.down"
+			},
+			"geometry": {
+				"default": "geometry.turtle2"
+			},
+			"render_controllers": [
+				"controller.render.turtle"
+			],
+			"spawn_egg": {
+				"base_color": "#E16941",
+				"overlay_color": "#8E388E"
+			}
+		}
+	}
+}

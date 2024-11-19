@@ -1,0 +1,77 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:carcharodontosaurus",
+			"materials": {
+				"default": "spider" 
+			}, 
+			"textures": {
+				"default": "textures/carcharodontosaurus/variant1",
+				"default_rage": "textures/carcharodontosaurus/default_rage",
+"carcharodontosaurus_farol_1": "textures/carcharodontosaurus/farol_1",
+"carcharodontosaurus_farol_2": "textures/carcharodontosaurus/farol_2",
+"carcharodontosaurus_farol_3": "textures/carcharodontosaurus/farol_3"
+			}, 
+			"geometry": { 
+				"default": "geometry.carcharodontosaurus" ,
+				"carcharodontosaurus_farol": "geometry.carcharodontosaurus_farol" 
+			},
+      "particle_effects": {
+        "carcha_dig": "mc_ark:carcha_dig"
+      },
+	"sound_effects": { 
+	"hurt_sound": "sound.carcharodontosaurus_idle_mc_ark",
+	"idle_sound": "sound.carcharodontosaurus_idle_mc_ark",
+	"attack": "sound.carcharodontosaurus_attack_mc_ark",
+	"eating": "sound.carcharodontosaurus_eating_mc_ark",
+	"roar": "sound.carcharodontosaurus_roar_mc_ark"
+	},  
+			"animations": { 
+				"general": "controller.animation.carcharodontosaurus.general",
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+				"idle": "animation.carcharodontosaurus.idle", 
+				"rage_particles": "animation.carcharodontosaurus.rage_particles",
+				"inquiet": "animation.carcharodontosaurus.inquiet",
+				"faro": "animation.carcharodontosaurus.faro", 
+				"walk": "animation.carcharodontosaurus.walk", 
+				"run": "animation.carcharodontosaurus.run",
+				"eating": "animation.carcharodontosaurus.eat", 
+				"attack": "animation.carcharodontosaurus.attack",
+
+
+				"roar": "animation.carcharodontosaurus.roar",
+				"muerto": "animation.carcharodontosaurus.muerto",
+				"walk_controller":
+				"controller.animation.general.walk_mc_ark"
+			},
+			"scripts": {  
+				"animate": [
+{
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+						{
+							"rage_particles" : "query.variant == 1"},  
+							
+						"faro",
+
+				    "walk_controller",
+				    "general"
+				]
+			}, 
+			"render_controllers": [
+        { "controller.render.carcharodontosaurus_farol_3": "query.mark_variant == 2" },   
+        { "controller.render.carcharodontosaurus_farol_2": "query.mark_variant == 3" }, 
+        { "controller.render.carcharodontosaurus_farol_1": "query.mark_variant >= 4 && query.mark_variant < 777 && !query.is_tamed" },  
+        { "controller.render.carcharodontosaurus": "query.variant == 0" },   
+        { "controller.render.carcharodontosaurus_rage": "query.variant == 1" }
+			],  
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index":13
+      }
+		}
+	}
+}

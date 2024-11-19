@@ -1,0 +1,15 @@
+//bridge-file-version: #19
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "mocreatures:ratcooked"
+		},
+		"tags": [
+			"furnace",
+			"smoker"
+		],
+		"input": "mocreatures:ratraw",
+		"output": "mocreatures:ratcooked"
+	}
+}

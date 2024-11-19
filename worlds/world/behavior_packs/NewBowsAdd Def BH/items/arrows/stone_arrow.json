@@ -1,0 +1,24 @@
+{
+
+  "format_version": "1.20.50",
+
+  "minecraft:item": {
+	"description": {
+      "identifier": "new:stone_arrow",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:display_name": {},
+      "minecraft:icon": {
+        "texture": "stone_arrow"
+      },
+       "minecraft:projectile": {
+          "projectile_entity": "new:arrow_stone"
+        },
+      "minecraft:max_stack_size": 64,
+      "minecraft:hand_equipped": false
+	 },
+	 "events": {
+	 }
+  }
+}

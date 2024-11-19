@@ -1,0 +1,194 @@
+// Coded by @JustAsh0005 for ActualGuns (for both 2D and 3D version), you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.taurus_onfire": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"reload_start": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1"
+							},
+							{
+								"taurus_empty": "q.get_equipped_item_name(0) == 'taurus' && (q.scoreboard('taurus') == 0)"
+							},
+							{
+								"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') != 1"
+							},
+							{
+								"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1 && q.is_powered"
+							}
+						]
+					},
+					"reload_start": {
+						"on_entry": [
+							"v.r = q.life_time;",
+"/playsound pixelpoly.taurus_draw @s"
+						],
+						"transitions": [
+							{
+								"reloaded": "(q.life_time - v.r) >= 0.00 && query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1"
+							},
+							{
+								"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') != 1"
+							},
+							{
+								"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1 && q.is_powered"
+							}
+						]
+					},
+					"taurus_empty": {
+						"on_entry": [
+							"/replaceitem entity @s slot.weapon.mainhand 0 pistol:taurus_empty 1 0"
+						],
+						"transitions": [
+							{
+								"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') != 1"
+							},
+							{
+								"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1 && q.is_powered"
+							}
+						]
+					},
+					"reloaded": {
+						"transitions": [
+							{
+								"reload_start2": "1.0"
+							}
+						]
+					},
+					"reload_start2": {
+						"on_entry": [
+							"v.r = q.life_time;"
+						],
+						"transitions": [
+							{
+								"reloaded2": "(q.life_time - v.r) >= 0.6 && query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1"
+							},
+							{
+								"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') != 1"
+							},
+							{
+								"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1 && q.is_powered"
+							}
+						]
+					},
+					"reloaded2": {
+						"on_entry": [
+						],
+						"transitions": [
+							{
+								"shoot": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1"
+							},
+							{
+								"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') != 1"
+							},
+							{
+								"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1 && q.is_powered"
+							}
+						]
+					},
+					"shoot": {
+						"on_entry": [
+							"v.r = q.life_time;"
+						],
+						"transitions": [
+							{
+								"hip": "q.get_equipped_item_name(0) == 'taurus' && query.is_using_item && !query.is_sneaking && !query.is_sprinting && !query.is_in_water && (q.scoreboard('taurus') >= 1)"
+							},
+							{
+								"taurus_empty": "q.get_equipped_item_name(0) == 'taurus' && (q.scoreboard('taurus') == 0)"
+							},
+							{
+								"scope": "q.get_equipped_item_name(0) == 'taurus' && query.is_using_item && query.is_sneaking && !query.is_sprinting && !query.is_in_water && (q.scoreboard('taurus') >= 1)"
+							},
+							{
+								"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') != 1"
+							}
+						]
+					},
+					"hip": {
+						"on_entry": [
+							"@s taurus:fire",
+							"/playanimation @s animation.taurus.first_person.fire",
+							"/playsound pixelpoly.taurus_fire @a ~~~ 3",
+							"/fill ~~~ ~~~ gb:muzzle_flash2 replace air",
+							"/scoreboard players remove @s[m=!c,scores={taurus=1..18}] taurus 1"
+						],
+						"animations": [
+							"taurus_shoot_hip"
+						],
+						"transitions": [
+							{
+								"shoot": "q.all_animations_finished"
+							},
+							{
+								"taurus_empty": "q.get_equipped_item_name(0) == 'taurus' && (q.scoreboard('taurus') == 0)"
+							},
+							{
+								"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') != 1"
+							},
+							{
+								"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1 && q.is_powered"
+							}
+						]
+					},
+					"scope": {
+						"on_entry": [
+							"@s taurus:fire",
+							"/playsound pixelpoly.taurus_fire @a ~~~ 3",
+							"/fill ~~~ ~~~ gb:muzzle_flash2 replace air",
+							"/playanimation @s animation.taurus.first_person.aim_fire",
+							"/scoreboard players remove @s[m=!c,scores={taurus=1..18}] taurus 1"
+						],
+						"animations": [
+							"taurus_shoot_scope"
+						],
+						"transitions": [
+							{
+								"shoot": "q.all_animations_finished"
+							},
+							{
+								"taurus_empty": "q.get_equipped_item_name(0) == 'taurus' && (q.scoreboard('taurus') == 0)"
+							},
+							{
+								"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') != 1"
+							},
+							{
+								"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1 && q.is_powered"
+							}
+						]
+					},
+					"reload_error": {
+						"on_entry": [
+							"@s normal:player",
+							"@s trigger:onreload",
+							"/tag @s remove reload",
+							"/stopsound @s pixelpoly.taurus_draw"
+						],
+						"transitions": [
+							{
+								"default": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1"
+							},
+							{
+								"taurus_empty": "q.get_equipped_item_name(0) == 'taurus' && (q.scoreboard('taurus') == 0)"
+							}
+						]
+					},
+					"reload_error_real": {
+						"on_entry": [
+						],
+						"transitions": [
+							{
+								"shoot": "1.0"
+							}
+						]
+					}
+			}
+		}
+	}
+}
+
+// This code is exclusive to both Add-ons (ActualGuns 2D and 3D) and can not be used by anybody else.

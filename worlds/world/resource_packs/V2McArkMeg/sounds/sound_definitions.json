@@ -1,0 +1,1116 @@
+
+{
+    
+  "sound.allosaurus_roar_mc_ark": {  
+    "category": "neutral",
+	"max_distance": 50.0,
+    "sounds": [
+      {
+        "name": "sounds/mob/allosaurus_roar_mc_ark/roar",
+        "volume": 0.6,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+  "sound.idle_sound_allosaurus_mc_ark": {  
+    "category": "neutral", 
+    "sounds": [  
+      {
+        "name": "sounds/mob/allosaurus_roar_mc_ark/idle1",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/allosaurus_roar_mc_ark/idle2",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/allosaurus_roar_mc_ark/idle",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.allosaurus_attacksound": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/allosaurus_roar_mc_ark/ataque1",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/allosaurus_roar_mc_ark/ataque2",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.rhyniognatha_resin_armor_mc_ark": {  	"max_distance": 20.0,
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/resin_armor/v1",
+        "volume": 1.3,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+    
+  "sound.rhyniognatha_born_mc_ark": {  	"max_distance": 20.0,
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/born/v1",
+        "volume": 0.7,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+    
+  "sound.rhyniognatha_roar_mc_ark": {
+	"max_distance": 50.0,
+    "category": "neutral",
+    "sounds": [ 
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/roar/v1",
+        "volume": 0.3,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/roar/v2",
+        "volume": 0.3,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/roar/v3",
+        "volume": 0.3,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+    
+  "sound.rhyniognatha_ataque_especial_mc_ark": {  
+    "category": "neutral",
+    "sounds": [ 
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/ataque_especial/v1",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/ataque_especial/v2",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/ataque_especial/v3",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+    
+  "sound.rhyniognatha_ataque_mc_ark": {  
+    "category": "neutral",
+    "sounds": [ 
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/ataque/v1",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/ataque/v2",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/ataque/v3",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+    
+  "sound.rhyniognatha_big_shoot_mc_ark": {  	"max_distance": 20.0,
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/shoot/big",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+    
+  "sound.rhyniognatha_shoot_mc_ark": { 
+	"max_distance": 20.0,
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/shoot/1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/shoot/2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ] 
+  },    
+  "sound.rhyniognatha_idle_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/idle/v1",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/idle/v2",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/idle/v3",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/idle/v4",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/idle/v5",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/idle/v6",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/idle/v7",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+  
+  "sound.rhyniognatha_fly_mc_ark": {  
+	"max_distance": 20.0,
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/rhyniognatha_mc_ark/fly/v1",
+        "volume": 3.3,
+        "load_on_low_memory": true
+      } 
+        ] 
+  }, 
+    
+  "sound.cuerpo_final_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mc_ark_official_sounds/cuerpo_final_mc_ark",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+  
+  "sound.cuerpo_monster_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mc_ark_official_sounds/cuerpo_final_mc_ark",
+        "volume": 0.1,
+        "load_on_low_memory": true
+      }
+        ] 
+  },    
+     
+  "sound.cuerpo_hit_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mc_ark_official_sounds/cuerpo_hit_mc_ark_v1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mc_ark_official_sounds/cuerpo_hit_mc_ark_v2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mc_ark_official_sounds/cuerpo_hit_mc_ark_v3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mc_ark_official_sounds/cuerpo_hit_mc_ark_v4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mc_ark_official_sounds/cuerpo_hit_mc_ark_v5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+  "sound.carcharodontosaurus_idle_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/idle1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/idle2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/idle3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/idle4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ] 
+  },   
+  
+  "sound.carcharodontosaurus_roar_mc_ark": {  
+    "category": "neutral",
+	"max_distance": 50.0,
+    "sounds": [
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/roar1",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/roar2",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/roar3",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ] 
+  },   
+   
+  "sound.carcharodontosaurus_attack_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/attack",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]  
+  },   
+  
+  "sound.carcharodontosaurus_eating_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/carcharodontosaurus_mc_ark/eating",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]  
+  },   
+    
+    
+    
+    
+  "sound.level_up_mc_ark": {  
+    "category": "neutral",
+	"max_distance": 100.0,
+    "sounds": [
+      {
+        "name": "sounds/mc_ark_official_sounds/level_up",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+  "sound.spawn_mc_ark": {  
+      
+    "category": "neutral",
+	"max_distance": 100.0,
+    "sounds": [
+      {
+        "name": "sounds/mc_ark_official_sounds/spawn",
+        "volume": 2.4,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+  
+    
+  "sound.therizino_idle_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/therizino_mc_ark/idle",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+    
+  "sound.therizino_hurt_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/therizino_mc_ark/hurt",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+  "sound.therizino_attack_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/therizino_mc_ark/attack",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+  "sound.therizino_roar_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/therizino_mc_ark/roar",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+    
+  "sound.yutyrannus_roar_mc_ark": {  
+    "category": "neutral",
+	"max_distance": 50.0,
+    "sounds": [
+      {
+        "name": "sounds/mob/yutyrannus_mc_ark/roar",
+        "volume": 0.6,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+  "sound.idle_sound_yutyrannus_mc_ark": {  
+    "category": "neutral", 
+    "sounds": [  
+      {
+        "name": "sounds/mob/yutyrannus_mc_ark/idle1",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/yutyrannus_mc_ark/idle2",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/yutyrannus_mc_ark/idle",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.yutyrannus_attacksound": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/yutyrannus_mc_ark/ataque1",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/yutyrannus_mc_ark/ataque2",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "mob.spinosaurus_attack2": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/spinosaurus_mc_ark/attack2",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      } 
+        ]
+  },  
+    
+  "mob.spinosaurus_attack1": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/spinosaurus_mc_ark/attack1",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      } 
+        ]
+  },  
+    
+  "mob.spinosaurus_idle": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/spinosaurus_mc_ark/idle",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      } 
+        ]
+  },  
+    
+  "mob.spinosaurus_hurt": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/spinosaurus_mc_ark/hurt",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.pteranodon_attack": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pteranodon_mc_ark/attack",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  "mob.pteranodon_idle": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pteranodon_mc_ark/idle",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  "mob.pteranodon_hurt": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pteranodon_mc_ark/hurt",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.air_conditioner_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/air_conditioner_mc_ark/sound1",
+        "volume": 0.21,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/air_conditioner_mc_ark/sound2",
+        "volume": 0.15,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/air_conditioner_mc_ark/sound3",
+        "volume": 0.15,
+        "load_on_low_memory": true
+      }
+        ] 
+  },    
+  
+    
+  "sound.big_step_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/big_step_mc_ark/sound1",
+        "volume": 6.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/big_step_mc_ark/sound2",
+        "volume": 6.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/big_step_mc_ark/sound3",
+        "volume": 6.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  
+  "sound.dodo_eating": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/dodo_mc_ark/dodo_eating",
+        "volume": 2.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.disparo_sound_dilophosaurus_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/dilophosaurus_mc_ark/disparo_sound_dilophosaurus_mc_ark",
+        "volume": 2.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.dilophosaurus_falling_sleep": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/dilophosaurus_mc_ark/dilophosaurus_falling_sleep",
+        "volume": 2.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "mob.dilophosaurus_iddle_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/dilophosaurus_mc_ark/default1",
+        "volume": 2.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dilophosaurus_mc_ark/default2",
+        "volume": 2.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dilophosaurus_mc_ark/default3",
+        "volume": 2.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dilophosaurus_mc_ark/default4",
+        "volume": 2.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dilophosaurus_mc_ark/default5",
+        "volume": 2.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+  "sound.tyranosaurus_rex_falling_sleep": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/tyranosaurus_rex_mc_ark/tyranosaurus_rex_falling_sleep",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  
+  "sound.tyranosaurus_rex_hurt_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/tyranosaurus_rex_mc_ark/tyranosaurus_rex_hurt_mc_ark",
+        "volume": 3.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+  "sound.tyranosaurus_rex_roar": {  
+	"max_distance": 70.0,
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/tyranosaurus_rex_mc_ark/tyranosaurus_rex_roar",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.idle_sound_tyranosaurus_rex_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/tyranosaurus_rex_mc_ark/idle_sound_tyranosaurus_rex_mc_ark",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.tyranosaurus_rex_attacksound": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/tyranosaurus_rex_mc_ark/tyranosaurus_rex_attacksound",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+    
+  "mob.pegomastax_iddle_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pegomastax_mc_ark/iddle",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+  "mob.pegomastax_hurt_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pegomastax_mc_ark/hurt",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+  "sound.pegomastax_attack_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pegomastax_mc_ark/attack",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+    
+    
+  "sound.special_attack_sound_raptor_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/raptor_mc_ark/normal/special_attack_sound_raptor_mc_ark",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+   
+    
+  "sound.alert_sound_raptor_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/raptor_mc_ark/normal/alert_sound",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+   
+    
+  "sound.sleeping_sound_raptor_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/raptor_mc_ark/normal/sleeping_sound",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+   
+  "sound.idle_sound_raptor_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/raptor_mc_ark/normal/idle_sound",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.raptor_attacksound": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/raptor_mc_ark/normal/raptor_attacksound",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.raptor_eating": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/raptor_mc_ark/normal/raptor_eating",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/raptor_mc_ark/normal/raptor_eating",
+        "volume": 0.0,
+        "load_on_low_memory": true
+      } 
+        ]
+  },  
+  "sound.raptor_falling_sleep": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/raptor_mc_ark/normal/raptor_falling_sleep",
+        "volume": 1.2,
+        "load_on_low_memory": true
+      }
+        ]
+  },   
+  "mob.raptor_hurt_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/raptor_mc_ark/damage/sound1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "mob.trike.hurt": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/trike_mc_ark/hurt",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  "mob.trike.attack1": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/trike_mc_ark/attack1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  "mob.trike.attack2": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/trike_mc_ark/attack2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  
+  "mob.parasaurus_mc_ark.idle": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/parasaurus_mc_ark/parasaurus_iddle",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  "mob.parasaurus_mc_ark.hurt": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/parasaurus_mc_ark/parasaurus_hurt",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  
+  "mob.parasaurus_mc_ark.alert": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/parasaurus_mc_ark/parasaurus_alert",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  "mob.parasaurus_mc_ark.sensor": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/parasaurus_mc_ark/parasaurus_sensor",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  
+  "mob.dodo_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/dodo_mc_ark/sound1",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dodo_mc_ark/sound2",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dodo_mc_ark/sound3",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dodo_mc_ark/sound4",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dodo_mc_ark/sound5",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dodo_mc_ark/sound6",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/dodo_mc_ark/sound7",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  
+  "mob.moschops_mc_ark": {   
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/moschops_mc_ark/sound1",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/moschops_mc_ark/sound2",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/moschops_mc_ark/sound3",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/moschops_mc_ark/sound4",
+        "volume": 1.0,
+        "load_on_low_memory": true 
+      },
+      {
+        "name": "sounds/mob/moschops_mc_ark/sound5",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/moschops_mc_ark/sound6",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/moschops_mc_ark/sound7",
+        "volume": 1.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+  "mob.compy_mc_ark": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/compy_mc_ark/sound1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/compy_mc_ark/sound2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/compy_mc_ark/sound3",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/compy_mc_ark/sound4",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/compy_mc_ark/sound5",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/compy_mc_ark/sound6",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/compy_mc_ark/sound7",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },  
+    
+  "sound.fire_proyectil": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/wyvern_mc_ark/fire_proyectil/fire1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wyvern_mc_ark/fire_proyectil/fire2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.ice_proyectil": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/wyvern_mc_ark/fire_proyectil/ice1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.electric_proyectil": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/wyvern_mc_ark/fire_proyectil/electric1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.poison_proyectil": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/wyvern_mc_ark/fire_proyectil/poison1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+  
+  
+  "mob.wyvern_mc_ark_normal": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/wyvern_mc_ark/wyvern1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wyvern_mc_ark/wyvern2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wyvern_mc_ark/wyvern3",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "mob.wyvern_mc_ark_damage": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/wyvern_mc_ark/wyvern1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wyvern_mc_ark/wyvern2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wyvern_mc_ark/wyvern3",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wyvern_mc_ark/wyvern_damage",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  }
+    
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.wyvern": {
+      "part_visibility": [
+        { "saddle": "query.is_saddled" }
+      ],
+      "geometry": "geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "texture.default" ]
+    }
+  }
+}

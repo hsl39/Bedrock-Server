@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "true_cop:rose_gold_shovel"
+		},
+		"tags": [ "crafting_table" ],
+		"ingredients": [
+			{
+				"item": "true_cop:copper_shovel"
+			},
+			{
+				"item": "minecraft:gold_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "true_cop:rose_gold_shovel"
+			}
+		]
+	}
+}

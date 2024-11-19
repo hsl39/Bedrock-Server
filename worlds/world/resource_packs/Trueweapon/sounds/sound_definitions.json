@@ -1,0 +1,110 @@
+
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+    "sound.attack.stab": {
+      "sounds": [
+        {
+          "name": "sounds/stab"
+        }
+      ]
+    },
+    "sound.attack.big_sweep": {
+      "sounds": [
+        {
+          "name": "sounds/big_sweep"
+        }
+      ]
+    },
+    "sound.attack.big_shoot": {
+      "sounds": [
+        {
+          "name": "sounds/shoot/big_shoot"
+        }
+      ]
+    },
+      "sound.attack.sweep": {
+        "sounds": [
+          {
+            "name": "sounds/sweep_sound/1"
+          },
+          {
+            "name": "sounds/sweep_sound/2"
+          },
+          {
+            "name": "sounds/sweep_sound/3"
+          },
+          {
+            "name": "sounds/sweep_sound/4"
+          },
+          {
+            "name": "sounds/sweep_sound/5"
+          },
+          {
+            "name": "sounds/sweep_sound/6"
+          },
+          {
+            "name": "sounds/sweep_sound/7"
+          }
+        ]
+      },
+      "true.player.bleeding": {
+        "sounds": [
+          {
+            "name": "sounds/effects/bleeding_1"
+          },
+          {
+            "name": "sounds/effects/bleeding_2"
+          },
+          {
+            "name": "sounds/effects/bleeding_3"
+          },
+          {
+            "name": "sounds/effects/bleeding_4"
+          }
+        ]
+      },
+      "true.player.dismembered": {
+        "category": "music",
+        "sounds": [
+          "sounds/effects/dismembered"
+        ]
+      },
+      "true.player.contusion": {
+        "category": "music",
+        "sounds": [
+          "sounds/effects/contusion"
+        ]
+      },
+      "sound.attack.smack": {
+        "sounds": [
+          {
+            "name": "sounds/hammer_attack/1"
+          },
+          {
+            "name": "sounds/hammer_attack/2"
+          },
+          {
+            "name": "sounds/hammer_attack/3"
+          },
+          {
+            "name": "sounds/hammer_attack/4"
+          }
+        ]
+      },
+      "sound.attack.sweep_axe": {
+        "sounds": [
+          {
+            "name": "sounds/sweep_axe/sweep_axe_0"
+          }
+        ]
+      },
+      "sound.attack.splatter": {
+        "sounds": [
+          {
+            "name": "sounds/splatter"
+          }
+        ]
+      }
+  }
+}

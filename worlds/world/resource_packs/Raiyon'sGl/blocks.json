@@ -1,0 +1,51 @@
+//bridge-file-version: #13
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"ray:diamond_ore": {
+		"textures": "diamond_ore"
+	},
+"ray:coal_ore": {
+		"textures": "coal_ore"
+	},
+	"ray:deepslate_diamond_ore": {
+		"textures": "deepslate_diamond_ore"
+	},
+	"ray:deepslate_iron_ore": {
+		"textures": "deepslate_iron_ore"
+	},
+	"ray:iron_ore": {
+		"textures": "iron_ore",
+		"brightness_gamma": 0.9
+	},
+	"ray:gold_ore": {
+		"textures": "gold_ore"
+	},
+	"ray:deepslate_gold_ore": {
+		"textures": "deepslate_gold_ore"
+	},
+	"ray:emerald_ore": {
+		"textures": "emerald_ore"
+	},
+	"ray:deepslate_emerald_ore": {
+		"textures": "deepslate_emerald_ore"
+	},
+	"ray:deepslate_lapis_ore": {
+		"textures": "deepslate_lapis_ore"
+	},
+"ray:deepslate_coal_ore": {
+		"textures": "deepslate_coal_ore"
+	},
+	"ray:lapis_ore": {
+		"textures": "lapis_ore"
+	},
+	"ray:copper_ore": {
+		"textures": "copper_ore"
+	},
+	"ray:deepslate_copper_ore": {
+		"textures": "deepslate_copper_ore"
+	}
+}

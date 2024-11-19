@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bloquesminig.default": {
+			"loop": true,
+			"bones": {
+				"block": {
+					"position": [0, -5, 0],
+					"scale": 2
+				}
+			}
+		},
+		"animation.bloquesminig.move": {
+			"loop": true,
+			"bones": {
+				"block": {
+					"rotation": ["variable.shake_power - query.target_x_rotation", "-query.target_y_rotation", 0],
+					"scale": 1
+				}
+			}
+		}
+	}
+}

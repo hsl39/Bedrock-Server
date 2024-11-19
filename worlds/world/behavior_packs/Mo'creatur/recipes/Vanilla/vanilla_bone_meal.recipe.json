@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "mocreatures:vanilla_bone_meal"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "mocreatures:sharkteeth"
+            }
+        ],
+        "result": {
+            "item": "minecraft:bone_meal",
+            "count": 1
+        }
+    }
+}

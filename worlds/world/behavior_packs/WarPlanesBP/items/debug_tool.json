@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "adn:debug_tool",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": {
+		  "texture": "adn:debug"
+	   },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_duration": 999999999,
+        "minecraft:food": {
+        "nutrition": 0,
+        "can_always_eat": true
+      },
+      "minecraft:display_name": {
+        "value": "Debug Tool"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.tools"
+      },
+      "minecraft:use_animation": "bow"
+    },
+      "minecraft:chargeable": {}
+  }
+}

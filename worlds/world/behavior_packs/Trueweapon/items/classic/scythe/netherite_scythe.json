@@ -1,0 +1,112 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:netherite_scythe",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.hoe"
+      }
+    },
+    "components": {
+      "minecraft:tags": {
+        "tags": [
+          "sharp:1:15:30",
+          "minecraft:is_hoe",
+          "break:hoe"
+        ]
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": 7,
+      "minecraft:enchantable": {
+        "slot": "sword",
+        "value": 15
+      },
+      "minecraft:use_on": {
+        "blocks": [
+          "grass",
+          "dirt",
+          "grass_path"
+        ]
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:mangrove_leaves",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:moss_block",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:leaves",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:shroomlight",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:sponge",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:target",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:hay_block",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:leaves2",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:warped_wart_block",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:nether_wart_block",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:sculk",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:sculk_catalyst",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:sculk_shrieker",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:sculk_vein",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:sculk_sensor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:dried_kelp_block",
+            "speed": 10
+          }
+        ]
+      },
+      "minecraft:display_name": {},
+      "minecraft:icon": {
+        "texture": "netherite_scythe"
+      },
+      "minecraft:durability": {
+        "max_durability": 2031
+      }
+    }
+  }
+}

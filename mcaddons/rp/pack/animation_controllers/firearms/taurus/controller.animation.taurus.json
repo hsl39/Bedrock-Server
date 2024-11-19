@@ -1,0 +1,215 @@
+// Coded by @JustAsh0005 for ActualGuns3D, you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.taurus.first_person": {
+			"initial_state": "draw",
+			"states" : {
+				"draw": {
+					"animations": [
+						{
+							"taurus.first_person.draw": "v.taurus && v.is_first_person"
+						}
+					],
+					"transitions": [
+						{
+							"first_person": "q.all_animations_finished && v.taurus && v.is_first_person"
+						},
+						{
+							"draw": "!v.taurus"
+						}
+					]
+				},
+				"first_person" : {
+					"animations" : [
+						{ 
+						    "taurus.first_person.holding": "v.is_first_person && v.taurus"
+						}
+					],
+					"transitions" : [
+						{
+							"aim": "v.is_first_person && v.taurus && v.s"
+						},
+						{
+							"sprinting": "v.is_first_person && v.taurus && v.m && !v.r"
+						},
+						{
+							"reloading": "v.is_first_person && v.is_holding_taurusempty && v.r"
+						},
+						{
+							"draw": "!v.taurus"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"reloading": {
+					"animations": [
+						{
+							"taurus.first_person.reload": "v.is_first_person && v.taurus"
+						}
+					],
+					"transitions": [
+						{
+							"draw": "!v.taurus"
+						},
+						{
+							"first_person": "q.all_animations_finished && !v.r && v.taurus"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"sprinting": {
+					"animations": [
+						{
+							"taurus.first_person.sprinting": "v.is_first_person && v.taurus"
+						}
+					],
+					"transitions": [
+						{
+							"draw": "!v.taurus"
+						},
+						{
+							"aim": "v.is_first_person && v.taurus && v.s"
+						},
+						{
+							"first_person": "v.is_first_person && v.taurus && !v.m"
+						},
+						{
+							"reloading": "v.is_first_person && v.is_holding_taurusempty && v.r"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"aim": {
+					"animations": [
+						{
+							"taurus.first_person.aim": "v.is_first_person && v.taurus"
+						}
+					],
+					"transitions": [
+						{
+							"first_person": "v.is_first_person && v.taurus && !v.s"
+						},
+						{
+							"draw": "!v.taurus"
+						},
+						{
+							"reloading": "v.is_first_person && v.is_holding_taurusempty && v.r"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"controller.animation.taurus.third_person": {
+			"initial_state": "draw",
+			"states" : {
+				"draw": {
+					"animations": [
+						{
+							"taurus.third_person.draw": "v.taurus && v.is_third_person"
+						}
+					],
+					"transitions": [
+						{
+							"third_person": "q.all_animations_finished && v.taurus && v.is_third_person"
+						},
+						{
+							"draw": "!v.taurus"
+						}
+					]
+				},
+				"third_person" : {
+					"animations" : [
+						{ 
+						    "taurus.third_person.holding": "v.is_third_person && v.taurus"
+						}
+					],
+					"transitions" : [
+						{
+							"aim": "v.is_third_person && v.taurus && v.s"
+						},
+						{
+							"sprinting": "v.is_third_person && v.taurus && v.m && !v.r"
+						},
+						{
+							"reloading": "v.is_third_person && v.is_holding_taurusempty && v.r"
+						},
+						{
+							"draw": "!v.taurus"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"reloading": {
+					"animations": [
+						{
+							"taurus.third_person.reload": "v.is_third_person && v.taurus"
+						}
+					],
+					"transitions": [
+						{
+							"draw": "!v.taurus"
+						},
+						{
+							"third_person": "q.all_animations_finished && !v.r && v.taurus"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"sprinting": {
+					"animations": [
+						{
+							"taurus.third_person.sprinting": "v.is_third_person && v.taurus"
+						}
+					],
+					"transitions": [
+						{
+							"draw": "!v.taurus"
+						},
+						{
+							"aim": "v.is_third_person && v.taurus && v.s"
+						},
+						{
+							"third_person": "v.is_third_person && v.taurus && !v.m"
+						},
+						{
+							"reloading": "v.is_third_person && v.is_holding_taurusempty && v.r"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"aim": {
+					"animations": [
+						{
+							"taurus.third_person.aim": "v.is_third_person && v.taurus"
+						}
+					],
+					"transitions": [
+						{
+							"third_person": "v.is_third_person && v.taurus && !v.s"
+						},
+						{
+							"draw": "!v.taurus"
+						},
+						{
+							"reloading": "v.is_third_person && v.is_holding_taurusempty && v.r"
+						}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}
+
+// This code is exclusive to ActualGuns3D and can not be used by anybody else.

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mocreatures:sugarlump",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 32,
+			"minecraft:use_duration": 1.6,
+			"minecraft:food": {
+				"nutrition": 2,
+				"saturation_modifier": "supernatural"
+			},
+			"minecraft:icon": {
+				"texture": "sugar_lump"
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:render_offsets": "apple",
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.miscFood"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:display_name": {
+				"value": "item.mocreatures:sugarlump.name"
+			}
+		}
+	}
+}

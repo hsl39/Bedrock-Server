@@ -1,0 +1,1 @@
+{"format_version":"1.20.80","minecraft:item":{"description":{"identifier":"gabrielaplok:barrel_long","menu_category":{"category":"items","group":"itemGroup.name.parts"}},"components":{"minecraft:display_name":{"value":"item.barrel_long.name"},"minecraft:icon":"barrel_long"}}}

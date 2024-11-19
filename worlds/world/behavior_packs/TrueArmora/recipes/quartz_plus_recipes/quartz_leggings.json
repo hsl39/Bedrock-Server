@@ -1,0 +1,26 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pa:quartz_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"A A",
+			"A A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:quartz"
+			}
+		},
+		"result": [
+			{
+				"item": "pa:quartz_leggings"
+			}
+		]
+	}
+}

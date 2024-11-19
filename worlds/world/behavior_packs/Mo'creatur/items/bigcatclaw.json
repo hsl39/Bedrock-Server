@@ -1,0 +1,23 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mocreatures:bigcatclaw",
+			"menu_category": {
+				"parent": "nature",
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"texture": "bigcatclaw"
+			},
+			"minecraft:stacked_by_data": true,
+			"minecraft:allow_off_hand": true,
+			"minecraft:display_name": {
+				"value": "item.mocreatures:bigcatclaw.name"
+			}
+		}
+	}
+}

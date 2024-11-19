@@ -1,0 +1,43 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.axolotl": {
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.a",
+                        "Texture.b",
+                        "Texture.c",
+                        "Texture.d",
+                        "Texture.k",
+                        "Texture.e",
+                        "Texture.f",
+                        "Texture.g",
+                        "Texture.h",
+                        "Texture.i",
+                        "Texture.j",
+                        "Texture.l",
+                        "Texture.m",
+                        "Texture.n",
+                        "Texture.o",
+                        "Texture.p",
+                        "Texture.q",
+                        "Texture.r",
+                        "Texture.s",
+                        "Texture.t",
+                        "Texture.u",
+                        "Texture.v"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                { "*": "Material.default" },
+                { "*arm": "Material.limbs" },
+                { "*leg": "Material.limbs" }
+
+            ],
+            "textures": [ "Array.skins[query.variant]" ]
+        }
+    }
+}

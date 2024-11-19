@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+	   
+	   
+		"controller.animation.co_respaldo_mc_arkk": { 
+			"initial_state": "default",
+			"states": { 
+			    
+				"default": {
+          "transitions": [
+						{ 
+							"target": "(query.has_target)"
+						}
+                   ]
+				},
+				"target": { 
+					"on_entry": [ 
+"@s minecraft:become_angry" 
+					] ,
+          "animations": [  
+              "remove_angry_mc_ark"
+              ],
+          "transitions": [
+						{ 
+							"default": "(query.all_animations_finished)"
+						}
+                   ]
+				}
+			}
+		},
+	    
+	    
+		"controller.animation.sit_co_mc_ark": { 
+			"initial_state": "up",
+			"states": { 
+			    
+				"up": {
+"on_entry": [
+"@s minecraft:up" 
+                    ],
+          "transitions": [
+						{ 
+							"sit": "(query.is_sitting)"
+						}
+                   ]
+				},
+				"sit": {
+"on_entry": [
+"@s minecraft:sit" 
+                    ],
+          "transitions": [
+						{ 
+							"up": "!(query.is_sitting)"
+						}
+                   ]
+				}
+			}
+		}
+	}
+}

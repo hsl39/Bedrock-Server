@@ -1,0 +1,155 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "true_on:seanite_hoe",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.hoe"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+                "tags": [
+					"minecraft:is_tool",
+                    "minecraft:is_hoe"
+                ]
+            },
+			"minecraft:damage": 6,
+			"minecraft:enchantable": {
+				"value": 25,
+				"slot": "hoe"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:mangrove_leaves",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:moss_block",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:leaves",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:shroomlight",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sponge",
+						"speed": 24,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:target",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:hay_block",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:leaves2",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:warped_wart_block",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:nether_wart_block",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk_catalyst",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk_shrieker",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk_vein",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk_sensor",
+						"speed": 12,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:dried_kelp_block",
+						"speed": 24,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "minecraft:break",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {},
+			"minecraft:durability": {
+				"max_durability": 2031
+			},
+			"minecraft:icon": {
+				"texture": "seanite_hoe"
+			}
+		}
+	}
+}

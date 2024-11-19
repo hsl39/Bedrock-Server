@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:shulker_arrow"
+    },
+    "tags": ["crafting_table"],
+"pattern": [
+      "SP#"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:arrow"
+      },
+      "#": {
+        "item": "minecraft:shulker_shell"
+      },
+      "S": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "new:shulker_arrow",
+      "count": 1
+    }
+  }
+}

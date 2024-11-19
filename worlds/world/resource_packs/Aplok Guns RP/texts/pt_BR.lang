@@ -1,0 +1,91 @@
+pack.description=Produzido por Gabriel Aplok.	#
+
+entity.gabrielaplok:explosive_crate_explosion.name=Caixa explosiva	#
+entity.gabrielaplok:landmine_explosion.name=Mina terrestre	#
+entity.gabrielaplok:bullet.name=Bala	#
+
+item.helmet_6b47.name=Capacete 6B46 Ratnik-BSh	#
+item.juggernaut_boots.name=Botas Juggernaut	#
+item.juggernaut_chestplate.name=Peitoral Juggernaut	#
+item.juggernaut_helmet.name=Capacete Juggernaut	#
+item.juggernaut_leggings.name=Calça Juggernaut	#
+item.nv_goggles.name=Óculos de visão noturna	#
+item.vest_6b3.name=Armadura corporal 6B3	#
+
+item.acog_sight.name=Mira ACOG	#
+item.eotech_sight.name=Mira EOTech	#
+item.predator_v4_sight.name=Mira Predator V4	#
+item.foregrip.name=Punho frontal	#
+item.laser_red.name=Laser vermelho	#
+item.laser_green.name=Laser verde	#
+item.scope_hp.name=Mira de longo alcance	#
+item.scope_lp.name=Mira de curto alcance	#
+item.silencer.name=Silenciador	#
+
+item.blueprint_ammo.name=Blueprint para munição	#
+item.blueprint_attachments.name=Blueprint para acessórios	#
+item.blueprint_guns.name=Blueprint para armas	#
+item.blueprint_vehicle.name=Blueprint para veiculos	#
+
+item.bullet_9x19pr.name=Bala 9x19mm Parabellum	#
+item.bullet_12gauge.name=Cartucho de calibre 12	#
+item.bullet_50ae.name=Cartucho .50 AE	#
+item.bullet_545x39.name=Bala 5,45x39mm	#
+item.bullet_556x45.name=Bala 5,56x45mm OTAN	#
+item.bullet_762x39.name=Bala 7,62x39mm	#
+item.bullet_762x51.name=Bala 7,62x51mm OTAN	#
+
+item.cooked_flesh.name=Carne cozida	#
+
+item.ak47_mag.name=Pente da AK-12	#
+item.ak47_mag.name=Pente da AK-47	#
+item.awp_mag.name=Pente da AWP	#
+item.deagle_mag.name=Pente da Desert Eagle	#
+item.fnfal_mag.name=Pente da FN FAL	#
+item.glock17_magname=Pente da Glock 17	#
+item.glock18_magname=Pente da Glock 18c	#
+item.m249_mag.name=Caixa da M249	#
+item.m4a1_mag.name=Pente da M4A1	#
+item.mp5a5_mag.name=Pente da HK MP5-A5	#
+
+item.bucket_petroleum.name=Balde com petróleo	#
+item.copper_nugget.name=Pepita de cobre	#
+item.gunmetal_ingot.name=Lingote de metal	#
+item.gunmetal_nugget.name=Pepita de metal	#
+item.gunmetal_scrap.name=Sucata de metal	#
+item.plastic_mass.name=Massa plástica	#
+item.plastic_plate.name=Prato de plástico	#
+item.sulfur_powder.name=Enxofre em pó	#
+
+item.landmine.name=Mina terrestre	#
+
+item.barrel_long.name=Cano longo	#
+item.barrel_medium.name=Cano médio	#
+item.barrel_short.name=Cano curto	#
+item.grip.name=Cabo	#
+item.grip_pistol.name=Cabo da pistola	#
+item.stock_polymer.name=Estoque de polímero	#
+item.stock_sniper_polymer.name=Estoque para sniper de polímero	#
+item.stock_wood.name=Estoque de madeira	#
+
+item.m67_grenade.name=Granada M67	#
+
+tile.ammo_workbench.name=Bancada de munição	#
+tile.attachment_workbench.name=Bancada de acessórios	#
+tile.gun_workbench.name=Bancada de armas	#
+tile.hazard_block.name=Bloco de perigo	#
+tile.hedgehog.name=Czech hedgehog	#
+tile.sandbag.name=Saco de arreia 	#
+
+game.message.welcome_2=Desenvolvedor: §b@GabrielAplok
+game.message.welcome_3=Distribuidores: §a@MCPEDL§r e §a@modbay_
+game.message.welcome_4=Servidor do Discord: §bhttps://gabriel-aplok.com/discord
+game.message.welcome_5=Nosso Site: §ahttps://gabriel-aplok.com/projects/aplok-guns
+game.message.welcome_6=§o§eA melhor experiência de armamento militar compatível com modo sobrevivência em todo o Minecraft Bedrock!
+
+game.message.gun_workbench.no_blueprints=Você não tem blueprint para acessórios.	#
+game.message.gun_workbench.hold_gun=Segure uma arma para abrir a bancada de acessórios.	#
+game.message.ammo_workbench.no_ingredients=Você não tem %s para criar os pentes.	#
+game.message.ammo_workbench.ingredients_cost=Criar esta munição custará %s %s e %s %s.	#
+
+game.tip.reloading=> RECARREGANDO <	#

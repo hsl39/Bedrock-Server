@@ -1,0 +1,16 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_data": {
+    "l4gg:spitfire" : {"textures" : "textures/items/plane/spitfire"},
+    "l4gg:sbd_dauntless" : {"textures" : "textures/items/plane/sbd_dauntless"},
+    "l4gg:bf109" : {"textures" : "textures/items/plane/bf109"},
+    "l4gg:fire_gun" : {"textures" : "textures/items/plane/fire_gun"},
+    "l4gg:drop_bomb" : {"textures" : "textures/items/plane/drop_bomb"},
+    "adn:cessna" : {"textures" : "textures/items/plane/cessna"},
+    "l4gg:accelerator" : {"textures": "textures/items/plane/accelerator"},
+    "l4gg:decelerator" : {"textures" : "textures/items/plane/decelerator"},
+    "l4gg:settings" : {"textures" : "textures/items/plane/settings"},
+    "adn:debug" : {"textures" : "textures/items/plane/debug"}
+
+   }
+ }

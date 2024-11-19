@@ -1,0 +1,15 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "mocreatures:omelet4"
+		},
+		"tags": [
+			"smoker",
+			"furnace"
+		],
+		"input": "mocegg:egg90",
+		"output": "mocreatures:omelet"
+	}
+}

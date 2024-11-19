@@ -1,0 +1,122 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.wyvern": {
+			"states": {
+				"default": {
+					"animations":[
+						{
+							"static": "!query.is_illager_captain && !query.is_sitting && !query.is_stackable"
+						},
+						{
+							"sit": "query.is_sitting && !query.is_stackable"
+						},
+						{
+							"move": "query.ground_speed > 0.5 && !query.is_illager_captain && !query.is_stackable"
+						},
+						{
+							"fly": "!query.is_on_ground && !query.is_stackable && query.is_illager_captain"
+						}
+					],
+					"transitions": [
+						{	
+							"shoot": "query.is_charged && !query.is_stackable"
+						},
+						{
+							"sleep": "query.is_ignited && !query.is_stackable"
+						},
+						{
+							"attack": "query.is_delayed_attacking && !query.is_stackable && query.variant == 0 && !query.is_illager_captain"
+						},
+						{
+							"attack2": "query.is_delayed_attacking && !query.is_stackable && query.variant == 0 && !query.is_illager_captain"
+						},
+						{
+							"death": "query.is_stackable"
+						}
+					]
+				},
+				"sleep_start": {
+					"animations": [
+						"sleep_start"
+					],
+					"transitions": [
+						{
+							"sleep": "query.all_animations_finished"
+						}
+					]
+				},
+				"sleep": {
+					"animations": [
+						"sleep"
+					],
+					"transitions": [
+						{
+							"wake_up": "!query.is_ignited"
+						}
+					]
+				},
+				"wake_up": {
+					"animations": [
+						"wake_up"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"sleep_start": {
+					"animations": [
+						"sleep_start"
+					],
+					"transitions": [
+						{
+							"sleep": "query.all_animations_finished"
+						}
+					]
+				},
+				"shoot": {
+					"animations": [
+						"shoot"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"death": {
+					"animations": [
+						"death"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_stackable"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack2": {
+					"animations": [
+						"attack2"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

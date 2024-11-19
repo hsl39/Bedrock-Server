@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "seanite:netherite_ingot"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CBC",
+			"BAB",
+			"CBC"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:heart_of_the_sea"
+			},
+			"B": {
+				"item": "minecraft:prismarine_shard"
+			},
+			"C": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:heart_of_the_sea"
+			},
+			{
+				"item": "minecraft:prismarine_shard"
+			},
+			{
+				"item": "minecraft:gold_ingot"
+			}
+		  ],
+		"result": [
+			{
+				"item": "seanite:netherite_ingot"
+			}
+		]
+	}
+}

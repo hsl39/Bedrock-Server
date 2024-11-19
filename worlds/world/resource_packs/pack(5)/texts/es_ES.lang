@@ -1,0 +1,14 @@
+##Pack Info
+pack.name=Recursos de Martillos de Gravel 2.8 (-1.21.30+)
+pack.description=Hecho por ihategravel de Gravel Studios. || https://twitter.com/justnobodyrn
+##Blocks
+tile.ihg:workbench.name=Mesa de Trabajo
+##Blocks Menu
+ihg:workbench=Tablero
+##Items
+item.ihg:wooden_hammer=Martillo de Madera
+item.ihg:stone_hammer=Martillo de Piedra
+item.ihg:iron_hammer=Martillo de Hierro
+item.ihg:gold_hammer=Martillo de Oro
+item.ihg:diamond_hammer=Martillo de Dismante
+item.ihg:netherite_hammer=Martillo de Inframundita

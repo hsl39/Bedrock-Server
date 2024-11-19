@@ -1,0 +1,163 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.rhyniognatha_proyectil2_effect": {
+     "animation_length": 0.1,
+      "loop": true,
+      "timeline": {
+        "0.0": [ 
+            "/execute @s[tag=on] ~~~ execute @e[type=!item, tag=!attacking,r=6] ~~~ effect @s weakness 5 1 true",
+            "/execute @s[tag=on] ~~~ execute @e[type=!item, tag=!attacking,r=6] ~~~ effect @s slowness 5 20 true"
+            ]  
+      }
+    }, 
+      
+    "animation.wyvern_proyectil_effect_tag": {
+     "animation_length": 0.3,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/tag @s add on"
+            ]
+      }
+    },
+    "animation.wyvern_general_proyectil": {
+     "animation_length": 5.0,
+      "loop": true,
+      "timeline": { 
+        "4.7": [
+"/kill @s"
+            ]
+      }
+    },
+    
+    "animation.rhyniognatha_proyectil2_no_ground": {
+     "animation_length": 11.0,
+      "loop": true,
+      "timeline": { 
+        "10.7": [
+"/kill @s"
+            ]
+      }
+    },
+    
+    "animation.rhyniognatha_proyectil2_ground": {
+     "animation_length": 16.0,
+      "loop": true,
+      "timeline": { 
+        "15.7": [
+"/kill @s" 
+            ]
+      }
+    },
+    
+    "animation.wyvern_fire_proyectil_particles": {
+     "animation_length": 0.05,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+            "/execute @a[r=10] ~~~ playsound sound.fire_proyectil @s ~~~",
+            "/particle mc_ark:particle_fire_wyvern_proyectil ~~~"
+            ]
+      }
+    },
+    "animation.wyvern_fire_proyectil_particles2": {
+     "animation_length": 0.17,
+      "loop": true,
+      "timeline": {
+        "0.15": [
+            "/particle minecraft:lava_particle ~~~"
+            ]
+      }
+    }, 
+    
+    "animation.wyvern_fire_proyectil_hability": {
+     "animation_length": 0.1,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+            "@s minecraft:summon_lightning"
+            ]
+      } 
+    },
+
+    "animation.wyvern_ice_proyectil_particles": {
+     "animation_length": 0.05,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+            "/execute @a[r=10] ~~~ playsound sound.ice_proyectil @s ~~~",
+            "/particle mc_ark:particle_ice_wyvern_proyectil ~~~"
+            ]
+      }
+    },
+    "animation.wyvern_ice_proyectil_particles2": {
+     "animation_length": 0.17,
+      "loop": true,
+      "timeline": {
+        "0.15": [
+            "/particle mc_ark:falling_dust_top_snow_particle ~~~"
+            ]
+      }
+    }, 
+    "animation.wyvern_ice_proyectil_effect": {
+     "animation_length": 0.1,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+    "/fill ~ ~ ~ ~ ~ ~ ice 0 replace water",
+            "/execute @s[tag=on] ~~~ execute @e[type=!item, tag=!attacking,r=3] ~~~ effect @s slowness 5 40 true"
+            ]
+      }
+    },
+    
+    "animation.wyvern_poison_proyectil_particles": {
+     "animation_length": 0.1,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @a[r=10] ~~~ playsound sound.posion_proyectil @s ~~~",
+            "/execute @s[tag=on] ~~~ particle mc_ark:particle_wyvern_poison_proyectil ~~~"
+            ]
+      }
+    }, 
+    "animation.wyvern_poison_proyectil_effect": {
+     "animation_length": 0.05,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+            "/execute @s[tag=on] ~~~ execute @e[type=!item, tag=!attacking,r=3] ~~~ effect @s poison 10 1 true"
+            ]
+      }
+    },
+    
+    "animation.wyvern_electric_proyectil_particles": {
+     "animation_length": 0.05,
+      "loop": true,
+      "timeline": {
+        "0.00": [ 
+            "/execute @a[r=10] ~~~ playsound sound.electric_proyectil @s ~~~",
+            "/particle mc_ark:particle_lightning_wyvern_proyectil ~~~"
+            ]
+      }
+    },
+    "animation.wyvern_electric_proyectil_effect": {
+     "animation_length": 0.05,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+            "/execute @s[tag=on] ~~~ execute @e[type=!item, tag=!attacking,r=3] ~~~ effect @s wither 5 1 true"
+            ]
+      }
+    },
+    "animation.wyvern_electric_proyectil_hability": {
+     "animation_length": 0.1,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+            "@s minecraft:summon_lightning"
+            ]
+      }
+    }
+  } 
+}

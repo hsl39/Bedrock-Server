@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:poison_hydra_sword2"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  A",
+      "AA ",
+      "PA "
+    ],
+    "key": {
+      "A": {
+        "item": "new:poison_hydra_scale"
+      },
+      "P": {
+        "item": "new:poison_hydra_sword1"
+      }
+    },
+    "result": {
+      "item": "new:poison_hydra_sword2"
+    }
+  }
+}

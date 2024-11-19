@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pa:iron_and_coal",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.diamond"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "iron_and_coal"
+			},
+			"minecraft:display_name": {}
+		}
+	}
+}

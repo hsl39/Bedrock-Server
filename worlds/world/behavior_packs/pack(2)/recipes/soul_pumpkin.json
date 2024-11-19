@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "soul_pumpkin"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+            {
+                "item": "heavy:multi_backpack_pumpkin"
+            },
+			{
+                "item": "minecraft:soul_torch"
+            }
+		],
+		"unlock": {
+            "context": "AlwaysUnlocked"
+          },
+		"result": [
+			{
+				"item": "heavy:multi_backpack_soul_pumpkin"
+			}
+		]
+	}
+}

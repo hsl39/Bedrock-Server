@@ -1,0 +1,65 @@
+{
+  "format_version": 2,
+  "header": {
+      "description": "pack.description",
+      "name": "pack.name",
+      "uuid": "3d12ef92-e655-491b-bc99-d16619ad57da",
+      "min_engine_version": [
+          1,
+          21,
+          30
+      ],
+      "version": [
+          1,
+          1,
+          4
+      ]
+  },
+  "modules": [
+      {
+          "type": "data",
+          "uuid": "4c2c174a-5b62-4b1b-8d3d-a1454943bf09",
+          "version": [
+              1,
+              0,
+              0
+          ]
+      },
+      {
+          "type": "script",
+          "language": "javascript",
+          "uuid": "7c74b744-330e-11ee-be56-0242ac120002",
+          "entry": "scripts/index.js",
+          "version": [
+              1,
+              0,
+              0
+          ]
+      }
+  ],
+  "dependencies": [
+      {
+          "uuid": "6a54179c-e734-48c9-8fd9-c9f2a5e1ca1e",
+          "version": [
+              1,
+              1,
+              4
+          ]
+      },
+      {
+          "module_name": "@minecraft/server",
+          "version": "1.10.0"
+      }
+  ],
+  "capabilities": [
+      "script_eval"
+  ],
+  "metadata": {
+      "authors": [
+          "ihategravel/Nobody"
+      ],
+      "url": "https://twitter.com/justnobodyrn",
+      "license": "All rights reserved",
+      "product_type": "addon"
+  }
+}

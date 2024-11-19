@@ -1,0 +1,1150 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.generador_de_resina_rhyniognatha": { 
+     "animation_length": 120.5, 
+      "loop": true,
+      "timeline": {  
+        "120.0": [   
+    "/replaceitem entity @s slot.armor.head 0 minecraft:honey_bottle",    
+    "/tag @s add resina_llena"
+            ]         
+      }            
+    },     
+      
+    "animation.rhyniognatha_whim_particles": {  
+     "animation_length": 5.0, 
+      "loop": true,
+      "timeline": {  
+        "0.0": [
+            "/execute @s[tag=rhyniognatha_nautilus_shell] ~~~ particle mc_ark:whim_rhyniognatha_nautilus_shell ~~2~",
+            "/execute @s[tag=rhyniognatha_nautilus_shell] ~~~ particle mc_ark:whim_rhyniognatha_nautilus_shell ~~2~-2",
+            "/execute @s[tag=rhyniognatha_nautilus_shell] ~~~ particle mc_ark:whim_rhyniognatha_nautilus_shell ~-2~2~",
+            "/execute @s[tag=rhyniognatha_nautilus_shell] ~~~ particle mc_ark:whim_rhyniognatha_nautilus_shell ~~2~-2",
+            "/execute @s[tag=rhyniognatha_nautilus_shell] ~~~ particle mc_ark:whim_rhyniognatha_nautilus_shell ~2~2~",
+            "/execute @s[tag=rhyniognatha_nautilus_shell] ~~~ particle mc_ark:whim_rhyniognatha_nautilus_shell ~~2~",
+            
+            "/execute @s[tag=rhyniognatha_ender_pearl] ~~~ particle mc_ark:whim_rhyniognatha_ender_pearl ~~2~",
+            "/execute @s[tag=rhyniognatha_ender_pearl] ~~~ particle mc_ark:whim_rhyniognatha_ender_pearl ~~2~-2",
+            "/execute @s[tag=rhyniognatha_ender_pearl] ~~~ particle mc_ark:whim_rhyniognatha_ender_pearl ~-2~2~",
+            "/execute @s[tag=rhyniognatha_ender_pearl] ~~~ particle mc_ark:whim_rhyniognatha_ender_pearl ~~2~-2",
+            "/execute @s[tag=rhyniognatha_ender_pearl] ~~~ particle mc_ark:whim_rhyniognatha_ender_pearl ~2~2~",
+            "/execute @s[tag=rhyniognatha_ender_pearl] ~~~ particle mc_ark:whim_rhyniognatha_ender_pearl ~~2~",
+            
+            "/execute @s[tag=rhyniognatha_rabbit_foot] ~~~ particle mc_ark:whim_rhyniognatha_rabbit_foot ~~2~",
+            "/execute @s[tag=rhyniognatha_rabbit_foot] ~~~ particle mc_ark:whim_rhyniognatha_rabbit_foot ~~2~-2",
+            "/execute @s[tag=rhyniognatha_rabbit_foot] ~~~ particle mc_ark:whim_rhyniognatha_rabbit_foot ~-2~2~",
+            "/execute @s[tag=rhyniognatha_rabbit_foot] ~~~ particle mc_ark:whim_rhyniognatha_rabbit_foot ~~2~-2",
+            "/execute @s[tag=rhyniognatha_rabbit_foot] ~~~ particle mc_ark:whim_rhyniognatha_rabbit_foot ~2~2~",
+            "/execute @s[tag=rhyniognatha_rabbit_foot] ~~~ particle mc_ark:whim_rhyniognatha_rabbit_foot ~~2~",
+            
+            "/execute @s[tag=rhyniognatha_beetroot] ~~~ particle mc_ark:whim_rhyniognatha_beetroot ~~2~",
+            "/execute @s[tag=rhyniognatha_beetroot] ~~~ particle mc_ark:whim_rhyniognatha_beetroot ~~2~-2",
+            "/execute @s[tag=rhyniognatha_beetroot] ~~~ particle mc_ark:whim_rhyniognatha_beetroot ~-2~2~",
+            "/execute @s[tag=rhyniognatha_beetroot] ~~~ particle mc_ark:whim_rhyniognatha_beetroot ~~2~-2",
+            "/execute @s[tag=rhyniognatha_beetroot] ~~~ particle mc_ark:whim_rhyniognatha_beetroot ~2~2~",
+            "/execute @s[tag=rhyniognatha_beetroot] ~~~ particle mc_ark:whim_rhyniognatha_beetroot ~~2~",
+            
+            
+            "/execute @s[tag=rhyniognatha_dried_kelp] ~~~ particle mc_ark:whim_rhyniognatha_dried_kelp ~~2~",
+            "/execute @s[tag=rhyniognatha_dried_kelp] ~~~ particle mc_ark:whim_rhyniognatha_dried_kelp ~~2~-2",
+            "/execute @s[tag=rhyniognatha_dried_kelp] ~~~ particle mc_ark:whim_rhyniognatha_dried_kelp ~-2~2~",
+            "/execute @s[tag=rhyniognatha_dried_kelp] ~~~ particle mc_ark:whim_rhyniognatha_dried_kelp ~~2~-2",
+            "/execute @s[tag=rhyniognatha_dried_kelp] ~~~ particle mc_ark:whim_rhyniognatha_dried_kelp ~2~2~",
+            "/execute @s[tag=rhyniognatha_dried_kelp] ~~~ particle mc_ark:whim_rhyniognatha_dried_kelp ~~2~",
+            
+            
+            "/execute @s[tag=rhyniognatha_bone] ~~~ particle mc_ark:whim_rhyniognatha_bone ~~2~",
+            "/execute @s[tag=rhyniognatha_bone] ~~~ particle mc_ark:whim_rhyniognatha_bone ~~2~-2",
+            "/execute @s[tag=rhyniognatha_bone] ~~~ particle mc_ark:whim_rhyniognatha_bone ~-2~2~",
+            "/execute @s[tag=rhyniognatha_bone] ~~~ particle mc_ark:whim_rhyniognatha_bone ~~2~-2",
+            "/execute @s[tag=rhyniognatha_bone] ~~~ particle mc_ark:whim_rhyniognatha_bone ~2~2~",
+            "/execute @s[tag=rhyniognatha_bone] ~~~ particle mc_ark:whim_rhyniognatha_bone ~~2~",
+            
+            "/execute @s[tag=rhyniognatha_carrot_on_a_stick] ~~~ particle mc_ark:whim_rhyniognatha_carrot_on_a_stick ~~2~",
+            "/execute @s[tag=rhyniognatha_carrot_on_a_stick] ~~~ particle mc_ark:whim_rhyniognatha_carrot_on_a_stick ~~2~-2",
+            "/execute @s[tag=rhyniognatha_carrot_on_a_stick] ~~~ particle mc_ark:whim_rhyniognatha_carrot_on_a_stick ~-2~2~",
+            "/execute @s[tag=rhyniognatha_carrot_on_a_stick] ~~~ particle mc_ark:whim_rhyniognatha_carrot_on_a_stick ~~2~-2",
+            "/execute @s[tag=rhyniognatha_carrot_on_a_stick] ~~~ particle mc_ark:whim_rhyniognatha_carrot_on_a_stick ~2~2~",
+            "/execute @s[tag=rhyniognatha_carrot_on_a_stick] ~~~ particle mc_ark:whim_rhyniognatha_carrot_on_a_stick ~~2~",
+            
+            "/execute @s[tag=rhyniognatha_cake] ~~~ particle mc_ark:whim_rhyniognatha_cake ~~2~",
+            "/execute @s[tag=rhyniognatha_cake] ~~~ particle mc_ark:whim_rhyniognatha_cake ~~2~-2",
+            "/execute @s[tag=rhyniognatha_cake] ~~~ particle mc_ark:whim_rhyniognatha_cake ~-2~2~",
+            "/execute @s[tag=rhyniognatha_cake] ~~~ particle mc_ark:whim_rhyniognatha_cake ~~2~-2",
+            "/execute @s[tag=rhyniognatha_cake] ~~~ particle mc_ark:whim_rhyniognatha_cake ~2~2~",
+            "/execute @s[tag=rhyniognatha_cake] ~~~ particle mc_ark:whim_rhyniognatha_cake ~~2~",
+            
+            "/execute @s[tag=rhyniognatha_cooked_chicken] ~~~ particle mc_ark:whim_rhyniognatha_cooked_chicken ~~2~",
+            "/execute @s[tag=rhyniognatha_cooked_chicken] ~~~ particle mc_ark:whim_rhyniognatha_cooked_chicken ~~2~-2",
+            "/execute @s[tag=rhyniognatha_cooked_chicken] ~~~ particle mc_ark:whim_rhyniognatha_cooked_chicken ~-2~2~",
+            "/execute @s[tag=rhyniognatha_cooked_chicken] ~~~ particle mc_ark:whim_rhyniognatha_cooked_chicken ~~2~-2",
+            "/execute @s[tag=rhyniognatha_cooked_chicken] ~~~ particle mc_ark:whim_rhyniognatha_cooked_chicken ~2~2~",
+            "/execute @s[tag=rhyniognatha_cooked_chicken] ~~~ particle mc_ark:whim_rhyniognatha_cooked_chicken ~~2~",
+            
+            "/execute @s[tag=rhyniognatha_cod] ~~~ particle mc_ark:whim_rhyniognatha_cod ~~2~",
+            "/execute @s[tag=rhyniognatha_cod] ~~~ particle mc_ark:whim_rhyniognatha_cod ~~2~-2",
+            "/execute @s[tag=rhyniognatha_cod] ~~~ particle mc_ark:whim_rhyniognatha_cod ~-2~2~",
+            "/execute @s[tag=rhyniognatha_cod] ~~~ particle mc_ark:whim_rhyniognatha_cod ~~2~-2",
+            "/execute @s[tag=rhyniognatha_cod] ~~~ particle mc_ark:whim_rhyniognatha_cod ~2~2~",
+            "/execute @s[tag=rhyniognatha_cod] ~~~ particle mc_ark:whim_rhyniognatha_cod ~~2~",
+            
+            
+            "/execute @s[tag=rhyniognatha_egg] ~~~ particle mc_ark:whim_rhyniognatha_egg ~~2~",
+            "/execute @s[tag=rhyniognatha_egg] ~~~ particle mc_ark:whim_rhyniognatha_egg ~~2~-2",
+            "/execute @s[tag=rhyniognatha_egg] ~~~ particle mc_ark:whim_rhyniognatha_egg ~-2~2~",
+            "/execute @s[tag=rhyniognatha_egg] ~~~ particle mc_ark:whim_rhyniognatha_egg ~~2~-2",
+            "/execute @s[tag=rhyniognatha_egg] ~~~ particle mc_ark:whim_rhyniognatha_egg ~2~2~",
+            "/execute @s[tag=rhyniognatha_egg] ~~~ particle mc_ark:whim_rhyniognatha_egg ~~2~",
+            
+            "/execute @s[tag=rhyniognatha_bread] ~~~ particle mc_ark:whim_rhyniognatha_bread ~~2~",
+            "/execute @s[tag=rhyniognatha_bread] ~~~ particle mc_ark:whim_rhyniognatha_bread ~~2~-2",
+            "/execute @s[tag=rhyniognatha_bread] ~~~ particle mc_ark:whim_rhyniognatha_bread ~-2~2~",
+            "/execute @s[tag=rhyniognatha_bread] ~~~ particle mc_ark:whim_rhyniognatha_bread ~~2~-2",
+            "/execute @s[tag=rhyniognatha_bread] ~~~ particle mc_ark:whim_rhyniognatha_bread ~2~2~",
+            "/execute @s[tag=rhyniognatha_bread] ~~~ particle mc_ark:whim_rhyniognatha_bread ~~2~"
+            ]     
+      }            
+    },  
+   "animation.rhyniognatha_whim_time_turn_off": {
+     "animation_length": 51.5, 
+      "loop": true, 
+      "timeline": {   
+        "50.5": [ 
+"variable.rhyo_points = variable.rhyo_points - 50.0;",
+           "/particle mc_ark:bad_point_mc_ark ~~1~",
+  "/playsound block.turtle_egg.break @a[r=8]"
+            ], 
+        "51.0": [ 
+            
+    "/replaceitem entity @s slot.armor.head 0 minecraft:apple"
+            ]
+      }  
+    },    
+      
+    "animation.rhyo_embarazo_proceso": { 
+     "animation_length": 243.5, 
+      "loop": false,
+      "timeline": {  
+        "1.0":  [
+    "/tag @s remove feromona_efecto",
+    "/tag @s add rhyniognatha_embarazo"
+            ],
+        "10.0": [
+    "/replaceitem entity @s slot.armor.head 0 beef",
+"/playsound mob.zombie.remedy @a[r=10] ~~~"
+            ],
+        "30.0": [    
+
+    "/execute @s[tag=rhyniognatha_lvl10] ~~~ damage @s 1 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl50] ~~~ damage @s 2 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl100] ~~~ damage @s 3 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl150] ~~~ damage @s 4 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl200] ~~~ damage @s 5 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl250] ~~~ damage @s 6 entity_attack entity @s"
+            ],
+        "50.0": [   
+
+"/effect @s slowness 30 1",
+"/effect @s weakness 30 1",
+"/effect @s poison 3 0 true"
+            ],
+        "70.0": [
+    "/replaceitem entity @s slot.armor.head 0 beef",
+"/playsound mob.zombie.remedy @a[r=10] ~~~"
+            ],
+        "90.0": [    
+
+    "/execute @s[tag=rhyniognatha_lvl10] ~~~ damage @s 1 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl50] ~~~ damage @s 2 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl100] ~~~ damage @s 3 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl150] ~~~ damage @s 4 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl200] ~~~ damage @s 5 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl250] ~~~ damage @s 6 entity_attack entity @s"
+            ],
+        "130.0": [
+    "/replaceitem entity @s slot.armor.head 0 beef",
+"/playsound mob.zombie.remedy @a[r=10] ~~~"
+            ],
+        "120.0": [   
+
+"/effect @s slowness 30 1",
+"/effect @s weakness 30 1",
+"/effect @s poison 3 0 true"
+            ],
+        "160.0": [    
+
+    "/execute @s[tag=rhyniognatha_lvl10] ~~~ damage @s 1 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl50] ~~~ damage @s 2 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl100] ~~~ damage @s 3 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl150] ~~~ damage @s 4 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl200] ~~~ damage @s 5 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl250] ~~~ damage @s 6 entity_attack entity @s"
+            ],
+        "190.0": [
+    "/replaceitem entity @s slot.armor.head 0 beef",
+"/playsound mob.zombie.remedy @a[r=10] ~~~"
+            ],
+        "210.0": [    
+
+    "/execute @s[tag=rhyniognatha_lvl10] ~~~ damage @s 1 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl50] ~~~ damage @s 2 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl100] ~~~ damage @s 3 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl150] ~~~ damage @s 4 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl200] ~~~ damage @s 5 entity_attack entity @s",
+    "/execute @s[tag=rhyniognatha_lvl250] ~~~ damage @s 6 entity_attack entity @s"
+            ]
+
+      }             
+    },      
+    
+    "animation.rhyniognatha_pheromone_basic_off": { 
+     "animation_length": 300.5, 
+      "loop": true,
+      "timeline": {  
+        "300.0": [   
+    "/tag @s remove feromona_efecto",
+    "/replaceitem entity @s slot.armor.head 0 air"
+            ]         
+      }            
+    },     
+      
+    "animation.rhyniognatha_pheromone_basic": { 
+     "animation_length": 2.5, 
+      "loop": true,
+      "timeline": {  
+        "0.0": [ 
+            "/particle mc_ark:rhyniognatha_pheromone_particle ~~1.5~",
+            "/particle mc_ark:rhyniognatha_pheromone_particle ~~1.5~-1.5",
+            "/particle mc_ark:rhyniognatha_pheromone_particle ~-1.5~1.5~",
+            
+ 
+            "/particle mc_ark:rhyniognatha_pheromone_particle ~~1.5~-1.5",
+            "/particle mc_ark:rhyniognatha_pheromone_particle ~1.5~1.5~",
+             
+            "/particle mc_ark:rhyniognatha_pheromone_particle ~~1.5~"
+            ]    
+      }            
+    },     
+      
+       
+    "animation.wild_carcha_attack_mc_ark": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {  
+        "0.0": [
+              "/execute @s[tag=carcha_hability_lvl1] ~~~ effect @s speed 5 1 true", 
+              "/execute @s[tag=carcha_hability_lvl2] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl3] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl4] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl5] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl6] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl7] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl8] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl9] ~~~ effect @s speed 5 1 true",
+              "/execute @s[tag=carcha_hability_lvl10] ~~~ effect @s speed 5 1 true",
+            
+            
+    "/execute @s[tag=carcha_hability_lvl1] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl2] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+ 
+    "/execute @s[tag=carcha_hability_lvl3] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl3] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl4] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl4] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,tag=!carcharodontosaurus_wild ,r=8] 8 entity_attack entity @s"
+            ]    
+      }   
+    },          
+    "animation.tamed_carcha_attack_mc_ark": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {  
+        "0.0": [    
+            
+    "/execute @s[tag=carcha_hability_lvl1] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl2] ~~~ damage @e[type=!item  ,r=6] 8 entity_attack entity @s",
+ 
+    "/execute @s[tag=carcha_hability_lvl3] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl3] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl4] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl4] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl5] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl6] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl7] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl8] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl9] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s",
+    "/execute @s[tag=carcha_hability_lvl10] ~~~ damage @e[type=!item ,r=6] 8 entity_attack entity @s"
+            ]     
+      }  
+    },              
+      
+      
+    "animation.eliminador_respaldo": {
+     "animation_length": 1.0,
+      "loop": false,
+      "timeline": { 
+        "0.0": [ 
+              "/event entity @s minecraft:eliminador_respaldo"
+            ]  
+      }           
+    },     
+      
+    "animation.0_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %0"
+            ] 
+      }          
+    },     
+    "animation.10_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %10"
+            ] 
+      }          
+    },     
+    "animation.20_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %20"
+            ] 
+      }          
+    },     
+    "animation.30_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %30"
+            ] 
+      }          
+    },     
+    "animation.40_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %40"
+            ] 
+      }          
+    },     
+    "animation.50_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %50"
+            ] 
+      }          
+    },     
+    "animation.60_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %60"
+            ] 
+      }          
+    },     
+    "animation.70_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %70"
+            ] 
+      }          
+    },     
+    "animation.80_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %80"
+            ] 
+      }          
+    },     
+    "animation.90_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %90"
+            ] 
+      }          
+    },     
+    "animation.95_percent": {
+     "animation_length":5.5,
+      "loop": true,
+      "timeline": { 
+        "5.00": [ 
+"/title @p[r=8] actionbar %95"
+            ] 
+      }          
+    },     
+      
+    "animation.reducir_confianza_1_lvl10": {
+     "animation_length":60.5,
+      "loop": true,
+      "timeline": { 
+        "60.00": [ 
+"variable.confianza = variable.confianza - 5.0;"
+            ] 
+      }          
+    },     
+    "animation.reducir_confianza_1_lvl50": {
+     "animation_length":60.5,
+      "loop": true,
+      "timeline": { 
+        "60.00": [ 
+"variable.confianza = variable.confianza - 10.0;"
+            ] 
+      }          
+    },     
+    "animation.reducir_confianza_1_lvl100": {
+     "animation_length":60.5,
+      "loop": true,
+      "timeline": { 
+        "60.00": [ 
+"variable.confianza = variable.confianza - 15.0;"
+            ] 
+      }          
+    },     
+    "animation.reducir_confianza_1_lvl150": {
+     "animation_length":60.5,
+      "loop": true,
+      "timeline": { 
+        "60.00": [ 
+"variable.confianza = variable.confianza - 30.0;"
+            ] 
+      }          
+    },     
+    "animation.reducir_confianza_2": {
+     "animation_length":300.5,
+      "loop": true,
+      "timeline": {  
+        "300.00": [ 
+"variable.confianza = variable.confianza - 50.0;",
+              "/event entity @s minecraft:carcha_confianza_2"
+            ] 
+      }          
+    },     
+      
+
+    "animation.subiendo_habilidad_mc_ark_animation": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [ 
+"variable.bufo_carcha = variable.bufo_carcha + 5.0;"
+            ] , 
+        "0.70": [   
+              "/event entity @s minecraft:eliminar_comidas" 
+            ]    
+      }          
+    },      
+      
+    "animation.carcha_disminucion_niveles": {
+     "animation_length":120.5,
+      "loop": true,
+      "timeline": {  
+        "120.0": [  
+"variable.bufo_carcha = variable.bufo_carcha - 10.0;"
+            ] 
+      }         
+    },    
+      
+      
+    "animation.puntos_animales_pequenos_mc_ark_animation2": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [  
+"variable.confianza_p2 = variable.confianza_p2 + 2.0;"
+            ],
+        "0.70": [  
+              "/event entity @s minecraft:eliminar_comidas"
+            ]   
+      }         
+    },   
+    "animation.puntos_animales_medianos_mc_ark_animation2": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [  
+"variable.confianza_p2 = variable.confianza_p2 + 8.0;"
+            ],
+        "0.70": [  
+              "/event entity @s minecraft:eliminar_comidas"
+            ]   
+      }         
+    },   
+    "animation.puntos_animales_grandes_mc_ark_animation2": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [ 
+"variable.confianza_p2 = variable.confianza_p2 + 10.0;"
+            ],
+        "0.70": [  
+              "/event entity @s minecraft:eliminar_comidas"
+            ]   
+      }         
+    },    
+    "animation.puntos_animales_extra_grandes_mc_ark_animation2": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [  
+"variable.confianza_p2 = variable.confianza_p2 + 15.0;"
+            ] ,
+        "0.70": [   
+              "/event entity @s minecraft:eliminar_comidas"
+            ]    
+      }          
+    },   
+      
+    "animation.comiendo_animales_carcha_mc_ark_animation": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [ 
+"/effect @s regeneration 5 4 true"
+            ],
+        "0.70": [   
+              "/event entity @s minecraft:eliminar_comidas"
+            ]   
+      }         
+    },   
+    "animation.puntos_animales_pequenos_mc_ark_animation": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [ 
+"variable.confianza = variable.confianza + 2.0;"
+            ],
+        "0.70": [  
+              "/event entity @s minecraft:eliminar_comidas"
+            ]   
+      }         
+    },   
+    "animation.puntos_animales_medianos_mc_ark_animation": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [ 
+"variable.confianza = variable.confianza + 8.0;"
+            ],
+        "0.70": [  
+              "/event entity @s minecraft:eliminar_comidas"
+            ]   
+      }         
+    },   
+    "animation.puntos_animales_grandes_mc_ark_animation": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [ 
+"variable.confianza = variable.confianza + 10.0;"
+            ],
+        "0.70": [  
+              "/event entity @s minecraft:eliminar_comidas"
+            ]   
+      }         
+    },    
+    "animation.puntos_animales_extra_grandes_mc_ark_animation": {
+     "animation_length":0.90,
+      "loop": false,
+      "timeline": { 
+        "0.00": [ 
+"variable.confianza = variable.confianza + 15.0;"
+            ] ,
+        "0.70": [   
+              "/event entity @s minecraft:eliminar_comidas"
+            ]    
+      }          
+    },   
+ 
+ 
+    "animation.devorador_cadaveres_mc_ark": {   
+     "animation_length":0.1,
+      "loop": true,  
+      "timeline": {         
+        "0.00": [ 
+            
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_pq,tag=!by_player] ~~~ execute @s[tag=usado] ~~~ kill @s"  ,
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_md,tag=!by_player] ~~~ execute @s[tag=usado] ~~~ kill @s"  ,
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_gd,tag=!by_player] ~~~ execute @s[tag=usado] ~~~ kill @s"  , 
+              "/execute @s ~~~ execute @e[r=5, family=cadaver,tag=by_player] ~~~ execute @s[tag=usado] ~~~ kill @s"  ,
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_pq,tag=!by_player] ~~~ execute @s[tag=!usado] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:comiendo_animales_carcha", 
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_md,tag=!by_player] ~~~ execute @s[tag=!usado] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:comiendo_animales_carcha",
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_gd,tag=!by_player] ~~~ execute @s[tag=!usado] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:comiendo_animales_carcha",
+            
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_pq,tag=!by_player] ~~~ tag @s add usado"  ,
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_md,tag=!by_player] ~~~ tag @s add usado"  ,
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_gd,tag=!by_player] ~~~ tag @s add usado"  , 
+            
+            
+            
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_pq, tag=by_player] ~~~ execute @s[tag=!usado] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:puntos_animales_pequenos",
+
+             
+            
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_md, tag=by_player] ~~~ execute @s[tag=!usado] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:puntos_animales_medianos",
+              
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_gd, tag=by_player] ~~~ execute @s[tag=!usado] ~~~ execute @p[r=20] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:puntos_animales_grandes",
+              
+
+              "/execute @s ~~~ execute @e[r=5, family=cadaver_egd, tag=by_player] ~~~ execute @p[r=20] ~~~ execute @s[tag=!usado] ~~~ execute @e[r=22, family=carcharodontosaurus] ~~~ event entity @s minecraft:puntos_animales_extra_grandes",
+               
+              
+              "/execute @s ~~~ execute @e[r=5, family=cadaver,tag=by_player] ~~~ tag @s add usado"  
+            ]   
+      }    
+    },     
+      
+    "animation.metodo_espera_mc_ark": {
+     "animation_length":0.5,
+      "loop": false,
+      "timeline": {  
+        "0.0": [  
+              "/tag @s add by_player",
+              "/tag @s add metodo_espera"
+            ]   
+      }  
+    },     
+      
+    "animation.descomposicion_rapida_mc_ark": {
+     "animation_length":0.5,
+      "loop": true,
+      "timeline": {  
+        "0.1": [  
+              "/kill @s"
+            ]   
+      }  
+    },     
+    
+    "animation.pudriendose_mc_ark_big": {
+     "animation_length":305.0,
+      "loop": true,
+      "timeline": {    
+        "20.0": [  
+              "/tag @s remove metodo_espera"
+            ],   
+        "300.0": [  
+              "/event entity @s minecraft:desaparecer_on"
+            ]   
+      }  
+    },  
+    
+    "animation.pudriendose_mc_ark_bigmd": {
+     "animation_length":205.0,
+      "loop": true,
+      "timeline": {    
+        "20.0": [  
+              "/tag @s remove metodo_espera"
+            ],   
+        "200.0": [  
+              "/event entity @s minecraft:desaparecer_on"
+            ]   
+      }  
+    },    
+    
+    "animation.pudriendose_mc_ark_md": {
+     "animation_length":125.0,
+      "loop": true,
+      "timeline": {    
+        "20.0": [  
+              "/tag @s remove metodo_espera"
+            ],   
+        "120.0": [  
+              "/event entity @s minecraft:desaparecer_on"
+            ]   
+      }  
+    },    
+      
+    "animation.pudriendose_mc_ark_bigpq": {
+     "animation_length":125.0,
+      "loop": true,
+      "timeline": {    
+        "20.0": [  
+              "/tag @s remove metodo_espera"
+            ],   
+        "120.0": [  
+              "/event entity @s minecraft:desaparecer_on"
+            ]   
+      }  
+    },    
+    "animation.pudriendose_mc_ark_pq": {
+     "animation_length":80.5,
+      "loop": true,
+      "timeline": {    
+        "20.0": [  
+              "/tag @s remove metodo_espera"
+            ],   
+        "80.0": [  
+              "/event entity @s minecraft:desaparecer_on"
+            ]   
+      }  
+    },    
+    
+    "animation.second_attack_allosaurus_mc_ark_wild": {
+     "animation_length":0.3,
+      "loop": true,
+      "timeline": {  
+        "0.0": [     
+        
+    "/execute @s[tag=!allosaurus_wild]  ~~~ effect @e[type=!item, tag=!in_attack ,r=6] wither 15 0 true",
+    "/execute @s[tag=allosaurus_wild]  ~~~ effect @e[type=!item,tag=!allosaurus_wild, tag=!in_attack ,r=8] wither 15 0 true"
+            ]    
+      }  
+    },         
+      
+    "animation.second_attack_spino_mc_ark": {
+     "animation_length": 4.0,
+      "loop": true,
+      "timeline": {  
+        "0.0": [    
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!spinosaurus_wild, tag=!in_attack ,r=6] 1 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!spinosaurus_wild, tag=!in_attack ,r=6] 1 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!spinosaurus_wild, tag=!in_attack ,r=6] 1 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item,tag=!spinosaurus_wild, tag=!in_attack ,r=6] 1 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!spinosaurus_wild, tag=!in_attack ,r=6] 1 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item,tag=!spinosaurus_wild, tag=!in_attack ,r=6] 1 entity_attack entity @s" 
+            ]    
+      }  
+    },         
+      
+    "animation.desaparecer_coc_mc_ark_trike": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": {   
+        "5.0": [  
+            "/tag @s add desaparecer_coc_mc_ark_trike",  
+              "/execute @a[r=60] ~~~ execute @e[tag=desaparecer_coc_mc_ark_trike,r=66] ~~~ event entity @s minecraft:desaparecer_enable"
+            ]   ,
+        "5.5": [    
+            "/tag @s remove desaparecer_coc_mc_ark_trike"
+            ]   
+      }  
+    },
+    
+    "animation.desaparecer_coc_mc_ark_raptor": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": {   
+        "5.0": [  
+            "/tag @s add desaparecer_coc_mc_ark_raptor",  
+              "/execute @a[r=32] ~~~ execute @e[tag=desaparecer_coc_mc_ark_raptor,r=34] ~~~ event entity @s minecraft:desaparecer_enable"
+            ]   ,
+        "5.5": [    
+            "/tag @s remove desaparecer_coc_mc_ark_raptor"
+            ]   
+      }  
+    }, 
+    
+    "animation.desaparecer_coc_mc_ark_tek": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": {   
+        "5.0": [  
+            "/tag @s add desaparecer_coc_mc_ark_tek",  
+              "/execute @a[r=32] ~~~ execute @e[tag=desaparecer_coc_mc_ark_tek,r=34] ~~~ event entity @s minecraft:desaparecer_enable"
+            ]   ,
+        "5.5": [    
+            "/tag @s remove desaparecer_coc_mc_ark_tek"
+            ]   
+      }  
+    }, 
+       
+    "animation.desaparecer_coc_mc_ark_tyranosaurus_rex": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": {    
+        "5.0": [  
+            "/tag @s add desaparecer_coc_mc_ark_tyranosaurus_rex", 
+              "/execute @a[r=60] ~~~ execute @e[tag=desaparecer_coc_mc_ark_tyranosaurus_rex,r=66] ~~~ event entity @s minecraft:desaparecer_enable"
+            ]   ,
+        "5.5": [    
+            "/tag @s remove desaparecer_coc_mc_ark_tyranosaurus_rex"
+            ]   
+      }  
+    },
+      
+    "animation.desaparecer_coc_mc_ark_pteranodon": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": { 
+        "5.0": [  
+            "/tag @s add sensor_despawn_mc_ark_pteranodon", 
+              "/execute @a[r=36] ~~~ execute @e[tag=sensor_despawn_mc_ark_pteranodon,r=40] ~~~ event entity @s minecraft:desaparecer_enable"
+            ]   ,
+        "5.5": [    
+            "/tag @s remove sensor_despawn_mc_ark_pteranodon"
+            ]   
+      }  
+    },
+    "animation.desaparecer_coc_mc_ark_pegomastax": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": { 
+        "5.0": [  
+            "/tag @s add sensor_despawn_mc_ark_pegomastax", 
+              "/execute @a[r=26] ~~~ execute @e[tag=sensor_despawn_mc_ark_pegomastax,r=29] ~~~ event entity @s minecraft:desaparecer_enable"
+            ]   ,
+        "5.5": [   
+            "/tag @s remove sensor_despawn_mc_ark_pegomastax"
+            ]   
+      }  
+    },    
+    "animation.desaparecer_coc_mc_ark_compy": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": {  
+        "5.0": [  
+            "/tag @s add sensor_despawn_mc_ark_simple", 
+              "/execute @a[r=20] ~~~ execute @e[tag=sensor_despawn_mc_ark_simple,r=24] ~~~ event entity @s minecraft:desaparecer_enable"
+            ]   ,
+        "5.5": [  
+            "/tag @s remove sensor_despawn_mc_ark_simple"
+            ]   
+      }  
+    },    
+      
+    "animation.alert_parasaurus_mc_ark": {
+     "animation_length": 4.0,
+      "loop": false,
+      "timeline": { 
+        "3.0": [  
+              "/execute @e[family=zombie, r=20] ~~~ execute @e[type=mc_ark:parasaurus, tag=tamed,r=30] ~~~ playsound mob.parasaurus_mc_ark.sensor @a[r=5]",
+              "/execute @e[family=spider, r=20] ~~~ execute @e[type=mc_ark:parasaurus, tag=tamed,r=30] ~~~ playsound mob.parasaurus_mc_ark.sensor @a[r=5]",
+              "/execute @e[family=skeleton, r=20] ~~~ execute @e[type=mc_ark:parasaurus, tag=tamed,r=30] ~~~ playsound mob.parasaurus_mc_ark.sensor @a[r=5]",
+              "/execute @e[family=creeper, r=20] ~~~ execute @e[type=mc_ark:parasaurus, tag=tamed,r=30] ~~~ playsound mob.parasaurus_mc_ark.sensor @a[r=5]",
+              "/execute @e[family=criatura_salvaje, r=20 , tag=!tamed] ~~~ execute @e[type=mc_ark:parasaurus, tag=tamed,r=30] ~~~ playsound mob.parasaurus_mc_ark.sensor @a[r=5]",
+               "/execute @e[family=wild_adult, r=20] ~~~ execute @e[type=mc_ark:parasaurus, tag=tamed,r=30] ~~~ playsound mob.parasaurus_mc_ark.sensor @a[r=5]"
+ 
+  
+ 
+            ]   
+      }  
+    },        
+    
+    "animation.turret_mode_parasaurus_mc_ark": {
+     "animation_length": 20.0,
+      "loop": true,
+      "timeline": { 
+        "5.0": [  
+            "/execute @s[tag=turret_on] ~~~ event entity @s minecraft:in_attack_respaldo"
+            ]   
+      }  
+    },        
+      
+    "animation.pickup_r": {
+     "animation_length": 4.0,
+      "loop": false,
+      "timeline": { 
+        "3.0": [  
+                        "@s minecraft:on_calm",
+          "/tag @s add pickup_r"
+            ]   
+      }  
+    },        
+      
+      
+    "animation.remove_angry_mc_ark": {
+     "animation_length": 4.0,
+      "loop": false,
+      "timeline": { 
+        "3.0": [  
+                        "@s minecraft:on_calm"
+            ]   
+      }  
+    },       
+      
+    "animation.roar_animation_remove": {
+     "animation_length": 3.9,
+      "loop": true,
+      "timeline": { 
+        "2.0": [ 
+                        "@s minecraft:off_roar"
+            ]   
+      }  
+    },        
+        
+      
+    "animation.dilophosaurus_proyectil_hability": {
+     "animation_length": 0.05,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+        
+            "/effect @e[type=!mc_ark:dilophosaurus, r=3] blindness 6 6",
+            "/effect @e[type=!mc_ark:dilophosaurus, r=3] darkness 6 6",
+            "/effect @e[type=!mc_ark:dilophosaurus, r=3] poison 2 0 true",
+            "/effect @e[type=!mc_ark:dilophosaurus, r=3] slowness 3 0 true"
+            ]
+      } 
+    },
+      
+    "animation.riding_off": {
+     "animation_length": 3.0,
+      "loop": true,
+      "timeline": {
+        "2.0": [ 
+                "/execute @s ~~~ detect ~~-3~ air 0 execute @s ~~~ tp @s ~~0.5~",
+                "/execute @s ~~~ detect ~~-3~ air 0 event entity @s minecraft:domado_cant_riding"
+            ]   
+      }  
+    },      
+        "animation.close_inventory": {
+     "animation_length": 6.0,
+      "loop": true,
+      "timeline": {
+        "5.0": [ 
+                        "@s minecraft:pegomastax_inventory_off"
+            ]  
+      }  
+    },      
+    
+    "animation.break_riding_mc_ark": {
+     "animation_length": 11.0,
+      "loop": true,
+      "timeline": {
+        "10.0": [
+                        "@s minecraft:domado_can_riding"
+            ] 
+      }   
+    },      
+      
+      
+    "animation.running_per_time": {
+     "animation_length": 11.0,
+      "loop": true,
+      "timeline": {
+        "10.0": [
+                        "@s minecraft:running_pegomastax"
+            ] 
+      }  
+    },      
+      
+    "animation.roar_tamed_parasaur": {
+     "animation_length": 1.1,
+      "loop": true,
+      "timeline": { 
+        "0.0": [
+"/execute @e[family=raptor_wild, r=16] ~~~ execute @e[family=parasaur_tamed, r=18] ~~~ event entity @s[family=parasaur_roaring2] minecraft:parasaur_family_roaring" ,
+"/execute @e[family=raptor_wild, r=16] ~~~ event entity @s minecraft:ataque_usual" 
+            ] 
+      }  
+    },    
+       
+    "animation.particulas_furia_mc_ark": {
+     "animation_length": 1.72,
+      "loop": true,
+      "timeline": { 
+        "1.5": [
+            "/execute @s ~~~ particle mc_ark:particle_alfa_mc_ark ~~1.5~",
+            "/execute @s ~~~ particle mc_ark:particle_alfa_mc_ark ~~1.5~-1.5",
+            "/execute @s  ~~~ particle mc_ark:particle_alfa_mc_ark ~-1.5~1.5~",
+            
+ 
+            "/execute @s ~~~ particle mc_ark:particle_alfa_mc_ark ~~1.5~-1.5",
+            "/execute @s ~~~ particle mc_ark:particle_alfa_mc_ark ~1.5~1.5~",
+              
+            "/execute @s ~~~ particle mc_ark:particle_alfa_mc_ark ~~1.5~"
+            ]
+      }
+    },
+    "animation.particulas_alfa_mc_ark": {
+     "animation_length": 1.72,
+      "loop": true,
+      "timeline": { 
+        "1.5": [
+            "/execute @s[tag=alfa] ~~~ particle mc_ark:particle_alfa_mc_ark ~~1.5~",
+            "/execute @s[tag=alfa] ~~~ particle mc_ark:particle_alfa_mc_ark ~~1.5~-1.5",
+            "/execute @s[tag=alfa] ~~~ particle mc_ark:particle_alfa_mc_ark ~-1.5~1.5~",
+            
+ 
+            "/execute @s[tag=alfa] ~~~ particle mc_ark:particle_alfa_mc_ark ~~1.5~-1.5",
+            "/execute @s[tag=alfa] ~~~ particle mc_ark:particle_alfa_mc_ark ~1.5~1.5~",
+             
+            "/execute @s[tag=alfa] ~~~ particle mc_ark:particle_alfa_mc_ark ~~1.5~"
+            ]
+      }
+    },
+      
+    "animation.sleep_particles_mc_ark": {
+     "animation_length": 9.45,
+      "loop": true,
+      "timeline": { 
+        "3.0": [
+            "/particle mc_ark:zzz_mc_ark ~~~"
+            
+            ],
+        "4.16": [
+            "/particle mc_ark:zzz_mc_ark ~~~"
+            
+            ],
+        "5.22": [
+            "/particle mc_ark:zzz_mc_ark ~~~"
+            
+            ],
+        "6.26": [
+            "/particle mc_ark:zzz_mc_ark ~~~"
+            
+            ],
+        "7.32": [
+            "/particle mc_ark:zzz_mc_ark ~~~"
+            
+            ],
+        "8.36": [
+            "/particle mc_ark:zzz_mc_ark ~~~-"
+            
+            ],
+        "9.42": [
+            "/particle mc_ark:zzz_mc_ark ~~~"
+            
+            ]
+      }
+    },
+    "animation.get_up_v6": {
+     "animation_length": 600.1,
+      "loop": true,
+      "timeline": {
+        "500.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    },   
+    
+    "animation.get_up_v5": {
+     "animation_length": 500.1,
+      "loop": true,
+      "timeline": {
+        "500.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    },   
+    
+    "animation.get_up_v4": {
+     "animation_length": 400.1,
+      "loop": true,
+      "timeline": {
+        "400.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    },   
+    
+    "animation.get_up_v3": {
+     "animation_length": 300.1,
+      "loop": true,
+      "timeline": {
+        "300.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    },   
+    
+    "animation.get_up_v2": {
+     "animation_length": 180.1,
+      "loop": true,
+      "timeline": {
+        "180.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    },   
+    
+    "animation.get_up_v1": {
+     "animation_length": 60.1,
+      "loop": true,
+      "timeline": {
+        "60.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    },   
+    
+    "animation.get_up_usual": {
+     "animation_length": 200.1,
+      "loop": true,
+      "timeline": {
+        "200.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    },   
+    "animation.get_up_dodo": {
+     "animation_length": 30.5,
+      "loop": true,
+      "timeline": {
+        "30.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    } 
+  }
+}
+ 
+
+
+
+

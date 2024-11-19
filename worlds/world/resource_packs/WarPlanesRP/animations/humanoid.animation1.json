@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.riding.rotation1": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, 
+					"v.rootOrientation = query.bone_orientation_trs('root');
+					v.rootOrientation = v.rootOrientation.r;", 
+					"!q.is_riding ? 0 : Math.lerprotate(v.rootOrientation.z,
+					((q.ride_body_y_rotation - q.head_y_rotation(0) >= 0 && q.ride_body_y_rotation - q.head_y_rotation(0) <= 180) || (q.ride_body_y_rotation - q.head_y_rotation(0) <= -180 && q.ride_body_y_rotation - q.head_y_rotation(0) >= -360) ? 1 : -1) *
+					Math.clamp(
+					    Math.min(Math.abs(q.ride_body_y_rotation - q.head_y_rotation(0)), 360 - Math.abs(q.ride_body_y_rotation - q.head_y_rotation(0)) + Math.floor(Math.abs(q.ride_body_y_rotation - q.head_y_rotation(0)) / 360) * 360),
+					    -80, 80),
+					    0.1)"]
+				}
+			}
+		},
+		"animation.player.riding.on_ground.rotation": {
+			"loop": true,
+			"bones": {
+				"root": {
+				    "position": [
+				        "v.rootPosition = query.bone_orientation_trs('root');
+				        v.rootPosition = v.rootPosition.t;", 
+				        22, 
+				        0
+				        ]
+				},
+				"head": {
+				    "position": [
+				        0,
+				        0, 
+				        0
+				        ]
+				}
+			}
+		}
+	}
+}

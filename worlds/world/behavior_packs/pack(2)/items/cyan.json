@@ -1,0 +1,21 @@
+{
+	"format_version":"1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "heavy:multi_backpack_cyan",
+					"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.trident"
+			  }
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": false,
+			"minecraft:mining_speed": 1,
+			"minecraft:display_name": {},
+			"minecraft:icon": {
+				"texture": "multi_backpack_cyan"
+			}
+		}
+	}
+}

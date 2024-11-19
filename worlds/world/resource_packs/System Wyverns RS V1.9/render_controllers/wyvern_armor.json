@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.wyvern_armor": {
+      "arrays": {
+        "geometries": {
+          "array.geos": [
+            "geometry.netherite",
+            "geometry.leather",
+            "geometry.gold",
+            "geometry.iron",
+            "geometry.diamond"
+          ]
+        },
+        "textures": {
+          "Array.skins": [
+            "Texture.netherite",
+            "Texture.leather",
+            "Texture.gold",
+            "Texture.iron",
+            "Texture.diamond"
+
+          ]
+        }
+      },
+      "geometry": "Array.geos[query.skin_id]",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    }
+  }
+}

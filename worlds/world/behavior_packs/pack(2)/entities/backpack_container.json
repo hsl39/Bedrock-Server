@@ -1,0 +1,70 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "multi_backpack:backpack_container",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "multi_backpack_despawn": {
+          "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["backpack"]
+      },
+      "minecraft:breathable": {
+        "breathes_solids": true,
+        "breathes_lava": true,
+        "generates_bubbles": false
+      },
+      "minecraft:inventory": {
+        "container_type": "inventory",
+        "inventory_size": 27,
+        "private": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:health": {
+        "value": 9,
+        "max": 9
+      },
+      "minecraft:collision_box": {
+        "height": 0.8,
+        "width": 0.6
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": false,
+        "always_show": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "events": {
+      "multi_backpack:despawn": {
+        "add": {
+          "component_groups": [
+            "multi_backpack_despawn"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+
+{
+  "format_version": "1.10.0",
+  "animation_controllers":{
+    "controller.animation.hydra_attack":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "attack": "variable.attack_time > 0"
+            }
+          ]
+        },
+        "attack":{
+          "transitions":[
+            {
+              "default": "!variable.attack_time"
+            }
+          ],
+          "on_entry":[
+            "/event entity @s new:hydra_change_attack"
+          ]
+        }
+      }
+    },
+    "controller.animation.hydra_change":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "change": "query.is_stunned"
+            }
+          ]
+        },
+        "change":{
+          "transitions":[
+            {
+              "default": "!query.is_stunned"
+            }
+          ],
+          "on_entry":[
+            "/scoreboard objectives add hydra dummy",
+            "/scoreboard players add @s hydra 1",
+            "/event entity @s[scores={hydra=5}] new:hydra_roar",
+            "/event entity @s[scores={hydra=1..}] new:hydra_remove_scores",
+            "/scoreboard players reset @s[scores={hydra=5}] hydra"
+          ]
+        }
+      }
+    }
+  }
+}

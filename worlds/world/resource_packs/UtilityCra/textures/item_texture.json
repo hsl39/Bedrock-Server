@@ -1,0 +1,387 @@
+{
+	"resource_pack_name": "UtilityCraft",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"twm_netherite_aiot": {
+			"textures": "textures/items/Netherite AIOT"
+		},
+		"twm_netherite_paxel": {
+			"textures": "textures/items/Netherite Multitool"
+		},
+		"twm_diamond_aiot": {
+			"textures": "textures/items/Diamond AIOT"
+		},
+		"twm_iron_aiot": {
+			"textures": "textures/items/Iron AIOT"
+		},
+		"twm_stone_aiot": {
+			"textures": "textures/items/Stone AIOT"
+		},
+		"twm_wood_aiot": {
+			"textures": "textures/items/Wood AIOT"
+		},
+		"twm_diamond_paxel": {
+			"textures": "textures/items/Diamond Multitool"
+		},
+		"twm_iron_paxel": {
+			"textures": "textures/items/Iron Multitool"
+		},
+		"twm_gold_aiot": {
+			"textures": "textures/items/Golden AIOT"
+		},
+		"twm_gold_paxel": {
+			"textures": "textures/items/Gold Multitool"
+		},
+		"twm_stone_paxel": {
+			"textures": "textures/items/Stone Multitool"
+		},
+		"twm_wood_paxel": {
+			"textures": "textures/items/Wood Multitool"
+		},
+		"twm_advanced_netherite_axe": {
+			"textures": "textures/items/Advanced Netherite Axe"
+		},
+		"twm_advanced_diamond_axe": {
+			"textures": "textures/items/Advanced Diamond Axe"
+		},
+		"twm_advanced_iron_axe": {
+			"textures": "textures/items/Advanced Iron Axe"
+		},
+		"twm_advanced_netherite_pickaxe": {
+			"textures": "textures/items/Advanced Netherite Pickaxe"
+		},
+		"twm_advanced_diamond_pickaxe": {
+			"textures": "textures/items/Advanced Diamond Pickaxe"
+		},
+		"twm_advanced_iron_pickaxe": {
+			"textures": "textures/items/Advanced Iron Pickaxe"
+		},
+		"twm_advanced_netherite_shovel": {
+			"textures": "textures/items/Advanced Netherite Shovel"
+		},
+		"twm_advanced_diamond_shovel": {
+			"textures": "textures/items/Advanced Diamond Shovel"
+		},
+		"twm_advanced_iron_shovel": {
+			"textures": "textures/items/Advanced Iron Shovel"
+		},
+		"twm_netherite_hammer": {
+			"textures": "textures/items/Netherite Hammer"
+		},
+		"twm_diamond_hammer": {
+			"textures": "textures/items/Diamond Hammer"
+		},
+		"twm_iron_hammer": {
+			"textures": "textures/items/Iron Hammer"
+		},
+		"twm_smelting_pickaxe": {
+			"textures": "textures/items/Smelting Pickaxe"
+		},
+		"twm_lucky_pickaxe": {
+			"textures": "textures/items/Lucky Pickaxe"
+		},
+		"twm_lucky_pickaxe_item": {
+			"textures": "textures/items/Lucky Pickaxe"
+		},
+		"twm_advanced_drill": {
+			"textures": "textures/items/Advanced Drill"
+		},
+		"twm_drill": {
+			"textures": "textures/items/Drill"
+		},
+		"twm_clock": {
+			"textures": "textures/items/magic_clock"
+		},
+		"twm_advanced_netherite_hoe": {
+			"textures": "textures/items/Advanced Netherite Hoe"
+		},
+		"twm_advanced_diamond_hoe": {
+			"textures": "textures/items/Advanced Diamond Hoe"
+		},
+		"twm_advanced_iron_hoe": {
+			"textures": "textures/items/Advanced Iron Hoe"
+		},
+		"twm_base_seeds": {
+			"textures": "textures/items/base_seeds"
+		},
+		"twm_diamond_seeds": {
+			"textures": "textures/items/diamond_seeds"
+		},
+		"twm_iron_seeds": {
+			"textures": "textures/items/iron_seeds"
+		},
+		"twm_lapis_seeds": {
+			"textures": "textures/items/lapis_seeds"
+		},
+		"twm_gold_seeds": {
+			"textures": "textures/items/gold_seeds"
+		},
+		"twm_redstone_seeds": {
+			"textures": "textures/items/redstone_seeds"
+		},
+		"twm_coal_seeds": {
+			"textures": "textures/items/coal_seeds"
+		},
+		"twm_emerald_seeds": {
+			"textures": "textures/items/emerald_seeds"
+		},
+		"twm_netherite_seeds": {
+			"textures": "textures/items/netherite_seeds"
+		},
+		"twm_blaze_seeds": {
+			"textures": "textures/items/blaze_seeds"
+		},
+		"twm_wither_seeds": {
+			"textures": "textures/items/wither_seeds"
+		},
+		"twm_wrench": {
+			"textures": "textures/items/wrench"
+		},
+		"twm_nether_star_seeds": {
+			"textures": "textures/items/nether_star_seeds"
+		},
+		"twm_shulker_seeds": {
+			"textures": "textures/items/shulker_seeds"
+		},
+		"twm_totem_seeds": {
+			"textures": "textures/items/totem_seeds"
+		},
+		"twm_obsidian_seeds": {
+			"textures": "textures/items/obsidian_seeds"
+		},
+		"twm_enderpearl_seeds": {
+			"textures": "textures/items/ender_pearl_seeds"
+		},
+		"twm_amethyst_seeds": {
+			"textures": "textures/items/amethyst_seeds"
+		},
+		"twm_glowstone_seeds": {
+			"textures": "textures/items/glowstone_seeds"
+		},
+		"twm_honey_seeds": {
+			"textures": "textures/items/honey_seeds"
+		},
+		"twm_quartz_seeds": {
+			"textures": "textures/items/quartz_seeds"
+		},
+		"twm_slime_seeds": {
+			"textures": "textures/items/slime_seeds"
+		},
+		"twm_honey_ball": {
+			"textures": "textures/items/honeyball"
+		},
+		"twm_treated_spruce_sapling": {
+			"textures": "textures/items/sapling_spruce"
+		},
+		"twm_treated_darkoak_sapling": {
+			"textures": "textures/items/sapling_roofed_oak"
+		},
+		"twm_treated_oak_sapling": {
+			"textures": "textures/items/sapling_oak"
+		},
+		"twm_treated_jungle_sapling": {
+			"textures": "textures/items/sapling_jungle"
+		},
+		"twm_treated_birch_sapling": {
+			"textures": "textures/items/sapling_birch"
+		},
+		"twm_treated_acacia_sapling": {
+			"textures": "textures/items/sapling_acacia"
+		},
+		"twm_grenade": {
+			"textures": "textures/items/grenade"
+		},
+		"twm_bomb": {
+			"textures": "textures/items/bomb"
+		},
+		"twm_dynamite": {
+			"textures": "textures/items/dynamite"
+		},
+		"twm_water_seeds": {
+			"textures": "textures/items/water_seeds"
+		},
+		"twm_lava_seeds": {
+			"textures": "textures/items/lava_seeds"
+		},
+		"twm_prismarine_crystals_seeds": {
+			"textures": "textures/items/prismarine_crystals_seeds"
+		},
+		"twm_prismarine_shards_seeds": {
+			"textures": "textures/items/prismarine_shards_seeds"
+		},
+		"twm_glass_seeds": {
+			"textures": "textures/items/glass_seeds"
+		},
+		"twm_lavaball": {
+			"textures": "textures/items/lavaball"
+		},
+		"twm_waterball": {
+			"textures": "textures/items/waterball"
+		},
+		"twm_amogus": {
+			"textures": "textures/items/amogus"
+		},
+		"twm_string_mesh": {
+			"textures": "textures/items/string_mesh"
+		},
+		"twm_iron_mesh": {
+			"textures": "textures/items/iron_mesh"
+		},
+		"twm_diamond_mesh": {
+			"textures": "textures/items/diamond_mesh"
+		},
+		"twm_netherite_mesh": {
+			"textures": "textures/items/netherite_mesh"
+		},
+		"twm_copper_seeds": {
+			"textures": "textures/items/copper_seeds"
+		},
+		"twm_ghast_seeds": {
+			"textures": "textures/items/ghast_seeds"
+		},
+		"twm_gunpowder_seeds": {
+			"textures": "textures/items/gunpowder_seeds"
+		},
+		"twm_leather_seeds": {
+			"textures": "textures/items/leather_seeds"
+		},
+		"twm_wool_seeds": {
+			"textures": "textures/items/wool_seeds"
+		},
+		"twm_treated_cherry_sapling": {
+			"textures": "textures/items/cherry_sapling"
+		},
+		"twm_treated_mangrove_sapling": {
+			"textures": "textures/items/mangrove_propagule"
+		},
+		"twm_apple_sapling": {
+			"textures": "textures/items/apple_tree"
+		},
+		"twm_gold_upgrade": {
+			"textures": "textures/items/gold_upgrade"
+		},
+		"twm_emerald_upgrade": {
+			"textures": "textures/items/emerald_upgrade"
+		},
+		"twm_diamond_upgrade": {
+			"textures": "textures/items/diamond_upgrade"
+		},
+		"twm_lucky_sword": {
+			"textures": "textures/items/Lucky Sword"
+		},
+		"twm_lucky_sword_item": {
+			"textures": "textures/items/Lucky Sword"
+		},
+		"twm_stone_hammer": {
+			"textures": "textures/items/Stone Hammer"
+		},
+		"twm_soul": {
+			"textures": "textures/items/soul"
+		},
+		"twm_soul_vessel": {
+			"textures": "textures/items/soul_vessel"
+		},
+		"twm_zombie_essence": {
+			"textures": "textures/items/zombie_essence"
+		},
+		"twm_essence_vessel": {
+			"textures": "textures/items/essence_vessel"
+		},
+		"twm_smeltflare": {
+			"textures": "textures/items/smeltflare"
+		},
+		"twm_skeleton_essence": {
+			"textures": "textures/items/skeleton_essence"
+		},
+		"twm_pig_essence": {
+			"textures": "textures/items/pig_essence"
+		},
+		"twm_creeper_essence": {
+			"textures": "textures/items/creeper_essence"
+		},
+		"twm_spider_essence": {
+			"textures": "textures/items/spider_essence"
+		},
+		"twm_cow_essence": {
+			"textures": "textures/items/cow_essence"
+		},
+		"twm_sheep_essence": {
+			"textures": "textures/items/sheep_essence"
+		},
+		"twm_slime_essence": {
+			"textures": "textures/items/slime_essence"
+		},
+		"twm_infinite_water_bucket": {
+			"textures": "textures/items/infinite_water_bucket"
+		},
+		"twm_ore_igniter": {
+			"textures": "textures/items/ore_igniter"
+		},
+		"twm_dyes_seeds": {
+			"textures": "textures/items/dye_seeds"
+		},
+		"twm_infinite_enderpearl": {
+			"textures": "textures/items/infinite_enderpearl"
+		},
+		"twm_black_amogus": {
+			"textures": "textures/items/black_amogus"
+		},
+		"twm_speed_upgrade": {
+			"textures": "textures/items/speed_upgrade"
+		},
+		"twm_range_upgrade": {
+			"textures": "textures/items/range_upgrade"
+		},
+		"twm_steel": {
+			"textures": "textures/items/steel"
+		},
+		"twm_lucky_fishing_rod": {
+			"textures": "textures/items/fishing_rod_uncast"
+		},
+		"twm_raw_leather": {
+			"textures": "textures/items/raw_leather"
+		},
+		"twm_blaze_essence": {
+			"textures": "textures/items/blaze_essence"
+		},
+		"twm_chicken_essence": {
+			"textures": "textures/items/chicken_essence"
+		},
+		"twm_enderman_essence": {
+			"textures": "textures/items/enderman_essence"
+		},
+		"twm_hoglin_essence": {
+			"textures": "textures/items/hoglin_essence"
+		},
+		"twm_magma_cube_essence": {
+			"textures": "textures/items/magma_cube_essence"
+		},
+		"twm_mooshroom_essence": {
+			"textures": "textures/items/mooshroom_essence"
+		},
+		"twm_wither_skeleton_essence": {
+			"textures": "textures/items/wither_skeleton_essence"
+		},
+		"twm_antidote_potion": {
+			"textures": "textures/items/antidote_potion"
+		},
+		"twm_antidote_potion_splash": {
+			"textures": "textures/items/antidote_potion_splash"
+		},
+		"twm_quantity_upgrade": {
+			"textures": "textures/items/quantity_upgrade"
+		},
+		"twm_energy_upgrade": {
+			"textures": "textures/items/energy_upgrade"
+		},
+		"twm_base_upgrade": {
+			"textures": "textures/items/base_upgrade"
+		},
+		"twm_ultimate_upgrade": {
+			"textures": "textures/items/ultimate_upgrade"
+		},
+		"twm_accelerator_clock": {
+			"textures": "textures/items/accelerator_clock"
+		}
+	}
+}

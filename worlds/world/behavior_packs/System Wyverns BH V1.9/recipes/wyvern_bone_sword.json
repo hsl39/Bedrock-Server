@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:wyvern_bone_sword"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " I ",
+      "HIH",
+      " S "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "I": {
+        "item": "new:wyvern_bones"
+      },
+      "H": {
+        "item": "new:wyvern_bone"
+      }
+    },
+    "result": {
+      "item": "new:wyvern_bone_sword"
+    }
+  }
+}

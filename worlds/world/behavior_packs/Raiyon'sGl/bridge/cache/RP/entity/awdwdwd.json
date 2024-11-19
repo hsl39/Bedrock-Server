@@ -1,0 +1,460 @@
+{
+	"file_path": "C:\\Users\\elcha\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Raiyon'sGl\\entity\\awdwdwd.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "21bc3683_b645_4474_b314_7047ccb84e86",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "raiyon:test",
+							"min_engine_version": "1.8.0",
+							"materials": {
+								"default": "entity_emissive_alpha"
+							},
+							"geometry": {
+								"default": "geometry.test"
+							},
+							"spawn_egg": {
+								"texture": "spawn_egg",
+								"texture_index": 34
+							},
+							"scripts": {
+								"pre_animation": [
+									"variable.Shulker.LidPositionFactor = 180 * (0.5 + variable.Shulker.PeekAmount);",
+									"variable.Shulker.LidRotationFactor = -1 + Math.sin(180 * (0.5 + variable.Shulker.PeekAmount));",
+									"variable.Shulker.UpFacing = variable.Shulker.FacingDirection == 1;",
+									"variable.Shulker.NorthFacing = variable.Shulker.FacingDirection == 2;",
+									"variable.Shulker.SouthFacing = variable.Shulker.FacingDirection == 3;",
+									"variable.Shulker.WestFacing = variable.Shulker.FacingDirection == 4;",
+									"variable.Shulker.EastFacing = variable.Shulker.FacingDirection == 5;",
+									"variable.Shulker.XPreRotation = variable.Shulker.UpFacing * 180 + variable.Shulker.NorthFacing * 90 - variable.Shulker.SouthFacing * 90;",
+									"variable.Shulker.ZPreRotation = variable.Shulker.NorthFacing * 180 + variable.Shulker.WestFacing * 90 - variable.Shulker.EastFacing * 90;",
+									"variable.Shulker.XOffset = -variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+									"variable.Shulker.YOffset = variable.Shulker.UpFacing * 16 + variable.Shulker.NorthFacing * 7.99 + variable.Shulker.SouthFacing * 7.99 + variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+									"variable.Shulker.ZOffset = variable.Shulker.NorthFacing * 7.99 - variable.Shulker.SouthFacing * 7.99;"
+								]
+							},
+							"animations": {
+								"facing": "animation.shulker.facing",
+								"move": "animation.shulker.move",
+								"look_at_target": "animation.common.look_at_target"
+							},
+							"animation_controllers": [
+								{
+									"facing": "controller.animation.shulker.facing"
+								},
+								{
+									"move": "controller.animation.shulker.move"
+								}
+							],
+							"render_controllers": [
+								"controller.render.husk"
+							],
+							"textures": {
+								"default": "textures/blocks/iron_ore"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "raiyon:test",
+								"min_engine_version": "1.8.0",
+								"materials": {
+									"default": "entity_emissive_alpha"
+								},
+								"geometry": {
+									"default": "geometry.test"
+								},
+								"spawn_egg": {
+									"texture": "spawn_egg",
+									"texture_index": 34
+								},
+								"scripts": {
+									"pre_animation": [
+										"variable.Shulker.LidPositionFactor = 180 * (0.5 + variable.Shulker.PeekAmount);",
+										"variable.Shulker.LidRotationFactor = -1 + Math.sin(180 * (0.5 + variable.Shulker.PeekAmount));",
+										"variable.Shulker.UpFacing = variable.Shulker.FacingDirection == 1;",
+										"variable.Shulker.NorthFacing = variable.Shulker.FacingDirection == 2;",
+										"variable.Shulker.SouthFacing = variable.Shulker.FacingDirection == 3;",
+										"variable.Shulker.WestFacing = variable.Shulker.FacingDirection == 4;",
+										"variable.Shulker.EastFacing = variable.Shulker.FacingDirection == 5;",
+										"variable.Shulker.XPreRotation = variable.Shulker.UpFacing * 180 + variable.Shulker.NorthFacing * 90 - variable.Shulker.SouthFacing * 90;",
+										"variable.Shulker.ZPreRotation = variable.Shulker.NorthFacing * 180 + variable.Shulker.WestFacing * 90 - variable.Shulker.EastFacing * 90;",
+										"variable.Shulker.XOffset = -variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+										"variable.Shulker.YOffset = variable.Shulker.UpFacing * 16 + variable.Shulker.NorthFacing * 7.99 + variable.Shulker.SouthFacing * 7.99 + variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+										"variable.Shulker.ZOffset = variable.Shulker.NorthFacing * 7.99 - variable.Shulker.SouthFacing * 7.99;"
+									]
+								},
+								"animations": {
+									"facing": "animation.shulker.facing",
+									"move": "animation.shulker.move",
+									"look_at_target": "animation.common.look_at_target"
+								},
+								"animation_controllers": [
+									{
+										"facing": "controller.animation.shulker.facing"
+									},
+									{
+										"move": "controller.animation.shulker.move"
+									}
+								],
+								"render_controllers": [
+									"controller.render.husk"
+								],
+								"textures": {
+									"default": "textures/blocks/iron_ore"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"identifier": "raiyon:test",
+									"min_engine_version": "1.8.0",
+									"materials": {
+										"default": "entity_emissive_alpha"
+									},
+									"geometry": {
+										"default": "geometry.test"
+									},
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 34
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.Shulker.LidPositionFactor = 180 * (0.5 + variable.Shulker.PeekAmount);",
+											"variable.Shulker.LidRotationFactor = -1 + Math.sin(180 * (0.5 + variable.Shulker.PeekAmount));",
+											"variable.Shulker.UpFacing = variable.Shulker.FacingDirection == 1;",
+											"variable.Shulker.NorthFacing = variable.Shulker.FacingDirection == 2;",
+											"variable.Shulker.SouthFacing = variable.Shulker.FacingDirection == 3;",
+											"variable.Shulker.WestFacing = variable.Shulker.FacingDirection == 4;",
+											"variable.Shulker.EastFacing = variable.Shulker.FacingDirection == 5;",
+											"variable.Shulker.XPreRotation = variable.Shulker.UpFacing * 180 + variable.Shulker.NorthFacing * 90 - variable.Shulker.SouthFacing * 90;",
+											"variable.Shulker.ZPreRotation = variable.Shulker.NorthFacing * 180 + variable.Shulker.WestFacing * 90 - variable.Shulker.EastFacing * 90;",
+											"variable.Shulker.XOffset = -variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.YOffset = variable.Shulker.UpFacing * 16 + variable.Shulker.NorthFacing * 7.99 + variable.Shulker.SouthFacing * 7.99 + variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.ZOffset = variable.Shulker.NorthFacing * 7.99 - variable.Shulker.SouthFacing * 7.99;"
+										]
+									},
+									"animations": {
+										"facing": "animation.shulker.facing",
+										"move": "animation.shulker.move",
+										"look_at_target": "animation.common.look_at_target"
+									},
+									"animation_controllers": [
+										{
+											"facing": "controller.animation.shulker.facing"
+										},
+										{
+											"move": "controller.animation.shulker.move"
+										}
+									],
+									"render_controllers": [
+										"controller.render.husk"
+									],
+									"textures": {
+										"default": "textures/blocks/iron_ore"
+									}
+								},
+								"data": "raiyon:test",
+								"key": "identifier"
+							},
+							{
+								"data": "1.8.0",
+								"key": "min_engine_version"
+							},
+							{
+								"open": {
+									"identifier": "raiyon:test",
+									"min_engine_version": "1.8.0",
+									"materials": {
+										"default": "entity_emissive_alpha"
+									},
+									"geometry": {
+										"default": "geometry.test"
+									},
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 34
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.Shulker.LidPositionFactor = 180 * (0.5 + variable.Shulker.PeekAmount);",
+											"variable.Shulker.LidRotationFactor = -1 + Math.sin(180 * (0.5 + variable.Shulker.PeekAmount));",
+											"variable.Shulker.UpFacing = variable.Shulker.FacingDirection == 1;",
+											"variable.Shulker.NorthFacing = variable.Shulker.FacingDirection == 2;",
+											"variable.Shulker.SouthFacing = variable.Shulker.FacingDirection == 3;",
+											"variable.Shulker.WestFacing = variable.Shulker.FacingDirection == 4;",
+											"variable.Shulker.EastFacing = variable.Shulker.FacingDirection == 5;",
+											"variable.Shulker.XPreRotation = variable.Shulker.UpFacing * 180 + variable.Shulker.NorthFacing * 90 - variable.Shulker.SouthFacing * 90;",
+											"variable.Shulker.ZPreRotation = variable.Shulker.NorthFacing * 180 + variable.Shulker.WestFacing * 90 - variable.Shulker.EastFacing * 90;",
+											"variable.Shulker.XOffset = -variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.YOffset = variable.Shulker.UpFacing * 16 + variable.Shulker.NorthFacing * 7.99 + variable.Shulker.SouthFacing * 7.99 + variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.ZOffset = variable.Shulker.NorthFacing * 7.99 - variable.Shulker.SouthFacing * 7.99;"
+										]
+									},
+									"animations": {
+										"facing": "animation.shulker.facing",
+										"move": "animation.shulker.move",
+										"look_at_target": "animation.common.look_at_target"
+									},
+									"animation_controllers": [
+										{
+											"facing": "controller.animation.shulker.facing"
+										},
+										{
+											"move": "controller.animation.shulker.move"
+										}
+									],
+									"render_controllers": [
+										"controller.render.husk"
+									],
+									"textures": {
+										"default": "textures/blocks/iron_ore"
+									}
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "entity_emissive_alpha"
+								}
+							},
+							{
+								"open": {
+									"identifier": "raiyon:test",
+									"min_engine_version": "1.8.0",
+									"materials": {
+										"default": "entity_emissive_alpha"
+									},
+									"geometry": {
+										"default": "geometry.test"
+									},
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 34
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.Shulker.LidPositionFactor = 180 * (0.5 + variable.Shulker.PeekAmount);",
+											"variable.Shulker.LidRotationFactor = -1 + Math.sin(180 * (0.5 + variable.Shulker.PeekAmount));",
+											"variable.Shulker.UpFacing = variable.Shulker.FacingDirection == 1;",
+											"variable.Shulker.NorthFacing = variable.Shulker.FacingDirection == 2;",
+											"variable.Shulker.SouthFacing = variable.Shulker.FacingDirection == 3;",
+											"variable.Shulker.WestFacing = variable.Shulker.FacingDirection == 4;",
+											"variable.Shulker.EastFacing = variable.Shulker.FacingDirection == 5;",
+											"variable.Shulker.XPreRotation = variable.Shulker.UpFacing * 180 + variable.Shulker.NorthFacing * 90 - variable.Shulker.SouthFacing * 90;",
+											"variable.Shulker.ZPreRotation = variable.Shulker.NorthFacing * 180 + variable.Shulker.WestFacing * 90 - variable.Shulker.EastFacing * 90;",
+											"variable.Shulker.XOffset = -variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.YOffset = variable.Shulker.UpFacing * 16 + variable.Shulker.NorthFacing * 7.99 + variable.Shulker.SouthFacing * 7.99 + variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.ZOffset = variable.Shulker.NorthFacing * 7.99 - variable.Shulker.SouthFacing * 7.99;"
+										]
+									},
+									"animations": {
+										"facing": "animation.shulker.facing",
+										"move": "animation.shulker.move",
+										"look_at_target": "animation.common.look_at_target"
+									},
+									"animation_controllers": [
+										{
+											"facing": "controller.animation.shulker.facing"
+										},
+										{
+											"move": "controller.animation.shulker.move"
+										}
+									],
+									"render_controllers": [
+										"controller.render.husk"
+									],
+									"textures": {
+										"default": "textures/blocks/iron_ore"
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.test"
+								}
+							},
+							{
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"texture": "spawn_egg",
+									"texture_index": 34
+								}
+							},
+							{
+								"key": "scripts",
+								"is_minified": true,
+								"children": {
+									"pre_animation": [
+										"variable.Shulker.LidPositionFactor = 180 * (0.5 + variable.Shulker.PeekAmount);",
+										"variable.Shulker.LidRotationFactor = -1 + Math.sin(180 * (0.5 + variable.Shulker.PeekAmount));",
+										"variable.Shulker.UpFacing = variable.Shulker.FacingDirection == 1;",
+										"variable.Shulker.NorthFacing = variable.Shulker.FacingDirection == 2;",
+										"variable.Shulker.SouthFacing = variable.Shulker.FacingDirection == 3;",
+										"variable.Shulker.WestFacing = variable.Shulker.FacingDirection == 4;",
+										"variable.Shulker.EastFacing = variable.Shulker.FacingDirection == 5;",
+										"variable.Shulker.XPreRotation = variable.Shulker.UpFacing * 180 + variable.Shulker.NorthFacing * 90 - variable.Shulker.SouthFacing * 90;",
+										"variable.Shulker.ZPreRotation = variable.Shulker.NorthFacing * 180 + variable.Shulker.WestFacing * 90 - variable.Shulker.EastFacing * 90;",
+										"variable.Shulker.XOffset = -variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+										"variable.Shulker.YOffset = variable.Shulker.UpFacing * 16 + variable.Shulker.NorthFacing * 7.99 + variable.Shulker.SouthFacing * 7.99 + variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+										"variable.Shulker.ZOffset = variable.Shulker.NorthFacing * 7.99 - variable.Shulker.SouthFacing * 7.99;"
+									]
+								}
+							},
+							{
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"facing": "animation.shulker.facing",
+									"move": "animation.shulker.move",
+									"look_at_target": "animation.common.look_at_target"
+								}
+							},
+							{
+								"key": "animation_controllers",
+								"is_minified": true,
+								"children": [
+									{
+										"facing": "controller.animation.shulker.facing"
+									},
+									{
+										"move": "controller.animation.shulker.move"
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "raiyon:test",
+									"min_engine_version": "1.8.0",
+									"materials": {
+										"default": "entity_emissive_alpha"
+									},
+									"geometry": {
+										"default": "geometry.test"
+									},
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 34
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.Shulker.LidPositionFactor = 180 * (0.5 + variable.Shulker.PeekAmount);",
+											"variable.Shulker.LidRotationFactor = -1 + Math.sin(180 * (0.5 + variable.Shulker.PeekAmount));",
+											"variable.Shulker.UpFacing = variable.Shulker.FacingDirection == 1;",
+											"variable.Shulker.NorthFacing = variable.Shulker.FacingDirection == 2;",
+											"variable.Shulker.SouthFacing = variable.Shulker.FacingDirection == 3;",
+											"variable.Shulker.WestFacing = variable.Shulker.FacingDirection == 4;",
+											"variable.Shulker.EastFacing = variable.Shulker.FacingDirection == 5;",
+											"variable.Shulker.XPreRotation = variable.Shulker.UpFacing * 180 + variable.Shulker.NorthFacing * 90 - variable.Shulker.SouthFacing * 90;",
+											"variable.Shulker.ZPreRotation = variable.Shulker.NorthFacing * 180 + variable.Shulker.WestFacing * 90 - variable.Shulker.EastFacing * 90;",
+											"variable.Shulker.XOffset = -variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.YOffset = variable.Shulker.UpFacing * 16 + variable.Shulker.NorthFacing * 7.99 + variable.Shulker.SouthFacing * 7.99 + variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.ZOffset = variable.Shulker.NorthFacing * 7.99 - variable.Shulker.SouthFacing * 7.99;"
+										]
+									},
+									"animations": {
+										"facing": "animation.shulker.facing",
+										"move": "animation.shulker.move",
+										"look_at_target": "animation.common.look_at_target"
+									},
+									"animation_controllers": [
+										{
+											"facing": "controller.animation.shulker.facing"
+										},
+										{
+											"move": "controller.animation.shulker.move"
+										}
+									],
+									"render_controllers": [
+										"controller.render.husk"
+									],
+									"textures": {
+										"default": "textures/blocks/iron_ore"
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.husk"
+								]
+							},
+							{
+								"open": {
+									"identifier": "raiyon:test",
+									"min_engine_version": "1.8.0",
+									"materials": {
+										"default": "entity_emissive_alpha"
+									},
+									"geometry": {
+										"default": "geometry.test"
+									},
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 34
+									},
+									"scripts": {
+										"pre_animation": [
+											"variable.Shulker.LidPositionFactor = 180 * (0.5 + variable.Shulker.PeekAmount);",
+											"variable.Shulker.LidRotationFactor = -1 + Math.sin(180 * (0.5 + variable.Shulker.PeekAmount));",
+											"variable.Shulker.UpFacing = variable.Shulker.FacingDirection == 1;",
+											"variable.Shulker.NorthFacing = variable.Shulker.FacingDirection == 2;",
+											"variable.Shulker.SouthFacing = variable.Shulker.FacingDirection == 3;",
+											"variable.Shulker.WestFacing = variable.Shulker.FacingDirection == 4;",
+											"variable.Shulker.EastFacing = variable.Shulker.FacingDirection == 5;",
+											"variable.Shulker.XPreRotation = variable.Shulker.UpFacing * 180 + variable.Shulker.NorthFacing * 90 - variable.Shulker.SouthFacing * 90;",
+											"variable.Shulker.ZPreRotation = variable.Shulker.NorthFacing * 180 + variable.Shulker.WestFacing * 90 - variable.Shulker.EastFacing * 90;",
+											"variable.Shulker.XOffset = -variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.YOffset = variable.Shulker.UpFacing * 16 + variable.Shulker.NorthFacing * 7.99 + variable.Shulker.SouthFacing * 7.99 + variable.Shulker.WestFacing * 7.99 + variable.Shulker.EastFacing * 7.99;",
+											"variable.Shulker.ZOffset = variable.Shulker.NorthFacing * 7.99 - variable.Shulker.SouthFacing * 7.99;"
+										]
+									},
+									"animations": {
+										"facing": "animation.shulker.facing",
+										"move": "animation.shulker.move",
+										"look_at_target": "animation.common.look_at_target"
+									},
+									"animation_controllers": [
+										{
+											"facing": "controller.animation.shulker.facing"
+										},
+										{
+											"move": "controller.animation.shulker.move"
+										}
+									],
+									"render_controllers": [
+										"controller.render.husk"
+									],
+									"textures": {
+										"default": "textures/blocks/iron_ore"
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/blocks/iron_ore"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

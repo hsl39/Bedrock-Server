@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:tiger",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/bctiger",
+				"white": "textures/models/bcwhitetiger"
+			},
+			"geometry": {
+				"default": "geometry.bcfemale",
+				"tamed": "geometry.bcfemale_tame",
+				"saddle": "geometry.bcfemale_saddled",
+				"chested": "geometry.bcfemale_chested"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target",
+					{
+						"sit": "query.is_sitting"
+					},
+					{
+						"jump": "!query.is_on_ground"
+					}
+				],
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				]
+			},
+			"animations": {
+				"walk": "animation.bcmale.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"sit": "animation.bcfemale.sit",
+				"jump": "animation.bcmale.jump"
+			},
+			"render_controllers": [
+				"controller.render.malelion_tame",
+				"controller.render.malelion_saddled",
+				"controller.render.malelion_chested"
+			],
+			"spawn_egg": {
+				"base_color": "#E16941",
+				"overlay_color": "#000000"
+			}
+		}
+	}
+}

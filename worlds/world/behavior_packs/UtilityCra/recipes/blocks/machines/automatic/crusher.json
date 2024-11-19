@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twm:crusher"
+		},
+		"tags": [
+			"twm_workbench"
+		],
+		"key": {
+			"H": {
+				"item": "minecraft:diamond_axe"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"M": {
+				"item": "twm:machine_case"
+			},
+			"R": {
+				"item": "minecraft:redstone_block"
+			},
+			"S": {
+				"item": "twm:steel"
+			}
+		},
+		"pattern": [
+			"SHS",
+			"IMI",
+			"SRS"
+		],
+		"result": {
+			"item": "twm:crusher"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:diamond_axe"
+			},
+			{
+				"item": "minecraft:iron_ingot"
+			},
+			{
+				"item": "twm:machine_case"
+			},
+			{
+				"item": "minecraft:redstone_block"
+			},
+			{
+				"item": "twm:steel"
+			}
+		]
+	}
+}

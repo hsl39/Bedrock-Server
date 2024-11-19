@@ -1,0 +1,28 @@
+// Coded by @JustAsh0005 for ActualGuns (for both 2D and 3D version), you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.akm_onempty": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{ "akm_empty": "q.get_equipped_item_name(0) == 'akm_empty' && (!q.is_powered && !q.is_ignited) && q.is_using_item" }
+					]
+				},
+				"akm_empty": {
+					"on_entry": [
+						"/tag @s[hasitem={item=ar:akm_mag}] add reload",
+						"/playsound pixelpoly.empty_gun @a[tag=!reload] ~~~ 1.0"
+					],
+					"transitions": [
+						{ "default": "q.get_equipped_item_name(0) != 'akm_empty' || !q.is_using_item" }
+					]
+				}
+			}
+		}
+	}
+}
+
+// This code is exclusive to both Add-ons (ActualGuns 2D and 3D) and can not be used by anybody else.

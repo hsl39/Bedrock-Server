@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mocreatures:whip",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.itemMo"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "whip"
+			},
+			"minecraft:stacked_by_data": true,
+			"minecraft:allow_off_hand": true,
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 1
+			},
+			"minecraft:display_name": {
+				"value": "item.mocreatures:whip.name"
+			}
+		},
+		"events": {}
+	}
+}

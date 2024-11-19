@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:heavy_resin"
+    },
+
+     
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "RR",
+      "RR"
+    ], 
+    "key": {
+      "R": {
+        "item": "mc_ark:resin"
+      }
+    },
+    "result": {
+      "item": "mc_ark:heavy_resin"
+    }
+  }
+}

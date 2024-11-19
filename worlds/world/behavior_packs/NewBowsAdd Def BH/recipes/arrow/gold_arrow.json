@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:gold_arrow"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "SP#"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:arrow"
+      },
+      "#": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "new:gold_arrow",
+      "count": 1
+    }
+  }
+}

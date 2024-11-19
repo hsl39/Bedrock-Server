@@ -1,0 +1,40 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twm:steel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:coal"
+			},
+			"R": {
+				"item": "minecraft:raw_iron"
+			},
+			"S": {
+				"item": "twm:smeltflare"
+			}
+		},
+		"pattern": [
+			"CRC",
+			" S "
+		],
+		"result": {
+			"item": "twm:steel"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:coal"
+			},
+			{
+				"item": "minecraft:raw_iron"
+			},
+			{
+				"item": "twm:smeltflare"
+			}
+		]
+	}
+}

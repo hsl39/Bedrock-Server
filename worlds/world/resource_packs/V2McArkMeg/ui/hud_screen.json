@@ -1,0 +1,380 @@
+{
+   
+	"root_panel": {
+		"modifications": [
+
+			{ 
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_10_text@hud.carcha_bar_10_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_9_text@hud.carcha_bar_9_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_8_text@hud.carcha_bar_8_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_7_text@hud.carcha_bar_7_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_6_text@hud.carcha_bar_6_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_5_text@hud.carcha_bar_5_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_4_text@hud.carcha_bar_4_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_3_text@hud.carcha_bar_3_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_2_text@hud.carcha_bar_2_text_factory": {}
+          }
+      },
+			{
+        "array_name": "controls",
+				"operation": "insert_front",
+				"value": {
+					"carcha_bar_1_text@hud.carcha_bar_1_text_factory": {}
+          }
+      } 
+		]
+	},
+
+
+ 
+  "hud_title_text/title_frame/title": {
+		"modifications": [
+			{
+				"array_name": "bindings",
+				"operation": "insert_back",
+				"value": { 
+					"binding_type": "view",
+					"source_property_name": "(not ((#text = 'carcha_bar_10_text') or (#text = 'carcha_bar_9_text') or (#text = 'carcha_bar_8_text') or (#text = 'carcha_bar_7_text') or (#text = 'carcha_bar_6_text') or (#text = 'carcha_bar_5_text') or (#text = 'carcha_bar_4_text') or (#text = 'carcha_bar_3_text') or (#text = 'carcha_bar_2_text') or (#text = 'carcha_bar_1_text')))",
+					"target_property_name": "#visible"
+				}  
+			} 
+		]
+	}, 
+
+
+  
+  "carcha_bar_10_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/10",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_10_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_10_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_10_text@hud.carcha_bar_10_text"
+      }
+    }
+  },
+  
+  "carcha_bar_9_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/9",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_9_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_9_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_9_text@hud.carcha_bar_9_text"
+      }
+    }
+  },
+  "carcha_bar_8_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/8",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_8_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_8_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_8_text@hud.carcha_bar_8_text"
+      }
+    }
+  },
+  "carcha_bar_7_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/7",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_7_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_7_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_7_text@hud.carcha_bar_7_text"
+      }
+    }
+  },
+  "carcha_bar_6_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/6",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_6_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_6_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_6_text@hud.carcha_bar_6_text"
+      }
+    }
+  },
+  "carcha_bar_5_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/5",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_5_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_5_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_5_text@hud.carcha_bar_5_text"
+      }
+    }
+  },
+  "carcha_bar_4_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/4",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_4_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_4_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_4_text@hud.carcha_bar_4_text"
+      }
+    }
+  },
+  "carcha_bar_3_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/3",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_3_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_3_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_3_text@hud.carcha_bar_3_text"
+      }
+    }
+  },
+  "carcha_bar_2_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/2",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_2_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "carcha_bar_2_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_2_text@hud.carcha_bar_2_text"
+      }
+    }
+  },
+  "carcha_bar_1_text": {
+    "type": "image",
+    "texture": "textures/ui/carcha_mc_ark/1",
+    "size": [80, 80],
+    "offset":["50px", "46%-48px"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 10,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'carcha_bar_1_text')",
+        "target_property_name": "#visible"
+      }
+    ]
+  }, 
+  "carcha_bar_1_text_factory": {
+    "type": "panel",
+    "factory": {
+    "name": "hud_title_text_factory",
+    "control_ids": {
+      "hud_title_text": "carcha_bar_1_text@hud.carcha_bar_1_text"
+      }
+    }
+  }
+}
+  
+  

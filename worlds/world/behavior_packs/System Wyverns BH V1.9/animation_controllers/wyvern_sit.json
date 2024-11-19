@@ -1,0 +1,37 @@
+
+{
+  "format_version": "1.10.0",
+  "animation_controllers":{
+    "controller.animation.wyvern_sit":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "sit": "query.is_sitting"
+            }
+          ]
+        },
+        "sit":{
+          "transitions":[
+            {
+              "getout": "!query.is_sitting"
+            }
+          ],
+          "on_entry":[
+            "/effect @s slowness 999999 255 true"
+          ]
+        },
+        "getout":{
+          "transitions":[
+            {
+              "default": "!query.is_sitting"
+            }
+          ],
+          "on_entry":[
+            "/effect @s slowness 0 0 true"
+          ]
+        }
+      }
+    }
+  }
+}

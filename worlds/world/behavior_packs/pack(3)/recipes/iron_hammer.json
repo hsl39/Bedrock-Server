@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ihg:iron_hammer"
+		},
+		"tags": [
+			"workbench"
+		],
+		"pattern": [
+			"XXX",
+			"XOX",
+			" O "
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"O": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ihg:iron_hammer",
+			"count": 1
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.firefly": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ],
+			"part_visibility": [
+				{
+					"LeftShell": "query.is_on_ground",
+					"RightShell": "query.is_on_ground",
+					"LeftShellOpen": "!query.is_on_ground",
+					"RightShellOpen": "!query.is_on_ground",
+					"LeftWing": "!query.is_on_ground",
+					"RightWing": "!query.is_on_ground"
+				}
+			]
+    }
+  }
+}

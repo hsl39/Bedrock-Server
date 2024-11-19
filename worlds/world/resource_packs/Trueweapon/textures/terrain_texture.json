@@ -1,0 +1,28 @@
+{
+	"resource_pack_name": "xmas_addon",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"advanced_crafting_table_top":{
+			"textures":[
+				"textures/blocks/advanced_crafting_table_top"
+			]
+		},
+		"advanced_crafting_table_side":{
+			"textures":[
+				"textures/blocks/advanced_crafting_table_0"
+			]
+		},
+		"advanced_crafting_table_west":{
+			"textures":[
+				"textures/blocks/advanced_crafting_table_1"
+			]
+		},
+		"advanced_crafting_table_bottom":{
+			"textures":[
+				"textures/blocks/advanced_crafting_table_bottom"
+			]
+		}
+	}
+}

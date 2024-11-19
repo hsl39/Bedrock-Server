@@ -1,0 +1,1535 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+	 
+    "controller.animation.inicial_torpor_allosaurus": { 
+      "initial_state": "default",
+      "states": { 
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            { 
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 40; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 60; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 70; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 85; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+
+      }  
+    },
+	    
+    "controller.animation.inicial_torpor_therizino": { 
+      "initial_state": "default",
+      "states": { 
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 44; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 54; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 68; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 86; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+
+      }  
+    },
+ 	    
+    "controller.animation.inicial_torpor_spinosaurus": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 60; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 80; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 100; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 150; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+
+      }  
+    },
+	     
+    "controller.animation.inicial_torpor_dilophosaurus": {  
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 6; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 8; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 10; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 14; return variable.torpor;"
+                     ],   
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+ 
+      }  
+    },
+	    
+    "controller.animation.inicial_torpor_parasaurus": {  
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 20; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 30; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 40; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 50; return variable.torpor;"
+                     ],   
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+ 
+      }  
+    },
+	    
+    "controller.animation.inicial_torpor_raptor": {  
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 10; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 16; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 22; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 26; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+ 
+      }  
+    },
+	    
+    "controller.animation.inicial_torpor_trike": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 30; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 50; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 76; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 90; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+ 
+      }  
+    },
+	    
+    "controller.animation.inicial_torpor_tyranosaurus_rex": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 50; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 70; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 90; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 120; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+ 
+      }  
+    },
+    
+    "controller.animation.inicial_torpor_yutyrannus": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 46; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 58; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 70; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 98; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+ 
+      }  
+    },
+	    
+    "controller.animation.inicial_torpor_compy": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 2; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 5; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 7; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 10; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+
+      }  
+    },
+	   
+	   
+    "controller.animation.inicial_torpor_dodo": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 4; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 8; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 10; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 14; return variable.torpor;"
+                     ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				}
+
+      }  
+    },
+    
+    
+    "controller.animation.inicial_torpor_pteranodon": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.torpor = 20; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl10": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl10": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.torpor = 26; return variable.torpor;" 
+                    ], 
+          "transitions": [ 
+            {
+              "torpor_empty_lvl50": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"torpor_empty_lvl50": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+				
+
+				
+			"lvl100": {
+"on_entry": [
+ "variable.torpor = 38; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl100": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl100": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100": "!query.is_sheared"
+            }
+ 
+          ]
+				},
+ 
+			"lvl150": {
+"on_entry": [
+ "variable.torpor = 46; return variable.torpor;"
+                    ],
+          "transitions": [ 
+            {
+              "torpor_empty_lvl150": "(variable.torpor <= 0.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"torpor_empty_lvl150": {
+					"on_entry": [ 
+"@s minecraft:narcotic_final"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150": "!query.is_sheared"
+            }
+ 
+          ]
+				} 
+
+      }  
+    }
+	}
+}

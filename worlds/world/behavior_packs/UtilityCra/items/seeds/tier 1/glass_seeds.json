@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "twm:glass_seeds",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "twm_glass_seeds",
+			"minecraft:block_placer": {
+				"block": "twm:glass_crop"
+			}
+		}
+	}
+}

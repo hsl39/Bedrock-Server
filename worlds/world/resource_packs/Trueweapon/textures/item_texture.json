@@ -1,0 +1,1253 @@
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		
+		"amputation": {
+			"textures": [
+				"textures/items/amputation"
+			]
+		},
+		"wooden_katana": {
+			"textures": [
+				"textures/items/katanas/wood"
+			]
+		},
+		"stone_katana": {
+			"textures": [
+				"textures/items/katanas/stone"
+			]
+		},
+		"gold_katana": {
+			"textures": [
+				"textures/items/katanas/gold"
+			]
+		},
+		"iron_katana": {
+			"textures": [
+				"textures/items/katanas/iron"
+			]
+		},
+		"diamond_katana": {
+			"textures": [
+				"textures/items/katanas/diamond"
+			]
+		},
+		"netherite_katana": {
+			"textures": [
+				"textures/items/katanas/netherite"
+			]
+		},
+		"wooden_claymore": {
+			"textures": [
+				"textures/items/longs_sword/wood"
+			]
+		},
+		"stone_claymore": {
+			"textures": [
+				"textures/items/longs_sword/stone"
+			]
+		},
+		"gold_claymore": {
+			"textures": [
+				"textures/items/longs_sword/gold"
+			]
+		},
+		"iron_claymore": {
+			"textures": [
+				"textures/items/longs_sword/iron"
+			]
+		},
+		"diamond_claymore": {
+			"textures": [
+				"textures/items/longs_sword/diamond"
+			]
+		},
+		"netherite_claymore": {
+			"textures": [
+				"textures/items/longs_sword/netherite"
+			]
+		},
+		"wooden_knife": {
+			"textures": [
+				"textures/items/knife/wood"
+			]
+		},
+		"stone_knife": {
+			"textures": [
+				"textures/items/knife/stone"
+			]
+		},
+		"iron_knife": {
+			"textures": [
+				"textures/items/knife/iron"
+			]
+		},
+		"gold_knife": {
+			"textures": [
+				"textures/items/knife/gold"
+			]
+		},
+		"diamond_knife": {
+			"textures": [
+				"textures/items/knife/diamond"
+			]
+		},
+		"netherite_knife": {
+			"textures": [
+				"textures/items/knife/netherite"
+			]
+		},
+		"wooden_barbed_mace": {
+			"textures": [
+				"textures/items/barbed_mace/wood"
+			]
+		},
+		"stone_barbed_mace": {
+			"textures": [
+				"textures/items/barbed_mace/stone"
+			]
+		},
+		"iron_barbed_mace": {
+			"textures": [
+				"textures/items/barbed_mace/iron"
+			]
+		},
+		"gold_barbed_mace": {
+			"textures": [
+				"textures/items/barbed_mace/gold"
+			]
+		},
+		"diamond_barbed_mace": {
+			"textures": [
+				"textures/items/barbed_mace/diamond"
+			]
+		},
+		"netherite_barbed_mace": {
+			"textures": [
+				"textures/items/barbed_mace/netherite"
+			]
+		},
+		"tessen_war_fan": {
+			"textures": [
+				"textures/items/tessen_war_fan/tessen_war_fan"
+			]
+		},
+		"wooden_kama": {
+			"textures": [
+				"textures/items/kama/wood"
+			]
+		},
+		"gold_kama": {
+			"textures": [
+				"textures/items/kama/gold"
+			]
+		},
+		"stone_kama": {
+			"textures": [
+				"textures/items/kama/stone"
+			]
+		},
+		"iron_kama": {
+			"textures": [
+				"textures/items/kama/iron"
+			]
+		},
+		"diamond_kama": {
+			"textures": [
+				"textures/items/kama/diamond"
+			]
+		},
+		"netherite_kama": {
+			"textures": [
+				"textures/items/kama/netherite"
+			]
+		},
+		//bo
+		"bo": {
+			"textures": [
+				"textures/items/bō/wood"
+			]
+		},
+		"iron_bo": {
+			"textures": [
+				"textures/items/bō/iron"
+			]
+		},
+		//bearded axe
+		"wooden_bearded_axe": {
+			"textures": [
+				"textures/items/bearded_axe/wood"
+			]
+		},
+		"gold_bearded_axe": {
+			"textures": [
+				"textures/items/bearded_axe/gold"
+			]
+		},
+		"stone_bearded_axe": {
+			"textures": [
+				"textures/items/bearded_axe/stone"
+			]
+		},
+		"iron_bearded_axe": {
+			"textures": [
+				"textures/items/bearded_axe/iron"
+			]
+		},
+		"diamond_bearded_axe": {
+			"textures": [
+				"textures/items/bearded_axe/diamond"
+			]
+		},
+		"netherite_bearded_axe": {
+			"textures": [
+				"textures/items/bearded_axe/netherite"
+			]
+		},
+
+		//dane axe
+		"wooden_dane_axe": {
+			"textures": [
+				"textures/items/dane_axe/wood"
+			]
+		},
+		"gold_dane_axe": {
+			"textures": [
+				"textures/items/dane_axe/gold"
+			]
+		},
+		"stone_dane_axe": {
+			"textures": [
+				"textures/items/dane_axe/stone"
+			]
+		},
+		"iron_dane_axe": {
+			"textures": [
+				"textures/items/dane_axe/iron"
+			]
+		},
+		"diamond_dane_axe": {
+			"textures": [
+				"textures/items/dane_axe/diamond"
+			]
+		},
+		"netherite_dane_axe": {
+			"textures": [
+				"textures/items/dane_axe/netherite"
+			]
+		},
+
+		//wakizashi
+
+		"wooden_wakizashi": {
+			"textures": [
+				"textures/items/wakizashi/wood"
+			]
+		},
+		"gold_wakizashi": {
+			"textures": [
+				"textures/items/wakizashi/gold"
+			]
+		},
+		"stone_wakizashi": {
+			"textures": [
+				"textures/items/wakizashi/stone"
+			]
+		},
+		"iron_wakizashi": {
+			"textures": [
+				"textures/items/wakizashi/iron"
+			]
+		},
+		"diamond_wakizashi": {
+			"textures": [
+				"textures/items/wakizashi/diamond"
+			]
+		},
+		"netherite_wakizashi": {
+			"textures": [
+				"textures/items/wakizashi/netherite"
+			]
+		},
+
+		//ninjatō
+
+		"wooden_ninjatō": {
+			"textures": [
+				"textures/items/ninjatō/wood"
+			]
+		},
+		"gold_ninjatō": {
+			"textures": [
+				"textures/items/ninjatō/gold"
+			]
+		},
+		"stone_ninjatō": {
+			"textures": [
+				"textures/items/ninjatō/stone"
+			]
+		},
+		"iron_ninjatō": {
+			"textures": [
+				"textures/items/ninjatō/iron"
+			]
+		},
+		"diamond_ninjatō": {
+			"textures": [
+				"textures/items/ninjatō/diamond"
+			]
+		},
+		"netherite_ninjatō": {
+			"textures": [
+				"textures/items/ninjatō/netherite"
+			]
+		},
+				//ōdachi
+
+		"wooden_ōdachi": {
+			"textures": [
+				"textures/items/ōdachi/wood"
+			]
+		},
+		"gold_ōdachi": {
+			"textures": [
+				"textures/items/ōdachi/gold"
+			]
+		},
+		"stone_ōdachi": {
+			"textures": [
+				"textures/items/ōdachi/stone"
+			]
+		},
+		"iron_ōdachi": {
+			"textures": [
+				"textures/items/ōdachi/iron"
+			]
+		},
+		"diamond_ōdachi": {
+			"textures": [
+				"textures/items/ōdachi/diamond"
+			]
+		},
+		"netherite_ōdachi": {
+			"textures": [
+				"textures/items/ōdachi/netherite"
+			]
+		},
+
+		//naginata
+
+
+		"wooden_naginata": {
+			"textures": [
+				"textures/items/naginata/wood"
+			]
+		},
+		"gold_naginata": {
+			"textures": [
+				"textures/items/naginata/gold"
+			]
+		},
+		"stone_naginata": {
+			"textures": [
+				"textures/items/naginata/stone"
+			]
+		},
+		"iron_naginata": {
+			"textures": [
+				"textures/items/naginata/iron"
+			]
+		},
+		"diamond_naginata": {
+			"textures": [
+				"textures/items/naginata/diamond"
+			]
+		},
+		"netherite_naginata": {
+			"textures": [
+				"textures/items/naginata/netherite"
+			]
+		},
+//kama_yari
+
+		"wooden_kama_yari": {
+			"textures": [
+				"textures/items/kama_yari/wood"
+			]
+		},
+		"gold_kama_yari": {
+			"textures": [
+				"textures/items/kama_yari/gold"
+			]
+		},
+		"stone_kama_yari": {
+			"textures": [
+				"textures/items/kama_yari/stone"
+			]
+		},
+		"iron_kama_yari": {
+			"textures": [
+				"textures/items/kama_yari/iron"
+			]
+		},
+		"diamond_kama_yari": {
+			"textures": [
+				"textures/items/kama_yari/diamond"
+			]
+		},
+		"netherite_kama_yari": {
+			"textures": [
+				"textures/items/kama_yari/netherite"
+			]
+		},
+
+		//seitengewehr
+		"wooden_seitengewehr": {
+			"textures": [
+				"textures/items/seitengewehr/wooden"
+			]
+		},
+		"gold_seitengewehr": {
+			"textures": [
+				"textures/items/seitengewehr/gold"
+			]
+		},
+		"stone_seitengewehr": {
+			"textures": [
+				"textures/items/seitengewehr/stone"
+			]
+		},
+		"iron_seitengewehr": {
+			"textures": [
+				"textures/items/seitengewehr/iron"
+			]
+		},
+		"diamond_seitengewehr": {
+			"textures": [
+				"textures/items/seitengewehr/diamond"
+			]
+		},
+		"netherite_seitengewehr": {
+			"textures": [
+				"textures/items/seitengewehr/netherite"
+			]
+		},
+
+		//machete
+		"gold_machete": {
+			"textures": [
+				"textures/items/machete/gold"
+			]
+		},
+		"wooden_machete": {
+			"textures": [
+				"textures/items/machete/wooden"
+			]
+		},
+		"stone_machete": {
+			"textures": [
+				"textures/items/machete/stone"
+			]
+		},
+		"iron_machete": {
+			"textures": [
+				"textures/items/machete/iron"
+			]
+		},
+		"diamond_machete": {
+			"textures": [
+				"textures/items/machete/diamond"
+			]
+		},
+		"netherite_machete":{
+			"textures": [
+				"textures/items/machete/netherite"
+			]
+		},
+		//zweihander
+		"gold_zweihander": {
+			"textures": [
+				"textures/items/zweihander/gold"
+			]
+		},
+		"wooden_zweihander": {
+			"textures": [
+				"textures/items/zweihander/wood"
+			]
+		},
+		"stone_zweihander": {
+			"textures": [
+				"textures/items/zweihander/stone"
+			]
+		},
+		"iron_zweihander": {
+			"textures": [
+				"textures/items/zweihander/iron"
+			]
+		},
+		"diamond_zweihander": {
+			"textures": [
+				"textures/items/zweihander/diamond"
+			]
+		},
+		"netherite_zweihander": {
+			"textures": [
+				"textures/items/zweihander/netherite"
+			]
+		},
+		//tonfa
+		"tonfa": {
+			"textures": [
+				"textures/items/tonfa/tonfa"
+			]
+		},
+		//chinese fire lance
+		"chinese_fire_lance": {
+			"textures": [
+				"textures/items/chinese_fire_lance/chinese_fire_lance"
+			]
+		},
+		//wooden_club
+		"wooden_club": {
+			"textures": [
+				"textures/items/club/wood"
+			]
+		},
+		"spiked_club": {
+			"textures": [
+				"textures/items/club/spiked_club"
+			]
+		},
+		//harpe
+		"gold_harpe": {
+			"textures": [
+				"textures/items/harpe/gold"
+			]
+		},
+		"wooden_harpe": {
+			"textures": [
+				"textures/items/harpe/wood"
+			]
+		},
+		"stone_harpe": {
+			"textures": [
+				"textures/items/harpe/stone"
+			]
+		},
+		"iron_harpe": {
+			"textures": [
+				"textures/items/harpe/iron"
+			]
+		},
+		"diamond_harpe": {
+			"textures": [
+				"textures/items/harpe/diamond"
+			]
+		},
+		"netherite_harpe": {
+			"textures": [
+				"textures/items/harpe/netherite"
+			]
+		},
+		//bardiche
+		"gold_bardiche": {
+			"textures": [
+				"textures/items/bardiche/gold"
+			]
+		},
+		"wooden_bardiche": {
+			"textures": [
+				"textures/items/bardiche/wood"
+			]
+		},
+		"stone_bardiche": {
+			"textures": [
+				"textures/items/bardiche/stone"
+			]
+		},
+		"iron_bardiche": {
+			"textures": [
+				"textures/items/bardiche/iron"
+			]
+		},
+		"diamond_bardiche": {
+			"textures": [
+				"textures/items/bardiche/diamond"
+			]
+		},
+		"netherite_bardiche": {
+			"textures": [
+				"textures/items/bardiche/netherite"
+			]
+		},
+		//cyclone_dagger
+		"gold_cyclone_dagger": {
+			"textures": [
+				"textures/items/cyclone_dagger/gold"
+			]
+		},
+		"wooden_cyclone_dagger": {
+			"textures": [
+				"textures/items/cyclone_dagger/wood"
+			]
+		},
+		"stone_cyclone_dagger": {
+			"textures": [
+				"textures/items/cyclone_dagger/stone"
+			]
+		},
+		"iron_cyclone_dagger": {
+			"textures": [
+				"textures/items/cyclone_dagger/iron"
+			]
+		},
+		"diamond_cyclone_dagger": {
+			"textures": [
+				"textures/items/cyclone_dagger/diamond"
+			]
+		},
+		"netherite_cyclone_dagger": {
+			"textures": [
+				"textures/items/cyclone_dagger/netherite"
+			]
+		},
+		"gold_lumberjack_axe": {
+			"textures": [
+				"textures/items/lumberjack_axe/gold"
+			]
+		},
+		//lumberjack_axe
+		"wooden_lumberjack_axe": {
+			"textures": [
+				"textures/items/lumberjack_axe/wood"
+			]
+		},
+		"stone_lumberjack_axe": {
+			"textures": [
+				"textures/items/lumberjack_axe/stone"
+			]
+		},
+		"iron_lumberjack_axe": {
+			"textures": [
+				"textures/items/lumberjack_axe/iron"
+			]
+		},
+		"diamond_lumberjack_axe": {
+			"textures": [
+				"textures/items/lumberjack_axe/diamond"
+			]
+		},
+		"netherite_lumberjack_axe": {
+			"textures": [
+				"textures/items/lumberjack_axe/netherite"
+			]
+		},
+		//gladius
+		"wooden_gladius": {
+			"textures": [
+				"textures/items/gladius/wood"
+			]
+		},
+		"stone_gladius": {
+			"textures": [
+				"textures/items/gladius/stone"
+			]
+		},
+		"gold_gladius": {
+			"textures": [
+				"textures/items/gladius/gold"
+			]
+		},
+		"iron_gladius": {
+			"textures": [
+				"textures/items/gladius/iron"
+			]
+		},
+		"diamond_gladius": {
+			"textures": [
+				"textures/items/gladius/diamond"
+			]
+		},
+		"netherite_gladius": {
+			"textures": [
+				"textures/items/gladius/netherite"
+			]
+		},
+		//jaw
+		"wooden_jaw": {
+			"textures": [
+				"textures/items/jaw/wood"
+			]
+		},
+		"stone_jaw": {
+			"textures": [
+				"textures/items/jaw/stone"
+			]
+		},
+		"gold_jaw": {
+			"textures": [
+				"textures/items/jaw/gold"
+			]
+		},
+		"iron_jaw": {
+			"textures": [
+				"textures/items/jaw/iron"
+			]
+		},
+		"diamond_jaw": {
+			"textures": [
+				"textures/items/jaw/diamond"
+			]
+		},
+		"netherite_jaw": {
+			"textures": [
+				"textures/items/jaw/netherite"
+			]
+		},
+		//punicher
+		"punicher": {
+			"textures": [
+				"textures/items/punicher/punicher"
+			]
+		},
+		//combat shovel
+		"wooden_combat_shovel": {
+			"textures": [
+				"textures/items/combat_shovel/wood"
+			]
+		},
+		"stone_combat_shovel": {
+			"textures": [
+				"textures/items/combat_shovel/stone"
+			]
+		},
+		"gold_combat_shovel": {
+			"textures": [
+				"textures/items/combat_shovel/gold"
+			]
+		},
+		"iron_combat_shovel": {
+			"textures": [
+				"textures/items/combat_shovel/iron"
+			]
+		},
+		"diamond_combat_shovel": {
+			"textures": [
+				"textures/items/combat_shovel/diamond"
+			]
+		},
+		"netherite_combat_shovel": {
+			"textures": [
+				"textures/items/combat_shovel/netherite"
+			]
+		},
+		//kopesh
+		"wooden_kopesh": {
+			"textures": [
+				"textures/items/kopesh/wood"
+			]
+		},
+		"stone_kopesh": {
+			"textures": [
+				"textures/items/kopesh/stone"
+			]
+		},
+		"gold_kopesh": {
+			"textures": [
+				"textures/items/kopesh/gold"
+			]
+		},
+		"iron_kopesh": {
+			"textures": [
+				"textures/items/kopesh/iron"
+			]
+		},
+		"diamond_kopesh": {
+			"textures": [
+				"textures/items/kopesh/diamond"
+			]
+		},
+		"netherite_kopesh": {
+			"textures": [
+				"textures/items/kopesh/netherite"
+			]
+		},
+		//falcata
+		"wooden_falcata": {
+			"textures": [
+				"textures/items/falcata/wood"
+			]
+		},
+		"stone_falcata": {
+			"textures": [
+				"textures/items/falcata/stone"
+			]
+		},
+		"gold_falcata": {
+			"textures": [
+				"textures/items/falcata/gold"
+			]
+		},
+		"iron_falcata": {
+			"textures": [
+				"textures/items/falcata/iron"
+			]
+		},
+		"diamond_falcata": {
+			"textures": [
+				"textures/items/falcata/diamond"
+			]
+		},
+		"netherite_falcata": {
+			"textures": [
+				"textures/items/falcata/netherite"
+			]
+		},
+		//yumi
+		"yumi": {
+			"textures": [
+				"textures/items/yumi/yumi_standby"
+			]
+		},
+		"long_arrow": {
+			"textures": [
+				"textures/items/long_arrow"
+			]
+		},
+		//epee
+		"wooden_epee": {
+			"textures": [
+				"textures/items/epee/wood"
+			]
+		},
+		"stone_epee": {
+			"textures": [
+				"textures/items/epee/stone"
+			]
+		},
+		"gold_epee": {
+			"textures": [
+				"textures/items/epee/gold"
+			]
+		},
+		"iron_epee": {
+			"textures": [
+				"textures/items/epee/iron"
+			]
+		},
+		"diamond_epee": {
+			"textures": [
+				"textures/items/epee/diamond"
+			]
+		},
+		"netherite_epee": {
+			"textures": [
+				"textures/items/epee/netherite"
+			]
+		},
+		//rapier
+		"wooden_rapier": {
+			"textures": [
+				"textures/items/rapier/wood"
+			]
+		},
+		"stone_rapier": {
+			"textures": [
+				"textures/items/rapier/stone"
+			]
+		},
+		"gold_rapier": {
+			"textures": [
+				"textures/items/rapier/gold"
+			]
+		},
+		"iron_rapier": {
+			"textures": [
+				"textures/items/rapier/iron"
+			]
+		},
+		"diamond_rapier": {
+			"textures": [
+				"textures/items/rapier/diamond"
+			]
+		},
+		"netherite_rapier": {
+			"textures": [
+				"textures/items/rapier/netherite"
+			]
+		},
+		//katar
+		"wooden_katar": {
+			"textures": [
+				"textures/items/katar/wood"
+			]
+		},
+		"stone_katar": {
+			"textures": [
+				"textures/items/katar/stone"
+			]
+		},
+		"gold_katar": {
+			"textures": [
+				"textures/items/katar/gold"
+			]
+		},
+		"iron_katar": {
+			"textures": [
+				"textures/items/katar/iron"
+			]
+		},
+		"diamond_katar": {
+			"textures": [
+				"textures/items/katar/diamond"
+			]
+		},
+		"netherite_katar": {
+			"textures": [
+				"textures/items/katar/netherite"
+			]
+		},
+		//pilum
+		"wooden_pilum": {
+			"textures": [
+				"textures/items/pilum/wood"
+			]
+		},
+		"stone_pilum": {
+			"textures": [
+				"textures/items/pilum/stone"
+			]
+		},
+		"gold_pilum": {
+			"textures": [
+				"textures/items/pilum/gold"
+			]
+		},
+		"iron_pilum": {
+			"textures": [
+				"textures/items/pilum/iron"
+			]
+		},
+		"diamond_pilum": {
+			"textures": [
+				"textures/items/pilum/diamond"
+			]
+		},
+		"netherite_pilum": {
+			"textures": [
+				"textures/items/pilum/netherite"
+			]
+		},
+		//katzbalger
+		"wooden_katzbalger": {
+			"textures": [
+				"textures/items/katzbalger/wood"
+			]
+		},
+		"stone_katzbalger": {
+			"textures": [
+				"textures/items/katzbalger/stone"
+			]
+		},
+		"gold_katzbalger": {
+			"textures": [
+				"textures/items/katzbalger/gold"
+			]
+		},
+		"iron_katzbalger": {
+			"textures": [
+				"textures/items/katzbalger/iron"
+			]
+		},
+		"diamond_katzbalger": {
+			"textures": [
+				"textures/items/katzbalger/diamond"
+			]
+		},
+		"netherite_katzbalger": {
+			"textures": [
+				"textures/items/katzbalger/netherite"
+			]
+		},
+		//landsknecht_pike
+		"wooden_landsknecht_pike": {
+			"textures": [
+				"textures/items/makeshift_pike/wood"
+			]
+		},
+		"stone_landsknecht_pike": {
+			"textures": [
+				"textures/items/makeshift_pike/stone"
+			]
+		},
+		"gold_landsknecht_pike": {
+			"textures": [
+				"textures/items/makeshift_pike/gold"
+			]
+		},
+		"iron_landsknecht_pike": {
+			"textures": [
+				"textures/items/makeshift_pike/iron"
+			]
+		},
+		"diamond_landsknecht_pike": {
+			"textures": [
+				"textures/items/makeshift_pike/diamond"
+			]
+		},
+		"netherite_landsknecht_pike": {
+			"textures": [
+				"textures/items/makeshift_pike/netherite"
+			]
+		},
+		//sledgehammer
+		"wooden_sledgehammer": {
+			"textures": [
+				"textures/items/sledgehammer/wood"
+			]
+		},
+		"stone_sledgehammer": {
+			"textures": [
+				"textures/items/sledgehammer/stone"
+			]
+		},
+		"gold_sledgehammer": {
+			"textures": [
+				"textures/items/sledgehammer/gold"
+			]
+		},
+		"iron_sledgehammer": {
+			"textures": [
+				"textures/items/sledgehammer/iron"
+			]
+		},
+		"diamond_sledgehammer": {
+			"textures": [
+				"textures/items/sledgehammer/diamond"
+			]
+		},
+		"netherite_sledgehammer": {
+			"textures": [
+				"textures/items/sledgehammer/netherite"
+			]
+		},
+		//makeshift_pike
+		"wood_makeshift_spear": {
+			"textures": [
+				"textures/items/makeshift_spear/wood"
+			]
+		},
+		"stone_makeshift_spear": {
+			"textures": [
+				"textures/items/makeshift_spear/stone"
+			]
+		},
+		"gold_makeshift_spear": {
+			"textures": [
+				"textures/items/makeshift_spear/gold"
+			]
+		},
+		"iron_makeshift_spear": {
+			"textures": [
+				"textures/items/makeshift_spear/iron"
+			]
+		},
+		"diamond_makeshift_spear": {
+			"textures": [
+				"textures/items/makeshift_spear/diamond"
+			]
+		},
+		"netherite_makeshift_spear": {
+			"textures": [
+				"textures/items/makeshift_spear/netherite"
+			]
+		},
+		//crowbar
+		"wooden_crowbar": {
+			"textures": [
+				"textures/items/crowbar/wood"
+			]
+		},
+		"stone_crowbar": {
+			"textures": [
+				"textures/items/crowbar/stone"
+			]
+		},
+		"gold_crowbar": {
+			"textures": [
+				"textures/items/crowbar/gold"
+			]
+		},
+		"iron_crowbar": {
+			"textures": [
+				"textures/items/crowbar/iron"
+			]
+		},
+		"diamond_crowbar": {
+			"textures": [
+				"textures/items/crowbar/diamond"
+			]
+		},
+		"netherite_crowbar": {
+			"textures": [
+				"textures/items/crowbar/netherite"
+			]
+		},
+		//jian_sword
+		"wooden_jian_sword": {
+			"textures": [
+				"textures/items/jian_sword/wood"
+			]
+		},
+		"stone_jian_sword": {
+			"textures": [
+				"textures/items/jian_sword/stone"
+			]
+		},
+		"gold_jian_sword": {
+			"textures": [
+				"textures/items/jian_sword/gold"
+			]
+		},
+		"iron_jian_sword": {
+			"textures": [
+				"textures/items/jian_sword/iron"
+			]
+		},
+		"diamond_jian_sword": {
+			"textures": [
+				"textures/items/jian_sword/diamond"
+			]
+		},
+		"netherite_jian_sword": {
+			"textures": [
+				"textures/items/jian_sword/netherite"
+			]
+		},
+
+		"wooden_hammer": {
+			"textures": [
+				"textures/items/hammer/wood"
+			]
+		},
+		"stone_hammer": {
+			"textures": [
+				"textures/items/hammer/stone"
+			]
+		},
+		"gold_hammer": {
+			"textures": [
+				"textures/items/hammer/gold"
+			]
+		},
+		"iron_hammer": {
+			"textures": [
+				"textures/items/hammer/iron"
+			]
+		},
+		"diamond_hammer": {
+			"textures": [
+				"textures/items/hammer/diamond"
+			]
+		},
+		"netherite_hammer": {
+			"textures": [
+				"textures/items/hammer/netherite"
+			]
+		},
+		//scythe
+		"wooden_scythe": {
+			"textures": [
+				"textures/items/scythe/wood"
+			]
+		},
+		"stone_scythe": {
+			"textures": [
+				"textures/items/scythe/stone"
+			]
+		},
+		"gold_scythe": {
+			"textures": [
+				"textures/items/scythe/gold"
+			]
+		},
+		"iron_scythe": {
+			"textures": [
+				"textures/items/scythe/iron"
+			]
+		},
+		"diamond_scythe": {
+			"textures": [
+				"textures/items/scythe/diamond"
+			]
+		},
+		"netherite_scythe": {
+			"textures": [
+				"textures/items/scythe/netherite"
+			]
+		},
+		//scimitar
+		"wooden_scimitar": {
+			"textures": [
+				"textures/items/scimitar/wood"
+			]
+		},
+		"stone_scimitar": {
+			"textures": [
+				"textures/items/scimitar/stone"
+			]
+		},
+		"gold_scimitar": {
+			"textures": [
+				"textures/items/scimitar/gold"
+			]
+		},
+		"iron_scimitar": {
+			"textures": [
+				"textures/items/scimitar/iron"
+			]
+		},
+		"diamond_scimitar": {
+			"textures": [
+				"textures/items/scimitar/diamond"
+			]
+		},
+		"netherite_scimitar": {
+			"textures": [
+				"textures/items/scimitar/netherite"
+			]
+		},
+		//modern_axe
+		"wooden_modern_axe": {
+			"textures": [
+				"textures/items/modern_axe/wood"
+			]
+		},
+		"gold_modern_axe": {
+			"textures": [
+				"textures/items/modern_axe/gold"
+			]
+		},
+		"stone_modern_axe": {
+			"textures": [
+				"textures/items/modern_axe/stone"
+			]
+		},
+		"iron_modern_axe": {
+			"textures": [
+				"textures/items/modern_axe/iron"
+			]
+		},
+		"diamond_modern_axe": {
+			"textures": [
+				"textures/items/modern_axe/diamond"
+			]
+		},
+		"netherite_modern_axe": {
+			"textures": [
+				"textures/items/modern_axe/netherite"
+			]
+		}
+	}
+}

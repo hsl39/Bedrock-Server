@@ -1,0 +1,55 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier": "new:fire_hydra",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures":{
+        "default": "textures/entity/fire_hydra"
+      },
+      "geometry":{
+        "default": "geometry.hydra"
+      },
+      "animations":{
+        "charged": "controller.animation.hydra",
+        "move": "animation.hydra.walk",
+        "static": "animation.hydra.static",
+        "stomp": "animation.hydra.stomp",
+        "shoot": "animation.hydra.shoot",
+        "shoot2": "animation.hydra.shoot2",
+        "shoot3": "animation.hydra.shoot3",
+        "attack": "animation.hydra.attack",
+        "attack2": "animation.hydra.attack2",
+        "attack3": "animation.hydra.attack3",
+        "roar": "animation.hydra.roar_attack",
+        "two_head": "animation.hydra.two_head",
+        "two_head2": "animation.hydra.two_head2",
+        "one_head": "animation.hydra.one_head",
+        "head_static": "animation.hydra.head_static",
+        "death": "animation.hydra.dead"
+      },
+      "scripts":{
+        "animate":[
+          "charged",
+          "head_static",
+          {"two_head2": "query.mark_variant == 3"},
+          {"two_head": "query.mark_variant == 2"},
+          {"one_head": "query.mark_variant == 1"}
+        ]
+      },
+      "sound_effects":{
+        "stomp": "mob.hydra.stomp",
+        "roaring": "mob.hydra.roar",
+        "attack": "mob.hydra.attack"
+      },
+      "render_controllers":[
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "texture": "fire_hydra_spawnegg"
+      }
+    }
+  }
+}

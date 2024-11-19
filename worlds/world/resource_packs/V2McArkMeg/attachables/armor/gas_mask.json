@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "mc_ark:gas_mask",
+      "item": { "mc_ark:gas_mask": "query.owner_identifier == 'minecraft:player'" },
+      "materials": {
+        "default": "armor"
+      },
+      "textures": {
+        "default": "textures/models/armor/mc_ark/gas_mask"
+      },
+      "geometry": {
+        "default": "geometry.gas_mask"
+      },
+      "scripts": {
+        "parent_setup": "variable.chest_layer_visible = 0.0;" 
+      },
+      "render_controllers": [ "controller.render.mc_ark_armor" ]
+    }
+  }
+}

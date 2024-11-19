@@ -1,0 +1,86 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:raptor",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": { 
+				"raptor1": "textures/raptor/variant1",
+				"raptor2": "textures/raptor/variant2",
+				"raptor3": "textures/raptor/variant3",
+				"raptor4": "textures/raptor/variant4",
+				"raptor5": "textures/raptor/variant5",
+				"raptor6": "textures/raptor/variant6",
+				"raptor7": "textures/raptor/variant7",
+				"raptor8": "textures/raptor/variant8", 
+				"raptor9": "textures/raptor/variant9",
+				"alfa_v1": "textures/raptor/alfa_v1",
+				"alfa_v2": "textures/raptor/alfa_v2"
+			},
+			"geometry": { 
+				"default": "geometry.raptor",
+				"alfa_v1": "geometry.raptor_alfa1"
+			},
+	"sound_effects": {
+	"hurt_sound": "mob.raptor_hurt_mc_ark",
+	"idle_sound": "sound.idle_sound_raptor_mc_ark",
+	"sleeping_sound": "sound.sleeping_sound_raptor_mc_ark",
+	"alert_sound": "sound.alert_sound_raptor_mc_ark",
+	"raptor_attacksound": "sound.raptor_attacksound"
+	},   
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.raptor.general",
+				"idle": "animation.raptor.idle",
+				"walk": "animation.raptor.walk", 
+				"run": "animation.raptor.run",
+				"eating": "animation.raptor.eating",  
+				"sitting": "animation.raptor.sitting",
+				"swimming": "animation.raptor.swimming",
+				"attack": "animation.raptor.attack",
+				"idle_sound_animation2": "animation.raptor.idle_sound",
+				"alert_sound": "animation.raptor.alert_sound",
+				"sleeping_sound": "animation.raptor.sleeping_sound",
+				"attack2": "animation.raptor.attack2",
+				"sleep": "animation.raptor.sleep",
+				"walk_controller":
+				"controller.animation.general.walk_and_swimming_mc_ark"
+			},
+			"scripts": {
+				"animate": [ 
+{  
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+{ 
+    "idle_sound_animation2":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+{  
+    "alert_sound":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+						{ 
+							"sleeping_sound" : "!query.is_tamed && query.is_sheared && query.mark_variant != 777"},
+							
+				    "walk_controller",
+
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.raptor",
+				"controller.render.raptor_alfa1",
+				"controller.render.raptor_alfa2"
+			], 
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index": 0
+      }
+		}
+	}
+}

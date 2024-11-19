@@ -1,0 +1,33 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "§3§lMade by SystemTv Twitter@SystemTv_",
+		"name": "System Wyverns V1.9.9 Addon §2Behavior",
+		"uuid": "ce23ce4a-a412-4d9f-a5e0-5de340866297",
+		"version": [ 1, 0, 0 ],
+		"min_engine_version": [ 1, 20, 30 ]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e4368f6a-904d-4623-ad98-6970374d3b48",
+			"version": [1, 0, 0]
+
+		},
+		{
+			"description": "Javascript module code",
+			"language": "javascript",
+			"type": "script",
+			"uuid": "31595dd0-4261-46bb-b670-067a5b430c65",
+			"version": [ 0, 1, 0 ],
+			"entry": "scripts/main.js"
+		}
+	],
+	"capabilities": [ "script_eval" ],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
+		}
+	]
+}

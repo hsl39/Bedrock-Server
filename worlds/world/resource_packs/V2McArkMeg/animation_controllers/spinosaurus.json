@@ -1,0 +1,110 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.spinosaurus.general" : {
+			"initial_state" : "default",
+			"states" : {  
+			"default" : {
+			    
+					"animations" : [
+						{
+							"idle" : "(query.is_delayed_attacking == 0) && !query.is_illager_captain"}
+					], 
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"attack1" : "query.is_delayed_attacking == 1 && query.is_tamed"
+						},
+						{
+							"attack1" : "variable.attack_time >= 0.1 && query.is_tamed"
+						},
+						{
+							"attack1" : "query.is_illager_captain && (query.is_on_ground) && (query.skin_id != 1) && query.mark_variant == 0 && query.is_tamed" 
+						},
+						
+						{
+							"attack2" : "query.is_delayed_attacking == 1 && !query.is_tamed"
+						},
+						{
+							"attack2" : "variable.attack_time >= 0.1 && !query.is_tamed"
+						},
+						{
+							"attack2" : "query.is_illager_captain && (query.is_on_ground) && (query.skin_id != 1) && query.mark_variant == 0 && !query.is_tamed" 
+						},
+						{
+							"sitting" : "(query.is_sitting)"},
+						{
+							"sleep" : "(query.is_sheared) && (!query.is_tamed) && (!query.is_baby)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"sleep" : {
+					"animations" : [ 
+					    
+					    "sleep" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "(!query.is_sheared)"},
+						{
+							"default" : "(query.is_tamed)"}
+					],
+					"blend_transition": 0.2
+				},
+			"sitting" : { 
+					"animations" : [ 
+						{
+							"idle" : "(query.is_delayed_attacking == 0) && !query.is_illager_captain"},
+					    "sitting" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "(!query.is_sitting)"}
+					],
+					"blend_transition": 0.2
+				},
+				"attack1" : { 
+					"animations" : [
+					    "attack1" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "query.is_delayed_attacking == 0 && query.all_animations_finished && !query.is_illager_captain && (variable.attack_time < 0.1)" 
+						}
+					],  
+					"blend_transition": 0.2
+				},
+				"attack2" : { 
+					"animations" : [
+					    "attack2" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "query.is_delayed_attacking == 0 && query.all_animations_finished && !query.is_illager_captain && (variable.attack_time < 0.1)" 
+						}, 
+						{
+							"default" : "(query.is_sheared) && (!query.is_tamed)"
+						}
+					],  
+					"blend_transition": 0.2
+				},
+			"muerto" : {
+					"animations" : [  
+					 
+					    "muerto" ],
+					"blend_transition": 0.2
+				}
+			} 
+		}
+	}
+}  
+
+ 
+
+ 

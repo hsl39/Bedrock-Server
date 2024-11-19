@@ -1,0 +1,155 @@
+{
+	"resource_pack-name": "vanilla",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"fire_hydra_spawnegg": {
+			"textures": "textures/items/fire_hydra_spawnegg.png"
+		},
+		"fire_hydra_helmet": {
+			"textures": "textures/items/fire_hydra_helmet.png"
+		},
+		"fire_hydra_chestplate": {
+			"textures": "textures/items/fire_hydra_chestplate.png"
+		},
+		"fire_hydra_leggings": {
+			"textures": "textures/items/fire_hydra_leggings.png"
+		},
+		"fire_hydra_boots": {
+			"textures": "textures/items/fire_hydra_boots.png"
+		},
+		"fire_hydra_eye": {
+			"textures": "textures/items/fire_hydra_eye.png"
+		},
+		"fire_hydra_sword1": {
+			"textures": "textures/items/fire_hydra_sword1.png"
+		},
+		"fire_hydra_sword2": {
+			"textures": "textures/items/fire_hydra_sword2.png"
+		},
+		"fire_hydra_sword3": {
+			"textures": "textures/items/fire_hydra_sword3.png"
+		},
+		"fire_hydra_pickaxe": {
+			"textures": "textures/items/fire_hydra_pickaxe.png"
+		},
+		"fire_hydra_spear": {
+			"textures": "textures/items/fire_hydra_spear.png"
+		},
+		"fire_hydra_scale": {
+			"textures": "textures/items/fire_hydra_scale.png"
+		},
+		"ice_hydra_scale": {
+			"textures": "textures/items/ice_hydra_scale.png"
+		},
+		"poison_hydra_scale": {
+			"textures": "textures/items/poison_hydra_scale.png"
+		},
+		"electric_hydra_scale": {
+			"textures": "textures/items/electric_hydra_scale.png"
+		},
+
+		"poison_hydra_spawnegg": {
+			"textures": "textures/items/poison_hydra_spawnegg.png"
+		},
+		"poison_hydra_helmet": {
+			"textures": "textures/items/poison_hydra_helmet.png"
+		},
+		"poison_hydra_chestplate": {
+			"textures": "textures/items/poison_hydra_chestplate.png"
+		},
+		"poison_hydra_leggings": {
+			"textures": "textures/items/poison_hydra_leggings.png"
+		},
+		"poison_hydra_boots": {
+			"textures": "textures/items/poison_hydra_boots.png"
+		},
+		"poison_hydra_eye": {
+			"textures": "textures/items/poison_hydra_eye.png"
+		},
+		"poison_hydra_sword1": {
+			"textures": "textures/items/poison_hydra_sword1.png"
+		},
+		"poison_hydra_sword2": {
+			"textures": "textures/items/poison_hydra_sword2.png"
+		},
+		"poison_hydra_sword3": {
+			"textures": "textures/items/poison_hydra_sword3.png"
+		},
+		"poison_hydra_pickaxe": {
+			"textures": "textures/items/poison_hydra_pickaxe.png"
+		},
+		"poison_hydra_spear": {
+			"textures": "textures/items/poison_hydra_spear.png"
+		},
+
+
+		"electric_hydra_spawnegg": {
+			"textures": "textures/items/electric_hydra_spawnegg.png"
+		},
+		"electric_hydra_helmet": {
+			"textures": "textures/items/electric_hydra_helmet.png"
+		},
+		"electric_hydra_chestplate": {
+			"textures": "textures/items/electric_hydra_chestplate.png"
+		},
+		"electric_hydra_leggings": {
+			"textures": "textures/items/electric_hydra_leggings.png"
+		},
+		"electric_hydra_boots": {
+			"textures": "textures/items/electric_hydra_boots.png"
+		},
+		"electric_hydra_eye": {
+			"textures": "textures/items/electric_hydra_eye.png"
+		},
+		"electric_hydra_sword1": {
+			"textures": "textures/items/electric_hydra_sword1.png"
+		},
+		"electric_hydra_sword2": {
+			"textures": "textures/items/electric_hydra_sword2.png"
+		},
+		"electric_hydra_sword3": {
+			"textures": "textures/items/electric_hydra_sword3.png"
+		},
+		"electric_hydra_pickaxe": {
+			"textures": "textures/items/electric_hydra_pickaxe.png"
+		},
+		"electric_hydra_spear": {
+			"textures": "textures/items/electric_hydra_spear.png"
+		},
+
+		"ice_hydra_spawnegg": {
+			"textures": "textures/items/ice_hydra_spawnegg.png"
+		},
+		"ice_hydra_helmet": {
+			"textures": "textures/items/ice_hydra_helmet.png"
+		},
+		"ice_hydra_chestplate": {
+			"textures": "textures/items/ice_hydra_chestplate.png"
+		},
+		"ice_hydra_leggings": {
+			"textures": "textures/items/ice_hydra_leggings.png"
+		},
+		"ice_hydra_boots": {
+			"textures": "textures/items/ice_hydra_boots.png"
+		},
+		"ice_hydra_eye": {
+			"textures": "textures/items/ice_hydra_eye.png"
+		},
+		"ice_hydra_sword1": {
+			"textures": "textures/items/ice_hydra_sword1.png"
+		},
+		"ice_hydra_sword2": {
+			"textures": "textures/items/ice_hydra_sword2.png"
+		},
+		"ice_hydra_sword3": {
+			"textures": "textures/items/ice_hydra_sword3.png"
+		},
+		"ice_hydra_pickaxe": {
+			"textures": "textures/items/ice_hydra_pickaxe.png"
+		},
+		"ice_hydra_spear": {
+			"textures": "textures/items/ice_hydra_spear.png"
+		}
+	}
+}
+

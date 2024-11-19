@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "new:glowstone_bow"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            " PE",
+            "PBE",
+            " PE"
+        ],
+		"key": {
+			"P": {
+				"item": "minecraft:glowstone"
+			},
+			"B": {
+				"item": "minecraft:bow"
+			},
+			"E": {
+				"item": "minecraft:string"
+			}
+		},
+		"result": {
+			"item": "new:glowstone_bow"
+		}
+	}
+}

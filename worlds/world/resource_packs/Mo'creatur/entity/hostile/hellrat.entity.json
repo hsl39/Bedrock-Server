@@ -1,0 +1,38 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:hellrat",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/hellrat1",
+				"default2": "textures/models/hellrat2"
+			},
+			"geometry": {
+				"default": "geometry.rat"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"walk": "animation.rat.walk",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.hellrat"
+			],
+			"spawn_egg": {
+				"base_color": "#FF0000",
+				"overlay_color": "#E16941"
+			}
+		}
+	}
+}

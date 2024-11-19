@@ -1,0 +1,71 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:raptor_tek",
+			"materials": {
+				"raptor_tek": "drowned"
+			}, 
+			"textures": {
+				"raptor_tek": "textures/raptor/raptor_tek"
+			},
+			"geometry": { 
+				"raptor_tek": "geometry.raptor_tek"
+			},
+	"sound_effects": {
+	"hurt_sound": "mob.raptor_hurt_mc_ark",
+	"idle_sound": "sound.idle_sound_raptor_mc_ark",
+	"sleeping_sound": "sound.sleeping_sound_raptor_mc_ark",
+	"alert_sound": "sound.alert_sound_raptor_mc_ark",
+	"raptor_attacksound": "sound.raptor_attacksound"
+	},  
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.raptor.general",
+				"idle": "animation.raptor.idle",
+				"walk": "animation.raptor.walk", 
+				"run": "animation.raptor.run",
+				"eating": "animation.raptor.eating",  
+				"sitting": "animation.raptor.sitting",
+				"swimming": "animation.raptor.swimming",
+				"attack": "animation.raptor.attack",
+				"idle_sound_animation2": "animation.raptor.idle_sound",
+				"alert_sound": "animation.raptor.alert_sound",
+				"sleeping_sound": "animation.raptor.sleeping_sound",
+				"attack2": "animation.raptor.attack2",
+				"sleep": "animation.raptor.sleep",
+				"walk_controller":
+				"controller.animation.general.walk_and_swimming_mc_ark"
+			},
+			"scripts": {
+				"animate": [
+{  
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+{ 
+    "idle_sound_animation2":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+{  
+    "alert_sound":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+						{ 
+							"sleeping_sound" : "!query.is_tamed && query.is_sheared && query.mark_variant != 777"},
+				    "walk_controller",
+				    "general"
+				]
+			},  
+			"render_controllers": [
+				"controller.render.raptor_tek"
+			], 
+      "spawn_egg": {
+        "base_color": "#888888",
+        "overlay_color": "#FFFF"
+      }
+		}
+	}
+}

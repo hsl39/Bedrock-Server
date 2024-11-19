@@ -1,0 +1,54 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "By Raiyon",
+		"name": "Raiyon's Tree ChopV1.5 1.21+",
+		"uuid": "dd03ff24-89c7-48a0-8149-0415a508ef34",
+		"version": [
+			1,
+			5,
+			5
+		],
+		"min_engine_version": [
+			1,
+			20,
+			80
+		]
+	},
+	"modules": [
+		{
+			"description": "?",
+			"type": "script",
+			"language": "javascript",
+			"uuid": "37d914c7-bd0d-4b52-8ec6-9a1399766b6f",
+			"version": [
+				1,
+				5,
+				5
+			],
+			"entry": "scripts/gametests/Main_Cooldown.js"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "ba1c487a-a898-4f5a-8020-140a25219f86",
+			"version": [
+				1,
+				5,
+				5
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.3",
+				"1.8.5"
+			]
+		}
+	}
+}

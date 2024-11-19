@@ -1,0 +1,80 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pa:steel_sword",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+                "tags": [
+					"minecraft:is_tool",
+                    "minecraft:is_sword"
+                ]
+            },
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:damage": 8,
+			"minecraft:enchantable": {
+				"value": 3,
+				"slot": "sword"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 15,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 100,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "minecraft:break",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {},
+			"minecraft:icon": {
+				"texture": "steel_sword"
+			},
+			"minecraft:durability": {
+				"max_durability": 1352
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+				  {
+					"items": [
+					  "pa:chromium_ingot"
+					],
+					"repair_amount": 1000
+				  },
+				  {
+					"items": [
+					  "pa:steel_ingot"
+					],
+					"repair_amount": 800
+				  },
+				  {
+					"items": [
+					  "pa:steel_sword"
+					],
+					"repair_amount": "query.max_durability"
+				  }
+				]
+			  }
+		}
+	}
+}

@@ -1,0 +1,40 @@
+//bridge-file-version: #41
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:dragonfly",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"green": "textures/models/dragonflya",
+				"light_blue": "textures/models/dragonflyb",
+				"red": "textures/models/dragonflyc",
+				"blue": "textures/models/dragonflyd"
+			},
+			"geometry": {
+				"default": "geometry.dragonfly"
+			},
+			"scripts": {
+				"animate": [
+					"fly"
+				]
+			},
+			"animations": {
+				"fly": "controller.animation.mob.fly",
+				"flying": "animation.firefly.flying"
+			},
+			"sound_effects": {
+				"flying": "firefly"
+			},
+			"render_controllers": [
+				"controller.render.dragonfly"
+			],
+			"spawn_egg": {
+				"base_color": "#00FF7F",
+				"overlay_color": "#D5EFFF"
+			}
+		}
+	}
+}

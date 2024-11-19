@@ -1,0 +1,89 @@
+
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:rhyniognatha",
+			"materials": {
+				"default": "skeleton",
+				"rhyniognatha": "slime_outer"
+			},
+			"textures": {
+				"variant1": "textures/rhyniognatha/variant1",
+				"rhyniognatha_armor": "textures/rhyniognatha/rhyniognatha_armor"
+			},
+			"geometry": { 
+				"default": "geometry.rhyniognatha",
+				"rhyniognatha_armor": "geometry.rhyniognatha_armor"
+			},
+	"sound_effects": { 
+	"hurt_sound": "sound.rhyniognatha_idle_mc_ark",
+	"rhyniognatha_roar_mc_ark": "sound.rhyniognatha_roar_mc_ark",
+	"rhyniognatha_ataque_mc_ark": "sound.rhyniognatha_ataque_mc_ark",
+	"rhyniognatha_ataque_especial_mc_ark": "sound.rhyniognatha_ataque_especial_mc_ark",
+	"idle_sound": "sound.rhyniognatha_idle_mc_ark",
+	"fly_sound": "sound.rhyniognatha_fly_mc_ark",
+	"shoot_mc_ark": "sound.rhyniognatha_shoot_mc_ark",
+	"rhyniognatha_big_shoot_mc_ark": "sound.rhyniognatha_big_shoot_mc_ark"
+	},  
+      "particle_effects": {
+        "rhyniognatha_dig": "mc_ark:rhyniognatha_dig"
+      },
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound": "animation.tyranosaurus_rex.idle_sound",
+				"fly_sound": "animation.rhyniognatha.fly_sound",
+			    
+				"rhyniognatha_particle1": "animation.rhyniognatha.rhyniognatha_particle1",
+				"rhyniognatha_particle2": "animation.rhyniognatha.rhyniognatha_particle2",
+			    
+				"general": "controller.animation.rhyniognatha.general",
+				"attack": "animation.rhyniognatha.attack",
+				"attack_embarazar": "animation.rhyniognatha.attack_embarazar",
+				"shoot": "animation.rhyniognatha.shoot", 
+				"shoot2": "animation.rhyniognatha.shoot2",  
+				"idle": "animation.rhyniognatha.idle",
+				"walk": "animation.rhyniognatha.walk", 
+				"walk_water": "animation.rhyniognatha.walk_water", 
+				"under_water": "animation.rhyniognatha.under_water",  
+				"fly": "animation.rhyniognatha.fly", 
+				"roar": "animation.rhyniognatha.roar", 
+				"sitting": "animation.pteranodon.sitting",
+				"eating": "animation.pteranodon.eating",
+				"attack_co": "controller.animation.rhyniognatha.attack",
+				"pickup_co": "controller.animation.pteranodon.pickup"
+			},   
+			"scripts": {
+				"animate": [
+{
+    "idle_sound":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+{
+    "fly_sound":"!query.is_sheared && query.mark_variant != 777 && (!query.is_in_water) && (!query.is_on_ground)"
+    
+},
+				    
+				    
+						{
+							"rhyniognatha_particle1" : "query.is_item_name_any('slot.armor.head','minecraft:honey_bottle')"},  
+						{
+							"rhyniognatha_particle2" : "query.is_item_name_any('slot.armor.head','minecraft:honey_bottle')"},  
+				    
+				    "attack_co",
+				    "pickup_co",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.rhyniognatha",
+        { "controller.render.rhyniognatha_armor": "query.is_chested" }
+			],  
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index":11
+      } 
+		}
+	}
+}

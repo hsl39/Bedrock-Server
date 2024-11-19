@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.therizino": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default"
+					] 
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [   
+        { "*": true },
+ { "montura_cuello": "query.is_saddled && !query.is_baby"},
+ { "Montura": "query.is_saddled && !query.is_baby"},
+ { "Cuerda1": "query.is_saddled && !query.is_baby"},
+ { "Cuerda2": "query.is_saddled && !query.is_baby"},
+ { "montura": "query.is_saddled && !query.is_baby"},
+ { "Montura_head": "query.is_saddled && !query.is_baby"},
+ { "Monturahead": "query.is_saddled && !query.is_baby"},
+ { "Montura_cuello": "query.is_saddled && !query.is_baby"}
+      ],
+			"materials": [ 
+				{ 
+					"*": "Material.default"
+				}  
+			], 
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

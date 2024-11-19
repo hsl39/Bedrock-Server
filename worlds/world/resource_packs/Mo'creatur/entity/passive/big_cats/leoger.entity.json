@@ -1,0 +1,41 @@
+//bridge-file-version: #10
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:leoger",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/bcleoger"
+			},
+			"animations": {
+				"walk": "animation.bcmale.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"jump": "animation.bcmale.jump"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target",
+					{
+						"jump": "!query.is_on_ground"
+					}
+				]
+			},
+			"geometry": {
+				"default": "geometry.bcmale"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"spawn_egg": {
+				"base_color": "#E16941",
+				"overlay_color": "#E16941"
+			}
+		}
+	}
+}

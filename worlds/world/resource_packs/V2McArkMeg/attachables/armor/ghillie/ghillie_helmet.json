@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "mc_ark:ghillie_helmet",
+      "item": { "mc_ark:ghillie_helmet": "query.owner_identifier == 'minecraft:player'" },
+      "materials": {
+        "default": "armor"
+      },
+      "textures": {
+        "default": "textures/models/armor/mc_ark/ghillie_armor"
+      },
+      "geometry": {
+        "default": "geometry.ghillie_helmet"
+      },
+      "scripts": {
+        "parent_setup": "variable.chest_layer_visible = 0.0;" 
+      },
+      "render_controllers": [ "controller.render.mc_ark_armor" ]
+    }
+  }
+}

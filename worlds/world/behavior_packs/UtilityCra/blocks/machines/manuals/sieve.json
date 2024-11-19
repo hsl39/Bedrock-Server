@@ -1,0 +1,106 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "twm:sieve",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"twm:meshTier": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('twm:meshTier') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_sieve_string",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/manuals/sieve/string_sieve.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:meshTier') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_sieve_iron",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/manuals/sieve/iron_sieve.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:meshTier') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_sieve_diamond",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/manuals/sieve/diamond_sieve.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:meshTier') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_sieve_netherite",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/manuals/sieve/netherite_sieve.json"
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.twm_twmsieve",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "twm_sieve",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"size": [
+					14,
+					15,
+					14
+				],
+				"origin": [
+					-7,
+					0,
+					-7
+				]
+			},
+			"minecraft:selection_box": {
+				"size": [
+					14,
+					15,
+					14
+				],
+				"origin": [
+					-7,
+					0,
+					-7
+				]
+			},
+			"minecraft:custom_components": [
+				"twm:mesh"
+			]
+		}
+	}
+}

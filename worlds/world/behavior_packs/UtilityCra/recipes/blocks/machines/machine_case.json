@@ -1,0 +1,41 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twm:machine_case"
+		},
+		"tags": [
+			"twm_workbench"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_block"
+			},
+			"R": {
+				"item": "minecraft:redstone_block"
+			},
+			"S": {
+				"item": "twm:steel"
+			}
+		},
+		"pattern": [
+			"RSR",
+			"SBS",
+			"RSR"
+		],
+		"result": {
+			"item": "twm:machine_case"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:iron_block"
+			},
+			{
+				"item": "minecraft:redstone_block"
+			},
+			{
+				"item": "twm:steel"
+			}
+		]
+	}
+}

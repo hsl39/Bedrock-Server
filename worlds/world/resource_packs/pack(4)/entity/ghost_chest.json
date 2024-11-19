@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "multi_backpack:backpack_container",
+			"materials": {
+				"base": "example.base",
+				"outline": "example.outline"
+			},
+			"textures": {
+				"default": "textures/entity/ghost_chest"
+			},
+			"geometry": {
+				"default": "geometry.mp.ghost_chest"
+			},
+			"render_controllers": [
+				"controller.render.example.base",
+				"controller.render.example.outline"
+			],
+			
+			"scripts": {
+				"pre_animation": [
+					"query.mark_variant == 0 ? {t.red = 0.906; t.green = 0.184; t.blue = 0.102;};"
+				],
+				
+				"animate": ["spin"]
+			},
+			"animations": {
+				"spin": "animation.entity.rotate"
+			}
+		}
+	}
+}

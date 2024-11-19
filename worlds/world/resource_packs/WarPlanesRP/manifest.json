@@ -1,0 +1,19 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§l§nCreator Info§r\n   §2Mcpedl: L4ggcrafter\n   §4Youtube: ned2z§r",
+		"name":"WW2 War Planes Beta 0.3",
+    "uuid": "eb03e359-0ef0-47e8-8fcc-83332e018eab",
+    "platform_locked": false,
+    "min_engine_version": [1, 21, 0],
+    "version": [0, 1, 2]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "resources",
+      "uuid": "71faf582-cd66-42eb-9c0d-0afc9e7b90bf",
+      "version": [0, 1, 0]
+    }
+  ]
+}

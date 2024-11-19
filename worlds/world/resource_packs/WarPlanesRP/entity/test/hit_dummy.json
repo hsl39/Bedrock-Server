@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "l4gg:control_entity",
+      "textures": {
+        "default": "textures/entity/collision"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.collision"
+      },
+      "render_controllers": [
+        "controller.render.plane"
+      ],
+      "spawn_egg": {
+        "texture": "biplane",
+        "texture_index": 0
+      }
+    }
+  }
+}

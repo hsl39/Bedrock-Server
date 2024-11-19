@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.wyvern_fly": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"is_riding": "query.has_rider && query.is_saddled && !query.is_on_ground"
+						},
+						{
+							"not_is_riding": "!query.is_saddled || !query.has_rider || query.is_on_ground"
+						}
+					]
+				},
+				"is_riding": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/title @p[r=4] actionbar §bTip: §6To fly Press the jump button.",
+						"/tag @p[r=4] add mount",
+						"/effect @s slow_falling 1 255 true",
+						"/effect @s speed 1 10 true"
+					]
+				},
+				"not_is_riding": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/tag @p[r=4] remove mount"
+					]
+				}
+			}
+		}
+	}
+}

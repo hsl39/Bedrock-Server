@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:item": {
+   "description": {
+    "identifier": "new:ice_egg"
+    ,
+    "category": "equipment"
+  },
+  "components": {
+   "minecraft:entity_placer": {
+    "entity": "new:ice_wyvern_egg"
+  },
+  "minecraft:max_stack_size": 64,
+  "minecraft:display_name": {},
+  "minecraft:icon": {
+    "texture": "ice_wyvern_egg"
+  },
+  "minecraft:allow_off_hand": false
+}
+}
+}

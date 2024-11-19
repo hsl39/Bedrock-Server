@@ -1,0 +1,30 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.bear_old": {
+			"arrays": {
+				"textures": {
+					"Array.bear": [
+						"Texture.default"
+					]
+				},
+				"geometries": {
+					"Array.saddled_bear": [
+						"Geometry.default",
+						"Geometry.saddled"
+					]
+				}
+			},
+			"textures": [
+				"Array.bear[query.can_walk]"
+			],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"geometry": "Array.saddled_bear[query.is_saddled]"
+		}
+	}
+}

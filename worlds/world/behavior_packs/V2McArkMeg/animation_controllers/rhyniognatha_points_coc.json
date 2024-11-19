@@ -1,0 +1,790 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+    "controller.animation.whim_sistem_rhyniognatha": {  
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "inicio": "query.is_item_name_any('slot.armor.head','minecraft:beef') && !query.is_baby"
+            }
+          ]  
+        }, 
+        
+			"inicio": {  
+"on_entry": [
+"@s minecraft:whim_random_rhyniognatha",
+"/playsound mob.zombie.remedy @a[r=10] ~~~"
+                    ], 
+                    "animations": [   
+                        "rhyniognatha_whim_particles","rhyniognatha_whim_time_turn_off" 
+                        ], 
+          "transitions": [ 
+            {
+              "default": "!query.is_item_name_any('slot.armor.head','minecraft:beef')"
+            }   
+ 
+          ]
+ 
+    }
+   }
+},  
+        
+    "controller.animation.rhyo_embarazo_proceso": {  
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "inicio": "query.is_item_name_any('slot.armor.head','minecraft:iron_ingot') && !query.is_baby"
+            },
+            {
+              "inicio": "query.is_item_name_any('slot.armor.head','minecraft:gold_ingot') && !query.is_baby"
+            },
+            {
+              "inicio": "query.is_item_name_any('slot.armor.head','minecraft:emerald') && !query.is_baby"
+            },
+            {
+              "inicio": "query.is_item_name_any('slot.armor.head','minecraft:diamond') && !query.is_baby"
+            },
+            {
+              "inicio": "query.is_item_name_any('slot.armor.head','minecraft:obsidian') && !query.is_baby"
+            },
+            {
+              "inicio": "query.is_item_name_any('slot.armor.head','minecraft:crying_obsidian') && !query.is_baby"
+            }
+          ]
+        }, 
+        
+			"inicio": {  
+                    "animations": [
+               "rhyo_embarazo_proceso_animation" 
+    
+                        ], 
+"on_entry": [
+    "/tellraw @p[r=10] { \"rawtext\": [ { \"text\" : \"§cPregnant Creature! \" } ] }",   
+"/effect @s weakness 10 200",
+"/effect @s slowness 10 200",
+"/playsound mob.zombie.remedy @a[r=10] ~~~"
+                    ], 
+"on_exit": [
+"/effect @s resistance 0 255 true"
+                    ],   
+          "transitions": [ 
+            {
+              "final": "query.all_animations_finished"
+            }   
+ 
+          ]
+ 
+    },
+				"final": {
+          "transitions": [
+						{ 
+							"lvl10": "(variable.rhyo_points < 100.0)"
+						},
+						{ 
+							"lvl50": "(variable.rhyo_points >= 100.0) && (variable.rhyo_points < 200.0)"
+						},
+						{ 
+							"lvl100": "(variable.rhyo_points >= 200.0) && (variable.rhyo_points < 300.0)"
+						},
+						{ 
+							"lvl150": "(variable.rhyo_points >= 300.0) && (variable.rhyo_points < 400.0)"
+						},
+						{ 
+							"lvl200": "(variable.rhyo_points >= 400.0) && (variable.rhyo_points < 500.0)"
+						},
+						{ 
+							"lvl250": "(variable.rhyo_points >= 600.0)"
+						}
+                   ]
+				},
+				
+				
+				"lvl10": {
+"on_entry": [
+  "/playsound sound.rhyniognatha_born_mc_ark @a[r=20]",
+            "/particle mc_ark:rhyo_particle ~~1.0~",
+"/damage @s 1000 entity_attack entity @s",
+"/summon mc_ark:rhyniognatha ~~~ minecraft:babylvl10"
+                    ] 
+				},
+				"lvl50": {
+"on_entry": [
+  "/playsound sound.rhyniognatha_born_mc_ark @a[r=20]",
+            "/particle mc_ark:rhyo_particle ~~1.0~",
+"/damage @s 1000 entity_attack entity @s",
+"/summon mc_ark:rhyniognatha ~~~ minecraft:babylvl50"
+                    ] 
+				},
+				"lvl100": {
+"on_entry": [
+  "/playsound sound.rhyniognatha_born_mc_ark @a[r=20]",
+            "/particle mc_ark:rhyo_particle ~~1.0~",
+"/damage @s 1000 entity_attack entity @s",
+"/summon mc_ark:rhyniognatha ~~~ minecraft:babylvl100"
+                    ] 
+				},
+				"lvl150": {
+"on_entry": [
+  "/playsound sound.rhyniognatha_born_mc_ark @a[r=20]",
+            "/particle mc_ark:rhyo_particle ~~1.0~",
+"/damage @s 1000 entity_attack entity @s",
+"/summon mc_ark:rhyniognatha ~~~ minecraft:babylvl150"
+                    ] 
+				},
+				"lvl200": {
+"on_entry": [
+  "/playsound sound.rhyniognatha_born_mc_ark @a[r=20]",
+            "/particle mc_ark:rhyo_particle ~~1.0~",
+"/damage @s 1000 entity_attack entity @s",
+"/summon mc_ark:rhyniognatha ~~~ minecraft:babylvl200"
+                    ] 
+				},
+				"lvl250": {
+"on_entry": [
+  "/playsound sound.rhyniognatha_born_mc_ark @a[r=20]",
+            "/particle mc_ark:rhyo_particle ~~1.0~", 
+"/damage @s 1000 entity_attack entity @s", 
+"/summon mc_ark:rhyniognatha ~~~ minecraft:babylvl250"
+                    ] 
+				}
+   }
+},  
+        
+    "controller.animation.rhyo_points_first": {  
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "query.is_item_name_any('slot.armor.head','minecraft:iron_ingot') && !query.is_baby"
+            },
+            {
+              "lvl50": "query.is_item_name_any('slot.armor.head','minecraft:gold_ingot') && !query.is_baby"
+            },
+            {
+              "lvl100": "query.is_item_name_any('slot.armor.head','minecraft:emerald') && !query.is_baby"
+            },
+            {
+              "lvl150": "query.is_item_name_any('slot.armor.head','minecraft:diamond') && !query.is_baby"
+            },
+            {
+              "lvl200": "query.is_item_name_any('slot.armor.head','minecraft:obsidian') && !query.is_baby"
+            },
+            {
+              "lvl250": "query.is_item_name_any('slot.armor.head','minecraft:crying_obsidian') && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+    "/tag @s add rhyniognatha_lvl10",
+"variable.rhyo_points = variable.rhyo_points + 25.0;"
+                    ]
+ 
+    },
+			"lvl50": {
+"on_entry": [
+    "/tag @s add rhyniognatha_lvl50",
+"variable.rhyo_points = variable.rhyo_points + 50.0;"
+                    ]
+    },
+			"lvl100": {
+"on_entry": [
+    "/tag @s add rhyniognatha_lvl100",
+"variable.rhyo_points = variable.rhyo_points + 75.0;"
+                    ]
+    },
+			"lvl150": {
+"on_entry": [
+    "/tag @s add rhyniognatha_lvl150",
+"variable.rhyo_points = variable.rhyo_points + 100.0;"
+                    ]
+    },
+			"lvl200": {
+"on_entry": [
+    "/tag @s add rhyniognatha_lvl200",
+"variable.rhyo_points = variable.rhyo_points + 125.0;"
+                    ]
+    },
+			"lvl250": {
+"on_entry": [
+    "/tag @s add rhyniognatha_lvl250",
+"variable.rhyo_points = variable.rhyo_points + 150.0;"
+                    ]
+    }
+    
+   }
+},  
+
+    "controller.animation.inicial_rhyo_points_therizino": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_baby"
+            },
+            {
+              "lvl200": "(query.has_any_family('adult_lvl200')) && !query.is_baby"
+            },
+            {
+              "lvl250": "(query.has_any_family('adult_lvl250')) && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.rhyo_points = 100; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl10": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl10": {
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.rhyo_points = 150; return variable.rhyo_points;" 
+                    ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl50": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"rhyo_points_empty_lvl50": {
+				},
+				
+
+				
+			"lvl100": {
+"on_entry": [
+ "variable.rhyo_points = 200; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl100": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl100": {
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.rhyo_points = 250; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl150": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl150": {
+				},
+				
+			"lvl200": {
+"on_entry": [
+ "variable.rhyo_points = 300; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl200": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl200": {
+				}, 
+				 
+			"lvl250": { 
+"on_entry": [
+ "variable.rhyo_points = 350; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl250": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+  
+          ]
+				},
+			"rhyo_points_empty_lvl250": {
+				}
+ 
+      }  
+    },
+
+    "controller.animation.inicial_rhyo_points_tyranosaurus_rex": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_baby"
+            },
+            {
+              "lvl200": "(query.has_any_family('adult_lvl200')) && !query.is_baby"
+            },
+            {
+              "lvl250": "(query.has_any_family('adult_lvl250')) && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.rhyo_points = 325; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl10": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl10": {
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.rhyo_points = 350; return variable.rhyo_points;" 
+                    ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl50": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"rhyo_points_empty_lvl50": {
+				},
+				
+
+				
+			"lvl100": {
+"on_entry": [
+ "variable.rhyo_points = 400; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl100": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl100": {
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.rhyo_points = 425; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl150": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl150": {
+				},
+				
+			"lvl200": {
+"on_entry": [
+ "variable.rhyo_points = 450; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl200": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl200": {
+				}, 
+				 
+			"lvl250": { 
+"on_entry": [
+ "variable.rhyo_points = 500; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl250": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl250": {
+				}
+ 
+      }  
+    }, 
+    "controller.animation.inicial_rhyo_points_spinosaurus": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_baby"
+            },
+            {
+              "lvl200": "(query.has_any_family('adult_lvl200')) && !query.is_baby"
+            },
+            {
+              "lvl250": "(query.has_any_family('adult_lvl250')) && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.rhyo_points = 350; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl10": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl10": {
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.rhyo_points = 375; return variable.rhyo_points;" 
+                    ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl50": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"rhyo_points_empty_lvl50": {
+				},
+				
+
+				
+			"lvl100": {
+"on_entry": [
+ "variable.rhyo_points = 425; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl100": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl100": {
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.rhyo_points = 450; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl150": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl150": {
+				},
+				
+			"lvl200": {
+"on_entry": [
+ "variable.rhyo_points = 475; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl200": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl200": {
+				}, 
+				 
+			"lvl250": { 
+"on_entry": [
+ "variable.rhyo_points = 525; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl250": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl250": {
+				}
+ 
+      }  
+    }, 
+    "controller.animation.inicial_rhyo_points_carcha": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_baby"
+            },
+            {
+              "lvl200": "(query.has_any_family('adult_lvl200')) && !query.is_baby"
+            },
+            {
+              "lvl250": "(query.has_any_family('adult_lvl250')) && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.rhyo_points = 375; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl10": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl10": {
+				},
+				
+			"lvl50": { 
+"on_entry": [
+ "variable.rhyo_points = 425; return variable.rhyo_points;" 
+                    ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl50": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"rhyo_points_empty_lvl50": {
+				},
+				
+
+				
+			"lvl100": {
+"on_entry": [
+ "variable.rhyo_points = 475; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl100": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl100": {
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.rhyo_points = 475; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl150": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl150": {
+				},
+				
+			"lvl200": {
+"on_entry": [
+ "variable.rhyo_points = 525; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl200": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl200": {
+				}, 
+				 
+			"lvl250": { 
+"on_entry": [
+ "variable.rhyo_points = 550; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl250": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl250": {
+				}
+ 
+      }  
+    },
+    "controller.animation.inicial_rhyo_points_trike": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_baby"
+            },
+            {
+              "lvl200": "(query.has_any_family('adult_lvl200')) && !query.is_baby"
+            },
+            {
+              "lvl250": "(query.has_any_family('adult_lvl250')) && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.rhyo_points = 50; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl10": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl10": {
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.rhyo_points = 100; return variable.rhyo_points;" 
+                    ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl50": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            } 
+   
+          ]
+				},
+			"rhyo_points_empty_lvl50": {
+				},
+				
+
+				
+			"lvl100": {
+"on_entry": [
+ "variable.rhyo_points = 150; return variable.rhyo_points;"
+                    ],
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl100": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl100": {
+				},
+
+			"lvl150": {
+"on_entry": [
+ "variable.rhyo_points = 200; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl150": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl150": {
+				},
+				
+			"lvl200": {
+"on_entry": [
+ "variable.rhyo_points = 250; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl200": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl200": {
+				}, 
+				 
+			"lvl250": { 
+"on_entry": [
+ "variable.rhyo_points = 300; return variable.rhyo_points;"
+                     ], 
+          "transitions": [ 
+            {
+              "rhyo_points_empty_lvl250": "(variable.rhyo_points <= 0.0) && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"rhyo_points_empty_lvl250": {
+				}
+ 
+      }  
+    }
+    }
+}

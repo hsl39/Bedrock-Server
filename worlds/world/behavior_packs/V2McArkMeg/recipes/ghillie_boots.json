@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:ghillie_boots"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X X",
+      "T T"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:azalea_leaves"
+      },
+      "T": {
+        "item": "minecraft:tallgrass"
+      }
+    },
+    "result": {
+      "item": "mc_ark:ghillie_boots"
+    }
+  }
+}

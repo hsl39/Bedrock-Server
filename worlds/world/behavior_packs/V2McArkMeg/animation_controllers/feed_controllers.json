@@ -1,0 +1,1880 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.feed_controller_rhyniognatha": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 160) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 160) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 180) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 180) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 200) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 200) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 240) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 240) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				}, 
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						{
+							"cant_eat": "(query.health == 160) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 180) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 200) && query.is_tamed && (query.has_any_family('adult_lvl180'))"
+						},
+						{
+							"cant_eat": "(query.health == 240) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"can_eat": "(query.health < 160) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"can_eat": "(query.health < 180) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"can_eat": "(query.health < 200) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"can_eat": "(query.health < 240) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					] 
+				} 
+			} 
+		} ,
+	    
+		"controller.animation.feed_controller_carcharodontosaurus": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 140) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 140) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 180) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 180) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 240) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 240) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 260) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 260) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 300) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 300) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 140) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						{
+							"cant_eat": "(query.health == 180) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 240) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 260) && query.is_tamed && (query.has_any_family('adult_lvl180'))"
+						},
+						{
+							"cant_eat": "(query.health == 300) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"can_eat": "(query.health < 140) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"can_eat": "(query.health < 180) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"can_eat": "(query.health < 240) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"can_eat": "(query.health < 260) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"can_eat": "(query.health < 300) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					] 
+				} 
+			} 
+		} ,
+	    
+		"controller.animation.feed_controller_therizino": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 90) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 90) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 140) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 140) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 150) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 150) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						{
+							"cant_eat": "(query.health == 90) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 140) && query.is_tamed && (query.has_any_family('adult_lvl180'))"
+						},
+						{
+							"cant_eat": "(query.health == 150) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"can_eat": "(query.health < 90) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"can_eat": "(query.health < 140) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"can_eat": "(query.health < 150) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]
+				} 
+			}
+		} ,
+		"controller.animation.feed_controller_pteranodon": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 20) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 20) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 40) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 40) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+						{
+							"cant_eat": "(query.health == 20) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 40) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl180'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 20) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"can_eat": "(query.health < 40) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]
+				} 
+			}
+		} ,
+		"controller.animation.feed_controller_yutyrannus": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 90) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 90) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 140) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 140) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+ 
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+
+						
+
+						{
+							"cant_eat": "(query.health == 90) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 140) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						
+
+						
+						{
+							"can_eat": "(query.health < 90) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+ 
+						{
+							"can_eat": "(query.health < 140) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				}  
+			}
+		} ,
+		
+		"controller.animation.feed_controller_allosaurus": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 90) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 90) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 150) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 150) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 170) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 170) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 180) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 180) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+ 
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 90) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+
+						
+
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 150) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 170) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 180) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 90) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						
+
+						
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 150) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 170) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+ 
+						{
+							"can_eat": "(query.health < 180) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				}  
+			}
+		} ,
+	    
+		"controller.animation.feed_controller_spinosaurus": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 110) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 110) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 140) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 140) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 170) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 170) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 180) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 180) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]   
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 110) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 140) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+
+						{
+							"cant_eat": "(query.health == 170) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 180) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] , 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 110) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+
+						
+						{
+							"can_eat": "(query.health < 140) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 170) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 180) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				} 
+			}
+		} ,
+	    
+		"controller.animation.feed_controller_raptor": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 20) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 20) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 30) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 30) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]   
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 20) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 30) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 20) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 30) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				} 
+			}
+		} ,
+	    
+		"controller.animation.feed_controller_parasaurus": { 
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 30) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 30) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 90) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 90) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+
+						{
+							"cant_eat": "(query.health == 30) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 90) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 120) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]  
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+					    
+						{
+							"can_eat": "(query.health < 30) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						{
+							"can_eat": "(query.health < 90) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 120) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				} 
+			}
+		} ,
+	    
+		"controller.animation.feed_controller_dilophosaurus": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 12) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 12) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+
+						
+						{
+							"can_eat": "(query.health < 14) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 14) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 16) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 16) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 18) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 18) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 20) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 20) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 12) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"cant_eat": "(query.health == 14) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 16) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 18) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+
+						{
+							"cant_eat": "(query.health == 20) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]  
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 12) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+					
+						{
+							"can_eat": "(query.health < 14) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						{
+							"can_eat": "(query.health < 16) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 18) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+
+						{
+							"can_eat": "(query.health < 20) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    
+					    ]
+				} 
+			}
+		} ,
+	     
+	     
+		"controller.animation.feed_controller_moschops": {
+			"initial_state": "default",
+			"states": { 
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 20) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 20) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+				
+						
+						{
+							"can_eat": "(query.health < 40) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 40) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 20) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 40) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]  
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+					    
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 20) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+
+						{
+							"can_eat": "(query.health < 40) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				} 
+			}
+		} ,
+	   
+		"controller.animation.feed_controller_trike": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 110) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 110) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 130) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 130) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+
+						{
+							"cant_eat": "(query.health == 50) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 60) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+
+
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 100) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 110) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 130) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]  
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+					    
+						{
+							"can_eat": "(query.health < 50) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 60) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+ 
+
+
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 100) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 110) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 130) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				} 
+			}
+		} , 
+	   
+	   
+		"controller.animation.feed_controller_tyranosaurus_rex": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 110) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 110) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 130) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 130) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 150) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 150) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 170) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 170) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+ 
+						{
+							"cant_eat": "(query.health == 70) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+
+						{
+							"cant_eat": "(query.health == 110) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 130) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 150) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 170) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 70) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 80) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						
+
+						{
+							"can_eat": "(query.health < 110) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 130) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 150) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+
+						{
+							"can_eat": "(query.health < 170) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				} 
+			}
+		} ,
+	   
+		"controller.animation.feed_controller_compy": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 4) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 4) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 6) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 6) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 6) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 6) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+
+						{
+							"cant_eat": "(query.health == 4) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 6) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 6) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+
+					] 
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 4) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 6) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						{
+							"can_eat": "(query.health < 6) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+ 
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]
+				} 
+			}
+		} ,
+		
+		"controller.animation.feed_controller_pegomastax": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 4) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 4) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 6) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 6) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 6) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 6) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]  
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+
+						{
+							"cant_eat": "(query.health == 4) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 6) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 6) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+
+					] 
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+						{
+							"can_eat": "(query.health < 4) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 6) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+
+						{
+							"can_eat": "(query.health < 6) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+
+						
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+ 
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]
+				} 
+			}
+		} ,
+	   
+
+         
+		"controller.animation.feed_controller_dodo": {
+			"initial_state": "default",
+			"states": {
+				"default": { 
+					"transitions": [
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+						
+						{
+							"can_eat": "(query.health < 12) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						{
+							"cant_eat": "(query.health == 12) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 12) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						{
+							"cant_eat": "(query.health == 12) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 14) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						{
+							"cant_eat": "(query.health == 14) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"can_eat": "(query.health < 16) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						},
+						{
+							"cant_eat": "(query.health == 16) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					]   
+				},
+				"can_eat": {
+					"on_entry": [ 
+"@s minecraft:can_eat"
+					] ,
+					"transitions": [
+					    
+
+						{
+							"cant_eat": "(query.health == 8) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 10) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+						
+
+
+						
+
+						{
+							"cant_eat": "(query.health == 12) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+						
+
+						{
+							"cant_eat": "(query.health == 12) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 14) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+						
+						{
+							"cant_eat": "(query.health == 16) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    ]
+				},
+				"cant_eat": {
+					"on_entry": [ 
+"@s minecraft:cant_eat" 
+					] ,
+					"transitions": [
+					    
+						{
+							"can_eat": "(query.health < 8) && query.is_tamed && (query.has_any_family('adult_lvl10'))"
+						},
+ 
+						
+						{
+							"can_eat": "(query.health < 10) && query.is_tamed && (query.has_any_family('adult_lvl50'))"
+						},
+ 
+						
+						{
+							"can_eat": "(query.health < 12) && query.is_tamed && (query.has_any_family('adult_lvl100'))"
+						},
+ 
+						
+						{
+							"can_eat": "(query.health < 12) && query.is_tamed && (query.has_any_family('adult_lvl150'))"
+						},
+ 
+						
+						{
+							"can_eat": "(query.health < 14) && query.is_tamed && (query.has_any_family('adult_lvl200'))"
+						},
+ 
+						
+						{
+							"can_eat": "(query.health < 16) && query.is_tamed && (query.has_any_family('adult_lvl250'))"
+						}
+					    
+					    ]
+				} 
+			}
+		} 
+	}
+}

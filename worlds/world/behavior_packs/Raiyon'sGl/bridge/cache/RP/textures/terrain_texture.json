@@ -1,0 +1,490 @@
+{
+	"file_path": "C:\\Users\\elcha\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Raiyon'sGl\\textures\\terrain_texture.json",
+	"file_type": "terrain_texture",
+	"format_version": 1,
+	"file_uuid": "9df62063_4895_4163_9d32_ff8a49d017dc",
+	"file_version": 10,
+	"cache_content": {
+		"children": [
+			{
+				"data": "bridgeRP",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.terrain",
+				"key": "texture_name"
+			},
+			{
+				"data": "8",
+				"key": "padding"
+			},
+			{
+				"data": "4",
+				"key": "num_mip_levels"
+			},
+			{
+				"open": {
+					"resource_pack_name": "bridgeRP",
+					"texture_name": "atlas.terrain",
+					"padding": 8,
+					"num_mip_levels": 4,
+					"texture_data": {
+						"diamond_ore": {
+							"textures": [
+								"textures/blocks/diamond_ore"
+							]
+						},
+						"iron_ore": {
+							"textures": [
+								"textures/blocks/iron_ore"
+							]
+						},
+						"deepslate_iron_ore": {
+							"textures": [
+								"textures/blocks/deepslate_iron_ore"
+							]
+						},
+						"deepslate_diamond_ore": {
+							"textures": [
+								"textures/blocks/deepslate_diamond_ore"
+							]
+						},
+						"gold_ore": {
+							"textures": [
+								"textures/blocks/gold_ore"
+							]
+						},
+						"deepslate_gold_ore": {
+							"textures": [
+								"textures/blocks/deepslate_gold_ore"
+							]
+						},
+						"deepslate_emerald_ore": {
+							"textures": [
+								"textures/blocks/deepslate_emerald_ore"
+							]
+						},
+						"emerald_ore": {
+							"textures": [
+								"textures/blocks/emerald_ore"
+							]
+						},
+						"lapis_ore": {
+							"textures": [
+								"textures/blocks/lapis_ore"
+							]
+						},
+						"deepslate_lapis_ore": {
+							"textures": [
+								"textures/blocks/deepslate_lapis_ore"
+							]
+						},
+						"copper_ore": {
+							"textures": [
+								"textures/blocks/copper_ore"
+							]
+						},
+						"deepslate_copper_ore": {
+							"textures": [
+								"textures/blocks/deepslate_copper_ore"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"children": [
+					{
+						"key": "diamond_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/diamond_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/diamond_ore"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"diamond_ore": {
+								"textures": [
+									"textures/blocks/diamond_ore"
+								]
+							},
+							"iron_ore": {
+								"textures": [
+									"textures/blocks/iron_ore"
+								]
+							},
+							"deepslate_iron_ore": {
+								"textures": [
+									"textures/blocks/deepslate_iron_ore"
+								]
+							},
+							"deepslate_diamond_ore": {
+								"textures": [
+									"textures/blocks/deepslate_diamond_ore"
+								]
+							},
+							"gold_ore": {
+								"textures": [
+									"textures/blocks/gold_ore"
+								]
+							},
+							"deepslate_gold_ore": {
+								"textures": [
+									"textures/blocks/deepslate_gold_ore"
+								]
+							},
+							"deepslate_emerald_ore": {
+								"textures": [
+									"textures/blocks/deepslate_emerald_ore"
+								]
+							},
+							"emerald_ore": {
+								"textures": [
+									"textures/blocks/emerald_ore"
+								]
+							},
+							"lapis_ore": {
+								"textures": [
+									"textures/blocks/lapis_ore"
+								]
+							},
+							"deepslate_lapis_ore": {
+								"textures": [
+									"textures/blocks/deepslate_lapis_ore"
+								]
+							},
+							"copper_ore": {
+								"textures": [
+									"textures/blocks/copper_ore"
+								]
+							},
+							"deepslate_copper_ore": {
+								"textures": [
+									"textures/blocks/deepslate_copper_ore"
+								]
+							}
+						},
+						"key": "iron_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/iron_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/iron_ore"
+								]
+							}
+						]
+					},
+					{
+						"key": "deepslate_iron_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/deepslate_iron_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/deepslate_iron_ore"
+								]
+							}
+						]
+					},
+					{
+						"key": "deepslate_diamond_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/deepslate_diamond_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/deepslate_diamond_ore"
+								]
+							}
+						]
+					},
+					{
+						"key": "gold_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/gold_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/gold_ore"
+								]
+							}
+						]
+					},
+					{
+						"key": "deepslate_gold_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/deepslate_gold_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/deepslate_gold_ore"
+								]
+							}
+						]
+					},
+					{
+						"key": "deepslate_emerald_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/deepslate_emerald_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/deepslate_emerald_ore"
+								]
+							}
+						]
+					},
+					{
+						"key": "emerald_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/emerald_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/emerald_ore"
+								]
+							}
+						]
+					},
+					{
+						"key": "lapis_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/lapis_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/lapis_ore"
+								]
+							}
+						]
+					},
+					{
+						"key": "deepslate_lapis_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/deepslate_lapis_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/deepslate_lapis_ore"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"diamond_ore": {
+								"textures": [
+									"textures/blocks/diamond_ore"
+								]
+							},
+							"iron_ore": {
+								"textures": [
+									"textures/blocks/iron_ore"
+								]
+							},
+							"deepslate_iron_ore": {
+								"textures": [
+									"textures/blocks/deepslate_iron_ore"
+								]
+							},
+							"deepslate_diamond_ore": {
+								"textures": [
+									"textures/blocks/deepslate_diamond_ore"
+								]
+							},
+							"gold_ore": {
+								"textures": [
+									"textures/blocks/gold_ore"
+								]
+							},
+							"deepslate_gold_ore": {
+								"textures": [
+									"textures/blocks/deepslate_gold_ore"
+								]
+							},
+							"deepslate_emerald_ore": {
+								"textures": [
+									"textures/blocks/deepslate_emerald_ore"
+								]
+							},
+							"emerald_ore": {
+								"textures": [
+									"textures/blocks/emerald_ore"
+								]
+							},
+							"lapis_ore": {
+								"textures": [
+									"textures/blocks/lapis_ore"
+								]
+							},
+							"deepslate_lapis_ore": {
+								"textures": [
+									"textures/blocks/deepslate_lapis_ore"
+								]
+							},
+							"copper_ore": {
+								"textures": [
+									"textures/blocks/copper_ore"
+								]
+							},
+							"deepslate_copper_ore": {
+								"textures": [
+									"textures/blocks/deepslate_copper_ore"
+								]
+							}
+						},
+						"key": "copper_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/copper_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/copper_ore"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"diamond_ore": {
+								"textures": [
+									"textures/blocks/diamond_ore"
+								]
+							},
+							"iron_ore": {
+								"textures": [
+									"textures/blocks/iron_ore"
+								]
+							},
+							"deepslate_iron_ore": {
+								"textures": [
+									"textures/blocks/deepslate_iron_ore"
+								]
+							},
+							"deepslate_diamond_ore": {
+								"textures": [
+									"textures/blocks/deepslate_diamond_ore"
+								]
+							},
+							"gold_ore": {
+								"textures": [
+									"textures/blocks/gold_ore"
+								]
+							},
+							"deepslate_gold_ore": {
+								"textures": [
+									"textures/blocks/deepslate_gold_ore"
+								]
+							},
+							"deepslate_emerald_ore": {
+								"textures": [
+									"textures/blocks/deepslate_emerald_ore"
+								]
+							},
+							"emerald_ore": {
+								"textures": [
+									"textures/blocks/emerald_ore"
+								]
+							},
+							"lapis_ore": {
+								"textures": [
+									"textures/blocks/lapis_ore"
+								]
+							},
+							"deepslate_lapis_ore": {
+								"textures": [
+									"textures/blocks/deepslate_lapis_ore"
+								]
+							},
+							"copper_ore": {
+								"textures": [
+									"textures/blocks/copper_ore"
+								]
+							},
+							"deepslate_copper_ore": {
+								"textures": [
+									"textures/blocks/deepslate_copper_ore"
+								]
+							}
+						},
+						"key": "deepslate_copper_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/deepslate_copper_ore"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/deepslate_copper_ore"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

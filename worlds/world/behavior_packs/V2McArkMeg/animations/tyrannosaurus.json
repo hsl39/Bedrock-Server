@@ -1,0 +1,221 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+      
+    "animation.roar_wild_allosaurus_mc_ark": {
+     "animation_length": 0.6, 
+      "loop": true, 
+      "timeline": { 
+        "0.4": [ 
+            "/tag @s add stop",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 15 0 true" ,
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 10 0 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 10 0 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 10 0 true" ,
+            
+            
+            
+            
+            "/execute @s[tag=lvl10] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] speed 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] speed 15 0 true" ,
+
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] speed 10 0 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] speed 10 0 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] speed 15 0 true" 
+            
+            ]
+      }  
+    },
+    "animation.roar_tamed_allosaurus_mc_ark": {
+     "animation_length": 0.6, 
+      "loop": true, 
+      "timeline": { 
+
+        "0.4": [ 
+            "/tag @s add stop",
+            
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 15 0 true" ,
+
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 10 0 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 10 0 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 10 0 true" ,
+            
+            
+            "/execute @s[tag=lvl10] ~~~ effect @e[tag=tamed,r=20] speed 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @e[tag=tamed,r=20] speed 15 0 true" ,
+
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @e[tag=tamed,r=20] strength 10 0 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @e[tag=tamed,r=20] speed 10 0 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @e[tag=tamed,r=20] speed 15 0 true" 
+        
+
+            ]
+      }
+    },
+      
+    "animation.remove_stop_mc_ark2": {
+     "animation_length": 26.6, 
+      "loop": true, 
+      "timeline": { 
+
+        "26.0": [
+						"/tag @s remove stop"
+            ]
+      }
+    },
+      
+      
+    "animation.remove_stop_mc_ark": {
+     "animation_length": 16.6, 
+      "loop": true, 
+      "timeline": { 
+
+        "16.0": [
+						"/tag @s remove stop"
+            ]
+      }
+    },
+      
+    "animation.roar_wild_tyranosaurus_rex_mc_ark": {
+     "animation_length": 0.6, 
+      "loop": true, 
+      "timeline": {  
+        "0.4": [ 
+            "/tag @s add stop",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @e[tag=tyranosaurus_rex_wild,r=20] strength 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @e[tag=tyranosaurus_rex_wild,r=20] strength 15 0 true" ,
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @e[tag=tyranosaurus_rex_wild,r=20] strength 5 1 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @e[tag=tyranosaurus_rex_wild,r=20] strength 10 1 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @e[tag=tyranosaurus_rex_wild,r=20] strength 15 1 true" 
+            
+            ]
+      }  
+    },
+    "animation.roar_tamed_tyranosaurus_rex_mc_ark": {
+     "animation_length": 0.6, 
+      "loop": true, 
+      "timeline": { 
+        "0.4": [ 
+            "/tag @s add stop",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @e[tag=tamed,r=20] strength 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @e[tag=tamed,r=20] strength 15 0 true" ,
+            
+            "/execute @s[tag=lvl150] ~~~ effect @e[tag=tamed,r=20] strength 5 1 true" ,
+
+             
+            "/execute @s[tag=lvl200] ~~~ effect @e[tag=tamed,r=20] strength 10 1 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @e[tag=tamed,r=20] strength 15 1 true" 
+        
+
+            ] 
+      }
+    },
+    
+    "animation.roar_wild_yutyrannus_mc_ark": {
+     "animation_length": 0.6, 
+      "loop": true, 
+      "timeline": { 
+        "0.4": [ 
+            "/tag @s add stop",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s strength 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @s strength 15 0 true" ,
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @s strength 10 2 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @s strength 10 2 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @s strength 10 3 true" ,
+            
+            
+            
+            
+            "/execute @s[tag=lvl10] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] strength 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] strength 15 0 true" ,
+
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] strength 10 1 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] strength 10 1 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @e[tag=yutyrannus_rex_wild,r=20] strength 15 1 true" 
+            
+            ]
+      }  
+    },
+    "animation.roar_tamed_yutyrannus_mc_ark": {
+     "animation_length": 0.6, 
+      "loop": true, 
+      "timeline": { 
+
+        "0.4": [ 
+            "/tag @s add stop",
+            
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s strength 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @s strength 15 0 true" ,
+
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @s strength 10 2 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @s strength 10 2 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @s strength 10 3 true" ,
+            
+            
+            "/execute @s[tag=lvl10] ~~~ effect @e[tag=tamed,r=20] strength 10 0 true" ,
+            "/execute @s[tag=lvl50] ~~~ effect @e[tag=tamed,r=20] strength 15 0 true" ,
+
+
+            
+            "/execute @s[tag=lvl150] ~~~ effect @e[tag=tamed,r=20] strength 10 1 true" ,
+
+            
+            "/execute @s[tag=lvl200] ~~~ effect @e[tag=tamed,r=20] strength 10 1 true" ,
+            
+            "/execute @s[tag=lvl250] ~~~ effect @e[tag=tamed,r=20] strength 15 1 true" 
+        
+
+            ]
+      }
+    }
+}
+}

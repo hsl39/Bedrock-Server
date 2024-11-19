@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "gold_makeshift_spear"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A",
+			"B",
+			"C"
+		],
+		"key": {
+			"A": {
+				"item": "true:gold_knife"
+			},
+			"B": {
+				"item": "minecraft:string"
+			},
+			"C": {
+				"item": "minecraft:stick"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "true:gold_knife"
+			}
+		],
+		"result": [
+			{
+				"item": "true:gold_makeshift_spear"
+			}
+		]
+	}
+}

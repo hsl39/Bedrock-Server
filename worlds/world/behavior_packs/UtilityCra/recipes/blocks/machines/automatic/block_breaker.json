@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twm:block_breaker"
+		},
+		"tags": [
+			"twm_workbench"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:diamond_pickaxe"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"R": {
+				"item": "minecraft:redstone_block"
+			},
+			"C": {
+				"item": "twm:machine_case"
+			},
+			"S": {
+				"item": "twm:steel"
+			}
+		},
+		"pattern": [
+			"SAS",
+			"ICI",
+			"SRS"
+		],
+		"result": {
+			"item": "twm:block_breaker"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:diamond_pickaxe"
+			},
+			{
+				"item": "minecraft:iron_ingot"
+			},
+			{
+				"item": "minecraft:redstone_block"
+			},
+			{
+				"item": "twm:machine_case"
+			},
+			{
+				"item": "twm:steel"
+			}
+		]
+	}
+}

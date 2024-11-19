@@ -1,0 +1,1 @@
+{"format_version":"1.20.80","minecraft:item":{"description":{"identifier":"gabrielaplok:landmine_item","menu_category":{"category":"equipment","group":"itemGroup.name.props"}},"components":{"minecraft:display_name":{"value":"item.landmine.name"},"minecraft:block_placer":{"block":"gabrielaplok:landmine"},"minecraft:icon":"landmine"}}}

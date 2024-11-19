@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "new:fire_essence",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": {
+        "texture": "fire_essence"
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
+      "minecraft:display_name": {
+      },      
+      "minecraft:use_animation": "eat",
+      "minecraft:glint": true,
+      "minecraft:max_stack_size": 64,
+      "minecraft:food": {
+        "nutrition": 4,
+        "can_always_eat": true
+      }
+    }
+  }
+}

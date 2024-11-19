@@ -1,0 +1,60 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "new:ice_wyvern_structure_feature_rules",
+      "places_feature": "new:ice_wyvern_structure_features"
+    },
+    "conditions": {
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": {
+        "any_of":[
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "ice_plains"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "ice_mountains"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "ice_plains_spikes"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "frozen_ocean"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "frozen_peaks"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "snowy_slopes"
+          }
+        ]
+      }
+    },
+    "distribution": {
+      "x": {
+        "extent": [0, 16],
+        "distribution": "uniform"
+      },
+      "y": "query.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
+      "z": {
+        "extent": [0, 16],
+        "distribution": "uniform"
+      },
+      "iterations": 25,
+      "scatter_chance": 0.5
+      }
+    }
+  }
+}

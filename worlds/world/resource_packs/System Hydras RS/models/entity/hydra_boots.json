@@ -1,0 +1,49 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.hydra_boots",
+				"texture_width": 80,
+				"texture_height": 80,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "LeftLeg",
+					"parent": "waist",
+					"pivot": [2, 12, 0]
+				},
+				{
+					"name": "lboots",
+					"parent": "LeftLeg",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [3.255, 1, 0], "size": [3, 5, 0], "inflate": 0.1, "pivot": [4.255, 1, 0], "rotation": [0, 0, 17.5], "uv": [0, 48]},
+						{"origin": [0, 0, -2], "size": [4, 12, 4], "inflate": 0.355, "uv": [46, 13]}
+					]
+				},
+				{
+					"name": "RightLeg",
+					"parent": "waist",
+					"pivot": [-2, 12, 0]
+				},
+				{
+					"name": "rboots",
+					"parent": "RightLeg",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6.255, 1, 0], "size": [3, 5, 0], "inflate": 0.1, "pivot": [-4.255, 1, 0], "rotation": [0, 0, -17.5], "uv": [0, 48], "mirror": true},
+						{"origin": [-4, 0, -2], "size": [4, 12, 4], "inflate": 0.355, "uv": [46, 13], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

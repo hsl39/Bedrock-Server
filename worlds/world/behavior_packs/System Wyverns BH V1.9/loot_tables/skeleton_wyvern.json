@@ -1,0 +1,70 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "new:wyvern_bone",
+          "count": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "new:wyvern_skull",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "type": "item",
+          "name": "new:wyvern_bones",
+          "count": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "new:ice_wyvern_fang",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "type": "item",
+          "name": "new:wither_wyvern_fang",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "type": "item",
+          "name": "new:poison_wyvern_fang",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    }
+  ]
+}

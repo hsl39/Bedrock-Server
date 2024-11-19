@@ -1,0 +1,23 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:electric_hydra_helmet"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "new:electric_hydra_scale"
+      }
+    },
+    "result": {
+      "item": "new:electric_hydra_helmet"
+    }
+  }
+}

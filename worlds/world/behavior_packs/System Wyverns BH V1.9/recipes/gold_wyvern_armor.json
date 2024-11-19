@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:gold_wyvern_armor"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  A",
+      "ABA",
+      "AA "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:gold_ingot"
+      },
+      "B": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "new:gold_wyvern_armor"
+    }
+  }
+}

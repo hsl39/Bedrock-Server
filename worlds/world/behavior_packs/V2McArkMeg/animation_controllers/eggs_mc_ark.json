@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.rotting_egg_controller_mc_ark": {
+			"initial_state": "default",
+			"states": {
+			    
+				"default": {
+"on_entry": [
+ "variable.rotting = 10.0; return variable.rotting;"
+                    ],
+          "transitions": [
+						{ 
+							"rotting_egg_mc_ark": "query.is_sheared"
+						}
+                   ]
+				},
+				"rotting_egg_mc_ark": {
+          "transitions": [
+						{ 
+							"default": "!query.is_sheared"
+						}
+                   ],
+          "animations": [
+"rotting_egg_mc_ark"
+                   ]
+				}
+			}
+		}
+	}
+}  

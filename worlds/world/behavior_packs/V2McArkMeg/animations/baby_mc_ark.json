@@ -1,0 +1,110 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.remove_tag_mc_ark": {
+     "animation_length":18.4,
+      "loop": true, 
+      "timeline": { 
+        "18.0": [ 
+    "/tag @s remove good_egg"
+            ]   
+      }      
+    },   
+      
+    "animation.remove_eating_baby": {
+     "animation_length": 1.2, 
+      "loop": true, 
+      "timeline": { 
+        "0.0": [ 
+       "/effect @s slowness 1 255 true"
+            ],
+        "0.9": [ 
+       "@s minecraft:remove_eating"
+            ]
+      }
+    },  
+    
+    "animation.age_growing_trike": {
+     "animation_length":100.4,
+      "loop": true,
+      "timeline": { 
+        "100.0": [ 
+"variable.age_mc_ark = variable.age_mc_ark + 1.0;"
+            ]   
+      }       
+    }, 
+      
+    "animation.age_growing": {
+     "animation_length":60.4,
+      "loop": true,
+      "timeline": { 
+        "60.0": [ 
+"variable.age_mc_ark = variable.age_mc_ark + 1.0;"
+            ]   
+      }       
+    }, 
+    
+    "animation.age_growing_tyranosaurus_rex": {
+     "animation_length":120.4,
+      "loop": true,
+      "timeline": { 
+        "120.0": [ 
+"variable.age_mc_ark = variable.age_mc_ark + 1.0;"
+            ]   
+      }       
+    }, 
+    
+    "animation.age_growing_spinosaurus": {
+     "animation_length":150.4,
+      "loop": true,
+      "timeline": { 
+        "150.0": [ 
+"variable.age_mc_ark = variable.age_mc_ark + 1.0;"
+            ]   
+      }       
+    }, 
+     
+    "animation.hunger_time_mc_ark": {
+     "animation_length":45.0,
+      "loop": true,
+      "timeline": { 
+        "0.0": [ 
+       "@s minecraft:hunger_on"
+            ]   
+      }       
+    }, 
+    
+    
+    "animation.hunger_particles_mc_ark": {
+     "animation_length":6.4,
+      "loop": true,
+      "timeline": { 
+        "0.0": [ 
+            "/particle mc_ark:hunger_mc_ark ~~1.0~"
+            ]   
+      }          
+    }, 
+    
+    "animation.bad_temperature_progress_mc_ark": {
+     "animation_length":16.4,
+      "loop": true,
+      "timeline": { 
+        "16.0": [ 
+           "/particle mc_ark:bad_point_mc_ark ~~1~",
+"variable.breeding_points = variable.breeding_points - 50.0;"
+            ]   
+      }       
+    },
+    
+    "animation.hunger_progress_mc_ark": {
+     "animation_length":30.4,
+      "loop": true,
+      "timeline": { 
+        "30.0": [ 
+           "/particle mc_ark:bad_point_mc_ark ~~1~",
+"variable.breeding_points = variable.breeding_points - 50.0;"
+            ]   
+      }       
+    }
+  }
+}

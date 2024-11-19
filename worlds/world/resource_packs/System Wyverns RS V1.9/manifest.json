@@ -1,0 +1,22 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "§3§lMade by SystemTv Twitter@SystemTv_",
+		"name": "System Wyverns Addon V1.9.9 §2Resources",
+		"uuid": "4391271c-cb8a-4831-a59e-61c31e927349",
+		"version": [ 0, 1, 0 ],
+		"min_engine_version": [
+			1,
+			20,
+			30
+		]
+	},
+	"modules": [
+		{
+			"description": "§3§lMade by SystemTv Twitter@SystemTv_",
+			"type": "resources",
+			"uuid": "c6b2b06c-3402-44ca-a503-3c7dc6c8a8c9",
+			"version": [ 0, 1, 0 ]
+		}
+	]
+}

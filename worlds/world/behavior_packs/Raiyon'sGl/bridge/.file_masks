@@ -1,0 +1,68 @@
+{
+	"RP/textures/terrain_texture.json": {
+		"data": {}
+	},
+	"RP/blocks.json": {
+		"data": {}
+	},
+	"BP/manifest.json": {
+		"data": {}
+	},
+	"BP/functions/tick.json": {
+		"data": {}
+	},
+	"BP/blocks/deepslate_diamond_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/diamond_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/deepslate_iron_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/iron_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/gold_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/deepslate_gold_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/emerald_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/deepslate_emerald_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/lapis_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/deepslate_lapis_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/copper_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/deepslate_copper_ore.json": {
+		"data": {}
+	},
+	"BP/features/iron_ore_feature.json": {
+		"data": {}
+	},
+	"BP/feature_rules/iron_ore_feature_rule.json": {
+		"data": {}
+	},
+	"BP/features/white_diamond_ore_feature.json": {
+		"data": {}
+	},
+	"BP/feature_rules/overworld_underground_white_diamond_ore_feature.json": {
+		"data": {}
+	},
+	"BP/entities/test.json": {
+		"data": {}
+	},
+	"RP/entity/awdwdwd.json": {
+		"data": {}
+	}
+}

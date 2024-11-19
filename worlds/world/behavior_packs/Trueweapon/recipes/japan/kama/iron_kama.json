@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "iron_kama"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AA",
+			" B"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:iron_ingot"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:iron_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "true:iron_kama"
+			}
+		]
+	}
+}

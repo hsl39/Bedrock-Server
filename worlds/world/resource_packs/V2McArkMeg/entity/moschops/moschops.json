@@ -1,0 +1,56 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:moschops",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"moschops1": "textures/moschops/variant1",
+				"moschops2": "textures/moschops/variant2",
+				"moschops3": "textures/moschops/variant3",
+				"moschops4": "textures/moschops/variant4"
+			},
+			"geometry": {
+				"default": "geometry.moschops"
+			},
+	"sound_effects": {
+	"hurt_sound": "mob.moschops_mc_ark",
+	"idle_sound": "mob.moschops_mc_ark"
+	},
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"setup": "animation.moschops.setup",
+				"general": "controller.animation.moschops.general",
+				"idle": "animation.moschops.idle",
+				"walk": "animation.moschops.walk", 
+				"muerto": "animation.moschops.muerto", 
+				"run": "animation.moschops.run",
+				"walk_controller":
+				"controller.animation.general.walk_moschops_ark"
+			},
+			"scripts": { 
+				"animate": [
+{ 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+				    
+				    "setup",
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.moschops"
+			],
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index": 2
+      }
+		}
+	}
+}

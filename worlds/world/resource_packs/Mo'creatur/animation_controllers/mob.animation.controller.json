@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mob.idle": {
+			"initial_state": "static",
+			"states": {
+				"static": {
+					"animations": ["staticking"]
+				}
+			}
+		},
+		"controller.animation.mob.move": {
+			"states": {
+				"default": {
+					"animations": [
+						{"moving": "query.modified_move_speed"}
+					]
+				}
+			}
+		},
+		"controller.animation.mob.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{"attack": "variable.attack_time"}
+					],
+					"blend_transition": 0.2
+				},
+				"attack": {
+					"animations": ["attacking"],
+					"transitions": [
+						{"default": "query.all_animations_finished"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.silver_skeleton.walk": {
+			"states": {
+				"default": {
+					"animations": [
+						{"moving": "query.modified_move_speed"},
+						{"moving2": "query.modified_move_speed"}
+					]
+				}
+			}
+		},
+		"controller.animation.mob.fly": {
+			"states": {
+				"default": {
+					"animations": [
+						{"flying": "!query.is_on_ground"}
+					]
+				}
+			}
+		}
+	}
+}

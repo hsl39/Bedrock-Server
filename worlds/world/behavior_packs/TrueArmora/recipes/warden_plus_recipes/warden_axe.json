@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "warden_axe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AB",
+			"BC",
+            " C"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:echo_shard"
+			},
+			"B": {
+				"item": "minecraft:sculk_catalyst"
+			},
+      "C": {
+				"item": "minecraft:bone"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:echo_shard"
+			}
+		],
+		"result": {
+			"item": "wb:warden_axe"
+		}
+	}
+}

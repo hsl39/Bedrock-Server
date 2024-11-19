@@ -1,0 +1,104 @@
+{
+  "resource_pack_name": "pack.name",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    // SVI
+    "pistol:svi.texture": {
+      "textures": "textures/firearm/pistol/svi/svi_item"
+    },
+    "pistol:svi_mag.texture": {
+      "textures": "textures/firearm/pistol/svi/svi_mag"
+    },
+    // Taurus
+    "pistol:taurus.texture": {
+      "textures": "textures/firearm/pistol/taurus/taurus_item"
+    },
+    "pistol:taurus_mag.texture": {
+      "textures": "textures/firearm/pistol/taurus/taurus_mag"
+    },
+    // P90
+    "smg:p90.texture": {
+      "textures": "textures/firearm/smg/p90/p90_item"
+    },
+    "smg:p90_mag.texture": {
+      "textures": "textures/firearm/smg/p90/p90_mag"
+    },
+
+    // MP5
+    "smg:mp5.texture": {
+      "textures": "textures/firearm/smg/mp5/mp5_item"
+    },
+    "smg:mp5_mag.texture": {
+      "textures": "textures/firearm/smg/mp5/mp5_mag"
+    },
+
+    // AWP
+    "sniper:awp.texture": {
+      "textures": "textures/firearm/sniper/awp/awp_item"
+    },
+    "sniper:awp_mag.texture": {
+      "textures": "textures/firearm/sniper/awp/awp_mag"
+    },
+
+    // Barrett
+    "sniper:barrett.texture": {
+      "textures": "textures/firearm/sniper/barrett/barrett_item"
+    },
+    "sniper:barrett_mag.texture": {
+      "textures": "textures/firearm/sniper/barrett/barrett_mag"
+    },
+
+    // M3 
+    "shotgun:m3.texture": {
+      "textures": "textures/firearm/shotgun/m3/m3_item"
+    },
+    "shotgun:m3_ammo.texture": {
+      "textures": "textures/firearm/shotgun/m3/m3_ammo"
+    },
+
+    // chaingrenade
+    "throwable:chaingrenade.texture": {
+      "textures": "textures/firearm/throwable/chaingrenade_item"
+    },
+
+    // AKM
+    "ar:akm.texture": {
+      "textures": "textures/firearm/ar/akm/akm_item"
+    },
+    "ar:akm_mag.texture": {
+      "textures": "textures/firearm/ar/akm/akm_mag"
+    },
+
+    // M249
+    "lmg:m249.texture": {
+      "textures": "textures/firearm/lmg/m249/m249_item"
+    },
+    "lmg:m249_mag.texture": {
+      "textures": "textures/firearm/lmg/m249/m249_mag"
+    },
+
+    // mk18
+    "ar:mk18.texture": {
+      "textures": "textures/firearm/ar/mk18/mk18_item"
+    },
+    "ar:mk18_mag.texture": {
+      "textures": "textures/firearm/ar/mk18/mk18_mag"
+    },
+
+    // RPG
+    "other:rpg.texture": {
+      "textures": "textures/firearm/ar/mk18/mk18_item"
+    },
+    "other:rpg_empty.texture": {
+      "textures": "textures/firearm/ar/mk18/mk18_item"
+    },
+    "other:rpg_rocket.texture": {
+      "textures": "textures/firearm/ar/mk18/mk18_item"
+    },
+
+    // Night vision
+    "equipment:night_vision.texture": {
+      "textures": "textures/night_vision_item"
+    }
+  }
+}

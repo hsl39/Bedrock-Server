@@ -1,0 +1,30 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:electric_hydra_sword3"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AA",
+      "ARA",
+      "PA "
+    ],
+    "key": {
+      "A": {
+        "item": "new:electric_hydra_scale"
+      },
+      "P": {
+        "item": "new:electric_hydra_sword1"
+      },
+      "R": {
+        "item": "new:electric_hydra_sword2"
+      }
+    },
+    "result": {
+      "item": "new:electric_hydra_sword3"
+    }
+  }
+}

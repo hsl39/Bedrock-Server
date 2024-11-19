@@ -1,0 +1,44 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "true:netherite_barbed_mace",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+                "tags": [
+					"true:is_blunt"
+                ]
+            },
+			"minecraft:repairable": {
+				"repair_items": [
+				  {
+					"items": [
+					  "true:netherite_barbed_mace"
+					],
+					"repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+				  }
+				]
+			  },
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:damage": 10,
+			"minecraft:enchantable": {
+				"value": 15,
+				"slot": "sword"
+			},
+			"minecraft:display_name": {},
+			"minecraft:icon": {
+				"texture": "netherite_barbed_mace"
+			},
+			"minecraft:durability": {
+				"max_durability": 2031
+			}
+		}
+	}
+}

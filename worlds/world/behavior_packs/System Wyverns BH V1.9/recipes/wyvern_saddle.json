@@ -1,0 +1,33 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:wyvern_saddle"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "DSD",
+      "SAS",
+      "BSB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:saddle"
+      },
+      "B": {
+        "item": "new:wyvern_bone"
+      },
+      "S": {
+        "item": "minecraft:iron_ingot"
+      },
+      "D": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "new:wyvern_saddle"
+    }
+  }
+}

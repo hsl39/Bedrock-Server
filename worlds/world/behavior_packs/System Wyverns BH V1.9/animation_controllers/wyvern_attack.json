@@ -1,0 +1,96 @@
+
+{
+  "format_version": "1.10.0",
+  "animation_controllers":{
+    "controller.animation.wyvern_attack":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "attack": "variable.attack_time > 0 && !query.is_baby && !query.is_tamed"
+            }
+          ]
+        },
+        "attack":{
+          "transitions":[
+            {
+              "default": "!variable.attack_time"
+            }
+          ],
+          "on_entry":[
+            "/summon new:wyvern_attack_knockback ~~~"
+          ]
+        }
+      }
+    },
+    "controller.animation.wyvern_random_attack":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "attack": "variable.attack_time > 0"
+            }
+          ]
+        },
+        "attack":{
+          "transitions":[
+            {
+              "default": "!variable.attack_time"
+            }
+          ],
+          "on_entry":[
+            "@s random_attack"
+          ]
+        }
+      }
+    },
+    "controller.animation.wyvern_change":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "change": "query.is_stunned"
+            }
+          ],
+          "on_entry":[
+            "/event entity @s[scores={wyvern=4}] new:wyvern_change_attack",
+            "/scoreboard players reset @s[scores={wyvern=4}] wyvern"
+          ]
+        },
+        "change":{
+          "transitions":[
+            {
+              "default": "!query.is_stunned"
+            }
+          ],
+          "on_entry":[
+            "/scoreboard objectives add wyvern dummy",
+            "/scoreboard players add @s wyvern 1",
+            "/event entity @s[scores={wyvern=1..}] new:wyvern_remove_scores"
+          ]
+        }
+      }
+    },
+    "controller.animation.wyvern_revive":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "change": "query.is_stackable && q.is_tamed"
+            }
+          ]
+        },
+        "change":{
+          "transitions":[
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry":[
+            "/title @p[r=10] actionbar §bTip: §6You can revive it with golden apples."
+          ]
+        }
+      }
+    }
+  }
+}

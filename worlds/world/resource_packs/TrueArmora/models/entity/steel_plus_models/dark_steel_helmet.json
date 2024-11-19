@@ -1,0 +1,43 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.dark_steel_helmet",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.55, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "jaw",
+					"parent": "head",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 23, -5], "size": [8, 4, 8], "inflate": 0.56, "pivot": [0, 25.5, -1], "rotation": [7, 0, 0], "uv": [31, 20]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "head",
+					"pivot": [0, 30.5, 0],
+					"cubes": [
+						{"origin": [-5, 25, -6], "size": [10, 10, 4], "pivot": [0, 30.5, 0], "rotation": [-25, 0, 0], "uv": [32, 0]},
+						{"origin": [-2, 24.9, -5.4], "size": [4, 10, 1], "inflate": -0.1, "pivot": [0, 30.5, 0], "rotation": [-16, 0, 0], "uv": [54, 13]},
+						{"origin": [-2, 29.3414, 0.90901], "size": [4, 10, 1], "inflate": -0.1, "pivot": [0, 35.3414, 0.60901], "rotation": [-61, 0, 0], "uv": [54, 13]},
+						{"origin": [-2, 31.08017, -1.79738], "size": [4, 10, 1], "inflate": -0.1, "pivot": [0, 36.08017, -3.49738], "rotation": [-44, 0, 0], "uv": [54, 13]}
+					]
+				}
+			]
+		}
+	]
+}

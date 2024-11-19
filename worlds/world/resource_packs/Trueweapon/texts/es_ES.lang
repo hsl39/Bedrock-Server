@@ -1,0 +1,312 @@
+pack.name=§dArmas Verdaderas RP (v1.21)
+pack.description=Paquete de texturas de §dArmas Verdaderas§r Add-On de §l§4True Cowboy§r!
+
+tile.advanced_crafting_table.name=Mesa de elaboracion avanzada
+tile.true:advanced_crafting_table.name=Mesa de elaboracion avanzada
+
+item.true:barrier=Sin brazo
+
+item.true:wooden_barbed_mace=Maza de puas de madera
+item.true:stone_barbed_mace=Maza de puas de piedra
+item.true:iron_barbed_mace=Maza de puas de hierro
+item.true:gold_barbed_mace=Maza de puas de oro
+item.true:diamond_barbed_mace=Maza de puas de diamante
+item.true:netherite_barbed_mace=Maza de puas de inframundita
+item.true:amethyst_barbed_mace=Maza de puas de amatista
+
+item.true:wooden_katana=Katana de madera
+item.true:stone_katana=Katana de piedra
+item.true:gold_katana=Katana de oro
+item.true:iron_katana=Katana de hierro
+item.true:diamond_katana=Katana de diamante
+item.true:netherite_katana=Katana de inframundita
+item.true:amethyst_katana=Katana de amatista
+
+item.true:wooden_knife=Cuchillo de madera
+item.true:stone_knife=Cuchillo de piedra
+item.true:iron_knife=Cuchillo de hierro
+item.true:gold_knife=Cuchillo de oro
+item.true:diamond_knife=Cuchillo de diamante
+item.true:netherite_knife=Cuchillo de inframundita
+item.true:amethyst_knife=Cuchillo de amatista
+
+item.true:wooden_claymore=Claymore de madera
+item.true:stone_claymore=Claymore de piedra
+item.true:iron_claymore=Claymore de hierro
+item.true:gold_claymore=Claymore de oro
+item.true:diamond_claymore=Claymore de diamante
+item.true:netherite_claymore=Claymore de inframundita
+item.true:amethyst_claymore=Claymore de amatista
+
+item.true:bō=Bō
+
+item.true:tonfa=Tonfa
+
+item.true:tessen_war_fan=Abanico de combate
+
+item.true:wooden_kama=Kama de madera
+item.true:gold_kama=Kama de oro
+item.true:stone_kama=Kama de piedra
+item.true:iron_kama=Kama de hierro
+item.true:diamond_kama=Kama de diamante
+item.true:netherite_kama=Kama de inframundita
+item.true:amethyst_kama=Kama de amatista
+
+item.true:wooden_bearded_axe=Hacha barbuda de madera
+item.true:gold_bearded_axe=Hacha barbuda de oro
+item.true:stone_bearded_axe=Hacha barbuda de piedra
+item.true:iron_bearded_axe=Hacha barbuda de hierro
+item.true:diamond_bearded_axe=Hacha barbuda de diamante
+item.true:netherite_bearded_axe=Hacha barbuda de inframundita
+item.true:amethyst_bearded_axe=Hacha barbuda de amatista
+
+item.true:wooden_dane_axe=Hacha danesa de madera
+item.true:gold_dane_axe=Hacha danesa de oro
+item.true:stone_dane_axe=Hacha danesa de piedra
+item.true:iron_dane_axe=Hacha danesa de hierro
+item.true:diamond_dane_axe=Hacha danesa de diamante
+item.true:netherite_dane_axe=Hacha danesa de inframundita
+item.true:amethyst_dane_axe=Hacha danesa de amatista
+
+item.true:wooden_machete=Machete de madera
+item.true:gold_machete=Machete de oro
+item.true:stone_machete=Machete de piedra
+item.true:iron_machete=Machete de hierro
+item.true:diamond_machete=Machete de diamante
+item.true:netherite_machete=Machete de inframundita
+item.true:amethyst_machete=Machete de amatista
+
+item.true:wooden_wakizashi=Wakizashi de madera
+item.true:gold_wakizashi=Wakizashi de oro
+item.true:stone_wakizashi=Wakizashi de piedra
+item.true:iron_wakizashi=Wakizashi de hierro
+item.true:diamond_wakizashi=Wakizashi de diamante
+item.true:netherite_wakizashi=Wakizashi de inframundita
+item.true:amethyst_wakizashi=Wakizashi de amatista
+
+item.true:wooden_ninjatō=Ninjatō de madera
+item.true:gold_ninjatō=Ninjatō de oro
+item.true:stone_ninjatō=Ninjatō de piedra
+item.true:iron_ninjatō=Ninjatō de hierro
+item.true:diamond_ninjatō=Ninjatō de diamante
+item.true:netherite_ninjatō=Ninjatō de inframundita
+item.true:amethyst_ninjatō=Ninjatō de amatista
+
+item.true:wooden_ōdachi=ōdachi de madera
+item.true:gold_ōdachi=ōdachi de oro
+item.true:stone_ōdachi=ōdachi de piedra
+item.true:iron_ōdachi=ōdachi de hierro
+item.true:diamond_ōdachi=ōdachi de diamanate
+item.true:netherite_ōdachi=ōdachi de inframundita
+item.true:amethyst_ōdachi=ōdachi de amatista
+
+item.true:wooden_zweihander=Zweihander de madera
+item.true:gold_zweihander=Zweihander de oro
+item.true:stone_zweihander=Zweihander de piedra
+item.true:iron_zweihander=Zweihander de hierro
+item.true:diamond_zweihander=Zweihander de diamante
+item.true:netherite_zweihander=Zweihander de inframundita
+item.true:amethyst_zweihander=Zweihander de amatista
+
+item.true:wooden_seitengewehr=Seitengewehr de madera
+item.true:gold_seitengewehr=Seitengewehr de oro
+item.true:stone_seitengewehr=Seitengewehr de piedra
+item.true:iron_seitengewehr=Seitengewehr de hierro
+item.true:diamond_seitengewehr=Seitengewehr de diamante
+item.true:netherite_seitengewehr=Seitengewehr de inframundita
+item.true:amethyst_seitengewehr=Seitengewehr de amatista
+
+entity.true:wakizashi_sweep=Barrido de wakizashi
+entity.heavy:ninjato_sweep=Barrido de ninjatō
+entity.heavy:sweep_odachi=Barrido de ōdachi
+entity.true:katana_sweep=Barrido de katana
+entity.heavy:fan_attack=Corte de viento
+entity.true:bō_sweep=Golpeo de bō
+
+item.true:wooden_club=Mazo
+
+item.true:spiked_club=Mazo de puas
+
+item.true:iron_bō=Bō de hierro
+
+item.true:wooden_lumberjack_axe=Hacha de leñador de madera
+item.true:gold_lumberjack_axe=Hacha de leñador de oro
+item.true:stone_lumberjack_axe=Hacha de leñador de piedra
+item.true:iron_lumberjack_axe=Hacha de leñador de hierro
+item.true:diamond_lumberjack_axe=Hacha de leñador de diamante
+item.true:netherite_lumberjack_axe=Hacha de leñador de inframundita
+
+item.true:wooden_cyclone_dagger=Daga ciclon de madera
+item.true:gold_cyclone_dagger=Daga ciclon de oro
+item.true:stone_cyclone_dagger=Daga ciclon de piedra
+item.true:iron_cyclone_dagger=Daga ciclon de hierro
+item.true:diamond_cyclone_dagger=Daga ciclon de diamante
+item.true:netherite_cyclone_dagger=Daga ciclon de inframundita
+
+item.true:wooden_bardiche=Bardiche de madera
+item.true:gold_bardiche=Bardiche de oro
+item.true:stone_bardiche=Bardiche de piedra
+item.true:iron_bardiche=Bardiche de hierro
+item.true:diamond_bardiche=Bardiche de diamante
+item.true:netherite_bardiche=Bardiche de inframundita
+
+item.true:wooden_gladius=Gladius de madera
+item.true:gold_gladius=Gladius de oro
+item.true:stone_gladius=Gladius de stone
+item.true:iron_gladius=Gladius de hierro
+item.true:diamond_gladius=Gladius de diamante
+item.true:netherite_gladius=Gladius de inframundita
+
+item.true:wooden_jaw=Mandibula de madera
+item.true:gold_jaw=Mandibula de oro
+item.true:stone_jaw=Mandibula de piedra
+item.true:iron_jaw=Mandibula de hierro
+item.true:diamond_jaw=Mandibula de diamante
+item.true:netherite_jaw=Mandibula de inframundita
+
+item.true:punicher=Desmembrador
+
+item.true:wooden_combat_shovel=Pala de combate de madera
+item.true:gold_combat_shovel=Pala de combate de oro
+item.true:stone_combat_shovel=Pala de combate de piedra
+item.true:iron_combat_shovel=Pala de combate de hierro
+item.true:diamond_combat_shovel=Pala de combate de diamante
+item.true:netherite_combat_shovel=Pala de combate de inframundita
+
+item.true:wooden_kopesh=Kopesh de madera
+item.true:gold_kopesh=Kopesh de oro
+item.true:stone_kopesh=Kopesh de piedra
+item.true:iron_kopesh=Kopesh de hierro
+item.true:diamond_kopesh=Kopesh de diamanta
+item.true:netherite_kopesh=Kopesh de inframundita
+
+item.true:wooden_falcata=Falcata de madera
+item.true:gold_falcata=Falcata de oro
+item.true:stone_falcata=Falcata de piedra
+item.true:iron_falcata=Falcata de hierro
+item.true:diamond_falcata=Falcata de diamante
+item.true:netherite_falcata=Falcata de inframundita
+
+item.true:wooden_epee=Epee de madera
+item.true:gold_epee=Epee de oro
+item.true:stone_epee=Epee de piedra
+item.true:iron_epee=Epee de hierro
+item.true:diamond_epee=Epee de diamante
+item.true:netherite_epee=Epee de inframundita
+
+item.true:wooden_rapier=Estoque de madera
+item.true:gold_rapier=Estoque de oro
+item.true:stone_rapier=Estoque de piedra
+item.true:iron_rapier=Estoque de hierro
+item.true:diamond_rapier=Estoque de diamante
+item.true:netherite_rapier=Estoque de inframundita
+
+item.true:wooden_pilum=Pilum de madera
+item.true:gold_pilum=Pilum de oro
+item.true:stone_pilum=Pilum de piedra
+item.true:iron_pilum=Pilum de hierro
+item.true:diamond_pilum=Pilum de diamante
+item.true:netherite_pilum=Pilum de inframundita
+
+item.true:wooden_katzbalger=Katzbalger de madera
+item.true:gold_katzbalger=Katzbalger de oro
+item.true:stone_katzbalger=Katzbalger de piedra
+item.true:iron_katzbalger=Katzbalger de hierro
+item.true:diamond_katzbalger=Katzbalger de diamante
+item.true:netherite_katzbalger=Katzbalger de inframundita
+
+item.true:wooden_landsknecht_pike=Lucio de madera
+item.true:gold_landsknecht_pike=Lucio de oro
+item.true:stone_landsknecht_pike=Lucio de piedra
+item.true:iron_landsknecht_pike=Lucio de hierro
+item.true:diamond_landsknecht_pike=Lucio de diamante
+item.true:netherite_landsknecht_pike=Lucio de inframundita
+
+item.true:wooden_sledgehammer=Almadena de madera
+item.true:gold_sledgehammer=Almadena de oro
+item.true:stone_sledgehammer=Almadena de piedra
+item.true:iron_sledgehammer=Almadena de hierro
+item.true:diamond_sledgehammer=Almadena de diamante
+item.true:netherite_sledgehammer=Almadena de inframundita
+
+item.true:wooden_crowbar=Palanca de madera
+item.true:gold_crowbar=Palanca de oro
+item.true:stone_crowbar=Palanca de piedra
+item.true:iron_crowbar=Palanca de hierro
+item.true:diamond_crowbar=Palanca de diamante
+item.true:netherite_crowbar=Palanca de inframundita
+
+item.true:wooden_makeshift_spear=Lanza improvisada de madera
+item.true:gold_makeshift_spear=Lanza improvisada de oro
+item.true:stone_makeshift_spear=Lanza improvisada de piedra
+item.true:iron_makeshift_spear=Lanza improvisada de hierro
+item.true:diamond_makeshift_spear=Lanza improvisada de diamante
+item.true:netherite_makeshift_spear=Lanza improvisada de inframundita
+
+item.true:wooden_jian_sword=Jian de madera
+item.true:gold_jian_sword=Jian de oro
+item.true:stone_jian_sword=Jian de piedra
+item.true:iron_jian_sword=Jian de hierro
+item.true:diamond_jian_sword=Jian de diamante
+item.true:netherite_jian_sword=Jian de inframundita
+
+item.true:wooden_scythe=Guadaña de madera
+item.true:gold_scythe=Guadaña de oro
+item.true:stone_scythe=Guadaña de piedra
+item.true:iron_scythe=Guadaña de hierro
+item.true:diamond_scythe=Guadaña de diamante
+item.true:netherite_scythe=Guadaña de inframundita
+
+item.true:wooden_scimitar=Cimitarra de madera
+item.true:gold_scimitar=Cimitarra de oro
+item.true:stone_scimitar=Cimitarra de piedra
+item.true:iron_scimitar=Cimitarra de hierro
+item.true:diamond_scimitar=Cimitarra de diamante
+item.true:netherite_scimitar=Cimitarra de inframundita
+
+item.true:wooden_hammer=Martillo de madera
+item.true:gold_hammer=Martillo de oro
+item.true:stone_hammer=Martillo de piedra
+item.true:iron_hammer=Martillo de hierro
+item.true:diamond_hammer=Martillo de diamante
+item.true:netherite_hammer=Martillo de inframundita
+
+item.true:wooden_kama_yari=Kama Yari de madera
+item.true:gold_kama_yari=Kama Yari de oro
+item.true:stone_kama_yari=Kama Yari de piedra
+item.true:iron_kama_yari=Kama Yari de hierro
+item.true:diamond_kama_yari=Kama Yari de diamante
+item.true:netherite_kama_yari=Kama Yari de inframundita
+
+item.true:wooden_modern_axe=Hacha de madera moderna
+item.true:gold_modern_axe=Hacha de oro moderna
+item.true:stone_modern_axe=Hacha de piedra moderna
+item.true:iron_modern_axe=Hacha de hierro moderna
+item.true:diamond_modern_axe=Hacha de diamante moderna
+item.true:netherite_modern_axe=Hacha de inframundita moderna
+
+trueweapons.amputation.line1= Has perdido tu brazo.
+trueweapons.amputation.line2= Sientes un hormigueo en tu mano izquierda.
+trueweapons.amputation.line3= Tu brazo se fue de paseo.
+trueweapons.amputation.line4= Ya no tienes brazo; es mejor huir.
+trueweapons.amputation.line5= Sientes un dolor increíble.
+
+trueweapons.broken_bone.line1= Sientes tus huesos crujir.
+trueweapons.broken_bone.line2= Uno de tus huesos se ha roto.
+trueweapons.broken_bone.line3= Eso dolió; tus huesos empiezan a crujir.
+trueweapons.broken_bone.line4= Has recibido un golpe contundente.
+trueweapons.broken_bone.line5= Has perdido algo de fuerza.
+
+trueweapons.contusion.line1= ¡Una contusión!
+trueweapons.contusion.line2= Un dolor invade tu cabeza.
+trueweapons.contusion.line3= ¡No vayas hacia la luz!
+trueweapons.contusion.line4= Es mejor ponerse a buen resguardo.
+
+trueweapons.bleeding.line1= Estás sangrando.
+trueweapons.bleeding.line2= Sientes la sangre pasar por tu cuerpo.
+trueweapons.bleeding.line3= Es mejor no moverte.
+trueweapons.bleeding.line4= Es mejor escabullirse.
+
+trueweapons.terror.line4=Una presencia está acechando.
+
+trueweapons.weight.line=¡Muy pesado!

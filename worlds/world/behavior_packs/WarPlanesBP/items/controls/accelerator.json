@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "l4gg:accelerator",
+      "category": "Equipment"
+    },
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "l4gg:accelerator"
+			},
+			 "minecraft:display_name": {
+			     "value": "Accelerate"
+			 },
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1,
+				"use_duration": 0.05
+			},
+			"minecraft:use_animation": "bow"
+		}
+	}
+}

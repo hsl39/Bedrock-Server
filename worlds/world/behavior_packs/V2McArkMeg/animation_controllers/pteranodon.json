@@ -1,0 +1,215 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.pteranodon_fly_controlator": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "velocidad_0":"(query.target_x_rotation > 10 ) && (query.target_x_rotation <= 90 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" },
+                           
+                        { "velocidad_1":"(query.target_x_rotation >= 6 ) && (query.target_x_rotation <= 10 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" },
+                         
+                        { "velocidad_2":"(query.target_x_rotation >= -2 ) && (query.target_x_rotation <= 7 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" },
+
+                        
+                        { "velocidad_3":"(query.target_x_rotation >= -24 ) && (query.target_x_rotation <= -3 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" },
+                        
+                        { "velocidad_4":"(query.target_x_rotation >= -120 ) && (query.target_x_rotation <= -25 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" }
+                    ]
+                }
+            }
+        },
+        
+ 
+    "controller.animation.pteradon_normal_attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [  
+            {
+              "remove_ataque_normal": "(query.is_illager_captain) && (!query.is_on_ground) && (!query.is_in_water)"
+            }     
+          ], 
+					"on_entry": [ 
+"@s minecraft:remove_ataque_normal"
+					] 
+        }, 
+        "remove_ataque_normal": { 
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } ,
+            {
+              "default": "(query.is_on_ground)"
+            }  ,
+            {
+              "default": "!(query.has_rider)"
+            }   
+          ],
+                    "animations": [
+               "remove_ataque_normal"
+                        ], 
+					"on_exit": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+            "/tag @s remove attacking"
+					]  
+        }
+      }  
+    },
+    "controller.animation.pteradon_especial_attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "remove_ataque_especial": "(!query.is_on_ground) && (query.skin_id == 1) && (!query.is_in_water)"
+            }
+          ], 
+					"on_entry": [ 
+
+    "/tag @s remove attack_solicitud_especial",
+    "/tag @s remove pickup_r",
+"@s minecraft:remove_ataque_especial"
+					] 
+        }, 
+        "remove_ataque_especial": {
+          "transitions": [
+            {
+              "default": "(query.skin_id == 0)"
+            }  ,
+            {
+              "default": "(query.is_on_ground)"
+            }  ,
+            {
+              "default": "!(query.has_rider)"
+            }   
+          ],  
+					"on_entry": [  
+    "/execute @a[tag=in_attack_especial] ~~~ tag @s remove in_attack_especial",
+    "/tag @p[r=5] add in_attack_especial",
+"/ride @e[family=dodo , r=4] start_riding @s teleport_rider",
+"/ride @e[family=pegomastax , r=4] start_riding @s teleport_rider", 
+"/ride @e[family=compy , r=4] start_riding @s teleport_rider",
+"/ride @e[family=dilophosaurus , r=4] start_riding @s teleport_rider",
+"/ride @e[type=pig , r=4] start_riding @s teleport_rider",
+"/ride @e[type=chicken , r=4] start_riding @s teleport_rider",
+"/ride @e[type=villager , r=4] start_riding @s teleport_rider",
+"/ride @e[type=zombie , r=4] start_riding @s teleport_rider",
+"/ride @e[type=skeleton , r=4] start_riding @s teleport_rider",
+"/ride @e[family=player , r=4] start_riding @s teleport_rider" 
+					] ,   
+		  			"on_exit": [ 
+
+
+    "/tag @s remove pickup_r",
+"/ride @e[type=player,tag=!in_attack_especial , r=4] stop_riding",
+"/ride @e[type=dodo , r=4] stop_riding",
+"/ride @e[type=pegomastax , r=4] stop_riding",
+"/ride @e[type=compy , r=4] stop_riding",
+"/ride @e[type=dilophosaurios , r=4] stop_riding",
+"/ride @e[type=pig , r=4] stop_riding",
+"/ride @e[type=chicken , r=4] stop_riding",
+"/ride @e[type=villager , r=4] stop_riding",
+"/ride @e[type=zombie , r=4] stop_riding",
+"/ride @e[type=skeleton , r=4] stop_riding",
+ 
+    "/tag @s remove in_attack_especial"
+					]  ,
+                    "animations": [
+               "pickup_r"
+                        ]
+        }
+      }  
+    },
+    
+
+    
+    
+    "controller.animation.torpor_wooden_club_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "detect_damage": "query.mark_variant == 1 && !query.is_tamed && !query.is_baby && !query.is_sheared"
+            }
+          ]
+        }, 
+				"detect_damage": {
+                    "animations": [
+ "torpor_wooden_club_mc_ark_animation"
+                        ],
+"on_entry": [
+           "@s minecraft:torpor_normal",
+ "/effect @s weakness 0 253 true"
+                    ],
+          "transitions": [ 
+            {
+              "default": "query.mark_variant == 1"
+            }
+          ]
+				}
+      }  
+    },
+     
+    "controller.animation.torpor_bow_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "detect_damage": "query.mark_variant == 2 && !query.is_tamed && !query.is_baby && !query.is_sheared"
+            }
+          ]
+        }, 
+				"detect_damage": {
+                    "animations": [
+ "torpor_bow_mc_ark_animation"
+                        ],
+"on_entry": [
+       "@s minecraft:torpor_normal",
+ "/effect @s weakness 0 253 true"
+                    ],
+          "transitions": [ 
+            {
+              "default": "query.mark_variant == 2"
+            }  
+          ]
+				}
+      }  
+    },
+    
+    "controller.animation.torpor_crossbow_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "detect_damage": "query.mark_variant == 3 && !query.is_tamed && !query.is_baby && !query.is_sheared"
+            }
+          ]
+        }, 
+				"detect_damage": {
+                    "animations": [
+ "torpor_crossbow_mc_ark_animation"
+                        ],
+"on_entry": [
+       "@s minecraft:torpor_normal",
+ "/effect @s weakness 0 253 true"
+                    ],
+          "transitions": [ 
+            {
+              "default": "query.mark_variant == 3"
+            }
+          ]
+				}
+      }  
+    }
+     
+  } 
+}  
+ 

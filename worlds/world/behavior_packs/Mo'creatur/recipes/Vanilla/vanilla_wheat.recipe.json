@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "mocreatures:vanilla_wheat"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "mocreatures:haystack"
+            }
+        ],
+        "result": {
+            "item": "minecraft:wheat",
+            "count": 1
+        }
+    }
+}

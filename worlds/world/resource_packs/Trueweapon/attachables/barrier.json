@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "true:barrier",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/blocks/air"
+      },
+      "geometry": {
+        "default": "geometry.air"
+      },
+      "render_controllers": [ "controller.render.drowned" ]
+    }
+  }
+}

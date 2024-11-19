@@ -1,0 +1,65 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.item.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "execute": "q.is_powered > 0.0" }
+          ]
+        },
+        "execute": {
+          "on_entry": [
+            "/execute as @s[type=item,name=\"Taurus PT92\",tag=!item.taurus] at @s run tag @s add item.taurus",
+            "/execute as @s[type=item,name=\"Taurus PT92 Empty\",tag=!item.taurus] at @s run tag @s add item.taurus",
+            "/execute as @s[type=item,name=\"Taurus PT92 Mag\",tag=!item.taurus.mag] at @s run tag @s add item.taurus.mag",
+
+            "/execute as @s[type=item,name=\"SVI Infinity\",tag=!item.svi] at @s run tag @s add item.svi",
+            "/execute as @s[type=item,name=\"SVI Infinity Empty\",tag=!item.svi] at @s run tag @s add item.svi",
+            "/execute as @s[type=item,name=\"SVI Infinity Mag\",tag=!item.svi.mag] at @s run tag @s add item.svi.mag",
+
+            "/execute as @s[type=item,name=\"FN P90\",tag=!item.p90] at @s run tag @s add item.p90",
+            "/execute as @s[type=item,name=\"FN P90 Empty\",tag=!item.p90] at @s run tag @s add item.p90",
+            "/execute as @s[type=item,name=\"FN P90 Mag\",tag=!item.p90.mag] at @s run tag @s add item.p90.mag",
+
+            "/execute as @s[type=item,name=\"AWP\",tag=!item.awp] at @s run tag @s add item.awp",
+            "/execute as @s[type=item,name=\"AWP Empty\",tag=!item.awp] at @s run tag @s add item.awp",
+            "/execute as @s[type=item,name=\"AWP Mag\",tag=!item.awp.mag] at @s run tag @s add item.awp.mag",
+
+            "/execute as @s[type=item,name=\"Barrett M82A1\",tag=!item.barrett] at @s run tag @s add item.barrett",
+            "/execute as @s[type=item,name=\"Barrett M82A1 Empty\",tag=!item.barrett] at @s run tag @s add item.barrett",
+            "/execute as @s[type=item,name=\"Barrett M82A1 Mag\",tag=!item.barrett.mag] at @s run tag @s add item.barrett.mag",
+
+            "/execute as @s[type=item,name=\"Benelli M3\",tag=!item.m3] at @s run tag @s add item.m3",
+            "/execute as @s[type=item,name=\"Benelli M3 Empty\",tag=!item.m3] at @s run tag @s add item.m3",
+            "/execute as @s[type=item,name=\"Benelli M3 Ammo\",tag=!item.m3.ammo] at @s run tag @s add item.m3.ammo",    
+            
+            "/execute as @s[type=item,name=\"Chain Grenade\",tag=!item.chaingrenade] at @s run tag @s add item.chaingrenade",
+
+            "/execute as @s[type=item,name=\"Night Vision Goggles\",tag=!item.nightvision] at @s run tag @s add item.nightvision",
+
+            "/execute as @s[type=item,name=\"AKM\",tag=!item.akm] at @s run tag @s add item.akm",
+            "/execute as @s[type=item,name=\"AKM Empty\",tag=!item.akm] at @s run tag @s add item.akm",
+            "/execute as @s[type=item,name=\"AKM Mag\",tag=!item.akm.mag] at @s run tag @s add item.akm.mag",
+
+            "/execute as @s[type=item,name=\"HK MP5\",tag=!item.mp5] at @s run tag @s add item.mp5",
+            "/execute as @s[type=item,name=\"HK MP5 Empty\",tag=!item.mp5] at @s run tag @s add item.mp5",
+            "/execute as @s[type=item,name=\"HK MP5 Mag\",tag=!item.mp5.mag] at @s run tag @s add item.mp5.mag",
+
+            "/execute as @s[type=item,name=\"M249\",tag=!item.m249] at @s run tag @s add item.m249",
+            "/execute as @s[type=item,name=\"M249 Empty\",tag=!item.m249] at @s run tag @s add item.m249",
+            "/execute as @s[type=item,name=\"M249 Mag\",tag=!item.m249.mag] at @s run tag @s add item.m249.mag",
+
+            "/execute as @s[type=item,name=\"MK18\",tag=!item.mk18] at @s run tag @s add item.mk18",
+            "/execute as @s[type=item,name=\"MK18 Empty\",tag=!item.mk18] at @s run tag @s add item.mk18",
+            "/execute as @s[type=item,name=\"MK18 Mag\",tag=!item.mk18.mag] at @s run tag @s add item.mk18.mag"
+          ],
+          "transitions": [
+            { "default": "q.is_powered <= 0.0" }
+          ]
+        }
+      }
+    }
+  }
+}

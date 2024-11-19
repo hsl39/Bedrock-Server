@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wyvern_chestplate.wings": {
+			"loop": true,
+			"bones": {
+				"Wing2": {
+					"scale": 0.5
+				},
+				"Wing3": {
+					"scale": 0.5
+				}
+			}
+		}
+	}
+}

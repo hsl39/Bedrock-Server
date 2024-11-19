@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "mc_ark:narcoberry",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "narcoberry",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "bottle"
+  }
+ }
+}

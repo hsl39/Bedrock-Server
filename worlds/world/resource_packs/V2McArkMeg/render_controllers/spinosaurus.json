@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.spinosaurus": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.spinosaurus1"
+					] 
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [  
+        { "*": true },
+ { "Montura": "query.is_saddled && !query.is_baby"},
+ { "Montura_aleta": "query.is_saddled && !query.is_baby"},
+ { "Montura_C": "query.is_saddled && !query.is_baby"}, 
+ 
+ 
+ { "Montura_head": "query.is_saddled && !query.is_baby"},
+ { "Montura_cuello": "query.is_saddled && !query.is_baby"},
+ 
+ { "Montura_decoracion": "query.is_chested"},
+ { "D_Deco": "query.is_chested"},
+ { "Bolsa1": "query.is_chested"},
+ { "Paja2": "query.is_chested"},
+ { "Jarron": "query.is_chested"},
+ { "Montura_decoracion": "query.is_chested"},
+ { "l_Deco": "query.is_chested"},
+ { "Bolsa2": "query.is_chested"},
+ { "Paja1": "query.is_chested"},
+ { "Botella": "query.is_chested"}, 
+ { "Bolsa_D": "query.is_chested"}
+      ],
+			"materials": [
+				{ 
+					"*": "Material.default"
+				}  
+			], 
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

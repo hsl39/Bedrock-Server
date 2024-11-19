@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "stone_makeshift_spear"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A",
+			"B",
+			"C"
+		],
+		"key": {
+			"A": {
+				"item": "true:stone_knife"
+			},
+			"B": {
+				"item": "minecraft:string"
+			},
+			"C": {
+				"item": "minecraft:stick"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "true:stone_knife"
+			}
+		],
+		"result": [
+			{
+				"item": "true:stone_makeshift_spear"
+			}
+		]
+	}
+}

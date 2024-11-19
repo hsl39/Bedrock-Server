@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mocreatures:furchest",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 9,
+				"slot": "armor_torso"
+			},
+			"minecraft:durability": {
+				"max_durability": 240,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:icon": {
+				"texture": "furchest"
+			},
+			"minecraft:armor": {
+				"protection": 7
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.chestplate"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:display_name": {
+				"value": "item.mocreatures:furchest.name"
+			}
+		}
+	}
+}

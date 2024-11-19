@@ -1,0 +1,106 @@
+// Coded by @JustAsh0005 for ActualGuns (for both 2D and 3D version), you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.taurus_reload": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{ "reload_start2": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:taurus') == 1 && q.is_powered" }
+					]
+				},
+				"reload_start2": {
+					"on_entry": [
+						"/clear @s pistol:taurus",
+						"/clear @s pistol:taurus_mag 0 1",
+						"/replaceitem entity @s slot.weapon.mainhand 0 pistol:taurus_empty 1 0",
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "reloaded2": "(q.life_time - v.r) >= 0.1 && q.get_equipped_item_name(0) == 'taurus_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'taurus_empty' || !q.is_powered" }
+					]
+				},
+				"reloaded2": {
+					"on_entry": [
+						"/playsound pixelpoly.taurus_clipout @a ~~~ 1.4"
+					],
+					"transitions": [
+						{ "reload_start3": "1.0" }
+					]
+				},
+				"reload_start3": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "reloaded3": "(q.life_time - v.r) >= 0.95 && q.get_equipped_item_name(0) == 'taurus_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'taurus_empty' || !q.is_powered" }
+					]
+				},
+				"reloaded3": {
+					"on_entry": [
+						"/playsound pixelpoly.taurus_clipin @a ~~~ 1.4"
+					],
+					"transitions": [
+						{ "reload_start4": "1.0" }
+					]
+				},
+				"reload_start4": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "reloaded4": "(q.life_time - v.r) >= 0.5 && q.get_equipped_item_name(0) == 'taurus_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'taurus_empty' || !q.is_powered" }
+					]
+				},
+				"reloaded4": {
+					"on_entry": [
+						"/playsound pixelpoly.taurus_slide @a ~~~ 1.4"
+					],
+					"transitions": [
+						{ "reload_start": "1.0" }
+					]
+				},
+				"reload_start": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "reloaded": "(q.life_time - v.r) >= 0.5 && q.get_equipped_item_name(0) == 'taurus_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'taurus_empty' || !q.is_powered" }
+					]
+				},
+				"reloaded": {
+					"on_entry": [
+						"/tag @s remove reload",
+						"/event entity @s trigger:onreload",
+						"/scoreboard players set @s taurus 18",
+						"/clear @s pistol:taurus_empty",
+						"/replaceitem entity @s slot.weapon.mainhand 0 pistol:taurus"
+					],
+					"transitions": [
+						{ "default": "1.0" }
+					]
+				},
+				"reload_error": {
+					"on_entry": [
+						"/tag @s remove reload",
+						"/event entity @s trigger:onreload",
+						"/clear @s pistol:taurus_empty",
+						"/give @s pistol:taurus",
+						"/give @s pistol:taurus_mag"
+					],
+					"transitions": [
+						{ "default": "1.0" }
+					]
+				}
+			}
+		}
+	}
+}
+
+// This code is exclusive to both Add-ons (ActualGuns 2D and 3D) and can not be used by anybody else.

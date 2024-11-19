@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "gold_jaw"
+		},
+		"tags": [ "crafting_table" ],
+		"ingredients": [
+			{
+				"item": "minecraft:golden_sword"
+			},
+			{
+				"item": "minecraft:golden_sword"
+			}
+		],
+		"unlock": [
+			{
+			  "item": "minecraft:golden_sword"
+			}
+		],
+		"result": 
+			{
+				"item": "true:gold_jaw"
+			}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pa:quartz_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"A A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:quartz"
+			}
+		},
+		"result": [
+			{
+				"item": "pa:quartz_helmet"
+			}
+		]
+	}
+}

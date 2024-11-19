@@ -1,0 +1,21 @@
+Aplok Guns's code & assets except some sounds is licensed under the terms of
+the CC BY-NC-ND 4.0 found here https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Creation Date: 2022-05-05
+Update Date: 2024-08-15
+
+Developers:
+- Gabriel Aplok (Main Developer).
+- HSK (Contributor).
+
+Special Thanks:
+- AkangKrepz (Some Sounds).
+- Bedrock OSS Community (Docs).
+- Our Great Discord Community (Feedback).
+
+Notes:
+- I hope you have common sense and don't steal anything from me.
+- All assets here are copyrighted, except some sounds.
+- This project is based on games like “Scape From Tarkov” and “Road to Vostok” and the classic PS2 "Black", so we have aesthetics and mechanics similar to those games.
+
+This project was made with a lot of love, by me for you.

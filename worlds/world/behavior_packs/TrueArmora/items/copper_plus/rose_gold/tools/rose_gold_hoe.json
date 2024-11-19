@@ -1,0 +1,184 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "true_cop:rose_gold_hoe",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.hoe"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+                "tags": [
+                    "minecraft:is_hoe"
+                ]
+            },
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minecraft:gold_ingot"
+						],
+						"repair_amount": 60
+					},
+					{
+						"items": [
+							"minecraft:copper_ingot"
+						],
+						"repair_amount": 60
+					},
+					{
+						"items": [
+						  "true_cop:rose_gold_hoe"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 5,
+			"minecraft:enchantable": {
+				"value": 18,
+				"slot": "hoe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:mangrove_leaves",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:moss_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:leaves",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:shroomlight",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sponge",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:target",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:hay_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:leaves2",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:warped_wart_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:nether_wart_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk_catalyst",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk_shrieker",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk_vein",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:sculk_sensor",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					},
+					{
+						"block": "minecraft:dried_kelp_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "minecraft:break"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "destroy_block",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {},
+			"minecraft:durability": {
+				"max_durability": 250
+			},
+			"minecraft:icon": {
+				"texture": "rose_gold_hoe"
+			},
+			"minecraft:use_on": {
+				"blocks": [
+					"grass",
+					"dirt",
+					"grass_path"
+				]
+			}
+		}
+	}
+}

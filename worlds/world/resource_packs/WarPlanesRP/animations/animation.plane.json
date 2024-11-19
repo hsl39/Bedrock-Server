@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.plane.rot": {
+			"loop": true,
+			"bones" : {
+				"plane" : {
+					"relative_to" : {
+						"rotation" : "entity"
+					},
+					"rotation" : [
+					        "Math.lerprotate(v.planeBoneRot.x, q.target_x_rotation, 0.1) + v.currentOnLandRotation",
+					        0, 
+					        "v.planeRotZ * (v.airTime/100)"
+					   ],
+					"position": [0, "v.onGroundPosY", 0]
+				},
+				"propeler": {
+					"rotation": [0, 0, "(v.propelerBoneRot.z - v.planeBoneRot.z)  + q.property('adn:speed') * 30"]
+					
+				}
+			}
+		}
+	}
+}

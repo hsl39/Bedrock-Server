@@ -1,0 +1,173 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player_attack": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"@s default_attack"
+					],
+					"transitions": [
+						{
+							"taurus_reload": "variable.attack_time && q.get_equipped_item_name(0) == 'taurus' && (q.scoreboard('taurus') <= 17) && !q.is_powered"
+						},
+						{
+							"taurus_reload_empty": "variable.attack_time && q.get_equipped_item_name(0) == 'taurus_empty' && !q.is_powered"
+						},
+						{
+							"akm_reload": "variable.attack_time && q.get_equipped_item_name(0) == 'akm' && (q.scoreboard('akm') <= 29) && !q.is_powered"
+						},
+						{
+							"akm_reload_empty": "variable.attack_time && q.get_equipped_item_name(0) == 'akm_empty' && !q.is_powered"
+						},
+						{
+							"mk18_reload": "variable.attack_time && q.get_equipped_item_name(0) == 'mk18' && (q.scoreboard('mk18') <= 29) && !q.is_powered"
+						},
+						{
+							"mk18_reload_empty": "variable.attack_time && q.get_equipped_item_name(0) == 'mk18_empty' && !q.is_powered"
+						},
+						{
+							"awp_reload": "variable.attack_time && q.get_equipped_item_name(0) == 'awp' && (q.scoreboard('awp') <= 9) && !q.is_powered"
+						},
+						{
+							"awp_reload_empty": "variable.attack_time && q.get_equipped_item_name(0) == 'awp_empty' && !q.is_powered"
+						},
+						{
+							"barrett_reload": "variable.attack_time && q.get_equipped_item_name(0) == 'barrett' && (q.scoreboard('barrett') <= 4) && !q.is_powered"
+						},
+						{
+							"barrett_reload_empty": "variable.attack_time && q.get_equipped_item_name(0) == 'barrett_empty' && !q.is_powered"
+						},
+						{
+							"m249_reload": "variable.attack_time && q.get_equipped_item_name(0) == 'm249' && (q.scoreboard('m249') <= 99) && (q.scoreboard('m249') >= 1) && !q.is_powered"
+						},
+						{
+							"m249_reload_empty": "variable.attack_time && q.get_equipped_item_name(0) == 'm249_empty' && !q.is_powered || !q.is_ignited"
+						}
+					]
+				},
+				"m249_reload": {
+					"on_entry": [
+						"/tag @s[hasitem={item=lmg:m249_mag},tag=drawn] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"m249_reload_empty": {
+					"on_entry": [
+						"/tag @s[hasitem={item=lmg:m249_mag},tag=drawn,tag!=reload] add reload2"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+
+				"akm_reload": {
+					"on_entry": [
+						"/tag @s[hasitem={item=ar:akm_mag}] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"akm_reload_empty": {
+					"on_entry": [
+						"/tag @s[hasitem={item=ar:akm_mag}] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"taurus_reload": {
+					"on_entry": [
+						"/tag @s[hasitem={item=pistol:taurus_mag}] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"taurus_reload_empty": {
+					"on_entry": [
+						"/tag @s[hasitem={item=pistol:taurus_mag}] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"mk18_reload": {
+					"on_entry": [
+						"/tag @s[hasitem={item=ar:mk18_mag}] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"mk18_reload_empty": {
+					"on_entry": [
+						"/tag @s[hasitem={item=ar:mk18_mag}] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"awp_reload": {
+					"on_entry": [
+						"/tag @s[hasitem={item=sniper:awp_mag}] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"awp_reload_empty": {
+					"on_entry": [
+						"/tag @s[hasitem={item=sniper:awp_mag}] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"barrett_reload": {
+					"on_entry": [
+						"/tag @s[hasitem={item=sniper:barrett_mag},tag=drawn] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				},
+				"barrett_reload_empty": {
+					"on_entry": [
+						"/tag @s[hasitem={item=sniper:barrett_mag},tag=drawn] add reload"
+					],
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					]
+				}
+			}
+		}
+	}
+}

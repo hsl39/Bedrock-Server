@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "new:health_bow"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            " PE",
+            "PBE",
+            " PE"
+        ],
+		"key": {
+			"P": {
+				"item": "minecraft:potion",
+				"data": 28
+			},
+			"B": {
+				"item": "minecraft:bow"
+			},
+			"E": {
+				"item": "minecraft:string"
+			}
+		},
+		"result": {
+			"item": "new:health_bow"
+		}
+	}
+}

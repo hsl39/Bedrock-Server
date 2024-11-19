@@ -1,0 +1,64 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:yutyrannus",
+			"materials": {
+				"default": "spider"
+			}, 
+			"textures": {
+				"yutyrannus1": "textures/yutyrannus/variant1",
+				"yutyrannus2": "textures/yutyrannus/variant2",
+				"yutyrannus3": "textures/yutyrannus/variant3",
+				"yutyrannus4": "textures/yutyrannus/variant4"
+			}, 
+			"geometry": { 
+				"default": "geometry.yutyrannus"
+			},
+	"sound_effects": {
+	"hurt_sound": "sound.tyranosaurus_rex_hurt_mc_ark",
+	"idle_sound": "sound.idle_sound_yutyrannus_mc_ark",
+	
+	"yutyrannus_attacksound": "sound.yutyrannus_attacksound",
+	"yutyrannus_roar": "sound.yutyrannus_roar_mc_ark" 
+	},  
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.tyranosaurus_rex.idle_sound",
+			    
+				"general": "controller.animation.yutyrannus.general",
+				"idle": "animation.yutyrannus.idle",
+				"walk": "animation.yutyrannus.walk", 
+				"run": "animation.yutyrannus.run",
+				"sitting": "animation.yutyrannus.sit",
+				"attack": "animation.yutyrannus.attack",
+				"eating": "animation.yutyrannus.eat",
+
+
+				"roar": "animation.yutyrannus.roar",
+				"sleep": "animation.yutyrannus.sleep",
+				"walk_controller":
+				"controller.animation.general.walk_mc_ark"
+			},
+			"scripts": {
+				"animate": [
+{ 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+						
+
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.yutyrannus"
+			],  
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index":12
+      }
+		}
+	}
+}

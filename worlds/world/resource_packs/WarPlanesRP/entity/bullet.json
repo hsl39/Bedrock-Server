@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "l4gg:bullet",
+			"materials": {
+				"default": "entity_static"
+			},
+			"textures": {
+				"default": "textures/entity//bullet"
+			},
+			"geometry": {
+				"default": "geometry.l4gg_bullet"
+			},
+			"animations": {
+			    "trail": "animation.bullet.trail"
+			},
+			"render_controllers": [ "controller.render.slime" ],
+			"scripts": {
+			    "animate": [
+			        "trail"
+			   ]
+			},
+			"particle_effects": {
+			    "bullet_trail": "l4gg:bullet_trail"
+			}
+		}
+	}
+}

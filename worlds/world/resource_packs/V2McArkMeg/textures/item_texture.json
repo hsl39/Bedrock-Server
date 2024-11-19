@@ -1,0 +1,69 @@
+{
+    "resource_pack_name": "rp",
+    "texture_data": {
+    "mc_ark_eggs": {
+	  "textures": [
+        "textures/items/mc_ark/raptor_egg",
+        "textures/items/mc_ark/dodo_egg",
+        "textures/items/mc_ark/moschop_egg",
+        "textures/items/mc_ark/compy_egg",
+        "textures/items/mc_ark/trike_egg",
+        "textures/items/mc_ark/pegomastax_egg",
+        "textures/items/mc_ark/celacanto_egg",
+        "textures/items/mc_ark/pteranodon_egg",
+        "textures/items/mc_ark/spinosaurus_egg",
+        "textures/items/mc_ark/dilophosaurus_egg",
+        "textures/items/mc_ark/tyrannosaurus_rex_egg",
+        "textures/items/mc_ark/rhyniognatha_egg",
+        "textures/items/mc_ark/yutyrannus_egg",
+        "textures/items/mc_ark/carcha_egg",
+        "textures/items/mc_ark/therizino_egg"
+	  ]
+    },
+    "gas_mask": {
+      "textures": "textures/items/mc_ark/armor/gas_mask"
+    },
+    "ghillie_leggings": {
+      "textures": "textures/items/mc_ark/armor/ghillie_leggings"
+    },
+    "ghillie_boots": {
+      "textures": "textures/items/mc_ark/armor/ghillie_boots"
+    },
+    "ghillie_helmet": {
+      "textures": "textures/items/mc_ark/armor/ghillie_helmet"
+    },
+    "ghillie_chestplate": {
+      "textures": "textures/items/mc_ark/armor/ghillie_chestplate"
+    }, 
+        "rhyniognatha_pheromone": {
+            "textures": "textures/items/mc_ark/rhyniognatha_pheromone"
+        },
+        "normal_saddle": {
+            "textures": "textures/items/mc_ark/normal_saddle"
+        },
+        "narcotic": {
+            "textures": "textures/items/mc_ark/narcotic"
+        },
+        "narcoberry": {
+            "textures": "textures/items/mc_ark/narcoberry"
+        },
+        "wyvern_milk": {
+            "textures": "textures/items/mc_ark/wyvern_milk"
+        },
+        "wooden_club": {
+            "textures": "textures/items/mc_ark/wooden_club_item"
+        },
+        "heavy_resin": {
+            "textures": "textures/items/mc_ark/heavy_resin"
+        },
+        "resin": {
+            "textures": "textures/items/mc_ark/resin"
+        }, 
+        "whip": { 
+            "textures": "textures/items/whip"
+        },
+        "whip_special": {
+            "textures": "textures/items/whip_special"
+        }
+    }
+}

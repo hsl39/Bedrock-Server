@@ -1,0 +1,215 @@
+{
+	"block": {
+		"BP/blocks/deepslate_diamond_ore.json": {
+			"identifiers": [
+				"ray:deepslate_diamond_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/diamond_ore.json": {
+			"identifiers": [
+				"ray:diamond_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/deepslate_iron_ore.json": {
+			"identifiers": [
+				"ray:deepslate_iron_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/iron_ore.json": {
+			"identifiers": [
+				"ray:iron_ore"
+			],
+			"events": [],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/gold_ore.json": {
+			"identifiers": [
+				"ray:gold_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/deepslate_gold_ore.json": {
+			"identifiers": [
+				"ray:deepslate_gold_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/emerald_ore.json": {
+			"identifiers": [
+				"ray:emerald_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/deepslate_emerald_ore.json": {
+			"identifiers": [
+				"ray:deepslate_emerald_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/lapis_ore.json": {
+			"identifiers": [
+				"ray:lapis_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/deepslate_lapis_ore.json": {
+			"identifiers": [
+				"ray:deepslate_lapis_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/copper_ore.json": {
+			"identifiers": [
+				"ray:copper_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/deepslate_copper_ore.json": {
+			"identifiers": [
+				"ray:deepslate_copper_ore"
+			],
+			"events": [
+				"can_destroy"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"function": {
+		"30b648b5_6e89_45f4_92b8_8103be515375": {},
+		"e2da16b3_fee8_4047_b4c6_2020fac82e4e": {},
+		"4fe858e2_1366_4adf_a7fd_623a3a0ea139": {},
+		"fa5189bb_c97f_4c0a_b59b_44c75782b759": {},
+		"9941e6a4_1dbb_42b8_8f31_cc203cb2794b": {},
+		"2df12615_460b_407a_913e_5f5544e0a3f1": {},
+		"48551cdd_7692_494e_8eee_ff2c8f3335e4": {},
+		"4f0f0d22_ede6_4918_9c99_b929a1a23bef": {},
+		"c91d6a6b_cb94_419e_80b7_b8b3474b42ce": {},
+		"b8a90a74_1ab9_4ab5_8c7a_87a9980c83ea": {},
+		"d6838b60_1be3_48a9_9a9f_61bbbeebc772": {},
+		"4f63a697_7180_49b2_8324_e0ab57ac48d5": {},
+		"BP/functions/ore_replace_raiyon.mcfunction": {
+			"custom_commands": []
+		},
+		"cce92ffd_339c_4615_9350_b8d4ab6ca6a4": {}
+	},
+	"feature": {
+		"BP/features/iron_ore_feature.json": {
+			"identifiers": [
+				"ray:iron_ore_feature"
+			]
+		},
+		"BP/features/white_diamond_ore_feature.json": {
+			"identifiers": [
+				"oresplus:white_diamond_ore_feature"
+			]
+		}
+	},
+	"feature_rule": {
+		"BP/feature_rules/iron_ore_feature_rule.json": {
+			"identifiers": [
+				"ray:iron_ore_feature_rule"
+			]
+		},
+		"BP/feature_rules/overworld_underground_white_diamond_ore_feature.json": {
+			"identifiers": [
+				"oresplus:overworld_underground_white_diamond_ore_feature"
+			]
+		}
+	},
+	"entity": {
+		"BP/entities/test.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"raiyon:test"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"client_entity": {
+		"RP/entity/awdwdwd.json": {
+			"identifiers": [
+				"raiyon:test"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"facing",
+				"move",
+				"look_at_target"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		}
+	}
+}

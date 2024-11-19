@@ -1,0 +1,52 @@
+//bridge-file-version: #15
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:male_lion",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/models/bcmalelion",
+				"white": "textures/models/bcwhitelion"
+			},
+			"animations": {
+				"walk": "animation.bcmale.walk",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target",
+					{
+						"sit": "query.is_sitting"
+					},
+					{
+						"jump": "!query.is_on_ground"
+					}
+				],
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				]
+			},
+			"geometry": {
+				"default": "geometry.bcmale",
+				"tamed": "geometry.bcmale_tame",
+				"saddle": "geometry.bcmale_saddled",
+				"chested": "geometry.bcmale_chested"
+			},
+			"render_controllers": [
+				"controller.render.malelion_tame",
+				"controller.render.malelion_saddled",
+				"controller.render.malelion_chested"
+			],
+			"spawn_egg": {
+				"texture": "lion"
+			}
+		}
+	}
+}

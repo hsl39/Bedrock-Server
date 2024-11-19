@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:ice_arrow"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "SP#"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:arrow"
+      },
+      "#": {
+        "item": "minecraft:ice"
+      },
+      "S": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "new:ice_arrow",
+      "count": 1
+    }
+  }
+}

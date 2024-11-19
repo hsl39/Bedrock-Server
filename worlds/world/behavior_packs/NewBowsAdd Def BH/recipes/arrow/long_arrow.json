@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:long_arrow"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "PPP"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:arrow"
+      }
+    },
+    "result": {
+      "item": "new:long_arrow",
+      "count": 1
+    }
+  }
+}

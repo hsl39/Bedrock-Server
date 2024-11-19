@@ -1,0 +1,85 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.ogre": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			],
+			"part_visibility": [
+				{
+					"Head": "!query.variant",
+					"Nose": "!query.variant",
+					"Brow": "!query.variant",
+					"NoseBridge": "!query.variant",
+					"RgtTusk": "!query.variant",
+					"RgtTooth": "!query.variant",
+					"LftTooth": "!query.variant",
+					"LftTusk": "!query.variant",
+					"Lip": "!query.variant",
+					"RgtEar": "!query.variant",
+					"RgtRingHole": "!query.variant",
+					"RgtRing": "!query.variant",
+					"LftEar": "!query.variant",
+					"LftRing": "!query.variant",
+					"LftRingHole": "!query.variant",
+					"HairRope": "!query.variant",
+					"Hair1": "!query.variant",
+					"Hair2": "!query.variant",
+					"Hair3": "!query.variant",
+					"DiamondHorn": "!query.variant",
+					"LftHorn": "!query.variant",
+					"LftHornTip": "!query.variant",
+					"RgtHornTip": "!query.variant",
+					"RgtHorn": "!query.variant",
+
+					"Head2": "query.variant",
+					"Head2RgtTusk": "query.variant",
+					"Head2Lip": "query.variant",
+					"Head2LftTusk": "query.variant",
+					"Head2Nose": "query.variant",
+					"Head2NoseBridge": "query.variant",
+					"Head2Brow": "query.variant",
+					"Head2RgtHorn": "query.variant",
+					"Head2LftHorn": "query.variant",
+					"Head2DiamondHorn": "query.variant",
+					"Head2Chin": "query.variant",
+
+					"Head3": "query.variant",
+					"Head3Nose": "query.variant",
+					"Head3LftEar": "query.variant",
+					"Head3RgtEar": "query.variant",
+					"Head3Eyelid": "query.variant",
+					"Head3Brow": "query.variant",
+					"Head3Hair": "query.variant",
+					"Head3RgtTusk": "query.variant",
+					"Head3RgtTooth": "query.variant",
+					"Head3LftTooth": "query.variant",
+					"Head3LftTusk": "query.variant",
+					"Head3RingHole": "query.variant",
+					"Head3Ring": "query.variant",
+					"Head3Lip": "query.variant",
+
+					"LftWeaponRoot": "query.variant",
+					"LftWeaponEnd": "query.variant",
+					"LftWeaponBetween": "query.variant",
+					"LftWeaponTip": "query.variant",
+					"LftWeaponLump": "query.variant",
+					"LftHammerNeck": "query.variant",
+					"LftHammerHeadSupport": "query.variant",
+					"LftHammerHead": "query.variant",
+					"LftSpike": "query.variant",
+					"LftSpike1": "query.variant",
+					"LftSpike2": "query.variant",
+					"LftSpike3": "query.variant",
+					"LftSpike4": "query.variant"
+				}
+			]
+		}
+	}
+}

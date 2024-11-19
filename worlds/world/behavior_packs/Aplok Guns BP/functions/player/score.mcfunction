@@ -1,0 +1,13 @@
+scoreboard objectives add ak12 dummy
+scoreboard objectives add ak47 dummy
+scoreboard objectives add awp dummy
+scoreboard objectives add deagle dummy
+scoreboard objectives add fnfal dummy
+scoreboard objectives add glock17 dummy
+scoreboard objectives add glock18 dummy
+scoreboard objectives add m249 dummy
+scoreboard objectives add m4a1 dummy
+scoreboard objectives add mossberg dummy
+scoreboard objectives add mp5a5 dummy
+scoreboard objectives add deaths dummy
+scoreboard objectives add kills dummy

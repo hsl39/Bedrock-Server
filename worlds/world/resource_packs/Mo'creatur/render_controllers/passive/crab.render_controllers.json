@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.crab": {
+			"arrays": {
+				"textures": {
+					"Array.crab": [
+						"Texture.orange",
+						"Texture.blue",
+						"Texture.orange_pink",
+						"Texture.green",
+						"Texture.orange_white"
+					]
+				}
+			},
+			"textures": [
+				"Array.crab[query.variant]"
+			],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"geometry": "Geometry.default"
+		}
+	}
+}

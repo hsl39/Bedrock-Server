@@ -1,0 +1,160 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "mocreatures:chitin",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "mocreatures:scorpstingdirt",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "has_mark_variant",
+					"value": 0
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "mocreatures:chitinblack",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "mocreatures:scorpstingcave",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "has_mark_variant",
+					"value": 1
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "mocreatures:chitinfrost",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "mocreatures:scorpstingfrost",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "has_mark_variant",
+					"value": 2
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "mocreatures:chitinnether",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "mocreatures:scorpstingnether",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "has_mark_variant",
+					"value": 3
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"entity_sounds": {
+
+		"entities": {
+            "new:fire_wyvern": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "ambient": "random.wyvern.say",
+                    "attack.strong": "radom.wyvern.attack",
+                    "hurt": "random.wyvern.hurt",
+                    "death": "random.wyvern.death",
+                    "shoot": "random.wyvern.attack"
+                }
+            },
+            "new:ender_wyvern": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "ambient": "random.wyvern.say",
+                    "attack.strong": "radom.wyvern.attack",
+                    "hurt": "random.wyvern.hurt",
+                    "death": "random.wyvern.death",
+                    "shoot": "random.wyvern.attack"
+                }
+            },
+            "new:ground_wyvern": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "ambient": "random.wyvern.say",
+                    "attack.strong": "radom.wyvern.attack",
+                    "hurt": "random.wyvern.hurt",
+                    "death": "random.wyvern.death",
+                    "shoot": "random.wyvern.attack"
+                }
+            },
+            "new:ice_wyvern": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "ambient": "random.wyvern.say",
+                    "attack.strong": "radom.wyvern.attack",
+                    "hurt": "random.wyvern.hurt",
+                    "death": "random.wyvern.death",
+                    "shoot": "random.wyvern.attack"
+                }
+            },
+            "new:wither_wyvern": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "ambient": "random.wyvern.say",
+                    "attack.strong": "radom.wyvern.attack",
+                    "hurt": "random.wyvern.hurt",
+                    "death": "random.wyvern.death",
+                    "shoot": "random.wyvern.attack"
+                }
+            },
+            "new:poison_wyvern": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "ambient": "random.wyvern.say",
+                    "attack.strong": "radom.wyvern.attack",
+                    "hurt": "random.wyvern.hurt",
+                    "death": "random.wyvern.death",
+                    "shoot": "random.wyvern.attack"
+                }
+            }
+		}
+	}
+}

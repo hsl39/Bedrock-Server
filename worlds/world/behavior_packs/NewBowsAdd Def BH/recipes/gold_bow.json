@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "new:gold_bow"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            " PE",
+            "PBE",
+            " PE"
+        ],
+		"key": {
+			"P": {
+				"item": "minecraft:gold_ingot"
+			},
+			"B": {
+				"item": "minecraft:bow"
+			},
+			"E": {
+				"item": "minecraft:string"
+			}
+		},
+		"result": {
+			"item": "new:gold_bow"
+		}
+	}
+}

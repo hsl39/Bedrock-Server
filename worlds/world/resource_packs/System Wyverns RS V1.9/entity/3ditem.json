@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "new:treeditem",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+
+        "fire_wyvern": "textures/entity/fire_wyvern",
+        "poison_wyvern": "textures/entity/poison_wyvern",
+        "wither_wyvern": "textures/entity/wither_wyvern",
+        "ender_wyvern": "textures/entity/ender_wyvern",
+        "ice_wyvern": "textures/entity/ice_wyvern",
+        "ground_wyvern": "textures/entity/ground_wyvern"
+      },
+      "geometry": {
+        "default": "geometry.wyvern_egg"
+      },
+      "animations": {
+        "rotate": "animation.treeditem.rotate"
+      },
+      "scripts": {
+        "scale": "0.7",
+        "animate": [
+          "rotate"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.3d_item"
+      ]
+    }
+  }
+}

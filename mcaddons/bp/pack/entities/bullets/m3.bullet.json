@@ -1,0 +1,120 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "m3:bullet",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"fire:scope": {
+				"minecraft:projectile": {
+					"onHit": {
+						"impact_damage": {
+							"damage": 33,
+							"knockback": true
+						},
+						"remove_on_hit": {},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					},
+					"power": 10,
+					"gravity": 0,
+					"inertia": 1.5,
+					"uncertaintyBase": 10,
+                    "uncertaintyMultiplier": 2.06,
+				    "offset": [
+					    0,
+					    0,
+					    0
+				    ],
+				    "catchFire": false
+				}
+			},
+			"fire:noscope": {
+				"minecraft:projectile": {
+					"onHit": {
+						"impact_damage": {
+							"damage": 35,
+							"knockback": true
+						},
+						"remove_on_hit": {},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					},
+					"power": 10,
+					"gravity": 0,
+					"inertia": 1.5,
+					"uncertaintyBase": 10.3,
+                    "uncertaintyMultiplier": 2,
+				    "offset": [
+					    0,
+					    0,
+					    0
+				    ],
+				    "catchFire": false
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"zombie",
+					"undead",
+					"monster",
+					"mob"
+				]
+			},
+			"minecraft:scale": {
+				"value": 0.03
+			},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"glass",
+					"tinted_glass",
+					"glass_pane",
+					"stained_glass",
+					"stained_glass_pane",
+					"standing_sign",
+					"vine",
+					"wall_banner",
+					"wall_sign",
+					"web",
+					"wheat"
+				]
+			},
+			"minecraft:explode": {
+                "fuse_length": 0.17,
+				"power": 0,
+                "fuse_lit": true
+			},
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"fire:scope": {
+				"add": {
+					"component_groups": [ "fire:scope" ]
+				},
+				"remove": {
+					"component_groups": [ "fire:noscope" ]
+				}	
+			},
+			"fire:noscope": {
+				"add": {
+					"component_groups": [ "fire:noscope" ]
+				},
+				"remove": {
+					"component_groups": [ "fire:scope" ]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shaped":{"description":{"identifier":"gabrielaplok:stock_wood"},"tags":["crafting_table"],"pattern":["AAB","AAB"," AB"],"key":{"A":{"item":"minecraft:planks"},"B":{"item":"gabrielaplok:plastic_plate"}},"unlock":[{"item":"minecraft:planks"}],"result":{"item":"gabrielaplok:stock_wood"}}}

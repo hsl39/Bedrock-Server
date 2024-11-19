@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "true_magma:magma_ingot"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CAC",
+			"ABA",
+			"CAC"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:blaze_powder"
+			},
+			"A": {
+				"item": "minecraft:magma"
+			},
+            "C": {
+				"item": "minecraft:raw_iron"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:magma"
+			}
+		  ],
+		"result": [
+			{
+				"item": "true_magma:magma_ingot"
+			}
+		]
+	}
+}

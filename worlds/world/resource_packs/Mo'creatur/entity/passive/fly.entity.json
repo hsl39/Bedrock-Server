@@ -1,0 +1,37 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:fly",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/fly"
+			},
+			"geometry": {
+				"default": "geometry.fly"
+			},
+			"scripts": {
+				"animate": [
+					"fly"
+				]
+			},
+			"animations": {
+				"fly": "controller.animation.mob.fly",
+				"flying": "animation.fly.flying"
+			},
+			"sound_effects": {
+				"flying": "fly"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#00FF7F",
+				"overlay_color": "#000000"
+			}
+		}
+	}
+}

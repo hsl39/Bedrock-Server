@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:slime_arrow"
+    },
+    "tags": ["crafting_table"],
+"pattern": [
+      "SP#"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:arrow"
+      },
+      "#": {
+        "item": "minecraft:slime_ball"
+      },
+      "S": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "new:slime_arrow",
+      "count": 1
+    }
+  }
+}

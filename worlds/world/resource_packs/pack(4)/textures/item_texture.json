@@ -1,0 +1,201 @@
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"multi_backpack": {
+			"textures": [
+				"textures/items/true_backpack"
+			]
+		},
+		"multi_backpack_blue": {
+			"textures": [
+				"textures/items/blue"
+			]
+		},
+		"multi_backpack_light_blue": {
+			"textures": [
+				"textures/items/light_blue"
+			]
+		},
+		"multi_backpack_red": {
+			"textures": [
+				"textures/items/red"
+			]
+		},
+		"multi_backpack_green": {
+			"textures": [
+				"textures/items/green"
+			]
+		},
+		"multi_backpack_yellow": {
+			"textures": [
+				"textures/items/yellow"
+			]
+		},
+		"multi_backpack_purple": {
+			"textures": [
+				"textures/items/purple"
+			]
+		},
+		"multi_backpack_orange": {
+			"textures": [
+				"textures/items/orange"
+			]
+		},
+		"multi_backpack_black": {
+			"textures": [
+				"textures/items/black"
+			]
+		},
+		"multi_backpack_cyan": {
+			"textures": [
+				"textures/items/cyan"
+			]
+		},
+		"multi_backpack_gray": {
+			"textures": [
+				"textures/items/gray"
+			]
+		},
+		"multi_backpack_lime": {
+			"textures": [
+				"textures/items/lime"
+			]
+		},
+		"multi_backpack_magenta": {
+			"textures": [
+				"textures/items/magenta"
+			]
+		},
+		"multi_backpack_pink": {
+			"textures": [
+				"textures/items/pink"
+			]
+		},
+		"multi_backpack_silver": {
+			"textures": [
+				"textures/items/silver"
+			]
+		},
+		"multi_backpack_white": {
+			"textures": [
+				"textures/items/white"
+			]
+		},
+		"multi_backpack_iron": {
+			"textures": [
+				"textures/items/iron"
+			]
+		},
+		"multi_backpack_gold": {
+			"textures": [
+				"textures/items/gold"
+			]
+		},
+		"multi_backpack_diamond": {
+			"textures": [
+				"textures/items/diamond_backpack"
+			]
+		},
+		"multi_backpack_amethyst": {
+			"textures": [
+				"textures/items/amethyst"
+			]
+		},
+		"multi_backpack_copper": {
+			"textures": [
+				"textures/items/copper"
+			]
+		},
+		"multi_backpack_blaze": {
+			"textures": [
+				"textures/items/blaze"
+			]
+		},
+		"multi_backpack_emerald": {
+			"textures": [
+				"textures/items/emerald_backpack"
+			]
+		},
+		"multi_backpack_snow": {
+			"textures": [
+				"textures/items/snow"
+			]
+		},
+		"multi_backpack_sculk": {
+			"textures": [
+				"textures/items/sculk"
+			]
+		},
+		"multi_backpack_redstone": {
+			"textures": [
+				"textures/items/redstone"
+			]
+		},
+		"multi_backpack_turtle": {
+			"textures": [
+				"textures/items/turtle"
+			]
+		},
+		"multi_backpack_pumpkin": {
+			"textures": [
+				"textures/items/pumpkin"
+			]
+		},
+		"multi_backpack_soul_pumpkin": {
+			"textures": [
+				"textures/items/soul_pumpkin"
+			]
+		},
+		"multi_backpack_cake": {
+			"textures": [
+				"textures/items/backpack_cake"
+			]
+		},
+		"multi_backpack_crimson": {
+			"textures": [
+				"textures/items/crimson"
+			]
+		},
+		"multi_backpack_warped": {
+			"textures": [
+				"textures/items/warped"
+			]
+		},
+		"multi_backpack_full_dark": {
+			"textures": [
+				"textures/items/full_dark"
+			]
+		},
+		"multi_backpack_smile": {
+			"textures": [
+				"textures/items/smile"
+			]
+		},
+		"multi_backpack_dark_brown": {
+			"textures": [
+				"textures/items/dark_brown"
+			]
+		},
+		"multi_backpack_dark_red": {
+			"textures": [
+				"textures/items/dark_red"
+			]
+		},
+		"multi_backpack_light_red": {
+			"textures": [
+				"textures/items/light_red"
+			]
+		},
+		"multi_backpack_noteblock": {
+			"textures": [
+				"textures/items/noteblock"
+			]
+		},
+		"multi_backpack_cherry_leaves": {
+			"textures": [
+				"textures/items/cherry_leaves"
+			]
+		}
+	}
+}

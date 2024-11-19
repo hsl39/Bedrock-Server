@@ -1,0 +1,70 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fly.flying": {
+			"loop": true,
+			"animation_length": 0.08333,
+			"bones": {
+				"LeftWing": {
+					"rotation": {
+						"0.0": [0, 50, 0],
+						"0.0417": {"pre": [0, 50, 0], "post": [0, 0, 0]},
+						"0.0833": {"pre": [0, 0, 0], "post": [0, 50, 0]}
+					}
+				},
+				"RightWing": {
+					"rotation": {
+						"0.0": [0, -50, 0],
+						"0.0417": {"pre": [0, -50, 0], "post": [0, 0, 0]},
+						"0.0833": {"pre": [0, 0, 0], "post": [0, -50, 0]}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "flying"
+				}
+			}
+		},
+		"animation.firefly.flying": {
+			"loop": true,
+			"animation_length": 0.08333,
+			"bones": {
+				"LeftWing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": {
+							"pre": [0, 0, 0],
+							"post": [20, 0, 0]
+						},
+						"0.0833": {
+							"pre": [20, 0, 0],
+							"post": [0, 0, 0]
+						}
+					}
+				},
+				"RightWing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": {
+							"pre": [0, 0, 0],
+							"post": [20, 0, 0]
+						},
+						"0.0833": {
+							"pre": [20, 0, 0],
+							"post": [0, 0, 0]
+						}
+					}
+				},
+				"body": {
+					"rotation": [-40, 0, 0]
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "flying"
+				}
+			}
+		}
+	}
+}

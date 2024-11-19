@@ -1,0 +1,109 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pa:dark_steel_shovel",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.shovel"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+                "tags": [
+					"minecraft:is_tool",
+                    "minecraft:is_shovel"
+                ]
+            },
+            "minecraft:repairable": {
+				"repair_items": [
+				  {
+					"items": [
+					  "pa:chromium_ingot"
+					],
+					"repair_amount": 1000
+				  },
+				  {
+					"items": [
+					  "pa:dark_steel_ingot"
+					],
+					"repair_amount": 800
+				  },
+				  {
+					"items": [
+					  "pa:dark_steel_shovel"
+					],
+					"repair_amount": "query.max_durability"
+				  }
+				]
+			  },
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:damage": 5,
+			"minecraft:enchantable": {
+				"value": 3,
+				"slot": "shovel"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow', 'dirt')"
+						},
+						"speed": 6,
+						"on_dig": {
+							"event": "destroy_block"
+						}
+					},
+					{
+						"block": "minecraft:concretePowder",
+						"speed": 6,
+						"on_dig": {
+							"event": "destroy_block"
+						}
+					},
+					{
+						"block": "minecraft:mycelium",
+						"speed": 6,
+						"on_dig": {
+							"event": "destroy_block"
+						}
+					},
+					{
+						"block": "minecraft:podzol",
+						"speed": 6,
+						"on_dig": {
+							"event": "destroy_block"
+						}
+					},
+					{
+						"block": "minecraft:snow",
+						"speed": 6,
+						"on_dig": {
+							"event": "destroy_block"
+						}
+					},
+					{
+						"block": "minecraft:clay",
+						"speed": 6,
+						"on_dig": {
+							"event": "destroy_block"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "destroy_block",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {},
+			"minecraft:durability": {
+				"max_durability": 1352
+			},
+			"minecraft:icon": {
+				"texture": "dark_steel_shovel"
+			}
+		}
+	}
+}

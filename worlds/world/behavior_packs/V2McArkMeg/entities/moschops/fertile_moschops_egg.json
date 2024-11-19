@@ -1,0 +1,562 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mc_ark:fertile_moschops_egg",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false, 
+	  "scripts": { 
+	    "animate": [    
+    "rotting_egg_controller_mc_ark",
+						{  
+							"auto_kill_egg_mc_ark": "(variable.rotting == 0.0)"
+						},
+	"healthy_egg_mc_ark",
+						{  
+							"dodo_give_tag": "query.has_rider"
+						}
+	    ] 
+	   },  
+	  "animations": {  
+	      
+	    "rotting_egg_controller_mc_ark": "controller.animation.rotting_egg_controller_mc_ark",
+	    "healthy_egg_mc_ark": "animation.healthy_egg_mc_ark",
+	    "rotting_egg_mc_ark": "animation.rotting_egg_mc_ark",
+	    "auto_kill_egg_mc_ark": "animation.auto_kill_egg_mc_ark",
+	    
+	    "dodo_give_tag": "animation.dodo_give_tag"
+    } 
+    },      
+      
+    "component_groups": {   
+         
+        "minecraft:active":{
+              "minecraft:rideable": {
+        "seat_count": 1, 
+        "family_types": [
+          "dodo" 
+        ],
+        "pull_in_entities": false,
+        "seats": [
+          {
+            "position": [ 0.0, 0.1, 00.0 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          }
+        ]
+      } ,
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "avoid_damage_blocks": false
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      }
+        }, 
+        
+        "minecraft:hatching_lvl10":{
+        "minecraft:is_shaking": {
+        },
+        "minecraft:transformation": {
+          "into": "mc_ark:moschops<minecraft:babylvl10>",
+          "delay": 5.0
+        }  
+        }, 
+        "minecraft:hatching_lvl50":{
+        "minecraft:is_shaking": {
+        },
+        "minecraft:transformation": {
+          "into": "mc_ark:moschops<minecraft:babylvl50>",
+          "delay": 5.0
+        } 
+        }, 
+        "minecraft:hatching_lvl100":{
+        "minecraft:is_shaking": {
+        },
+        "minecraft:transformation": {
+          "into": "mc_ark:moschops<minecraft:babylvl100>",
+          "delay": 5.0
+        } 
+        }, 
+        "minecraft:hatching_lvl150":{
+        "minecraft:is_shaking": {
+        },
+        "minecraft:transformation": {
+          "into": "mc_ark:moschops<minecraft:babylvl150>",
+          "delay": 5.0
+        } 
+        },  
+        "minecraft:hatching_lvl200":{
+        "minecraft:is_shaking": {
+        },
+        "minecraft:transformation": {
+          "into": "mc_ark:moschops<minecraft:babylvl200>",
+          "delay": 5.0
+        }   
+        }, 
+        "minecraft:hatching_lvl250":{
+        "minecraft:is_shaking": {
+        },
+        "minecraft:transformation": {
+          "into": "mc_ark:moschops<minecraft:babylvl250>",
+          "delay": 5.0
+        }  
+        }, 
+        
+        "minecraft:healthy_egg":{
+
+        },
+        "minecraft:on_rotting_egg":{
+
+			"minecraft:is_sheared": {}
+        },  
+        
+     
+"minecraft:egg_controladores_normal":{
+
+        "minecraft:scale": {
+          "value": 2.2
+        },    
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 10.0,
+        "max_distance": 14.0
+      },
+      "minecraft:type_family": {
+        "family": [ "fertile_moschops_egg", "mob" , "wild" , "wild_adult" , "fertile_moschops_egg_wild" , "chicken"]
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 10 : 2"},
+      "minecraft:knockback_resistance": {
+        "value": 0.1
+      }, 
+      "minecraft:movement": {
+        "value": 0.0
+      },
+	    "minecraft:health": {
+          "value": 10,
+          "max": 10
+        }
+},
+
+
+"minecraft:to_lvl10":{ 
+        "minecraft:timer": { 
+          "time": [ 400.0, 401.0 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:hatching_on_lvl10",
+            "target": "self"
+          }
+        }
+},
+"minecraft:to_lvl50":{
+        "minecraft:timer": { 
+          "time": [ 400.0, 410.0 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:hatching_on_lvl50",
+            "target": "self"
+          }
+        }
+},
+"minecraft:to_lvl100":{
+        "minecraft:timer": { 
+          "time": [ 400.0, 401.0 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:hatching_on_lvl100",
+            "target": "self"
+          }
+        }
+},
+"minecraft:to_lvl150":{
+        "minecraft:timer": { 
+          "time": [ 400.0, 401.0 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:hatching_on_lvl150",
+            "target": "self"
+          }
+        }
+},
+"minecraft:to_lvl200":{
+        "minecraft:timer": { 
+          "time": [ 400.0, 401.0 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:hatching_on_lvl200",
+            "target": "self"
+          }
+        } 
+},
+"minecraft:to_lvl250":{
+        "minecraft:timer": { 
+          "time": [ 400.0, 410.0 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:hatching_on_lvl250",
+            "target": "self"
+          }
+        }
+}
+
+
+    }, 
+    
+ 
+    "components": {
+        
+
+                "minecraft:behavior.move_to_block": { 
+                    "priority": 0,
+                    "tick_interval": 0.0,
+                    "start_chance": 1000.0,
+                    "search_range": 10.0,
+                    "search_height": 8,
+                    "goal_radius": 4,
+                    "stay_duration": 0.0,
+                     "target_selection_method": "nearest",
+                    "target_offset": [0, 0.0, 0],
+                    "target_blocks": [
+          "minecraft:item.campfire",
+          "minecraft:campfire"
+                    ],
+                    "on_stay_completed": [
+                        {
+                            "event": "minecraft:give_tag",
+                            "target": "self"
+                        }
+                    ] 
+                },
+        
+      "minecraft:environment_sensor": {
+        "triggers": [
+          { 
+            "filters":{ 
+            "all_of": [
+{ "test": "is_temperature_value", "operator": ">=", "value": 0.4 },
+{ "test": "is_temperature_value", "operator": "<=", "value": 0.8 }
+            ]
+            },
+            "event":"minecraft:campfire_method_on"
+          },
+          { 
+            "filters":{ 
+            "any_of": [
+{ "test": "is_temperature_value", "operator": "<", "value": 0.4 },
+{ "test": "is_temperature_value", "operator": ">", "value": 0.8 }
+            ]
+            },
+            "event":"minecraft:campfire_method_off"
+          }
+          ]
+      },   
+
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:collision_box": { 
+        "width": 0.3,
+        "height": 0.31
+      },
+      "minecraft:breathable": {
+        "total_supply": 30,
+        "suffocate_time": 0
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+     
+    "events": {   
+        
+      "minecraft:campfire_method_off": {
+     
+        "add": {
+        },
+        "remove": {
+          "component_groups": [
+ "minecraft:active"
+          ]
+        }
+      },
+         
+      "minecraft:campfire_method_on": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+ "minecraft:active"
+          ]
+        }
+      },
+        
+      "minecraft:give_tag": {
+		"run_command": {
+          "command": [
+    "tag @s add good_egg",
+    "tag @s add imgood"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+ "minecraft:on_rotting_egg"
+          ]
+        },
+        "add": {
+        }
+      },
+      "minecraft:rotting_egg": {
+		"run_command": {
+          "command": [
+    "tag @s remove good_egg"
+          ],
+          "target": "self"
+		},
+        "add": {
+          "component_groups": [
+ "minecraft:on_rotting_egg"
+          ]
+        },
+        "remove": { 
+        }
+      },
+        
+      "minecraft:hatching_on_lvl10": {
+        "remove": {
+          "component_groups": [
+
+ "minecraft:healthy_egg",
+ "minecraft:to_lvl10"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:hatching_lvl10"
+          ]
+        }
+      },
+      "minecraft:hatching_on_lvl50": {
+        "remove": {
+          "component_groups": [
+
+ "minecraft:healthy_egg",
+ "minecraft:to_lvl50"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:hatching_lvl50"
+          ]
+        }
+      },
+
+      "minecraft:hatching_on_lvl100": {
+        "remove": {
+          "component_groups": [
+
+ "minecraft:healthy_egg",
+ "minecraft:to_lvl100"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:hatching_lvl100"
+          ]
+        }
+      },
+      "minecraft:hatching_on_lvl150": {
+        "remove": {
+          "component_groups": [
+
+ "minecraft:healthy_egg",
+ "minecraft:to_lvl150"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:hatching_lvl150"
+          ]
+        }
+      },
+      "minecraft:hatching_on_lvl200": {
+        "remove": {
+          "component_groups": [
+
+ "minecraft:healthy_egg",
+ "minecraft:to_lvl200"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:hatching_lvl200"
+          ]
+        }
+      },
+      "minecraft:hatching_on_lvl250": {
+        "remove": {
+          "component_groups": [
+
+ "minecraft:healthy_egg",
+ "minecraft:to_lvl250"
+          ]
+        }, 
+        "add": {
+          "component_groups": [
+  "minecraft:hatching_lvl250"
+          ]
+        }
+      },
+        
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:egg_controladores_normal",
+ "minecraft:healthy_egg",
+ "minecraft:active",
+ "minecraft:to_lvl10"
+              ]
+            }
+          } 
+        ]
+},
+
+
+      "minecraft:lvl10": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:egg_controladores_normal",
+ "minecraft:healthy_egg",
+ "minecraft:active",
+ "minecraft:to_lvl10"
+              ]
+            }
+          } 
+        ]
+},
+      "minecraft:lvl50": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:egg_controladores_normal",
+ "minecraft:healthy_egg",
+ "minecraft:active",
+ "minecraft:to_lvl50"
+              ]
+            }
+          } 
+        ]
+},
+
+      "minecraft:lvl100": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:egg_controladores_normal",
+ "minecraft:healthy_egg",
+ "minecraft:active",
+ "minecraft:to_lvl100"
+              ]
+            }
+          } 
+        ]
+},
+      "minecraft:lvl150": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:egg_controladores_normal",
+ "minecraft:healthy_egg",
+ "minecraft:active",
+ "minecraft:to_lvl150"
+              ]
+            }
+          } 
+        ]
+},
+      "minecraft:lvl200": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:egg_controladores_normal",
+ "minecraft:healthy_egg",
+ "minecraft:active",
+ "minecraft:to_lvl200"
+              ]
+            }
+          } 
+        ]
+},
+      "minecraft:lvl250": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:egg_controladores_normal",
+ "minecraft:healthy_egg",
+ "minecraft:active",
+ "minecraft:to_lvl250"
+              ]
+            }
+          } 
+        ]
+}
+    }
+  } 
+}

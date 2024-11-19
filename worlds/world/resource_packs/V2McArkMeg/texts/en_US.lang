@@ -1,0 +1,129 @@
+item.spawn_egg.entity.mc_ark:raptor.name=§4Raptor§r
+entity.mc_ark:raptor.name=§4Raptor§r
+%entity.mc_ark:raptor.name=§4Raptor§r
+action.hint.exit.mc_ark:raptor=§lRiding Raptor§r
+
+item.spawn_egg.entity.mc_ark:raptor_tek.name=§1Raptor Tek§r
+entity.mc_ark:raptor_tek.name=§1Raptor Tek§r
+%entity.mc_ark:raptor_tek.name=§1Raptor Tek§r
+action.hint.exit.mc_ark:raptor_tek=§lRiding Raptor Tek§r
+
+item.spawn_egg.entity.mc_ark:therizino.name=§l§4Therizino§r
+entity.mc_ark:therizino.name=§l§4Therizino§r
+%entity.mc_ark:therizino.name=§l§4Therizino§r
+action.hint.exit.mc_ark:therizino=§lRiding Therizino§r
+ 
+item.spawn_egg.entity.mc_ark:tyranosaurus_rex.name=§l§4Tyranosaurus Rex§r
+entity.mc_ark:tyranosaurus_rex.name=§l§4Tyranosaurus Rex§r
+%entity.mc_ark:tyranosaurus_rex.name=§l§4Tyranosaurus Rex§r
+action.hint.exit.mc_ark:tyranosaurus_rex=§lRiding Tyranosaurus Rex§r
+
+item.spawn_egg.entity.mc_ark:yutyrannus.name=§l§4Yutyrannus§r
+entity.mc_ark:yutyrannus.name=§l§4Yutyrannus§r
+%entity.mc_ark:yutyrannus.name=§l§4Yutyrannus§r
+action.hint.exit.mc_ark:yutyrannus=§lRiding Yutyrannus§r
+
+item.spawn_egg.entity.mc_ark:spinosaurus.name=§l§4Spinosaurus§r
+entity.mc_ark:spinosaurus.name=§l§4Spinosaurus§r
+%entity.mc_ark:spinosaurus.name=§l§4Spinosaurus§r
+action.hint.exit.mc_ark:spinosaurus=§lRiding Spinosaurus§r
+
+item.spawn_egg.entity.mc_ark:dodo.name=§2Dodo§r
+entity.mc_ark:dodo.name=§2Dodo§r
+%entity.mc_ark:dodo.name=§2Dodo§r
+ 
+item.spawn_egg.entity.mc_ark:compy.name=§4Compy§r
+entity.mc_ark:compy.name=§4Compy§r
+%entity.mc_ark:compy.name=§4Compy§r
+action.hint.exit.mc_ark:compy=§lRiding Compy§r
+
+item.spawn_egg.entity.mc_ark:pegomastax.name=§4Pegomastax§r
+entity.mc_ark:pegomastax.name=§4Pegomastax§r
+%entity.mc_ark:pegomastax.name=§4Pegomastax§r
+action.hint.exit.mc_ark:pegomastax=§lRiding Pegomastax§r
+
+item.spawn_egg.entity.mc_ark:dilophosaurus.name=§4Dilophosaurus§r
+entity.mc_ark:dilophosaurus.name=§4Dilophosaurus§r
+%entity.mc_ark:dilophosaurus.name=§4Dilophosaurus§r
+
+item.spawn_egg.entity.mc_ark:celacanto.name=§2Celacanto§r
+entity.mc_ark:celacanto.name=§2Celacanto§r
+%entity.mc_ark:celacanto.name=§2Celacanto§r
+
+item.spawn_egg.entity.mc_ark:parasaurus.name=§2Parasaurus§r
+entity.mc_ark:parasaurus.name=§2Parasaurus§r
+%entity.mc_ark:parasaurus.name=§2Parasaurus§r
+action.hint.exit.mc_ark:parasaurus=§lRiding Parasaurus§r
+
+item.spawn_egg.entity.mc_ark:moschops.name=§2Moschops§r
+entity.mc_ark:moschops.name=§2Moschops§r
+%entity.mc_ark:moschops.name=§2Moschops§r
+action.hint.exit.mc_ark:moschops=§lRiding Moschops§r
+
+item.spawn_egg.entity.mc_ark:wyvern_fire.name=§l§4Wyvern Fire§r
+entity.mc_ark:wyvern_fire.name=§l§4Wyvern Fire§r
+%entity.mc_ark:wyvern_fire.name=§l§4Wyvern Fire§r
+action.hint.exit.mc_ark:wyvern_fire=§lRiding Wyvern Fire§r
+
+item.spawn_egg.entity.mc_ark:wyvern_ice.name=§l§4Wyvern Ice§r
+entity.mc_ark:wyvern_ice.name=§l§4Wyvern Ice§r
+%entity.mc_ark:wyvern_ice.name=§l§4Wyvern Ice§r
+action.hint.exit.mc_ark:wyvern_ice=§lRiding Wyvern Ice§r
+
+item.spawn_egg.entity.mc_ark:wyvern_poison.name=§l§4Wyvern Poison§r
+entity.mc_ark:wyvern_poison.name=§l§4Wyvern Poison§r
+%entity.mc_ark:wyvern_poison.name=§l§4Wyvern Poison§r
+action.hint.exit.mc_ark:wyvern_poison=§lRiding Wyvern Poison§r
+
+item.spawn_egg.entity.mc_ark:wyvern_electric.name=§l§4Wyvern Electric§r
+entity.mc_ark:wyvern_electric.name=§l§4Wyvern Electric§r
+%entity.mc_ark:wyvern_electric.name=§l§4Wyvern Electric§r
+action.hint.exit.mc_ark:wyvern_electric=§lRiding Wyvern Electric§r
+
+entity.mc_ark:wyvern_fire_proyectil.name=§l§4Wyvern Fire Proyectil§r
+%entity.mc_ark:wyvern_fire_proyectil.name=§l§4Wyvern Fire Proyectil§r
+
+entity.mc_ark:wyvern_ice_proyectil.name=§l§4Wyvern Ice Proyectil§r
+%entity.mc_ark:wyvern_ice_proyectil.name=§l§4Wyvern Ice Proyectil§r
+
+entity.mc_ark:wyvern_poison_proyectil.name=§l§4Wyvern Poison Proyectil§r
+%entity.mc_ark:wyvern_poison_proyectil.name=§l§4Wyvern Poison Proyectil§r
+
+entity.mc_ark:wyvern_electric_proyectil.name=§l§4Wyvern Electric Proyectil§r
+%entity.mc_ark:wyvern_electric_proyectil.name=§l§4Wyvern Electric Proyectil§r
+
+item.mc_ark:wyvern_milk.name=Wyvern Milk
+
+item.spawn_egg.entity.mc_ark:trike.name=§l§2Trike§r
+entity.mc_ark:trike.name=§l§2Trike§r
+%entity.mc_ark:trike.name=§l§2Trike§r
+action.hint.exit.mc_ark:trike=§l§2Riding Trike 
+
+tile.mc_ark:mortar.name=Mortar
+tile.mc_ark:narcoberry_block.name=NarcoBerry
+item.mc_ark:narcoberry.name=Narco Berry
+
+item.mc_ark:narcotic.name=Narcotic
+item.mc_ark:normal_saddle.name=Normal Saddle
+
+tile.mc_ark:air_conditioner.name=Air Conditioner
+
+item.spawn_egg.entity.mc_ark:pteranodon.name=§2Pteranodon§r
+entity.mc_ark:pteranodon.name=§2Pteranodon§r
+%entity.mc_ark:pteranodon.name=§2Pteranodon§r
+action.hint.exit.mc_ark:pteranodon=§lRiding Pteranodon§r 
+
+item.spawn_egg.entity.mc_ark:carcharodontosaurus.name=§l§4Carcharodontosaurus§r
+entity.mc_ark:carcharodontosaurus.name=§l§4Carcharodontosaurus§r
+%entity.mc_ark:carcharodontosaurus.name=§l§4Carcharodontosaurus§r
+action.hint.exit.mc_ark:carcharodontosaurus=§lRiding Carcharodontosaurus§r
+
+item.spawn_egg.entity.mc_ark:rhyniognatha.name=§l§4Rhyniognatha§r
+entity.mc_ark:rhyniognatha.name=§l§4Rhyniognatha§r
+%entity.mc_ark:rhyniognatha.name=§l§4Rhyniognatha§r
+action.hint.exit.mc_ark:rhyniognatha=§lRiding Rhyniognatha§r
+
+item.spawn_egg.entity.mc_ark:allosaurus.name=§l§4Allosaurus§r
+entity.mc_ark:allosaurus.name=§l§4Allosaurus§r
+%entity.mc_ark:allosaurus.name=§l§4Allosaurus§r
+action.hint.exit.mc_ark:allosaurus=§lRiding Allosaurus§r

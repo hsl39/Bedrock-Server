@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.plane2.rot": {
+			"loop": true,
+			"bones" : {
+				"plane" : {
+					"relative_to" : {
+						"rotation" : "entity"
+					},
+					"rotation" : [
+					        "q.target_x_rotation", "q.rider_head_y_rotation(1)", 0
+					   ]
+				},
+				"propeler": {
+					"rotation": [0, 0, "v.propelerBoneRot.z - v.planeBoneRot.z + 2"]
+					
+				}
+			}
+		}
+	}
+}

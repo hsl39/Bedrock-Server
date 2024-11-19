@@ -1,0 +1,15 @@
+//bridge-file-version: #18
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "mocreatures:crabcooked"
+		},
+		"tags": [
+			"furnace",
+			"smoker"
+		],
+		"input": "mocreatures:crabraw",
+		"output": "mocreatures:crabcooked"
+	}
+}

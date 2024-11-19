@@ -1,0 +1,76 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.werehuman": {
+			"arrays": {
+				"textures": {
+					"Array.werehuman": [
+						"Texture.brown",
+						"Texture.white",
+						"Texture.black",
+						"Texture.fire"
+					]
+				}
+			},
+			"textures": [
+				"Array.werehuman[query.variant]"
+			],
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		},
+		"controller.render.werewolf": {
+			"arrays": {
+				"textures": {
+					"Array.werewolf": [
+						"Texture.brown",
+						"Texture.white",
+						"Texture.black"
+					]
+				}
+			},
+			"textures": [
+				"Array.werewolf[query.variant]"
+			],
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		},
+		"controller.render.firewerewolf": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.bioluminescent_layer"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"Array.firewerewolf": [
+						"Texture.eyes",
+						"Texture.eyes",
+						"Texture.eyes",
+						"Texture.fire1",
+						"Texture.fire2",
+						"Texture.fire3"
+					]
+				}
+			},
+			"textures": [
+				"Array.firewerewolf[query.variant]"
+			],
+			"ignore_lighting": true,
+			"color": {
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": "0.7"
+			}
+		}
+	}
+}

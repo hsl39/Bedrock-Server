@@ -1,0 +1,45 @@
+//bridge-file-version: #29
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:turkey",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/turkey",
+				"female": "textures/models/turkeyfemale"
+			},
+			"geometry": {
+				"default": "geometry.pavo"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"caminar": "query.modified_move_speed"
+					},
+					{
+						"falling": "!query.is_on_ground"
+					},
+					"look_at_target"
+				],
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				]
+			},
+			"animations": {
+				"caminar": "animation.pavo.caminar",
+				"falling": "animation.pavo.falling",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.pavo"
+			],
+			"spawn_egg": {
+				"base_color": "#D5EFFF",
+				"overlay_color": "#FF0000"
+			}
+		}
+	}
+}

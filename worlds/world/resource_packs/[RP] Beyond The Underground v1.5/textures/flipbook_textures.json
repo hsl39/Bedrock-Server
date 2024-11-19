@@ -1,0 +1,18 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/soul_magma",
+    "atlas_tile": "soul_magma",
+    "ticks_per_frame": 10,
+    "blend_frames": true
+  },
+  {
+    "flipbook_texture": "textures/blocks/crooked/crooked_stem_side",
+    "atlas_tile": "crooked_stem_side",
+    "ticks_per_frame": 15
+  },
+  {
+    "flipbook_texture": "textures/blocks/arena_limestone_pillar_side_on",
+    "atlas_tile": "arena_limestone_pillar_side_on",
+    "ticks_per_frame": 15
+  }
+]

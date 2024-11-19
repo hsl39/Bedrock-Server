@@ -1,0 +1,72 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "pixelpoly:firearm_item",
+			"textures": {
+				"blank": "textures/blank",
+				"taurus": "textures/firearm/pistol/taurus/taurus",
+				"taurus_mag": "textures/firearm/pistol/taurus/taurus.mag",
+				"svi": "textures/firearm/pistol/svi/svi",
+				"svi_mag": "textures/firearm/pistol/svi/svi",
+				"p90": "textures/firearm/smg/p90/p90",
+				"p90_mag": "textures/firearm/smg/p90/p90",
+                "awp": "textures/firearm/sniper/awp/awp",
+                "awp_mag": "textures/firearm/sniper/awp/awp",
+                "barrett": "textures/firearm/sniper/barrett/barrett",
+                "barrett_mag": "textures/firearm/sniper/barrett/barrett",
+                "m3": "textures/firearm/shotgun/m3/m3",
+                "m3_ammo": "textures/firearm/ammo/m3",
+                "chaingrenade": "textures/firearm/throwable/chaingrenade",
+                "akm": "textures/firearm/ar/akm/akm",
+                "mp5": "textures/firearm/smg/mp5/mp5",
+                "mp5_mag": "textures/firearm/smg/mp5/mp5",
+                "akm_mag": "textures/firearm/ar/akm/akm",
+                "m249": "textures/firearm/lmg/m249/m249",
+                "m249_mag": "textures/firearm/lmg/m249/m249",
+                "mk18": "textures/firearm/ar/mk18/mk18",
+                "mk18_mag": "textures/firearm/ar/mk18/mk18.mag",
+                "nightvision": "textures/night_vision"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"blank": "geometry.blank",
+				"taurus": "geometry.taurus",
+				"taurus_mag": "geometry.taurus.mag",
+				"svi": "geometry.svi",
+				"svi_mag": "geometry.svi.mag",
+				"p90": "geometry.fn_p90",
+				"p90_mag": "geometry.fn_p90.mag",
+				"awp": "geometry.awp",
+				"awp_mag": "geometry.awp.mag",
+                "barrett": "geometry.barrett",
+                "barrett_mag": "geometry.barrett.mag",
+                "m3": "geometry.m3",
+                "m3_ammo": "geometry.m3.shells",
+                "chaingrenade": "geometry.chaingrenade",
+                "akm": "geometry.akm",
+                "mp5": "geometry.mp5",
+                "mp5_mag": "geometry.mp5.mag",
+                "akm_mag": "geometry.akm.mag",
+                "m249_drop": "geometry.m249_drop",
+                "m249_mag": "geometry.m249.mag",
+                "mk18": "geometry.mk18",
+                "mk18_mag": "geometry.mk18.mag",
+                "nightvision": "geometry.nightvision"
+			},
+			"scripts": {
+				"animate": [ 
+					"float"
+				]
+			},
+			"animations": {
+				"float": "animation.item.float"
+			},
+			"render_controllers": [ 
+				"controller.render.firearm_item" 
+			]
+		}
+	}
+}

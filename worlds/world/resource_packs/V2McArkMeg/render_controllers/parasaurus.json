@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": { 
+		"controller.render.parasaurus": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.parasaurus1",
+						"Texture.parasaurus1",
+						"Texture.parasaurus1" 
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [  
+        { "*": true },
+ { "Montura_decoracion": "query.is_chested"},
+ { "Montura": "query.is_saddled && !query.is_baby"}
+      ],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

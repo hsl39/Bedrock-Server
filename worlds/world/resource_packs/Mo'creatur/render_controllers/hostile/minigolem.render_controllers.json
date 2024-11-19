@@ -1,0 +1,54 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.block": {
+			"geometry": "Geometry.block",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.block"
+			]
+		},
+		"controller.render.minigolem": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			],
+			"part_visibility": [
+				{
+					"HeadBlue": "!query.is_angry",
+					"HeadRed": "query.is_angry",
+					"BodyBlue": "!query.is_angry",
+					"BodyRed": "query.is_angry"
+				}
+			]
+		},
+		"controller.render.minigolem_glow": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.bioluminescent_layer"
+				}
+			],
+			"textures": [
+				"Texture.bioluminescent_layer"
+			],
+			"part_visibility": [
+				{
+					"HeadBlue": "!query.is_angry",
+					"HeadRed": "query.is_angry",
+					"BodyBlue": "!query.is_angry",
+					"BodyRed": "query.is_angry"
+				}
+			]
+		}
+	}
+}

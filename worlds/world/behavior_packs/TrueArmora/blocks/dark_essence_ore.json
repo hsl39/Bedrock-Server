@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.60",
+	"minecraft:block": {
+	  "description": {
+		"identifier": "pa:dark_essence_ore",
+        "menu_category": {
+            "category": "Nature",
+            "group": "itemGroup.name.ore"
+        }
+	   },
+	   "components": {
+		"tag:iron_pick_diggable": {},
+		"tag:stone": {},
+		"minecraft:map_color": "#302A37",
+		"minecraft:loot": "loot_tables/empty.json",
+        "minecraft:destructible_by_explosion": {
+            "explosion_resistance": 200
+          },
+		"minecraft:friction": 0.6
+	}
+}
+}

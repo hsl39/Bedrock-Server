@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:wyvern_bone_hoe"
+    },   
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##",
+      "/ ",
+      "/ "
+    ],
+    "key": {
+      "#": {
+        "item": "new:wyvern_bones"
+      },
+      "/": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "new:wyvern_bone_hoe"
+    }
+  }
+}

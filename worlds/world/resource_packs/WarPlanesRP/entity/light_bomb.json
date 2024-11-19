@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "l4gg:light_bomb",
+			"materials": {
+				"default": "entity_static"
+			},
+			"textures": {
+				"default": "textures/entity/bomb"
+			},
+			"geometry": {
+				"default": "geometry.light_bomb"
+			},
+			"animations": {
+			    "trail": "animation.bomb.drop"
+			},
+			"render_controllers": [ "controller.render.slime" ],
+			"scripts": {
+			    "animate": [
+			        "trail"
+			   ]
+			}
+		}
+	}
+}

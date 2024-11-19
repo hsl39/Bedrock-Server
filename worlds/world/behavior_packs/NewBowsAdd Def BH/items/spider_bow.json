@@ -1,0 +1,44 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+	"description": {
+      "identifier": "new:spider_bow",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:frame_count": 3,
+      "minecraft:use_animation": "bow",
+    "minecraft:display_name": {
+      "value": "§bSpider Bow§7\n\n§lInfo:§r§7\n-Generate a 3x3 of cobwebs\n-Damage: 11\n-Max Durability: 450\n-Works with spider arrow"
+    },
+      "minecraft:icon": {
+        "texture": "spider_bow"
+      },
+  "minecraft:durability":{
+    "max_durability": 450
+  },
+      "minecraft:shooter": {
+    "max_draw_duration": 1,
+    "charge_on_draw": false,
+    "scale_power_by_draw_duration": true,
+    "ammunition": [
+      {
+        "item": "new:spider_arrow",
+        "use_offhand": true,
+        "search_inventory": true,
+        "use_in_creative": true
+      }
+    ]
+  },
+      "minecraft:stacked_by_data": false,
+      "minecraft:max_stack_size": 1,
+  "minecraft:use_modifiers": {
+    "use_duration": 99999999,
+    "movement_modifier": 0.35
+  },
+      "minecraft:hand_equipped": true
+	 },
+	 "events": {
+	 }
+  }
+}

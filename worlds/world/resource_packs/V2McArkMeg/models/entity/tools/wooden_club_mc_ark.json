@@ -1,0 +1,66 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.wooden_club_mc_ark",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "pole",
+					"pivot": [-2, 23, 6],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "Garrote2",
+					"parent": "pole",
+					"pivot": [-2, 23, 6],
+					"rotation": [-9.68622, -15.20176, 7.61542],
+					"cubes": [
+						{
+							"origin": [-2.7976, 22.8765, 5.2024],
+							"size": [1.7976, 1.1235, 1.7976],
+							"uv": {
+								"north": {"uv": [6, 6], "uv_size": [1.5, 1]},
+								"east": {"uv": [7, 2], "uv_size": [1.5, 1]},
+								"south": {"uv": [7, 3], "uv_size": [1.5, 1]},
+								"west": {"uv": [7, 4], "uv_size": [1.5, 1]},
+								"up": {"uv": [2, 4], "uv_size": [1.5, 1.5]},
+								"down": {"uv": [4, 5.5], "uv_size": [1.5, -1.5]}
+							}
+						},
+						{
+							"origin": [-2.7976, 26.247, 5.2024],
+							"size": [1.7976, 4.494, 1.7976],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [1.5, 4]},
+								"east": {"uv": [2, 0], "uv_size": [1.5, 4]},
+								"south": {"uv": [0, 4], "uv_size": [1.5, 4]},
+								"west": {"uv": [4, 0], "uv_size": [1.5, 4]},
+								"up": {"uv": [6, 0], "uv_size": [1.5, 1.5]},
+								"down": {"uv": [2, 7.5], "uv_size": [1.5, -1.5]}
+							}
+						},
+						{
+							"origin": [-2.46055, 24, 5.53945],
+							"size": [1.1235, 2.247, 1.1235],
+							"uv": {
+								"north": {"uv": [6, 2], "uv_size": [1, 2]},
+								"east": {"uv": [4, 6], "uv_size": [1, 2]},
+								"south": {"uv": [6, 4], "uv_size": [1, 2]},
+								"west": {"uv": [5, 6], "uv_size": [1, 2]},
+								"up": {"uv": [7, 5], "uv_size": [1, 1]},
+								"down": {"uv": [6, 8], "uv_size": [1, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

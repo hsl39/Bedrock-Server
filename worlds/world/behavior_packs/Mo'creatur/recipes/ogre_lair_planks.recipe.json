@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "mocreatures:ogre_log"
+            }
+        ],
+        "result": {
+            "item": "mocreatures:ogre_woodplank",
+            "count": 4
+        },
+        "description": {
+            "identifier": "mocreatures:ogre_lair_planks"
+        }
+    }
+}

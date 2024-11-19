@@ -1,0 +1,104 @@
+
+[
+	
+	{
+		"pack_id" : "3a32dd2d-b593-415c-9f28-e248d653b284",
+		"version" : [ 1, 0, 8 ]
+	},
+	
+	{
+		"pack_id" : "b016ee64-0c93-4fe6-8ae2-4e719a5e74d8",
+		"version" : [ 1, 4, 5 ]
+	},
+	
+	{
+		"pack_id" : "fa47bef2-bfd7-4d4a-b97c-bbb69dbbc3d2",
+		"version" : [ 1, 4, 0 ]
+	},
+	
+	{
+		"pack_id" : "ba1c487a-a898-4f5a-8020-140a25219f86",
+		"version" : [ 1, 5, 5 ]
+	},
+	
+	{
+		"pack_id" : "eb03e359-0ef0-47e8-8fcc-83332e018eab",
+		"version" : [ 0, 1, 2 ]
+	},
+	
+	{
+		"pack_id" : "277503e9-7d60-4e9b-96c8-9665af8a4b0d",
+		"version" : [ 1, 5, 6 ]
+	},
+	
+	{
+		"pack_id" : "61d5b473-4871-4ff3-8dbe-517aa995de5a",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "4391271c-cb8a-4831-a59e-61c31e927349",
+		"version" : [ 0, 1, 0 ]
+	},
+	
+	{
+		"pack_id" : "1a3383b1-96f9-40b8-84c8-af8a05f0ca7f",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "8505f68a-8888-4c1b-911c-3f8782fab986",
+		"version" : [ 1, 16, 0 ]
+	},
+	
+	{
+		"pack_id" : "5e9890d5-1a17-43f1-b95f-aba20d313d02",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "a740a787-dea4-4055-859b-5153391b0b75",
+		"version" : [ 0, 1, 0 ]
+	},
+	
+	{
+		"pack_id" : "9e81fb56-2d69-4d63-9dbe-cb0626c383da",
+		"version" : [ 2, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "6a54179c-e734-48c9-8fd9-c9f2a5e1ca1e",
+		"version" : [ 1, 1, 4 ]
+	},
+	
+	{
+		"pack_id" : "b7443015-571c-4894-9553-abeaa34f5f26",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "e0992d5f-e7d3-4260-abba-2da0d6015c05",
+		"subpack" : "default_leaf",
+		"version" : [ 1, 2, 6 ]
+	},
+	
+	{
+		"pack_id" : "969a11bb-2699-4958-a8c2-0eeddf8672c6",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "7d02b169-8597-4d81-9c64-62dec219434d",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "e78d15ce-5911-4e00-8e4c-235c201ddac4",
+		"version" : [ 1, 1, 4 ]
+	},
+	
+	{
+		"pack_id" : "efbd5d95-351b-4dac-8691-18ac435b72b3",
+		"version" : [ 1, 0, 0 ]
+	}
+]

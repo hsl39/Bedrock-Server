@@ -1,0 +1,72 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.makeshift_spear",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "spear",
+					"pivot": [0, 26, -1],
+					"rotation": [-90, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{
+							"origin": [-0.66, 26.66, -2.32],
+							"size": [1.32, 1.32, 34.32],
+							"uv": {
+								"north": {"uv": [2, 10], "uv_size": [1, 1]},
+								"east": {"uv": [0, 0], "uv_size": [26, 1]},
+								"south": {"uv": [10, 2], "uv_size": [1, 1]},
+								"west": {"uv": [0, 1], "uv_size": [26, 1]},
+								"up": {"uv": [0, 2], "uv_size": [1, 26]},
+								"down": {"uv": [1, 28], "uv_size": [1, -26]}
+							}
+						},
+						{
+							"origin": [-2, 25, -7.3],
+							"size": [4, 6, 4],
+							"inflate": -1,
+							"pivot": [-1, 27, -5],
+							"rotation": [-90, 0, 0],
+							"uv": {
+								"north": {"uv": [23, 9], "uv_size": [4, 6]},
+								"east": {"uv": [27, 15], "uv_size": [-4, -6]},
+								"south": {"uv": [23, 9], "uv_size": [4, 6]},
+								"west": {"uv": [23, 9], "uv_size": [4, 6]},
+								"up": {"uv": [27, 9], "uv_size": [-4, -4]},
+								"down": {"uv": [27, 9], "uv_size": [-4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "knife",
+					"parent": "spear",
+					"pivot": [0, 0, -1],
+					"cubes": [
+						{
+							"origin": [0, 29.04, -11.56],
+							"size": [0, 8, 8],
+							"pivot": [0, 28.64, -5.56],
+							"rotation": [55, 0, -180],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [0, 2]},
+								"east": {"uv": [22, 20], "uv_size": [10, 8]},
+								"south": {"uv": [0, 0], "uv_size": [0, 2]},
+								"up": {"uv": [0, 0], "uv_size": [0, 6]},
+								"down": {"uv": [0, 6], "uv_size": [0, -6]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

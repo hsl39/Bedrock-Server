@@ -1,0 +1,123 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.carcharodontosaurus": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default"
+					] 
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [   
+        { "*": true }, 
+ { "montura_cuello": "query.is_saddled && !query.is_baby"},
+ { "Montura": "query.is_saddled && !query.is_baby"},
+ { "Cuerda1": "query.is_saddled && !query.is_baby"},
+ { "Cuerda2": "query.is_saddled && !query.is_baby"},
+ { "montura": "query.is_saddled && !query.is_baby"},
+ { "Montura_head": "query.is_saddled && !query.is_baby"},
+ { "Monturahead": "query.is_saddled && !query.is_baby"},
+ { "Montura_cuello": "query.is_saddled && !query.is_baby"}
+      ],
+			"materials": [ 
+				{ 
+					"*": "Material.default"
+				}  
+			], 
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		},
+		"controller.render.carcharodontosaurus_rage": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default_rage"
+					] 
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [   
+        { "*": true }, 
+ { "montura_cuello": "query.is_saddled && !query.is_baby"},
+ { "Montura": "query.is_saddled && !query.is_baby"},
+ { "Cuerda1": "query.is_saddled && !query.is_baby"},
+ { "Cuerda2": "query.is_saddled && !query.is_baby"},
+ { "montura": "query.is_saddled && !query.is_baby"},
+ { "Montura_head": "query.is_saddled && !query.is_baby"},
+ { "Monturahead": "query.is_saddled && !query.is_baby"},
+ { "Montura_cuello": "query.is_saddled && !query.is_baby"}
+      ],
+			"materials": [ 
+				{ 
+					"*": "Material.default"
+				}  
+			], 
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		},
+		"controller.render.carcharodontosaurus_farol_1": {
+			"geometry": "Geometry.carcharodontosaurus_farol",
+      "part_visibility": [   
+        { "*": true },
+ { "montura_cuello": "query.is_saddled && !query.is_baby"},
+ { "Montura": "query.is_saddled && !query.is_baby"},
+ { "Cuerda1": "query.is_saddled && !query.is_baby"},
+ { "Cuerda2": "query.is_saddled && !query.is_baby"},
+ { "montura": "query.is_saddled && !query.is_baby"},
+ { "Montura_head": "query.is_saddled && !query.is_baby"},
+ { "Monturahead": "query.is_saddled && !query.is_baby"},
+ { "Montura_cuello": "query.is_saddled && !query.is_baby"}
+      ],
+			"materials": [ 
+				{ 
+					"*": "Material.default"
+				}  
+			], 
+      "textures": [ "Texture.carcharodontosaurus_farol_1" ]
+		},
+		"controller.render.carcharodontosaurus_farol_2": {
+			"geometry": "Geometry.carcharodontosaurus_farol",
+      "part_visibility": [   
+        { "*": true },
+ { "montura_cuello": "query.is_saddled && !query.is_baby"},
+ { "Montura": "query.is_saddled && !query.is_baby"},
+ { "Cuerda1": "query.is_saddled && !query.is_baby"},
+ { "Cuerda2": "query.is_saddled && !query.is_baby"},
+ { "montura": "query.is_saddled && !query.is_baby"},
+ { "Montura_head": "query.is_saddled && !query.is_baby"},
+ { "Monturahead": "query.is_saddled && !query.is_baby"},
+ { "Montura_cuello": "query.is_saddled && !query.is_baby"}
+      ],
+			"materials": [ 
+				{ 
+					"*": "Material.default"
+				}  
+			], 
+      "textures": [ "Texture.carcharodontosaurus_farol_2" ]
+		},
+		"controller.render.carcharodontosaurus_farol_3": {
+			"geometry": "Geometry.carcharodontosaurus_farol",
+      "part_visibility": [   
+        { "*": true },
+ { "montura_cuello": "query.is_saddled && !query.is_baby"},
+ { "Montura": "query.is_saddled && !query.is_baby"},
+ { "Cuerda1": "query.is_saddled && !query.is_baby"},
+ { "Cuerda2": "query.is_saddled && !query.is_baby"},
+ { "montura": "query.is_saddled && !query.is_baby"},
+ { "Montura_head": "query.is_saddled && !query.is_baby"},
+ { "Monturahead": "query.is_saddled && !query.is_baby"},
+ { "Montura_cuello": "query.is_saddled && !query.is_baby"}
+      ],
+			"materials": [ 
+				{ 
+					"*": "Material.default"
+				}  
+			],  
+      "textures": [ "Texture.carcharodontosaurus_farol_3" ] 
+		}
+	}
+}

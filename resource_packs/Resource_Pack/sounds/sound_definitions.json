@@ -1,0 +1,686 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		// Misc
+		"pixelpoly.empty_gun": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/empty_gun",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.ricochet": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/world/ricochet_1",
+					"load_on_low_memory": true
+				},
+				{
+					"name": "sounds/world/ricochet_2",
+					"load_on_low_memory": true
+				},
+				{
+					"name": "sounds/world/ricochet_3",
+					"load_on_low_memory": true
+				},
+				{
+					"name": "sounds/world/ricochet_4",
+					"load_on_low_memory": true
+				},
+				{
+					"name": "sounds/world/ricochet_5",
+					"load_on_low_memory": true
+				},
+				{
+					"name": "sounds/world/ricochet_6",
+					"load_on_low_memory": true
+				},
+				{
+					"name": "sounds/world/ricochet_7",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		// AWP
+		"pixelpoly.awp_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/awp/awp_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.awp_boltback": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/awp/awp_boltback",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.awp_boltdown": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/awp/awp_boltdown",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.awp_boltup": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/awp/awp_boltup",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.awp_boltforwardr": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/awp/awp_boltforwardr",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.awp_boltbackr": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/awp/awp_boltbackr",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.awp_clipin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/awp/awp_clipin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.awp_clipout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/awp/awp_clipout",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		// P90
+		"pixelpoly.p90_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/p90/p90_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.p90_boltback": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/p90/p90_boltback",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.p90_boltforward": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/p90/p90_boltforward",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.p90_clipin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/p90/p90_clipin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.p90_clipout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/p90/p90_clipout",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		// Barrett
+		"pixelpoly.barrett_cloth": {
+			"min_distance": 10,
+			"category": "ui",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_cloth",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.barrett_movement": {
+			"min_distance": 10,
+			"category": "ui",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_movement",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.barrett_press": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_press",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.barrett_forearm_back": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_forearm_back",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.barrett_magrel": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_magrel",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.barrett_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.barrett_magin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_magin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.barrett_magout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_magout",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.barrett_grab": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/barrett/barrett_grab",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		// Taurus
+		"pixelpoly.taurus_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/tauruspt92/taurus_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.taurus_slide": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/tauruspt92/taurus_slide",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.taurus_clipin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/tauruspt92/taurus_clipin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.taurus_clipout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/tauruspt92/taurus_clipout",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.taurus_draw": {
+			"min_distance": 10,
+			"category": "ui",
+			"sounds": [
+				{
+					"name": "sounds/tauruspt92/taurus_draw",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		// Svi
+		"pixelpoly.svi_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/svi/svi_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.svi_slide": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/svi/svi_slide",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.svi_clipin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/svi/svi_clipin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.svi_clipout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/svi/svi_clipout",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		// M3
+		"pixelpoly.m3_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m3/m3_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m3_pump": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m3/m3_pump",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m3_insertshell": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m3/m3_insertshell",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		// MP5
+		"pixelpoly.mp5_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mp5/mp5_shoot",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.mp5_magin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mp5/mp5_magin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.mp5_magout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mp5/mp5_magout",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.mp5_boltpull": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mp5/mp5_boltpull",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.mp5_boltslap": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mp5/mp5_boltslap",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		// AKM
+		"pixelpoly.akm_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/akm/akm_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.akm_draw": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/akm/akm_draw",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.akm_magin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/akm/akm_magin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.akm_magout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/akm/akm_magout",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.akm_boltpull": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/akm/akm_boltpull",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		// M249
+		"pixelpoly.m249_chain_out": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_chain_out",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_chain2": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_chain2",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_draw": {
+			"min_distance": 10,
+			"category": "ui",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_draw",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_fire_empty": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_fire_empty",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_chain": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_chain",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_boxin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_boxin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_boxout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_boxout",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_coverup": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_coverup",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_coverdown": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_coverdown",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_pump": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_pump",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_pump_in": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_pump_in",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.m249_pump_out": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/m249/m249_pump_out",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		// mk18
+		"pixelpoly.mk18_fire": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mk18/mk18_fire",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.mk18_draw": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mk18/mk18_draw",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.mk18_boltrelease": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mk18/mk18_boltrelease",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.mk18_clipin": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mk18/mk18_clipin",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"pixelpoly.mk18_clipout": {
+			"min_distance": 10,
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mk18/mk18_clipout",
+					"load_on_low_memory": true
+				}
+			]
+		}
+	}
+}

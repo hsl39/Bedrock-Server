@@ -1,0 +1,76 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "jungle_log",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 4,
+                                "min": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "leaves",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        },
+                        {
+                            "function": "set_data",
+                            "data": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stick",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "cocoa_beans",
+                    "weight": 2
+                },
+                {
+                    "type": "empty",
+                    "weight": 8
+                }
+            ]
+        }
+    ]
+}

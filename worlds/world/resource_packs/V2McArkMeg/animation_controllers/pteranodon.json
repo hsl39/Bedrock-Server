@@ -1,0 +1,183 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.pteranodon.general" : {
+			"initial_state" : "default",
+			"states" : {  
+			"default" : {
+					"animations" : [
+						{
+							"idle" : "(variable.attack_time < 0.1) && !query.is_illager_captain"}
+					], 
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"sitting" : "(query.is_sitting)"},
+						{
+							"sitting" : "(query.is_riding)"},
+						{
+							"sleep" : "(query.is_sheared) && (!query.is_tamed) && (!query.is_baby)"
+						},
+						{
+							"eating" : "(query.is_sheared)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"sleep" : {
+					"animations" : [ 
+					    "idle",
+					    "sleep" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "(!query.is_sheared)"},
+						{
+							"default" : "(query.is_tamed)"}
+					],
+					"blend_transition": 0.2
+				},
+			"eating" : {
+					"animations" : [ 
+					    "eating"
+					    ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "(query.all_animations_finished)"}
+					],
+					"blend_transition": 0.2
+				},
+			"sitting" : { 
+					"animations" : [ 
+						{
+							"idle" : "(variable.attack_time < 0.1) && !query.is_illager_captain"},
+					    "sitting" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"eating" : "(query.is_sheared)"
+						},
+						{
+							"default" : "(!query.is_sitting) && !query.is_riding"}
+					],
+					"blend_transition": 0.2
+				},
+			"muerto" : {
+					"animations" : [ 
+					 
+					    "sleep" ],
+					"blend_transition": 0.2
+			} 
+			}
+		},
+		"controller.animation.pteranodon.attack" : { 
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : { 
+					"animations" : [
+					    
+					    "attack" ],
+					"transitions" : [
+						{
+							"default" : "variable.attack_time < 0.1 && query.all_animations_finished && !query.is_illager_captain" 
+						}, 
+						{
+							"default" : "(query.is_sheared) && (!query.is_tamed) && query.all_animations_finished"
+						}
+					],  
+					"blend_transition": 0.2
+				},
+				"default" : {
+					"transitions" : [ 
+
+						{
+							"walk" : "query.is_on_ground || query.is_in_water"
+						},
+						{
+							"fly" : "(!query.is_on_ground) && (!query.is_in_water)"
+						},
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						},
+						{
+							"attacking" : "query.is_illager_captain"
+						} 
+					]  
+				},
+				"walk" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed * 1.5"}
+					], 
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						},
+						{
+							"attacking" : "query.is_illager_captain"
+						} ,
+						{
+							"fly" : "(!query.is_on_ground) && (!query.is_in_water) && !query.is_illager_captain"
+						}
+					],
+					"blend_transition": 0.2
+				},  
+				"fly" : { 
+					"animations" : [
+						{
+							"fly" : "(variable.attack_time < 0.1) && !query.is_illager_captain"
+						} 
+					], 
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						},
+						{
+							"attacking" : "query.is_illager_captain"
+						} ,
+						{
+							"walk" : "query.is_on_ground || query.is_in_water"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.pteranodon.pickup" : { 
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [ 
+						{
+							"on" : "(query.skin_id == 1) && !query.is_illager_captain"}
+					]  
+				},
+			"on" : {  
+					"animations" : [ 
+					    
+					    "pickup" ],
+					"transitions" : [
+						{
+							"default" : "variable.attack_time >= 0.1"
+						},
+						{
+							"default" : "query.is_illager_captain"
+						} ,
+						{
+							"default" : " (query.skin_id == 0)"}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+} 
+
+ 
+
+ 

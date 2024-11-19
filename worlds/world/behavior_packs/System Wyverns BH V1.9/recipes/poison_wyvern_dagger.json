@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:poison_wyvern_dagger"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A",
+      "A",
+      "B"
+    ],
+    "key": {
+      "A": {
+        "item": "new:poison_wyvern_fang"
+      },
+      "B": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "new:poison_wyvern_dagger"
+    }
+  }
+}

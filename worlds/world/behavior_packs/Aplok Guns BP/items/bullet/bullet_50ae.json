@@ -1,0 +1,1 @@
+{"format_version":"1.20.80","minecraft:item":{"description":{"identifier":"gabrielaplok:bullet_50ae","menu_category":{"category":"none","group":"itemGroup.name.bullets","is_hidden_in_commands":true}},"components":{"minecraft:display_name":{"value":"item.bullet_50ae.name"},"minecraft:icon":"bullet_50ae"}}}

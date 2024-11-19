@@ -1,0 +1,89 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+    "controller.animation.simple_delayed_sistem": { 
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "(query.is_delayed_attacking == 1) && !query.has_rider"
+            }
+          ]  
+        },
+        "attack": {
+          "transitions": [
+            {
+              "default": "(query.is_delayed_attacking == 0)"
+            }  ,
+            {
+              "default": "(query.has_rider)"
+            }  
+          ], 
+                    "animations": [
+               "attack_animation"
+                        ]
+        }
+      }
+    },
+    "controller.animation.ataque_wyvern_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "remove_ataque_normal": "(query.is_illager_captain) && (query.is_on_ground)"
+            },
+            {
+              "remove_ataque_especial": "(query.is_illager_captain) && (!query.is_on_ground) && (!query.is_in_water)"
+            }
+          ]
+        },
+        "remove_ataque_normal": {
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } 
+          ],
+                    "animations": [
+               "remove_ataque_normal"
+                        ]
+        },
+        "remove_ataque_especial": {
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } 
+          ],
+					"on_exit": [ 
+"@s minecraft:remove_ataque_normal"
+					] ,
+                    "animations": [
+               "remove_ataque_especial"
+                        ]
+        }
+      }
+    },
+        "controller.animation.wyvern_fly_controlator": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "velocidad_0":"(query.target_x_rotation > 20 ) && (query.target_x_rotation <= 90 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" },
+                          
+                        { "velocidad_1":"(query.target_x_rotation >= 6 ) && (query.target_x_rotation <= 20 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" },
+                         
+                        { "velocidad_2":"(query.target_x_rotation >= -2 ) && (query.target_x_rotation <= 7 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" },
+
+                        
+                        { "velocidad_3":"(query.target_x_rotation >= -24 ) && (query.target_x_rotation <= -3 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" },
+                        
+                        { "velocidad_4":"(query.target_x_rotation >= -120 ) && (query.target_x_rotation <= -25 ) && (!query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water)" }
+                    ]
+                }
+            }
+        }
+}}
+
+         

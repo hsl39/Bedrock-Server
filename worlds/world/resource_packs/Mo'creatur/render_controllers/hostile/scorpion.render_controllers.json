@@ -1,0 +1,47 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.scorpion": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.dirt",
+						"Texture.cave",
+						"Texture.frost",
+						"Texture.nether"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.mark_variant]"
+			]
+		},
+		"controller.render.petscorpion_saddled": {
+			"arrays": {
+				"textures": {
+					"Array.saddle": [
+						"Texture.dirt_saddle",
+						"Texture.cave_saddle",
+						"Texture.frost_saddle",
+						"Texture.nether_saddle"
+					]
+				}
+			},
+			"textures": [
+				"Array.saddle[query.is_saddled]"
+			],
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		}
+	}
+}

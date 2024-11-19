@@ -1,0 +1,173 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+        
+
+		"controller.animation.raptor_attack": {
+			"initial_state": "default",
+			"states": {
+				"end": {
+					"on_entry": [
+ "@s minecraft:raptor_remove_attacks"
+					]
+				},
+				"sleep": {
+					"transitions": [
+						{
+							"default": "(!query.is_sheared)"
+						}
+					],
+					"on_entry": [
+ "@s minecraft:raptor_remove_attacks"
+					],
+					"on_exit": [
+ "@s minecraft:raptor_attack_after"
+					]  
+				},
+				"default": {
+					"transitions": [
+						{
+							"special_attack": "(query.skin_id == 1) && !query.is_tamed && query.has_target"
+						}
+					]  
+				},
+				"special_attack": {
+					"transitions": [
+						{
+							"default": "query.is_sheared"
+						},
+						{
+							"default": "query.is_tamed"
+						},
+						{
+							"special_attack_on": "!query.is_on_ground"
+						}
+					]
+				},
+				"special_attack_on": {
+					"transitions": [
+						{
+							"default": "query.is_tamed"
+						},
+						{
+							"default": "query.is_sheared"
+						},
+						{
+							"special_attack_on2": "query.is_on_ground"
+						}
+					]
+				}, 
+				"special_attack_on2": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						},
+						{
+							"end": "query.is_tamed"
+						},
+						{
+							"sleep": "query.is_sheared"
+						}
+					],
+          "animations": [
+              "agarre_raptor"
+              ],
+					"on_exit": [
+ "@s minecraft:raptor_attack_after",
+						"/effect @s slowness 3 101 true"
+					] 
+				}
+			}
+		},
+		"controller.animation.raptor_attack_tamed": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"special_attack": "(query.skin_id == 1) && query.is_tamed && !query.has_rider && query.has_target"
+						}
+					]  
+				},
+				"special_attack": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						},
+						{
+							"special_attack_on": "variable.attack_time >= 0.1" 
+						}
+					]
+				},
+				"special_attack_on": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						},
+						{
+							"special_attack_on2": "query.is_on_ground"
+						}
+					]
+				}, 
+				"special_attack_on2": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						} ,
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+          "animations": [
+						{ 
+							"agarre_raptor_tamed": "!query.has_rider"
+						}
+              ],
+					"on_exit": [
+ "@s minecraft:raptor_attack_after_tamed",
+						"/effect @s slowness 3 101 true"
+					] 
+				}
+			}
+		},
+    "controller.animation.ataque_raptor_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "remove_ataque_normal": "(query.is_illager_captain) && (query.is_on_ground)"
+            },
+            {
+              "remove_ataque_especial": "(query.is_illager_captain) && (!query.is_on_ground) && (!query.is_in_water)"
+            }
+          ]
+        },
+        "remove_ataque_normal": {
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } 
+          ],
+                    "animations": [
+               "remove_ataque_normal"
+                        ]
+        },
+        "remove_ataque_especial": {
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } 
+          ],
+					"on_exit": [ 
+"@s minecraft:remove_ataque_normal",
+						"/effect @s slowness 3 101 true"
+					] ,
+                    "animations": [
+               "remove_ataque_especial"
+                        ]
+        }
+      }
+    }
+	}
+}

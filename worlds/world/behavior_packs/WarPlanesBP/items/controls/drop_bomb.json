@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "l4gg:drop_bomb",
+      "category": "Equipment"
+    },
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "l4gg:drop_bomb"
+			},
+			 "minecraft:display_name": {
+			     "value": "Drop Bomb"
+			 },
+			"minecraft:damage": 2,
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0.9,
+				"use_duration": 50
+			},
+			"minecraft:use_animation": "bow"
+		}
+	}
+}

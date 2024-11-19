@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "new:ground_wyvern_structure_features"
+    },
+    "structure_name": "mystructure:ground_wyvern",
+    "adjustment_radius": 16,
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "unburied": {},
+      "block_intersection": {
+        "block_allowlist": [
+          "minecraft:air" //The structure can only replace air
+        ]
+      }
+    }
+  }
+}

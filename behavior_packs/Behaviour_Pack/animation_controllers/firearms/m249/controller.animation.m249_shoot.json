@@ -1,0 +1,210 @@
+// Coded by @JustAsh0005 for ActualGuns (for both 2D and 3D version), you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.m249_onfire": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"reload_start": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1"
+						},
+						{
+							"m249_empty": "q.get_equipped_item_name(0) == 'm249' && (q.scoreboard('m249') == 0)"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						},
+						{
+							"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1 && q.is_powered || q.is_ignited"
+						}
+					]
+				},
+				"reload_start": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded": "(q.life_time - v.r) >= 0.00 && query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						},
+						{
+							"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1 && q.is_powered || q.is_ignited"
+						}
+					]
+				},
+				"m249_empty": {
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 lmg:m249_empty 1 0"
+					],
+					"transitions": [
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						},
+						{
+							"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1 && q.is_powered || q.is_ignited"
+						}
+					]
+				},
+				"reloaded": {
+					"on_entry": [
+						"/playsound pixelpoly.m249_draw @s"
+					],
+					"transitions": [
+						{
+							"reload_start2": "1.0"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						}
+					]
+				},
+				"reload_start2": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"pre_reloaded2": "(q.life_time - v.r) >= 0.2 && query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						},
+						{
+							"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1 && q.is_powered || q.is_ignited"
+						}
+					]
+				},
+				"pre_reloaded2": {
+					"on_entry": [
+						"v.r = q.life_time;",
+						"/playsound pixelpoly.m249_pump @s"
+					],
+					"transitions": [
+						{
+							"pre_reloaded2_1": "(q.life_time - v.r) >= 0.2"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						}
+					]
+				},
+				"pre_reloaded2_1": {
+					"on_entry": [
+						"v.r = q.life_time;",
+						"/playsound pixelpoly.m249_chain2 @s[scores={m249=6..}]"
+					],
+					"transitions": [
+						{
+							"reloaded2": "(q.life_time - v.r) >= 1.0"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						}
+					]
+				},
+				"reloaded2": {
+					"on_entry": [],
+					"transitions": [
+						{
+							"shoot": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						},
+						{
+							"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1 && q.is_powered || q.is_ignited"
+						}
+					]
+				},
+				"shoot": {
+					"on_entry": [
+						"v.r = q.life_time;",
+						"/tag @s add drawn"
+					],
+					"transitions": [
+						{
+							"fire": "q.get_equipped_item_name(0) == 'm249' && !query.is_sprinting && query.is_using_item && !query.is_in_water && (q.scoreboard('m249') >= 1)"
+						},
+						{
+							"m249_empty": "q.get_equipped_item_name(0) == 'm249' && (q.scoreboard('m249') == 0)"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						}
+					]
+				},
+				"firing": {
+					"on_entry": [
+						"v.bullet_fire = q.life_time;"
+					],
+					"transitions": [
+						{
+							"shoot": "q.get_equipped_item_name(0) != 'm249' || q.is_sprinting || !q.is_using_item || (q.scoreboard('m249') == 0)"
+						},
+						{
+							"fire": "(q.life_time - v.bullet_fire) >= 0.07"
+						}
+					]
+				},
+				"fire": {
+					"on_entry": [
+						"@s m249:fire",
+						"/execute as @s[scores={m249=6..}] at @s run playsound pixelpoly.m249_fire @a ~~~ 4.5",
+						"/execute as @s[scores={m249=..5}] at @s run playsound pixelpoly.m249_fire_empty @a ~~~ 4",
+						"/fill ~~~ ~~~ gb:muzzle_flash1 replace air",
+						"/scoreboard players remove @s[m=!c,scores={m249=1..100}] m249 1"
+					],
+					"on_exit": [
+						"v.bullet_fire = q.life_time;"
+					],
+					"transitions": [
+						{
+							"firing": "1.0"
+						},
+						{
+							"m249_empty": "q.get_equipped_item_name(0) == 'm249' && (q.scoreboard('m249') == 0)"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') != 1"
+						},
+						{
+							"reload_error_real": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1 && q.is_powered || q.is_ignited"
+						}
+					]
+				},
+				"reload_error": {
+					"on_entry": [
+						"@s normal:player",
+						"@s trigger:onreload",
+						"/tag @s remove reload",
+						"/stopsound @s pixelpoly.m249_draw",
+						"/stopsound @s pixelpoly.m249_chain2",
+						"/stopsound @s pixelpoly.m249_pump"
+					],
+					"transitions": [
+						{
+							"default": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:m249') == 1"
+						},
+						{
+							"m249_empty": "q.get_equipped_item_name(0) == 'm249' && (q.scoreboard('m249') == 0)"
+						}
+					]
+				},
+				"reload_error_real": {
+					"on_entry": [],
+					"transitions": [
+						{
+							"shoot": "1.0"
+						}
+					]
+				}
+			}
+		}
+	}
+}
+// This code is exclusive to both Add-ons (ActualGuns 2D and 3D) and can not be used by anybody else.

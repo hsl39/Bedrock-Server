@@ -1,0 +1,183 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "true:diamond_combat_shovel",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.shovel"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+                "tags": [
+					"break:shovel",
+					"minecraft:transformable_items",
+					"minecraft:is_shovel"
+                ]
+            },
+            "minecraft:hand_equipped": true,
+			"minecraft:repairable": {
+				"repair_items": [
+                    {
+                        "items": [
+                          "minecraft:diamond"
+                        ],
+                        "repair_amount": "query.max_durability * 0.25"
+                    }
+				]
+			  },
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": 6,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "sword"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+						},
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:grass_path",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:soul_sand",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:soul_soil",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:mud",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:dirt_with_roots",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:muddy_mangrove_roots",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:farmland",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:snow",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:grass",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:gravel",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:sand",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:dirt",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:concretePowder",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:mycelium",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:podzol",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:snow",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:clay",
+						"speed": 8,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "destroy_block",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {},
+			"minecraft:icon": {
+				"texture": "diamond_combat_shovel"
+			},
+			"minecraft:durability": {
+				"max_durability": 780
+			}
+		}
+	}
+}

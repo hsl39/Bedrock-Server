@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ant.move": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"FrontLegs": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [35, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"RearLegs": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-50, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"MidLegs": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-60, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

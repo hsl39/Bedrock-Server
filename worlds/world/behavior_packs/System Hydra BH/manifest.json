@@ -1,0 +1,36 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "§a§l[Use Experimental Mode]\n§3§lMade by SystemTv Twitter@SystemTv_",
+		"name": "System Hydra Addon V1.1 §2Behavior",
+		"uuid": "6c5556ad-be8a-44e6-932f-1e9e3343a03f",
+		"version": [ 1, 0, 0 ],
+		"min_engine_version": [
+			1,
+			20,
+			30
+		]
+	},
+	"modules": [
+		{
+			"description": "§a§l[Use Experimental Mode]\n§3§lMade by SystemTv Twitter@SystemTv_",
+			"type": "data",
+			"uuid": "8b76ab1e-bd87-4d27-9095-b9efb9b2f366",
+			"version": [ 0, 1, 0 ]
+		},
+		{
+			"description": "Javascript module code",
+			"language": "javascript",
+			"type": "script",
+			"uuid": "31595dd0-4261-46bb-b670-067a5b430c65",
+			"version": [ 0, 1, 0 ],
+			"entry": "scripts/main.js"
+		}
+	],
+	"dependencies": [
+		{ 
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
+		}
+	]
+}

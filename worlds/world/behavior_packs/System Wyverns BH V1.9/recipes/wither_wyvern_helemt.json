@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:wither_wyvern_chestplate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "new:wither_wyvern_escame"
+      }
+    },
+    "result": {
+      "item": "new:wither_wyvern_chestplate"
+    }
+  }
+}

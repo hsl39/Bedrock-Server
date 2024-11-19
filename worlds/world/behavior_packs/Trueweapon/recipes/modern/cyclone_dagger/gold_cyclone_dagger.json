@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "gold_cyclone_dagger"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BA"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"A": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:gold_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "true:gold_cyclone_dagger"
+			}
+		]
+	}
+}

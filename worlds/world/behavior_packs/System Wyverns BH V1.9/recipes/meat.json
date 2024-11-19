@@ -1,0 +1,33 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "new:meat"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " FB",
+      "SBF",
+      "AS "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:bone"
+      },
+      "B": {
+        "item": "minecraft:beef"
+      },
+      "S": {
+        "item": "minecraft:chicken"
+      },
+      "F": {
+        "item": "minecraft:porkchop"
+      }
+    },
+    "result": {
+      "item": "new:meat"
+    }
+  }
+}

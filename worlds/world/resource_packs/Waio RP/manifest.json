@@ -1,0 +1,26 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "min_engine_version": [1, 21, 20],
+    "uuid": "b7443015-571c-4894-9553-abeaa34f5f26",
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "ffaafd1d-5bb8-44e0-9288-e808ffed773a",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "5530f245-5c00-4898-9960-5bbdc63d0d5a",
+      "version": [1, 0, 0]
+    }
+  ],
+  "metadata": {
+    "authors": ["Scodev"]
+  }
+}

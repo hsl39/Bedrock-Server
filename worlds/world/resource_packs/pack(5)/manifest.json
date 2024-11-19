@@ -1,0 +1,45 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "6a54179c-e734-48c9-8fd9-c9f2a5e1ca1e",
+        "min_engine_version": [
+            1,
+            21,
+            30
+        ],
+        "version": [
+            1,
+            1,
+            4
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "81e87640-fa72-420c-91ae-2ef5508e9936",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+      "dependencies": [
+        {
+            "uuid": "3d12ef92-e655-491b-bc99-d16619ad57da",
+            "version": [
+                1,
+                1,
+                4
+            ]
+        }
+      ],
+      "metadata": {
+        "authors": ["ihategravel/Nobody"],
+        "url": "https://twitter.com/justnobodyrn",
+        "license": "All rights reserved",
+        "product_type": "addon"
+    }
+}

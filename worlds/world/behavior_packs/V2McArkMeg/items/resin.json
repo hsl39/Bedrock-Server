@@ -1,0 +1,49 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mc_ark:resin", 
+			"category": "equipment"
+		},
+		"components": { 
+			"minecraft:max_stack_size":60,
+      "minecraft:render_offsets": "tools",
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.Equipment"
+      },
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "mc_ark:attack"
+				}
+				},
+			"minecraft:icon": {
+				"texture": "resin"
+			},
+			      "minecraft:use_duration": 25, 
+			"minecraft:cooldown": {
+				"category": "ender_pearl",
+				"duration": 0.1
+			},
+			"minecraft:display_name": {
+				"value": "§l§6Resin" 
+			}  
+		},
+		"events": {
+			"mc_ark:attack": {
+				"run_command": {  
+					"command": [
+						"tag @e[family=adult,r=4] add attack_solicitud_shoot1"
+					]   
+				}  
+			},
+			"tool_durability": {
+				"damage": {
+				  "type": "none",
+				  "target": "self",
+				  "amount": 1
+				}
+			  }
+		} 
+	}
+}

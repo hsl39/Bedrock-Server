@@ -1,0 +1,192 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "twm:autosieve",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"twm:speed": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:facing_direction"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							-90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'down' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'north' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'south' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'east' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'west' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_autosieve_speed1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/autosieve/speed1.json",
+					"minecraft:tick": {
+						"interval_range": [
+							40,
+							40
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_autosieve_speed2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/autosieve/speed2.json",
+					"minecraft:tick": {
+						"interval_range": [
+							20,
+							20
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_autosieve_speed3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/autosieve/speed3.json",
+					"minecraft:tick": {
+						"interval_range": [
+							10,
+							10
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_autosieve_speed4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/autosieve/speed4.json",
+					"minecraft:tick": {
+						"interval_range": [
+							10,
+							10
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.twm_block_2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "twm_autosieve",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"twm:machine_upgrades",
+				"twm:autosieve"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					80,
+					80
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "iron_seitengewehr"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" A",
+			"AB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"A": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:iron_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "true:iron_seitengewehr"
+			}
+		]
+	}
+}

@@ -1,0 +1,14 @@
+##Pack Info
+pack.name=Gravel's Hammers Resources 2.8 (1.21.30+)
+pack.description=Made by ihategravel from Gravel Studios || https://twitter.com/justnobodyrn
+##Blocks
+tile.ihg:workbench.name=Workbench
+##Blocks Menu
+ihg:workbench=Workbench
+##Items
+item.ihg:wooden_hammer=Wooden Hammer
+item.ihg:stone_hammer=Stone Hammer
+item.ihg:iron_hammer=Iron Hammer
+item.ihg:gold_hammer=Gold Hammer
+item.ihg:diamond_hammer=Diamond Hammer
+item.ihg:netherite_hammer=Netherite Hammer

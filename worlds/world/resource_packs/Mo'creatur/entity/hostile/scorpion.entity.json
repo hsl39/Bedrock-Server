@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:scorpion",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"dirt": "textures/models/scorpiondirt",
+				"cave": "textures/models/scorpioncave",
+				"frost": "textures/models/scorpionfrost",
+				"nether": "textures/models/scorpionnether",
+				"dirt_saddle": "textures/models/scorpiondirtsaddle",
+				"frost_saddle": "textures/models/scorpionfrostsaddle",
+				"cave_saddle": "textures/models/scorpioncavesaddle",
+				"nether_saddle": "textures/models/scorpionnethersaddle"
+			},
+			"geometry": {
+				"default": "geometry.scorpion"
+			},
+			"scripts": {
+				"animate": [
+					"base_pose",
+					{
+						"idle": "query.is_idling"
+					},
+					{
+						"walk": "query.modified_move_speed"
+					},
+					{
+						"attack": "v.attack_time"
+					}
+				]
+			},
+			"animations": {
+				"base_pose": "animation.scorpion.base_pose",
+				"idle": "animation.scorpion.say",
+				"walk": "animation.scorpion.walk",
+				"attack": "animation.scorpion.attack"
+			},
+			"render_controllers": [
+				"controller.render.scorpion"
+			],
+			"spawn_egg": {
+				"base_color": "#FF0000",
+				"overlay_color": "#5C5CCD"
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+  "mob.hydra.attack": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "sounds/mob/hydra/attack",
+        "volume": 1
+      }
+    ]
+  },
+  "mob.hydra.ambient": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/hydra/ambient"
+    ]
+  },
+  "random.electric": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/electric"
+    ]
+  },
+  "mob.hydra.roar": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "sounds/mob/hydra/roaring",
+        "volume": 0.4
+      }
+    ]
+  },
+  "mob.hydra.stomp": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "sounds/mob/hydra/stomp",
+        "volume": 1.4
+      }
+    ]
+  },
+  "mob.hydra.shoot": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/hydra/shoot"
+    ]
+  },
+  "mob.hydra.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/hydra/death"
+    ]
+  },
+  "mob.hydra.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/hydra/hurt"
+    ]
+  },
+  "mob.hydra.break": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/hydra/rompe"
+    ]
+  },
+  "mob.hydra.grow": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/hydra/crece"
+    ]
+  }
+}

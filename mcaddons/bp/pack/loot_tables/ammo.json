@@ -1,0 +1,54 @@
+{
+    "pools": [
+        {
+            "rolls": 3,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ar:akm_mag",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "ar:mk18_mag",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "lmg:m249_mag",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "pistol:taurus_mag",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "smg:p90_mag",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "smg:mp5_mag",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "sniper:awp_mag",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "sniper:barrett_mag",
+                    "weight": 100
+                },
+                {
+                    "type": "item",
+                    "name": "shotgun:m3_ammo",
+                    "weight": 100
+                }
+            ]
+        }
+    ]
+}

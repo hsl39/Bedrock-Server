@@ -1,0 +1,417 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+	    
+		"controller.animation.rhyniognatha_baby_mc_ark": {
+			"initial_state": "age1",
+			"states": { 
+			    
+				"age1": {
+"on_entry": [
+           "/particle minecraft:crop_growth_emitter ~~0.5~",
+ "variable.age_mc_ark = 1.0; return variable.age_mc_ark;",
+"@s minecraft:mc_ark_baby_age_1" 
+                    ],
+          "transitions": [
+						{ 
+							"age2": "(variable.age_mc_ark == 2.0)"
+						}
+                   ],
+          "animations": [ 
+"age_growing" 
+                   ]
+				},
+				"age2": {
+"on_entry": [
+           "/particle minecraft:crop_growth_emitter ~~0.5~",
+"@s minecraft:mc_ark_baby_age_2" 
+                    ],
+          "transitions": [
+						{ 
+							"age3": "(variable.age_mc_ark == 3.0)"
+						}
+                   ],
+          "animations": [ 
+"age_growing"
+                   ]
+				},
+				"age3": {
+"on_entry": [
+           "/particle minecraft:crop_growth_emitter ~~0.5~",
+"@s minecraft:mc_ark_baby_age_3"
+                    ],
+          "transitions": [
+						{ 
+							"age4": "(variable.age_mc_ark == 4.0)"
+						}
+                   ],
+          "animations": [ 
+"age_growing"
+                   ] 
+				},
+				"age4": {
+"on_entry": [
+           "/particle minecraft:crop_growth_emitter ~~0.5~",
+"@s minecraft:mc_ark_baby_age_4" 
+                    ],
+          "transitions": [
+						{ 
+							"age5": "(variable.age_mc_ark == 5.0)"
+						}
+                   ],
+          "animations": [  
+"age_growing"
+                   ]
+				},
+				"age5": {
+          "transitions": [
+						{ 
+							"lvl10": "(variable.breeding_points <= 50.0)"
+						},
+						{ 
+							"lvl50": "(variable.breeding_points > 50.0) && (variable.breeding_points <= 100.0)"
+						},
+						{ 
+							"lvl100": "(variable.breeding_points > 100.0) && (variable.breeding_points <= 150.0)"
+						},
+						{ 
+							"lvl150": "(variable.breeding_points > 150.0) && (variable.breeding_points <= 200.0)"
+						},
+						{ 
+							"lvl200": "(variable.breeding_points > 200.0) && (variable.breeding_points <= 250.0)"
+						},
+						{ 
+							"lvl250": "(variable.breeding_points > 250.0)"
+						}
+                   ]
+				},
+				
+				
+				"lvl10": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl10",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl50": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl50",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl100": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl100",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl150": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl150",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl200": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl150",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl250": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl250",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				}
+			}
+		},
+		"controller.animation.inicial_points_rhyniognatha_baby_mc_ark": {
+			"initial_state": "default",
+			"states": { 
+			    
+				"default": {
+          "transitions": [
+						{ 
+							"lvl10": "(query.has_any_family('mc_ark_babylvl10'))"
+						},
+						{ 
+							"lvl50": "(query.has_any_family('mc_ark_babylvl50'))"
+						},
+						{ 
+							"lvl100": "(query.has_any_family('mc_ark_babylvl100'))"
+						},
+						{ 
+							"lvl150": "(query.has_any_family('mc_ark_babylvl150'))"
+						},
+						{ 
+							"lvl200": "(query.has_any_family('mc_ark_babylvl200'))"
+						},
+						{ 
+							"lvl250": "(query.has_any_family('mc_ark_babylvl250'))"
+						}
+                   ], 
+          "animations": [ 
+"age_growing" 
+                   ]
+				}, 
+				"lvl10": {
+"on_entry": [
+ "variable.breeding_points = 50; return variable.breeding_points;"
+                    ]
+				},
+				"lvl50": {
+"on_entry": [
+ "variable.breeding_points = 100; return variable.breeding_points;"
+                    ]
+				},
+				"lvl100": {
+"on_entry": [
+ "variable.breeding_points = 150; return variable.breeding_points;"
+                    ]
+				},
+				"lvl150": { 
+"on_entry": [  
+ "variable.breeding_points = 200; return variable.breeding_points;"
+                    ]
+				},
+				"lvl200": {
+"on_entry": [
+ "variable.breeding_points = 250; return variable.breeding_points;"
+                    ]
+				}, 
+				"lvl250": {
+"on_entry": [
+ "variable.breeding_points = 300; return variable.breeding_points;"
+                    ]
+				}
+			}
+		},
+	    
+		"controller.animation.inicial_points_baby_mc_ark": {
+			"initial_state": "default",
+			"states": { 
+			    
+				"default": {
+          "transitions": [
+						{ 
+							"lvl10": "(query.has_any_family('mc_ark_babylvl10'))"
+						},
+						{ 
+							"lvl50": "(query.has_any_family('mc_ark_babylvl50'))"
+						},
+						{ 
+							"lvl100": "(query.has_any_family('mc_ark_babylvl100'))"
+						},
+						{ 
+							"lvl150": "(query.has_any_family('mc_ark_babylvl150'))"
+						},
+						{ 
+							"lvl200": "(query.has_any_family('mc_ark_babylvl200'))"
+						},
+						{ 
+							"lvl250": "(query.has_any_family('mc_ark_babylvl250'))"
+						}
+                   ], 
+          "animations": [ 
+"age_growing" 
+                   ]
+				},
+				"lvl10": {
+"on_entry": [
+ "variable.breeding_points = 80; return variable.breeding_points;"
+                    ]
+				},
+				"lvl50": {
+"on_entry": [
+ "variable.breeding_points = 110; return variable.breeding_points;"
+                    ]
+				},
+				"lvl100": {
+"on_entry": [
+ "variable.breeding_points = 210; return variable.breeding_points;"
+                    ]
+				},
+				"lvl150": { 
+"on_entry": [  
+ "variable.breeding_points = 250; return variable.breeding_points;"
+                    ]
+				},
+				"lvl200": {
+"on_entry": [
+ "variable.breeding_points = 300; return variable.breeding_points;"
+                    ]
+				}, 
+				"lvl250": {
+"on_entry": [
+ "variable.breeding_points = 300; return variable.breeding_points;"
+                    ]
+				}
+			}
+		},
+	    
+		"controller.animation.normal_baby_mc_ark": {
+			"initial_state": "age0",
+			"states": { 
+				"age0": {
+          "transitions": [
+						{ 
+							"age1": "query.variant != 777"
+						}
+                   ]
+				},
+				"age1": {
+"on_entry": [
+           "/particle minecraft:crop_growth_emitter ~~0.5~",
+ "variable.age_mc_ark = 1.0; return variable.age_mc_ark;",
+"@s minecraft:mc_ark_baby_age_1" 
+                    ],
+          "transitions": [
+						{ 
+							"age2": "(variable.age_mc_ark == 2.0)"
+						}
+                   ],
+          "animations": [ 
+"age_growing" 
+                   ]
+				},
+				"age2": {
+"on_entry": [
+           "/particle minecraft:crop_growth_emitter ~~0.5~",
+"@s minecraft:mc_ark_baby_age_2" 
+                    ],
+          "transitions": [
+						{ 
+							"age3": "(variable.age_mc_ark == 3.0)"
+						}
+                   ],
+          "animations": [ 
+"age_growing"
+                   ]
+				},
+				"age3": {
+"on_entry": [
+           "/particle minecraft:crop_growth_emitter ~~0.5~",
+"@s minecraft:mc_ark_baby_age_3"
+                    ],
+          "transitions": [
+						{ 
+							"age4": "(variable.age_mc_ark == 4.0)"
+						}
+                   ],
+          "animations": [ 
+"age_growing"
+                   ] 
+				},
+				"age4": {
+"on_entry": [
+           "/particle minecraft:crop_growth_emitter ~~0.5~",
+"@s minecraft:mc_ark_baby_age_4" 
+                    ],
+          "transitions": [
+						{ 
+							"age5": "(variable.age_mc_ark == 5.0)"
+						}
+                   ],
+          "animations": [  
+"age_growing"
+                   ]
+				},
+				"age5": {
+          "transitions": [
+						{ 
+							"lvl10": "(variable.breeding_points < 50.0)"
+						},
+						{ 
+							"lvl50": "(variable.breeding_points >= 50.0) && (variable.breeding_points < 75.0)"
+						},
+						{ 
+							"lvl100": "(variable.breeding_points >= 75.0) && (variable.breeding_points < 150.0)"
+						},
+						{ 
+							"lvl150": "(variable.breeding_points >= 150.0) && (variable.breeding_points < 200.0)"
+						},
+						{ 
+							"lvl200": "(variable.breeding_points >= 200.0) && (variable.breeding_points < 250.0)"
+						},
+						{ 
+							"lvl250": "(variable.breeding_points >= 250.0)"
+						}
+                   ]
+				},
+				
+				
+				"lvl10": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl10",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl50": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl50",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl100": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl100",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl150": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl150",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl200": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl150",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				},
+				"lvl250": {
+"on_entry": [
+           "/particle minecraft:crop_growth_area_emitter ~~0.5~",
+           "/tag @s add lvl250",
+"@s minecraft:adult_summon_lvl"
+                    ] 
+				}
+			}
+		},
+		
+		"controller.animation.hunger_baby_mc_ark": {
+			"initial_state": "default",
+			"states": { 
+			    
+				"default": {
+          "animations": [   
+						{  
+						 	"bad_temperature_progress_mc_ark": "(query.is_saddled && query.is_baby)"
+						},
+						{  
+							"hunger_particles_mc_ark": "(query.is_illager_captain && query.is_baby)"
+						},
+						{  
+							"hunger_progress_mc_ark": "(query.is_illager_captain && query.is_baby)"
+						},
+						{   
+							"hunger_time_mc_ark": "(!query.is_illager_captain && query.is_baby)"
+						}
+                   ]
+				}
+			}
+		}
+	}
+}  

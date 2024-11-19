@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mocreatures:fishnet"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " # ",
+            "S#S",
+            "#S#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:string"
+            },
+            "S": {
+                "item": "mocreatures:sharkteeth"
+            }
+        },
+        "result": {
+            "item": "mocreatures:fishnet",
+            "count": 1
+        }
+    }
+}

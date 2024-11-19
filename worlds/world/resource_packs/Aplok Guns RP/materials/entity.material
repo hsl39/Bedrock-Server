@@ -1,0 +1,19 @@
+{
+	"materials": {
+		"version": "1.0.0",
+		"laser:charged_creeper": {},
+		"nv_goggles:entity_beam_additive": {
+			"blendSrc": "DestColor",
+			"blendDst": "SourceColor",
+			"+defines": [
+				"USE_EMISSIVE"
+			],
+			"+states": [
+				"Blending",
+				"DisableCulling",
+				"DisableDepthWrite",
+				"DisableAlphaWrite"
+			]
+		}
+	}
+}

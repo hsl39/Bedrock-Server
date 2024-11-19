@@ -1,0 +1,71 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "minecraft:axolotl",
+            "materials": {
+                "default": "axolotl",
+                "limbs": "axolotl_limbs"
+            },
+            "textures": {
+                "a": "textures/entity/axolotl/a",
+                "b": "textures/entity/axolotl/b",
+                "c": "textures/entity/axolotl/c",
+                "d": "textures/entity/axolotl/d",
+                "e": "textures/entity/axolotl/e",
+                "f": "textures/entity/axolotl/f",
+                "g": "textures/entity/axolotl/g",
+                "h": "textures/entity/axolotl/h",
+                "i": "textures/entity/axolotl/i",
+                "j": "textures/entity/axolotl/j",
+                "k": "textures/entity/axolotl/k",
+                "l": "textures/entity/axolotl/l",
+                "m": "textures/entity/axolotl/m",
+                "n": "textures/entity/axolotl/n",
+                "o": "textures/entity/axolotl/o",
+                "p": "textures/entity/axolotl/p",
+                "q": "textures/entity/axolotl/q",
+                "r": "textures/entity/axolotl/r",
+                "s": "textures/entity/axolotl/s",
+                "t": "textures/entity/axolotl/t",
+                "u": "textures/entity/axolotl/u",
+                "v": "textures/entity/axolotl/v"
+            },
+            "geometry": {
+                "default": "geometry.axolotl"
+            },
+            "animations": {
+                "idle_float": "animation.axolotl.idle_underwater",
+                "idle_floor": "animation.axolotl.idle_floor",
+                "idle_floor_water": "animation.axolotl.idle_floor_underwater",
+                "swim": "animation.axolotl.swim",
+                "walk_floor": "animation.axolotl.walk_floor",
+                "walk_floor_water": "animation.axolotl.walk_floor_underwater",
+                "play_dead": "animation.axolotl.play_dead",
+                "swim_angle": "animation.axolotl.swim_angle",
+                "look_at_target": "animation.common.look_at_target"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.moving = query.ground_speed > 0 || query.vertical_speed > 0;",
+                    "variable.pitch = query.body_x_rotation;"
+                ]
+            },
+            "animation_controllers": [
+                {
+                    "general": "controller.animation.axolotl.general"
+                },
+                {
+                    "move": "controller.animation.axolotl.move"
+                }
+            ],
+            "render_controllers": [
+                "controller.render.axolotl"
+            ],
+            "spawn_egg": {
+                "base_color": "#0xfbc1e3",
+                "overlay_color": "#0xa62d74"
+            }
+        }
+    }
+}

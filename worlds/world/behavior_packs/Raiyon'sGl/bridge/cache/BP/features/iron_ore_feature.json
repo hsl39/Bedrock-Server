@@ -1,0 +1,147 @@
+{
+	"file_path": "C:\\Users\\elcha\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Raiyon's Glowing Ores\\features\\iron_ore_feature.json",
+	"file_type": "feature",
+	"format_version": 1,
+	"file_uuid": "1bd98402_e135_4a8c_b6b4_56333813e281",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:ore_feature": {
+						"description": {
+							"identifier": "ray:iron_ore_feature"
+						},
+						"count": 8,
+						"replace_rules": [
+							{
+								"places_block": "ray:iron_ore",
+								"may_replace": [
+									"minecraft:iron_ore"
+								]
+							}
+						]
+					}
+				},
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:ore_feature": {
+						"description": {
+							"identifier": "ray:iron_ore_feature"
+						},
+						"count": 8,
+						"replace_rules": [
+							{
+								"places_block": "ray:iron_ore",
+								"may_replace": [
+									"minecraft:iron_ore"
+								]
+							}
+						]
+					}
+				},
+				"key": "minecraft:ore_feature",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:iron_ore_feature"
+							},
+							"count": 8,
+							"replace_rules": [
+								{
+									"places_block": "ray:iron_ore",
+									"may_replace": [
+										"minecraft:iron_ore"
+									]
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:iron_ore_feature"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:iron_ore_feature"
+							},
+							"count": 8,
+							"replace_rules": [
+								{
+									"places_block": "ray:iron_ore",
+									"may_replace": [
+										"minecraft:iron_ore"
+									]
+								}
+							]
+						},
+						"data": "8",
+						"key": "count"
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:iron_ore_feature"
+							},
+							"count": 8,
+							"replace_rules": [
+								{
+									"places_block": "ray:iron_ore",
+									"may_replace": [
+										"minecraft:iron_ore"
+									]
+								}
+							]
+						},
+						"key": "replace_rules",
+						"children": [
+							{
+								"open": [
+									{
+										"places_block": "ray:iron_ore",
+										"may_replace": [
+											"minecraft:iron_ore"
+										]
+									}
+								],
+								"children": [
+									{
+										"open": {
+											"places_block": "ray:iron_ore",
+											"may_replace": [
+												"minecraft:iron_ore"
+											]
+										},
+										"data": "ray:iron_ore",
+										"key": "places_block"
+									},
+									{
+										"open": {
+											"places_block": "ray:iron_ore",
+											"may_replace": [
+												"minecraft:iron_ore"
+											]
+										},
+										"key": "may_replace",
+										"is_minified": true,
+										"children": [
+											"minecraft:iron_ore"
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.firearm_setup.root": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "0 + (q.head_y_rotation(0) - q.body_y_rotation)", 0]
+				}
+			}
+		},
+		"animation.bullet.root": {
+			"loop": true,
+			"bones": {
+				"bullet": {
+					"rotation": ["-q.target_x_rotation", "-q.body_y_rotation", 0],
+					"position": [ "v.math.pi = 3.141592653589793; v.radius = 5.0; v.pitch = q.head_x_rotation(0) * (v.math.pi / 180.0); v.yaw = q.head_y_rotation(0) * (v.math.pi / 180.0); return v.radius * math.cos(v.pitch) * math.sin(-v.yaw);", "v.math.pi = 3.141592653589793; v.radius = 5.0; v.pitch = q.head_x_rotation(0) * (v.math.pi / 180.0); v.yaw = q.head_y_rotation(0) * (v.math.pi / 180.0); return v.radius * math.sin(-v.pitch);", "v.math.pi = 3.141592653589793; v.radius = 5.0; v.pitch = q.head_x_rotation(0) * (v.math.pi / 180.0); v.yaw = q.head_y_rotation(0) * (v.math.pi / 180.0); return v.radius * math.cos(v.pitch) * math.cos(v.yaw);" ]
+				},
+				"bullet_shell": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.player.setup": {
+			"loop": true,
+			"bones": {
+				"main": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

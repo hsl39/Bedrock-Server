@@ -1,0 +1,73 @@
+// Coded by @JustAsh0005 for ActualGuns3D, you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.chaingrenade.first_person": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"first_person": "v.is_holding_chaingrenade && v.is_first_person"
+						}
+					]
+				},
+				"first_person": {
+					"animations": [
+						{
+							"chaingrenade.first_person.holding": "v.is_first_person && v.is_holding_chaingrenade && !v.u"
+						}
+					],
+					"transitions": [
+						{
+							"on_grenade_use": "v.is_first_person && v.is_holding_chaingrenade && v.u"
+						}
+					]
+				},
+				"on_grenade_use": {
+					"animations": [ "chaingrenade.first_person.on_use" ],
+					"transitions": [
+						{
+                            "first_person": "q.all_animations_finished"
+                        }
+					]
+				}
+			}
+		},
+		"controller.animation.chaingrenade.third_person": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"third_person": "v.is_holding_chaingrenade && v.is_third_person"
+						}
+					]
+				},
+				"third_person": {
+					"animations": [
+						{
+							"chaingrenade.third_person.holding": "v.is_third_person && v.is_holding_chaingrenade && !v.u"
+						}
+					],
+					"transitions": [
+						{
+							"on_grenade_use": "v.is_third_person && v.is_holding_chaingrenade && v.u"
+						}
+					]
+				},
+				"on_grenade_use": {
+					"animations": [ "chaingrenade.third_person.on_use" ],
+					"transitions": [
+						{
+                            "third_person": "q.all_animations_finished"
+                        }
+					]
+				}
+			}
+		}
+	}
+}
+
+// This code is exclusive to ActualGuns3D and can not be used by anybody else.

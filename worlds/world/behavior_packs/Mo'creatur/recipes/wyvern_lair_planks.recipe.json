@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "mocreatures:wyvern_log"
+            }
+        ],
+        "result": {
+            "item": "mocreatures:wyvern_woodplank",
+            "count": 4
+        },
+        "description": {
+            "identifier": "mocreatures:wyvern_lair_planks"
+        }
+    }
+}

@@ -1,0 +1,68 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Dorios Craft Studios"
+		],
+		"generated_with": {
+			"bridge": [
+				"1.8.5"
+			]
+		}
+	},
+	"header": {
+		"name": "§aUtilityCraft",
+		"description": "Version 2.9.1 §6Dorios Craft Studios\n§fStable Version",
+		"min_engine_version": [
+			1,
+			20,
+			80
+		],
+		"uuid": "bcb1357e-67ed-4f02-8d33-da1972e1c00e",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "b5c15a3d-4ecd-4054-bcbb-738e216bc004",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "1e55f57e-aaf9-4cdf-8730-7312bfcf6bc4",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "5e9890d5-1a17-43f1-b95f-aba20d313d02",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.12.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0"
+		}
+	]
+}

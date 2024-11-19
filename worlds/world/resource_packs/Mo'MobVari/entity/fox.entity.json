@@ -1,0 +1,59 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "minecraft:fox",
+            "materials": {
+                "default": "fox"
+            },
+            "textures": {
+                "a": "textures/entity/fox/a",
+                "b": "textures/entity/fox/b",
+                "c": "textures/entity/fox/c",
+                "d": "textures/entity/fox/d",
+                "e": "textures/entity/fox/e",
+                "f": "textures/entity/fox/f",
+                "g": "textures/entity/fox/g",
+                "h": "textures/entity/fox/h",
+                "i": "textures/entity/fox/i",
+                "j": "textures/entity/fox/j",
+                "k": "textures/entity/fox/k",
+                "l": "textures/entity/fox/l",
+                "m": "textures/entity/fox/m",
+                "n": "textures/entity/fox/n"
+            },
+            "geometry": {
+                "default": "geometry.fox"
+            },
+            "animations": {
+                "walk": "animation.quadruped.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "baby_transform": "animation.fox.baby_transform",
+                "crouch": "animation.fox.crouch",
+                "sleep": "animation.fox.sleep",
+                "setup": "animation.fox.setup",
+                "sit": "animation.fox.sit",
+                "wiggle": "animation.fox.wiggle",
+                "stuck": "animation.fox.stuck",
+                "pounce": "animation.fox.pounce",
+                "move": "controller.animation.fox.move"
+            },
+            "scripts": {
+                "animate": [
+                    "setup",
+                    {
+                        "baby_transform": "query.is_baby"
+                    },
+                    "move"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.fox"
+            ],
+            "spawn_egg": {
+                "texture": "spawn_egg",
+                "texture_index": 55
+            }
+        }
+    }
+}

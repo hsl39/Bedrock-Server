@@ -1,0 +1,29 @@
+//bridge-file-version: #41
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:crab",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"orange": "textures/models/craba",
+				"blue": "textures/models/crabb",
+				"orange_pink": "textures/models/crabc",
+				"green": "textures/models/crabd",
+				"orange_white": "textures/models/crabe"
+			},
+			"geometry": {
+				"default": "geometry.crab"
+			},
+			"render_controllers": [
+				"controller.render.crab"
+			],
+			"spawn_egg": {
+				"base_color": "#00FF7F",
+				"overlay_color": "#D1CE00"
+			}
+		}
+	}
+}

@@ -1,0 +1,1107 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.19.0",
+	"sound_definitions": {
+		"appear": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/appear"
+			]
+		},
+		"appearmagic": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/appearmagic"
+			]
+		},
+		"armoroff": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/armoroff"
+			]
+		},
+		"armorput": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/armorput"
+			]
+		},
+		"beardeath": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/beardeath"
+			]
+		},
+		"beargrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/beargrunt1",
+				"sounds/beargrunt2",
+				"sounds/beargrunt3",
+				"sounds/beargrunt4",
+				"sounds/beargrunt5"
+			]
+		},
+		"bearhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/bearhurt1",
+				"sounds/bearhurt2"
+			]
+		},
+		"bee": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/bee1",
+				"sounds/bee2",
+				"sounds/bee3"
+			]
+		},
+		"beeupset": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/beeupset"
+			]
+		},
+		"birdblack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/birdblack1",
+				"sounds/birdblack2",
+				"sounds/birdblack3"
+			]
+		},
+		"birdblue": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/birdblue1",
+				"sounds/birdblue2",
+				"sounds/birdblue3",
+				"sounds/birdblue4"
+			]
+		},
+		"birdgreen": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/birdgreen1",
+				"sounds/birdgreen2",
+				"sounds/birdgreen3"
+			]
+		},
+		"birdred": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/birdred1",
+				"sounds/birdred2",
+				"sounds/birdred3",
+				"sounds/birdred4",
+				"sounds/birdred5"
+			]
+		},
+		"birdwhite": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/birdwhite"
+			]
+		},
+		"birdyellow": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/birdyellow1",
+				"sounds/birdyellow2",
+				"sounds/birdyellow3",
+				"sounds/birdyellow4",
+				"sounds/birdyellow5"
+			]
+		},
+		"cricket": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/cricket"
+			]
+		},
+		"cricketfly": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/cricketfly"
+			]
+		},
+		"crocdying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/crocdying"
+			]
+		},
+		"crocgrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/crocgrunt1",
+				"sounds/crocgrunt2",
+				"sounds/crocgrunt3"
+			]
+		},
+		"crochurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/crochurt1",
+				"sounds/crochurt2",
+				"sounds/crochurt3"
+			]
+		},
+		"crocjawsnap": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/crocjawsnap1",
+				"sounds/crocjawsnap2"
+			]
+		},
+		"crocresting": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/crocresting1",
+				"sounds/crocresting2"
+			]
+		},
+		"crocroll": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/crocroll"
+			]
+		},
+		"cub": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/cub"
+			]
+		},
+		"cubdying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/cubdying"
+			]
+		},
+		"cubgrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/cubgrunt1",
+				"sounds/cubgrunt2",
+				"sounds/cubgrunt3",
+				"sounds/cubgrunt4",
+				"sounds/cubgrunt5"
+			]
+		},
+		"cubhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/cubhurt1",
+				"sounds/cubhurt2",
+				"sounds/cubhurt3"
+			]
+		},
+		"deerbgrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/deerbgrunt"
+			]
+		},
+		"deerdying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/deerdying"
+			]
+		},
+		"deerfgrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/deerfgrunt"
+			]
+		},
+		"deerhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/deerhurt"
+			]
+		},
+		"destroy": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/destroy"
+			]
+		},
+		"dolphin": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/dolphin1",
+				"sounds/dolphin2",
+				"sounds/dolphin3",
+				"sounds/dolphin4",
+				"sounds/dolphin5",
+				"sounds/dolphin6"
+			]
+		},
+		"dolphindying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/dolphindying1",
+				"sounds/dolphindying2",
+				"sounds/dolphindying3"
+			]
+		},
+		"dolphinhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/dolphinhurt1",
+				"sounds/dolphinhurt2"
+			]
+		},
+		"dolphinupset": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/dolphinupset"
+			]
+		},
+		"donkeydying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/donkeydying"
+			]
+		},
+		"donkeygrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/donkeygrunt1",
+				"sounds/donkeygrunt2"
+			]
+		},
+		"donkeyhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/donkeyhurt"
+			]
+		},
+		"dragonfly": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/dragonfly"
+			]
+		},
+		"drinking": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/drinking"
+			]
+		},
+		"duck": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/duck1",
+				"sounds/duck2",
+				"sounds/duck3"
+			]
+		},
+		"duckhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/duckhurt1",
+				"sounds/duckhurt2"
+			]
+		},
+		"duckplop": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/duckplop"
+			]
+		},
+		"eating": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/eating"
+			]
+		},
+		"elephantcalf": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/elephantcalf1",
+				"sounds/elephantcalf2"
+			]
+		},
+		"elephantdying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/elephantdying"
+			]
+		},
+		"elephantgrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/elephantgrunt1",
+				"sounds/elephantgrunt2",
+				"sounds/elephantgrunt3",
+				"sounds/elephantgrunt4",
+				"sounds/elephantgrunt5",
+				"sounds/elephantgrunt6",
+				"sounds/elephantgrunt7",
+				"sounds/elephantgrunt8"
+			]
+		},
+		"elephanthurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/elephanthurt1",
+				"sounds/elephanthurt2"
+			]
+		},
+		"firefly": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/firefly"
+			]
+		},
+		"fly": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/fly"
+			]
+		},
+		"foxcall": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/foxcall1",
+				"sounds/foxcall2",
+				"sounds/foxcall3",
+				"sounds/foxcall4",
+				"sounds/foxcall5"
+			]
+		},
+		"foxdying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/foxdying"
+			]
+		},
+		"foxhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/foxhurt1",
+				"sounds/foxhurt2"
+			]
+		},
+		"goatdigg": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/goatdigg"
+			]
+		},
+		"goatdying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/goatdying"
+			]
+		},
+		"goateating": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/goateating"
+			]
+		},
+		"goatfemale": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/goatfemale"
+			]
+		},
+		"goatgrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/goatgrunt"
+			]
+		},
+		"goathurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/goathurt"
+			]
+		},
+		"goatkid": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/goatkid"
+			]
+		},
+		"goatsmack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/goatsmack"
+			]
+		},
+		"golemattach": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/golemattach"
+			]
+		},
+		"golemdying": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/golemdying"
+			]
+		},
+		"golemexplode": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/golemexplode"
+			]
+		},
+		"golemgrunt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/golemgrunt1",
+				"sounds/golemgrunt2"
+			]
+		},
+		"golemhurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/golemhurt"
+			]
+		},
+		"golemshoot": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/golemshoot1",
+				"sounds/golemshoot2"
+			]
+		},
+		"golemwalk": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/golemwalk"
+			]
+		},
+		"horsedying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsedying"
+			]
+		},
+		"horsedyingghost": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsedyingghost"
+			]
+		},
+		"horsedyingundead": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsedyingundead"
+			]
+		},
+		"horsegrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsegrunt1",
+				"sounds/horsegrunt2",
+				"sounds/horsegrunt3"
+			]
+		},
+		"horsegruntghost": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsegruntghost1",
+				"sounds/horsegruntghost2",
+				"sounds/horsegruntghost3"
+			]
+		},
+		"horsegruntundead": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsegruntundead1",
+				"sounds/horsegruntundead2"
+			]
+		},
+		"horsehurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsehurt1",
+				"sounds/horsehurt2"
+			]
+		},
+		"horsehurtghost": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsehurtghost"
+			]
+		},
+		"horsehurtundead": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsehurtundead"
+			]
+		},
+		"horsemad": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsemad"
+			]
+		},
+		"horsemadghost": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsemadghost"
+			]
+		},
+		"horsemadundead": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/horsemadundead"
+			]
+		},
+		"kittendying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittendying"
+			]
+		},
+		"kittengrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittengrunt"
+			]
+		},
+		"kittenhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittenhurt1",
+				"sounds/kittenhurt2"
+			]
+		},
+		"kittydying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittydying1",
+				"sounds/kittydying2"
+			]
+		},
+		"kittyeatingf": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittyeatingf"
+			]
+		},
+		"kittyeatingm": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittyeatingm"
+			]
+		},
+		"kittyfood": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittyfood1",
+				"sounds/kittyfood2",
+				"sounds/kittyfood3",
+				"sounds/kittyfood4"
+			]
+		},
+		"kittygrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittygrunt1",
+				"sounds/kittygrunt2"
+			]
+		},
+		"kittyhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittyhurt1",
+				"sounds/kittyhurt2",
+				"sounds/kittyhurt3"
+			]
+		},
+		"kittypurr": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittypurr1",
+				"sounds/kittypurr2"
+			]
+		},
+		"kittytrapped": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittytrapped"
+			]
+		},
+		"kittyupset": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/kittyupset1",
+				"sounds/kittyupset2",
+				"sounds/kittyupset3"
+			]
+		},
+		"liondeath": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/liondeath"
+			]
+		},
+		"lionhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/lionhurt1",
+				"sounds/lionhurt2",
+				"sounds/lionhurt3",
+				"sounds/lionhurt4"
+			]
+		},
+		"liongrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/liongrunt1",
+				"sounds/liongrunt2",
+				"sounds/liongrunt3"
+			]
+		},
+		"micegrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/micegrunt1",
+				"sounds/micegrunt2",
+				"sounds/micegrunt3"
+			]
+		},
+		"micedying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/micedying1",
+				"sounds/micedying2"
+			]
+		},
+		"micehurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/micehurt1",
+				"sounds/micehurt2",
+				"sounds/micehurt3"
+			]
+		},
+		"ogre": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/ogre1",
+				"sounds/ogre2",
+				"sounds/ogre3"
+			]
+		},
+		"ogredying": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/ogredying"
+			]
+		},
+		"ogrehurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/ogrehurt"
+			]
+		},
+		"ostrichchick": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ostrichchick"
+			]
+		},
+		"ostrichdying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ostrichdying"
+			]
+		},
+		"ostrichgrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ostrichgrunt1",
+				"sounds/ostrichgrunt2"
+			]
+		},
+		"ostrichhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ostrichhurt1",
+				"sounds/ostrichhurt2"
+			]
+		},
+		"pegasus": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/pegasus"
+			]
+		},
+		"pouringfood": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/pouringfood"
+			]
+		},
+		"pouringmilk": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/pouringmilk"
+			]
+		},
+		"rabbitdeath": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/rabbitdeath"
+			]
+		},
+		"rabbithurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/rabbithurt1",
+				"sounds/rabbithurt2"
+			]
+		},
+		"rabbitland": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/rabbitland"
+			]
+		},
+		"rabbitlift": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/rabbitlift"
+			]
+		},
+		"raccoondying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/raccoondying"
+			]
+		},
+		"raccoongrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/raccoongrunt1",
+				"sounds/raccoongrunt2",
+				"sounds/raccoongrunt3",
+				"sounds/raccoongrunt4"
+			]
+		},
+		"raccoonhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/raccoonhurt1",
+				"sounds/raccoonhurt2"
+			]
+		},
+		"ratdying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ratdying"
+			]
+		},
+		"ratgrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ratgrunt1",
+				"sounds/ratgrunt2",
+				"sounds/ratgrunt3",
+				"sounds/ratgrunt4"
+			]
+		},
+		"rathurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/rathurt1",
+				"sounds/rathurt2"
+			]
+		},
+		"roping": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/roping"
+			]
+		},
+		"scorpionclaw": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/scorpionclaw"
+			]
+		},
+		"scorpiondying": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/scorpiondying"
+			]
+		},
+		"scorpiongrunt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/scorpiongrunt1",
+				"sounds/scorpiongrunt2",
+				"sounds/scorpiongrunt3",
+				"sounds/scorpiongrunt4"
+			]
+		},
+		"scorpionhurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/scorpionhurt"
+			]
+		},
+		"scorpionsting": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/scorpionsting1",
+				"sounds/scorpionsting2"
+			]
+		},
+		"shuffling": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/music/shuffling",
+					"stream": true
+				}
+			]
+		},
+		"snakedying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snakedying"
+			]
+		},
+		"snakehiss": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snakehiss1",
+				"sounds/snakehiss2"
+			]
+		},
+		"snakehurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snakehurt"
+			]
+		},
+		"snakerattle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snakerattle1",
+				"sounds/snakerattle2"
+			]
+		},
+		"snakesnap": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snakesnap"
+			]
+		},
+		"snakeswim": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snakeswim"
+			]
+		},
+		"snakeupset": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snakeupset1",
+				"sounds/snakeupset2"
+			]
+		},
+		"transform": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/transform"
+			]
+		},
+		"turkey": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/turkey1",
+				"sounds/turkey2"
+			]
+		},
+		"turkeyhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/turkeyhurt"
+			]
+		},
+		"turtledying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/turtledying"
+			]
+		},
+		"turtlehissing": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/turtlehissing"
+			]
+		},
+		"turtlehurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/turtlehurt"
+			]
+		},
+		"vanish": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vanish"
+			]
+		},
+		"werehumandying": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/werehumandying1",
+				"sounds/werehumandying2"
+			]
+		},
+		"werehumanhurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/werehumanhurt1",
+				"sounds/werehumanhurt2"
+			]
+		},
+		"weretransform": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/weretransform1",
+				"sounds/weretransform2",
+				"sounds/weretransform3"
+			]
+		},
+		"werewolfdying": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/werewolfdying1",
+				"sounds/werewolfdying2"
+			]
+		},
+		"werewolfgrunt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/werewolfgrunt1",
+				"sounds/werewolfgrunt2",
+				"sounds/werewolfgrunt3",
+				"sounds/werewolfgrunt4"
+			]
+		},
+		"werewolfhurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/werewolfhurt1",
+				"sounds/werewolfhurt2"
+			]
+		},
+		"whip": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/whip"
+			]
+		},
+		"wingflap": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wingflap"
+			]
+		},
+		"wolfdeath": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/wolfdeath"
+			]
+		},
+		"wolfgrunt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/wolfgrunt1",
+				"sounds/wolfgrunt2",
+				"sounds/wolfgrunt3"
+			]
+		},
+		"wolfhurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/wolfhurt1",
+				"sounds/wolfhurt2"
+			]
+		},
+		"wraith": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/wraith1",
+				"sounds/wraith2",
+				"sounds/wraith3"
+			]
+		},
+		"wraithdying": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/wraithdying1",
+				"sounds/wraithdying2"
+			]
+		},
+		"wraithhurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/wraithhurt1",
+				"sounds/wraithhurt2"
+			]
+		},
+		"wyverndying": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wyverndying"
+			]
+		},
+		"wyverngrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wyverngrunt1",
+				"sounds/wyverngrunt2",
+				"sounds/wyverngrunt3",
+				"sounds/wyverngrunt4",
+				"sounds/wyverngrunt5"
+			]
+		},
+		"wyvernhurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wyvernhurt1",
+				"sounds/wyvernhurt2"
+			]
+		},
+		"wyvernpoisoning": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wyvernpoisoning"
+			]
+		},
+		"wyvernwingflap": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wyvernwingflap"
+			]
+		},
+		"zebragrunt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/zebragrunt1",
+				"sounds/zebragrunt2"
+			]
+		},
+		"zebrahurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/zebrahurt"
+			]
+		}
+	}
+}

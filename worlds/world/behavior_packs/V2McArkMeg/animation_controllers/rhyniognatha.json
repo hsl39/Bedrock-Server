@@ -1,0 +1,337 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+    "controller.animation.rhyniognatha_embarazador": {
+      "initial_state": "default",
+      "states": {
+        "default": { 
+          "transitions": [  
+            { 
+              "comenzar_proceso": "(query.health <= 20) && !query.is_tamed"
+            }
+          ],
+					"on_entry": [ 
+"@s minecraft:mucha_vida"
+					] ,
+					"on_exit": [ 
+					    "/effect @s levitation 1 20 true"
+					]  
+        },   
+        "comenzar_proceso": { 
+          "transitions": [
+            {
+              "sub_proceso": "(query.health <= 20 && query.is_delayed_attacking == 1)"
+            } , 
+            {
+              "default": "(query.health >  20)"
+            } ,
+            {
+              "default": "(query.is_tamed)"
+            }    
+          ],
+                    "animations": [
+               "regeneracion_mielera",
+               "atacar_embarazar"
+                        ], 
+					"on_entry": [ 
+					    "/effect @s resistance 5 3 true",
+"@s minecraft:poca_vida"
+					] 
+        },  
+        "sub_proceso": { 
+          "transitions": [
+            {
+              "segundo_proceso": "(query.health <= 20 && query.is_delayed_attacking == 0)"
+            } , 
+            {
+              "default": "(query.health >  20)"
+            } ,
+            {
+              "default": "(query.is_tamed)"
+            }   
+          ], 
+
+          
+					"on_entry": [  
+
+    "/execute @s[tag=lvl10] ~~~ replaceitem entity @e[tag=feromona_efecto,r=8] slot.armor.head 0 minecraft:iron_ingot",
+    "/execute @s[tag=lvl50] ~~~ replaceitem entity @e[tag=feromona_efecto,r=8] slot.armor.head 0 minecraft:gold_ingot",   
+    "/execute @s[tag=lvl100] ~~~ replaceitem entity @e[tag=feromona_efecto,r=8] slot.armor.head 0 minecraft:emerald",
+    "/execute @s[tag=lvl150] ~~~ replaceitem entity @e[tag=feromona_efecto,r=8] slot.armor.head 0 minecraft:diamond",
+    "/execute @s[tag=lvl200] ~~~ replaceitem entity @e[tag=feromona_efecto,r=8] slot.armor.head 0 minecraft:obsidian",
+    "/execute @s[tag=lvl250] ~~~ replaceitem entity @e[tag=feromona_efecto,r=8] slot.armor.head 0 minecraft:crying_obsidian"
+					] , 
+                    "animations": [
+               "regeneracion_mielera"
+                        ]
+        },  
+        "segundo_proceso": {  
+                    "animations": [ 
+               "regeneracion_mielera"
+                        ], 
+          "transitions": [
+            {
+              "default": "(query.health > 20)"  
+            } ,
+            {
+              "default": "(query.is_tamed)"
+            }   
+          ],
+					"on_entry": [  
+"@s minecraft:huyendo"
+					] 
+        }
+      }  
+    },
+        
+    "controller.animation.rhyniognatha_normal_attack": {
+      "initial_state": "default",
+      "states": {
+        "default": { 
+          "transitions": [  
+            {
+              "remove_ataque_normal": "(query.is_illager_captain)  && (!query.is_in_water) && query.mark_variant == 0"
+            },
+            {
+              "remove_ataque_shoot1": "(query.is_illager_captain)  && (!query.is_in_water) && query.mark_variant == 1"
+            }     ,
+            {
+              "remove_ataque_shoot2": "(!query.is_on_ground) && (query.is_illager_captain)  && (!query.is_in_water) && query.mark_variant == 2"
+            }     ,
+            {
+              "remove_ataque_especial_roar": "(query.mark_variant == 3)"
+            }
+          ], 
+					"on_entry": [ 
+"@s minecraft:remove_ataque_normal"
+					] 
+        },  
+        "remove_ataque_normal": { 
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } ,
+            {
+              "default": "!(query.has_rider)"
+            }   
+          ],
+                    "animations": [
+               "remove_ataque_normal"
+                        ], 
+					"on_exit": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+            "/tag @s remove attacking"
+					]  
+        },
+        "remove_ataque_shoot1": { 
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } ,
+            {
+              "default": "!(query.has_rider)"
+            }    
+          ], 
+                    "animations": [
+               "remove_ataque_shoot1"
+                        ], 
+					"on_exit": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+            "/tag @s remove attacking"
+					]  
+        },
+        "remove_ataque_shoot2": { 
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } ,
+            {
+              "default": "!(query.has_rider)"
+            }    
+          ], 
+                    "animations": [
+               "remove_ataque_shoot2"
+                        ], 
+					"on_exit": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+            "/tag @s remove attacking"
+					]  
+        },
+        "remove_ataque_especial_roar": { 
+          "transitions": [
+            {
+              "default": "(query.mark_variant != 3)"
+            } 
+          ], 
+                    "animations": [
+               "remove_ataque_especial_roar"
+                        ], 
+					"on_exit": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+            "/tag @s remove attacking"
+					]  
+        }
+      }  
+    },
+    "controller.animation.rhyniognatha_especial_attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "remove_ataque_especial": "(!query.is_on_ground) && (query.skin_id == 1)"
+            }
+          ], 
+					"on_entry": [ 
+
+    "/tag @s remove attack_solicitud_especial",
+    "/tag @s remove pickup_r",
+"@s minecraft:remove_ataque_especial"
+					] 
+        }, 
+        "remove_ataque_especial": {
+          "transitions": [
+            {
+              "default": "(query.skin_id == 0)"
+            }  ,
+            {
+              "default": "(query.is_on_ground)"
+            }  ,
+            {
+              "default": "!(query.has_rider)"
+            }   
+          ],  
+
+					"on_entry": [  
+    "/execute @a[tag=in_attack_especial] ~~~ tag @s remove in_attack_especial",
+"/ride @e[family=tyranosaurus_rex , r=6] start_riding @s teleport_rider",
+    "/tag @p[r=5] add in_attack_especial",
+
+"/ride @e[family=boat , r=6] start_riding @s teleport_rider", 
+"/ride @e[family=iron_golem , r=6] start_riding @s teleport_rider",
+"/ride @e[family=minecart , r=4] start_riding @s teleport_rider",
+"/ride @e[family=panda , r=4] start_riding @s teleport_rider",
+"/ride @e[family=skeleton_horse , r=4] start_riding @s teleport_rider",
+"/ride @e[family=mule , r=4] start_riding @s teleport_rider",
+"/ride @e[family=donkey , r=4] start_riding @s teleport_rider",
+"/ride @e[family=horse , r=4] start_riding @s teleport_rider",
+"/ride @e[family=ravager , r=6] start_riding @s teleport_rider",
+"/ride @e[family=warden , r=6] start_riding @s teleport_rider",
+
+"/ride @e[family=yutyrannus , r=6] start_riding @s teleport_rider",
+"/ride @e[family=trike , r=6] start_riding @s teleport_rider",
+"/ride @e[family=therizino , r=6] start_riding @s teleport_rider",
+"/ride @e[family=raptor_tek , r=4] start_riding @s teleport_rider",
+"/ride @e[family=raptor , r=4] start_riding @s teleport_rider",
+"/ride @e[family=parasaurus , r=6] start_riding @s teleport_rider",
+"/ride @e[family=moschops , r=4] start_riding @s teleport_rider",
+"/ride @e[family=dodo , r=4] start_riding @s teleport_rider",
+"/ride @e[family=pegomastax , r=4] start_riding @s teleport_rider", 
+"/ride @e[family=compy , r=4] start_riding @s teleport_rider",
+"/ride @e[family=dilophosaurus , r=4] start_riding @s teleport_rider",
+"/ride @e[type=pig , r=4] start_riding @s teleport_rider",
+"/ride @e[type=chicken , r=4] start_riding @s teleport_rider",
+"/ride @e[type=villager , r=4] start_riding @s teleport_rider",
+"/ride @e[type=zombie , r=4] start_riding @s teleport_rider",
+"/ride @e[type=skeleton , r=4] start_riding @s teleport_rider",
+"/ride @e[family=player , r=4] start_riding @s teleport_rider"  
+					] ,   
+		  			"on_exit": [ 
+		  			    
+
+
+    "/tag @s remove pickup_r",
+"/ride @e[type=player,tag=!in_attack_especial , r=4] stop_riding",
+
+"/ride @e[family=boat , r=4] stop_riding", 
+"/ride @e[family=iron_golem , r=4] stop_riding",
+"/ride @e[family=minecart , r=4] stop_riding",
+"/ride @e[family=panda , r=4] stop_riding",
+"/ride @e[family=skeleton_horse , r=4] stop_riding",
+"/ride @e[family=mule , r=4] stop_riding",
+"/ride @e[family=donkey , r=4] stop_riding",
+"/ride @e[family=horse , r=4] stop_riding",
+"/ride @e[family=ravager , r=4] stop_riding", 
+"/ride @e[family=warden , r=4] stop_riding",
+
+
+"/ride @e[family=yutyrannus , r=4] stop_riding",
+"/ride @e[family=trike , r=4] stop_riding",
+"/ride @e[family=therizino , r=4] stop_riding",
+"/ride @e[family=raptor_tek , r=4] stop_riding",
+"/ride @e[family=raptor , r=4] stop_riding",
+"/ride @e[family=parasaurus , r=4] stop_riding",
+"/ride @e[family=moschops , r=4] stop_riding",
+"/ride @e[type=tyranosaurus_rex , r=4] stop_riding",
+"/ride @e[type=dodo , r=4] stop_riding",
+"/ride @e[type=pegomastax , r=4] stop_riding",
+"/ride @e[type=compy , r=4] stop_riding",
+"/ride @e[type=dilophosaurios , r=4] stop_riding",
+"/ride @e[type=pig , r=4] stop_riding",
+"/ride @e[type=chicken , r=4] stop_riding",
+"/ride @e[type=villager , r=4] stop_riding",
+"/ride @e[type=zombie , r=4] stop_riding",
+"/ride @e[type=skeleton , r=4] stop_riding",
+ 
+    "/tag @s remove in_attack_especial"
+					]  ,
+                    "animations": [
+               "pickup_r"
+                        ]
+        } 
+      }  
+    },
+
+        
+        "controller.animation.rhyniognatha_fly_controlator": {
+            "initial_state": "default",
+            "states": {
+                "default": { 
+                    "animations": [  
+                        { "velocidad_0":"(query.target_x_rotation > 10 ) && (query.target_x_rotation <= 90 ) && (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding)" },
+                           
+                        { "velocidad_1":"(query.target_x_rotation >= 6 ) && (query.target_x_rotation <= 10 ) && (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && query.variant != 2" },
+                         
+                        { "velocidad_2":"(query.target_x_rotation >= -2 ) && (query.target_x_rotation <= 7 ) && (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && query.variant != 2" }, 
+
+                        
+                        { "velocidad_3":"(query.target_x_rotation >= -16 ) && (query.target_x_rotation <= -3 ) && (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding)" },  
+                        
+                        { "velocidad_4":"(query.target_x_rotation >= -120 ) && (query.target_x_rotation <= -17 ) && (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding)" }
+                    ]
+                }
+            }
+        },
+ 
+        
+		"controller.animation.rhyniognatha_fly_controlator_v2": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+                        { "under_water_tag":"(query.target_x_rotation > 20 ) && (query.target_x_rotation <= 90 ) && (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && query.variant == 2" },
+                        { "under_water_tag":"(query.target_x_rotation >= -120 ) && (query.target_x_rotation <= -30 ) && (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && query.variant == 2" }
+					]   
+				},
+				"under_water_tag": {
+					"transitions": [
+						{
+							"default": "!query.has_rider"
+						} ,
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+          "animations": [
+		"rhyniognatha_under_water_tag"
+              ]
+				}
+			}
+		}
+    }
+}

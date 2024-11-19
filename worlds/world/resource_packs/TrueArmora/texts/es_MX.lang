@@ -1,0 +1,156 @@
+pack.name=§bVerdadera expansion de armadura y herramientas BP§r Add-On (v1.4.1)
+pack.description=Paquete de texturas de §bVerdadera expasion de armadura y herramientas§r Add-On de §l§4True Cowboy§r!
+
+###################################
+###       Copper Plus           ###
+###################################
+
+item.true_cop:copper_pickaxe=Pico de cobre
+item.true_cop:copper_shovel=Pala de cobre
+item.true_cop:copper_sword=Espada de cobre
+item.true_cop:copper_axe=Hacha de cobre
+item.true_cop:copper_hoe=Azada de cobre
+item.true_cop:copper_helmet=Casco de cobre
+item.true_cop:copper_chestplate=Pechera de cobre
+item.true_cop:copper_leggings=Pantalones de cobre
+item.true_cop:copper_boots=Botas de cobre
+item.true_cop:rose_gold_pickaxe=Pico de oro rosa
+item.true_cop:rose_gold_shovel=Pala de oro rosa
+item.true_cop:rose_gold_sword=Espada de oro rosa
+item.true_cop:rose_gold_axe=Hacha de oro rosa
+item.true_cop:rose_gold_hoe=Azada de oro rosa
+item.true_cop:rose_gold_helmet=Casco de oro rosa
+item.true_cop:rose_gold_chestplate=Pechera de oro rosa
+item.true_cop:rose_gold_leggings=Pantalones de oro rosa
+item.true_cop:rose_gold_boots=Botas de oro rosa
+tile.true_cop:lightning_attracts=Atraerayos
+item.true_cop:thunder_sword=Espada atraerayos
+item.true_cop:lightning_attracts_item=Atraerayos
+
+item.gold_plate:netherite_ingot=Plata de oro
+
+###################################
+###       Deathnerite           ###
+###################################
+
+item.true:deathnerite_upgrade_smithing_template=Mejora para armadura de netherite
+item.true:darkness_upgrade_smithing_template=Mejora para armadura de deathnerite
+
+item.true_dn:deathnerite_pickaxe=Pico de mortamundita
+item.true_dn:deathnerite_shovel=Pala de mortamundita
+item.true_dn:deathnerite_sword=Espada de mortamundita
+item.true_dn:deathnerite_axe=Hacha de mortamundita
+item.true_dn:deathnerite_hoe=Azada de mortamundita
+item.true_dn:deathnerite_helmet=Casco de mortamundita
+item.true_dn:deathnerite_chestplate=Pechera de mortamundita
+item.true_dn:deathnerite_leggings=Pantalones de mortamundita
+item.true_dn:deathnerite_boots=Botas de mortamundita
+item.deathnerite:netherite_ingot=Lingote de mortamundita
+item.gold_plate:netherite_ingot=Placa dorada
+item.true_dn:gilded_deathnerite_helmet=Casco de mortamundita dorada
+item.true_dn:gilded_deathnerite_chestplate=Pechera de mortamundita dorada
+item.true_dn:gilded_deathnerite_leggings=Pantalones de mortamundita dorada
+item.true_dn:gilded_deathnerite_boots=Botas de mortamundita dorada
+item.true_dn:deathnerite_apple=Manzana de mortamundita
+item.true_dn:deathnerite_carrot=Zanahoria de mortamundita
+item.true_dn:deathnerite_katana=Katana de mortamundita
+item.true_dn:parcanite_pickaxe=Pico del caos
+item.true_dn:parcanite_shovel=Pala del caos
+item.true_dn:parcanite_sword=Espada de espectro del caos
+item.true_dn:parcanite_axe=Hacha de la desesperacion
+item.true_dn:parcanite_hoe=Azada del caos
+item.true_dn:parcanite_helmet=Casco del caos
+item.true_dn:parcanite_chestplate=Pechera del caos
+item.true_dn:parcanite_leggings=Pantalones del caos
+item.true_dn:parcanite_boots=Botas del caos
+
+###################################
+###       Oceanite              ###
+###################################
+
+item.true_on:seanite_helmet=Casco oceanico
+item.true_on:seanite_chestplate=Pechera oceanica
+item.true_on:seanite_leggings=Pantalones oceanicos
+item.true_on:seanite_boots=Botas oceanicas
+item.true_on:seanite_sword=Espada oceanica
+item.true_on:seanite_axe=Hacha oceanica
+item.true_on:seanite_pickaxe=Pico oceanico
+item.true_on:seanite_shovel=Pala oceanica
+item.true_on:seanite_hoe=Azada oceanica
+item.seanite:netherite_ingot=Lingote oceanico
+
+###################################
+###       Quartz Plus           ###
+###################################
+
+item.pa:quartz_helmet=Casco de quarzo
+item.pa:quartz_chestplate=Pechera de quarzo
+item.pa:quartz_leggings=Pantalones de quarzo
+item.pa:quartz_boots=Botas de quarzo
+
+item.pa:crying_helmet=Casco triste
+item.pa:crying_chestplate=Pechera llorosa
+item.pa:crying_leggings=Crying Leggings
+item.pa:crying_boots=Crying Boots
+
+###################################
+###      Warden armor           ###
+###################################
+item.wb:warden_helmet=Casco de guardian
+item.wb:warden_chestplate=Peto de guardian
+item.wb:warden_leggings=Pantalones de guardian
+item.wb:warden_boots=Botas de guardian
+
+item.wb:warden_sword=Espada de guardian
+item.wb:warden_axe=Hacha de guardian
+item.wb:warden_pickaxe=Pico de guardian
+item.wb:warden_shovel=Pala de guardian
+item.wb:warden_hoe=Azada de guardian
+###################################
+###      Steel PlUS             ###
+###################################
+item.pa:steel_sword=Espada de acero
+item.pa:steel_axe=Hacha de acero
+item.pa:steel_pickaxe=Pico de acero
+item.pa:steel_hoe=Azada de acero
+item.pa:steel_shovel=Pala de acero
+
+item.pa:steel_helmet=Casco de acero
+item.pa:steel_chestplate=Pechera de acero
+item.pa:steel_leggings=Pantalones de acero
+item.pa:steel_boots=Botas de acero
+
+item.pa:steel_ingot=Lingote de acero
+item.pa:steel_nugget=Pepitas de acero
+item.pa:iron_and_coal=Carbon y hierro sin mezclar
+
+item.pa:dark_steel_sword=Espada de acero oscuro
+item.pa:dark_steel_axe=Hacha de acero oscuro
+item.pa:dark_steel_pickaxe=Pico de acero oscuro
+item.pa:dark_steel_shovel=Pala de acero oscuro
+item.pa:dark_steel_hoe=Azada de acero oscuro
+
+item.pa:dark_steel_helmet=Casco de acero oscuro
+item.pa:dark_steel_chestplate=Pechera de acero oscuro
+item.pa:dark_steel_leggings=Pantalones de acero oscuro
+item.pa:dark_steel_boots=Botas de acero oscuro
+
+item.pa:dark_essence=Esencia oscura
+
+tile.pa:dark_essence_ore.name=Mena de esencia oscura
+
+###################################
+###      MAGMA PlUS             ###
+###################################
+item.true_magma:magma_pickaxe=Pico de magma
+item.true_magma:magma_shovel=Pala de magma
+item.true_magma:magma_sword=Espada de magma
+item.true_magma:magma_axe=Hacha de magma
+item.true_magma:magma_hoe=Azada de magma
+
+item.true_magma:magma_helmet=Casco de magma
+item.true_magma:magma_chestplate=Pechera de magma
+item.true_magma:magma_leggings=Pantalones de magma
+item.true_magma:magma_boots=Botas de magma
+
+item.true_magma:magma_ingot=Magma Ingot

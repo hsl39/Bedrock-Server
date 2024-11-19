@@ -1,0 +1,140 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "l4gg:bullet",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "component_groups": {
+      "adn:despawn": {
+        "minecraft:instant_despawn": {
+       }
+      },
+      "adn:full_damage": {
+      "minecraft:projectile": {
+        "onHit": {
+          "particle_on_hit": {
+              "particle_type": "minecraft:basic_smoke_particle",
+              "on_other_hit": true,
+              "on_entity_hit": true
+          },
+          "impact_damage": {
+            "damage": 14,
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": false
+          },
+         "remove_on_hit": { },
+          "stick_in_ground": {
+            "shake_time": 0.35
+          },
+          "arrow_effect": {},
+          "definition_event": {
+            "affect_projectile": true,
+            "eventTrigger": {
+              "event": "on:hit",
+              "target": "self"
+            }
+          }
+        },
+        "knockback": true,
+        "power": 16,
+        "gravity": 0.01,
+        "angleoffset": 0.0
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.2,
+        "height": 0.2
+      },
+        "minecraft:timer": {
+          "time": [ 15, 15],
+          "looping": false,
+          "time_down_event": {
+            "event": "adn:despawn",
+            "target": "self"
+          }
+        },
+      "minecraft:type_family": {
+        "family": [
+          "adnbullet",
+          "bullet"
+        ]
+      },
+      "minecraft:projectile": {
+        "onHit": {
+          "particle_on_hit": {
+              "particle_type": "minecraft:basic_smoke_particle",
+              "on_other_hit": true,
+              "on_entity_hit": true
+          },
+          "impact_damage": {
+            "damage": 0,
+            "knockback": false,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true
+          },
+         "remove_on_hit": { },
+          "stick_in_ground": {
+            "shake_time": 0.35
+          },
+          "arrow_effect": {},
+          "definition_event": {
+            "affect_projectile": true,
+            "eventTrigger": {
+              "event": "on:hit",
+              "target": "self"
+            }
+          }
+        },
+        "knockback": false,
+        "power": 16,
+        "gravity": 0.01,
+        "angleoffset": 0.0
+      },
+      "minecraft:nameable": {
+        "always_show": false,
+        "allow_name_tag_renaming": true
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "adn:despawn": {
+		  "add": {
+			"component_groups": [
+				"adn:despawn"
+		  ]
+		}
+      },
+      "adn:base_damage": {
+		  "add": {
+			"component_groups": [
+				"adn:base_damage"
+		  ]
+		},
+		  "remove": {
+			"component_groups": [
+				"adn:full_damage"
+		  ]
+		}
+      },
+      "adn:full_damage": {
+		  "add": {
+			"component_groups": [
+				"adn:full_damage"
+		  ]
+		},
+		  "remove": {
+			"component_groups": [
+			
+		  ]
+		}
+      }
+    }
+  }
+}

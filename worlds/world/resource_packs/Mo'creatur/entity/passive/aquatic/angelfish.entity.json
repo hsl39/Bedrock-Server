@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:angelfish",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/smallfish_angelfish"
+			},
+			"geometry": {
+				"default": "geometry.smallfish"
+			},
+			"scripts": {
+				"animate": [
+					"idle"
+				]
+			},
+			"animations": {
+				"idle": "animation.smallfish.idle"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#5672FF",
+				"overlay_color": "#7171C6"
+			}
+		}
+	}
+}

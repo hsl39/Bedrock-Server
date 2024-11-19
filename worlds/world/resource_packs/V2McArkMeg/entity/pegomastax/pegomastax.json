@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:pegomastax",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"pegomastax1": "textures/pegomastax/variant1",
+				"pegomastax2": "textures/pegomastax/variant2",
+				"pegomastax3": "textures/pegomastax/variant3",
+				"pegomastax4": "textures/pegomastax/variant4"
+			},
+			"geometry": { 
+				"default": "geometry.pegomastax"
+			},
+	"sound_effects": {
+	"pegomastax_attack_mc_ark": "sound.pegomastax_attack_mc_ark",
+	"hurt_sound": "mob.pegomastax_hurt_mc_ark",
+	"idle_sound": "mob.pegomastax_iddle_mc_ark"
+	},  
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.pegomastax.general",
+				"idle": "animation.pegomastax.idle",
+				"walk": "animation.pegomastax.walk", 
+				"run": "animation.pegomastax.run",
+				"sitting": "animation.pegomastax.sitting",
+				"swimming": "animation.pegomastax.swimming",
+				"muerto": "animation.pegomastax.muerto",
+				"attack": "animation.pegomastax.attack",
+				"walk_controller":
+				"controller.animation.general.walk_and_swimming_mc_ark"
+			},
+			"scripts": {
+				"animate": [
+{ 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+				    
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.pegomastax"
+			],
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index": 5
+      }
+		}
+	}
+}

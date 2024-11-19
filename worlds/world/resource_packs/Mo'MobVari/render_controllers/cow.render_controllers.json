@@ -1,0 +1,33 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cow": {
+            "geometry": "Geometry.default",
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.a",
+                        "Texture.b",
+                        "Texture.c",
+                        "Texture.d",
+                        "Texture.e",
+                        "Texture.f",
+                        "Texture.g",
+                        "Texture.h",
+                        "Texture.i",
+                        "Texture.j",
+                        "Texture.k",
+                        "Texture.l",
+                        "Texture.m",
+                        "Texture.n",
+                        "Texture.o",
+                        "Texture.p",
+                        "Texture.q"
+                    ]
+                }
+            },
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Array.skins[query.variant]" ]
+        }
+    }
+}

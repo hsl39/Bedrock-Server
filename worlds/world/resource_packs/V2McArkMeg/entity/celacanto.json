@@ -1,0 +1,40 @@
+
+ 
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:celacanto",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"celacanto1": "textures/mc_ark/celacanto/variant1",
+				"celacanto2": "textures/mc_ark/celacanto/variant2",
+				"celacanto3": "textures/mc_ark/celacanto/variant3"
+			},
+			"geometry": { 
+				"default": "geometry.celacanto"
+			},
+			"animations": { 
+        "move": "animation.celacanto.move",
+        "pose": "animation.celacanto.out"
+			},
+			"scripts": {
+				"animate": [
+						{
+							"move" : "query.is_in_water"}, 
+						{
+							"pose" : "!query.is_in_water"}
+				]
+			},
+			"render_controllers": [
+				"controller.render.celacanto"
+			],
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index": 6
+      }
+		}
+	}
+} 

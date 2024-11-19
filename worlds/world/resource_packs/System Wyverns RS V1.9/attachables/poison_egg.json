@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "new:poison_egg",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/poison_wyvern"
+      },
+      "geometry": {
+        "default": "geometry.player_wyvern_egg"
+      },
+      "animations": {
+        "first_person": "animation.player.wyvern_egg.first_person",
+        "default": "animation.player.wyvern_egg"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'poison_egg'"
+          },
+          {
+            "default": "!c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'poison_egg'"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

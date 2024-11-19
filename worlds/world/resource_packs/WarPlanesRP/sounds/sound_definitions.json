@@ -1,0 +1,20 @@
+{
+  "gun.fire": {
+    "category": "ui",
+    "sounds": [
+      "sounds/gunFire"
+    ]
+  },
+  "plane.propeller": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/propeller"
+    ]
+  },
+  "plane.sound": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/plane"
+    ]
+  }
+}

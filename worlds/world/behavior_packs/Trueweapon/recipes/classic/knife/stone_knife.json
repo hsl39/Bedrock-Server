@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "stone_knife"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A",
+			"B"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"A": {
+				"item": "minecraft:cobblestone"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:cobblestone"
+			}
+		],
+		"result": [
+			{
+				"item": "true:stone_knife"
+			}
+		]
+	}
+}

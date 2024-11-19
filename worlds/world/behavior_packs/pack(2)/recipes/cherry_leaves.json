@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cherry_leaves"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+            {
+                "item": "heavy:multi_backpack"
+            },
+			{
+                "item": "minecraft:cherry_leaves"
+            }
+		],
+		"unlock": {
+            "context": "AlwaysUnlocked"
+          },
+		"result": [
+			{
+				"item": "heavy:multi_backpack_cherry_leaves"
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:mortar"
+    },
+
+     
+    "tags": [ "crafting_table" ],
+    "pattern": [
+        "SL",
+      "",
+      "" 
+    ], 
+    "key": {
+      "L": {
+        "item": "minecraft:log"
+      },
+      "S": {
+        "item": "minecraft:stone"
+      }
+    },
+    "result": {
+      "item": "mc_ark:mortar"
+    }
+  }
+}

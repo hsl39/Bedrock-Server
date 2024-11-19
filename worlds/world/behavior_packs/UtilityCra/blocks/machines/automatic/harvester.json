@@ -1,0 +1,539 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "twm:harvester",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"twm:speed": [
+					0,
+					1,
+					2,
+					3,
+					4
+				],
+				"twm:range": [
+					0,
+					1,
+					2,
+					3,
+					4
+				],
+				"twm:is_active": [
+					false,
+					true
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:facing_direction"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							-90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'down' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'north' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'south' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'east' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'west' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 0 && q.block_state('twm:range') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_range1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/speed_0/harvester_range1.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 0 && q.block_state('twm:range') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_range2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/speed_0/harvester_range2.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 0 && q.block_state('twm:range') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_range3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/speed_0/harvester_range3.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 0 && q.block_state('twm:range') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_range4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/speed_0/harvester_range4.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 1 && q.block_state('twm:range') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							800,
+							800
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_0/harvester_speed1.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 1 && q.block_state('twm:range') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed1_range1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							800,
+							800
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_1/harvester_speed1.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 1 && q.block_state('twm:range') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed1_range2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							800,
+							800
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_2/harvester_speed1.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 1 && q.block_state('twm:range') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed1_range3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							800,
+							800
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_3/harvester_speed1.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 1 && q.block_state('twm:range') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed1_range4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							800,
+							800
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_4/harvester_speed1.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 2 && q.block_state('twm:range') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							400,
+							400
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_0/harvester_speed2.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 2 && q.block_state('twm:range') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed2_range1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							400,
+							400
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_1/harvester_speed2.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 2 && q.block_state('twm:range') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed2_range2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							400,
+							400
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_2/harvester_speed2.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 2 && q.block_state('twm:range') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed2_range3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							400,
+							400
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_3/harvester_speed2.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 2 && q.block_state('twm:range') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed2_range4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							400,
+							400
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_4/harvester_speed2.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 3 && q.block_state('twm:range') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							200,
+							200
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_0/harvester_speed3.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 3 && q.block_state('twm:range') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed3_range1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							200,
+							200
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_1/harvester_speed3.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 3 && q.block_state('twm:range') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed3_range2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							200,
+							200
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_2/harvester_speed3.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 3 && q.block_state('twm:range') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed3_range3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							200,
+							200
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_3/harvester_speed3.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 3 && q.block_state('twm:range') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed3_range4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							200,
+							200
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_4/harvester_speed3.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 4 && q.block_state('twm:range') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							100,
+							100
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_0/harvester_speed4.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 4 && q.block_state('twm:range') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed4_range1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							100,
+							100
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_1/harvester_speed4.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 4 && q.block_state('twm:range') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed4_range2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							100,
+							100
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_2/harvester_speed4.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 4 && q.block_state('twm:range') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed4_range3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							100,
+							100
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_3/harvester_speed4.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 4 && q.block_state('twm:range') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_harvester_speed4_range4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							100,
+							100
+						]
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/harvester/range_4/harvester_speed4.json"
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.twm_block_2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "twm_harvester",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"twm:machine_upgrades",
+				"twm:harvest"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					1200,
+					1200
+				]
+			}
+		}
+	}
+}

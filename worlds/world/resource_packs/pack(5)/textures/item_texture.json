@@ -1,0 +1,22 @@
+{
+  "texture_data": {
+    "gravel_studios_gh:wooden_hammer": {
+      "textures": "textures/items/gravels_hammers/wooden_hammer"
+    },
+    "gravel_studios_gh:stone_hammer": {
+      "textures": "textures/items/gravels_hammers/stone_hammer"
+    },
+    "gravel_studios_gh:gold_hammer": {
+      "textures": "textures/items/gravels_hammers/gold_hammer"
+    },
+    "gravel_studios_gh:iron_hammer": {
+      "textures": "textures/items/gravels_hammers/iron_hammer"
+    },
+    "gravel_studios_gh:diamond_hammer": {
+      "textures": "textures/items/gravels_hammers/diamond_hammer"
+    },
+    "gravel_studios_gh:netherite_hammer": {
+      "textures": "textures/items/gravels_hammers/netherite_hammer"
+    }
+  }
+}

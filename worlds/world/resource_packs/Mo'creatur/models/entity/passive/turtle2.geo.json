@@ -1,0 +1,96 @@
+{
+	"format_version": "1.10.0",
+	"geometry.turtle2": {
+		"texturewidth": 64,
+		"textureheight": 32,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 1.5,
+		"visible_bounds_offset": [0, 0.25, 0],
+		"bones": [
+			{
+				"name": "all",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "Shell",
+				"parent": "all",
+				"pivot": [-4.5, 4, -4.5],
+				"cubes": [
+					{"origin": [-4.5, 3, -4.5], "size": [9, 1, 9], "uv": [28, 0]}
+				]
+			},
+			{
+				"name": "ShellUp",
+				"parent": "all",
+				"pivot": [-4, 6, -4],
+				"cubes": [
+					{"origin": [-4, 4, -4], "size": [8, 2, 8], "uv": [0, 22]}
+				]
+			},
+			{
+				"name": "ShellTop",
+				"parent": "all",
+				"pivot": [-3, 7, -3],
+				"cubes": [
+					{"origin": [-3, 6, -3], "size": [6, 1, 6], "uv": [40, 10]}
+				]
+			},
+			{
+				"name": "Belly",
+				"parent": "all",
+				"pivot": [-4, 3, -4],
+				"cubes": [
+					{"origin": [-4, 2, -4], "size": [8, 1, 8], "uv": [0, 12]}
+				]
+			},
+			{
+				"name": "Leg1",
+				"parent": "all",
+				"pivot": [3.5, 3, -3.5],
+				"cubes": [
+					{"origin": [2.5, 0, -4.5], "size": [2, 3, 2], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "Leg2",
+				"parent": "all",
+				"pivot": [-3.5, 3, -3.5],
+				"cubes": [
+					{"origin": [-4.5, 0, -4.5], "size": [2, 3, 2], "uv": [0, 9]}
+				]
+			},
+			{
+				"name": "Leg3",
+				"parent": "all",
+				"pivot": [3.5, 3, 3.5],
+				"cubes": [
+					{"origin": [2.5, 0, 2.5], "size": [2, 3, 2], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "Leg4",
+				"parent": "all",
+				"pivot": [-3.5, 3, 3.5],
+				"cubes": [
+					{"origin": [-4.5, 0, 2.5], "size": [2, 3, 2], "uv": [0, 9]}
+				]
+			},
+			{
+				"name": "Head",
+				"parent": "all",
+				"pivot": [0, 3, -4.5],
+				"cubes": [
+					{"origin": [-1.5, 2, -8.5], "size": [3, 2, 4], "uv": [10, 0]}
+				]
+			},
+			{
+				"name": "Tail",
+				"parent": "all",
+				"pivot": [0, 2, 4],
+				"cubes": [
+					{"origin": [-1, 2, 4], "size": [2, 1, 3], "uv": [0, 5]}
+				]
+			}
+		]
+	}
+}

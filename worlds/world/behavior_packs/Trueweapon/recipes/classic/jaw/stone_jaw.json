@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "stone_jaw"
+		},
+		"tags": [ "crafting_table" ],
+		"ingredients": [
+			{
+				"item": "minecraft:stone_sword"
+			},
+			{
+				"item": "minecraft:stone_sword"
+			}
+		],
+		"unlock": [
+			{
+			  "item": "minecraft:stone_sword"
+			}
+		],
+		"result": 
+			{
+				"item": "true:stone_jaw"
+			}
+	}
+}

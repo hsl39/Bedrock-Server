@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:gunpowder_mortar_charcoal"
+    },
+
+     
+    "tags": [ "mortar" ],
+    "pattern": [
+      " C ",
+      "CPC",
+      " C " 
+    ], 
+    "key": {
+      "P": {
+        "item": "minecraft:flint"
+      },
+      "C": {
+        "item": "minecraft:charcoal"
+      }
+    },
+    "result": {
+      "item": "minecraft:gunpowder"
+    }
+  }
+}
+ 

@@ -1,0 +1,146 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.remove_eating": {
+     "animation_length": 1.2, 
+      "loop": true, 
+      "timeline": {
+        "0.9": [ 
+       "@s minecraft:remove_eating"
+            ]
+      }
+    }, 
+  "animation.raptor_hability": {
+   "animation_length": 1.3,  
+    "loop": false, 
+    "timeline": {
+        "0.0":[  
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+              "/tag @s add in_attack" 
+            ],  
+        "0.3":[   
+  "/tp @e[tag=!raptorwild, tag=!in_attack , r=5] ~~-0.8~" ,
+  "/playsound sound.special_attack_sound_raptor_mc_ark @a[r=16]"
+            ],  
+                    "0.4": [ 
+                        
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+                        
+
+  "/execute @s[tag=alfa] ~~~ effect @e[tag=raptorwild, r=4] regeneration 10 0 true",
+  "/execute @s[tag=alfa] ~~~ effect @e[tag=raptorwild, r=4] speed 10 0 true",
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 1"
+          ],  
+                    "0.6": [ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 1"
+          ],  
+                    "0.75": [ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 5 entity_attack entity @s",
+
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item,tag=!raptorwild, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 1"
+          ],  
+                    "0.9": [ 
+          "/tag @s remove in_attack"
+          ],
+      "1.2": [ 
+          "/tag @s remove attacking"
+          ]
+       }
+      },
+  "animation.raptor_hability_tamed": {
+   "animation_length": 1.3,  
+    "loop": false, 
+    "timeline": {
+        "0.0":[  
+          "/tag @s add attacking",
+  "/effect @s slowness 100 100 true",
+              "/tag @s add in_attack" 
+            ],  
+        "0.3":[   
+  "/tp @e[tag=!in_attack , r=4] ~~-0.8~" ,
+  "/playsound sound.special_attack_sound_raptor_mc_ark @a[r=16]"
+            ],   
+                    "0.4": [ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    
+  "/execute @s[tag=alfa] ~~~ effect @e[tag=tamed, r=4] speed 10 0 true",
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 1"
+          ],  
+                    "0.6": [ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 1"
+          ],  
+                    "0.75": [ 
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 5 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 6 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item,tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=4] 8 entity_attack entity @s",
+    
+  "/execute @s[tag=alfa] ~~~ effect @s strength 1000000 1"
+          ],  
+                    "0.9": [ 
+          "/tag @s remove in_attack"
+          ],
+      "1.2": [ 
+          "/tag @s remove attacking"
+          ]
+       } 
+      },
+      
+
+    "animation.raptor_attack_por_tiempo": {
+     "animation_length": 21.5,
+      "loop": true,
+      "timeline": {
+        "20.0": [
+            "@s minecraft:raptor_attack_por_tiempo"
+            ]
+      }
+    },
+    "animation.raptor_attack_por_tiempo_tamed": {
+     "animation_length": 21.5,
+      "loop": true, 
+      "timeline": {
+        "20.0": [
+            "@s minecraft:raptor_attack_por_tiempo_tamed"
+            ]
+      }
+    }
+  }
+}
+ 
+
+
+
+

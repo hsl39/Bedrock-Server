@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.wyvern_egg.first_person": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": ["c.is_first_person ? 150 : 0", "c.is_first_person ? -10 : 0", "c.is_first_person ? 25 : 0"],
+					"position": [" c.is_first_person ? 0 : 0", "c.is_first_person ? 4 : 0", "c.is_first_person ? 0 : 0"],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.player.wyvern_egg": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [65, 0, 0],
+					"position": [0, -3, -1],
+					"scale": 0.6
+				}
+			}
+		}
+	}
+}

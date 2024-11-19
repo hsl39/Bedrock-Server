@@ -1,0 +1,1495 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+	    
+    "controller.animation.rage_effect_coc": {    
+      "initial_state": "default",
+      "states": { 
+			"default": { 
+          "transitions": [ 
+            {
+              "default_t": "!query.is_baby" 
+            }
+ 
+          ]
+				}, 
+			"default_t": { 
+					"on_entry": [
+					    
+"@s minecraft:v1_rage_off"
+					] ,
+          "transitions": [ 
+            {
+              "on":"variable.bufo_carcha >= 10.0"
+            }
+            
+ 
+          ]
+				},
+			"on": { 
+					"on_entry": [
+					    
+"@s minecraft:v1_rage_on"
+					] ,
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 10.0"
+            }
+ 
+          ]
+				}
+      }  
+    },
+
+    "controller.animation.puntos_animales_pequenos": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [   
+            {
+              "on": "!query.is_tamed && !query.is_baby && !query.is_sheared && query.skin_id == 1"
+            }
+          ]
+        }, 
+				"on": {
+                    "animations": [
+            {
+              "puntos_animales_pequenos_mc_ark_animation": "query.mark_variant < 4"
+            },
+            {
+              "puntos_animales_pequenos_mc_ark_animation2": "query.mark_variant >= 4 && query.has_rider"
+            }
+
+                        ],
+"on_entry": [
+
+ "/effect @s weakness 1 25 true",
+ "/effect @s slowness 1 25 true"
+                    ],
+          "transitions": [  
+            {
+              "default": "query.skin_id == 0"
+            }  
+          ]
+				}
+      }  
+    },
+    "controller.animation.puntos_animales_medianos": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "on": "!query.is_tamed && !query.is_baby && !query.is_sheared && query.skin_id == 2"
+            }
+          ]
+        }, 
+				"on": {
+                    "animations": [
+            {
+              "puntos_animales_medianos_mc_ark_animation": "query.mark_variant < 4"
+            },
+            {
+              "puntos_animales_medianos_mc_ark_animation2": "query.mark_variant >= 4 && query.has_rider"
+            }
+                        ],
+"on_entry": [
+
+ "/effect @s weakness 1 25 true",
+ "/effect @s slowness 1 25 true"
+                    ],
+          "transitions": [  
+            {
+              "default": "query.skin_id == 0"
+            }  
+          ]
+				}
+      }  
+    },
+    "controller.animation.puntos_animales_grandes": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "on": "!query.is_tamed && !query.is_baby && !query.is_sheared && query.skin_id == 3"
+            }
+          ]
+        }, 
+				"on": {
+                    "animations": [
+            {
+              "puntos_animales_grandes_mc_ark_animation": "query.mark_variant < 4"
+            },
+            {
+              "puntos_animales_grandes_mc_ark_animation2": "query.mark_variant >= 4 && query.has_rider"
+            }
+                        ],
+"on_entry": [
+
+ "/effect @s weakness 1 25 true",
+ "/effect @s slowness 1 25 true"
+                    ],
+          "transitions": [  
+            {
+              "default": "query.skin_id == 0"
+            }  
+          ]
+				}
+      }  
+    }, 
+    "controller.animation.puntos_animales_extra_grandes": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            {
+              "on": "!query.is_tamed && !query.is_baby && !query.is_sheared && query.skin_id == 4"
+            }
+          ]
+        }, 
+				"on": {
+                    "animations": [
+            {
+              "puntos_animales_extra_grandes_mc_ark_animation": "query.mark_variant < 4"
+            },
+            {
+              "puntos_animales_extra_grandes_mc_ark_animation2": "query.mark_variant >= 4 && query.has_rider"
+            } 
+ 
+                        ], 
+"on_entry": [ 
+
+
+ "/effect @s weakness 1 25 true",
+ "/effect @s slowness 1 25 true"
+                    ],
+          "transitions": [  
+            {
+              "default": "query.skin_id == 0"
+            }  
+          ]
+				}
+      }  
+    }, 
+	    
+    "controller.animation.comiendo_animales_carcha": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [   
+            {
+              "on": "!query.is_tamed && !query.is_baby && !query.is_sheared && query.skin_id == 5"
+            }
+          ]
+        }, 
+				"on": {
+                    "animations": [
+            
+              "comiendo_animales_carcha_mc_ark_animation"
+
+                        ], 
+"on_entry": [
+
+ "/effect @s weakness 1 25 true",
+ "/effect @s slowness 1 25 true"
+                    ],
+          "transitions": [  
+            {
+              "default": "query.skin_id == 0"
+            }  
+          ]
+				}
+      }  
+    },
+    
+    "controller.animation.subiendo_habilidad": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [   
+            {
+              "on": "!query.is_baby && !query.is_sheared && query.skin_id == 6"
+            }
+          ]
+        }, 
+				"on": {
+                    "animations": [  
+            
+              "subiendo_habilidad_mc_ark_animation"
+
+                        ], 
+          "transitions": [  
+            {
+              "default": "query.skin_id == 0"
+            }  
+          ]
+				}
+      }  
+    },
+    
+    "controller.animation.special_hability_carcharodontosaurus": {    
+      "initial_state": "default",
+      "states": { 
+			"default": { 
+          "transitions": [ 
+            {
+              "default_2": "!query.is_baby" 
+            }
+ 
+          ]
+				},
+			"default_2": { 
+"on_entry": [
+
+ "variable.bufo_carcha = 0.0; return variable.bufo_carcha;"
+                    ], 
+          "transitions": [ 
+            {
+              "default_t": "!query.is_baby" 
+            }
+ 
+          ]
+				},
+			"default_t": { 
+          "transitions": [ 
+            {
+              "nivel1":"variable.bufo_carcha >= 10.0 && variable.bufo_carcha < 20.0"
+            },
+            {
+              "nivel2":"variable.bufo_carcha >= 20.0 && variable.bufo_carcha < 30.0"
+            },
+            {
+              "nivel3":"variable.bufo_carcha >= 30.0 && variable.bufo_carcha < 40.0"
+            },
+            {
+              "nivel4":"variable.bufo_carcha >= 40.0 && variable.bufo_carcha < 50.0"
+            },
+            {
+              "nivel5":"variable.bufo_carcha >= 50.0 && variable.bufo_carcha < 60.0"
+            },
+            {
+              "nivel6":"variable.bufo_carcha >= 60.0 && variable.bufo_carcha < 70.0"
+            },
+            {
+              "nivel7":"variable.bufo_carcha >= 70.0 && variable.bufo_carcha < 80.0"
+            },
+            {
+              "nivel8":"variable.bufo_carcha >= 80.0 && variable.bufo_carcha < 90.0"
+            },
+            {
+              "nivel9":"variable.bufo_carcha >= 90.0 && variable.bufo_carcha < 100.0"
+            },
+            {
+              "nivel10":"variable.bufo_carcha >= 100.0"
+            }
+            
+ 
+          ]
+				},
+			"nivel1": { 
+     "on_exit": [
+         
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s add carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ], 
+
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 10.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 19.0"
+            }
+ 
+          ]
+				},
+			"nivel2": {
+     "on_exit": [
+
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s add carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 20.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 29.0"
+            }
+ 
+          ]
+				},
+			"nivel3": {
+     "on_exit": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s add carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 30.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 39.0"
+            }
+ 
+          ]
+				},
+			"nivel4": {
+     "on_exit": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s add carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 40.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 49.0"
+            }
+ 
+          ]
+				},
+			"nivel5": {
+     "on_exit": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s add carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 50.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 59.0"
+            }
+ 
+          ]
+				},
+			"nivel6": {
+     "on_exit": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s add carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 60.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 69.0"
+            }
+ 
+          ]
+				},
+			"nivel7": {
+     "on_exit": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s add carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 70.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 79.0"
+            }
+ 
+          ]
+				},
+			"nivel8": { 
+     "on_exit": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s add carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 80.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 89.0"
+            }
+ 
+          ]
+				},
+			"nivel9": { 
+     "on_exit": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s add carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [ 
+            {
+              "default_t":"variable.bufo_carcha < 90.0"
+            },
+            {
+              "default_t":"variable.bufo_carcha > 99.0"
+            }
+ 
+          ]
+				},
+			"nivel10": { 
+     "on_exit": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s remove carcha_hability_lvl10"
+                    ],
+     "on_entry": [
+     "/tag @s remove carcha_hability_lvl1",
+        "/tag @s remove carcha_hability_lvl2",
+        "/tag @s remove carcha_hability_lvl3",
+        "/tag @s remove carcha_hability_lvl4",
+        "/tag @s remove carcha_hability_lvl5",
+        "/tag @s remove carcha_hability_lvl6",
+        "/tag @s remove carcha_hability_lvl7",
+        "/tag @s remove carcha_hability_lvl8",
+        "/tag @s remove carcha_hability_lvl9",
+        "/tag @s add carcha_hability_lvl10"
+                    ],
+                    
+"animations": [ "carcha_disminucion_niveles"
+                        ], 
+          "transitions": [  
+            {
+              "default_t":"variable.bufo_carcha < 100.0"
+            }
+ 
+          ]
+				}
+      }  
+    },
+    
+    "controller.animation.disminucion_confianza_carcha_p1": { 
+      "initial_state": "default",
+      "states": { 
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+          "transitions": [ 
+            {
+              "on_lvl10": "(variable.confianza >= 10.0) && (variable.confianza < 30.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"on_lvl10": {
+                    "animations": [  
+            
+              "reducir_confianza_1_lvl10"
+
+                        ], 
+          "transitions": [ 
+            {
+              "lvl10": "(variable.confianza < 10.0) && (variable.confianza >= 30.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+                    "animations": [  
+            
+              "reducir_confianza_1_lvl50"
+
+                        ], 
+          "transitions": [ 
+            {
+              "on_lvl50": "(variable.confianza >= 20.0) && (variable.confianza < 60.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"on_lvl50": {
+          "transitions": [ 
+            {
+              "lvl50": "(variable.confianza < 20.0) && (variable.confianza >= 60.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+				
+			"lvl100": {
+                    "animations": [  
+            
+              "reducir_confianza_1_lvl100"
+
+                        ], 
+          "transitions": [ 
+            {
+              "on_lvl100": "(variable.confianza >= 30.0) && (variable.confianza < 90.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"on_lvl100": {
+          "transitions": [ 
+            {
+              "lvl100": "(variable.confianza < 30.0) && (variable.confianza >= 90.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+				
+			"lvl150": {
+                    "animations": [  
+            
+              "reducir_confianza_1_lvl150"
+
+                        ], 
+          "transitions": [ 
+            {
+              "on_lvl150": "(variable.confianza >= 50.0) && (variable.confianza < 150.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"on_lvl150": {
+          "transitions": [ 
+            {
+              "lvl150": "(variable.confianza < 30.0) && (variable.confianza >= 90.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				}
+      }  
+    },
+    
+	     
+    "controller.animation.inicial_confianza_carcha_p1": { 
+      "initial_state": "default",
+      "states": { 
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        }, 
+			"lvl10": {
+"on_entry": [
+ "variable.confianza = 0.0; return variable.confianza;"
+                    ],
+          "transitions": [ 
+            {
+              "confianza_0_lvl10": "(variable.confianza < 10.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_1_lvl10": "(variable.confianza >= 10.0) && (variable.confianza < 19.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_2_lvl10": "(variable.confianza >= 20.0) && (variable.confianza < 29.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_3_lvl10": "(variable.confianza >= 30.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"lvl10_t1": {
+          "transitions": [ 
+            {
+              "confianza_0_lvl10": "(variable.confianza < 10.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_1_lvl10": "(variable.confianza >= 10.0) && (variable.confianza < 19.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_2_lvl10": "(variable.confianza >= 20.0) && (variable.confianza < 29.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_3_lvl10": "(variable.confianza >= 30.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"confianza_0_lvl10": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_0"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10_t1": "(variable.confianza >= 10.0)"
+            }
+  
+          ]
+				},
+			"confianza_1_lvl10": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_1"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10_t1": "(variable.confianza < 10.0)"
+            },
+            {
+              "lvl10_t1": "(variable.confianza >= 20.0)"
+            }
+   
+          ]
+				},
+			"confianza_2_lvl10": {
+					"on_entry": [ 
+					    
+"@s minecraft:carcha_confianza_2"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10_t1": "(variable.confianza < 20.0)"
+            },
+            {
+              "lvl10_t1": "(variable.confianza >= 30.0)"
+            }
+ 
+          ]
+				},
+			"confianza_3_lvl10": {
+					"on_entry": [ 
+
+"@s minecraft:carcha_confianza_3"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl10_t1": "(variable.confianza < 30.0)"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": { 
+"on_entry": [
+ "variable.confianza = 0; return variable.confianza;"
+                    ],
+          "transitions": [ 
+            {
+              "confianza_0_lvl50": "(variable.confianza < 20.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_1_lvl50": "(variable.confianza >= 20.0) && (variable.confianza < 39.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_2_lvl50": "(variable.confianza >= 40.0) && (variable.confianza < 59.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_3_lvl50": "(variable.confianza >= 60.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"lvl50_t1": { 
+          "transitions": [ 
+            {
+              "confianza_0_lvl50": "(variable.confianza < 20.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_1_lvl50": "(variable.confianza >= 20.0) && (variable.confianza < 39.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_2_lvl50": "(variable.confianza >= 40.0) && (variable.confianza < 59.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_3_lvl50": "(variable.confianza >= 60.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"confianza_0_lvl50": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_0"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50_t1": "(variable.confianza >= 20.0)"
+            }
+ 
+          ]
+				},
+			"confianza_1_lvl50": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_1"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50_t1": "(variable.confianza < 20.0)"
+            },
+            {
+              "lvl50_t1": "(variable.confianza >= 40.0)"
+            }
+ 
+          ]
+				},
+			"confianza_2_lvl50": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_2"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50_t1": "(variable.confianza < 40.0)"
+            },
+            {
+              "lvl50_t1": "(variable.confianza >= 60.0)"
+            }
+ 
+          ]
+				},
+			"confianza_3_lvl50": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_3"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl50_t1": "(variable.confianza < 60.0)"
+            }
+ 
+          ]
+				},
+				
+			"lvl100": {
+"on_entry": [
+ "variable.confianza = 0; return variable.confianza;"
+                    ],
+          "transitions": [ 
+            {
+              "confianza_0_lvl100": "(variable.confianza < 30.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_1_lvl100": "(variable.confianza >= 30.0) && (variable.confianza < 59.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_2_lvl100": "(variable.confianza >= 60.0) && (variable.confianza < 89.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_3_lvl100": "(variable.confianza >= 90.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"lvl100_t1": {
+          "transitions": [ 
+            {
+              "confianza_0_lvl100": "(variable.confianza < 30.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_1_lvl100": "(variable.confianza >= 30.0) && (variable.confianza < 59.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_2_lvl100": "(variable.confianza >= 60.0) && (variable.confianza < 89.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_3_lvl100": "(variable.confianza >= 90.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"confianza_0_lvl100": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_0"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100_t1": "(variable.confianza >= 30.0)"
+            }
+ 
+          ]
+				},
+			"confianza_1_lvl100": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_1"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100_t1": "(variable.confianza < 30.0)"
+            },
+            {
+              "lvl100_t1": "(variable.confianza >= 60.0)"
+            }
+ 
+          ]
+				},
+			"confianza_2_lvl100": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_2"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100_t1": "(variable.confianza < 60.0)"
+            },
+            {
+              "lvl100_t1": "(variable.confianza >= 89.0)"
+            }
+ 
+          ]
+				},
+			"confianza_3_lvl100": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_3"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl100_t1": "(variable.confianza < 90.0)"
+            }
+ 
+          ]
+				},
+				
+			"lvl150": {
+"on_entry": [
+ "variable.confianza = 0; return variable.confianza;"
+                    ],
+          "transitions": [ 
+            {
+              "confianza_0_lvl150": "(variable.confianza < 50.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_1_lvl150": "(variable.confianza >= 50.0) && (variable.confianza < 99.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_2_lvl150": "(variable.confianza >= 100.0) && (variable.confianza < 149.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_3_lvl150": "(variable.confianza >= 150.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"lvl150_t1": {
+          "transitions": [ 
+            {
+              "confianza_0_lvl150": "(variable.confianza < 50.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_1_lvl150": "(variable.confianza >= 50.0) && (variable.confianza < 99.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_2_lvl150": "(variable.confianza >= 100.0) && (variable.confianza < 149.0) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "confianza_3_lvl150": "(variable.confianza >= 150.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"confianza_0_lvl150": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_0"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150_t1": "(variable.confianza >= 50.0)"
+            }
+ 
+          ]
+				},
+			"confianza_1_lvl150": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_1"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150_t1": "(variable.confianza < 50.0)"
+            },
+            {
+              "lvl150_t1": "(variable.confianza >= 100.0)"
+            }
+ 
+          ]
+				},
+			"confianza_2_lvl150": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_2"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150_t1": "(variable.confianza < 100.0)"
+            },
+            {
+              "lvl150_t1": "(variable.confianza >= 149.0)"
+            }
+ 
+          ]
+				},
+			"confianza_3_lvl150": {
+					"on_entry": [ 
+"@s minecraft:carcha_confianza_3"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            },
+            {
+              "lvl150_t1": "(variable.confianza < 150.0)"
+            } 
+  
+          ]
+				}
+      }  
+    },
+    
+    "controller.animation.confianza_carcha_p2": {   
+      "initial_state": "default",
+      "states": { 
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            }
+          ]
+        },  
+			"lvl10": { 
+"on_entry": [
+
+ "variable.confianza_p2 = 0; return variable.confianza_p2;"
+                    ],
+          "transitions": [ 
+            {
+              "confianza_p2_3_lvl10": "(variable.confianza_p2 >= 30.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"confianza_p2_3_lvl10": {
+					"on_entry": [
+					    
+"@s minecraft:carcha_siendo_domado"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            }
+ 
+          ]
+				},
+				
+			"lvl50": {
+"on_entry": [
+ "variable.confianza_p2 = 0; return variable.confianza_p2;"
+                    ],
+          "transitions": [ 
+            {
+              "confianza_p2_3_lvl50": "(variable.confianza_p2 >= 60.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"confianza_p2_3_lvl50": {
+					"on_entry": [ 
+"@s minecraft:carcha_siendo_domado"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            }
+          ]
+				},
+				
+			"lvl100": {
+"on_entry": [
+ "variable.confianza_p2 = 0; return variable.confianza_p2;"
+                    ],
+          "transitions": [ 
+            {
+              "confianza_p2_3_lvl100": "(variable.confianza_p2 >= 90.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"confianza_p2_3_lvl100": {
+					"on_entry": [ 
+"@s minecraft:carcha_siendo_domado"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            }
+          ]
+				},
+				
+			"lvl150": {
+"on_entry": [
+ "variable.confianza_p2 = 0; return variable.confianza_p2;"
+                    ],
+          "transitions": [ 
+            {
+              "confianza_p2_3_lvl150": "(variable.confianza_p2 >= 150.0) && !query.is_tamed && !query.is_baby"
+            }
+ 
+          ]
+				},
+			"confianza_p2_3_lvl150": {
+					"on_entry": [ 
+"@s minecraft:carcha_siendo_domado"
+					] ,
+          "transitions": [ 
+            {
+              "default": "query.is_tamed"
+            }
+ 
+          ]
+				}
+      }   
+    },
+    
+    "controller.animation.p2_progress": { 
+      "initial_state": "default",
+      "states": { 
+        "default": {
+          "transitions": [ 
+            {
+              "lvl10_t1": "(query.has_any_family('adult_lvl10')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl50_t1": "(query.has_any_family('adult_lvl50')) && !query.is_tamed && !query.is_baby"
+            },
+            {
+              "lvl100_t1": "(query.has_any_family('adult_lvl100')) && !query.is_tamed && !query.is_baby"
+            }, 
+            {
+              "lvl150_t1": "(query.has_any_family('adult_lvl150')) && !query.is_tamed && !query.is_baby"
+            } 
+          ]
+        }, 
+			"lvl10_t1": {
+          "animations": [ 
+            {
+              "0_percent": "(variable.confianza_p2 ==  0.0) "
+            },
+            {
+              "10_percent": "(variable.confianza_p2 >  0.0) && (variable.confianza_p2 <=  3.0) "
+            },
+            {
+              "20_percent": "(variable.confianza_p2 >  3.0) && (variable.confianza_p2 <=  6.0) "
+            },
+            {
+              "30_percent": "(variable.confianza_p2 >  6.0) && (variable.confianza_p2 <=  9.0) "
+            },
+            {
+              "40_percent": "(variable.confianza_p2 >  9.0) && (variable.confianza_p2 <=  12.0) "
+            },
+            {
+              "50_percent": "(variable.confianza_p2 >  12.0) && (variable.confianza_p2 <=  15.0) "
+            },
+            {
+              "60_percent": "(variable.confianza_p2 >  15.0) && (variable.confianza_p2 <=  18.0) "
+            },
+            {
+              "70_percent": "(variable.confianza_p2 >  18.0) && (variable.confianza_p2 <=  21.0) "
+            },
+            {
+              "80_percent": "(variable.confianza_p2 >  21.0) && (variable.confianza_p2 <=  24.0) "
+            },
+            {
+              "90_percent": "(variable.confianza_p2 >  24.0) && (variable.confianza_p2 <=  27.0) "
+            },
+            {
+              "95_percent": "(variable.confianza_p2 >  27.0) && (variable.confianza_p2 <=  30.0) "
+            }
+ 
+          ]
+				},
+				
+			"lvl50_t1": {
+          "animations": [ 
+            {
+              "0_percent": "(variable.confianza_p2 ==  0.0) "
+            },
+            {
+              "10_percent": "(variable.confianza_p2 >  0.0) && (variable.confianza_p2 <=  6.0) "
+            },
+            {
+              "20_percent": "(variable.confianza_p2 >  6.0) && (variable.confianza_p2 <=  12.0) "
+            },
+            {
+              "30_percent": "(variable.confianza_p2 >  12.0) && (variable.confianza_p2 <=  18.0) "
+            },
+            {
+              "40_percent": "(variable.confianza_p2 >  18.0) && (variable.confianza_p2 <=  24.0) "
+            },
+            {
+              "50_percent": "(variable.confianza_p2 >  24.0) && (variable.confianza_p2 <=  30.0) "
+            },
+            {
+              "60_percent": "(variable.confianza_p2 >  30.0) && (variable.confianza_p2 <=  36.0) "
+            },
+            {
+              "70_percent": "(variable.confianza_p2 >  36.0) && (variable.confianza_p2 <=  42.0) "
+            },
+            {
+              "80_percent": "(variable.confianza_p2 >  42.0) && (variable.confianza_p2 <=  48.0) "
+            },
+            {
+              "90_percent": "(variable.confianza_p2 >  48.0) && (variable.confianza_p2 <=  56.0) "
+            },
+            {
+              "95_percent": "(variable.confianza_p2 >  56.0) && (variable.confianza_p2 <=  60.0) " 
+            }
+ 
+          ]
+				},
+
+			"lvl100_t1": {
+          "animations": [ 
+            {
+              "0_percent": "(variable.confianza_p2 ==  0.0) "
+            },
+            {
+              "10_percent": "(variable.confianza_p2 >  0.0) && (variable.confianza_p2 <=  9.0) "
+            },
+            {
+              "20_percent": "(variable.confianza_p2 >  9.0) && (variable.confianza_p2 <=  18.0) "
+            },
+            {
+              "30_percent": "(variable.confianza_p2 >  18.0) && (variable.confianza_p2 <=  27.0) "
+            },
+            {
+              "40_percent": "(variable.confianza_p2 >  27.0) && (variable.confianza_p2 <=  36.0) "
+            },
+            {
+              "50_percent": "(variable.confianza_p2 >  36.0) && (variable.confianza_p2 <=  45.0) "
+            },
+            {
+              "60_percent": "(variable.confianza_p2 >  45.0) && (variable.confianza_p2 <=  54.0) "
+            },
+            {
+              "70_percent": "(variable.confianza_p2 >  54.0) && (variable.confianza_p2 <=  63.0) "
+            },
+            {
+              "80_percent": "(variable.confianza_p2 >  63.0) && (variable.confianza_p2 <= 72.0) "
+            },
+            {
+              "90_percent": "(variable.confianza_p2 > 72.0) && (variable.confianza_p2 <=  81.0) "
+            },
+            {
+              "95_percent": "(variable.confianza_p2 >  81.0) && (variable.confianza_p2 <=  90.0) " 
+            }
+ 
+          ]
+				},
+				
+			"lvl150_t1": {
+          "animations": [ 
+            {
+              "0_percent": "(variable.confianza_p2 ==  0.0) "
+            },
+            {
+              "10_percent": "(variable.confianza_p2 >  0.0) && (variable.confianza_p2 <= 15.0) "
+            },
+            {
+              "20_percent": "(variable.confianza_p2 >  15.0) && (variable.confianza_p2 <=  30.0) "
+            },
+            {
+              "30_percent": "(variable.confianza_p2 > 30.0) && (variable.confianza_p2 <=  45.0) "
+            },
+            {
+              "40_percent": "(variable.confianza_p2 >  45.0) && (variable.confianza_p2 <=  60.0) "
+            },
+            {
+              "50_percent": "(variable.confianza_p2 >  60.0) && (variable.confianza_p2 <=  75.0) "
+            },
+            {
+              "60_percent": "(variable.confianza_p2 > 75.0) && (variable.confianza_p2 <=  90.0) "
+            },
+            {
+              "70_percent": "(variable.confianza_p2 >  90.0) && (variable.confianza_p2 <=  105.0) "
+            },
+            {
+              "80_percent": "(variable.confianza_p2 >  105.0) && (variable.confianza_p2 <= 120.0) "
+            },
+            {
+              "90_percent": "(variable.confianza_p2 > 120.0) && (variable.confianza_p2 <=  135.0) "
+            },
+            {
+              "95_percent": "(variable.confianza_p2 >  135.0) && (variable.confianza_p2 <=  150.0) " 
+            }
+ 
+          ]
+				}
+      }  
+    }
+	}
+}

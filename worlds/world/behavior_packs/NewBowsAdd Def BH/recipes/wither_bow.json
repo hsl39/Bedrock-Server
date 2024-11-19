@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "new:wither_bow"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            " #D",
+            "EPD",
+            " #D"
+        ],
+		"key": {
+			"P": {
+				"item": "minecraft:bow"
+			},
+			"D": {
+				"item": "minecraft:string"
+			},
+			"E": {
+				"item": "minecraft:skull",
+				"data": 1
+			},
+			"#": {
+				"item": "minecraft:wither_rose"
+			}
+		},
+		"result": {
+			"item": "new:wither_bow"
+		}
+	}
+}

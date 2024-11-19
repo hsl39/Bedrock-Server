@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+	  "description": {
+	  "identifier": "diamond_jian_sword"
+	  },
+  
+	  
+	  "tags": [ "crafting_table" ],
+	  "pattern": [
+		"  A",
+		" AA",
+		"B  "
+	],
+	  "key": {
+		"A": {
+			"item": "minecraft:diamond"
+		},
+		"B": {
+			"item": "minecraft:stick"
+		}
+	  },
+	  "unlock": [
+		{
+		  "item": "minecraft:diamond"
+		}
+	  ],
+	  "result": {
+		"item": "true:diamond_jian_sword"
+	  }
+	}
+  }
+  

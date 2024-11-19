@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ogre.head1": {
+			"loop": true,
+			"bones": {
+				"head2": {
+					"scale": 0
+				},
+				"Head3": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.ogre.head2": {
+			"loop": true,
+			"bones": {
+				"head1": {
+					"scale": 0
+				},
+				"Head": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,78 @@
+//bridge-file-version: #1
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"mocreatures:ogre_leaves": {
+		"textures": "leaves_ogre_lair",
+		"sound": "grass"
+	},
+	"mocreatures:ogre_grass": {
+		"textures": {
+			"up": "grass_top_ogre_lair",
+			"down": "dirt_ogre_lair",
+			"side": "grass_side_ogre_lair"
+		},
+		"sound": "grass"
+	},
+	"mocreatures:ogre_tallgrass": {
+		"sound": "grass"
+	},
+	"mocreatures:ogre_dirt": {
+		"textures": "dirt_ogre_lair",
+		"sound": "gravel"
+	},
+	"mocreatures:ogre_stone": {
+		"textures": "rock_ogre_lair",
+		"sound": "stone"
+	},
+	"mocreatures:ogre_log": {
+		"textures": {
+			"up": "log_top_ogre_lair",
+			"down": "log_top_ogre_lair",
+			"side": "log_side_ogre_lair"
+		},
+		"sound": "wood"
+	},
+	"mocreatures:ogre_woodplank": {
+		"textures": "wood_planks_ogre_lair",
+		"sound": "wood"
+	},
+	"mocreatures:wyvern_leaves": {
+		"textures": "leaves_wyvern_lair",
+		"sound": "grass"
+	},
+	"mocreatures:wyvern_grass": {
+		"textures": {
+			"up": "grass_top_wyvern_lair",
+			"down": "dirt_wyvern_lair",
+			"side": "grass_side_wyvern_lair"
+		},
+		"sound": "grass"
+	},
+	"mocreatures:wyvern_tallgrass": {
+		"sound": "grass"
+	},
+	"mocreatures:wyvern_dirt": {
+		"textures": "dirt_wyvern_lair",
+		"sound": "gravel"
+	},
+	"mocreatures:wyvern_stone": {
+		"textures": "rock_wyvern_lair",
+		"sound": "stone"
+	},
+	"mocreatures:wyvern_log": {
+		"textures": {
+			"up": "log_top_wyvern_lair",
+			"down": "log_top_wyvern_lair",
+			"side": "log_side_wyvern_lair"
+		},
+		"sound": "wood"
+	},
+	"mocreatures:wyvern_woodplank": {
+		"textures": "wood_planks_wyvern_lair",
+		"sound": "wood"
+	}
+}

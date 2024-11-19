@@ -1,0 +1,120 @@
+item.spawn_egg.entity.new:ice_wyvern.name=Ice Wyvern
+item.spawn_egg.entity.new:fire_wyvern.name=Fire Wyvern
+item.spawn_egg.entity.new:ender_wyvern.name=Ender Wyvern
+item.spawn_egg.entity.new:ground_wyvern.name=Ground Wyvern
+item.spawn_egg.entity.new:poison_wyvern.name=Poison Wyvern
+item.spawn_egg.entity.new:wither_wyvern.name=Wither Wyvern
+
+
+entity.new:ice_wyvern.name=Ice Wyvern
+entity.new:fire_wyvern.name=Fire Wyvern
+entity.new:ender_wyvern.name=Ender Wyvern
+entity.new:ground_wyvern.name=Ground Wyvern
+entity.new:poison_wyvern.name=Poison Wyvern
+entity.new:wither_wyvern.name=Wither Wyvern
+
+
+
+item.spawn_egg.entity.new:ice_wyvern_egg.name=Ice Wyvern Egg
+item.spawn_egg.entity.new:fire_wyvern_egg.name=Fire Wyvern Egg
+item.spawn_egg.entity.new:ender_wyvern_egg.name=Ender Wyvern Egg
+item.spawn_egg.entity.new:ground_wyvern_egg.name=Ground Wyvern Egg
+item.spawn_egg.entity.new:poison_wyvern_egg.name=Poison Wyvern Egg
+item.spawn_egg.entity.new:wither_wyvern_egg.name=Wither Wyvern Egg
+
+
+item.new:ice_egg=Ice Wyvern Egg
+item.new:fire_egg=Fire Wyvern Egg
+item.new:ender_egg=Ender Wyvern Egg
+item.new:ground_egg=Ground Wyvern Egg
+item.new:poison_egg=Poison Wyvern Egg
+item.new:wither_egg=Wither Wyvern Egg
+
+
+item.new:meat=Wyvern Meat
+item.new:wyvern_bone=Wyvern Bone
+item.new:wyvern_saddle=Wyvern Saddle
+
+item.new:wither_wyvern_fang=Wither Wyvern Fang
+item.new:poison_wyvern_fang=Poison Wyvern Fang
+item.new:ice_wyvern_fang=Ice Wyvern Fang
+item.new:ender_wyvern_eye=Ender Wyvern Eye
+item.new:ender_wyvern_wand=Ender Wyvern Wand
+item.new:ice_wyvern_dagger=Ice Wyvern Dagger
+item.new:poison_wyvern_dagger=Poison Wyvern Dagger
+item.new:wither_wyvern_dagger=Wither Wyvern Dagger
+item.new:fire_essence=Fire Essence
+
+
+item.new:wyvern_bone_hoe=Wyvern Bone Hoe
+item.new:wyvern_bone_shovel=Wyvern Bone Shovel
+item.new:wyvern_bone_pickaxe=Wyvern Bone Pickaxe
+item.new:wyvern_bone_axe=Wyvern Bone Axe
+item.new:wyvern_bone_sword=Wyvern Bone Sword
+
+
+
+
+item.new:netherite_wyvern_armor=Netherite Wyvern Armor
+item.new:diamond_wyvern_armor=Diamond Wyvern Armor
+item.new:iron_wyvern_armor=Iron Wyvern Armor
+item.new:gold_wyvern_armor=Gold Wyvern Armor
+item.new:leather_wyvern_armor=Leather Wyvern Armor
+item.new:wyvern_skull=Wyvern Skull
+item.new:wyvern_bones=Wyvern Bones
+
+item.new:ice_wyvern_boots=Ice Wyvern Boots
+item.new:ice_wyvern_chestplate=Ice Wyvern Chestplate
+item.new:ice_wyvern_leggings=Ice Wyvern Leggings
+item.new:ice_wyvern_helmet=Ice Wyvern Head
+
+item.new:fire_wyvern_boots=Fire Wyvern Boots
+item.new:fire_wyvern_chestplate=Fire Wyvern Chestplate
+item.new:fire_wyvern_leggings=Fire Wyvern Leggings
+item.new:fire_wyvern_helmet=Fire Wyvern Head
+
+item.new:wither_wyvern_boots=Wither Wyvern Boots
+item.new:wither_wyvern_chestplate=Wither Wyvern Chestplate
+item.new:wither_wyvern_leggings=Wither Wyvern Leggings
+item.new:wither_wyvern_helmet=Wither Wyvern Head
+
+item.new:ground_wyvern_boots=Ground Wyvern Boots
+item.new:ground_wyvern_chestplate=Ground Wyvern Chestplate
+item.new:ground_wyvern_leggings=Ground Wyvern Leggings
+item.new:ground_wyvern_helmet=Ground Wyvern Head
+
+item.new:poison_wyvern_boots=Poison Wyvern Boots
+item.new:poison_wyvern_chestplate=Poison Wyvern Chestplate
+item.new:poison_wyvern_leggings=Poison Wyvern Leggings
+item.new:poison_wyvern_helmet=Poison Wyvern Head
+
+item.new:ender_wyvern_boots=Ender Wyvern Boots
+item.new:ender_wyvern_chestplate=Ender Wyvern Chestplate
+item.new:ender_wyvern_leggings=Ender Wyvern Leggings
+item.new:ender_wyvern_helmet=Ender Wyvern Head
+
+
+item.new:ender_wyvern_escame=Ender Wyvern Escame
+item.new:fire_wyvern_escame=Fire Wyvern Escame
+item.new:ground_wyvern_escame=Ground Wyvern Escame
+item.new:wither_wyvern_escame=Wither Wyvern Escame
+item.new:ice_wyvern_escame=Ice Wyvern Escame
+item.new:poison_wyvern_escame=Poison Wyvern Escame
+
+
+
+entity.new:ice_wyvern_egg.name=Ice Wyvern Egg
+entity.new:fire_wyvern_egg.name=Fire Wyvern Egg
+entity.new:ender_wyvern_egg.name=Ender Wyvern Egg
+entity.new:ground_wyvern_egg.name=Ground Wyvern Egg
+entity.new:poison_wyvern_egg.name=Poison Wyvern Egg
+entity.new:wither_wyvern_egg.name=Wither Wyvern Egg
+
+
+
+action.hint.exit.new:ice_wyvern=Ice Wyvern
+action.hint.exit.new:fire_wyvern=Fire Wyvern
+action.hint.exit.new:poison_wyvern=Poison Wyvern
+action.hint.exit.new:fire_wyvern=Fire Wyvern
+action.hint.exit.new:wither_wyvern=Wither Wyvern
+action.hint.exit.new:ground_wyvern=Ground Wyvern

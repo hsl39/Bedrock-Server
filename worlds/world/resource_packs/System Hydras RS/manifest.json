@@ -1,0 +1,22 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "§a§l[Use Experimental Mode]\n§3§lMade by SystemTv Twitter@SystemTv_",
+		"name": "System Hydra Addon V1.1 §2Behavior",
+		"uuid": "a740a787-dea4-4055-859b-5153391b0b75",
+		"version": [ 0, 1, 0 ],
+		"min_engine_version": [
+			1,
+			20,
+			30
+		]
+	},
+	"modules": [
+		{
+			"description": "§a§l[Use Experimental Mode]\n§3§lMade by SystemTv Twitter@SystemTv_",
+			"type": "resources",
+			"uuid": "c8f3e2b8-0136-40fd-8833-f4f489880122",
+			"version": [ 0, 1, 0 ]
+		}
+	]
+}

@@ -1,0 +1,52 @@
+//bridge-file-version: #11
+{
+	"format_version": "1.19.10",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "raiyon:test",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false,
+						"cause": "all"
+					}
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"interact_text": "Swap Item To Offhand",
+						"admire": true
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 0,
+						"height": 0,
+						"pivot": [
+							0,
+							-0.75,
+							0
+						]
+					}
+				]
+			}
+		},
+		"events": {}
+	}
+}

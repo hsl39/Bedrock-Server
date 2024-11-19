@@ -1,0 +1,968 @@
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		//magma plus
+		"magma_axe": {
+			"textures": [
+				"textures/items/magma_axe"
+			]
+		},
+		"magma_hoe": {
+			"textures": [
+				"textures/items/magma_hoe"
+			]
+		},
+		"magma_pickaxe": {
+			"textures": [
+				"textures/items/magma_pickaxe"
+			]
+		},
+		"magma_shovel": {
+			"textures": [
+				"textures/items/magma_shovel"
+			]
+		},
+		"magma_sword": {
+			"textures": [
+				"textures/items/magma_sword"
+			]
+		},
+		"magma_helmet": {
+			"textures": [
+				"textures/items/magma_helmet"
+			]
+		},
+		"magma_chestplate": {
+			"textures": [
+				"textures/items/magma_chestplate"
+			]
+		},
+		"magma_leggings": {
+			"textures": [
+				"textures/items/magma_leggings"
+			]
+		},
+		"magma_boots": {
+			"textures": [
+				"textures/items/magma_boots"
+			]
+		},
+		"magma_ingot": {
+			"textures": [
+				"textures/items/magma_ingot"
+			]
+		},
+		/////steel plus
+		"darkness_potion": {
+			"textures": [
+				"textures/items/darkness_potion"
+			]
+		},
+		"steel_ingot": {
+			"textures": [
+				"textures/items/steel_ingot"
+			]
+		},
+		"steel_nugget": {
+			"textures": [
+				"textures/items/steel_nugget"
+			]
+		},
+		"iron_and_coal": {
+			"textures": [
+				"textures/items/iron_and_coal"
+			]
+		},
+		"steel_boots": {
+			"textures": [
+				"textures/items/steel_boots"
+			]
+		},
+		"steel_leggings": {
+			"textures": [
+				"textures/items/steel_leggings"
+			]
+		},
+		"steel_chestplate": {
+			"textures": [
+				"textures/items/steel_chestplate"
+			]
+		},
+		"steel_helmet": {
+			"textures": [
+				"textures/items/steel_helmet"
+			]
+		},
+		//steel_sword
+		"steel_sword": {
+			"textures": [
+				"textures/items/steel_sword"
+			]
+		},
+		//steel axe
+		"steel_axe": {
+			"textures": [
+				"textures/items/steel_axe"
+			]
+		},
+		//steel hoe
+		"steel_hoe": {
+			"textures": [
+				"textures/items/steel_hoe"
+			]
+		},
+		//steel_pickaxe
+		"steel_pickaxe": {
+			"textures": [
+				"textures/items/steel_pickaxe"
+			]
+		},
+		//steel_shovel
+		"steel_shovel": {
+			"textures": [
+				"textures/items/steel_shovel"
+			]
+		},
+		"dark_steel_sword": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_sword"
+			]
+		},
+		"dark_steel_axe": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_axe"
+			]
+		},
+		"dark_steel_pickaxe": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_pickaxe"
+			]
+		},
+		"dark_steel_shovel": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_shovel"
+			]
+		},
+		"dark_steel_hoe": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_hoe"
+			]
+		},
+		"dark_steel_helmet": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_helmet"
+			]
+		},
+		"dark_steel_chestplate": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_chestplate"
+			]
+		},
+		"dark_steel_leggings": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_leggings"
+			]
+		},
+		"dark_steel_boots": {
+			"textures": [
+				"textures/items/dark_steel/dark_steel_boots"
+			]
+		},
+		//warden
+		"warden_helmet": {
+			"textures": [
+				"textures/items/warden_helmet"
+			]
+		},
+		"warden_boots": {
+			"textures": [
+				"textures/items/warden_boots"
+			]
+		},
+		"warden_leggings": {
+			"textures": [
+				"textures/items/warden_leggings"
+			]
+		},
+		"warden_chestplate": {
+			"textures": [
+				"textures/items/warden_chestplate"
+			]
+		},
+		"warden_sword": {
+			"textures": [
+				"textures/items/warden_sword"
+			]
+		},
+		"warden_axe": {
+			"textures": [
+				"textures/items/warden_axe"
+			]
+		},
+		"warden_pickaxe": {
+			"textures": [
+				"textures/items/warden_pickaxe"
+			]
+		},
+		"warden_shovel": {
+			"textures": [
+				"textures/items/warden_shovel"
+			]
+		},
+		"warden_hoe": {
+			"textures": [
+				"textures/items/warden_hoe"
+			]
+		},
+		//Deathnerite
+		"deathnerite_upgrade_smithing_template": {
+			"textures": [
+				"textures/items/deathnerite_upgrade_smithing_template"
+			]
+		},
+		"darkness_upgrade_smithing_template": {
+			"textures": [
+				"textures/items/darkness_upgrade_smithing_template"
+			]
+		},
+		"parcanite_axe": {
+			"textures": [
+				"textures/items/parcanite_axe"
+			]
+		},
+		"parcanite_boots": {
+			"textures": [
+				"textures/items/parcanite_boots"
+			]
+		},
+		"parcanite_leggings": {
+			"textures": [
+				"textures/items/parcanite_leggings"
+			]
+		},
+		"parcanite_chestplate": {
+			"textures": [
+				"textures/items/parcanite_chestplate"
+			]
+		},
+		"parcanite_helmet": {
+			"textures": [
+				"textures/items/parcanite_helmet"
+			]
+		},
+		"parcanite_hoe": {
+			"textures": [
+				"textures/items/parcanite_hoe"
+			]
+		},
+		"parcanite_pickaxe": {
+			"textures": [
+				"textures/items/parcanite_pickaxe"
+			]
+		},
+		"parcanite_shovel": {
+			"textures": [
+				"textures/items/parcanite_shovel"
+			]
+		},
+		"parcanite_sword": {
+			"textures": [
+				"textures/items/parcanite_sword"
+			]
+		},
+		"deathnerite_axe": {
+			"textures": [
+				"textures/items/deathnerite_axe"
+			]
+		},
+		"deathnerite_boots": {
+			"textures": [
+				"textures/items/deathnerite_boots"
+			]
+		},
+		"deathnerite_leggings": {
+			"textures": [
+				"textures/items/deathnerite_leggings"
+			]
+		},
+		"deathnerite_chestplate": {
+			"textures": [
+				"textures/items/deathnerite_chestplate"
+			]
+		},
+		"deathnerite_helmet": {
+			"textures": [
+				"textures/items/deathnerite_helmet"
+			]
+		},
+		"deathnerite_hoe": {
+			"textures": [
+				"textures/items/deathnerite_hoe"
+			]
+		},
+		"deathnerite_pickaxe": {
+			"textures": [
+				"textures/items/deathnerite_pickaxe"
+			]
+		},
+		"deathnerite_shovel": {
+			"textures": [
+				"textures/items/deathnerite_shovel"
+			]
+		},
+		"deathnerite_sword": {
+			"textures": [
+				"textures/items/deathnerite_sword"
+			]
+		},
+		"gold_plate": {
+			"textures": [
+				"textures/items/gold_plate"
+			]
+		},
+		"deathnerite": {
+			"textures": [
+				"textures/items/deathnerite"
+			]
+		},
+		"gilded_deathnerite_boots": {
+			"textures": [
+				"textures/items/gilded_deathnerite_boots"
+			]
+		},
+		"gilded_deathnerite_leggings": {
+			"textures": [
+				"textures/items/gilded_deathnerite_leggings"
+			]
+		},
+		"gilded_deathnerite_chestplate": {
+			"textures": [
+				"textures/items/gilded_deathnerite_chestplate"
+			]
+		},
+		"gilded_deathnerite_helmet": {
+			"textures": [
+				"textures/items/gilded_deathnerite_helmet"
+			]
+		},
+		"deathnerite_apple": {
+			"textures": [
+				"textures/items/deathnerite_apple"
+			]
+		},
+		"deathnerite_carrot": {
+			"textures": [
+				"textures/items/deathnerite_carrot"
+			]
+		},
+		//project_ateneu
+		"deathnerite_katana": {
+			"textures": [
+				"textures/items/deathnerite_katana"
+			]
+		},
+		//true_weapons
+		"deathnerite_katana_true": {
+			"textures": [
+				"textures/items/true_weapons/katanas/deathnerite"
+			]
+		},
+		"deathnerite_long_sword": {
+			"textures": [
+				"textures/items/true_weapons/longs_sword/deathnerite"
+			]
+		},
+		"deathnerite_knife": {
+			"textures": [
+				"textures/items/true_weapons/knife/deathnerite"
+			]
+		},
+		"deathnerite_barbed_mace": {
+			"textures": [
+				"textures/items/true_weapons/barbed_mace/deathnerite"
+			]
+		},
+		"deathnerite_kama": {
+			"textures": [
+				"textures/items/true_weapons/kama/deathnerite"
+			]
+		},
+		"deathnerite_bearded_axe": {
+			"textures": [
+				"textures/items/true_weapons/bearded_axe/deathnerite"
+			]
+		},
+		"deathnerite_dane_axe": {
+			"textures": [
+				"textures/items/true_weapons/dane_axe/deathnerite"
+			]
+		},
+		"deathnerite_wakizashi": {
+			"textures": [
+				"textures/items/true_weapons/wakizashi/deathnerite"
+			]
+		},
+		"deathnerite_ninjatō": {
+			"textures": [
+				"textures/items/true_weapons/ninjatō/deathnerite"
+			]
+		},
+		"deathnerite_ōdachi": {
+			"textures": [
+				"textures/items/true_weapons/ōdachi/deathnerite"
+			]
+		},
+		"deathnerite_naginata": {
+			"textures": [
+				"textures/items/true_weapons/naginata/deathnerite"
+			]
+		},
+		"deathnerite_machete": {
+			"textures": [
+				"textures/items/true_weapons/machete/deathnerite"
+			]
+		},
+		"deathnerite_zweihander": {
+			"textures": [
+				"textures/items/true_weapons/zweihander/deathnerite"
+			]
+		},
+		"deathnerite_seitengewehr": {
+			"textures": [
+				"textures/items/true_weapons/seitengewehr/deathnerite"
+			]
+		},
+		//leather_plus
+		"leather_deathnerite_boots": {
+			"textures": [
+				"textures/items/leather_plus/leather_deathnerite_boots"
+			]
+		},
+		"leather_deathnerite_leggings": {
+			"textures": [
+				"textures/items/leather_plus/leather_deathnerite_leggings"
+			]
+		},
+		"leather_deathnerite_chestplate": {
+			"textures": [
+				"textures/items/leather_plus/leather_deathnerite_chestplate"
+			]
+		},
+		"leather_deathnerite_helmet": {
+			"textures": [
+				"textures/items/leather_plus/leather_deathnerite_helmet"
+			]
+		},
+		//////////////////Emerad PLus
+		"emerald_boots": {
+			"textures": [
+				"textures/items/emerald_boots"
+			]
+		},
+		"emerald_leggings": {
+			"textures": [
+				"textures/items/emerald_leggings"
+			]
+		},
+		"emerald_chestplate": {
+			"textures": [
+				"textures/items/emerald_chestplate"
+			]
+		},
+		"emerald_helmet": {
+			"textures": [
+				"textures/items/emerald_helmet"
+			]
+		},
+		//emerald_sword
+		"emerald_sword": {
+			"textures": [
+				"textures/items/emerald_sword"
+			]
+		},
+		//emerald axe
+		"emerald_axe": {
+			"textures": [
+				"textures/items/emerald_axe"
+			]
+		},
+		//emerald hoe
+		"emerald_hoe": {
+			"textures": [
+				"textures/items/emerald_hoe"
+			]
+		},
+		//emerald_pickaxe
+		"emerald_pickaxe": {
+			"textures": [
+				"textures/items/emerald_pickaxe"
+			]
+		},
+		//emerald_shovel
+		"emerald_shovel": {
+			"textures": [
+				"textures/items/emerald_shovel"
+			]
+		},
+		//////////////////Quartz Plus
+		"quartz_boots": {
+			"textures": [
+				"textures/items/quartz_boots"
+			]
+		},
+		"quartz_leggings": {
+			"textures": [
+				"textures/items/quartz_leggings"
+			]
+		},
+		"quartz_chestplate": {
+			"textures": [
+				"textures/items/quartz_chestplate"
+			]
+		},
+		"quartz_helmet": {
+			"textures": [
+				"textures/items/quartz_helmet"
+			]
+		},
+		"crying_helmet": {
+			"textures": [
+				"textures/items/crying_helmet"
+			]
+		},
+		"crying_boots": {
+			"textures": [
+				"textures/items/crying_boots"
+			]
+		},
+		"crying_leggings": {
+			"textures": [
+				"textures/items/crying_leggings"
+			]
+		},
+		"crying_chestplate": {
+			"textures": [
+				"textures/items/crying_chestplate"
+			]
+		},
+		//////////////////Oceanite
+		"seanite": {
+			"textures": [
+				"textures/items/seanite_ingot"
+			]
+		},
+		"seanite_boots": {
+			"textures": [
+				"textures/items/seanite_boots"
+			]
+		},
+		"seanite_leggings": {
+			"textures": [
+				"textures/items/seanite_leggings"
+			]
+		},
+		"seanite_chestplate": {
+			"textures": [
+				"textures/items/seanite_chestplate"
+			]
+		},
+		"seanite_helmet": {
+			"textures": [
+				"textures/items/seanite_helmet"
+			]
+		},
+		"seanite_sword": {
+			"textures": [
+				"textures/items/oceanite_sword"
+			]
+		},
+		"seanite_axe": {
+			"textures": [
+				"textures/items/oceanite_axe"
+			]
+		},
+		"seanite_pickaxe": {
+			"textures": [
+				"textures/items/oceanite_pickaxe"
+			]
+		},
+		"seanite_shovel": {
+			"textures": [
+				"textures/items/oceanite_shovel"
+			]
+		},
+		"seanite_hoe": {
+			"textures": [
+				"textures/items/oceanite_hoe"
+			]
+		},
+		//////////////////COPPER PLUS
+		"copper_boots": {
+			"textures": [
+				"textures/items/copper_boots"
+			]
+		},
+		"copper_leggings": {
+			"textures": [
+				"textures/items/copper_leggings"
+			]
+		},
+		"copper_chestplate": {
+			"textures": [
+				"textures/items/copper_chestplate"
+			]
+		},
+		"copper_helmet": {
+			"textures": [
+				"textures/items/copper_helmet"
+			]
+		},
+		//exposed
+		"exposed_copper_boots": {
+			"textures": [
+				"textures/items/exposed_copper_boots"
+			]
+		},
+		"exposed_copper_leggings": {
+			"textures": [
+				"textures/items/exposed_copper_leggings"
+			]
+		},
+		"exposed_copper_chestplate": {
+			"textures": [
+				"textures/items/exposed_copper_chestplate"
+			]
+		},
+		"exposed_copper_helmet": {
+			"textures": [
+				"textures/items/exposed_copper_helmet"
+			]
+		},
+		//weathered
+		"weathered_copper_boots": {
+			"textures": [
+				"textures/items/weathered_copper_boots"
+			]
+		},
+		"weathered_copper_leggings": {
+			"textures": [
+				"textures/items/weathered_copper_leggings"
+			]
+		},
+		"weathered_copper_chestplate": {
+			"textures": [
+				"textures/items/weathered_copper_chestplate"
+			]
+		},
+		"weathered_copper_helmet": {
+			"textures": [
+				"textures/items/weathered_copper_helmet"
+			]
+		},
+		//oxidized
+		"oxidized_copper_boots": {
+			"textures": [
+				"textures/items/oxidized_copper_boots"
+			]
+		},
+		"oxidized_copper_leggings": {
+			"textures": [
+				"textures/items/oxidized_copper_leggings"
+			]
+		},
+		"oxidized_copper_chestplate": {
+			"textures": [
+				"textures/items/oxidized_copper_chestplate"
+			]
+		},
+		"oxidized_copper_helmet": {
+			"textures": [
+				"textures/items/oxidized_copper_helmet"
+			]
+		},
+		//copper_sword
+		"copper_sword": {
+			"textures": [
+				"textures/items/tools/copper_sword/0"
+			]
+		},
+		"exposed_copper_sword": {
+			"textures": [
+				"textures/items/tools/copper_sword/1"
+			]
+		},
+		"weathered_copper_sword": {
+			"textures": [
+				"textures/items/tools/copper_sword/2"
+			]
+		},
+		"oxidized_copper_sword": {
+			"textures": [
+				"textures/items/tools/copper_sword/3"
+			]
+		},
+		//copper axe
+		"copper_axe": {
+			"textures": [
+				"textures/items/copper_axe"
+			]
+		},
+		"exposed_copper_axe": {
+			"textures": [
+				"textures/items/tools/copper_axe/1"
+			]
+		},
+		"weathered_copper_axe": {
+			"textures": [
+				"textures/items/tools/copper_axe/2"
+			]
+		},
+		"oxidized_copper_axe": {
+			"textures": [
+				"textures/items/tools/copper_axe/3"
+			]
+		},
+		//copper hoe
+		"copper_hoe": {
+			"textures": [
+				"textures/items/copper_hoe"
+			]
+		},
+		"exposed_copper_hoe": {
+			"textures": [
+				"textures/items/tools/copper_hoe/1"
+			]
+		},
+		"weathered_copper_hoe": {
+			"textures": [
+				"textures/items/tools/copper_hoe/2"
+			]
+		},
+		"oxidized_copper_hoe": {
+			"textures": [
+				"textures/items/tools/copper_hoe/3"
+			]
+		},
+		//copper_pickaxe
+		"copper_pickaxe": {
+			"textures": [
+				"textures/items/copper_pickaxe"
+			]
+		},
+		"exposed_copper_pickaxe": {
+			"textures": [
+				"textures/items/tools/copper_pickaxe/1"
+			]
+		},
+		"weathered_copper_pickaxe": {
+			"textures": [
+				"textures/items/tools/copper_pickaxe/2"
+			]
+		},
+		"oxidized_copper_pickaxe": {
+			"textures": [
+				"textures/items/tools/copper_pickaxe/3"
+			]
+		},
+		//copper_shovel
+		"copper_shovel": {
+			"textures": [
+				"textures/items/copper_shovel"
+			]
+		},
+		"exposed_copper_shovel": {
+			"textures": [
+				"textures/items/tools/copper_shovel/1"
+			]
+		},
+		"weathered_copper_shovel": {
+			"textures": [
+				"textures/items/tools/copper_shovel/2"
+			]
+		},
+		"oxidized_copper_shovel": {
+			"textures": [
+				"textures/items/tools/copper_shovel/3"
+			]
+		},
+
+		"rose_gold_axe": {
+			"textures": [
+				"textures/items/rose_gold_axe"
+			]
+		},
+		"rose_gold_boots": {
+			"textures": [
+				"textures/items/rose_gold_boots"
+			]
+		},
+		"rose_gold_leggings": {
+			"textures": [
+				"textures/items/rose_gold_leggings"
+			]
+		},
+		"rose_gold_chestplate": {
+			"textures": [
+				"textures/items/rose_gold_chestplate"
+			]
+		},
+		"rose_gold_helmet": {
+			"textures": [
+				"textures/items/rose_gold_helmet"
+			]
+		},
+		"rose_gold_hoe": {
+			"textures": [
+				"textures/items/rose_gold_hoe"
+			]
+		},
+		"rose_gold_pickaxe": {
+			"textures": [
+				"textures/items/rose_gold_pickaxe"
+			]
+		},
+		"rose_gold_shovel": {
+			"textures": [
+				"textures/items/rose_gold_shovel"
+			]
+		},
+		"rose_gold_sword": {
+			"textures": [
+				"textures/items/rose_gold_sword"
+			]
+		},
+		"thunder_sword": {
+			"textures": [
+				"textures/items/thunder_sword"
+			]
+		},
+		"lightning_attracts_item": {
+			"textures": [
+				"textures/items/lightning_attracts_item"
+			]
+		},
+		
+		"ferro_copper_axe": {
+			"textures": [
+				"textures/items/ferro_copper_axe"
+			]
+		},
+		"ferro_copper_boots": {
+			"textures": [
+				"textures/items/ferro_copper_boots"
+			]
+		},
+		"ferro_copper_leggings": {
+			"textures": [
+				"textures/items/ferro_copper_leggings"
+			]
+		},
+		"ferro_copper_chestplate": {
+			"textures": [
+				"textures/items/ferro_copper_chestplate"
+			]
+		},
+		"ferro_copper_helmet": {
+			"textures": [
+				"textures/items/ferro_copper_helmet"
+			]
+		},
+		"ferro_copper_hoe": {
+			"textures": [
+				"textures/items/ferro_copper_hoe"
+			]
+		},
+		"ferro_copper_pickaxe": {
+			"textures": [
+				"textures/items/ferro_copper_pickaxe"
+			]
+		},
+		"ferro_copper_shovel": {
+			"textures": [
+				"textures/items/ferro_copper_shovel"
+			]
+		},
+		"ferro_copper_sword": {
+			"textures": [
+				"textures/items/ferro_copper_sword"
+			]
+		},
+		//True weapons
+		"copper_katana": {
+			"textures": [
+				"textures/items/true_weapons/katanas/copper"
+			]
+		},
+		"copper_long_sword": {
+			"textures": [
+				"textures/items/true_weapons/longs_sword/copper"
+			]
+		},
+		"copper_knife": {
+			"textures": [
+				"textures/items/true_weapons/knife/copper"
+			]
+		},
+		"copper_barbed_mace": {
+			"textures": [
+				"textures/items/true_weapons/barbed_mace/copper"
+			]
+		},
+		"copper_kama": {
+			"textures": [
+				"textures/items/true_weapons/kama/copper"
+			]
+		},
+		"copper_bearded_axe": {
+			"textures": [
+				"textures/items/true_weapons/bearded_axe/copper"
+			]
+		},
+		"copper_dane_axe": {
+			"textures": [
+				"textures/items/true_weapons/dane_axe/copper"
+			]
+		},
+		"copper_wakizashi": {
+			"textures": [
+				"textures/items/true_weapons/wakizashi/copper"
+			]
+		},
+		"copper_ninjatō": {
+			"textures": [
+				"textures/items/true_weapons/ninjatō/copper"
+			]
+		},
+		"copper_ōdachi": {
+			"textures": [
+				"textures/items/true_weapons/ōdachi/copper"
+			]
+		},
+		"copper_naginata": {
+			"textures": [
+				"textures/items/true_weapons/naginata/copper"
+			]
+		},
+		"copper_machete": {
+			"textures": [
+				"textures/items/true_weapons/machete/copper"
+			]
+		},
+		"copper_zweihander": {
+			"textures": [
+				"textures/items/true_weapons/zweihander/copper"
+			]
+		},
+		"copper_seitengewehr": {
+			"textures": [
+				"textures/items/true_weapons/seitengewehr/copper"
+			]
+		},
+		"gold_plate": {
+			"textures": [
+				"textures/items/gold_plate"
+			]
+		}
+	}
+}

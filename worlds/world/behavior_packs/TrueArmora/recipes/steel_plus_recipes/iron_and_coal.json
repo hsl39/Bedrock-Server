@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "iron_and_coal"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"ABA",
+			"AAA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:coal"
+			},
+			"B": {
+				"item": "minecraft:raw_iron"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:coal"
+			},
+			{
+				"item": "minecraft:raw_iron"
+			}
+		],
+		"result": {
+			"item": "pa:iron_and_coal"
+		}
+	}
+}

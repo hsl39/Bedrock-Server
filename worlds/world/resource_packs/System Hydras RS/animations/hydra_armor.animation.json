@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hydra_armor.scale": {
+			"loop": true,
+			"bones": {
+				"helmet": {
+					"scale": 1.1
+				},
+				"chestplate": {
+					"position": [0, -2, 0],
+					"scale": 1.1
+				},
+				"eff": {
+					"scale": 1.1
+				},
+				"ls": {
+					"position": [0, -1.5, 0],
+					"scale": 1.1
+				}
+			}
+		}
+	}
+}

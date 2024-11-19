@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wood_epee_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" A ",
+			"ABA"
+		],
+		"key": {
+			"A": {
+				"tag": "minecraft:planks"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"unlock": [
+			{
+			  "tag": "minecraft:planks"
+			}
+		],
+		"result": [
+			{
+				"item": "true:wooden_epee"
+			}
+		]
+	}
+}

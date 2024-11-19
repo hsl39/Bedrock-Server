@@ -1,0 +1,53 @@
+{
+   "content" : [
+      {
+         "path" : "contents.json"
+      },
+      {
+         "path" : "entities/axolotl.json"
+      },
+      {
+         "path" : "entities/cow.json"
+      },
+      {
+         "path" : "entities/chicken.json"
+      },
+      {
+         "path" : "entities/bat.json"
+      },
+      {
+         "path" : "entities/salmon.json"
+      },
+      {
+         "path" : "entities/dolphin.json"
+      },
+      {
+         "path" : "entities/fish.json"
+      },
+      {
+         "path" : "entities/fox.json"
+      },
+      {
+         "path" : "entities/goat.json"
+      },
+      {
+         "path" : "entities/llama.json"
+      },
+      {
+         "path" : "entities/parrot.json"
+      },
+      {
+         "path" : "entities/pig.json"
+      },
+      {
+         "path" : "entities/trader_llama.json"
+      },
+      {
+         "path" : "entities/turtle.json"
+      },
+      {
+         "path" : "manifest.json"
+      }
+   ],
+   "version" : 1
+}

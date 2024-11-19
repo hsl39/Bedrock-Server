@@ -1,0 +1,70 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "new:poison_hydra_spawn",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups":{
+      "summon_hydra":{
+        "minecraft:transformation":{
+          "into": "new:poison_hydra<minecraft:entity_spawned>",
+          "delay": 0
+        }
+      },
+      "despawn_wevern":{
+        "minecraft:despawn":{}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "hydra", "mob" ]
+      },
+      "minecraft:damage_sensor":{
+        "triggers":[
+          {
+            "on_damage":{
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1,
+        "min": 1
+      },
+      "minecraft:knockback_resistance":{
+        "value": 1000
+      },
+      "minecraft:collision_box": {
+        "width": 1.5,
+        "height": 1.5
+      }
+    },
+    "events":{
+      "minecraft:entity_spawned":{
+        "randomize":[
+          {
+            "weight": 80,
+            "add":{
+              "component_groups":[
+                "despawn_wevern"
+              ]
+            }
+          },
+          {
+            "weight": 20,
+            "add":{
+              "component_groups":[
+                "summon_hydra"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

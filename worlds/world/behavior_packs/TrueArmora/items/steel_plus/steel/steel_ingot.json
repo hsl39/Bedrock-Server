@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pa:steel_ingot",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.diamond"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "steel_ingot"
+			},
+			"minecraft:display_name": {}
+		}
+	}
+}

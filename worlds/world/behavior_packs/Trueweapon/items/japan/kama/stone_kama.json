@@ -1,0 +1,172 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "true:stone_kama",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.hoe"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+                "tags": [
+                    "minecraft:is_hoe"
+                ]
+            },
+			"minecraft:allow_off_hand": true,
+			"minecraft:repairable": {
+				"repair_items": [
+                    {
+                        "items": [
+                          "minecraft:cobblestone"
+                        ],
+                        "repair_amount": 80
+                      },
+				  {
+					"items": [
+					  "true:stone_kama"
+					],
+					"repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+				  }
+				]
+			  },
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:damage": 4,
+			"minecraft:enchantable": {
+				"value": 5,
+				"slot": "sword"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:mangrove_leaves",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:moss_block",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:leaves",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:shroomlight",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:sponge",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:target",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:hay_block",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:leaves2",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:warped_wart_block",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:nether_wart_block",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:sculk",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:sculk_catalyst",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:sculk_shrieker",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:sculk_vein",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:sculk_sensor",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					},
+					{
+						"block": "minecraft:dried_kelp_block",
+						"speed": 4,
+						"on_dig": {
+							"event": "break_blocks"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "destroy_block",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {},
+			"minecraft:icon": {
+				"texture": "stone_kama"
+			},
+			"minecraft:durability": {
+				"max_durability": 66
+			}
+		}
+	}
+}

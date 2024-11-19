@@ -1,0 +1,22 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "mocreatures:wyvern_woodplank",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.planks"
+			}
+		},
+		"components": {
+			"minecraft:map_color": "#62bcb4",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 10
+			}
+		},
+		"events": {}
+	}
+}

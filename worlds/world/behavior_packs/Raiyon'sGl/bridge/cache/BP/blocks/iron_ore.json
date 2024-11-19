@@ -1,0 +1,193 @@
+{
+	"file_path": "C:\\Users\\elcha\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Raiyon'sGl\\blocks\\iron_ore.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "cce92ffd_339c_4615_9350_b8d4ab6ca6a4",
+	"file_version": 13,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:block": {
+						"description": {
+							"identifier": "ray:iron_ore"
+						},
+						"components": {
+							"minecraft:block_light_absorption": 1,
+							
+							"tag:iron_pick_diggable": {},
+							"minecraft:loot": "loot_tables/empty.json",
+							"minecraft:ticking": {
+								"looping": true,
+								"range": [
+									0,
+									0
+								],
+								"on_tick": {
+									"event": "tick",
+									"target": "self"
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:iron_ore"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 1,
+								
+								"tag:iron_pick_diggable": {},
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:ticking": {
+									"looping": true,
+									"range": [
+										0,
+										0
+									],
+									"on_tick": {
+										"event": "tick",
+										"target": "self"
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:iron_ore"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:iron_ore"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 1,
+								
+								"tag:iron_pick_diggable": {},
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:ticking": {
+									"looping": true,
+									"range": [
+										0,
+										0
+									],
+									"on_tick": {
+										"event": "tick",
+										"target": "self"
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1",
+								"key": "minecraft:block_light_absorption"
+							},
+							{
+								"data": "0.1",
+								"key": "minecraft:destroy_time"
+							},
+							{
+								"key": "tag:iron_pick_diggable",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"data": "loot_tables/empty.json",
+								"key": "minecraft:loot"
+							},
+							{
+								"open": {
+									"minecraft:block_light_absorption": 1,
+									
+									"tag:iron_pick_diggable": {},
+									"minecraft:loot": "loot_tables/empty.json",
+									"minecraft:ticking": {
+										"looping": true,
+										"range": [
+											0,
+											0
+										],
+										"on_tick": {
+											"event": "tick",
+											"target": "self"
+										}
+									}
+								},
+								"key": "minecraft:ticking",
+								"children": [
+									{
+										"open": {
+											"looping": true,
+											"range": [
+												0,
+												0
+											],
+											"on_tick": {
+												"event": "tick",
+												"target": "self"
+											}
+										},
+										"data": "true",
+										"key": "looping"
+									},
+									{
+										"open": {
+											"looping": true,
+											"range": [
+												0,
+												0
+											],
+											"on_tick": {
+												"event": "tick",
+												"target": "self"
+											}
+										},
+										"key": "range",
+										"is_minified": true,
+										"children": [
+											0,
+											0
+										]
+									},
+									{
+										"open": {
+											"looping": true,
+											"range": [
+												0,
+												0
+											],
+											"on_tick": {
+												"event": "tick",
+												"target": "self"
+											}
+										},
+										"key": "on_tick",
+										"is_minified": true,
+										"children": {
+											"event": "tick",
+											"target": "self"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

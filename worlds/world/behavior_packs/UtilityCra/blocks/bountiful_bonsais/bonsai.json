@@ -1,0 +1,117 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "twm:bonsai",
+			"states": {
+				"twm:soilTier": [
+					0,
+					1,
+					2,
+					3,
+					4
+				],
+				"twm:hasBonsai": [
+					0,
+					1
+				]
+			},
+			"menu_category": {
+				"category": "construction",
+				"group": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('twm:soilTier') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_bonsai_tier1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/bountiful_bonsais/bonsais/yellow_soil.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:soilTier') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_bonsai_tier2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/bountiful_bonsais/bonsais/red_soil.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:soilTier') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_bonsai_tier3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/bountiful_bonsais/bonsais/blue_soil.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:soilTier') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_bonsai_tier4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/bountiful_bonsais/bonsais/black_soil.json"
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.twm_bonsai",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "twm_blank_bonsai",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					6,
+					14
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					4,
+					14
+				]
+			},
+			"minecraft:custom_components": [
+				"twm:bonsai"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					200,
+					200
+				]
+			}
+		}
+	}
+}

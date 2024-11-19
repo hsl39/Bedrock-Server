@@ -1,0 +1,276 @@
+{
+	"format_version": "1.14.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "l4gg:bf109",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			
+			"properties": {
+			    "l4gg:has_taken_off": { 
+			        "type": "bool", 
+			        "default": false 
+			    },
+			    "adn:fuel": {
+			        "client_sync": true,
+			        "type": "float", 
+			        "range": [-1.0, 100.0],
+			        "default": 0.0
+			    },
+			    "adn:speed": {
+			        "client_sync": true,
+			        "type": "float", 
+			        "range": [-10.0, 10.0],
+			        "default": 0.001
+			    },
+			    "adn:target_rot_x": { 
+			        "client_sync": true,
+			        "type": "float", 
+			        "range": [-360.0, 360.0],
+			        "default": 0.0
+			        
+			    },
+			    "adn:target_rot_y": { 
+			        "client_sync": true,
+			        "type": "float", 
+			        "range": [-360.0, 360.0],
+			        "default": 0.0
+			        
+			    }
+			}
+		},
+		"component_groups": {
+          "steering:locked": {
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"crouching_skip_interact": true,
+				"interact_text": "Fly",
+				"family_types": [
+					"player",
+					"private_container"
+				],
+				"pull_in_entities": false,
+				"seats": [
+					{
+						"position": [
+							0,
+							0.1,
+							0
+						],
+						"min_rider_count": 2,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 2
+					}
+				],
+				"controlling_seat": 0
+			    
+			}
+		    },
+		    "steering:normal": {
+		      "minecraft:rideable": {
+				"seat_count": 2,
+				"crouching_skip_interact": true,
+				"interact_text": "Fly",
+				"family_types": [
+					"player",
+					"private_container"
+				],
+				"pull_in_entities": false,
+				"seats": [
+					{
+						"position": [
+							0.2,
+							0.4,
+							0
+						],
+						"min_rider_count": 2,
+						"max_rider_count": 2
+					}
+				],
+				"controlling_seat": 0
+                }
+		    },
+		    "steering:telt_based": {
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"crouching_skip_interact": true,
+				"interact_text": "Fly",
+				"family_types": [
+					"player",
+					"private_container"
+				],
+				"pull_in_entities": false,
+				"seats": [
+					{
+						"position": [
+							0,
+							0.1,
+							0
+						],
+						"min_rider_count": 2,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 80
+					}
+				],
+				"controlling_seat": 0
+			    
+			}
+		    },
+		    "adn:gravity_on": {
+		        "minecraft:physics": {
+			    "has_gravity": true
+		        }
+		    },
+		    "adn:gravity_off": {
+		        "minecraft:physics": {
+			    "has_gravity": false
+		        }
+		    }
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+				    "aircraft",
+				    "l4gg-fighterPlane",
+					"plane",
+					"l4gg-warplanes"
+				]
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:health": {
+				"value": 40
+			},
+			"minecraft:collision_box": {
+				"width": 4,
+				"height": 3
+			},
+			"minecraft:inventory": {
+			    "inventory_size": 16,
+			    "container_type": "inventory",
+			    "restrict_to_owner": false
+			 },
+			 
+			"minecraft:navigation.walk": {
+				"is_amphibious": false,
+				"avoid_water": true
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:loot": {
+        "table": "loot_tables/entities/warplanes/bf109.json"
+      },
+      "minecraft:damage_sensor": {
+          "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                {
+                  "test": "has_damage",
+                  "value": "fall"
+                },
+                {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "damager",
+                    "value": "minecraft:redstone"
+                }
+              ]
+            }
+          },
+          "deals_damage": false
+        }
+      ]
+    },
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"crouching_skip_interact": true,
+				"interact_text": "Fly",
+				"family_types": [
+					"player",
+					"private_container"
+				],
+				"pull_in_entities": false,
+				"seats": [
+					{
+						"position": [
+							0,
+							1,
+							0
+						],
+						"min_rider_count": 2,
+						"max_rider_count": 2
+					}
+				],
+				"controlling_seat": 0
+			},
+			"minecraft:behavior.player_ride_tamed": {},
+
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:is_tamed": {}
+		},
+		"events": {
+		  "steering:locked": {
+               "add": {
+                   "component_groups": [ "steering:locked" ]
+                   
+               },
+		       "remove": {
+		            "component_groups": [ "steering:normal", "steering:telt_based"
+		            
+		            ]
+		       }
+		    },
+		    "steering:telt_based": {
+               "add": {
+                   "component_groups": [ "steering:telt_based" ]
+                   
+               },
+		       "remove": {
+		            "component_groups": [ "steering:normal", "steering:locked"
+		            ]
+		       }
+		    },
+		    "steering:normal": {
+               "add": {
+                   "component_groups": [ "steering:normal" ]
+                   
+               },
+		       "remove": {
+		            "component_groups": [ "steering:telt_based", "steering:locked"
+		            ]
+		       }
+		    },
+		    "adn:gravity_on": {
+               "add": {
+                   "component_groups": [ "adn:gravity_on" ]
+                   
+               },
+		       "remove": {
+		            "component_groups": [ "adn:gravity_off"
+		            ]
+		       }
+		    },
+		    "adn:gravity_off": {
+               "add": {
+                   "component_groups": [ "adn:gravity_off" ]
+                   
+               },
+		       "remove": {
+		            "component_groups": [ "adn:gravity_on"
+		            ]
+		       }
+		    }
+		}
+	}
+}

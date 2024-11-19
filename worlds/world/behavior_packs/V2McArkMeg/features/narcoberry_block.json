@@ -1,0 +1,20 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "mc_ark:narcoberry_block"
+    },
+    "places_block": "mc_ark:narcoberry_block", 
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false,
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:dirt",
+        "minecraft:grass"
+      ]
+    },
+    "may_replace": [ 
+      "minecraft:air"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+import "./modules/Amputate";
+import "./modules/BackStab";
+import "./modules/Bleeding";
+import "./modules/Contusion";
+import "./modules/Fracture";
+import "./modules/Tools";
+import "./modules/Spear";
+import "./modules/Sweep";
+import "./modules/Weakness";
+import "./modules/Weight";
+import { system } from "@minecraft/server";
+import AntiBurner from "./libraries/burn";
+import { SetLore } from "./modules/Lore";
+SetLore();
+system.run(() => new AntiBurner(["netherite_"]));

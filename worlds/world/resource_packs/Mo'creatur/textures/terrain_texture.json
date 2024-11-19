@@ -1,0 +1,101 @@
+//bridge-file-version: #2
+{
+	"resource_pack_name": "Mocreatures Blocks",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"dirt_ogre_lair": {
+			"textures": [
+				"textures/blocks/dirt_ogre_lair"
+			]
+		},
+		"dirt_wyvern_lair": {
+			"textures": [
+				"textures/blocks/dirt_wyvern_lair"
+			]
+		},
+		"grass_top_ogre_lair": {
+			"textures": [
+				"textures/blocks/grass_top_ogre_lair"
+			]
+		},
+		"grass_top_wyvern_lair": {
+			"textures": [
+				"textures/blocks/grass_top_wyvern_lair"
+			]
+		},
+		"grass_side_ogre_lair": {
+			"textures": [
+				"textures/blocks/grass_side_ogre_lair"
+			]
+		},
+		"grass_side_wyvern_lair": {
+			"textures": [
+				"textures/blocks/grass_side_wyvern_lair"
+			]
+		},
+		"leaves_ogre_lair": {
+			"textures": [
+				"textures/blocks/leaves_ogre_lair",
+				"textures/blocks/leaves_ogre_lair_solid"
+			]
+		},
+		"leaves_wyvern_lair": {
+			"textures": [
+				"textures/blocks/leaves_wyvern_lair",
+				"textures/blocks/leaves_wyvern_lair_solid"
+			]
+		},
+		"log_side_ogre_lair": {
+			"textures": [
+				"textures/blocks/log_side_ogre_lair"
+			]
+		},
+		"log_side_wyvern_lair": {
+			"textures": [
+				"textures/blocks/log_side_wyvern_lair"
+			]
+		},
+		"log_top_ogre_lair": {
+			"textures": [
+				"textures/blocks/log_top_ogre_lair"
+			]
+		},
+		"log_top_wyvern_lair": {
+			"textures": [
+				"textures/blocks/log_top_wyvern_lair"
+			]
+		},
+		"rock_ogre_lair": {
+			"textures": [
+				"textures/blocks/rock_ogre_lair"
+			]
+		},
+		"rock_wyvern_lair": {
+			"textures": [
+				"textures/blocks/rock_wyvern_lair"
+			]
+		},
+		"tall_grass_ogre_lair": {
+			"textures": [
+				"textures/blocks/tall_grass_ogre_lair"
+			]
+		},
+		"tall_grass_wyvern_lair": {
+			"textures": [
+				"textures/blocks/tall_grass_wyvern_lair"
+			]
+		},
+		"wood_planks_ogre_lair": {
+			"textures": [
+				"textures/blocks/wood_planks_ogre_lair"
+			]
+		},
+		"wood_planks_wyvern_lair": {
+			"textures": [
+				"textures/blocks/wood_planks_wyvern_lair"
+			]
+		}
+	}
+}

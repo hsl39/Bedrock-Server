@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.minigolem.attack": {
+			"loop": true,
+			"bones": {
+				"block": {
+					"position": [0, 18, 0],
+					"scale": [2, 2, 2]
+				},
+				"leftArm": {
+					"rotation": [-180, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [-180, 0, 0]
+				}
+			}
+		},
+		"animation.minigolem.default": {
+			"loop": true,
+			"bones": {
+				"block": {
+					"position": [0, 9, 0],
+					"scale": 0.5
+				}
+			}
+		}
+	}
+}

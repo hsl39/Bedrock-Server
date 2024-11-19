@@ -1,0 +1,43 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"uuid": "3ba384db-4640-481a-abad-33565b602845",
+		"version": [ 1, 10, 0 ],
+		"min_engine_version": [ 1, 21, 20 ],
+		"pack_scope": "world",
+		"platform_locked": false
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "c8572b22-a8b2-4e4e-80f2-e61f836a34a2",
+			"version": [ 0, 1, 0 ]
+		},
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "434ee15d-2d5f-4c9a-bd77-2c008ec1d5a0",
+      "entry": "scripts/main.js",
+      "version": [ 0, 1, 0 ]
+    }
+	],
+	"dependencies": [
+		{
+			"uuid": "380dcc10-ce9d-4590-bfbf-9d6529eb5df8",
+			"version": [ 1, 10, 0 ]
+		},
+		{
+      "module_name": "@minecraft/server",
+      "version": "1.13.0"
+    }
+	],
+	"metadata": {
+		"authors": [
+			"PixelPoly Digital"
+		],
+		"license": "eula.pdf",
+		"url": "https://pixelpoly.co/"
+	}
+}

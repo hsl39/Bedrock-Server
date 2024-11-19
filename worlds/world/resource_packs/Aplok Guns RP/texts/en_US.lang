@@ -1,0 +1,108 @@
+pack.description=Produced by Gabriel Aplok.
+
+entity.gabrielaplok:explosive_crate_explosion.name=Explosive Crate
+entity.gabrielaplok:landmine_explosion.name=Landmine
+entity.gabrielaplok:bullet.name=Bullet
+
+item.helmet_6b47.name=6B46 Ratnik-BSh Helmet
+item.juggernaut_boots.name=Juggernaut Boots
+item.juggernaut_chestplate.name=Juggernaut Chestplate
+item.juggernaut_helmet.name=Juggernaut Helmet
+item.juggernaut_leggings.name=Juggernaut Leggings
+item.nv_goggles.name=Night Vision Goggles
+item.vest_6b3.name=6B3 Body Armor
+
+item.acog_sight.name=ACOG Sight
+item.eotech_sight.name=EOTech Sight
+item.predator_v4_sight.name=Predator V4 Sight
+item.foregrip.name=Foregrip
+item.laser_red.name=Red Laser
+item.laser_green.name=Green Laser
+item.scope_hp.name=HP Scope
+item.scope_lp.name=LP Scope
+item.silencer.name=Silencer
+
+item.blueprint_ammo.name=Blueprint for Ammo
+item.blueprint_attachments.name=Blueprint for Attachments
+item.blueprint_guns.name=Blueprint for Guns
+item.blueprint_vehicle.name=Blueprint for Vehicle
+
+item.cooked_flesh.name=Cooked Flesh
+
+item.bullet_9x19pr.name=9x19mm Parabellum Bullet
+item.bullet_12gauge.name=12 Gauge Cartridge
+item.bullet_50ae.name=.50 AE Cartridge
+item.bullet_545x39.name=5.45x39mm Bullet
+item.bullet_556x45.name=5.56x45mm NATO Bullet
+item.bullet_762x39.name=7.62x39mm Bullet
+item.bullet_762x51.name=7.62x51mm NATO Bullet
+
+item.ak12.name=AK-12
+item.ak47.name=AK-47
+item.awp.name=AWP
+item.deagle.name=Desert Eagle
+item.fnfal.name=FN FAL
+item.glock17.name=Glock 17
+item.glock18.name=Glock 18c
+item.m249.name=M249
+item.m4a1.name=M4A1
+item.mossberg.name=Mossberg 500
+item.mp5a5.name=HK MP5-A5
+
+item.ak12_mag.name=AK-12 30rnd Mag
+item.ak47_mag.name=AK-47 30rnd Mag
+item.awp_mag.name=AWP 10rnd Mag
+item.deagle_mag.name=Desert Eagle 10rnd Mag
+item.fnfal_mag.name=FN FAL 20rnd Mag
+item.glock17_mag.name=Glock 17 17rnd Mag
+item.glock18_mag.name=Glock 18c 17rnd Mag
+item.m249_mag.name=M249 200rnd Box
+item.m4a1_mag.name=M4A1 30rnd Mag
+item.mp5a5_mag.name=HK MP5-A5 30rnd Mag
+
+item.bucket_petroleum.name=Bucket with Petroleum
+item.copper_nugget.name=Copper Nugget
+item.gunmetal_ingot.name=Gunmetal Ingot
+item.gunmetal_nugget.name=Gunmetal Nugget
+item.gunmetal_scrap.name=Gunmetal Scrap
+item.plastic_mass.name=Plastic Mass
+item.plastic_plate.name=Plastic Plate
+item.sulfur_powder.name=Sulfur Powder
+
+item.barrel_long.name=Barrel Long
+item.barrel_medium.name=Barrel Medium
+item.barrel_short.name=Barrel Short
+item.grip.name=Grip
+item.grip_pistol.name=Grip for Pistol
+item.stock_polymer.name=Stock Polymer
+item.stock_sniper_polymer.name=Stock Sniper Polymer
+item.stock_wood.name=Stock Wood
+
+item.landmine.name=Landmine
+
+item.m67_grenade.name=M67 Grenade
+
+tile.ammo_workbench.name=Ammo Workbench
+tile.attachment_workbench.name=Attachment Workbench
+tile.gun_workbench.name=Gun Workbench
+tile.hazard_block.name=Hazard Block
+tile.hedgehog.name=Czech hedgehog
+tile.metal_rack.name=Metal Rack
+tile.sandbag.name=Sandbag
+
+game.message.welcome_1=Aplok Guns V1.1.4
+game.message.welcome_2=Owner and Developer: §bGabriel Aplok
+game.message.welcome_3=Discord Server: §dhttps://gabriel-aplok.com/discord
+game.message.welcome_4=Website: §ahttps://gabriel-aplok.com/projects/aplok-guns
+game.message.welcome_5=§o§eThe best survival-friendly military armament experience in Minecraft Bedrock!
+
+game.message.gun_workbench.no_blueprints=You have no blueprint for attachments.
+game.message.gun_workbench.no_support=Your gun doesn't support attachments.
+game.message.gun_workbench.hold_gun=Hold a gun to open the attachment workbench.
+game.message.ammo_workbench.no_ingredients=You have no %s for crafting the ammo.
+game.message.ammo_workbench.ingredients_cost=Crafting this ammo will cost %s %s and %s %s.
+
+game.tip.reloading=> RELOADING <
+
+death.attack.bullet=%1$s was shot by %2$s using %3$s
+death.attack.bullet.head=%1$s was headshot by %2$s using %3$s

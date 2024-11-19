@@ -1,0 +1,68 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.skeleton_wyvern.death": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"position": [0, -10, 0]
+				},
+				"Neck_2": {
+					"rotation": [47.5, 0, 0]
+				},
+				"Head": {
+					"rotation": [-49.51082, 3.84097, 14.51082]
+				},
+				"mouth": {
+					"rotation": [17.5, 0, 0]
+				},
+				"Wing2": {
+					"rotation": [0, 0, 5]
+				},
+				"wing_union2": {
+					"rotation": [0, 0, -32.5]
+				},
+				"Wing3": {
+					"rotation": [0, 0, -5]
+				},
+				"wing_union3": {
+					"rotation": [0, 0, 32.5]
+				},
+				"leg2": {
+					"rotation": [78.40052, 9.57658, 39.02504],
+					"position": [-1, -2, 0]
+				},
+				"Paw2": {
+					"rotation": [52.5, 0, 0],
+					"position": [0, -1, -1]
+				},
+				"leg": {
+					"rotation": [78.40052, 9.57658, -39.025],
+					"position": [1, -2, 0]
+				},
+				"Paw": {
+					"rotation": [52.5, 0, 0],
+					"position": [0, -1, -1]
+				},
+				"Tail2": {
+					"rotation": [15, 0, 0]
+				},
+				"Tail3": {
+					"rotation": [-17.5, 0, 0]
+				},
+				"Tail4": {
+					"rotation": [-15.25806, -24.97457, 1.16524]
+				},
+				"Tail5": {
+					"rotation": [0, -22.5, 0]
+				},
+				"Tail6": {
+					"rotation": [-23.11003, -22.29711, 3.09472]
+				},
+				"Tail7": {
+					"rotation": [0, -32.5, 0]
+				}
+			}
+		}
+	}
+}

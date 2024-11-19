@@ -1,0 +1,47 @@
+//bridge-file-version: #41
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:komododragon",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/komododragon"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					{
+						"sit": "query.is_sitting"
+					},
+					"look_at_target"
+				],
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				]
+			},
+			"animations": {
+				"walk": "animation.dragon_komodo.walk",
+				"idle": "animation.dragon_komodo.idle",
+				"look_at_target": "animation.common.look_at_target",
+				"sit": "animation.dragon_komodo.sit"
+			},
+			"geometry": {
+				"default": "geometry.dragon_komodo",
+				"saddled": "geometry.dragon_komodo_montura"
+			},
+			"render_controllers": [
+				"controller.render.komododragon"
+			],
+			"spawn_egg": {
+				"base_color": "#910808",
+				"overlay_color": "#062B4D"
+			}
+		}
+	}
+}

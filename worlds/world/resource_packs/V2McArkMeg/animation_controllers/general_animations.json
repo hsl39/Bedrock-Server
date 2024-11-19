@@ -1,0 +1,313 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+	    
+		"controller.animation.general.walk_fly_mc_ark" : {
+			"initial_state" : "default",
+			"states" : { 
+				"default" : {
+					"transitions" : [ 
+						{
+							"walk" : "query.is_on_ground && query.mark_variant != 777 || query.is_in_water && query.mark_variant != 777"
+						},
+						{
+							"fly" : "(!query.is_on_ground) && (!query.is_in_water) && query.mark_variant != 777"
+						}
+					]
+				},
+				"walk" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed * 1.5"}
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"fly" : "(!query.is_on_ground) && (!query.is_in_water)"
+						}
+					],
+					"blend_transition": 0.2
+				}, 
+				"fly" : {
+					"animations" : [
+						{
+							"fly" : "(variable.attack_time < 0.1) && !query.is_illager_captain"
+						} 
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"walk" : "query.is_on_ground || query.is_in_water"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+	    
+		"controller.animation.general.general_mc_ark" : {
+			"initial_state" : "default",
+			"states" : {  
+				"default" : {
+					"animations" : [
+ "idle"
+					], 
+					"transitions" : [
+						{
+							"sleep" : "(query.is_sheared) && query.mark_variant != 777"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"sleep" : { 
+					"animations" : [ 
+					    "idle",
+					    "sleep" ],
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"default" : "(!query.is_sheared)"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.general.walk_mc_ark" : {
+			"initial_state" : "default",
+			"states" : { 
+				"default" : {
+					"transitions" : [ 
+						{
+							"walk" : "query.modified_move_speed < 0.8 && query.mark_variant != 777"
+						},
+						{
+							"run" : "query.modified_move_speed >= 0.8 && query.mark_variant != 777"
+						}
+					]
+				},
+				"walk" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed * 1.5"}
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"run" : "query.modified_move_speed >= 0.8 && query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"run" : {
+					"animations" : [
+						{
+							"run" : "query.modified_move_speed"}
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"walk" : "query.modified_move_speed < 0.7 && query.all_animations_finished" 
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+
+		"controller.animation.general.simple_walk_attack_mc_ark" : {
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"default" : "variable.attack_time < 0.1 && query.all_animations_finished && !query.is_illager_captain" 
+						}, 
+						{
+							"sleep" : "(query.is_sheared)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default" : {
+					"animations" : [
+"idle"
+					],  
+					"transitions" : [ 
+						{
+							"sleep" : "(query.is_sheared) && query.mark_variant != 777"
+						},
+						{
+							"attacking" : "variable.attack_time >= 0.1 && query.mark_variant != 777"
+						},
+						{
+							"attacking" : "query.is_illager_captain && (query.is_on_ground) && (query.skin_id != 1) && query.mark_variant != 777"
+						}
+					]  
+				},
+			"sleep" : { 
+					"animations" : [ 
+					    "idle",
+					    "sleep" ],
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"default" : "(!query.is_sheared)"}
+					], 
+					"blend_transition": 0.2
+				}
+			}
+		},
+		 
+		"controller.animation.general.walk_and_swimming_mc_ark" : {
+			"initial_state" : "default",
+			"states" : { 
+				"default" : {
+					"transitions" : [ 
+						{
+							"walk" : "query.modified_move_speed < 0.8 && query.mark_variant != 777"
+						},
+						{
+							"run" : "query.modified_move_speed >= 0.8 && query.mark_variant != 777"
+						},
+						{
+							"swimming" : "query.is_in_water && query.mark_variant != 777"
+						}
+					]
+				},
+				"walk" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed * 1.5"}
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"run" : "query.modified_move_speed >= 0.8 && query.all_animations_finished"
+						},
+						{
+							"swimming" : "query.is_in_water"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"run" : {
+					"animations" : [
+						{
+							"run" : "query.modified_move_speed"}
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"walk" : "query.modified_move_speed < 0.7 && query.all_animations_finished" 
+						},
+						{
+							"swimming" : "query.is_in_water"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"swimming" : {
+					"animations" : [
+					    "swimming"
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{ 
+							"default" : "!query.is_in_water"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		
+		"controller.animation.general.simple_walk_and_swimming_mc_ark" : {
+			"initial_state" : "default",
+			"states" : { 
+				"default" : {
+					"transitions" : [ 
+						{
+							"walk" : "!query.is_swimming && query.mark_variant != 777"
+						},
+						{
+							"swimming" : "query.is_swimming && query.mark_variant != 777"
+						}  ,
+						{
+							"swimming2" : "query.is_in_water && query.has_rider && query.mark_variant != 777"
+						}  
+					]
+				},
+				"walk" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed"}
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"swimming" : "query.is_swimming"
+						},
+						{
+							"swimming2" : "query.is_in_water && query.has_rider"
+						}  
+					],
+					"blend_transition": 0.2
+				},
+				"swimming" : {
+					"animations" : [
+					    "swimming"
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{ 
+							"default" : "!query.is_swimming"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"swimming2" : {
+					"animations" : [
+					    "swimming2"
+					], 
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 777"
+						},
+						{
+							"default" : "!query.is_in_water && query.has_rider"
+						}  
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+} 
+ 
+ 

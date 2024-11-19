@@ -1,0 +1,156 @@
+{
+	"format_version": "1.19.20",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "twm:fluid_tank_lava",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"twm:basic": {
+				"minecraft:health": {
+					"max": 8001,
+					"min": 1,
+					"value": 8001
+				}
+			},
+			"twm:advanced": {
+				"minecraft:health": {
+					"max": 32001,
+					"min": 1,
+					"value": 32001
+				}
+			},
+			"twm:expert": {
+				"minecraft:health": {
+					"max": 128001,
+					"min": 1,
+					"value": 128001
+				}
+			},
+			"twm:ultimate": {
+				"minecraft:health": {
+					"max": 512001,
+					"min": 1,
+					"value": 512001
+				}
+			}
+		},
+		"components": {
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": false
+			},
+			"minecraft:type_family": {
+				"family": [
+					"tank"
+				]
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:health": {
+				"max": 8001,
+				"min": 1,
+				"value": 8001
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:collision_box": {
+				"height": 0.5,
+				"width": 0.5
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"test": "has_tag",
+							"value": "despawn"
+						},
+						"event": "despawn"
+					},
+					{
+						"filters": {
+							"test": "in_block",
+							"value": "twm:basic_fluid_tank"
+						},
+						"event": "twm:basic"
+					},
+					{
+						"filters": {
+							"test": "in_block",
+							"value": "twm:advanced_fluid_tank"
+						},
+						"event": "twm:advanced"
+					},
+					{
+						"filters": {
+							"test": "in_block",
+							"value": "twm:expert_fluid_tank"
+						},
+						"event": "twm:expert"
+					},
+					{
+						"filters": {
+							"test": "in_block",
+							"value": "twm:ultimate_fluid_tank"
+						},
+						"event": "twm:ultimate"
+					}
+				]
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"twm:basic": {
+				"add": {
+					"component_groups": [
+						"twm:basic"
+					]
+				}
+			},
+			"twm:advanced": {
+				"add": {
+					"component_groups": [
+						"twm:advanced"
+					]
+				}
+			},
+			"twm:expert": {
+				"add": {
+					"component_groups": [
+						"twm:expert"
+					]
+				}
+			},
+			"twm:ultimate": {
+				"add": {
+					"component_groups": [
+						"twm:ultimate"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,148 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "twm:mechanic_upper",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"twm:speed": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.twm_mechanical_upper",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "twm_mechanic_hopper",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"twm:mechanic_hoppers",
+				"twm:machine_upgrades"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					5,
+					5
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'north' ",
+				"components": {
+					"minecraft:geometry": "geometry.twm_mechanical_upper_side",
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'south' ",
+				"components": {
+					"minecraft:geometry": "geometry.twm_mechanical_upper_side",
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'east' ",
+				"components": {
+					"minecraft:geometry": "geometry.twm_mechanical_upper_side",
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'west' ",
+				"components": {
+					"minecraft:geometry": "geometry.twm_mechanical_upper_side",
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_mechanic_hopper_speed1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/mechanic_upper/speed1.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_mechanic_hopper_speed2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/mechanic_upper/speed2.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_mechanic_hopper_speed3",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/mechanic_upper/speed3.json"
+				}
+			},
+			{
+				"condition": "q.block_state('twm:speed') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "twm_mechanic_hopper_speed4",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/machines/automatic/mechanic_upper/speed4.json"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,235 @@
+pack.name=§bTrue Armor and Tools Expansion RP§r Add-On (v1.4.1)
+pack.description=The Resource Pack for §bTrue Armor and Tools Expansion §r Add-On by §l§4True Cowboy§r!
+
+###################################
+###       Quartz Plus           ###
+###################################
+
+item.pa:quartz_helmet=Quartz Helmet
+item.pa:quartz_chestplate=Quartz Chestplate
+item.pa:quartz_leggings=Quartz Leggings
+item.pa:quartz_boots=Quartz Boots
+
+item.pa:crying_helmet=Crying Helmet
+item.pa:crying_chestplate=Crying Chestplate
+item.pa:crying_leggings=Crying Leggings
+item.pa:crying_boots=Crying Boots
+
+###################################
+###       Emerald  Plus         ###
+###################################
+
+item.true_ep:emerald_pickaxe=Emerald Pickaxe
+item.true_ep:emerald_shovel=Emerald shovel
+item.true_ep:emerald_sword=Emerald Sword
+item.true_ep:emerald_axe=Emerald Axe
+item.true_ep:emerald_hoe=Emerald Hoe
+item.true_ep:emerald_helmet=Emerald Helmet
+item.true_ep:emerald_chestplate=Emerald Chestplate
+item.true_ep:emerald_leggings=Emerald Leggings
+item.true_ep:emerald_boots=Emerald Boots
+
+###################################
+###         Deathnerite         ###
+###################################
+
+item.true:deathnerite_upgrade_smithing_template=Deathnerite Upgrade Smithing Template
+item.true:darkness_upgrade_smithing_template=Darkness Upgrade Smithing Template
+
+item.true_dn:deathnerite_pickaxe=Deathnerite Pickaxe
+item.true_dn:deathnerite_shovel=Deathnerite Shovel
+item.true_dn:deathnerite_sword=Deathnerite Sword
+item.true_dn:deathnerite_axe=Deathnerite Axe
+item.true_dn:deathnerite_hoe=Deathnerite Hoe
+item.true_dn:deathnerite_helmet=Deathnerite Helmet
+item.true_dn:deathnerite_chestplate=Deathnerite Chestplate
+item.true_dn:deathnerite_leggings=Deathnerite Leggings
+item.true_dn:deathnerite_boots=Deathnerite Boots
+item.deathnerite:netherite_ingot=Deathnerite Ingot
+item.gold_plate:netherite_ingot=Gold Plate
+item.true_dn:gilded_deathnerite_helmet=Gilded Deathnerite Helmet
+item.true_dn:gilded_deathnerite_chestplate=Gilded Deathnerite Chestplate
+item.true_dn:gilded_deathnerite_leggings=Gilded Deathnerite Leggings
+item.true_dn:gilded_deathnerite_boots=Gilded Deathnerite Boots
+item.true_dn:deathnerite_apple=Deathnerite Apple
+item.true_dn:deathnerite_carrot=Deathnerite Carrot
+item.true_dn:deathnerite_katana=Deathnerite Katana
+
+item.true_dn:parcanite_pickaxe=Parcanite Pickaxe
+item.true_dn:parcanite_shovel=Parcanite Shovel
+item.true_dn:parcanite_sword=Parcanite Sword
+item.true_dn:parcanite_axe=Parcanite Axe
+item.true_dn:parcanite_hoe=Parcanite Hoe
+item.true_dn:parcanite_helmet=Parcanite Helmet
+item.true_dn:parcanite_chestplate=parcanite Chestplate
+item.true_dn:parcanite_leggings=Parcanite Leggings
+item.true_dn:parcanite_boots=Parcanite Boots
+
+###################################
+###         Oceanite            ###
+###################################
+
+item.true_on:seanite_helmet=Oceanite Helmet
+item.true_on:seanite_chestplate=Oceanite Chestplate
+item.true_on:seanite_leggings=Oceanite Leggings
+item.true_on:seanite_boots=Oceanite Boots
+item.true_on:seanite_sword=Oceanite Sword
+item.true_on:seanite_axe=Oceanite Axe
+item.true_on:seanite_pickaxe=Oceanite Pickaxe
+item.true_on:seanite_shovel=Oceanite Shovel
+item.true_on:seanite_hoe=Oceanite Hoe
+item.seanite:netherite_ingot=Oceanite Ingot
+
+###################################
+###         Copper Plus         ###
+###################################
+
+item.true_cop:copper_pickaxe=Copper Pickaxe
+item.true_cop:exposed_copper_pickaxe=Exposed Copper Pickaxe
+item.true_cop:weathered_copper_pickaxe=Weathered Copper Pickaxe
+item.true_cop:oxidized_copper_pickaxe=Oxidized Copper Pickaxe
+
+item.true_cop:copper_shovel=Copper shovel
+item.true_cop:exposed_copper_shovel=Exposed Copper Shovel
+item.true_cop:weathered_copper_shovel=Weathered Copper Shovel
+item.true_cop:oxidized_copper_shovel=Oxidized Copper Shovel
+
+item.true_cop:copper_sword=Copper Sword
+item.true_cop:exposed_copper_sword=Exposed Copper Sword
+item.true_cop:weathered_copper_sword=Weathered Copper Sword
+item.true_cop:oxidized_copper_sword=Oxidized Copper Sword
+
+item.true_cop:copper_axe=Copper Axe
+item.true_cop:exposed_copper_axe=Exposed Copper Axe
+item.true_cop:weathered_copper_axe=Weathered Copper Axe
+item.true_cop:oxidized_copper_axe=Oxidized Copper Axe
+
+item.true_cop:copper_hoe=Copper Hoe
+item.true_cop:exposed_copper_hoe=Exposed Copper Hoe
+item.true_cop:weathered_copper_hoe=Weathered Copper Hoe
+item.true_cop:oxidized_copper_hoe=Oxidized Copper Hoe
+
+
+item.true_cop:copper_helmet=Copper Helmet
+item.true_cop:copper_chestplate=Copper Chestplate
+item.true_cop:copper_leggings=Copper Leggings
+item.true_cop:copper_boots=Copper Boots
+
+item.true_cop:exposed_copper_helmet=Exposed Copper Helmet
+item.true_cop:exposed_copper_chestplate=Exposed Copper Chestplate
+item.true_cop:exposed_copper_leggings=Exposed Copper Leggings
+item.true_cop:exposed_copper_boots=Exposed Copper Boots
+
+item.true_cop:weathered_copper_helmet=Weathered Copper Helmet
+item.true_cop:weathered_copper_chestplate=Weathered Copper Chestplate
+item.true_cop:weathered_copper_leggings=Weathered Copper Leggings
+item.true_cop:weathered_copper_boots=Weathered Copper Boots
+
+item.true_cop:oxidized_copper_helmet=Oxidized Copper Helmet
+item.true_cop:oxidized_copper_chestplate=Oxidized Copper Chestplate
+item.true_cop:oxidized_copper_leggings=Oxidized Copper Leggings
+item.true_cop:oxidized_copper_boots=Oxidized Copper Boots
+
+item.true_cop:waxed_copper_helmet=Waxed Copper Helmet
+item.true_cop:waxed_copper_chestplate=Waxed Copper Chestplate
+item.true_cop:waxed_copper_leggings=Waxed Copper Leggings
+item.true_cop:waxed_copper_boots=Waxed Copper Boots
+
+item.true_cop:waxed_exposed_copper_helmet=Waxed Exposed Copper Helmet
+item.true_cop:waxed_exposed_copper_chestplate=Waxed Exposed Copper Chestplate
+item.true_cop:waxed_exposed_copper_leggings=Waxed Exposed Copper Leggings
+item.true_cop:waxed_exposed_copper_boots=Waxed Exposed Copper Boots
+
+item.true_cop:waxed_weathered_copper_helmet=Waxed Weathered Copper Helmet
+item.true_cop:waxed_weathered_copper_chestplate=Waxed Weathered Copper Chestplate
+item.true_cop:waxed_weathered_copper_leggings=Waxed Weathered Copper Leggings
+item.true_cop:waxed_weathered_copper_boots=Waxed Weathered Copper Boots
+
+item.true_cop:waxed_oxidized_copper_helmet=Waxed Oxidized Copper Helmet
+item.true_cop:waxed_oxidized_copper_chestplate=Waxed Oxidized Copper Chestplate
+item.true_cop:waxed_oxidized_copper_leggings=Waxed Oxidized Copper Leggings
+item.true_cop:waxed_oxidized_copper_boots=Waxed Oxidized Copper Boots
+
+
+
+item.true_cop:rose_gold_pickaxe=Rose Gold Pickaxe
+item.true_cop:rose_gold_shovel=Rose Gold Shovel
+item.true_cop:rose_gold_sword=Rose Gold Sword
+item.true_cop:rose_gold_axe=Rose Gold Axe
+item.true_cop:rose_gold_hoe=Rose Gold Hoe
+item.true_cop:rose_gold_helmet=Rose Gold Helmet
+item.true_cop:rose_gold_chestplate=Rose Gold Chestplate
+item.true_cop:rose_gold_leggings=Rose Gold Leggings
+item.true_cop:rose_gold_boots=Rose Gold Boots
+tile.true_cop:lightning_attracts=Lightning Attracts
+item.true_cop:thunder_sword=Thunder Sword
+item.true_cop:lightning_attracts_item=Lightning Attracts 
+
+item.gold_plate:netherite_ingot=Gold Plate 
+
+item.true_cop:ferro_copper_helmet=Ferro Copper Helmet
+item.true_cop:ferro_copper_chestplate=Ferro Copper Chestplate
+item.true_cop:ferro_copper_leggings=Ferro Copper Leggings
+item.true_cop:ferro_copper_boots=Ferro Copper Boots
+
+item.true_cop:ferro_copper_sword=Ferro Copper Sword
+item.true_cop:ferro_copper_axe=Ferro Copper Axe
+item.true_cop:ferro_copper_pickaxe=Ferro Copper Pickaxe
+item.true_cop:ferro_copper_shovel=Ferro Copper Shovel
+item.true_cop:ferro_copper_hoe=Ferro Copper Hoe
+
+###################################
+###      Warden armor           ###
+###################################
+item.wb:warden_helmet=Warden Helmet
+item.wb:warden_chestplate=Warden Chestplate
+item.wb:warden_leggings=Warden Leggings
+item.wb:warden_boots=Warden Boots
+
+item.wb:warden_sword=Warden Sword
+item.wb:warden_axe=Warden Axe
+item.wb:warden_pickaxe=Warden Pickaxe
+item.wb:warden_shovel=Warden Shovel
+item.wb:warden_hoe=Warden Hoe
+###################################
+###      Steel PlUS             ###
+###################################
+
+item.pa:steel_sword=Steel Sword
+item.pa:steel_axe=Steel Axe
+item.pa:steel_pickaxe=Steel Pickaxe
+item.pa:steel_shovel=Steel Shovel
+item.pa:steel_hoe=Steel Hoe
+item.pa:steel_helmet=Steel Helmet
+item.pa:steel_chestplate=Steel Chestplate
+item.pa:steel_leggings=Steel Leggings
+item.pa:steel_boots=Steel Boots
+item.pa:steel_ingot=Steel Ingot
+item.pa:steel_nugget=Steel Nugget
+item.pa:iron_and_coal=Iron and Coal
+item.pa:dark_steel_sword=Dark Steel Sword
+item.pa:dark_steel_axe=Dark Steel Axe
+item.pa:dark_steel_pickaxe=Dark Steel Pickaxe
+item.pa:dark_steel_shovel=Dark Steel Shovel
+item.pa:dark_steel_hoe=Dark Steel Hoe
+item.pa:dark_steel_helmet=Dark Steel Helmet
+item.pa:dark_steel_chestplate=Dark Steel Chestplate
+item.pa:dark_steel_leggings=Dark Steel Leggings
+item.pa:dark_steel_boots=Dark Steel Boots
+item.pa:dark_essence=Dark Essence
+tile.pa:dark_essence_ore.name=Dark Essence Ore
+###################################
+###      MAGMA PlUS             ###
+###################################
+item.true_magma:magma_pickaxe=Magma Pickaxe
+item.true_magma:magma_shovel=Magma Shovel
+item.true_magma:magma_sword=Magma Sword
+item.true_magma:magma_axe=Magma Axe
+item.true_magma:magma_hoe=Magma Hoe
+
+item.true_magma:magma_helmet=Magma Helmet
+item.true_magma:magma_chestplate=Magma Chestplate
+item.true_magma:magma_leggings=Magma Leggings
+item.true_magma:magma_boots=Magma Boots
+
+item.true_magma:magma_ingot=Magma Ingot

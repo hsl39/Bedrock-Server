@@ -1,0 +1,80 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:item",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "3d_item",
+          "netherite_pa",
+          "deathnerite",
+          "heavy_swords",
+          "leather_plus",
+          "netherite_horse_armor"
+        ]
+      },
+      "animations": {
+        "3d_item": "controller.animation.netherite_pro",
+        "netherite_pa": "controller.animation.project_ateneu",
+        "deathnerite": "controller.animation.deathnerite",
+        "heavy_swords": "controller.animation.heavy_swords",
+        "leather_plus": "controller.animation.leather_plus",
+        "netherite_horse_armor": "controller.animation.netherite_horse_armor"
+      }
+    },
+    "component_groups": {
+      "netherite_fire": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:fire_immune": {
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "fire_resistance",
+              "duration": 99999,
+              "visible": false,
+              "display_on_screen_animation": true
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "pure_netherite_ingot"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "pure_netherite_fire"
+          }
+        ]
+      }
+    },
+    "events": {
+      "pure_netherite_fire": {
+        "add": {
+          "component_groups": [
+            "netherite_fire"
+          ]
+        }
+      }
+    }
+  }
+}

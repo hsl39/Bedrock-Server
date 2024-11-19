@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.dilophosaurus": { 
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.dilophosaurus1"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [  
+        { "*": true }
+      ],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

@@ -1,0 +1,579 @@
+{
+	"file_path": "C:\\Users\\elcha\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Raiyon'sGl\\entities\\test.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "1308fc8a_07e5_4c13_ad57_a3b1793ec792",
+	"file_version": 11,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.19.10",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "raiyon:test",
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"component_groups": {},
+						"components": {
+							"minecraft:physics": {
+								"has_collision": false,
+								"has_gravity": false
+							},
+							"minecraft:damage_sensor": {
+								"triggers": [
+									{
+										"deals_damage": false,
+										"cause": "all"
+									}
+								]
+							},
+							"minecraft:interact": {
+								"interactions": [
+									{
+										"interact_text": "Swap Item To Offhand",
+										"admire": true
+									}
+								]
+							},
+							"minecraft:collision_box": {
+								"width": 0,
+								"height": 0
+							},
+							"minecraft:custom_hit_test": {
+								"hitboxes": [
+									{
+										"width": 0,
+										"height": 0,
+										"pivot": [
+											0,
+											-0.75,
+											0
+										]
+									}
+								]
+							}
+						},
+						"events": {}
+					}
+				},
+				"data": "1.19.10",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.19.10",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "raiyon:test",
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"component_groups": {},
+						"components": {
+							"minecraft:physics": {
+								"has_collision": false,
+								"has_gravity": false
+							},
+							"minecraft:damage_sensor": {
+								"triggers": [
+									{
+										"deals_damage": false,
+										"cause": "all"
+									}
+								]
+							},
+							"minecraft:interact": {
+								"interactions": [
+									{
+										"interact_text": "Swap Item To Offhand",
+										"admire": true
+									}
+								]
+							},
+							"minecraft:collision_box": {
+								"width": 0,
+								"height": 0
+							},
+							"minecraft:custom_hit_test": {
+								"hitboxes": [
+									{
+										"width": 0,
+										"height": 0,
+										"pivot": [
+											0,
+											-0.75,
+											0
+										]
+									}
+								]
+							}
+						},
+						"events": {}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "raiyon:test",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"deals_damage": false,
+											"cause": "all"
+										}
+									]
+								},
+								"minecraft:interact": {
+									"interactions": [
+										{
+											"interact_text": "Swap Item To Offhand",
+											"admire": true
+										}
+									]
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:custom_hit_test": {
+									"hitboxes": [
+										{
+											"width": 0,
+											"height": 0,
+											"pivot": [
+												0,
+												-0.75,
+												0
+											]
+										}
+									]
+								}
+							},
+							"events": {}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "raiyon:test",
+							"is_summonable": true,
+							"is_spawnable": true
+						}
+					},
+					{
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "raiyon:test",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"deals_damage": false,
+											"cause": "all"
+										}
+									]
+								},
+								"minecraft:interact": {
+									"interactions": [
+										{
+											"interact_text": "Swap Item To Offhand",
+											"admire": true
+										}
+									]
+								},
+								"minecraft:collision_box": {
+									"width": 0,
+									"height": 0
+								},
+								"minecraft:custom_hit_test": {
+									"hitboxes": [
+										{
+											"width": 0,
+											"height": 0,
+											"pivot": [
+												0,
+												-0.75,
+												0
+											]
+										}
+									]
+								}
+							},
+							"events": {}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false,
+												"cause": "all"
+											}
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Swap Item To Offhand",
+												"admire": true
+											}
+										]
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													-0.75,
+													0
+												]
+											}
+										]
+									}
+								},
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {
+									"has_collision": false,
+									"has_gravity": false
+								}
+							},
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false,
+												"cause": "all"
+											}
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Swap Item To Offhand",
+												"admire": true
+											}
+										]
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													-0.75,
+													0
+												]
+											}
+										]
+									}
+								},
+								"key": "minecraft:damage_sensor",
+								"children": [
+									{
+										"open": {
+											"triggers": [
+												{
+													"deals_damage": false,
+													"cause": "all"
+												}
+											]
+										},
+										"key": "triggers",
+										"children": [
+											{
+												"open": [
+													{
+														"deals_damage": false,
+														"cause": "all"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"deals_damage": false,
+													"cause": "all"
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false,
+												"cause": "all"
+											}
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Swap Item To Offhand",
+												"admire": true
+											}
+										]
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													-0.75,
+													0
+												]
+											}
+										]
+									}
+								},
+								"key": "minecraft:interact",
+								"children": [
+									{
+										"open": {
+											"interactions": [
+												{
+													"interact_text": "Swap Item To Offhand",
+													"admire": true
+												}
+											]
+										},
+										"key": "interactions",
+										"children": [
+											{
+												"open": [
+													{
+														"interact_text": "Swap Item To Offhand",
+														"admire": true
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"interact_text": "Swap Item To Offhand",
+													"admire": true
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false,
+												"cause": "all"
+											}
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Swap Item To Offhand",
+												"admire": true
+											}
+										]
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													-0.75,
+													0
+												]
+											}
+										]
+									}
+								},
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0,
+									"height": 0
+								}
+							},
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false,
+												"cause": "all"
+											}
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Swap Item To Offhand",
+												"admire": true
+											}
+										]
+									},
+									"minecraft:collision_box": {
+										"width": 0,
+										"height": 0
+									},
+									"minecraft:custom_hit_test": {
+										"hitboxes": [
+											{
+												"width": 0,
+												"height": 0,
+												"pivot": [
+													0,
+													-0.75,
+													0
+												]
+											}
+										]
+									}
+								},
+								"key": "minecraft:custom_hit_test",
+								"children": [
+									{
+										"open": {
+											"hitboxes": [
+												{
+													"width": 0,
+													"height": 0,
+													"pivot": [
+														0,
+														-0.75,
+														0
+													]
+												}
+											]
+										},
+										"key": "hitboxes",
+										"children": [
+											{
+												"open": [
+													{
+														"width": 0,
+														"height": 0,
+														"pivot": [
+															0,
+															-0.75,
+															0
+														]
+													}
+												],
+												"children": [
+													{
+														"data": "0",
+														"key": "width"
+													},
+													{
+														"data": "0",
+														"key": "height"
+													},
+													{
+														"open": {
+															"width": 0,
+															"height": 0,
+															"pivot": [
+																0,
+																-0.75,
+																0
+															]
+														},
+														"key": "pivot",
+														"is_minified": true,
+														"children": [
+															0,
+															-0.75,
+															0
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"key": "events",
+						"is_minified": true,
+						"children": {}
+					}
+				]
+			}
+		]
+	}
+}

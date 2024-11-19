@@ -1,0 +1,79 @@
+
+{
+  "format_version": "1.10.0",
+  "animation_controllers":{
+    "controller.animation.wyvern_armor":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "leather": "query.skin_id == 1"
+            },
+            {
+              "gold": "query.skin_id == 2"
+            },
+            {
+              "iron": "query.skin_id == 3"
+            },
+            {
+              "diamond": "query.skin_id == 4"
+            },
+            {
+              "netherite": "query.skin_id == 5"
+            }
+          ]
+        },
+        "leather":{
+          "transitions":[
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry":[
+            "/effect @s resistance 1 1 true"
+          ]
+        },
+        "gold":{
+          "transitions":[
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry":[
+            "/effect @s resistance 1 2 true"
+          ]
+        },
+        "iron":{
+          "transitions":[
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry":[
+            "/effect @s resistance 1 3 true"
+          ]
+        },
+        "diamond":{
+          "transitions":[
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry":[
+            "/effect @s resistance 1 4 true"
+          ]
+        },
+        "netherite":{
+          "transitions":[
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry":[
+            "/effect @s resistance 1 5 true"
+          ]
+        }
+      }
+    }
+  }
+}

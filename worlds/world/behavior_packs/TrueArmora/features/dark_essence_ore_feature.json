@@ -1,0 +1,21 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:ore_feature": {
+	  "description": {
+			"identifier": "pa:dark_essence_ore_feature"
+	  },
+	  "count": 4,
+	  "replace_rules": [
+		{
+			"places_block": {
+				"name": "pa:dark_essence_ore"
+			},
+			"may_replace": [
+				{
+					"name": "minecraft:deepslate"
+				}
+			]
+		}
+	   ]
+	}
+  }

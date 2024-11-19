@@ -1,0 +1,132 @@
+{
+  "format_version": "1.8.0",
+  "animations": { 
+      
+    "animation.strength_in_water_spinosaurus": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+    "/effect @s strength 1 0 true"
+            ]
+      } 
+    },
+      
+    "animation.remove_levitation_spinosaurus": {
+     "animation_length": 0.05,
+      "loop": true,
+      "timeline": {
+        "0.00": [
+    "/effect @s levitation 0 12 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      } 
+    },
+      
+    "animation.velocidad_0_spinosaurus": {
+     "animation_length": 0.4,
+      "loop": true,
+      "timeline": {
+        "0.0": [ 
+    "/effect @s levitation 0 254 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      } 
+    },
+    "animation.velocidad_1_spinosaurus": {
+      "animation_length": 1.0, 
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl75] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 10 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 11 true",
+            
+        "/effect @s levitation 1 0 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_2_spinosaurus": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl75] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 10 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 11 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 12 true",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 0 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 0 true",
+            "/execute @s[tag=lvl75] ~~~ effect @s levitation 1 1 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 1 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 1 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 2 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 2 true",
+            
+
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_3_spinosaurus": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [ 
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl75] ~~~ effect @s speed 1 10 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 11 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 12 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 13 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 15 true",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 2 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 2 true",
+            "/execute @s[tag=lvl75] ~~~ effect @s levitation 1 3 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 3 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 4 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 4 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 5 true",
+            
+        "/effect @s slow_falling 1 1 true"
+            ] 
+      }
+    },  
+    "animation.velocidad_4_spinosaurus": {
+      "animation_length": 0.2,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 10 true",
+            "/execute @s[tag=lvl75] ~~~ effect @s speed 1 11 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 12 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 13 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 14 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 14 true",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 5 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 5 true",
+            "/execute @s[tag=lvl75] ~~~ effect @s levitation 1 5 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 6 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 7 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 8 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 9 true",
+            
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    }
+      
+  }
+} 

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ihg:stone_hammer"
+		},
+		"tags": [
+			"workbench"
+		],
+		"pattern": [
+			"XXX",
+			"XOX",
+			" O "
+		],
+		"key": {
+			"X": {
+				"tag": "minecraft:stone_tool_materials"
+			},
+			"O": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ihg:stone_hammer",
+			"count": 1
+		}
+	}
+}

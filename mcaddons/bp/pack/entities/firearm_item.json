@@ -1,0 +1,510 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pixelpoly:firearm_item",
+      "is_summonable": false,
+      "is_spawnable": false,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "pistol:svi": {
+        "minecraft:skin_id": { "value": 21 },
+        "minecraft:scale": { "value": 0.09 }
+      },
+      "pistol:svi_mag": {
+        "minecraft:skin_id": { "value": 22 },
+        "minecraft:scale": { "value": 0.07 }
+      },
+      "pistol:taurus": {
+        "minecraft:skin_id": { "value": 1 },
+        "minecraft:scale": { "value": 0.2 }
+      },
+      "pistol:taurus_mag": {
+        "minecraft:skin_id": { "value": 2 },
+        "minecraft:scale": { "value": 0.2 }
+      },
+      "smg:p90": {
+        "minecraft:skin_id": { "value": 3 },
+        "minecraft:scale": { "value": 0.1 }
+      },
+      "smg:p90_mag": {
+        "minecraft:skin_id": { "value": 4 },
+        "minecraft:scale": { "value": 0.1 }
+      },
+      "sniper:awp": {
+        "minecraft:skin_id": { "value": 5 },
+        "minecraft:scale": { "value": 0.1 }
+      },
+      "sniper:awp_mag": {
+        "minecraft:skin_id": { "value": 6 },
+        "minecraft:scale": { "value": 0.15 }
+      },
+      "sniper:barrett": {
+        "minecraft:skin_id": { "value": 7 },
+        "minecraft:scale": { "value": 0.08 }
+      },
+      "sniper:barrett_mag": {
+        "minecraft:skin_id": { "value": 8 },
+        "minecraft:scale": { "value": 0.15 }
+      },
+      "shotgun:m3": {
+        "minecraft:skin_id": { "value": 9 },
+        "minecraft:scale": { "value": 0.1 }
+      },
+      "shotgun:m3_ammo": {
+        "minecraft:skin_id": { "value": 10 },
+        "minecraft:scale": { "value": 0.1 }
+      },
+      "throwable:chaingrenade": {
+        "minecraft:skin_id": { "value": 11 },
+        "minecraft:scale": { "value": 0.15 }
+      },
+      "ar:akm": {
+        "minecraft:skin_id": { "value": 12 },
+        "minecraft:scale": { "value": 0.05 }
+      },
+      "ar:akm_mag": {
+        "minecraft:skin_id": { "value": 13 },
+        "minecraft:scale": { "value": 0.05 }
+      },
+      "lmg:m249": {
+        "minecraft:skin_id": { "value": 14 },
+        "minecraft:scale": { "value": 0.045 }
+      },
+      "lmg:m249_mag": {
+        "minecraft:skin_id": { "value": 15 },
+        "minecraft:scale": { "value": 0.05 }
+      },
+      "ar:mk18": {
+        "minecraft:skin_id": { "value": 16 },
+        "minecraft:scale": { "value": 0.06 }
+      },
+      "ar:mk18_mag": {
+        "minecraft:skin_id": { "value": 17 },
+        "minecraft:scale": { "value": 0.05 }
+      },
+      "smg:mp5": {
+        "minecraft:skin_id": { "value": 18 },
+        "minecraft:scale": { "value": 0.08 }
+      },
+      "smg:mp5_mag": {
+        "minecraft:skin_id": { "value": 19 },
+        "minecraft:scale": { "value": 0.08 }
+      },
+      "equipment:nightvision": {
+        "minecraft:skin_id": { "value": 20 },
+        "minecraft:scale": { "value": 0.4 }
+      },
+      "pixelpoly:despawn_item": {
+        "minecraft:despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:skin_id": {
+        "value": 0
+      },
+      "minecraft:type_family": {
+        "family": [ "item" ]
+      },
+      "minecraft:nameable": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.15,
+        "height": 0.15
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.svi" }
+              ]
+            },
+            "event": "pistol:svi"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.svi.mag" }
+              ]
+            },
+            "event": "pistol:svi_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.taurus" }
+              ]
+            },
+            "event": "pistol:taurus"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.taurus.mag" }
+              ]
+            },
+            "event": "pistol:taurus_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.p90" }
+              ]
+            },
+            "event": "smg:p90"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.p90.mag" }
+              ]
+            },
+            "event": "smg:p90_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.awp" }
+              ]
+            },
+            "event": "sniper:awp"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.awp.mag" }
+              ]
+            },
+            "event": "sniper:awp_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.barrett" }
+              ]
+            },
+            "event": "sniper:barrett"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.barrett.mag" }
+              ]
+            },
+            "event": "sniper:barrett_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.m3" }
+              ]
+            },
+            "event": "shotgun:m3"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.m3.ammo" }
+              ]
+            },
+            "event": "shotgun:m3_ammo"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.chaingrenade" }
+              ]
+            },
+            "event": "throwable:chaingrenade"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.mp5" }
+              ]
+            },
+            "event": "smg:mp5"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.nightvision" }
+              ]
+            },
+            "event": "equipment:nightvision"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.akm" }
+              ]
+            },
+            "event": "ar:akm"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.mp5.mag" }
+              ]
+            },
+            "event": "smg:mp5_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.akm.mag" }
+              ]
+            },
+            "event": "ar:akm_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.m249" }
+              ]
+            },
+            "event": "lmg:m249"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.m249.mag" }
+              ]
+            },
+            "event": "lmg:m249_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.mk18" }
+              ]
+            },
+            "event": "ar:mk18"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": true },
+                { "test": "has_tag", "operator": "==", "subject": "other", "value": "item.mk18.mag" }
+              ]
+            },
+            "event": "ar:mk18_mag"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_riding", "operator": "==", "subject": "self", "value": false }
+              ]
+            },
+            "event": "pixelpoly:despawn_item"
+          }
+        ]
+      }
+    },
+    "events": {
+      "pistol:svi": {
+        "add": {
+          "component_groups": [
+            "pistol:svi"
+          ]
+        }
+      },
+      "pistol:svi_mag": {
+        "add": {
+          "component_groups": [
+            "pistol:svi_mag"
+          ]
+        }
+      },
+      "pistol:taurus": {
+        "add": {
+          "component_groups": [
+            "pistol:taurus"
+          ]
+        }
+      },
+      "pistol:taurus_mag": {
+        "add": {
+          "component_groups": [
+            "pistol:taurus_mag"
+          ]
+        }
+      },
+      "smg:p90": {
+        "add": {
+          "component_groups": [
+            "smg:p90"
+          ]
+        }
+      },
+      "smg:p90_mag": {
+        "add": {
+          "component_groups": [
+            "smg:p90_mag"
+          ]
+        }
+      },
+      "sniper:awp": {
+        "add": {
+          "component_groups": [
+            "sniper:awp"
+          ]
+        }
+      },
+      "sniper:awp_mag": {
+        "add": {
+          "component_groups": [
+            "sniper:awp_mag"
+          ]
+        }
+      },
+      "sniper:barrett": {
+        "add": {
+          "component_groups": [
+            "sniper:barrett"
+          ]
+        }
+      },
+      "sniper:barrett_mag": {
+        "add": {
+          "component_groups": [
+            "sniper:barrett_mag"
+          ]
+        }
+      },
+      "shotgun:m3": {
+        "add": {
+          "component_groups": [
+            "shotgun:m3"
+          ]
+        }
+      },
+      "shotgun:m3_ammo": {
+        "add": {
+          "component_groups": [
+            "shotgun:m3_ammo"
+          ]
+        }
+      },
+      "throwable:chaingrenade": {
+        "add": {
+          "component_groups": [
+            "throwable:chaingrenade"
+          ]
+        }
+      },
+      "equipment:nightvision": {
+        "add": {
+          "component_groups": [
+            "equipment:nightvision"
+          ]
+        }
+      },
+      "smg:mp5": {
+        "add": {
+          "component_groups": [
+            "smg:mp5"
+          ]
+        }
+      },
+      "smg:mp5_mag": {
+        "add": {
+          "component_groups": [
+            "smg:mp5_mag"
+          ]
+        }
+      },
+      "ar:akm": {
+        "add": {
+          "component_groups": [
+            "ar:akm"
+          ]
+        }
+      },
+      "ar:akm_mag": {
+        "add": {
+          "component_groups": [
+            "ar:akm_mag"
+          ]
+        }
+      },
+      "lmg:m249": {
+        "add": {
+          "component_groups": [
+            "lmg:m249"
+          ]
+        }
+      },
+      "lmg:m249_mag": {
+        "add": {
+          "component_groups": [
+            "lmg:m249_mag"
+          ]
+        }
+      },
+      "ar:mk18": {
+        "add": {
+          "component_groups": [
+            "ar:mk18"
+          ]
+        }
+      },
+      "ar:mk18_mag": {
+        "add": {
+          "component_groups": [
+            "ar:mk18_mag"
+          ]
+        }
+      },
+      "pixelpoly:despawn_item": {
+        "add": {
+          "component_groups": [
+            "pixelpoly:despawn_item"
+          ]
+        }
+      }
+    }
+  }
+}

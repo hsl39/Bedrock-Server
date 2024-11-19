@@ -1,0 +1,43 @@
+item.spawn_egg.entity.new:ice_hydra.name=Ice Hydra
+item.spawn_egg.entity.new:fire_hydra.name=Fire Hydra
+item.spawn_egg.entity.new:poison_hydra.name=Poison Hydra
+item.spawn_egg.entity.new:electric_hydra.name=Electric Hydra
+
+
+entity.new:ice_hydra.name=Ice Hydra
+entity.new:fire_hydra.name=Fire Hydra
+entity.new:poison_hydra.name=Poison Hydra
+entity.new:electric_hydra.name=Electric Hydra
+
+
+item.new:poison_hydra_scale=§2Poison Hydra Scale§r
+item.new:poison_hydra_boots=§2Poison Hydra Boots§r
+item.new:poison_hydra_leggings=§2Poison Hydra Leggings§r
+item.new:poison_hydra_chestplate=§2Poison Hydra Chestplate§r
+item.new:poison_hydra_helmet=§2Poison Hydra Helmet§r
+item.new:poison_hydra_eye=§2Poison Hydra Eye§r
+
+item.new:electric_hydra_scale=§6Electric Hydra Scale§r
+item.new:electric_hydra_boots=§6Electric Hydra Boots§r§r
+item.new:electric_hydra_leggings=§6Electric Hydra Leggings§r
+item.new:electric_hydra_chestplate=§6Electric Hydra Chestplate§r
+item.new:electric_hydra_helmet=§6Electric Hydra Helmet§r
+item.new:electric_hydra_eye=§6Electric Hydra Eye§r
+
+item.new:fire_hydra_scale=§cFire Hydra Scale§r
+item.new:fire_hydra_boots=§cFire Hydra Boots§r
+item.new:fire_hydra_leggings=§cFire Hydra Leggings§r
+item.new:fire_hydra_chestplate=§cFire Hydra Chestplate§r
+item.new:fire_hydra_helmet=§cFire Hydra Helmet§r
+item.new:fire_hydra_eye=§cFire Hydra Eye§r
+
+item.new:ice_hydra_scale=§bIce Hydra Scale§r
+item.new:ice_hydra_boots=§bIce Hydra Boots§r
+item.new:ice_hydra_leggings=§bIce Hydra Leggings§r
+item.new:ice_hydra_chestplate=§bIce Hydra Chestplate§r
+item.new:ice_hydra_helmet=§bIce Hydra Helmet§r
+item.new:ice_hydra_eye=§bIce Hydra Eye§r
+item.new:poison_hydra_pickaxe=§2Poison Hydra Pickaxe§r
+item.new:electric_hydra_pickaxe=§6Electric Hydra Pickaxe§r
+item.new:fire_hydra_pickaxe=§cFire Hydra Pickaxe§r
+item.new:ice_hydra_pickaxe=§bIce Hydra Pickaxe§r

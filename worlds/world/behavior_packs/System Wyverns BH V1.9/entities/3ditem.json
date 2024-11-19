@@ -1,0 +1,109 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "new:treeditem",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "fire_wyvern": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "poison_wyvern": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "wither_wyvern": {
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
+      "ender_wyvern": {
+        "minecraft:variant": {
+          "value": 4
+        }
+      },
+      "ice_wyvern": {
+        "minecraft:variant": {
+          "value": 5
+        }
+      },
+      "ground_wyvern": {
+        "minecraft:variant": {
+          "value": 6
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "3ditem" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:despawn": {
+        "filters": {
+          "test": "is_riding",
+          "operator": "==",
+          "value": false
+        }
+      }
+    },
+    "events": {
+      "new:fire_wyvern": {
+        "add": {
+          "component_groups": [
+            "fire_wyvern"
+          ]
+        }
+      },
+      "new:poison_wyvern": {
+        "add": {
+          "component_groups": [
+            "poison_wyvern"
+          ]
+        }
+      },
+      "new:wither_wyvern": {
+        "add": {
+          "component_groups": [
+            "wither_wyvern"
+          ]
+        }
+      },
+      "new:ender_wyvern": {
+        "add": {
+          "component_groups": [
+            "ender_wyvern"
+          ]
+        }
+      },
+      "new:ice_wyvern": {
+        "add": {
+          "component_groups": [
+            "ice_wyvern"
+          ]
+        }
+      },
+      "new:ground_wyvern": {
+        "add": {
+          "component_groups": [
+            "ground_wyvern"
+          ]
+        }
+      }
+    }
+  }
+}

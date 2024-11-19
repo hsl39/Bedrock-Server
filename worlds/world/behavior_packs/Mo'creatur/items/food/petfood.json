@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mocreatures:petfood",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"texture": "pet_food"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:display_name": {
+				"value": "item.mocreatures:petfood.name"
+			}
+		},
+		"events": {}
+	}
+}

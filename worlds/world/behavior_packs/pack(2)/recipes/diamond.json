@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "diamond"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+            {
+                "item": "heavy:multi_backpack"
+            },
+			{
+                "item": "minecraft:diamond"
+            }
+		],
+		"unlock": {
+            "context": "AlwaysUnlocked"
+          },
+		"result": [
+			{
+				"item": "heavy:multi_backpack_diamond"
+			}
+		]
+	}
+}

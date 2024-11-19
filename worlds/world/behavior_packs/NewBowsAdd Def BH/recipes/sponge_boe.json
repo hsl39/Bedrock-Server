@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "new:sponge_bow"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            " PE",
+            "PBE",
+            " PE"
+        ],
+		"key": {
+			"P": {
+				"item": "minecraft:sponge"
+			},
+			"B": {
+				"item": "minecraft:bow"
+			},
+			"E": {
+				"item": "minecraft:string"
+			}
+		},
+		"result": {
+			"item": "new:sponge_bow"
+		}
+	}
+}

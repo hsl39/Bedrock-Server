@@ -1,0 +1,255 @@
+{
+  "format_version": "1.8.0",
+  
+  
+  "animations": {
+   "animation.atacar_embarazar": {
+     "animation_length": 1.5, 
+      "loop": true, 
+      "timeline": { 
+        "1.0": [ 
+       "@s minecraft:atacar_embarazar"
+            ]
+      }  
+    },   
+   "animation.regeneracion_mielera": {
+     "animation_length": 120.5, 
+      "loop": true,   
+      "timeline": {   
+        "120.0": [ 
+       "/effect @s regeneration 5 2 true"
+            ]
+      }  
+    },   
+      
+   "animation.rhyniognatha_honey_armor_time": {
+     "animation_length": 150.5,  
+      "loop": true, 
+      "timeline": { 
+        "150.0": [ 
+       "@s minecraft:remove_in_attack_especial_armor"
+            ]
+      } 
+    },   
+   "animation.rhyniognatha_honey_armor_effect": {
+     "animation_length": 5.5, 
+      "loop": true,  
+      "timeline": {   
+        "0.0": [ 
+       "/effect @s resistance 10 2 true"
+            ]
+      } 
+    },   
+      
+    "animation.remove_ataque_especial_roar": {
+     "animation_length": 2.5, 
+      "loop": true, 
+      "timeline": { 
+          "0.1":[ 
+      
+                "/tag @s add in_attack"
+              ],
+        "2.0": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      } 
+    },  
+      
+    "animation.remove_ataque_normal_rhyniognatha": {
+     "animation_length": 0.6, 
+      "loop": true, 
+      "timeline": { 
+          "0.1":[ 
+
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 13 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 15 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 16 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 17 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 18 true",
+          
+            "/tag @s add attacking",
+    "/execute @s[tag=lvl10] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 12 entity_attack entity @s",
+    "/execute @s[tag=lvl50] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 14 entity_attack entity @s",
+    "/execute @s[tag=lvl100] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 14 entity_attack entity @s",
+    "/execute @s[tag=lvl150] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 15 entity_attack entity @s",
+    "/execute @s[tag=lvl200] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 15 entity_attack entity @s",
+    "/execute @s[tag=lvl250] ~~~ damage @e[type=!item, tag=!in_attack ,r=6] 16 entity_attack entity @s",
+     
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      } 
+    },  
+      
+  "animation.remove_ataque_shoot1": {
+   "animation_length": 1.2,  
+    "loop": true,  
+    "timeline": { 
+        "0.0":[  
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 25 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 25 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 30 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 33 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 36 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 40 true",
+            
+            "/effect @s levitation 30 0 true",
+ 
+          "/tag @s add attacking",
+              "/tag @s add in_attack" 
+            ],   
+      "0.8": [ 
+            "/tag @p[r=5] remove in_attack",
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+ 
+       "@s minecraft:remove_ataque_normal"
+          ] 
+       }
+      },
+
+  "animation.remove_ataque_shoot2": {
+   "animation_length": 1.2,  
+    "loop": true,  
+    "timeline": { 
+        "0.0":[  
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 25 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 25 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 30 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 33 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 36 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 40 true",
+            
+            "/effect @s levitation 30 0 true",
+ 
+          "/tag @s add attacking",
+              "/tag @s add in_attack" 
+            ],   
+      "0.8": [  
+            "/tag @p[r=5] remove in_attack",
+          "/tag @s remove in_attack",
+          "/tag @s remove attacking",
+ 
+       "@s minecraft:remove_ataque_normal"
+          ] 
+       }
+      },
+
+    "animation.rhyniognatha_under_water_tag": {
+     "animation_length": 2.5,
+      "loop": true,
+      "timeline": { 
+        "2.0": [
+            "/tag @s add sumergir"
+            ]
+      }
+    },
+
+    "animation.velocidad_0_rhyniognatha": {
+     "animation_length": 0.4,
+      "loop": true,
+      "timeline": { 
+        "0.0": [
+    "/effect @s levitation 0 254 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_1_rhyniognatha": {
+      "animation_length": 1.0, 
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 12 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 15 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 18 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 22 true",
+            
+        "/effect @s levitation 1 0 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_2_rhyniognatha": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 12 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 15 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 18 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 22 true",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 0 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 0 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 1 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 1 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 2 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 2 true",
+            
+
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_3_rhyniognatha": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [ 
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 6 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 6 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 10 true",
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 4 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 5 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 7 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 8 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 9 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 10 true",
+            
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },  
+    "animation.velocidad_4_rhyniognatha": {
+      "animation_length": 0.2,
+      "loop": true,
+      "timeline": {
+        "0.0": [ 
+            "/execute @s[tag=lvl10] ~~~ effect @s speed 1 6 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s speed 1 6 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s speed 1 7 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s speed 1 8 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s speed 1 9 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s speed 1 10 true", 
+            
+            "/execute @s[tag=lvl10] ~~~ effect @s levitation 1 7 true",
+            "/execute @s[tag=lvl50] ~~~ effect @s levitation 1 8 true",
+            "/execute @s[tag=lvl100] ~~~ effect @s levitation 1 10 true",
+            "/execute @s[tag=lvl150] ~~~ effect @s levitation 1 12 true",
+            "/execute @s[tag=lvl200] ~~~ effect @s levitation 1 14 true",
+            "/execute @s[tag=lvl250] ~~~ effect @s levitation 1 16 true",
+            
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    }
+  }
+}

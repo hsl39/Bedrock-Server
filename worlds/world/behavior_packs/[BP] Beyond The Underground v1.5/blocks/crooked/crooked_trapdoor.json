@@ -1,0 +1,247 @@
+// This file was modified by HonKit26113 (@HonKit1103). Do not distribute without permission.
+{
+    "format_version": "1.21.10",
+    "minecraft:block": {
+        "description": {
+            "identifier": "honkit26113:crooked_trapdoor",
+            "menu_category": {
+                "group": "itemGroup.name.trapdoor",
+                "category": "construction"
+            },
+            "states": {
+                "honkit26113:blockstate": [0, 2, 3, 4, 5, 12, 13, 14, 15],
+                "customtrapdoor:powered": [ false, true ],
+                "customtrapdoor:open": [ false, true ]
+            },
+            "traits": {
+                "minecraft:placement_position": {
+                    "enabled_states": [
+                        "minecraft:vertical_half"
+                    ]
+                },
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ]
+                }
+            }
+        },
+        "components": {
+            "tag:honkit26113_dig_with_axe": {},
+            "minecraft:custom_components": [
+                "honkit26113:open_trapdoor"
+            ],
+            "minecraft:tick": {
+                "interval_range": [ 10, 10 ]
+            },
+            "minecraft:geometry": {
+                "identifier": "geometry.trapdoor",
+                "bone_visibility": {
+                    "bottom": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('customtrapdoor:open') == false",
+                    "top": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('customtrapdoor:open')",
+                    "open": "q.block_state('customtrapdoor:open')"
+                }
+            },
+           	"minecraft:material_instances": {
+                "*": {
+                    "texture": "crooked_trapdoor",
+                    "render_method": "blend",
+                    "ambient_occlusion": true,
+                    "face_dimming": true
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.5
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:light_dampening": 0
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('honkit26113:blockstate') == 2", // north
+                "components": {
+                }
+            },
+            {
+                "condition": "query.block_state('honkit26113:blockstate') == 3", // south
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [ 0, 180, 0 ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('honkit26113:blockstate') == 4", // west
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [ 0, 90, 0 ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('honkit26113:blockstate') == 5", // east
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [ 0, 270, 0 ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('honkit26113:blockstate') == 12", // north opened
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [ 90, 0, 0 ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('honkit26113:blockstate') == 13", // south opened
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [ 270, 0, 0 ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('honkit26113:blockstate') == 14", // west opened
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [ 0, 0, 270 ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('honkit26113:blockstate') == 15", // east opened
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [ 0, 90, 0 ]
+                    }
+                }
+            },{
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('customtrapdoor:open')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            13,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            3,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            13,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            3,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('customtrapdoor:open')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            3,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            3,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('customtrapdoor:open')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            3
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            3
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

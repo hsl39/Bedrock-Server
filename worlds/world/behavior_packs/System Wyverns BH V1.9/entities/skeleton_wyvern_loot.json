@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "new:skeleton_wyvern_loot",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    }
+  },
+  "components": {
+    "minecraft:type_family": {
+      "family": [ "wyvern_dead" ]
+    },
+    "minecraft:pushable": {
+      "is_pushable": false,
+      "is_pushable_by_piston": true
+    },
+    "minecraft:health":{
+      "value": 0
+    },
+    "minecraft:loot":{
+      "table": "loot_tables/skeleton_wyvern.json"
+    },
+    "minecraft:knockback_resistance":{
+      "value": 1000
+    },
+    "minecraft:movement": {
+      "value": 0
+    },
+    "minecraft:physics": {
+      "has_gravity": true,
+      "has_collision": true
+    },
+    "minecraft:damage_sensor":{
+      "triggers":[
+        {
+          "on_damage":{
+          },
+          "deals_damage": false
+        }
+      ]
+    }
+  },
+
+  "events": {
+  }
+}
+}

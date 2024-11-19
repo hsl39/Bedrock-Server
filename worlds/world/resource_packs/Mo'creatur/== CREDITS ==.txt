@@ -1,0 +1,12 @@
+== CREDITS ==
+-DEATH KING (Project leader, modeler).
+-ESTEBAN1303YT (Modeler and coder).
+-MagicZocker (German language and model extraction).
+-Axelpvz2030 (Coder).
+-RighiNoobs8 (Coder).
+-TheMinedS (Modeler).
+-sebancraft_YT (modeler).
+-Aguilesgamer (Coder, animator).
+== ADDITIONAL CREDITS ==
+-DrZhark (Original Java mod).
+-Gabriel Cape (Code for armor effects).

@@ -1,0 +1,98 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+   "description": {
+    "identifier": "new:wyvern_bone_shovel",
+    "menu_category": {
+      "category": "items"
+    }
+  },
+  "components": {
+    "minecraft:max_stack_size": 1,
+    "minecraft:durability": {
+      "max_durability": 2676
+    },
+    "minecraft:display_name": {},
+    "minecraft:icon": {
+      "texture": "wyvern_bone_shovel"
+    },
+    "minecraft:damage": {
+      "value": 7
+    },
+    "minecraft:enchantable": {
+      "value": 10,
+      "slot": "shovel"
+    },
+    "minecraft:digger": {
+      "use_efficiency": true,
+      "destroy_speeds": [
+        {
+          "block": "minecraft:soul_sand",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:soul_soil",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:crimson_nylium",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:warped_nylium",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:dirt",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:farmland",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:grass",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:grass_path",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:podzol",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:mycelium",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:mud",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:gravel",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:sand",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:snow",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:snow_layer",
+          "speed": 12
+        },
+        {
+          "block": "minecraft:dirt_with_roots",
+          "speed": 12
+        }
+      ]
+    },
+    "minecraft:hand_equipped": true
+  }
+}
+}

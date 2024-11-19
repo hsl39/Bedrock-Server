@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:dilophosaurus",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"dilophosaurus1": "textures/dilophosaurus/variant1"
+			},
+			"geometry": { 
+				"default": "geometry.dilophosaurus"
+			},
+	"sound_effects": {
+	"hurt_sound": "mob.dilophosaurus_iddle_mc_ark",
+	"idle_sound": "mob.dilophosaurus_iddle_mc_ark",
+	"disparo": "sound.disparo_sound_dilophosaurus_mc_ark"
+	},  
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.dilophosaurus.general",
+				"idle": "animation.dilophosaurus.idle",
+				"walk": "animation.dilophosaurus.walk", 
+				"run": "animation.dilophosaurus.run",
+				"eating": "animation.dilophosaurus.eating",  
+				"sitting": "animation.dilophosaurus.sitting",
+				"swimming": "animation.dilophosaurus.walk",
+				"attack": "animation.dilophosaurus.attack",
+				"attack2": "animation.dilophosaurus.ranged_attack",
+				"sleep": "animation.dilophosaurus.sleep", 
+				"muerto": "animation.dilophosaurus.muerto",
+				"walk_controller":
+				"controller.animation.general.walk_and_swimming_mc_ark"
+			},
+			"scripts": {
+				"animate": [ 
+{
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+}, 
+
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.dilophosaurus"
+			],
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index":9
+      }
+		}
+	}
+}

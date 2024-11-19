@@ -1,0 +1,393 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.m3_setup": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"m3": "q.get_equipped_item_name(0) == 'm3' && (q.scoreboard('m3') >= 1 && q.scoreboard('m3') <= 8)"
+						},
+						{
+							"m3_empty": "(q.scoreboard('m3') == 0) && q.get_equipped_item_name(0) == 'm3'"
+						}
+					]
+				},
+				"m3": {
+					"animations": [
+						"m3_onfire",
+						"m3_bullet_counter"
+					],
+					"transitions": [
+						{
+							"default": "q.get_equipped_item_name(0) != 'm3'"
+						},
+						{
+							"m3_empty": "(q.scoreboard('m3') == 0) && q.get_equipped_item_name(0) == 'm3'"
+						}
+					]
+				},
+				"m3_empty": {
+					"on_entry": [
+						"/function ammo/m3",
+						"/replaceitem entity @s slot.weapon.mainhand 0 shotgun:m3_empty 1 0"
+					],
+					"transitions": [
+						{
+							"default": "q.get_equipped_item_name(0) != 'm3'"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.m3_bullet_counter": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"m3_show": "q.get_equipped_item_name(0) == 'm3'"
+						}
+					]
+				},
+				"m3_show": {
+					"transitions": [
+						{
+							"default": "q.get_equipped_item_name(0) == 'm3'"
+						}
+					],
+					"on_entry": [
+						"/function ammo/m3"
+					]
+				}
+			}
+		},
+		"controller.animation.m3_onempty": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"m3_empty": "q.get_equipped_item_name(0) == 'm3_empty' && q.is_using_item && q.scoreboard('m3') == 0"
+						}
+					]
+				},
+				"m3_empty": {
+					"on_entry": [
+						"/function ammo/m3",
+						"/playsound pixelpoly.empty_gun @a[r=10]"
+					],
+					"transitions": [
+						{
+							"default": "q.get_equipped_item_name(0) != 'm3_empty' || !q.is_using_item"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.m3_onfire": {
+			"initial_state": "inactive",
+			"states": {
+				"inactive": {
+					"transitions": [
+						{ "fire": "q.get_equipped_item_name(0) == 'm3' && q.is_using_item" }
+					]
+				},
+				"firing": {
+					"on_entry": [
+						"v.bullet_fire = q.life_time;"
+					],
+					"transitions": [
+						{ "inactive": "q.get_equipped_item_name(0) != 'm3' || !q.is_using_item" },
+						{ "fire": "(q.life_time - v.bullet_fire) >= 99999" }
+					]
+				},
+				"fire": {
+					"on_entry": [
+                        "@s m3:fire",
+						"/playsound pixelpoly.m3_fire @a[r=19]",
+                        "/scoreboard players remove @s[m=!c,scores={m3=1..8}] m3 1",
+                        "/particle minecraft:eyeofender_death_explode_particle ^ ^1 ^1"
+                    ],
+					"transitions": [
+						{ "firing": "1.0" }
+					],
+					"on_exit": [
+						"v.bullet_fire = q.life_time;"
+					]
+				}
+			}
+		},
+		"controller.animation.m3_reload": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"m3_ammo": "q.get_equipped_item_name(0) == 'm3_ammo' && q.is_using_item"
+						}
+					]
+				},
+				"m3_ammo": {
+					"transitions": [
+						{
+							"reload_start2": "q.get_equipped_item_name(0) == 'm3_ammo'"
+						},
+						{
+							"default": "q.get_equipped_item_name(0) != 'm3_ammo'"
+						}
+					]
+				},
+				"reload_start2": {
+					"on_entry": [
+						"/clear @s shotgun:m3",
+						"/tag @s add reload",
+						"/replaceitem entity @s slot.weapon.mainhand 0 shotgun:m3_empty 1 0",
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded2": "(q.life_time - v.r) >= (46.0 / 40.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded2": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_insertshell @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start3": "1.0"
+						}
+					]
+				},
+				"reload_start3": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded3": "(q.life_time - v.r) >= (46.0 / 80.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded3": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_insertshell @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start4": "1.0"
+						}
+					]
+				},
+				"reload_start4": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded4": "(q.life_time - v.r) >= (46.0 / 114.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded4": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_insertshell @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start5": "1.0"
+						}
+					]
+				},
+				"reload_start5": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded5": "(q.life_time - v.r) >= (46.0 / 102.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded5": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_insertshell @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start6": "1.0"
+						}
+					]
+				},
+				"reload_start6": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded6": "(q.life_time - v.r) >= (46.0 / 102.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded6": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_insertshell @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start7": "1.0"
+						}
+					]
+				},
+				"reload_start7": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded7": "(q.life_time - v.r) >= (46.0 / 102.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded7": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_insertshell @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start8": "1.0"
+						}
+					]
+				},
+				"reload_start8": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded8": "(q.life_time - v.r) >= (46.0 / 102.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded8": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_insertshell @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start9": "1.0"
+						}
+					]
+				},
+				"reload_start9": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded9": "(q.life_time - v.r) >= (46.0 / 102.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded9": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_insertshell @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start10": "1.0"
+						}
+					]
+				},
+				"reload_start10": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded10": "(q.life_time - v.r) >= (46.0 / 80.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded10": {
+					"on_entry": [
+						"/playsound pixelpoly.m3_pump @a[r=9]"
+					],
+					"transitions": [
+						{
+							"reload_start": "1.0"
+						}
+					]
+				},
+				"reload_start": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{
+							"reloaded": "(q.life_time - v.r) >= (46.0 / 30.0) && q.get_equipped_item_name(0) == 'm3_empty'"
+						},
+						{
+							"reload_error": "q.get_equipped_item_name(0) != 'm3_empty'"
+						}
+					]
+				},
+				"reloaded": {
+					"on_entry": [
+						"/tag @s remove reload",
+						"/scoreboard players set @s m3 8",
+						"/clear @s shotgun:m3_empty",
+						"/replaceitem entity @s slot.weapon.mainhand 0 shotgun:m3 1 0"
+					],
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					]
+				},
+				"reload_error": {
+					"on_entry": [
+						"/tag @s remove reload",
+						"/clear @s shotgun:m3_empty",
+						"/replaceitem entity @s slot.weapon.mainhand 0 shotgun:m3_ammo 1 0"
+					],
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

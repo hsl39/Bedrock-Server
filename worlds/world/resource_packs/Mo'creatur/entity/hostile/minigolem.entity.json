@@ -1,0 +1,67 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:minigolem",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest",
+				"bioluminescent_layer": "warden_bioluminescent_layer"
+			},
+			"textures": {
+				"default": "textures/models/minigolem",
+				"bioluminescent_layer": "textures/models/minigolemglow",
+				"block": "textures/models/extras/grass_block"
+			},
+			"geometry": {
+				"default": "geometry.minigolem",
+				"block": "geometry.bloques"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				]
+			},
+			"animations": {
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"move": "animation.humanoid.move",
+				"riding.arms": "animation.humanoid.riding.arms",
+				"riding.legs": "animation.humanoid.riding.legs",
+				"bob": "animation.humanoid.bob",
+				"minigolem_attack": "animation.minigolem.attack"
+			},
+			"animation_controllers": [
+				{
+					"look_at_target": "controller.animation.humanoid.look_at_target"
+				},
+				{
+					"move": "controller.animation.humanoid.move"
+				},
+				{
+					"riding": "controller.animation.humanoid.riding"
+				},
+				{
+					"attack": "controller.animation.humanoid.attack"
+				},
+				{
+					"bob": "controller.animation.humanoid.bob"
+				},
+				{
+					"minigolem_attack": "controller.animation.minigolem.attack"
+				}
+			],
+			"enable_attachables": false,
+			"render_controllers": [
+				"controller.render.block",
+				"controller.render.minigolem",
+				"controller.render.minigolem_glow"
+			],
+			"spawn_egg": {
+				"base_color": "#FF0000",
+				"overlay_color": "#D1CE00"
+			}
+		}
+	}
+}

@@ -1,0 +1,125 @@
+//bridge-file-version: #0
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"rtc:acacia_log1": {
+		"sound": "wood"
+	},
+	"rtc:acacia_log2": {
+		"sound": "wood"
+	},
+	"rtc:acacia_log3": {
+		"sound": "wood"
+	},"rtc:acacia_log4": {
+		"sound": "wood"
+	},
+	"rtc:birch_log1": {
+		"sound": "wood"
+	},	"rtc:birch_log2": {
+		"sound": "wood"
+	},	"rtc:birch_log3": {
+		"sound": "wood"
+	},	"rtc:birch_log4": {
+		"sound": "wood"
+	},
+	"rtc:cherry_log1": {
+		"sound": "wood"
+	},
+	"rtc:cherry_log2": {
+		"sound": "wood"
+	},
+	"rtc:cherry_log3": {
+		"sound": "wood"
+	},
+	"rtc:cherry_log4": {
+		"sound": "wood"
+	},
+	"rtc:dark_oak_log1": {
+		"sound": "wood"
+	},
+	"rtc:dark_oak_log2": {
+		"sound": "wood"
+	},
+	"rtc:dark_oak_log3": {
+		"sound": "wood"
+	},
+	"rtc:dark_oak_log4": {
+		"sound": "wood"
+	},
+	"rtc:jungle_log1": {
+		"sound": "wood"
+	},
+	"rtc:jungle_log2": {
+		"sound": "wood"
+	},
+	"rtc:jungle_log3": {
+		"sound": "wood"
+	},
+	"rtc:jungle_log4": {
+		"sound": "wood"
+	},
+	"rtc:mangrove_log1": {
+		"sound": "wood"
+	},
+	"rtc:mangrove_log2": {
+		"sound": "wood"
+	},
+	"rtc:mangrove_log3": {
+		"sound": "wood"
+	},
+	"rtc:mangrove_log4": {
+		"sound": "wood"
+	},
+	"rtc:oak_log1": {
+		"sound": "wood"
+	},
+	"rtc:oak_log2": {
+		"sound": "wood"
+	},
+	"rtc:oak_log3": {
+		"sound": "wood"
+	},
+	"rtc:oak_log4": {
+		"sound": "wood"
+	},
+	"rtc:spruce_log1": {
+		"sound": "wood"
+	},
+	"rtc:spruce_log2": {
+		"sound": "wood"
+	},
+	"rtc:spruce_log3": {
+		"sound": "wood"
+	},
+	"rtc:spruce_log4": {
+		"sound": "wood"
+	},
+	"rtc:warped_log1": {
+		"sound": "stem"
+	},
+	"rtc:warped_log2": {
+		"sound": "stem"
+	},
+	"rtc:warped_log3": {
+		"sound": "stem"
+	},
+	"rtc:warped_log4": {
+		"sound": "stem"
+	},
+"rtc:crimson_log1": {
+		"sound": "stem"
+	},
+"rtc:crimson_log2": {
+		"sound": "stem"
+	},
+"rtc:crimson_log3": {
+		"sound": "stem"
+	},
+"rtc:crimson_log4": {
+		"sound": "stem"
+	}
+
+}

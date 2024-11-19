@@ -1,0 +1,13 @@
+Copyright (C) 2022 Gabriel Aplok
+
+All rights reserved.
+
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+You may not use this work for commercial purposes, nor distribute any modified versions of this work.
+You are required to give appropriate credit, provide a link to the license, and indicate if any changes were made. 
+
+To view a copy of this license, visit: http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+For any permissions beyond the scope of this license, please contact: contact@gabriel-aplok.com
+
+Thank you for respecting the terms of the license and for supporting the work of creators like me.

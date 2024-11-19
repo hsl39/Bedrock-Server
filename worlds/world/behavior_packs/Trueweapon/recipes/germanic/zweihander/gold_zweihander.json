@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "gold_zweihander"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            " B ",
+			"BAB",
+			" C "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:golden_sword"
+			},
+			"B": {
+				"item": "minecraft:gold_ingot"
+			},
+			"C": {
+				"item": "minecraft:stick"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:gold_ingot"
+			}
+		],
+		"result": [
+			{
+				"item": "true:gold_zweihander"
+			}
+		]
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§cMo'creatures §rBedrock §a[RP]",
+		"description": "Original by DrZhark | Creditos: DEATH KING, ESTEBAN1303YT, MagicZocker, Axelpvz2030, RighiNoobs8, TheMinedS, sebancraft_YT, Aguilesgamer",
+		"uuid": "3a32dd2d-b593-415c-9f28-e248d653b284",
+		"version": [
+			1,
+			0,
+			8
+		],
+		"min_engine_version": [
+			1,
+			20,
+			50
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "aa575820-af46-42f7-ba2f-7636764236c4",
+			"version": [
+				1,
+				0,
+				8
+			]
+		}
+	],
+	"metadata": {
+		"authors": [
+			"DEATH KING",
+			"ESTEBAN1303YTツ",
+			"MagicZocker",
+			"Aguilesgamer",
+			"RighiNoobs8",
+			"TheMinedS",
+			"sebancraft_YT",
+			"Axelpvz2030"
+		],
+		"url": "https://discord.gg/M4ejgxXPTf"
+	}
+}

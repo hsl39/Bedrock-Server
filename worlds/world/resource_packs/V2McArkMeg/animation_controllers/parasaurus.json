@@ -1,0 +1,164 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+
+		"controller.animation.general.walk_parasaurus_mc_ark" : {
+			"initial_state" : "default",
+			"states" : { 
+				"default" : {
+					"animations" : [
+"idle"  
+ 
+					], 
+					"transitions" : [ 
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"sitting" : "(query.is_sitting)"}, 
+						{
+							"walk" : "query.modified_move_speed < 0.8"
+						},
+						{
+							"run" : "query.modified_move_speed >= 0.8"
+						},
+						{
+							"eating" : "(query.is_sheared) && (query.is_tamed)"
+						},
+						{
+							"eating" : "(query.is_sheared) && (query.is_baby)"
+						},
+						{
+							"sleep" : "(query.is_sheared) && !query.is_tamed && !query.is_baby"
+						}
+					]
+				},
+				"walk" : {
+					"animations" : [
+"idle",
+						{
+							"walk" : "query.modified_move_speed"}
+					], 
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"sitting" : "(query.is_sitting)"}, 
+						{
+							"run" : "query.modified_move_speed >= 0.8 && query.all_animations_finished"
+						},
+						{
+							"eating" : "(query.is_sheared) && (query.is_tamed)"
+						},
+						{
+							"eating" : "(query.is_sheared) && (query.is_baby)"
+						},
+						{
+							"sleep" : "(query.is_sheared) && !query.is_tamed && !query.is_baby"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"eating" : {
+					"animations" : [ 
+					    "eating"
+					    ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "(query.all_animations_finished)"}
+					],
+					"blend_transition": 0.2
+				},
+				"run" : {
+					"animations" : [
+					    
+					    "idle",
+						{
+							"run" : "query.modified_move_speed"}
+					], 
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"eating" : "(query.is_sheared) && (query.is_tamed)"
+						},  
+						{
+							"eating" : "(query.is_sheared) && (query.is_baby)"
+						},
+						{ 
+							"sitting" : "(query.is_sitting)"}, 
+						{
+							"walk" : "query.modified_move_speed < 0.7 && query.all_animations_finished" 
+						},
+						{
+							"sleep" : "(query.is_sheared) && !query.is_tamed && !query.is_baby"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"sleep" : { 
+					"animations" : [ 
+					    "idle",
+					    "sleep" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"default" : "(query.is_tamed)"},
+						{
+							"default" : "(!query.is_sheared)"}
+					], 
+					"blend_transition": 0.2
+				},
+			"sitting" : { 
+					"animations" : [ 
+						{
+							"idle" : "(query.is_delayed_attacking == 0) && !query.is_illager_captain"},
+					    "sitting" ],
+					"transitions" : [
+							{
+							"muerto" : "(query.mark_variant == 777)"},
+						{
+							"eating" : "(query.is_sheared) && (query.is_tamed)"
+						},
+						{
+							"default" : "(!query.is_sitting)"}
+					],
+					"blend_transition": 0.2
+				},
+			"muerto" : {
+					"animations" : [ 
+					 
+					    "sleep" ],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		
+		"controller.animation.parasaurus.alert" : {
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : { 
+					"animations" : [
+					    "alert" ],
+					"transitions" : [
+							{
+							"default" : "(query.mark_variant == 777)"},
+						{
+							"default" : "query.all_animations_finished && !query.is_illager_captain" 
+						}
+					],  
+					"blend_transition": 0.2
+				},
+				"default" : {
+					"transitions" : [ 
+						{
+							"attacking" : "query.is_illager_captain && (query.is_on_ground) && query.mark_variant != 777" 
+						}
+					]  
+				}
+			}
+		}
+	}
+} 

@@ -1,0 +1,59 @@
+
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:pteranodon",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"variant1": "textures/pteranodon/variant1"
+			},
+			"geometry": { 
+				"default": "geometry.pteranodon"
+			},
+	"sound_effects": {
+	"pteranodon_attacksound": "sound.pteranodon_attack", 
+	"hurt_sound": "mob.pteranodon_hurt",
+	"idle_sound": "mob.pteranodon_idle"
+	},  
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.pteranodon.general",
+				"attack": "animation.pteranodon.attack", 
+				"pickup": "animation.pteranodon.pickup",
+				"idle": "animation.pteranodon.idle",
+				"walk": "animation.pteranodon.walk", 
+				"fly": "animation.pteranodon.fly", 
+				"sitting": "animation.pteranodon.sitting",
+				"eating": "animation.pteranodon.eating",
+				"sleep": "animation.pteranodon.sleep",
+				"attack_co": "controller.animation.pteranodon.attack",
+				"pickup_co": "controller.animation.pteranodon.pickup"
+			},   
+			"scripts": {
+				"animate": [
+{ 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+				    
+				    "attack_co",
+				    "pickup_co",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.pteranodon"
+			],  
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index": 7
+      }
+		}
+	}
+}

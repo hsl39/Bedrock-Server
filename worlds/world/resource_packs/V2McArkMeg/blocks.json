@@ -1,0 +1,14 @@
+{
+  "mc_ark:mortar": {
+    "textures": "mortar",
+    "sound": "stone"
+  },
+  "mc_ark:narcoberry_block": {
+    "textures": "narcoberry_block",
+    "sound": "grass"
+  },
+  "mc_ark:air_conditioner": {
+    "textures": "air_conditioner",
+    "sound": "stone"
+  }
+} 

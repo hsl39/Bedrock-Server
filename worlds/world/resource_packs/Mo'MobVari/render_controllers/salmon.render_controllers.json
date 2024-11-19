@@ -1,0 +1,23 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.salmon": {
+            "geometry": "Geometry.default",
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.a",
+                        "Texture.b",
+                        "Texture.c",
+                        "Texture.d",
+                        "Texture.e",
+                        "Texture.f",
+                        "Texture.g"
+                    ]
+                }
+            },
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Array.skins[query.variant]" ]
+        }
+    }
+}

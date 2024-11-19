@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.goat2": {
+			"arrays": {
+				"textures": {
+					"Array.goat2": [
+						"Texture.white",
+						"Texture.gray_brown",
+						"Texture.brown_spotted",
+						"Texture.gray_spotted",
+						"Texture.gray",
+						"Texture.brown"
+					]
+				}
+			},
+			"textures": [
+				"Array.goat2[query.variant]"
+			],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"geometry": "Geometry.default",
+			"part_visibility": [
+				{
+					"male_horns": "query.mark_variant == '1'"
+				},
+				{
+					"Goatie": "query.mark_variant == '1'"
+				},
+				{
+					"horns": "!query.mark_variant == '2'"
+				}
+			]
+		}
+	}
+}

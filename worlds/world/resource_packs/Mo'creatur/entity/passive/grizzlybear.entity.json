@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:grizzlybear",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/bearbrowm"
+			},
+			"geometry": {
+				"default": "geometry.bear",
+				"sitting": "geometry.bear_sitting"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"walk": "animation.quadruped.walk",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.bear"
+			],
+			"spawn_egg": {
+				"base_color": "#E16941",
+				"overlay_color": "#000001"
+			}
+		}
+	}
+}

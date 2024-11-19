@@ -1,0 +1,40 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:shark",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/shark"
+			},
+			"geometry": {
+				"default": "geometry.shark"
+			},
+			"animations": {
+				"swim": "animation.shark.swim",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"swim": "query.is_swimming"
+					},
+					"look_at_target"
+				],
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#0080FF",
+				"overlay_color": "#89898B"
+			}
+		}
+	}
+}

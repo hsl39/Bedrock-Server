@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "diamond_combat_shovel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            " B ",
+			"BAB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:diamond_shovel"
+			},
+			"B": {
+				"item": "minecraft:diamond"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:diamond"
+			}
+		],
+		"result": [
+			{
+				"item": "true:diamond_combat_shovel"
+			}
+		]
+	}
+}

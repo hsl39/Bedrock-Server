@@ -1,0 +1,25 @@
+// Coded by @JustAsh0005 for ActualGuns (for both 2D and 3D version), you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.barrett_bullet_counter": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{ "barrett_show": "(q.get_equipped_item_name(0) == 'barrett_empty' && (q.scoreboard('barrett') == 0)) || (q.get_equipped_item_name(0) == 'barrett' && (q.scoreboard('barrett') >= 0)) && !q.is_powered" }
+					]
+				},
+				"barrett_show": {
+					"transitions": [
+						{ "default": "(q.get_equipped_item_name(0) == 'barrett_empty' && (q.scoreboard('barrett') == 0)) || (q.get_equipped_item_name(0) == 'barrett' && (q.scoreboard('barrett') >= 0)) && !q.is_powered" }
+					],
+					"on_entry": [ "/function ammo/barrett" ]
+				}
+			}
+		}
+	}
+}
+
+// This code is exclusive to both Add-ons (ActualGuns 2D and 3D) and can not be used by anybody else.

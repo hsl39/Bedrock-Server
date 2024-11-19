@@ -1,0 +1,38 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mocreatures:ratburger"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" ~#",
+			"$%$",
+			" ~ "
+		],
+		"key": {
+			"~": {
+				"item": "minecraft:bread"
+			},
+			"$": {
+				"item": "minecraft:wheat_seeds"
+			},
+			"#": {
+				"item": "minecraft:pumpkin_seeds"
+			},
+			"%": {
+				"item": "mocreatures:ratcooked"
+			}
+		},
+		"result": [
+			{
+				"item": "mocreatures:ratburger",
+				"data": 0,
+				"count": 1
+			}
+		]
+	}
+}

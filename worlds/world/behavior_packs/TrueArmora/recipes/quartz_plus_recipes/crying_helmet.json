@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pa:crying_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BBB",
+			"BAB",
+			"BBB"
+		],
+		"key": {
+			"A": {
+				"item": "pa:quartz_helmet"
+			},
+			"B": {
+				"item": "minecraft:ghast_tear"
+			}
+		},
+		"result": [
+			{
+				"item": "pa:crying_helmet"
+			}
+		]
+	}
+}

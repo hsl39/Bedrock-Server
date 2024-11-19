@@ -1,0 +1,58 @@
+
+{
+  "format_version": "1.16.100", 
+  "minecraft:block": { 
+    "description": {
+      "identifier": "mc_ark:narcoberry_block",
+			"menu_category": { 
+				"category": "construction",
+				"is_hidden_in_commands": false
+			}, 
+			"register_to_creative_menu": true,
+      "is_experimental": false
+    },  
+    "components": {
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "dirt",
+              "grass"
+            ],
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "narcoberry_block",
+					"render_method": "alpha_test",
+					"ambient_occlusion": true,
+					"face_dimming": true
+        } 
+      },
+      "minecraft:geometry": "geometry.narcoberry_block",
+      "minecraft:map_color": "#9EA1A4",
+      "minecraft:breathability": "air",
+      "tag:plant": {},
+      "minecraft:entity_collision": {
+        "origin": [ -1, 0, -1 ],
+        "size": [ 0, 0, 0 ]
+      },
+      "minecraft:pick_collision": {
+        "origin": [ -4, 0, -4 ],
+        "size": [ 8, 11, 8 ]
+      },
+      "minecraft:block_light_absorption": 0.0, 
+      "minecraft:block_light_emission": 0.2,
+      "minecraft:destroy_time": 0.4,
+      "minecraft:loot": "loot_tables/mc_ark/narcoberry_block.json",
+      "minecraft:explosion_resistance": 1
+    },
+    "events": {
+    }
+  }
+}
+   

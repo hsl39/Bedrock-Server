@@ -1,0 +1,59 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "minecraft:cow",
+            "min_engine_version": "1.8.0",
+            "materials": {
+                "default": "cow"
+            },
+            "textures": {
+                "a": "textures/entity/cow/a",
+                "b": "textures/entity/cow/b",
+                "c": "textures/entity/cow/c",
+                "d": "textures/entity/cow/d",
+                "e": "textures/entity/cow/e",
+                "f": "textures/entity/cow/f",
+                "g": "textures/entity/cow/g",
+                "h": "textures/entity/cow/h",
+                "i": "textures/entity/cow/i",
+                "j": "textures/entity/cow/j",
+                "k": "textures/entity/cow/k",
+                "l": "textures/entity/cow/l",
+                "m": "textures/entity/cow/m",
+                "n": "textures/entity/cow/n",
+                "o": "textures/entity/cow/o",
+                "p": "textures/entity/cow/p",
+                "q": "textures/entity/cow/q"
+            },
+            "geometry": {
+                "default": "geometry.cow.v1.8"
+            },
+            "animations": {
+                "setup": "animation.cow.setup",
+                "walk": "animation.quadruped.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "baby_transform": "animation.cow.baby_transform"
+            },
+            "scripts": {
+                "animate": [
+                    "setup",
+                    {
+                        "walk": "query.modified_move_speed"
+                    },
+                    "look_at_target",
+                    {
+                        "baby_transform": "query.is_baby"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ],
+            "spawn_egg": {
+                "texture": "spawn_egg",
+                "texture_index": 1
+            }
+        }
+    }
+}

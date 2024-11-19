@@ -1,0 +1,48 @@
+//bridge-file-version: #18
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:wwolf",
+			"materials": {
+				"default": "entity_alphatest",
+				"bioluminescent_layer": "warden_bioluminescent_layer"
+			},
+			"textures": {
+				"default": "textures/models/wolfwild",
+				"wolf1": "textures/models/wolfblack",
+				"wolf2": "textures/models/wolfbright",
+				"wolf3": "textures/models/wolfdark",
+				"wolf4": "textures/models/wolftimber",
+				"bioluminescent_layer": "textures/models/wolf_eyes"
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"walk": "animation.wild_wolf.walk",
+				"attack": "animation.wild_wolf.attack"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target",
+					{
+						"walk": "query.modified_move_speed"
+					},
+					{
+						"attack": "variable.attack_time"
+					}
+				]
+			},
+			"geometry": {
+				"default": "geometry.wild_wolf"
+			},
+			"render_controllers": [
+				"controller.render.wild_wolf",
+				"controller.render.warden_bioluminescent_layer"
+			],
+			"spawn_egg": {
+				"base_color": "#FF0000",
+				"overlay_color": "#D1CE00"
+			}
+		}
+	}
+}

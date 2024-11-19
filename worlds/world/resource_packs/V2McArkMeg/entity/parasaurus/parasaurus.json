@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:parasaurus",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"parasaurus1": "textures/parasaurus/variant1",
+				"parasaurus2": "textures/parasaurus/variant2",
+				"parasaurus3": "textures/parasaurus/variant3"
+			},
+			"geometry": {
+				"default": "geometry.parasaurus"
+			},
+	"sound_effects": {
+	"hurt_sound": "mob.parasaurus_mc_ark.hurt",
+	"idle_sound": "mob.parasaurus_mc_ark.idle"
+	},
+			
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"idle": "animation.parasaurus.idle",
+				"walk": "animation.parasaurus.walk", 
+				"alert": "animation.parasaurus.alert",  
+				"run": "animation.parasaurus.run",
+				"sleep": "animation.parasaurus.sleep",
+				"eating": "animation.parasaurus.eating",  
+				"sitting": "animation.parasaurus.sitting",
+				"walk_controller":
+				"controller.animation.general.walk_parasaurus_mc_ark",
+				"alert_controller":
+				"controller.animation.parasaurus.alert"
+			},
+			"scripts": { 
+				"animate": [
+{ 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+				    
+				    "alert_controller",
+				    "walk_controller"
+				]
+			},
+			"render_controllers": [
+				"controller.render.parasaurus"
+			],
+      "spawn_egg": {
+        "base_color": "#A18239",
+        "overlay_color": "#424540"
+      }
+		}
+	}
+}

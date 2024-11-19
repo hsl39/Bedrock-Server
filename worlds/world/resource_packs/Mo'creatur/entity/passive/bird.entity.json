@@ -1,0 +1,49 @@
+//bridge-file-version: #39
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:bird",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/birdblue",
+				"green": "textures/models/birdgreen",
+				"black": "textures/models/birdblack",
+				"white": "textures/models/birdwhite",
+				"yellow": "textures/models/birdyellow",
+				"red": "textures/models/birdred"
+			},
+			"geometry": {
+				"default": "geometry.bird"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				],
+				"animate": [
+					{
+						"fly": "!query.is_on_ground && !query.is_riding"
+					},
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"fly": "animation.pajaro-fly",
+				"walk": "animation.pajaro-walk",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.bird"
+			],
+			"spawn_egg": {
+				"base_color": "#D5EFFF",
+				"overlay_color": "#D5EFFF"
+			}
+		}
+	}
+}

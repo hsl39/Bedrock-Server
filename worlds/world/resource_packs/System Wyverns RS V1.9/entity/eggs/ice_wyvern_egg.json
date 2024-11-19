@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier": "new:ice_wyvern_egg",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures":{
+        "default": "textures/entity/ice_wyvern"
+      },
+      "geometry":{
+        "default": "geometry.wyvern_egg"
+      },
+      "render_controllers":[
+        "controller.render.default"
+      ]
+    }
+  }
+}

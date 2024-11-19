@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mocreatures:nunchaku",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "nunchaku"
+			},
+			"minecraft:render_offsets": "tools",
+			"minecraft:damage": 6,
+			"minecraft:durability": {
+				"max_durability": 250
+			},
+			"minecraft:use_duration": 3600,
+			"minecraft:hand_equipped": true,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "sword"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:weapon": {},
+			"minecraft:allow_off_hand": true,
+			"minecraft:display_name": {
+				"value": "item.mocreatures:nunchaku.name"
+			}
+		},
+		"events": {}
+	}
+}

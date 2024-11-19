@@ -1,0 +1,246 @@
+{
+	"resource_pack-name": "vanilla",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"wyvern_bone": {
+			"textures": "textures/items/wyvern_bone.png"
+		},
+		"fire_wyvern_heart": {
+			"textures": "textures/items/fire_wyvern_heart.png"
+		},
+		"wither_wyvern_heart": {
+			"textures": "textures/items/wither_wyvern_heart.png"
+		},
+		"poison_wyvern_heart": {
+			"textures": "textures/items/poison_wyvern_heart.png"
+		},
+		"ground_wyvern_heart": {
+			"textures": "textures/items/ground_wyvern_heart.png"
+		},
+		"ender_wyvern_heart": {
+			"textures": "textures/items/ender_wyvern_heart.png"
+		},
+		"ice_wyvern_heart": {
+			"textures": "textures/items/ice_wyvern_heart.png"
+		},
+		"meat": {
+			"textures": "textures/items/meat.png"
+		},
+
+
+
+		"wyvern_saddle": {
+			"textures": "textures/items/wyvern_saddle.png"
+		},
+
+		"fire_essence": {
+			"textures": "textures/items/fire_essence.png"
+		},
+		"ice_wyvern_fang": {
+			"textures": "textures/items/ice_wyvern_fang.png"
+		},
+		"wither_wyvern_fang": {
+			"textures": "textures/items/wither_wyvern_fang.png"
+		},
+		"poison_wyvern_fang": {
+			"textures": "textures/items/poison_wyvern_fang.png"
+		},
+
+		"ice_wyvern_dagger": {
+			"textures": "textures/items/ice_wyvern_dagger.png"
+		},
+		"wither_wyvern_dagger": {
+			"textures": "textures/items/wither_wyvern_dagger.png"
+		},
+		"poison_wyvern_dagger": {
+			"textures": "textures/items/poison_wyvern_dagger.png"
+		},
+
+		"wyvern_skull": {
+			"textures": "textures/items/wyvern_skull.png"
+		},
+		"wyvern_bones": {
+			"textures": "textures/items/wyvern_bones.png"
+		},
+
+
+		"wyvern_bone_sword": {
+			"textures": "textures/items/wyvern_bone_sword.png"
+		},
+		"wyvern_bone_hoe": {
+			"textures": "textures/items/wyvern_bone_hoe.png"
+		},
+		"wyvern_bone_shovel": {
+			"textures": "textures/items/wyvern_bone_shovel.png"
+		},
+		"wyvern_bone_axe": {
+			"textures": "textures/items/wyvern_bone_axe.png"
+		},
+		"wyvern_bone_pickaxe": {
+			"textures": "textures/items/wyvern_bone_pickaxe.png"
+		},
+
+		"ender_wyvern_eye": {
+			"textures": "textures/items/ender_wyvern_eye.png"
+		},
+		"ender_wyvern_wand": {
+			"textures": "textures/items/ender_wyvern_wand.png"
+		},
+
+
+
+		"diamond_wyvern_armor": {
+			"textures": "textures/items/diamond_wyvern_armor.png"
+		},
+		"iron_wyvern_armor": {
+			"textures": "textures/items/iron_wyvern_armor.png"
+		},
+		"gold_wyvern_armor": {
+			"textures": "textures/items/gold_wyvern_armor.png"
+		},
+		"leather_wyvern_armor": {
+			"textures": "textures/items/leather_wyvern_armor.png"
+		},
+		"netherite_wyvern_armor": {
+			"textures": "textures/items/netherite_wyvern_armor.png"
+		},
+
+		"fire_wyvern_spawnegg": {
+			"textures": "textures/items/fire_wyvern_spawnegg.png"
+		},
+		"poison_wyvern_spawnegg": {
+			"textures": "textures/items/poison_wyvern_spawnegg.png"
+		},
+		"wither_wyvern_spawnegg": {
+			"textures": "textures/items/wither_wyvern_spawnegg.png"
+		},
+		"ice_wyvern_spawnegg": {
+			"textures": "textures/items/ice_wyvern_spawnegg.png"
+		},
+		"ender_wyvern_spawnegg": {
+			"textures": "textures/items/ender_wyvern_spawnegg.png"
+		},
+		"ground_wyvern_spawnegg": {
+			"textures": "textures/items/ground_wyvern_spawnegg.png"
+		},
+
+		"fire_wyvern_escame": {
+			"textures": "textures/items/fire_wyvern_escame.png"
+		},
+		"poison_wyvern_escame": {
+			"textures": "textures/items/poison_wyvern_escame.png"
+		},
+		"wither_wyvern_escame": {
+			"textures": "textures/items/wither_wyvern_escame.png"
+		},
+		"ice_wyvern_escame": {
+			"textures": "textures/items/ice_wyvern_escame.png"
+		},
+		"ender_wyvern_escame": {
+			"textures": "textures/items/ender_wyvern_escame.png"
+		},
+		"ground_wyvern_escame": {
+			"textures": "textures/items/ground_wyvern_escame.png"
+		},
+
+
+
+		"fire_wyvern_helmet": {
+			"textures": "textures/items/fire_wyvern_helmet.png"
+		},
+		"fire_wyvern_chestplate": {
+			"textures": "textures/items/fire_wyvern_chestplate.png"
+		},
+		"fire_wyvern_leggings": {
+			"textures": "textures/items/fire_wyvern_leggings.png"
+		},
+		"fire_wyvern_boots": {
+			"textures": "textures/items/fire_wyvern_boots.png"
+		},
+
+		"wither_wyvern_helmet": {
+			"textures": "textures/items/wither_wyvern_helmet.png"
+		},
+		"wither_wyvern_chestplate": {
+			"textures": "textures/items/wither_wyvern_chestplate.png"
+		},
+		"wither_wyvern_leggings": {
+			"textures": "textures/items/wither_wyvern_leggings.png"
+		},
+		"wither_wyvern_boots": {
+			"textures": "textures/items/wither_wyvern_boots.png"
+		},
+
+		"ender_wyvern_helmet": {
+			"textures": "textures/items/ender_wyvern_helmet.png"
+		},
+		"ender_wyvern_chestplate": {
+			"textures": "textures/items/ender_wyvern_chestplate.png"
+		},
+		"ender_wyvern_leggings": {
+			"textures": "textures/items/ender_wyvern_leggings.png"
+		},
+		"ender_wyvern_boots": {
+			"textures": "textures/items/ender_wyvern_boots.png"
+		},
+
+		"ground_wyvern_helmet": {
+			"textures": "textures/items/ground_wyvern_helmet.png"
+		},
+		"ground_wyvern_chestplate": {
+			"textures": "textures/items/ground_wyvern_chestplate.png"
+		},
+		"ground_wyvern_leggings": {
+			"textures": "textures/items/ground_wyvern_leggings.png"
+		},
+		"ground_wyvern_boots": {
+			"textures": "textures/items/ground_wyvern_boots.png"
+		},
+
+		"ice_wyvern_helmet": {
+			"textures": "textures/items/ice_wyvern_helmet.png"
+		},
+		"ice_wyvern_chestplate": {
+			"textures": "textures/items/ice_wyvern_chestplate.png"
+		},
+		"ice_wyvern_leggings": {
+			"textures": "textures/items/ice_wyvern_leggings.png"
+		},
+		"ice_wyvern_boots": {
+			"textures": "textures/items/ice_wyvern_boots.png"
+		},
+
+		"poison_wyvern_helmet": {
+			"textures": "textures/items/poison_wyvern_helmet.png"
+		},
+		"poison_wyvern_chestplate": {
+			"textures": "textures/items/poison_wyvern_chestplate.png"
+		},
+		"poison_wyvern_leggings": {
+			"textures": "textures/items/poison_wyvern_leggings.png"
+		},
+		"poison_wyvern_boots": {
+			"textures": "textures/items/poison_wyvern_boots.png"
+		},
+
+		"fire_wyvern_egg": {
+			"textures": "textures/items/fire_wyvern_egg.png"
+		},
+		"ender_wyvern_egg": {
+			"textures": "textures/items/ender_wyvern_egg.png"
+		},
+		"ground_wyvern_egg": {
+			"textures": "textures/items/ground_wyvern_egg.png"
+		},
+		"poison_wyvern_egg": {
+			"textures": "textures/items/poison_wyvern_egg.png"
+		},
+		"ice_wyvern_egg": {
+			"textures": "textures/items/ice_wyvern_egg.png"
+		},
+		"wither_wyvern_egg": {
+			"textures": "textures/items/wither_wyvern_egg.png"
+		}
+	}
+}
+

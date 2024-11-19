@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:gunpowder_mortar_coal"
+    },
+
+     
+    "tags": [ "mortar" ],
+    "pattern": [
+      " C ",
+      "CPC",
+      " C " 
+    ], 
+    "key": {
+      "P": {
+        "item": "minecraft:flint"
+      },
+      "C": {
+        "item": "minecraft:coal"
+      }
+    },
+    "result": {
+      "item": "minecraft:gunpowder"
+    }
+  }
+}
+ 

@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "l4gg:sbd_dauntless",
+      "textures": {
+        "default": "textures/entity/sbd_dauntless/sbd"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.sbd_dauntless"
+      },
+      "render_controllers": [
+        "controller.render.plane"
+      ],
+      "spawn_egg": {
+        "texture": "l4gg:sbd_dauntless",
+        "texture_index": 0
+      },
+      "animations": {
+        "rot": "animation.plane.rot",
+        "controls": "animation.plane.sbd_dauntless"
+      },
+      "scripts": {
+        "pre_animation": [
+            "t.addValue = (!q.is_on_ground && !q.is_in_water) ? 1 : -2;
+            v.airTime = Math.clamp(v.airTime + t.addValue, 0, 100);",
+            "v.propelerBoneRot = query.bone_orientation_trs('propeler'); v.propelerBoneRot = v.propelerBoneRot.r;",
+           "v.planeBoneRot = query.bone_orientation_trs('plane'); v.planeBoneRot = v.planeBoneRot.r;",
+        
+            "v.PBYRot = q.body_y_rotation;",
+            "t.rider_rot = q.has_player_rider && !q.is_on_ground ? q.rider_head_y_rotation(0) : v.PBYRot;
+            t.tempDiff = v.PBYRot - t.rider_rot;
+            v.diff = t.tempDiff;
+            (t.tempDiff > 180) ? { v.diff = t.tempDiff - 360; }; 
+            (t.tempDiff < -180) ? { v.diff = t.tempDiff + 360; };
+            v.diff = Math.clamp(v.diff, -70, 70);",
+            "v.planeRotZ = 0;                                    (q.has_player_rider) ? {   
+            v.planeRotZ = v.diff * Math.max(1 - Math.abs(v.planeBoneRot.x/100), 0);  };
+            v.planeRotZ = Math.lerprotate(v.planeBoneRot.z, v.planeRotZ, v.telt_speed);",
+            
+            "v.isLanded = q.is_on_ground ? 1 : 0;
+            v.currentOnLandRotation = Math.lerp(v.currentOnLandRotation, v.onLandedRot * v.isLanded, 0.05);
+            v.onGroundPosY = 19 * (v.currentOnLandRotation/v.onLandedRot);
+            ",
+            "v.lowerTaiControl = q.has_player_rider ? q.rider_head_x_rotation(0) - v.planeBoneRot.x : 0;"
+        
+            
+        ],
+        "initialize": [
+            "v.airTime = 0;",
+            "v.currentOnLandRotation = 0;",
+            "v.onLandedRot= -1.2;",
+            "v.onGroundRate = -0.15;",
+            "v.telt_speed = 0.1;",
+            "v.diff = 0;"
+        ],
+        "animate": [
+          "rot",
+          "controls"
+        ]
+      },
+      "particle_effects": {
+		"muzzle": "adn:muzzle"
+	  }
+    }
+  }
+}

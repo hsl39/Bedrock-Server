@@ -1,0 +1,210 @@
+{
+   "format_version": "1.16.0",
+   "minecraft:entity": {
+     "description": {
+       "identifier": "true:odachi_sweep",
+       "is_spawnable": false,
+       "is_summonable": true,
+       "is_experimental": false
+     },
+    
+    "component_groups": {
+      "despawn": {
+       "minecraft:type_family": {
+         "family": [ "despawn" ]
+       }
+      }
+    },
+    
+     "components": {
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "bamboo",
+          "bamboo_sapling"
+        ]
+      },
+      "minecraft:despawn": {
+        "filters": {
+         "all_of": [
+           { "test": "is_family", "subject": "self", "value": "despawn" }
+         ]
+       }
+      },
+       "minecraft:collision_box": {
+         "width": 2.0,
+         "height": 1.0
+       },
+       "minecraft:health": {
+         "value": 1
+       },
+       "minecraft:scale": {
+         "value": 1
+       },
+       "minecraft:damage_sensor": {
+         "triggers": [
+           {
+             "cause": "all",
+             "deals_damage": false
+           }
+         ]
+       },
+       "minecraft:behavior.knockback_roar": {
+          "priority": 1,
+          "duration": 0.1,
+          "attack_time": 0.1,
+          "knockback_damage": 5,
+          "knockback_horizontal_strength": 1,
+          "knockback_vertical_strength": 0,
+          "knockback_range": 3,
+          "damage_filters": {
+             "all_of": [
+              {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:wooden_ōdachi"
+               },
+              {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:gold_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:stone_ōdachi"
+               },
+              {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:iron_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:diamond_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:netherite_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:copper_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:amethyst_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:deathnerite_ōdachi"
+               }
+            ]
+          },
+          "knockback_filters": {
+            "all_of": [
+              {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:wooden_ōdachi"
+               },
+              {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:gold_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:stone_ōdachi"
+               }, 
+              {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:iron_ōdachi"
+               },             
+              {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:diamond_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:netherite_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:copper_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:amethyst_ōdachi"
+               },
+               {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand",
+                "operator": "!=",
+                "value": "true:deathnerite_ōdachi"
+               }
+         ]
+        },
+        "on_roar_end": {
+         "event": "new:event_despawn"
+         }
+        },
+       "minecraft:physics": {}
+     },
+    
+    "events": {
+      "new:event_despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      }
+    }
+   }
+ }

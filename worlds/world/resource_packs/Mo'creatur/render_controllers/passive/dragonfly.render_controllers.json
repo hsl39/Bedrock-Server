@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.dragonfly": {
+			"arrays": {
+				"textures": {
+					"Array.dragonfly": [
+						"Texture.green",
+						"Texture.light_blue",
+						"Texture.red",
+						"Texture.blue"
+					]
+				}
+			},
+			"textures": [
+				"Array.dragonfly[query.variant]"
+			],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"geometry": "Geometry.default"
+		}
+	}
+}

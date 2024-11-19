@@ -1,0 +1,119 @@
+
+
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "mc_ark:mortar",
+			"is_experimental": false,
+			"menu_category": {
+				"category": "construction",
+				"is_hidden_in_commands": false
+			}, 
+			"properties": {
+				"mc_ark:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+      "tag:plant": {},
+      "minecraft:crafting_table": {
+				"grid_size": 3,
+				"custom_description": "Mortar",
+				"crafting_tags": [
+					"mortar"
+				] 
+			}, 
+      "minecraft:map_color": "#9EA1A4",
+      "minecraft:breathability": "air",
+      "minecraft:entity_collision": {
+        "origin": [ -1, 0, -1 ],
+        "size": [ 2, 2, 2 ]
+      },
+      "minecraft:pick_collision": {
+        "origin": [ -4, 0, -4 ],
+        "size": [ 8, 8, 8 ]
+      },
+      "minecraft:block_light_absorption": 1.0, 
+      "minecraft:block_light_emission": 0,
+      "minecraft:explosion_resistance": 0.0,
+      "minecraft:destroy_time": 1.0,
+      "minecraft:loot": "loot_tables/mc_ark/mortar.json",
+			"minecraft:geometry": "geometry.mortar",
+			"minecraft:material_instances": {
+        "*": {
+          "texture": "mortar",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+        }
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "mc_ark:update_rotation"
+			} 
+		}, 
+		"permutations": [
+			{
+				"condition": "query.block_property('mc_ark:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('mc_ark:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('mc_ark:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('mc_ark:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"mc_ark:update_rotation": {
+				"set_block_property": {
+					"mc_ark:block_rotation": "query.cardinal_facing_2d"
+				}
+			}
+		}
+	}
+}
+    

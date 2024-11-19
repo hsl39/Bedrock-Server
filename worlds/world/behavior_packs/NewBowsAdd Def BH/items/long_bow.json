@@ -1,0 +1,44 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+   "description": {
+    "identifier": "new:long_bow",
+    "category": "Equipment"
+  },
+  "components": {
+    "minecraft:frame_count": 3,
+    "minecraft:use_animation": "bow",
+    "minecraft:display_name": {
+      "value": "§bLong Bow§7\n\n§lInfo:§r§7\n-Shoot 3 arrows at the same time\n-Damage: 16\n-Max Durability: 500\n-Works with long arrow"
+    },
+    "minecraft:icon": {
+      "texture": "long_bow"
+    },
+    "minecraft:durability":{
+      "max_durability": 500
+    },
+    "minecraft:shooter": {
+      "max_draw_duration": 1,
+      "charge_on_draw": false,
+      "scale_power_by_draw_duration": true,
+      "ammunition": [
+        {
+          "item": "new:long_arrow",
+          "use_offhand": true,
+          "search_inventory": true,
+          "use_in_creative": true
+        }
+      ]
+    },
+    "minecraft:stacked_by_data": false,
+    "minecraft:max_stack_size": 1,
+    "minecraft:use_modifiers": {
+      "use_duration": 99999999,
+      "movement_modifier": 0.35
+    },
+    "minecraft:hand_equipped": true
+  },
+  "events": {
+  }
+}
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "new:poison_hydra_boots",
+      "category": "equipment"
+    },
+    "components": {
+    "minecraft:max_stack_size": 1,
+    "minecraft:enchantable": {
+      "value": 10,
+      "slot": "armor_feet"
+    },
+    "minecraft:icon": {
+      "texture": "poison_hydra_boots"
+    },
+    "minecraft:repairable": {
+      "repair_items": [
+        {
+          "items":[
+            "new:poison_hydra_boots",
+            "new:poison_hydra_scale"
+          ],
+          "repair_amount": 15
+        }
+      ]
+    },
+    "minecraft:display_name": {},
+    "minecraft:durability": {
+      "max_durability": 1103,
+      "damage_chance": {
+        "min": 70,
+        "max": 95
+      }
+    },
+    "minecraft:wearable": {
+      "protection": 2,
+      "slot": "slot.armor.feet"
+    }
+  }
+}
+}

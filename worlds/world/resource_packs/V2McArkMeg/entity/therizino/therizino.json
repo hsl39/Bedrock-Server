@@ -1,0 +1,59 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:therizino",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/therizino/variant1"
+			},
+			"geometry": { 
+				"default": "geometry.therizino" 
+			},
+	"sound_effects": { 
+	"hurt_sound": "sound.therizino_hurt_mc_ark",
+	"idle_sound": "sound.therizino_idle_mc_ark",
+	
+	"attack": "sound.therizino_attack_mc_ark",
+	"roar": "sound.therizino_roar_mc_ark"
+	},  
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.therizino.general",
+				"idle": "animation.therizino.idle",
+				"walk": "animation.therizino.walk", 
+				"run": "animation.therizino.run",
+				"attack": "animation.therizino.attack",
+
+
+				"roar": "animation.therizino.roar",
+				"sleep": "animation.therizino.sleep",
+				"walk_controller":
+				"controller.animation.general.walk_mc_ark"
+			},
+			"scripts": {
+				"animate": [
+				    
+				    { 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+							
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.therizino"
+			],  
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index":14
+      }
+		}
+	}
+}

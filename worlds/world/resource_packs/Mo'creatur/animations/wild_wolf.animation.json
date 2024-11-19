@@ -1,0 +1,86 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wild_wolf.attack": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"Mouth": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [55, 0, 0],
+						"0.52": [0, 0, 0]
+					}
+				},
+				"bone": {
+					"position": {
+						"0.0": [0, 0, 20],
+						"0.08": [0, 0, -25],
+						"0.28": [0, 0, -25],
+						"0.4": [0, 0, -25],
+						"0.44": [0, 0, 20]
+					}
+				}
+			}
+		},
+		"animation.wild_wolf.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"bone7": {
+					"rotation": {
+						"0.0": [-35, 0, 0],
+						"0.4": [27.5, 0, 0],
+						"0.8": [-35, 0, 0]
+					}
+				},
+				"bone9": {
+					"rotation": {
+						"0.0": [25, 0, 0],
+						"0.4": [-35, 0, 0],
+						"0.8": [25, 0, 0]
+					}
+				},
+				"bone10": {
+					"rotation": {
+						"0.0": [-22.5, 0, 0],
+						"0.4": [35, 0, 0],
+						"0.8": [-22.5, 0, 0]
+					}
+				},
+				"bone8": {
+					"rotation": {
+						"0.0": [35, 0, 0],
+						"0.4": [-20, 0, 0],
+						"0.8": [35, 0, 0]
+					}
+				},
+				"cola": {
+					"rotation": [-22.5, 0, 0]
+				}
+			}
+		},
+		"animation.wild_wolf.mouth": {
+			"loop": true,
+			"bones": {
+				"Mouth": {
+					"rotation": [35, 0, 0]
+				}
+			}
+		},
+		"animation.werewolf.sneak": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [52.5, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [-52.5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-52.5, 0, 0]
+				}
+			}
+		}
+	}
+}

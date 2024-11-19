@@ -1,0 +1,1 @@
+{"format_version":"1.20.10","minecraft:recipe_shapeless":{"description":{"identifier":"gabrielaplok:bucket_petroleum"},"tags":["crafting_table"],"ingredients":[{"item":"minecraft:bone"},{"item":"minecraft:coal_block"},{"item":"minecraft:bucket"}],"unlock":[{"item":"minecraft:bucket"}],"result":[{"item":"gabrielaplok:bucket_petroleum"}]}}

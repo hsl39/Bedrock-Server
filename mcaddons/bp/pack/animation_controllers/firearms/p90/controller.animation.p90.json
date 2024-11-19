@@ -1,0 +1,212 @@
+// Coded by @JustAsh0005 for ActualGuns (for both CSO and 3D version), you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.p90_setup": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{  "p90": "q.get_equipped_item_name(0) == 'p90' && (q.scoreboard('p90') >= 1 && q.scoreboard('p90') <= 50)" },
+						{
+							"p90_empty": "(q.scoreboard('p90') == 0) && q.get_equipped_item_name(0) == 'p90'"
+						}
+					]
+				},
+				"p90": {
+					"animations": [ "p90_onfire", "p90_bullet_counter" ],
+					"transitions": [
+						{
+							"default": "q.get_equipped_item_name(0) != 'p90'"
+						},
+						{
+							"p90_empty": "(q.scoreboard('p90') == 0) && q.get_equipped_item_name(0) == 'p90'"
+						}
+					]
+				},
+				"p90_empty": {
+					"on_entry": [
+						"/function ammo/p90",
+						"/replaceitem entity @s slot.weapon.mainhand 0 smg:p90_empty 1 0"
+					],
+					"transitions": [
+						{
+							"default": "q.get_equipped_item_name(0) != 'p90'"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.p90_onfire": {
+			"initial_state": "inactive",
+			"states": {
+				"inactive": {
+					"transitions": [
+						{ "fire": "q.get_equipped_item_name(0) == 'p90' && q.is_using_item" }
+					]
+				},
+				"firing": {
+					"on_entry": [
+						"v.bullet_fire = q.life_time;"
+					],
+					"transitions": [
+						{ "inactive": "q.get_equipped_item_name(0) != 'p90' || !q.is_using_item" },
+						{ "fire": "(q.life_time - v.bullet_fire) >= 0.04" }
+					]
+				},
+				"fire": {
+					"on_entry": [
+						"/playsound pixelpoly.p90_fire @a[r=20]",
+                        "@s p90:fire",
+                        "/scoreboard players remove @s[m=!c,scores={p90=1..50}] p90 1",
+                        "/particle minecraft:eyeofender_death_explode_particle ^ ^1 ^1"
+                    ],
+					"transitions": [
+						{ "firing": "1.0" }
+					],
+					"on_exit": [
+						"v.bullet_fire = q.life_time;"
+					]
+				}
+			}
+		},
+		"controller.animation.p90_bullet_counter": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{ "p90_show": "q.get_equipped_item_name(0) == 'p90'" }
+					]
+				},
+				"p90_show": {
+					"transitions": [
+						{ "default": "q.get_equipped_item_name(0) == 'p90'" }
+					],
+					"on_entry": [ "/function ammo/p90" ]
+				}
+			}
+		},
+		"controller.animation.p90_onempty": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{ "p90_empty": "q.get_equipped_item_name(0) == 'p90_empty' && q.is_using_item && q.scoreboard('p90') == 0" }
+					]
+				},
+				"p90_empty": {
+					"on_entry": [
+						"/function ammo/p90",
+						"/playsound pixelpoly.empty_gun @a[r=10]"
+					],
+					"transitions": [
+						{ "default": "q.get_equipped_item_name(0) != 'p90_empty' || !q.is_using_item" }
+					]
+				}
+			}
+		},
+		"controller.animation.p90_reload": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{ "p90_mag": "q.get_equipped_item_name(0) == 'p90_mag' && q.is_using_item" }
+					]
+				},
+				"p90_mag": {
+					"transitions": [
+						{ "reload_start2": "q.get_equipped_item_name(0) == 'p90_mag'" },
+						{ "default": "q.get_equipped_item_name(0) != 'p90_mag'" }
+					]
+				},
+				"reload_start2": {
+					"on_entry": [
+						"/tag @s add reload",
+						"/replaceitem entity @s slot.weapon.mainhand 0 smg:p90_empty 1 0",
+						"/clear @s smg:p90",
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "reloaded2": "(q.life_time - v.r) >= (36.0 / 28.0) && q.get_equipped_item_name(0) == 'p90_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'p90_empty'" }
+					]
+				},
+				"reloaded2": {
+					"on_entry": [
+						"/playsound pixelpoly.p90_clipout @a[r=9]"
+					],
+					"transitions": [
+						{ "reload_start3": "1.0" }
+					]
+				},
+				"reload_start3": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "reloaded3": "(q.life_time - v.r) >= (36.0 / 31.0) && q.get_equipped_item_name(0) == 'p90_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'p90_empty'" }
+					]
+				},
+				"reloaded3": {
+					"on_entry": [
+						"/playsound pixelpoly.p90_clipin @a[r=9]"
+					],
+					"transitions": [
+						{ "reload_start4": "1.0" }
+					]
+				},
+				"reload_start4": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "reloaded4": "(q.life_time - v.r) >= (36.0 / 34.0) && q.get_equipped_item_name(0) == 'p90_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'p90_empty'" }
+					]
+				},
+				"reloaded4": {
+					"on_entry": [
+						"/playsound pixelpoly.p90_boltback @a[r=9]"
+					],
+					"transitions": [
+						{ "reload_start": "1.0" }
+					]
+				},
+				"reload_start": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "reloaded": "(q.life_time - v.r) >= (36.0 / 30.0) && q.get_equipped_item_name(0) == 'p90_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'p90_empty'" }
+					]
+				},
+				"reloaded": {
+					"on_entry": [
+						"/tag @s remove reload",
+						"/scoreboard players set @s p90 50",
+						"/clear @s smg:p90_empty",
+						"/replaceitem entity @s slot.weapon.mainhand 0 smg:p90 1 0"
+					],
+					"transitions": [
+						{ "default": "1.0" }
+					]
+				},
+				"reload_error": {
+					"on_entry": [
+						"/tag @s remove reload",
+						"/clear @s smg:p90_empty",
+						"/replaceitem entity @s slot.weapon.mainhand 0 smg:p90_mag 1 0"
+					],
+					"transitions": [
+						{ "default": "1.0" }
+					]
+				}
+			}
+		}
+	}
+}
+
+// This code is exclusive to both Add-ons (ActualGuns CSO and 3D) and can not be used by anybody else.

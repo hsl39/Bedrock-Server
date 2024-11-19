@@ -1,0 +1,182 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+
+    "animation.on_attack_animation_mc_ark": {
+     "animation_length": 4.1,
+      "loop": true,
+      "timeline": {
+        "4.0": [
+"@s minecraft:on_attack"
+            ]
+      }
+    },   
+      
+    "animation.attack_simple_wyvern_poison": {
+     "animation_length": 1.15, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+"/effect @e[r=4, tag=!in_attack] poison 10 1 true",
+            "/execute @e[tag=!in_attack,r=4] ~~~ particle mc_ark:particle_wyvern_poison_proyectil ~~1~"
+            ], 
+          "1.1":[ 
+            "/tag @s remove in_attack",
+            "/tag @s remove attacking"
+              ]
+      } 
+    },
+  "animation.remove_effects_poison_wyvern": {
+   "animation_length": 0.4,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[  
+            "/effect @s poison 0 2 true"
+            ]
+       }
+      },
+       
+  "animation.remove_effects_electric_wyvern": {
+   "animation_length": 0.4,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[  
+            "/effect @s wither 0 2 true",
+            "/effect @s slowness 0 2 true"
+            ]
+       }
+      },
+    
+    "animation.wyvern_baby": {
+     "animation_length": 300.1,
+      "loop": true,
+      "timeline": {
+        "300.0": [
+"@s minecraft:ageable_grow_up_salvaje"
+            ]
+      }
+    },   
+  "animation.remove_slowness_ice_wyvern": {
+   "animation_length": 0.4,  
+    "loop": true,  
+    "timeline": {
+        "0.0":[  
+            "/effect @s slowness 0 41 true"
+            ]
+       }
+      },
+    "animation.on_ground": {
+     "animation_length": 0.4,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s speed 0 4 true"
+            ]
+      }
+    },
+    "animation.velocidad_0_wyvern_fire": {
+     "animation_length": 0.4,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+    "/effect @s levitation 0 254 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_1_wyvern_fire": {
+      "animation_length": 1.0, 
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s speed 1 4 true",
+        "/effect @s levitation 1 0 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_2_wyvern_fire": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s speed 1 4 true",
+        "/effect @s levitation 1 2 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.velocidad_3_wyvern_fire": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s speed 1 4 true",
+        "/effect @s levitation 1 4 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },  
+    "animation.velocidad_4_wyvern_fire": {
+      "animation_length": 0.2,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s speed 1 5 true",
+        "/effect @s levitation 1 9 true",
+        "/effect @s slow_falling 1 1 true"
+            ]
+      }
+    },
+    "animation.salvaje_volador_wyvern": {
+     "animation_length": 21.0,
+      "loop": true,
+      "timeline": {
+        "20.0": [
+ "@s minecraft:salvaje_volador"
+            ]
+      }
+    },
+    "animation.domado_volador_wyvern": {
+     "animation_length": 21.0,
+      "loop": true,
+      "timeline": {
+        "20.0": [
+ "@s minecraft:domado_volador"
+            ]
+      }
+    },
+    "animation.wyvern_slow_falling": {
+     "animation_length": 0.2,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @s slow_falling 1000 255 true"
+            ]
+      }
+    },
+    
+    "animation.attack_simple_wyvern_electric": {
+     "animation_length": 1.15, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "@s minecraft:summon_lightning",
+            "/execute @e[type=!item, tag=!in_attack,r=4] ~~~ particle mc_ark:particle_wyvern_lightning_proyectil ~~1~"
+            ], 
+          "1.1":[ 
+            "/tag @s remove in_attack",
+            "/tag @s remove attacking"
+              ]
+      } 
+    }
+  } 
+}

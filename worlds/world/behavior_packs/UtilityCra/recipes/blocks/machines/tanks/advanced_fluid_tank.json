@@ -1,0 +1,44 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twm:advanced_fluid_tank"
+		},
+		"tags": [
+			"twm_workbench"
+		],
+		"key": {
+			"S": {
+				"item": "twm:steel"
+			},
+			"R": {
+				"item": "minecraft:redstone_block"
+			},
+			"G": {
+				"item": "minecraft:glass"
+			},
+			"T": {
+				"item": "twm:basic_fluid_tank"
+			}
+		},
+		"pattern": [
+			"RTR",
+			"TST",
+			"RGR"
+		],
+		"result": {
+			"item": "twm:advanced_fluid_tank"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:redstone_block"
+			},
+			{
+				"item": "twm:steel"
+			},
+			{
+				"item": "twm:basic_fluid_tank"
+			}
+		]
+	}
+}

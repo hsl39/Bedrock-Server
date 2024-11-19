@@ -1,0 +1,40 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mocreatures:sharksword",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 250,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:damage": 6,
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:icon": {
+				"texture": "sharksword"
+			},
+			"minecraft:use_duration": 1.6,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:enchantable": {
+				"slot": "sword",
+				"value": 9
+			},
+			"tag:minecraft:is_sword": {},
+			"minecraft:weapon": {},
+			"minecraft:display_name": {
+				"value": "item.mocreatures:sharksword.name"
+			}
+		},
+		"events": {}
+	}
+}

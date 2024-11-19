@@ -1,0 +1,42 @@
+//bridge-file-version: #43
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:ent",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"ent_oak": "textures/models/ent_oak",
+				"ent_birch": "textures/models/ent_birch"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"caminar": "query.modified_move_speed"
+					},
+					{
+						"atacar_objetivo": "query.has_target"
+					},
+					"look_at_target"
+				]
+			},
+			"geometry": {
+				"default": "geometry.ent"
+			},
+			"animations": {
+				"caminar": "animation.ent.caminar2",
+				"atacar_objetivo": "animation.ent.attack",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.ent"
+			],
+			"spawn_egg": {
+				"base_color": "#C09E7D",
+				"overlay_color": "#FF0000"
+			}
+		}
+	}
+}

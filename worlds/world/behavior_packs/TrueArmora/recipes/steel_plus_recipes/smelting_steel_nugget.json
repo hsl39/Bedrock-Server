@@ -1,0 +1,11 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_furnace": {
+	  "description": {
+	  "identifier": "steel_nugget"
+	  },
+	  "tags": ["blast_furnace"],
+	  "input": "pa:iron_and_coal",
+	  "output": "pa:steel_nugget"
+	}
+  }

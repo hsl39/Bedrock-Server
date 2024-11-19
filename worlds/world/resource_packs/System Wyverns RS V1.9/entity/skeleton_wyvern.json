@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier": "new:skeleton_wyvern",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures":{
+        "default": "textures/entity/skeleton_wyvern"
+      },
+      "geometry":{
+        "default": "geometry.skeleton_wyvern"
+      },
+      "animations":{
+        "static": "animation.skeleton_wyvern.death"
+      },
+      "scripts":{
+        "animate":[
+          "static"
+        ]
+      },
+      "render_controllers":[
+        "controller.render.default"
+      ]
+    }
+  }
+}

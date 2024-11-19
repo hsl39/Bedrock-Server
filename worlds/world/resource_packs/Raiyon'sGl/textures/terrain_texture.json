@@ -1,0 +1,79 @@
+//bridge-file-version: #10
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"diamond_ore": {
+			"textures": [
+				"textures/blocks/diamond_ore"
+			]
+		},
+"coal_ore": {
+			"textures": [
+				"textures/blocks/coal_ore"
+			]
+		},
+		"iron_ore": {
+			"textures": [
+				"textures/blocks/iron_ore"
+			]
+		},
+		"deepslate_iron_ore": {
+			"textures": [
+				"textures/blocks/deepslate/deepslate_iron_ore"
+			]
+		},
+		"deepslate_diamond_ore": {
+			"textures": [
+				"textures/blocks/deepslate/deepslate_diamond_ore"
+			]
+		},
+"deepslate_coal_ore": {
+			"textures": [
+				"textures/blocks/deepslate/deepslate_coal_ore"
+			]
+		},
+		"gold_ore": {
+			"textures": [
+				"textures/blocks/gold_ore"
+			]
+		},
+		"deepslate_gold_ore": {
+			"textures": [
+				"textures/blocks/deepslate/deepslate_gold_ore"
+			]
+		},
+		"deepslate_emerald_ore": {
+			"textures": [
+				"textures/blocks/deepslate/deepslate_emerald_ore"
+			]
+		},
+		"emerald_ore": {
+			"textures": [
+				"textures/blocks/emerald_ore"
+			]
+		},
+		"lapis_ore": {
+			"textures": [
+				"textures/blocks/lapis_ore"
+			]
+		},
+		"deepslate_lapis_ore": {
+			"textures": [
+				"textures/blocks/deepslate/deepslate_lapis_ore"
+			]
+		},
+		"copper_ore": {
+			"textures": [
+				"textures/blocks/copper_ore"
+			]
+		},
+		"deepslate_copper_ore": {
+			"textures": [
+				"textures/blocks/deepslate/deepslate_copper_ore"
+			]
+		}
+	}
+}

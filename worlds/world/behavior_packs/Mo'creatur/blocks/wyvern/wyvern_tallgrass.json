@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "mocreatures:wyvern_tallgrass",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.grass"
+			}
+		},
+		"components": {
+			"minecraft:map_color": "#443a5e",
+			"minecraft:geometry": "geometry.tallgrass",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "tall_grass_wyvern_lair",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:destructible_by_mining": true,
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:light_dampening": 15,
+			"minecraft:light_emission": 15,
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": true
+		},
+		"events": {}
+	}
+}

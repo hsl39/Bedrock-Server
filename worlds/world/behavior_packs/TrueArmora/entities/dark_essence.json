@@ -1,0 +1,107 @@
+{
+  "format_version": "1.18.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pa:dark_essence",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "commands": "controller.animation.pa.dark_essence_particle"
+      },
+      "scripts": {
+        "animate": [
+          "commands"
+        ]
+      }
+    },
+    "component_groups": {
+      "pa:instant_despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:timer": {
+        "time": 5,
+        "looping": true,
+        "time_down_event": {
+          "event": "pa:entity_despawn",
+          "target": "self"
+        }
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "interact_text": "action.pa:dark_essence.interact.name",
+            "swing": true,
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "minecraft:glass_bottle"
+                  }
+                ]
+              },
+              "event": "pa:get_essence"
+            }
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": [
+          "inanimate"
+        ]
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:collision_box": {
+        "height": 0,
+        "width": 0
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 1,
+            "height": 1,
+            "pivot": [
+              0,
+              0.5,
+              0
+            ]
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      }
+    },
+    "events": {
+      "pa:get_essence": {
+        "queue_command": {
+          "command": [
+            "scriptevent true:steel essence"
+          ],
+          "target": "other"
+        }
+      },
+      "pa:entity_despawn": {
+        "add": {
+          "component_groups": [
+            "pa:instant_despawn"
+          ]
+        }
+      }
+    }
+  }
+}

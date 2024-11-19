@@ -1,0 +1,56 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier": "new:poison_wyvern",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures":{
+        "default": "textures/entity/poison_wyvern",
+        "leather": "textures/armors/wyvern_armor_leather",
+        "gold": "textures/armors/wyvern_armor_gold",
+        "iron": "textures/armors/wyvern_armor_iron",
+        "diamond": "textures/armors/wyvern_armor_diamond",
+        "netherite": "textures/armors/wyvern_armor_netherite"
+      },
+      "sound_effects": {
+        "roar": "random.wyvern.roar"
+      },
+      "geometry":{
+        "default": "geometry.wyvern",
+        "leather": "geometry.wyvern_armor",
+        "gold": "geometry.wyvern_armor",
+        "iron": "geometry.wyvern_armor",
+        "diamond": "geometry.wyvern_armor",
+        "netherite": "geometry.wyvern_armor"
+      },
+      "animations":{
+        "charged": "controller.animation.wyvern",
+        "move": "animation.wyvern.walk",
+        "static": "animation.wyvern.static",
+        "sit": "animation.wyvern.sit",
+        "shoot": "animation.wyvern.fireball",
+        "attack": "animation.wyvern.attack",
+        "attack2": "animation.wyvern.attack2",
+        "sleep": "animation.wyvern.sleeping",
+        "wake_up": "animation.wyvern.wake_up_roar",
+        "sleep_start": "animation.wyvern.sleep_start",
+        "fly": "animation.wyvern.fly",
+        "death": "animation.wyvern.dead"
+      },
+      "scripts":{
+        "animate":[
+          "charged"
+        ]
+      },
+      "render_controllers":[
+        "controller.render.wyvern",
+        {"controller.render.wyvern_armor": "query.skin_id"}
+      ],
+      "spawn_egg": {
+        "texture": "poison_wyvern_spawnegg"
+      }
+    }
+  }
+}

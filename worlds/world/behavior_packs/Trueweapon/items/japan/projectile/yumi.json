@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "yumi:bow",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.bow"
+			}
+		},
+		"components": {
+			"minecraft:use_modifiers": {
+				"use_duration": 72000,
+				"movement_modifier": 0.5
+			},
+            "minecraft:can_destroy_in_creative": {
+                "value": false
+            },
+
+			"minecraft:shooter": {
+                "ammunition" :[{
+                    "item" :"minecraft:arrow",
+                    "use_offhand" :true,
+                    "search_inventory" :true,
+                    "use_in_creative" :true
+                    }],
+				"max_draw_duration": 4,
+				"scale_power_by_draw_duration": true,
+				"charge_on_draw": false
+			},
+            "minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 476,
+				"damage_chance": {
+					"min": 70,
+					"max": 95
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 8,
+				"slot": "bow"
+			},
+			"minecraft:icon": {
+				"textures": {
+					"default": "yumi"
+				  }
+			},
+			"minecraft:display_name": {
+			}
+		}
+	}
+}

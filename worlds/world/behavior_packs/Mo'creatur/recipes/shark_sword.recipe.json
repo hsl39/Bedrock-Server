@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mocreatures:sharksword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#X#",
+			"#X#",
+			" X "
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:stick"
+			},
+			"#": {
+				"item": "mocreatures:sharkteeth"
+			}
+		},
+		"result": {
+			"item": "mocreatures:sharksword"
+		}
+	}
+}

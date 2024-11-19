@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "warden_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A A",
+			"B B"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:sculk_catalyst"
+			},
+            "B": 
+	        {
+				"item": "minecraft:echo_shard"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:echo_shard"
+			}
+		],
+		"result": {
+			"item": "wb:warden_boots"
+		}
+	}
+}

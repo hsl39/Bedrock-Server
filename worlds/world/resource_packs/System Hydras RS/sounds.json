@@ -1,0 +1,15 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "new:hydra": {
+        "volume": 1.2,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.hydra.ambient",
+          "shoot": "mob.hydra.shoot",
+          "hurt": "mob.hydra.hurt"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mocreatures:essencefire"
+		},
+		"tags": [
+			"crafting_table"
+		],
+  "pattern": [
+    " X ",
+    " Y ",
+    " Z "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:blaze_powder"
+    },
+    "Y": {
+      "item": "mocreatures:heartfire"
+    },
+    "Z": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "mocreatures:essencefire",
+    "data": 0,
+    "count": 1
+  }
+}
+}

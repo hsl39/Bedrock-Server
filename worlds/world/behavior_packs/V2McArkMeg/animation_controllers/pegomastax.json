@@ -1,0 +1,67 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.running_pegomastax": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "(variable.attack_time > 0.0)"
+            }
+          ]  ,
+          "animations": [
+              "running_per_time"
+              ]
+        },  
+        "attack": {
+          "transitions": [
+            {
+              "default": "(variable.attack_time <= 0.0)"
+            }  
+          ], 
+                    "on_entry": [
+                        "@s minecraft:running_pegomastax",
+                        "@s minecraft:attack_salvaje"
+                        ]
+        }
+      }
+    },
+    
+		"controller.animation.pickup_respaldo_mc_ark": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"can": "(query.health > 3)"
+						},
+						{
+							"cant": "(query.health <= 3)"
+						}
+					]  
+				},
+				"can": {
+					"on_entry": [ 
+"@s minecraft:can_pickup"
+					] ,
+					"transitions": [
+						{
+							"cant": "(query.health <= 3)"
+						}
+					]  
+				},
+				"cant": {
+					"on_entry": [ 
+"@s minecraft:cant_pickup" 
+					] ,
+					"transitions": [
+						{
+							"can": "(query.health > 3)"
+						}
+					]
+				}
+			}
+		}
+  }
+}  

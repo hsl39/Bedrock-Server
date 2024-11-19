@@ -1,0 +1,135 @@
+
+
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "mc_ark:air_conditioner",
+			"is_experimental": false,
+			"menu_category": {
+				"category": "construction",
+				"is_hidden_in_commands": false
+			}, 
+			"properties": {
+				"mc_ark:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+      "minecraft:ticking": {
+        "looping": true,
+        "range": [
+          5,
+          6
+        ],
+        "on_tick": {
+          "event": "on_tick",
+          "target": "self"
+        }
+      },
+      "minecraft:map_color": "#9EA1A4",
+      "minecraft:breathability": "air",
+      "minecraft:entity_collision": {
+        "origin": [ -4, 0, -4 ],
+        "size": [ 8, 16, 8 ]
+      },
+      "minecraft:pick_collision": {
+        "origin": [ -4, 0, -4 ],
+        "size": [ 8, 16, 8 ]
+      },
+      "minecraft:block_light_absorption": 1.0, 
+      "minecraft:block_light_emission": 0,
+      "minecraft:explosion_resistance": 0.0,
+      "minecraft:destroy_time": 1.0,
+      "minecraft:loot": "loot_tables/mc_ark/air_conditioner.json",
+      "tag:stone": {},
+			"minecraft:geometry": "geometry.air_conditioner",
+			"minecraft:material_instances": {
+        "*": {
+          "texture": "air_conditioner",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": false
+        }
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "mc_ark:update_rotation"
+			} 
+		}, 
+		"permutations": [
+			{
+				"condition": "query.block_property('mc_ark:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('mc_ark:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('mc_ark:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('mc_ark:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		], 
+		"events": { 
+      "on_tick": {
+        "run_command": {  
+          "command": [
+           "particle minecraft:elephant_tooth_paste_vapor_particle ~~1~",
+           "particle minecraft:elephant_tooth_paste_vapor_particle ~-0.2~0.96~",
+           "particle minecraft:elephant_tooth_paste_vapor_particle ~0.3~0.975~",
+           "particle minecraft:elephant_tooth_paste_vapor_particle ~0.2~0.97~0.2",
+    "event entity @e[family=!adult_lvl250, family=!adult_lvl200,family=!adult_lvl150,family=!adult_lvl100,family=!adult_lvl75,family=!adult_lvl50,family=!adult_lvl10,r=15] minecraft:give_tag",  
+  "playsound sound.air_conditioner_mc_ark @a[r=12]" 
+              ]
+        } 
+      }, 
+			"mc_ark:update_rotation": {
+				"set_block_property": {
+					"mc_ark:block_rotation": "query.cardinal_facing_2d"
+				}
+			}
+		}
+	}
+}
+    

@@ -1,0 +1,38 @@
+//bridge-file-version: #21
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:stingray",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/models/stingray"
+			},
+			"geometry": {
+				"default": "geometry.stringray"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"swim": "query.modified_move_speed"
+					}
+				],
+				"pre_animation": [
+					"variable.health = math.round(query.health / query.max_health * 100 / query.is_tamed);"
+				]
+			},
+			"animations": {
+				"swim": "animation.stringray.swim"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"spawn_egg": {
+				"base_color": "#0C64B6",
+				"overlay_color": "#023D74"
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bullet.trail": {
+			"loop": true,
+			"particle_effects": {
+			    "0.0": [
+					{
+					    "effect": "bullet_trail",
+					    "locator": "bullet_trail"
+					}
+				]
+			}
+		}
+	}
+}

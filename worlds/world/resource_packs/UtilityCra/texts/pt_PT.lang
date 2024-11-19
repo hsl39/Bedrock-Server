@@ -1,0 +1,344 @@
+#Bloques=
+
+
+
+-Tables=
+
+
+tile.twm:utility_table.name=Mesa de ferramentaria avançada
+tile.twm:workbench.name=Mesa de engenharia
+
+-Machines=
+
+
+tile.twm:crusher.name=Triturador
+tile.twm:harvester.name=Colheitadera
+tile.twm:block_breaker.name=Quebra-Bloco
+tile.twm:autosieve.name=Peneira automática
+tile.twm:ender_hopper.name=Funil do End
+
+tile.twm:cobble_gen_1.name=Gerador de pedregulho - Tier 1
+tile.twm:cobble_gen_2.name=Gerador de pedregulho - Tier 2
+tile.twm:cobble_gen_3.name=Gerador de pedregulho - Tier 3
+tile.twm:cobble_gen_4.name=Gerador de pedregulho - Tier 4
+tile.twm:cobble_gen_5.name=Gerador de pedregulho - Tier 5
+
+tile.twm:conveyor_horizontal.name=Esteira horizontal
+tile.twm:conveyor_inclined.name=Esteira Inclinada (pra cima)
+tile.twm:conveyor_declined.name=Esteira inclinada (pra baixo)
+
+tile.twm:sieve.name=Peneira
+
+tile.twm:fan.name=Ventilador
+tile.twm:mob_grinder.name=Triturador de mobs
+tile.twm:mob_trap.name=Armadilha de mobs
+tile.twm:xp_magnet.name=Atrator de XP
+
+tile.twm:machine_case.name=Chassi de Máquinas
+
+-Bountiful Bonsais=
+
+
+tile.twm:bonsai.name=Bonsai
+
+-Bountiful Crops=
+
+
+Tier 1=
+
+tile.twm:coal_crop.name=Safra de Carvão
+tile.twm:copper_crop.name=Safra de Cobre
+tile.twm:dyes_crop.name=Safra de Corantes
+tile.twm:glass_crop.name=Safra de Vidro
+tile.twm:gunpowder_crop.name=Safra de Pólvora
+tile.twm:iron_crop.name=Safra de Ferro
+tile.twm:leather_crop.name=Safra de Couro
+tile.twm:prismarine_crystal_crop.name=Safra de Cristal de Prismarinho
+tile.twm:prismarine_shards_crop.name=Safra de Fragmentos de Prismarinho
+tile.twm:water_crop.name=Safra de Água
+tile.twm:wool_crop.name=Safra de Lã
+
+Tier 2=
+
+tile.twm:ghast_crop.name=Safra de Ghast
+tile.twm:glowstone_crop.name=Safra de Pedra Luminosa
+tile.twm:gold_crop.name=Safra de Ouro
+tile.twm:honey_crop.name=Safra de Mel
+tile.twm:lapis_crop.name=Safra de Lápis-lazúli
+tile.twm:lava_crop.name=Safra de Lava
+tile.twm:quartz_crop.name=Safra de Quartzo
+tile.twm:redstone_crop.name=Safra de Redstone
+tile.twm:slime_crop.name=Safra de Slime
+
+
+Tier 3=
+
+tile.twm:amethyst_crop.name=Safra de Ametista
+tile.twm:blaze_crop.name=Safra de Blaze
+tile.twm:diamond_crop.name=Safra de Diamante
+tile.twm:emerald_crop.name=Safra de Esmeralda
+tile.twm:enderpearl_crop.name=Safra de Pérola do End
+tile.twm:obsidian_crop.name=Safra de Obsidiana
+
+
+Tier 4=
+
+tile.twm:netherite_crop.name=Cultivo de Netherite
+tile.twm:netherstar_crop.name=Cultivo de Netherstar
+tile.twm:shulker_crop.name=Cultivo de casca de Shulker
+tile.twm:totem_crop.name=Cultivo de Totem
+tile.twm:wither_crop.name=Cultivo de crânio de Wither
+
+
+Soils=
+
+tile.twm:red_soil.name=§4Terra vermelha
+tile.twm:blue_soil.name=§9Terra azul
+tile.twm:black_soil.name=§0Terra pretal
+tile.twm:yellow_soil.name=§eTerra amarela
+
+-Mechanical Spawners=
+
+
+tile.twm:mechanical_spawner.name=Spawner mecânico
+tile.twm:spawner_core.name=Nuclêo de Spawner
+
+
+-Compressed Blocks=
+
+
+tile.twm:compressed_cobblestone.name=Pedregulho Comprimido
+tile.twm:double_compressed_cobblestone.name=Pedregulho Duplamente Comprimido
+tile.twm:triple_compressed_cobblestone.name=Pedregulho Triplamente Comprimido
+tile.twm:quadruple_compressed_cobblestone.name=Pedregulho Quadruplamente Comprimido
+tile.twm:quintuple_compressed_cobblestone.name=Pedregulho Quintuplamente Comprimido
+tile.twm:sextuple_compressed_cobblestone.name=Pedregulho Sesticamente Comprimido
+tile.twm:septuple_compressed_cobblestone.name=Pedregulho Septuplicamente Comprimido
+tile.twm:octuple_compressed_cobblestone.name=Pedregulho Octuplicamente Comprimido
+tile.twm:nonuple_compressed_cobblestone.name=Pedregulho Nonuplicamente Comprimido
+
+
+tile.twm:compressed_sand.name=Arena Comprimida
+tile.twm:compressed_dirt.name=Terra Comprimida
+tile.twm:compressed_gravel.name=Cascalho Comprimido
+tile.twm:compressed_netherrack.name=Netherrack Comprimido
+tile.twm:compressed_diamond_block.name=Bloco de Diamante Comprimido
+tile.twm:compressed_coal_block.name=Bloco de Carvão Comprimido
+tile.twm:compressed_iron_block.name=Bloco de Ferro Comprimido
+
+
+
+-Utility Blocks=
+
+
+tile.twm:asphalt.name=Asfalto
+tile.twm:big_torch.name=Mega tocha
+tile.twm:crushed_netherrack.name=Netherrack triturada
+tile.twm:elevator.name=Elevator
+tile.twm:flint_block.name=Bloco de Silex
+tile.twm:lantern.name=Lanterna
+tile.twm:sink.name=Mini-Poço
+
+tile.twm:drill_placer.name=Escavadeira
+tile.twm:tractor_placer.name=Trator
+
+
+#Actions=
+
+
+
+action.hint.exit.twm:tractor=Trator
+action.hint.exit.twm:drill=Escavadeira
+
+
+#Items=
+
+
+
+-Tools=
+
+
+item.twm:netherite_aiot=AIOT de Netherita
+item.twm:diamond_aiot=AIOT de Diamante
+item.twm:golden_aiot=AIOT de Ouro
+item.twm:iron_aiot=AIOT de Ferro
+item.twm:stone_aiot=AIOT de Pedra
+item.twm:wooden_aiot=AIOT de Madeira
+
+
+item.twm:diamond_paxel=Pacachado de Diamante
+item.twm:netherite_paxel=Pacachado de Netherita
+item.twm:iron_paxel=Pacachado de Ferro
+item.twm:golden_paxel=Pacachado de Ouro
+item.twm:stone_paxel=Pacachado de Pedra
+item.twm:wooden_paxel=Pacachado de Madeira
+
+
+item.twm:netherite_hammer=Martelo de Netherita
+item.twm:diamond_hammer=Martelo de Diamante
+item.twm:iron_hammer=Martelo de Ferro
+item.twm:stone_hammer=Martelo de Pedra
+
+
+item.twm:lucky_pickaxe=Picareta da Sorte
+item.twm:lucky_sword=Espada da Sorte
+item.twm:smelting_pickaxe=Picareta de Fundição
+item.twm:lucky_fishing_rod=Vara de Pesca da Sorte
+
+
+item.twm:drill=Broca
+item.twm:heavy_drill=Broca Pesada
+
+
+-Seeds=
+
+
+item.twm:base_seeds=Semente base
+
+
+-Tier 1=
+
+
+item.twm:coal_seeds=Sementes de Carvão §eTier 1
+item.twm:copper_seeds=Sementes de Cobre §eTier 1
+item.twm:dyes_seeds=Sementes de Corantes §eTier 1
+item.twm:glass_seeds=Sementes de Vidro §eTier 1
+item.twm:gunpowder_seeds=Sementes de Pólvora §eTier 1
+item.twm:iron_seeds=Sementes de Ferro §eTier 1
+item.twm:leather_seeds=Sementes de Couro §eTier 1
+item.twm:prismarine_crystals_seeds=Sementes de Cristais de Prismarinho §eTier 1
+item.twm:prismarine_shards_seeds=Sementes de Fragmentos de Prismarinho §eTier 1
+item.twm:water_seeds=Sementes de Água §eTier 1
+item.twm:wool_seeds=Sementes de Lã §eTier 1
+
+
+
+-Tier 2=
+
+
+item.twm:ghast_seeds=Sementes de Ghast §4Tier 2
+item.twm:glowstone_seeds=Sementes de Glowstone §4Tier 2
+item.twm:gold_seeds=Sementes de Ouro §4Tier 2
+item.twm:honey_seeds=Sementes de Mel §4Tier 2
+item.twm:lapis_seeds=Sementes de Lápis-lazúli §4Tier 2
+item.twm:lava_seeds=Sementes de Lava §4Tier 2
+item.twm:quartz_seeds=Sementes de Quartzo §4Tier 2
+item.twm:redstone_seeds=Sementes de Redstone §4Tier 2
+item.twm:slime_seeds=Sementes de Slime §4Tier 2
+
+
+
+-Tier 3=
+
+
+item.twm:amethyst_seeds=Sementes de Ametista §9Tier 3
+item.twm:blaze_seeds=Sementes de Blaze §9Tier 3
+item.twm:diamond_seeds=Sementes de Diamante §9Tier 3
+item.twm:emerald_seeds=Sementes de Esmeralda §9Tier 3
+item.twm:enderpearl_seeds=Sementes de Pérola do End §9Tier 3
+item.twm:obsidian_seeds=Sementes de Obsidiana §9Tier 3
+
+
+-Tier 4=
+
+
+item.twm:nether_star_seeds=Nether Star Seeds §0Tier 4
+item.twm:netherite_seeds=Netherite Seeds §0Tier 4
+item.twm:shulker_seeds=Shulker Seeds §0Tier 4
+item.twm:totem_seeds=Totem Seeds §0Tier 4
+item.twm:wither_seeds=Wither Seeds §0Tier 4
+
+
+-Mesh=
+
+item.twm:diamond_mesh=Diamond Mesh
+item.twm:iron_mesh=Iron Mesh
+item.twm:netherite_mesh=Netherite Mesh
+item.twm:string_mesh=String Mesh
+
+
+-Essences=
+
+
+item.twm:essence_vessel=Essence Vessel
+item.twm:pig_essence=Pig Essence
+item.twm:cow_essence=Cow Essence
+item.twm:zombie_essence=Zombie Essence
+item.twm:skeleton_essence=Skeleton Essence
+item.twm:slime_essence=Slime Essence
+item.twm:sheep_essence=Sheep Essence
+item.twm:spider_essence=Spider Essence
+item.twm:creeper_essence=Creeper Essence
+item.twm:blaze_essence=Blaze Essence
+item.twm:chicken_essence=Chicken Essence
+item.twm:enderman_essence=Enderman Essence
+item.twm:hoglin_essence=Hoglin Essence
+item.twm:magma_cube_essence=Magma Cube Essence
+item.twm:mooshroom_essence=Mooshroom Essence
+item.twm:wither_skeleton_essence=Wither Skeleton Essence
+
+
+-Machines=
+
+
+item.twm:steel=Steel
+item.twm:speed_upgrade=§aSpeed §fUpgrade
+item.twm:range_upgrade=§9Range §fUpgrade
+item.twm:quantity_upgrade=§3Quantity §fUpgrade
+item.twm:energy_upgrade=§4Energy §fUpgrade
+item.twm:ultimate_upgrade=§5Ultimate §fUpgrade
+
+item.twm:base_upgrade=Base Upgrade
+
+
+-Utility Items=
+
+
+item.twm:wrench=Wrench
+item.twm:honey_ball=Honey Ball
+item.twm:lava_ball=Lava Ball
+item.twm:water_ball=Water Ball
+item.twm:grenade=Grenade
+item.twm:bomb=Bomb
+item.twm:dynamite=Dynamite
+
+item.twm:smeltflare=Smeltflare
+item.twm:ore_igniter=Ore Igniter
+item.twm:infinite_enderpearl=Infinite Ender Pearl
+item.twm:raw_leather=Raw Leather
+item.twm:antidote_potion=Antidote Potion
+item.twm:antidote_potion_splash=Antidote Potion Splash
+
+
+
+-Saplings=
+
+item.twm:apple_sapling=Apple Sapling
+
+
+
+-Entities=
+
+entity.twm:tractor.name=Tractor
+entity.twm:oak_tree.name=Oak Tree
+entity.twm:birch_tree.name=Birch Tree
+entity.twm:darkoak_tree.name=Dark Oak Tree
+entity.twm:acacia_tree.name=Acacia Tree
+entity.twm:jungle_tree.name=Jungle Tree
+entity.twm:spruce_tree.name=Spruce Tree
+entity.twm:drill.name=Drill
+entity.twm:grenade.name=Grenade
+entity.twm:bomb.name=Bomb
+entity.twm:dynamite.name=Dynamite
+entity.twm:crusher.name=Crusher
+entity.twm:autosieve.name=Autosieve
+entity.twm:cherry_tree.name=Cherry Tree
+entity.twm:mangrove_tree.name=Mangrove Tree
+entity.twm:crimson_tree.name=Crimson Tree
+entity.twm:warped_tree.name=Warped Tree
+entity.twm:kelp.name=Kelp
+entity.twm:sugarcane.name=Sugar Cane
+entity.twm:bamboo.name=Bamboo
+entity.twm:mushroom.name=Mushroom
+entity.twm:cactus.name=cactus
+entity.twm:apple_tree.name=Apple Tree

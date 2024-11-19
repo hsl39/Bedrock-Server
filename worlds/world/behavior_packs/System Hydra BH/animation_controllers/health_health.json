@@ -1,0 +1,62 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers":{
+    "controller.animation.hydra_health":{
+      "states":{
+          "default":{
+            "transitions":[
+              {
+                "sin1": "query.health <= 200"
+              }
+            ]
+          },
+          "sin1":{
+            "transitions":[
+              {
+                "sin2": "query.health <= 100"
+              },
+              {
+                "default": "query.health > 200"
+              }
+            ],
+            "on_entry":[
+              "@s new:hydra_two_head",
+              "/playsound mob.hydra.rompe @a[r=15] ~~~ 4 1 4"
+            ]
+          },
+          "sin2":{
+            "transitions":[
+              {
+                "sin3": "query.variant == 1 && query.health > 50"
+              }
+            ],
+            "on_entry":[
+              "@s new:hydra_one_head",
+              "/playsound mob.hydra.rompe @a[r=15] ~~~ 4 1 4"
+            ]
+          },
+          "sin3":{
+            "transitions":[
+              {
+                "sin4": "query.health > 90"
+              },
+              {
+                "sin2": "query.health < 30"
+              }
+            ],
+            "on_entry":[
+              "@s new:hydra_two_head",
+              "/playsound mob.hydra.rompe @a[r=15] ~~~ 4 1 4"
+            ]
+          },
+          "sin4":{
+            "transitions":[
+              {
+                "sin3": "query.health <= 60"
+              }
+            ]
+          }
+        }
+    }
+  }
+}

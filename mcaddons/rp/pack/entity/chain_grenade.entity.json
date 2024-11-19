@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "grenade:chain",
+			"textures": {
+				"default": "textures/firearm/throwable/chaingrenade"
+			},
+			"geometry": {
+				"default": "geometry.chaingrenade"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"render_controllers": [
+				"controller.render.bullet"
+			],
+			"scripts": {
+				"animate": [
+					"setup"
+				]
+			},
+			"animations": {
+				"setup": "animation.chaingrenade.setup"
+			}
+ 		}
+	}
+}

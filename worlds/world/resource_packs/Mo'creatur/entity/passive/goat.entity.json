@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:goat",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"white": "textures/models/goat1",
+				"gray_brown": "textures/models/goat2",
+				"brown_spotted": "textures/models/goat3",
+				"gray_spotted": "textures/models/goat4",
+				"gray": "textures/models/goat5",
+				"brown": "textures/models/goat6"
+			},
+			"geometry": {
+				"default": "geometry.cabra"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"moving": "query.modified_move_speed"
+					},
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"moving": "animation.goat2.walk",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.goat2"
+			],
+			"spawn_egg": {
+				"base_color": "#7171C6",
+				"overlay_color": "#5C5CCD"
+			}
+		}
+	}
+}

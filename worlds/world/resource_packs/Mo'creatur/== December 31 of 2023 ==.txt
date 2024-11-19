@@ -1,0 +1,31 @@
+== Changelog 25/12/2023 ==
+
+## Additions
+
+* Ogres variants have been added
+* Added Crab and the items related to it
+* Added Dragonfly
+* Added essence of fire
+*Experimental features*
+* Werewolves have been added
+* Added all small fishes
+
+## Fixes
+
+* Fixed enchanted sword appearing and being dropped by mobs
+* Turtles are no longer faster
+* Wraiths once again die in daylight
+
+## Changes
+
+* Now every items can be hold in the offhand
+* All the swords are enchantable
+* Improved Ogre behavior
+* Scorpions are now only one mob instead of different mobs for each variant.
+* Removed health bars
+* Removed player json file
+* Mini Golems now use one model instead of 2.
+* Fixed hitboxes of Ogres, Bears, ant and kitty bed (now matches java)
+* Improved goat walk animation
+* Fireflies have a new animation system
+* New bear models

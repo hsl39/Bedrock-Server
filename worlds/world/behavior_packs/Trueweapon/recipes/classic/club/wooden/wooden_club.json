@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wooden_club_0"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "A",
+			"A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:log"
+			}
+		},
+		"unlock": [
+			{
+			  "item": "minecraft:log"
+			}
+		],
+		"result": [
+			{
+				"item": "true:wooden_club"
+			}
+		]
+	}
+}

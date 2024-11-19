@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Dorios Craft Studios"
+		]
+	},
+	"header": {
+		"name": "§aUtilityCraft",
+		"description": "Version 2.9.1 §6Dorios Craft Studios\n§fStable Version",
+		"min_engine_version": [
+			1,
+			20,
+			0
+		],
+		"uuid": "5e9890d5-1a17-43f1-b95f-aba20d313d02",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "5d586c2f-78e5-4558-90d8-7466b4e91092",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "bcb1357e-67ed-4f02-8d33-da1972e1c00e",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

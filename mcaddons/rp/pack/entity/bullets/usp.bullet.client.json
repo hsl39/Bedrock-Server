@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "usp:bullet",
+			"textures": {
+				"default": "textures/firearm/bullet"
+			},
+			"geometry": {
+				"default": "geometry.bullet"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"render_controllers": [ 
+				"controller.render.bullet" 
+			],
+			"scripts": {
+				"animate": [
+					"root"
+				]
+			},
+			"animations": {
+				"root": "animation.bullet.root"
+			}
+		}
+	}
+}

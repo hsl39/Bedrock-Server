@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "sniper:barrett_mag",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:stacked_by_data": {
+        "value": true
+      },
+      "minecraft:allow_off_hand": {
+        "value": false
+      },
+      "minecraft:hand_equipped": {
+        "value": true
+      },
+      "minecraft:should_despawn": {
+        "value": false
+      },
+      "minecraft:max_stack_size": {
+        "value": 64
+      },
+      "minecraft:icon": "sniper:barrett_mag.texture",
+      "minecraft:use_modifiers": {
+        "use_duration": 3200.0
+      }
+    }
+  }
+}

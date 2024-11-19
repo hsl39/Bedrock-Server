@@ -1,0 +1,49 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:quartz_helmet",
+      "menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.helmet"
+			}
+    },
+    "components": {
+      "minecraft:tags": {
+        "tags": [
+            "minecraft:trimmable_armors"
+        ]
+    },
+      "minecraft:icon": {
+        "texture": "quartz_helmet"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 3,
+        "slot": "armor_head"
+      },
+      "minecraft:durability": {
+        "max_durability": 1200,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:wearable": {
+        "protection": 2,
+        "slot": "slot.armor.head"
+      },
+			"minecraft:repairable": {
+				"repair_items": [
+				  {
+					"items": [
+					  "minecraft:quartz"
+					],
+					"repair_amount": "query.max_durability * 0.25"
+				  }
+				]
+			  },
+      "minecraft:display_name": {}
+    }
+  }
+}

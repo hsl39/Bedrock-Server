@@ -1,0 +1,64 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:werewolf",
+			"materials": {
+				"default": "entity_alphatest",
+				"bioluminescent_layer": "warden_bioluminescent_layer"
+			},
+			"textures": {
+				"brown": "textures/models/wolfbrown",
+				"white": "textures/models/wolftimber",
+				"black": "textures/models/wolfblack",
+				"eyes": "textures/models/wolf_eyes",
+				"fire1": "textures/models/wolffire1",
+				"fire2": "textures/models/wolffire2",
+				"fire3": "textures/models/wolffire3"
+			},
+			"geometry": {
+				"default": "geometry.werewolf"
+			},
+			"scripts": {
+				"animate": [
+					"attack",
+					"look_at_target",
+					"move",
+					{
+						"riding.arms": "query.is_riding"
+					},
+					{
+						"riding.legs": "query.is_riding"
+					},
+					"holding",
+					"bob"
+				],
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				]
+			},
+			"animations": {
+				"attack": "controller.animation.mob.attack",
+				"attacking": "animation.mob.attack",
+				"look_at_target": "controller.animation.humanoid.look_at_target",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"move": "animation.humanoid.move",
+				"riding.arms": "animation.humanoid.riding.arms",
+				"riding.legs": "animation.humanoid.riding.legs",
+				"holding": "animation.humanoid.holding",
+				"bob": "animation.humanoid.bob"
+			},
+			"render_controllers": [
+				"controller.render.werewolf",
+				"controller.render.firewerewolf"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"base_color": "#FF0000",
+				"overlay_color": "#7171C6"
+			}
+		}
+	}
+}

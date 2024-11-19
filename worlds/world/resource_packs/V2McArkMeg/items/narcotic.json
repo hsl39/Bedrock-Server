@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "mc_ark:narcotic",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "narcotic",
+   "minecraft:use_animation": "drink",
+   "minecraft:render_offsets": "bottle"
+  }
+ }
+}

@@ -1,0 +1,372 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.rhyniognatha.general" : {
+			"initial_state" : "default",
+			"states" : {  
+			"default" : {
+					"animations" : [
+						{
+							"idle" : "(variable.attack_time < 0.1) && !query.is_illager_captain"}
+					], 
+					"transitions" : [
+
+						{
+							"sitting" : "(query.is_sitting)"},
+						{
+							"sitting" : "(query.is_riding)"},
+						{
+							"eating" : "(query.is_sheared)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+
+			"eating" : {
+					"animations" : [ 
+					    "eating"
+					    ],
+					"transitions" : [
+
+						{
+							"default" : "(query.all_animations_finished)"}
+					],
+					"blend_transition": 0.2
+				},
+			"sitting" : { 
+					"animations" : [ 
+						{
+							"idle" : "(variable.attack_time < 0.1) && !query.is_illager_captain"},
+					    "sitting" ],
+					"transitions" : [
+
+						{
+							"eating" : "(query.is_sheared)"
+						},
+						{
+							"default" : "(!query.is_sitting) && !query.is_riding"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.rhyniognatha.attack" : { 
+			"initial_state" : "default",
+			"states" : { 
+				"shoot" : { 
+					"animations" : [ 
+						
+							"fly" ,
+						
+					    "shoot" ],
+					"transitions" : [
+						{
+							"fly" : "query.mark_variant != 1" 
+						}, 
+						{
+							"shoot2" : "query.is_illager_captain && query.mark_variant == 2"
+						} ,
+						{
+							"fly" : "!query.is_illager_captain" 
+						}, 
+						{
+							"default" : "(query.is_sheared) && (!query.is_tamed)"
+						}
+					],  
+					"blend_transition": 0.2
+				},
+				"shoot2" : { 
+					"animations" : [ 
+						
+							"fly" ,
+						
+					    "shoot2" ],
+					"transitions" : [
+						{
+							"fly" : "query.mark_variant != 2" 
+						},  
+						{
+							"shoot" : "query.is_illager_captain && query.mark_variant == 1"
+						} ,
+						{
+							"fly" : "!query.is_illager_captain" 
+						}, 
+						{
+							"default" : "(query.is_sheared) && (!query.is_tamed)"
+						}
+					],  
+					"blend_transition": 0.2
+				},
+				"attacking" : { 
+					"animations" : [
+							"fly" , 
+					    "attack" ],
+					"transitions" : [
+						{
+							"attacking_embarazar" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health <= 20"
+						},
+						{
+							"fly" : "query.mark_variant != 0" 
+						}, 
+						{ 
+							"fly" : "variable.attack_time < 0.1 && query.all_animations_finished && !query.is_illager_captain && query.is_tamed" 
+						}, 
+						{ 
+							"fly" : "query.is_delayed_attacking == 0 && query.all_animations_finished && !query.is_illager_captain && !query.is_tamed" 
+						}, 
+						{
+							"default" : "(query.is_sheared) && (!query.is_tamed) && query.all_animations_finished"
+						}
+					],  
+					"blend_transition": 0.2
+				},
+				"attacking_embarazar" : { 
+					"animations" : [
+							"fly" , 
+					    "attack_embarazar" ], 
+					"transitions" : [
+						{ 
+							"fly" : "variable.attack_time < 0.1 && query.all_animations_finished && !query.is_illager_captain && query.is_tamed" 
+						}, 
+						{ 
+							"fly" : "query.is_delayed_attacking == 0 && query.all_animations_finished && !query.is_illager_captain && !query.is_tamed" 
+						}, 
+						{
+							"default" : "(query.is_sheared) && (!query.is_tamed) && query.all_animations_finished"
+						}
+					],  
+					"blend_transition": 0.2
+				},
+				"default" : { 
+					"transitions" : [ 
+						{
+							"attacking" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health > 20"
+						},
+						{
+							"attacking_embarazar" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health <= 20"
+						},
+						{
+							"walk" : "(query.variant == 0) && (query.is_on_ground) && !query.is_illager_captain"
+						},
+						{
+							"fly" : "(!query.is_on_ground) && (query.variant == 0)"
+						},
+						{
+							"walk_water" : "(query.variant == 2) && !query.is_illager_captain"
+						},
+						{
+							"under_water" : "(query.variant == 1) && !query.is_illager_captain"
+						},
+						{
+							"attacking" : "variable.attack_time >= 0.1 && query.is_tamed"
+						},
+						{
+							"shoot" : "query.is_illager_captain && query.mark_variant == 1"
+						} ,
+						{
+							"shoot2" : "query.is_illager_captain && query.mark_variant == 2"
+						} ,
+						{
+							"roar" : "query.mark_variant == 3"
+						} ,
+						{
+							"attacking" : "query.is_illager_captain && query.mark_variant == 0 && !query.is_baby"
+						} 
+					]  
+				},
+				"roar" : { 
+					"animations" : [ 
+						
+						
+					    "roar" ],
+					"transitions" : [
+						{
+							"walk" : "query.mark_variant != 3" 
+						}, 
+						{
+							"default" : "(query.is_sheared) && (!query.is_tamed)"
+						}
+					],  
+					"blend_transition": 0.2
+				},
+				"walk" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed * 1.5"}
+					], 
+					"transitions" : [
+						{
+							"roar" : "query.mark_variant == 3"
+						} ,
+						{
+							"attacking" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health > 20"
+						},
+						{
+							"attacking_embarazar" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health <= 20"
+						},
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						},
+						{
+							"attacking" : "query.is_illager_captain && query.mark_variant == 0"
+						} ,
+						{
+							"shoot2" : "query.is_illager_captain && query.mark_variant == 2"
+						} ,
+						{
+							"shoot" : "query.is_illager_captain && query.mark_variant == 1"
+						} ,
+						{
+							"fly" : "(!query.is_on_ground) && (query.variant == 0) && !query.is_illager_captain"
+						},
+						{
+							"walk_water" : "(query.variant == 2) && !query.is_illager_captain"
+						},
+						{
+							"under_water" : "(query.variant == 1) && !query.is_illager_captain"
+						}
+					],
+					"blend_transition": 0.2
+				},  
+				"walk_water" : {
+					"animations" : [
+						{
+							"walk_water" : "query.modified_move_speed * 1.5"}
+					], 
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1 && query.is_tamed"
+						},
+						{
+							"attacking" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health > 20"
+						},
+						{
+							"attacking_embarazar" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health <= 20"
+						},
+						{
+							"attacking" : "query.is_illager_captain && query.mark_variant == 0"
+						} ,
+						{ 
+							"shoot2" : "query.is_illager_captain && query.mark_variant == 2"
+						} ,
+						{
+							"shoot" : "query.is_illager_captain && query.mark_variant == 1"
+						} ,
+						{
+							"walk" : "(query.variant == 0) && (query.is_on_ground) && !query.is_illager_captain"
+						},
+						{
+							"under_water" : "(query.variant == 1) && !query.is_illager_captain"
+						},
+						{
+							"fly" : "(!query.is_on_ground) && (query.variant == 0) && !query.is_illager_captain"
+						}
+					],
+					"blend_transition": 0.2
+				},  
+				"under_water" : {
+					"animations" : [
+						
+							"under_water" 
+					], 
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1 && query.is_tamed"
+						},
+						{
+							"attacking" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health > 20"
+						},
+						{
+							"attacking_embarazar" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health <= 20"
+						},
+						{
+							"attacking" : "query.is_illager_captain && query.mark_variant == 0"
+						} ,
+						{
+							"shoot2" : "query.is_illager_captain && query.mark_variant == 2"
+						} ,
+						{
+							"shoot" : "query.is_illager_captain && query.mark_variant == 1"
+						} ,
+						{
+							"walk" : "(query.variant == 0) && (query.is_on_ground) && !query.is_illager_captain"
+						},
+						{
+							"walk_water" : "(query.variant == 2) && !query.is_illager_captain"
+						},
+						{
+							"fly" : "(!query.is_on_ground) && (query.variant == 0) && !query.is_illager_captain"
+						}
+					],
+					"blend_transition": 0.2
+				},  
+				"fly" : { 
+					"animations" : [
+						{
+							"fly" : "(variable.attack_time < 0.1) && !query.is_illager_captain"
+						} 
+					], 
+					"transitions" : [
+						{
+							"attacking" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health > 20"
+						},
+						{
+							"attacking" : "variable.attack_time >= 0.1 && query.is_tamed"
+						},
+						{
+							"attacking_embarazar" : "query.is_delayed_attacking == 1 && !query.is_tamed && query.health <= 20"
+						},
+						{
+							"attacking" : "query.is_illager_captain && query.mark_variant == 0"
+						} ,
+						{
+							"shoot2" : "query.is_illager_captain && query.mark_variant == 2"
+						} ,
+						{
+							"shoot" : "query.is_illager_captain && query.mark_variant == 1"
+						} ,
+						{
+							"under_water" : "(query.variant == 1) && !query.is_illager_captain"
+						},
+						{
+							"walk_water" : "(query.variant == 2) && !query.is_illager_captain"
+						},
+						{
+							"walk" : "(query.variant == 0) && (query.is_on_ground) && !query.is_illager_captain"
+						}
+					],
+					"blend_transition": 0.2
+				}  
+			} 
+		}, 
+		"controller.animation.rhyniognatha.pickup" : { 
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [ 
+						{
+							"on" : "(query.skin_id == 1) && !query.is_illager_captain"}
+					]  
+				},
+			"on" : {  
+
+					"transitions" : [
+						{
+							"default" : "variable.attack_time >= 0.1"
+						},
+						{
+							"default" : "query.is_illager_captain"
+						} ,
+						{
+							"default" : " (query.skin_id == 0)"}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+} 
+
+ 
+
+ 

@@ -1,0 +1,84 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "true:advanced_crafting_table",
+      "properties": {
+        "heavy:rotation": [ 2, 3, 4, 5 ]
+    }
+    },
+    
+    "permutations": [
+      {
+          "condition": "query.block_property('heavy:rotation') == 3",
+          "components": {
+              "minecraft:rotation": [ 0, 180, 0 ]
+          }
+      },
+      {
+          "condition": "query.block_property('heavy:rotation') == 4",
+          "components": {
+              "minecraft:rotation": [ 0, 90, 0 ]
+          }
+      },
+      {
+          "condition": "query.block_property('heavy:rotation') == 5",
+          "components": {
+              "minecraft:rotation": [ 0, 270, 0 ]
+          }
+      }
+  ],
+    "components": {
+      "minecraft:crafting_table": {
+        "custom_description": "tile.advanced_crafting_table.name",
+        "grid_size": 3,
+        "crafting_tags": ["advanced_crafting_table"]
+      },
+      "minecraft:on_player_placing": {
+        "event": "rotation"
+    },
+      "minecraft:creative_category": {
+        "group": "itemGroup.name.smithing_table",
+				"category": "items"
+			},
+		"minecraft:block_light_absorption": 1,
+      "minecraft:destroy_time": 3,
+		"minecraft:unit_cube":{},
+	"minecraft:entity_collision": true,
+	  "minecraft:pick_collision": true,
+    "minecraft:material_instances": {
+      "up": {
+       "texture": "advanced_crafting_table_top", 
+        "render_method": "opaque"
+      },
+     "bottom": {
+       "texture": "advanced_crafting_table_bottom", 
+        "render_method": "opaque"
+      },
+      "south": {
+       "texture": "advanced_crafting_table_side", 
+        "render_method": "opaque"
+      },
+      "north": {
+       "texture": "advanced_crafting_table_side", 
+        "render_method": "opaque"
+      },
+      "west": {
+       "texture": "advanced_crafting_table_west", 
+        "render_method": "opaque"
+      },
+      "east": {
+       "texture": "advanced_crafting_table_west", 
+        "render_method": "opaque" 
+      }
+    }
+    },
+	"events":{
+    "rotation": {
+      "set_block_property": {
+        "heavy:rotation": "(query.cardinal_player_facing)"
+      }
+    }		
+	}
+  }
+}

@@ -1,0 +1,149 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.wyvern_fire.general" : {
+			"initial_state" : "default",
+			"states" : {  
+				"default" : {
+
+					"transitions" : [
+						{
+							"attack2" : "(query.is_delayed_attacking == 0) && (!query.is_in_water) && (query.skin_id == 1)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"attack2" : {
+					"animations" : [ "attack2" 
+					],
+					"transitions" : [
+						{
+							"default" : "  query.all_animations_finished || (query.is_in_water) && query.all_animations_finished"},
+						{
+							"default" : "(query.is_delayed_attacking == 1)" 
+						},
+						{
+							"default" : "query.skin_id != 1" 
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},   
+		"controller.animation.wyvern_fire.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "query.is_delayed_attacking == 0 && query.all_animations_finished && !query.is_illager_captain" 
+						}, 
+						{
+							"default" : "query.is_sheared"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default" : {
+					"transitions" : [ 
+						{
+							"attacking" : "query.is_delayed_attacking == 1"
+						},
+						{
+							"attacking" : "query.is_illager_captain && (query.is_on_ground) && (query.skin_id != 1)"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.mc_ark.wyvern_fly" : {
+			"initial_state" : "default",
+			"states" : { 
+				"default" : {
+					"transitions" : [ 
+						{
+							"walk" : "(query.is_on_ground) && (query.skin_id != 1) && (query.is_delayed_attacking == 0) && !query.is_illager_captain && query.modified_move_speed > 0.00001"
+						},
+						{
+							"idle" : "(query.is_on_ground) && (query.skin_id != 1) && (query.is_delayed_attacking == 0) && !query.is_illager_captain && query.modified_move_speed < 0.00001"},
+						{
+							"fly" : "(!query.is_on_ground) && (query.skin_id != 1) && (query.is_delayed_attacking == 0) && !query.is_illager_captain"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"walk" : {
+					"animations" : [
+						{
+							"walk" : "query.modified_move_speed"}
+					], 
+					"transitions" : [
+						{
+							"idle" : "(query.is_on_ground) && (query.skin_id != 1) && (query.is_delayed_attacking == 0) && !query.is_illager_captain && query.modified_move_speed < 0.00001"},
+						{
+							"fly" : "(!query.is_on_ground) && (query.skin_id != 1) && (query.is_delayed_attacking == 0) && !query.is_illager_captain"
+						},
+						{
+							"default" : "(query.skin_id == 1)"
+						},
+						{
+							"default" : "query.is_illager_captain"
+						},
+						{
+							"default" : "(query.is_delayed_attacking == 1)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"idle" : {
+					"animations" : [
+					    "idle"
+					], 
+					"transitions" : [
+						{
+							"walk" : "(query.is_on_ground) && (query.skin_id != 1) && (query.is_delayed_attacking == 0) && !query.is_illager_captain && query.modified_move_speed > 0.00001"
+						},
+						{
+							"fly" : "(!query.is_on_ground) && (query.skin_id != 1) && (query.is_delayed_attacking == 0) && !query.is_illager_captain"
+						},
+						{
+							"default" : "(query.skin_id == 1)"
+						},
+						{
+							"default" : "query.is_illager_captain"
+						},
+						{
+							"default" : "(query.is_delayed_attacking == 1)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"fly" : {
+					"animations" : [
+"fly",
+"volando_sound_control"
+					], 
+					"transitions" : [
+						{
+							"walk" : "(query.is_on_ground) && (query.skin_id != 1) && (query.is_delayed_attacking == 0) && !query.is_illager_captain && query.all_animations_finished"
+						},
+						{
+							"default" : "(query.skin_id == 1)"
+						},
+						{
+							"default" : "query.is_illager_captain"
+						},
+						{
+							"default" : "(query.is_delayed_attacking == 1)"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+} 
+
+ 

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twm:netherite_mesh"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"S": {
+				"item": "netherite_scrap"
+			},
+			"M": {
+				"item": "twm:diamond_mesh"
+			}
+		},
+		"pattern": [
+			"SSS",
+			"SMS",
+			"SSS"
+		],
+		"result": {
+			"item": "twm:netherite_mesh"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:netherite_scrap"
+			},
+			{
+				"item": "twm:diamond_mesh"
+			}
+		]
+	}
+}

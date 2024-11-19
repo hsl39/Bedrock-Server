@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.pegomastax": { 
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.pegomastax1",
+						"Texture.pegomastax2",
+						"Texture.pegomastax3",
+						"Texture.pegomastax4"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [  
+        { "*": true }
+      ],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

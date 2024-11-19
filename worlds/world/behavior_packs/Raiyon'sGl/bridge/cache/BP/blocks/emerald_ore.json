@@ -1,0 +1,324 @@
+{
+	"file_path": "C:\\Users\\elcha\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Raiyon'sGl\\blocks\\emerald_ore.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "c91d6a6b_cb94_419e_80b7_b8b3474b42ce",
+	"file_version": 24,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:block": {
+						"description": {
+							"identifier": "ray:emerald_ore"
+						},
+						"components": {
+							"minecraft:block_light_absorption": 1,
+							"minecraft:block_light_emission": 0.6,
+							"minecraft:destroy_time": 0,
+							"minecraft:on_player_destroyed": {
+								"event": "can_destroy",
+								"target": "self"
+							},
+							"tag:iron_pick_diggable": {},
+							"minecraft:loot": "loot_tables/empty.json",
+							"minecraft:creative_category": {
+								"group": "ItemGroup.name.Commands",
+								"category": "commands"
+							}
+						},
+						"events": {
+							"can_destroy": {
+								"run_command": {
+									"command": [
+										"setblock ~~~ emerald_ore"
+									]
+								}
+							}
+						}
+					}
+				},
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:block": {
+						"description": {
+							"identifier": "ray:emerald_ore"
+						},
+						"components": {
+							"minecraft:block_light_absorption": 1,
+							"minecraft:block_light_emission": 0.6,
+							"minecraft:destroy_time": 0,
+							"minecraft:on_player_destroyed": {
+								"event": "can_destroy",
+								"target": "self"
+							},
+							"tag:iron_pick_diggable": {},
+							"minecraft:loot": "loot_tables/empty.json",
+							"minecraft:creative_category": {
+								"group": "ItemGroup.name.Commands",
+								"category": "commands"
+							}
+						},
+						"events": {
+							"can_destroy": {
+								"run_command": {
+									"command": [
+										"setblock ~~~ emerald_ore"
+									]
+								}
+							}
+						}
+					}
+				},
+				"data": "tag:iron_pick_diggable",
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:emerald_ore"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 1,
+								"minecraft:block_light_emission": 0.6,
+								"minecraft:destroy_time": 0,
+								"minecraft:on_player_destroyed": {
+									"event": "can_destroy",
+									"target": "self"
+								},
+								"tag:iron_pick_diggable": {},
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:creative_category": {
+									"group": "ItemGroup.name.Commands",
+									"category": "commands"
+								}
+							},
+							"events": {
+								"can_destroy": {
+									"run_command": {
+										"command": [
+											"setblock ~~~ emerald_ore"
+										]
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "ray:emerald_ore"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:emerald_ore"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 1,
+								"minecraft:block_light_emission": 0.6,
+								"minecraft:destroy_time": 0,
+								"minecraft:on_player_destroyed": {
+									"event": "can_destroy",
+									"target": "self"
+								},
+								"tag:iron_pick_diggable": {},
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:creative_category": {
+									"group": "ItemGroup.name.Commands",
+									"category": "commands"
+								}
+							},
+							"events": {
+								"can_destroy": {
+									"run_command": {
+										"command": [
+											"setblock ~~~ emerald_ore"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:block_light_absorption": 1,
+									"minecraft:block_light_emission": 0.6,
+									"minecraft:destroy_time": 0,
+									"minecraft:on_player_destroyed": {
+										"event": "can_destroy",
+										"target": "self"
+									},
+									"tag:iron_pick_diggable": {},
+									"minecraft:loot": "loot_tables/empty.json",
+									"minecraft:creative_category": {
+										"group": "ItemGroup.name.Commands",
+										"category": "commands"
+									}
+								},
+								"data": "1",
+								"key": "minecraft:block_light_absorption"
+							},
+							{
+								"open": {
+									"minecraft:block_light_absorption": 1,
+									"minecraft:block_light_emission": 0.6,
+									"minecraft:destroy_time": 0,
+									"minecraft:on_player_destroyed": {
+										"event": "can_destroy",
+										"target": "self"
+									},
+									"tag:iron_pick_diggable": {},
+									"minecraft:loot": "loot_tables/empty.json",
+									"minecraft:creative_category": {
+										"group": "ItemGroup.name.Commands",
+										"category": "commands"
+									}
+								},
+								"data": "0.6",
+								"key": "minecraft:block_light_emission"
+							},
+							{
+								"open": {
+									"minecraft:block_light_absorption": 1,
+									"minecraft:block_light_emission": 0.6,
+									"minecraft:destroy_time": 0,
+									"minecraft:on_player_destroyed": {
+										"event": "can_destroy",
+										"target": "self"
+									},
+									"tag:iron_pick_diggable": {},
+									"minecraft:loot": "loot_tables/empty.json",
+									"minecraft:creative_category": {
+										"group": "ItemGroup.name.Commands",
+										"category": "commands"
+									}
+								},
+								"data": "0.0",
+								"key": "minecraft:destroy_time"
+							},
+							{
+								"open": {
+									"minecraft:block_light_absorption": 1,
+									"minecraft:block_light_emission": 0.6,
+									"minecraft:destroy_time": 0,
+									"minecraft:on_player_destroyed": {
+										"event": "can_destroy",
+										"target": "self"
+									},
+									"tag:iron_pick_diggable": {},
+									"minecraft:loot": "loot_tables/empty.json",
+									"minecraft:creative_category": {
+										"group": "ItemGroup.name.Commands",
+										"category": "commands"
+									}
+								},
+								"key": "minecraft:on_player_destroyed",
+								"is_minified": true,
+								"children": {
+									"event": "can_destroy",
+									"target": "self"
+								}
+							},
+							{
+								"key": "tag:iron_pick_diggable",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"data": "loot_tables/empty.json",
+								"key": "minecraft:loot"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"group": "ItemGroup.name.Commands",
+									"category": "commands"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "ray:emerald_ore"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 1,
+								"minecraft:block_light_emission": 0.6,
+								"minecraft:destroy_time": 0,
+								"minecraft:on_player_destroyed": {
+									"event": "can_destroy",
+									"target": "self"
+								},
+								"tag:iron_pick_diggable": {},
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:creative_category": {
+									"group": "ItemGroup.name.Commands",
+									"category": "commands"
+								}
+							},
+							"events": {
+								"can_destroy": {
+									"run_command": {
+										"command": [
+											"setblock ~~~ emerald_ore"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"can_destroy": {
+										"run_command": {
+											"command": [
+												"setblock ~~~ emerald_ore"
+											]
+										}
+									}
+								},
+								"key": "can_destroy",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"setblock ~~~ emerald_ore"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"setblock ~~~ emerald_ore"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"setblock ~~~ emerald_ore"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

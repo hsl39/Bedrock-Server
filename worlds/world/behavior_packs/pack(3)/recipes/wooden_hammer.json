@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ihg:wooden_hammer"
+		},
+		"tags": [
+			"workbench"
+		],
+		"pattern": [
+			"XXX",
+			"XOX",
+			" O "
+		],
+		"key": {
+			"X": {
+				"tag": "minecraft:planks"
+			},
+			"O": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ihg:wooden_hammer",
+			"count": 1
+		}
+	}
+}

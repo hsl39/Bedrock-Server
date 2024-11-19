@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:normal_saddle"
+    },
+
+     
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "LPL",
+      "LLL",
+      " SN" 
+    ], 
+    "key": {
+      "L": {
+        "item": "minecraft:leather"
+      }, 
+      "S": {
+        "item": "minecraft:string"
+      },
+      "N": { 
+        "item": "minecraft:iron_nugget"
+      },
+      "P": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "mc_ark:normal_saddle"
+    }
+  }
+}

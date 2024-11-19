@@ -1,0 +1,1589 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "akm_onfire", 
+          "akm_onempty",
+          "akm_reload",
+          "akm_bullet_counter",
+          "player_attack",
+          "crosshair1",
+          "crosshair2",
+          "crosshair3",
+          "crosshair4",
+
+          "mp5_setup", 
+          "mp5_onempty",
+          "mp5_reload",
+
+          "awp_onfire", 
+          "awp_onempty",
+          "awp_reload",
+          "awp_bullet_counter",
+
+          "barrett_onfire", 
+          "barrett_onempty",
+          "barrett_reload",
+          "barrett_bullet_counter",
+
+          "m249_onfire", 
+          "m249_onempty",
+          "m249_reload",
+          "m249_reload_empty",
+          "m249_bullet_counter",
+          "m249_bullet_counter2",
+
+          "m3_setup", 
+          "m3_onempty",
+          "m3_reload",
+
+          "mk18_onfire", 
+          "mk18_onempty",
+          "mk18_reload",
+          "mk18_bullet_counter",
+
+          "p90_setup", 
+          "p90_onempty",
+          "p90_reload",
+
+          "taurus_onfire", 
+          "taurus_onempty",
+          "taurus_reload",
+          "taurus_bullet_counter",
+
+          "svi_setup", 
+          "svi_onempty",
+          "svi_reload",
+
+          "chain_grenade"
+        ]
+      },
+      "animations": {
+        "player_attack": "controller.animation.player_attack",
+
+        "crosshair1": "controller.animation.crosshair1",
+        "crosshair2": "controller.animation.crosshair2",
+        "crosshair3": "controller.animation.crosshair3",
+        "crosshair4": "controller.animation.crosshair4",
+
+        "akm_shoot_hip": "animation.akm_shoot_hip",
+        "akm_shoot_scope": "animation.akm_shoot_scope",
+        "akm_setup": "controller.animation.akm_setup",
+        "akm_onfire": "controller.animation.akm_onfire",
+        "akm_onempty": "controller.animation.akm_onempty",
+        "akm_bullet_counter": "controller.animation.akm_bullet_counter",
+        "akm_reload": "controller.animation.akm_reload",
+
+        "mk18_shoot_hip": "animation.mk18_shoot_hip",
+        "mk18_shoot_scope": "animation.mk18_shoot_scope",
+        "mk18_setup": "controller.animation.mk18_setup",
+        "mk18_onfire": "controller.animation.mk18_onfire",
+        "mk18_onempty": "controller.animation.mk18_onempty",
+        "mk18_bullet_counter": "controller.animation.mk18_bullet_counter",
+        "mk18_reload": "controller.animation.mk18_reload",
+
+        "mp5_setup": "controller.animation.mp5_setup",
+        "mp5_onfire": "controller.animation.mp5_onfire",
+        "mp5_onempty": "controller.animation.mp5_onempty",
+        "mp5_bullet_counter": "controller.animation.mp5_bullet_counter",
+        "mp5_reload": "controller.animation.mp5_reload",
+        "mp5_reload2": "controller.animation.mp5_reload2",
+
+        "awp_shoot": "animation.awp_shoot",
+        "awp_reload_anim": "animation.awp_reload_anim",
+        "awp_setup": "controller.animation.awp_setup",
+        "awp_onfire": "controller.animation.awp_onfire",
+        "awp_onempty": "controller.animation.awp_onempty",
+        "awp_bullet_counter": "controller.animation.awp_bullet_counter",
+        "awp_reload": "controller.animation.awp_reload",
+
+        "barrett_shoot": "animation.barrett_shoot",
+        "barrett_draw": "animation.barrett_draw",
+        "barrett_reload_anim": "animation.barrett_reload_anim",
+        "barrett_setup": "controller.animation.barrett_setup",
+        "barrett_onfire": "controller.animation.barrett_onfire",
+        "barrett_onempty": "controller.animation.barrett_onempty",
+        "barrett_bullet_counter": "controller.animation.barrett_bullet_counter",
+        "barrett_reload": "controller.animation.barrett_reload",
+
+        "m249_setup": "controller.animation.m249_setup",
+        "m249_onfire": "controller.animation.m249_onfire",
+        "m249_onempty": "controller.animation.m249_onempty",
+        "m249_bullet_counter": "controller.animation.m249_bullet_counter",
+        "m249_bullet_counter2": "controller.animation.m249_bullet_counter2",
+        "m249_reload": "controller.animation.m249_reload",
+        "m249_reload_empty": "controller.animation.m249_reload_empty",
+
+        "m3_setup": "controller.animation.m3_setup",
+        "m3_onfire": "controller.animation.m3_onfire",
+        "m3_onempty": "controller.animation.m3_onempty",
+        "m3_bullet_counter": "controller.animation.m3_bullet_counter",
+        "m3_reload": "controller.animation.m3_reload",
+        "m3_reload2": "controller.animation.m3_reload2",
+
+        "p90_setup": "controller.animation.p90_setup",
+        "p90_onfire": "controller.animation.p90_onfire",
+        "p90_onempty": "controller.animation.p90_onempty",
+        "p90_bullet_counter": "controller.animation.p90_bullet_counter",
+        "p90_reload": "controller.animation.p90_reload",
+
+        "svi_setup": "controller.animation.svi_setup",
+        "svi_onfire": "controller.animation.svi_onfire",
+        "svi_onempty": "controller.animation.svi_onempty",
+        "svi_bullet_counter": "controller.animation.svi_bullet_counter",
+        "svi_reload": "controller.animation.svi_reload",
+
+        "taurus_shoot_hip": "animation.taurus_shoot_hip",
+        "taurus_shoot_scope": "animation.taurus_shoot_scope",
+        "taurus_setup": "controller.animation.taurus_setup",
+        "taurus_onfire": "controller.animation.taurus_onfire",
+        "taurus_onempty": "controller.animation.taurus_onempty",
+        "taurus_bullet_counter": "controller.animation.taurus_bullet_counter",
+        "taurus_reload": "controller.animation.taurus_reload",
+
+        "chain_grenade": "controller.animation.chaingrenade"
+      }
+    },
+
+    "component_groups": {
+      "ag3d:m249_full": {
+        "minecraft:variant": { "value": 11 }
+      },
+      "ag3d:m249_10": {
+        "minecraft:variant": { "value": 10 }
+      },
+      "ag3d:m249_9": {
+        "minecraft:variant": { "value": 9 }
+      },
+      "ag3d:m249_8": {
+        "minecraft:variant": { "value": 8 }
+      },
+      "ag3d:m249_7": {
+        "minecraft:variant": { "value": 7 }
+      },
+      "ag3d:m249_6": {
+        "minecraft:variant": { "value": 6 }
+      },
+      "ag3d:m249_5": {
+        "minecraft:variant": { "value": 5 }
+      },
+      "ag3d:m249_4": {
+        "minecraft:variant": { "value": 4 }
+      },
+      "ag3d:m249_3": {
+        "minecraft:variant": { "value": 3 }
+      },
+      "ag3d:m249_2": {
+        "minecraft:variant": { "value": 2 }
+      },
+      "ag3d:m249_1": {
+        "minecraft:variant": { "value": 1 }
+      },
+      "ag3d:m249_0": {
+        "minecraft:variant": { "value": 12 }
+      },
+      "ag3d:shot": {
+        "minecraft:is_baby": {},
+      "minecraft:timer": {
+        "time": 0.5,
+        "looping": true,
+        "time_down_event": {
+          "event": "ag3d:shot_remove",
+          "target": "self"
+        }
+      }
+			},
+			"minecraft:m249": {
+				"minecraft:movement": {
+					"value": 0.07
+				}
+			},
+			"normal:player": {
+				"minecraft:movement": {
+					"value": 0.1
+				}
+			},
+			"minecraft:akm": {
+				"minecraft:movement": {
+					"value": 0.073
+				}
+			},
+			"minecraft:taurus": {
+				"minecraft:movement": {
+					"value": 0.087
+				}
+			},
+			"minecraft:awp": {
+				"minecraft:movement": {
+					"value": 0.065
+				}
+			},
+			"minecraft:barrett": {
+				"minecraft:movement": {
+					"value": 0.056
+				}
+			},
+			"minecraft:m3": {
+				"minecraft:movement": {
+					"value": 0.078
+				}
+			},
+			"minecraft:p90": {
+				"minecraft:movement": {
+					"value": 0.08
+				}
+			},
+			"minecraft:mk18": {
+				"minecraft:movement": {
+					"value": 0.075
+				}
+      },
+      // Grenade
+      "grenade:throw": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "grenade:chain",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // Reload
+      "trigger:reload": {
+        "minecraft:is_charged": {}
+      },
+      "trigger:reload2": {
+        "minecraft:is_ignited": {}
+      },
+      // Barrett Projectile
+      "barrett:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "barrett:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "barrett:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "barrett:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // AWP Projectile
+      "awp:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "awp:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "awp:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "awp:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // M249 Projectile
+      "m249:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "m249:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "m249:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "m249:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // mk18 Projectile
+      "mk18:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "mk18:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "mk18:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "mk18:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // MP5 Projectile
+      "mp5:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "mp5:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "mp5:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "mp5:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // AKM Projectile
+      "akm:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "akm:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "akm:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "akm:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // M3 Projectile
+      "m3:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "m3:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 7
+            }
+          ]
+        }
+      },
+      "m3:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "m3:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 7
+            }
+          ]
+        }
+      },
+      // P90 Projectile
+      "p90:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "p90:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "p90:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "p90:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // SVI Projectile
+      "svi:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "svi:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "svi:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "svi:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // Taurus Projectile
+      "taurus:scope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "taurus:bullet",
+              "spawn_event": "fire:scope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "taurus:noscope_fire": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "taurus:bullet",
+              "spawn_event": "fire:noscope",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      // Sniper Scope
+      "sniper:scope": {
+        "minecraft:movement": {
+          "value": 0.0005
+        }
+      },
+      // Scope
+      "normal:scope": {
+        "minecraft:movement": {
+          "value": 0.04
+        }
+      },
+      "night_vision:enable": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "night_vision",
+              "duration": 99999999,
+              "visible": false,
+              "amplifier": 255
+            }
+          ]
+        }
+      },
+      "night_vision:disable": {
+        "minecraft:spell_effects": {
+          "remove_effects": [
+            "night_vision"
+          ]
+        }
+      },
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:variant": { "value": 11 },
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(q.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [ "player" ]
+      },
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.4, -0.2, -0.1 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [ -0.4, -0.2, -0.1 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:block_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true 
+                }
+              ]
+            },
+            "event": "minecraft:trigger_raid"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": false },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "smg:p90" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "smg:mp5" }
+                  ]
+                }
+              ]
+            },
+            "event": "minecraft:p90"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "has_tag", "subject": "self", "value": "reload", "operator": "==" }
+              ]
+            },
+            "event": "trigger:reload"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "has_tag", "subject": "self", "value": "reload2", "operator": "==" }
+              ]
+            },
+            "event": "trigger:reload2"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "has_tag", "subject": "self", "value": "reload", "operator": "!=" }
+              ]
+            },
+            "event": "trigger:onreload"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "has_tag", "subject": "self", "value": "reload2", "operator": "!=" }
+              ]
+            },
+            "event": "trigger:onreload2"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": true },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "sniper:awp" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "sniper:awp_empty" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "sniper:barrett" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "sniper:barrett_empty" }
+                  ]
+                }
+              ]
+            },
+            "event": "sniper:scope"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": false },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "pistol:taurus" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "pistol:taurus_empty" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "pistol:svi" }
+                  ]
+                }
+              ]
+            },
+            "event": "minecraft:taurus"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": false },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "shotgun:m3" }
+                  ]
+                }
+              ]
+            },
+            "event": "minecraft:m3"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": false },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "ar:akm" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "ar:akm_empty" }
+                  ]
+                }
+              ]
+            },
+            "event": "minecraft:akm"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": false },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "ar:mk18" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "ar:mk18_empty" }
+                  ]
+                }
+              ]
+            },
+            "event": "minecraft:mk18"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": false },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "lmg:m249" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "lmg:m249_empty" }
+                  ]
+                }
+              ]
+            },
+            "event": "minecraft:m249"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": false },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "sniper:awp" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "sniper:awp_empty" }
+                  ]
+                }
+              ]
+            },
+            "event": "minecraft:awp"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": false },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "sniper:barrett" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "sniper:barrett_empty" }
+                  ]
+                }
+              ]
+            },
+            "event": "minecraft:barrett"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_sneaking", "subject": "self", "value": true },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "smg:p90" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "pistol:taurus" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "pistol:taurus_empty" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "pistol:svi" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "shotgun:m3" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "ar:akm" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "ar:akm_empty" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "smg:mp5" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "lmg:m249" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "lmg:m249_empty" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "ar:mk18" },
+                    { "test": "has_equipment", "subject": "self", "domain": "hand", "value": "ar:mk18_empty" }
+                  ]
+                }
+              ]
+            },
+            "event": "normal:scope"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "has_equipment", "subject": "self", "domain": "head", "value": "equipment:night_vision", "operator": "==" }
+              ]
+            },
+            "event": "enable:night_vision"
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "has_equipment", "subject": "self", "domain": "head", "value": "equipment:night_vision", "operator": "!=" }
+              ]
+            },
+            "event": "disable:night_vision"
+          }
+        ]
+      }
+    },
+    "events": {
+      "enable:night_vision": {
+        "add": {
+          "component_groups": [ "night_vision:enable" ]
+        },
+        "remove": {
+          "component_groups": [ "night_vision:disable" ] 
+        }
+      },
+      "disable:night_vision": {
+        "remove": {
+          "component_groups": [ "night_vision:enable" ]
+        },
+        "add": {
+          "component_groups": [ "night_vision:disable" ]
+        }
+      },
+      "minecraft:m249": {
+        "add": {
+          "component_groups": [ "minecraft:m249" ]
+        }
+      },
+      "minecraft:m3": {
+        "add": {
+          "component_groups": [ "minecraft:m3" ]
+        }
+      },
+      "minecraft:barrett": {
+        "add": {
+          "component_groups": [ "minecraft:barrett" ]
+        }
+      },
+      "minecraft:awp": {
+        "add": {
+          "component_groups": [ "minecraft:awp" ]
+        }
+      },
+      "minecraft:akm": {
+        "add": {
+          "component_groups": [ "minecraft:akm" ]
+        }
+      },
+      "normal:player": {
+        "add": {
+          "component_groups": [ "normal:player" ]
+        }
+      },
+      "minecraft:mk18": {
+        "add": {
+          "component_groups": [ "minecraft:mk18" ]
+        }
+      },
+      "minecraft:taurus": {
+        "add": {
+          "component_groups": [ "minecraft:taurus" ]
+        }
+      },
+      "minecraft:p90": {
+        "add": {
+          "component_groups": [ "minecraft:p90" ]
+        }
+      },
+      "ag3d:m249_0": {
+        "add": {
+          "component_groups": [ "ag3d:m249_0" ]
+        }
+      },
+      "ag3d:m249_10": {
+        "add": {
+          "component_groups": [ "ag3d:m249_10" ]
+        }
+      },
+      "ag3d:m249_9": {
+        "add": {
+          "component_groups": [ "ag3d:m249_9" ]
+        }
+      },
+      "ag3d:m249_8": {
+        "add": {
+          "component_groups": [ "ag3d:m249_8" ]
+        }
+      },
+      "ag3d:m249_7": {
+        "add": {
+          "component_groups": [ "ag3d:m249_7" ]
+        }
+      },
+      "ag3d:m249_6": {
+        "add": {
+          "component_groups": [ "ag3d:m249_6" ]
+        }
+      },
+      "ag3d:m249_5": {
+        "add": {
+          "component_groups": [ "ag3d:m249_5" ]
+        }
+      },
+      "ag3d:m249_4": {
+        "add": {
+          "component_groups": [ "ag3d:m249_4" ]
+        }
+      },
+      "ag3d:m249_3": {
+        "add": {
+          "component_groups": [ "ag3d:m249_3" ]
+        }
+      },
+      "ag3d:m249_2": {
+        "add": {
+          "component_groups": [ "ag3d:m249_2" ]
+        }
+      },
+      "ag3d:m249_full": {
+        "add": {
+          "component_groups": [ "ag3d:m249_full" ]
+        }
+      },
+      "ag3d:m249_1": {
+        "add": {
+          "component_groups": [ "ag3d:m249_1" ]
+        }
+      },
+      "remove:m249": {
+        "add": {
+          "component_groups": [ "m249:0" ]
+        }
+      },
+      "m249:full": {
+        "add": {
+          "component_groups": [ "m249:full" ]
+        }
+      },
+      "ag3d:shot": {
+        "add": {
+          "component_groups": [ "ag3d:shot" ]
+        }
+      },
+      "ag3d:shot_remove": {
+        "remove": {
+          "component_groups": [ "ag3d:shot" ]
+        }
+      },
+      "m249:onfull": {
+        "remove": {
+          "component_groups": [ "m249:onfull" ]
+        } 
+      },
+      // trigger:reload
+      "trigger:reload2": {
+        "add": {
+          "component_groups": [ "trigger:reload2" ]
+        }
+      },
+      "trigger:onreload2": {
+        "remove": {
+          "component_groups": [ "trigger:reload2" ]
+        }
+      },
+      "trigger:reload": {
+        "add": {
+          "component_groups": [ "trigger:reload" ]
+        }
+      },
+      "trigger:onreload": {
+        "remove": {
+          "component_groups": [ "trigger:reload" ]
+        }
+      },
+      // Barrett BULLET
+      "barrett:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true
+            },
+            "add": {
+              "component_groups": [ "barrett:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+                "camerashake add @s 0.0346 1.8 rotational",
+								"camerashake add @s 0.0995 0.8 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "barrett:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+                "camerashake add @s 0.0146 1.0 rotational",
+								"camerashake add @s 0.0853 0.4 rotational"
+							]
+						}
+          }
+        ]
+      },
+      // AWP BULLET
+      "awp:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true 
+            },
+            "add": {
+              "component_groups": [ "awp:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+                "camerashake add @s 0.0146 1.5 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "awp:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+                "camerashake add @s 0.0146 1.5 rotational",
+								"camerashake add @s 0.0853 0.7 rotational"
+							]
+						}
+          }
+        ]
+			},
+			"m249:shoot": {
+				"randomize": [
+					{
+						"weight": 50,
+						"queue_command": {
+							"command": [
+								"playanimation @s[scores={m249=11..}] animation.m249.first_person.fire1_full shoot",
+                "playanimation @s[scores={m249=10}] animation.m249.first_person.fire1_ammo10 shoot",
+                "playanimation @s[scores={m249=9}] animation.m249.first_person.fire1_ammo9 shoot",
+                "playanimation @s[scores={m249=8}] animation.m249.first_person.fire1_ammo8 shoot",
+                "playanimation @s[scores={m249=7}] animation.m249.first_person.fire1_ammo7 shoot",
+                "playanimation @s[scores={m249=6}] animation.m249.first_person.fire1_ammo6 shoot",
+                "playanimation @s[scores={m249=5}] animation.m249.first_person.fire1_ammo5 shoot",
+                "playanimation @s[scores={m249=4}] animation.m249.first_person.fire1_ammo4 shoot",
+                "playanimation @s[scores={m249=3}] animation.m249.first_person.fire1_ammo3 shoot",
+                "playanimation @s[scores={m249=2}] animation.m249.first_person.fire1_ammo2 shoot",
+                "playanimation @s[scores={m249=1}] animation.m249.first_person.fire1_ammo1 shoot"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"queue_command": {
+							"command": [
+								"playanimation @s[scores={m249=11..}] animation.m249.first_person.fire2_full shoot",
+                "playanimation @s[scores={m249=10}] animation.m249.first_person.fire2_ammo10 shoot",
+                "playanimation @s[scores={m249=9}] animation.m249.first_person.fire2_ammo9 shoot",
+                "playanimation @s[scores={m249=8}] animation.m249.first_person.fire2_ammo8 shoot",
+                "playanimation @s[scores={m249=7}] animation.m249.first_person.fire2_ammo7 shoot",
+                "playanimation @s[scores={m249=6}] animation.m249.first_person.fire2_ammo6 shoot",
+                "playanimation @s[scores={m249=5}] animation.m249.first_person.fire2_ammo5 shoot",
+                "playanimation @s[scores={m249=4}] animation.m249.first_person.fire2_ammo4 shoot",
+                "playanimation @s[scores={m249=3}] animation.m249.first_person.fire2_ammo3 shoot",
+                "playanimation @s[scores={m249=2}] animation.m249.first_person.fire2_ammo2 shoot",
+                "playanimation @s[scores={m249=1}] animation.m249.first_person.fire2_ammo1 shoot"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"queue_command": {
+							"command": [
+								"playanimation @s[scores={m249=11..}] animation.m249.first_person.fire3_full shoot",
+                "playanimation @s[scores={m249=10}] animation.m249.first_person.fire3_ammo10 shoot",
+                "playanimation @s[scores={m249=9}] animation.m249.first_person.fire3_ammo9 shoot",
+                "playanimation @s[scores={m249=8}] animation.m249.first_person.fire3_ammo8 shoot",
+                "playanimation @s[scores={m249=7}] animation.m249.first_person.fire3_ammo7 shoot",
+                "playanimation @s[scores={m249=6}] animation.m249.first_person.fire3_ammo6 shoot",
+                "playanimation @s[scores={m249=5}] animation.m249.first_person.fire3_ammo5 shoot",
+                "playanimation @s[scores={m249=4}] animation.m249.first_person.fire3_ammo4 shoot",
+                "playanimation @s[scores={m249=3}] animation.m249.first_person.fire3_ammo3 shoot",
+                "playanimation @s[scores={m249=2}] animation.m249.first_person.fire3_ammo2 shoot",
+                "playanimation @s[scores={m249=1}] animation.m249.first_person.fire3_ammo1 shoot"
+							]
+						}
+					}
+				]
+			},
+			"m249:shoot_aim": {
+				"randomize": [
+					{
+						"weight": 50,
+						"queue_command": {
+							"command": [
+								"playanimation @s[scores={m249=11..}] animation.m249.first_person.aim_fire1_full shoot",
+                "playanimation @s[scores={m249=10}] animation.m249.first_person.aim_fire1_ammo10 shoot",
+                "playanimation @s[scores={m249=9}] animation.m249.first_person.aim_fire1_ammo9 shoot",
+                "playanimation @s[scores={m249=8}] animation.m249.first_person.aim_fire1_ammo8 shoot",
+                "playanimation @s[scores={m249=7}] animation.m249.first_person.aim_fire1_ammo7 shoot",
+                "playanimation @s[scores={m249=6}] animation.m249.first_person.aim_fire1_ammo6 shoot",
+                "playanimation @s[scores={m249=5}] animation.m249.first_person.aim_fire1_ammo5 shoot",
+                "playanimation @s[scores={m249=4}] animation.m249.first_person.aim_fire1_ammo4 shoot",
+                "playanimation @s[scores={m249=3}] animation.m249.first_person.aim_fire1_ammo3 shoot",
+                "playanimation @s[scores={m249=2}] animation.m249.first_person.aim_fire1_ammo2 shoot",
+                "playanimation @s[scores={m249=1}] animation.m249.first_person.aim_fire1_ammo1 shoot"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"queue_command": {
+							"command": [
+								"playanimation @s[scores={m249=11..}] animation.m249.first_person.aim_fire2_full shoot",
+                "playanimation @s[scores={m249=10}] animation.m249.first_person.aim_fire2_ammo10 shoot",
+                "playanimation @s[scores={m249=9}] animation.m249.first_person.aim_fire2_ammo9 shoot",
+                "playanimation @s[scores={m249=8}] animation.m249.first_person.aim_fire2_ammo8 shoot",
+                "playanimation @s[scores={m249=7}] animation.m249.first_person.aim_fire2_ammo7 shoot",
+                "playanimation @s[scores={m249=6}] animation.m249.first_person.aim_fire2_ammo6 shoot",
+                "playanimation @s[scores={m249=5}] animation.m249.first_person.aim_fire2_ammo5 shoot",
+                "playanimation @s[scores={m249=4}] animation.m249.first_person.aim_fire2_ammo4 shoot",
+                "playanimation @s[scores={m249=3}] animation.m249.first_person.aim_fire2_ammo3 shoot",
+                "playanimation @s[scores={m249=2}] animation.m249.first_person.aim_fire2_ammo2 shoot",
+                "playanimation @s[scores={m249=1}] animation.m249.first_person.aim_fire2_ammo1 shoot"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"queue_command": {
+							"command": [
+								"playanimation @s[scores={m249=11..}] animation.m249.first_person.aim_fire3_full shoot",
+                "playanimation @s[scores={m249=10}] animation.m249.first_person.aim_fire3_ammo10 shoot",
+                "playanimation @s[scores={m249=9}] animation.m249.first_person.aim_fire3_ammo9 shoot",
+                "playanimation @s[scores={m249=8}] animation.m249.first_person.aim_fire3_ammo8 shoot",
+                "playanimation @s[scores={m249=7}] animation.m249.first_person.aim_fire3_ammo7 shoot",
+                "playanimation @s[scores={m249=6}] animation.m249.first_person.aim_fire3_ammo6 shoot",
+                "playanimation @s[scores={m249=5}] animation.m249.first_person.aim_fire3_ammo5 shoot",
+                "playanimation @s[scores={m249=4}] animation.m249.first_person.aim_fire3_ammo4 shoot",
+                "playanimation @s[scores={m249=3}] animation.m249.first_person.aim_fire3_ammo3 shoot",
+                "playanimation @s[scores={m249=2}] animation.m249.first_person.aim_fire3_ammo2 shoot",
+                "playanimation @s[scores={m249=1}] animation.m249.first_person.aim_fire3_ammo1 shoot"
+							]
+						}
+					}
+				]
+			},
+      // M249 BULLET
+      "m249:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true 
+            },
+            "add": {
+              "component_groups": [ "m249:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s 0.096 0.1 rotational",
+                "event entity @s m249:shoot_aim"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "m249:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s 0.110 0.1 rotational",
+                "event entity @s m249:shoot"
+							]
+						}
+          }
+        ]
+      },
+      // mk18 BULLET
+      "mk18:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true 
+            },
+            "add": {
+              "component_groups": [ "mk18:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.078 0.1 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "mk18:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.087 0.11 rotational"
+							]
+						}
+          }
+        ]
+      },
+      // MP5 BULLET
+      "mp5:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true 
+            },
+            "add": {
+              "component_groups": [ "mp5:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.098 0.1 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "mp5:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.104 0.1 rotational"
+							]
+						}
+          }
+        ]
+      },
+      // AKM BULLET
+      "akm:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true 
+            },
+            "add": {
+              "component_groups": [ "akm:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s 0.093 0.1 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "akm:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s 0.110 0.1 rotational"
+							]
+						}
+          }
+        ]
+      },
+      // M3 BULLET
+      "m3:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true 
+            },
+            "add": {
+              "component_groups": [ "m3:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.200 0.3 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "m3:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.213 0.3 rotational"
+							]
+						}
+          }
+        ]
+      },
+      // P90 BULLET
+      "p90:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true
+            },
+            "add": {
+              "component_groups": [ "p90:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.052 0.1 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "p90:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.080 0.1 rotational"
+							]
+						}
+          }
+        ]
+      },
+      // svi BULLET
+      "svi:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true
+            },
+            "add": {
+              "component_groups": [ "svi:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.088 0.26 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "svi:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.095 0.23 rotational"
+							]
+						}
+          }
+        ]
+      },
+      // taurus BULLET
+      "taurus:fire": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": true
+            },
+            "add": {
+              "component_groups": [ "taurus:scope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.053 0.1 rotational"
+							]
+						}
+          },
+          {
+            "filters": {
+              "test": "is_sneaking", "subject": "self", "value": false
+            },
+            "add": {
+              "component_groups": [ "taurus:noscope_fire" ]
+						},
+						"queue_command": {
+							"command": [
+								"camerashake add @s[r=1] 0.091 0.1 rotational"
+							]
+						}
+          }
+        ]
+      },
+      // Sniper scope
+      "sniper:scope": {
+        "add": {
+          "component_groups": [ "sniper:scope" ]
+        }
+      },
+      // Scope
+      "normal:scope": {
+        "add": {
+          "component_groups": [ "normal:scope" ]
+        }
+      },
+      // Grenade
+      "grenade:throw": {
+        "add": {
+          "component_groups": [ "grenade:throw" ]
+        }
+      },
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      }
+    }
+  }
+}
+
+
+
+

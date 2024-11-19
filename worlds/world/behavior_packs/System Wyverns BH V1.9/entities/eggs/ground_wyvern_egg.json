@@ -1,0 +1,108 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "new:ground_wyvern_egg",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "egg_drop":{
+       "minecraft:spawn_entity": {
+        "min_wait_time": 0,
+        "max_wait_time": 0,
+        "spawn_sound": "plop",
+        "spawn_item": "new:ground_egg"
+      },
+      "minecraft:despawn":{}
+    },
+    "egg_shaked":{
+      "minecraft:is_shaking":{}
+    },
+    "egg_transform":{
+      "minecraft:transformation":{
+        "into": "new:ground_wyvern<new:wyvern_baby>",
+        "delay": 0
+      }
+    }
+  },
+
+  "components": {
+    "minecraft:type_family": {
+      "family": [ "wyvern", "mob" ]
+    },
+    "minecraft:knockback_resistance":{
+      "value": 1000
+    },
+    "minecraft:collision_box": {
+      "width": 0.5,
+      "height": 0.5
+    },
+    "minecraft:pushable": {
+      "is_pushable": false,
+      "is_pushable_by_piston": true
+    },
+    "minecraft:health": {
+      "value": 1,
+      "max": 1,
+      "min": 1
+    },
+    "minecraft:physics": {
+      "has_gravity": true,
+      "has_collision": true
+    },
+    "minecraft:damage_sensor":{
+      "triggers":[
+        {
+          "on_damage":{
+            "event": "egg_drop"
+          },
+          "deals_damage": false
+        }
+      ]
+    }
+  },
+
+  "events": {
+    "egg_drop":{
+      "add":{
+        "component_groups":[
+          "egg_drop"
+        ]
+      }
+    },
+    "minecraft:entity_spawned": {
+      "add":{
+        "component_groups":[
+          "egg_time"
+        ]
+      }
+    },
+    "new:egg_shaked":{
+      "add":{
+        "component_groups":[
+          "egg_shaked"
+        ]
+      },
+      "remove":{
+        "component_groups":[
+          "egg_time"
+        ]
+      }
+    },
+    "new:egg_transform":{
+      "add":{
+        "component_groups":[
+          "egg_transform"
+        ]
+      },
+      "remove":{
+        "component_groups":[
+          "egg_shaked"
+        ]
+      }
+    }
+  }
+}
+}

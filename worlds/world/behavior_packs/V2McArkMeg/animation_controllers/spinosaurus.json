@@ -1,0 +1,117 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+	    
+        "controller.animation.spinosaurus_swim_controlator": {
+            "initial_state": "default",
+            "states": { 
+                "default": { 
+                    "animations": [
+                        { "velocidad_0":"(query.target_x_rotation > 10 ) && (query.target_x_rotation <= 90 ) && (query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding)" },
+                           
+                        { "velocidad_1":"(query.target_x_rotation >= 6 ) && (query.target_x_rotation <= 10 ) && (query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding)" },
+                         
+                        { "velocidad_2":"(query.target_x_rotation >= -2 ) && (query.target_x_rotation <= 7 ) && (query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding)" },
+
+                        
+                        { "velocidad_3":"(query.target_x_rotation >= -24 ) && (query.target_x_rotation <= -3 ) && (query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding)" },
+                        
+                        { "velocidad_4":"(query.target_x_rotation >= -120 ) && (query.target_x_rotation <= -25 ) && (query.is_in_water) &&  (query.has_rider) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding)" }
+                    ]
+                }
+            }
+        },
+    
+    "controller.animation.ataque_spinosaurus_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            { 
+              "remove_ataque_normal": "(query.is_illager_captain) && (query.is_on_ground) && query.mark_variant == 0"
+            }
+          ] 
+        },
+        "remove_ataque_normal": {
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain) && query.all_animations_finished"
+            }   
+          ],
+                    "animations": [
+               "remove_ataque_normal"
+                        ]
+        }
+      }
+    },
+    
+    "controller.animation.water_coc_mc_ark": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+   {
+              "out_water_wild": "(!query.is_in_water) && (!query.is_tamed)"
+            },
+   {
+              "in_water_wild": "(query.is_in_water) && (!query.is_tamed)"
+            },
+   { 
+              "out_water_tamed": "(!query.is_in_water) && (query.is_tamed) && !query.has_rider"
+            },
+   {
+              "in_water_tamed": "(query.is_in_water) && (query.is_tamed) && !query.has_rider"
+            }
+          ] 
+        },
+        "out_water_wild": {
+          "transitions": [
+            { 
+              "default": "(query.is_in_water) || (query.is_tamed)"
+            }   
+          ],  
+					"on_entry": [ 
+"@s minecraft:en_piso_salvaje"
+					] 
+        },
+        "in_water_wild": {
+          "transitions": [
+            { 
+              "default": "(!query.is_in_water) || (query.is_tamed)"
+            }   
+          ],  
+					"on_entry": [ 
+"@s minecraft:en_agua_salvaje"
+					] 
+        },
+        
+        "out_water_tamed": {
+          "transitions": [
+   {
+              "default": "query.has_rider"
+            },
+            { 
+              "default": "(query.is_in_water) || (!query.is_tamed)"
+            }   
+          ],  
+					"on_entry": [ 
+"@s minecraft:en_piso_domado"
+					] 
+        },
+        "in_water_tamed": {
+          "transitions": [
+   {
+              "default": "query.has_rider"
+            },
+            { 
+              "default": "(!query.is_in_water) || (!query.is_tamed)"
+            }   
+          ],  
+					"on_entry": [ 
+"@s minecraft:en_agua_domado"
+					]   
+        }
+      }
+    }
+	}
+}

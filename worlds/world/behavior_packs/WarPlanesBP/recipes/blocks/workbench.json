@@ -1,0 +1,22 @@
+{
+	"format_version": "1.17.41",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "l4gg:warplane_workbench"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+			"IRI",
+			"ICI",
+			"NBN"
+		],
+		"key": {
+		    "B": "minecraft:iron_block",
+		    "R": "minecraft:redstone",
+		    "C": "minecraft:crafting_table",
+			"I": "minecraft:iron_ingot",
+			"N": "minecraft:netherite_ingot"
+		},
+		"result": "l4gg:warplane_workbench"
+	}
+}

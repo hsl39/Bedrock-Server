@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.club.first_person": {
+			"loop": true,
+			"bones": {
+				"club": {
+					"rotation": [128.50994, -4.37531, 53.86485],
+					"position": [-8.3, -1, -6.4]
+				}
+			}
+		},
+		"animation.club.third_person": {
+			"loop": true,
+			"bones": {
+				"club": {
+					"rotation": [90.5, 0, -220],
+					"position": [-0.7, -1, -12.5]
+				}
+			}
+		}
+	}
+}

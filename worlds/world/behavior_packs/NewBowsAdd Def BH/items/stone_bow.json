@@ -1,0 +1,46 @@
+{
+
+  "format_version": "1.20.50",
+
+  "minecraft:item": {
+	"description": {
+      "identifier": "new:stone_bow",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:frame_count": 3,
+      "minecraft:use_animation": "bow",
+    "minecraft:display_name": {
+      "value": "§bStone Bow§7\n\n§lInfo:§r§7\n-Damage: 13\n-Max Durability: 450\n-Works with stone arrow"
+    },
+      "minecraft:icon": {
+        "texture": "stone_bow"
+      },
+  "minecraft:durability":{
+    "max_durability":450
+  },
+      "minecraft:shooter": {
+    "max_draw_duration": 1,
+    "charge_on_draw": false,
+    "scale_power_by_draw_duration": true,
+    "ammunition": [
+      {
+        "item": "new:stone_arrow",
+        "use_offhand": true,
+        "search_inventory": true,
+        "use_in_creative": true
+      }
+    ]
+  },
+      "minecraft:stacked_by_data": false,
+      "minecraft:max_stack_size": 1,
+  "minecraft:use_modifiers": {
+    "use_duration": 99999999,
+    "movement_modifier": 0.35
+  },
+      "minecraft:hand_equipped": true
+	 },
+	 "events": {
+	 }
+  }
+}

@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twm:autosieve"
+		},
+		"tags": [
+			"twm_workbench"
+		],
+		"key": {
+			"A": {
+				"item": "twm:diamond_mesh"
+			},
+			"B": {
+				"item": "twm:machine_case"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"R": {
+				"item": "minecraft:piston"
+			},
+			"S": {
+				"item": "twm:steel"
+			}
+		},
+		"pattern": [
+			"SAS",
+			"IRI",
+			"SBS"
+		],
+		"result": {
+			"item": "twm:autosieve"
+		},
+		"unlock": [
+			{
+				"item": "twm:diamond_mesh"
+			},
+			{
+				"item": "twm:machine_case"
+			},
+			{
+				"item": "minecraft:iron_ingot"
+			},
+			{
+				"item": "minecraft:piston"
+			},
+			{
+				"item": "twm:steel"
+			}
+		]
+	}
+}

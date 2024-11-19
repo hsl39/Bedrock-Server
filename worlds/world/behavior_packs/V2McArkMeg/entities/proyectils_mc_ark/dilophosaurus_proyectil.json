@@ -1,0 +1,57 @@
+
+
+{
+  "format_version": "1.12.0",
+ "minecraft:entity": {
+    "description": {
+"identifier": "mc_ark:dilophosaurus_proyectil", 
+          "runtime_identifier":      "minecraft:snowball", 
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ 
+	   "dilophosaurus_proyectil_hability",
+	   "dilophosaurus_general_proyectil"
+	    ]
+	  },
+	  "animations": {
+	    "dilophosaurus_proyectil_hability": "animation.dilophosaurus_proyectil_hability",
+	    "dilophosaurus_general_proyectil": "animation.wyvern_general_proyectil"
+    }
+    },
+
+  "component_groups": {
+  },
+
+  "components": {
+   "minecraft:collision_box": {
+    "width": 0.31,
+    "height": 0.31
+   },
+   "minecraft:projectile": {
+    
+    "on_hit": {
+          "impact_damage": {
+        "catch_fire": false,
+            "damage": [ 0, 0 ],
+            "knockback": false,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true
+          }
+    },  
+        "power": 0.9, 
+        "gravity": 0.09,
+    "offset": [ 0, 0.5, 0.0 ]
+   },
+   "minecraft:physics": {
+   },
+   "minecraft:pushable": {
+    "is_pushable": true,
+    "is_pushable_by_piston": true
+   }
+  },
+  "events": {
+  }
+ }
+}

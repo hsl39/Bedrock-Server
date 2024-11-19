@@ -1,0 +1,37 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§3§lMade by SystemTv Twitter@SystemTv_",
+        "name": "NewBows Addon V1.4 §9Behavior Pack",
+        "uuid": "eb69d1a3-4358-405a-871c-78a3b36ddc8b",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 19, 50]
+    },
+    "modules": [
+        {
+            "description": "§f§lAddon Creado Por:\n§bSystem§dTv",
+            "type": "data",
+            "uuid": "d7c23a7b-8591-45fc-9c8f-0e7765cacca6",
+            "version": [1, 0, 0]
+        },
+        {
+            "description": "gametesting",
+            "language": "javascript",
+            "type": "script",
+            "uuid": "7c10d83c-c1e3-4894-b375-e9286216709f",
+            "version": [
+                0,
+                0,
+                1
+            ],
+            "entry": "scripts/main.js"
+       }
+    ],
+    "capabilities": [ "script_eval" ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.10.0"
+        }
+    ]
+}

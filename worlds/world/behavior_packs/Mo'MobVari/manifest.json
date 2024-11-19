@@ -1,0 +1,39 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Brings a variety of new variants to mobs and revamps their existing textures!",
+        "name": "Mo' Mob Variants [BP]",
+        "uuid": "41b71283-543e-4fae-9bb1-0a80f1c6360d",
+        "min_engine_version": [
+            1,
+            20,
+            80
+        ],
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "772d830c-d701-4cc1-a6e7-903be90be6d2",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "969a11bb-2699-4958-a8c2-0eeddf8672c6",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

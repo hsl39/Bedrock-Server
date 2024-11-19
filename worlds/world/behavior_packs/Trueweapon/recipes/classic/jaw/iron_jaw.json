@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "iron_jaw"
+		},
+		"tags": [ "crafting_table" ],
+		"ingredients": [
+			{
+				"item": "minecraft:iron_sword"
+			},
+			{
+				"item": "minecraft:iron_sword"
+			}
+		],
+		"unlock": [
+			{
+			  "item": "minecraft:iron_sword"
+			}
+		],
+		"result": 
+			{
+				"item": "true:iron_jaw"
+			}
+	}
+}

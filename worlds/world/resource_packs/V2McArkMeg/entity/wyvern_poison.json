@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:wyvern_poison",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/wyvern/wyvern_poison"
+			},
+			"geometry": {
+				"default": "geometry.wyvern_poison"
+			},
+	"sound_effects": {
+	"volando_sound": "mob.enderdragon.flap"
+	},
+			"animations": { 
+				"volando_sound_control": "animation.wyvern.volando_sound_control",
+				"general": "controller.animation.wyvern_fire.general",
+				"idle": "animation.wyvern.idle",
+				"walk": "animation.wyvern.walk", 
+				"attack": "animation.wyvern.attack",
+				"fly": "animation.wyvern.fly",
+				"attack2": "animation.wyvern.attack2",
+				"attack_controller":
+				"controller.animation.wyvern_fire.attack",
+				"wyvern_fly":
+				"controller.animation.mc_ark.wyvern_fly"
+			},
+			"scripts": {
+				"animate": [
+				    "wyvern_fly",
+				    "attack_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.cow"
+			], 
+      "spawn_egg": {
+        "base_color": "#7D734B",
+        "overlay_color": "#35332B"
+      }
+		}
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mc_ark:spinosaurus",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"spinosaurus1": "textures/spinosaurus/variant1"
+			},
+			"geometry": { 
+				"default": "geometry.spinosaurus"
+			},
+			"animations": { 
+				"hurt_sound_animation": "animation.mc_ark.hurt_sound",
+				"idle_sound_animation": "animation.mc_ark.idle_sound",
+			    
+				"general": "controller.animation.spinosaurus.general",
+				"idle": "animation.spinosaurus.idle",
+				"walk": "animation.spinosaurus.walk", 
+				"swimming": "animation.spinosaurus.swimming",
+				"swimming2": "animation.spinosaurus.swimming2",    
+				"sitting": "animation.spinosaurus.sitting",
+				"attack1": "animation.spinosaurus.attack1",
+				"attack2": "animation.spinosaurus.attack2",
+				"sleep": "animation.spinosaurus.sleep",
+				"muerto": "animation.spinosaurus.muerto",
+				"walk_controller":
+				"controller.animation.general.simple_walk_and_swimming_mc_ark"
+			},
+	"sound_effects": { 
+	"hurt_sound": "mob.spinosaurus_hurt",
+	"idle_sound": "mob.spinosaurus_idle",
+	"attack1": "mob.spinosaurus_attack1",
+	"attack2": "mob.spinosaurus_attack2"
+	},  
+			"scripts": {
+				"animate": [
+				    
+{ 
+    "idle_sound_animation":"!query.is_sheared && query.mark_variant != 777"
+    
+},
+				    "walk_controller",
+				    "general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.spinosaurus"
+			],  
+"spawn_egg": {
+        "texture": "mc_ark_eggs",
+        "texture_index":8
+      }
+		}
+	}
+}

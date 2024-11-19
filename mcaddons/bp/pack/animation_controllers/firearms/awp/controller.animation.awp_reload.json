@@ -1,0 +1,71 @@
+// Coded by @JustAsh0005 for ActualGuns (for both 2D and 3D version), you aren't allowed to Edit, alter, modify, adapt, translate or otherwise change the whole code. 
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.awp_reload": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{ "reload_start2": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:awp') == 1 && q.is_powered" }
+					]
+				},
+				"reload_start2": {
+					"on_entry": [
+						"/clear @s sniper:awp",
+						"/clear @s sniper:awp_mag 0 1",
+						"/replaceitem entity @s slot.weapon.mainhand 0 sniper:awp_empty 1 0",
+						"v.r = q.life_time;"
+					],
+					"transitions": [
+						{ "start_reloading": "(q.life_time - v.r) >= 0.0 && q.get_equipped_item_name(0) == 'awp_empty'" },
+						{ "reload_error": "q.get_equipped_item_name(0) != 'awp_empty' || !q.is_powered" }
+					]
+				},
+				"start_reloading": {
+					"on_entry": [
+						"v.r = q.life_time;"
+					],
+					"animations": [
+						"awp_reload_anim"
+					],
+					"transitions": [
+						{
+							"reloaded": "q.all_animations_finished"
+						},
+						{
+							"reload_error": "query.equipped_item_any_tag('slot.weapon.mainhand','ag3d:awp') != 1"
+						}
+					]
+				},
+				"reloaded": {
+					"on_entry": [
+						"/tag @s remove reload",
+						"/event entity @s trigger:onreload",
+						"/scoreboard players set @s awp 10",
+						"/clear @s sniper:awp_empty",
+						"/replaceitem entity @s slot.weapon.mainhand 0 sniper:awp"
+					],
+					"transitions": [
+						{ "default": "1.0" }
+					]
+				},
+				"reload_error": {
+					"on_entry": [
+						"/tag @s remove reload",
+						"/event entity @s trigger:onreload",
+						"/clear @s sniper:awp_empty",
+						"/give @s sniper:awp",
+						"/give @s sniper:awp_mag"
+					],
+					"transitions": [
+						{ "default": "1.0" }
+					]
+				}
+			}
+		}
+	}
+}
+
+// This code is exclusive to both Add-ons (ActualGuns 2D and 3D) and can not be used by anybody else.

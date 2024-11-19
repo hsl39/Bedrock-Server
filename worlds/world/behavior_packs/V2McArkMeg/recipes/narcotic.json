@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mc_ark:narcotic"
+    },
+
+     
+    "tags": [ "mortar" ],
+    "pattern": [
+      "P  ",
+      " BB",
+      " BB" 
+    ], 
+    "key": {
+      "P": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "B": {
+        "item": "mc_ark:narcoberry"
+      }
+    },
+    "result": {
+      "item": "mc_ark:narcotic"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mocreatures:firefly",
+			"materials": {
+				"default": "entity_alphatest",
+				"bioluminescent_layer": "warden_bioluminescent_layer"
+			},
+			"textures": {
+				"default": "textures/models/firefly",
+				"bioluminescent_layer": "textures/models/fireflyglow"
+			},
+			"geometry": {
+				"default": "geometry.firefly"
+			},
+			"scripts": {
+				"animate": [
+					"fly"
+				]
+			},
+			"animations": {
+				"fly": "controller.animation.mob.fly",
+				"flying": "animation.firefly.flying"
+			},
+			"sound_effects": {
+				"flying": "firefly"
+			},
+			"render_controllers": [
+				"controller.render.firefly",
+				"controller.render.warden_bioluminescent_layer"
+			],
+			"spawn_egg": {
+				"base_color": "#00FF7F",
+				"overlay_color": "#8E388E"
+			}
+		}
+	}
+}

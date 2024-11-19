@@ -1,0 +1,66 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.magic_anchor",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "anchor",
+					"pivot": [-2, 25, 0],
+					"rotation": [90, 0, 90]
+				},
+				{
+					"name": "bone",
+					"parent": "anchor",
+					"pivot": [-7, 27, 1.3],
+					"cubes": [
+						{"origin": [-9, 25, -0.2], "size": [3, 3, 7.2], "inflate": -0.5, "pivot": [-7, 27, 1.3], "rotation": [0, 17, 0], "uv": [13, 7]},
+						{"origin": [-10.58112, 25, 4.3719], "size": [3, 3, 5], "inflate": -0.45, "pivot": [-6.98112, 27, 3.0719], "rotation": [0, 62, 0], "uv": [0, 22]}
+					]
+				},
+				{
+					"name": "punt",
+					"parent": "bone",
+					"pivot": [-3, 27, 7.6],
+					"cubes": [
+						{"origin": [-5, 24.5, 5.6], "size": [4, 4, 4], "inflate": -0.4, "pivot": [-3, 27, 7.6], "rotation": [0, 25, 0], "uv": [23, 21]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "anchor",
+					"pivot": [-7, 27, -1.3],
+					"cubes": [
+						{"origin": [-9, 25, -7], "size": [3, 3, 7.2], "inflate": -0.5, "pivot": [-7, 27, -1.3], "rotation": [0, -17, 0], "uv": [13, 7]},
+						{"origin": [-10.58112, 25, -9.3719], "size": [3, 3, 5], "inflate": -0.45, "pivot": [-6.98112, 27, -3.0719], "rotation": [0, -62, 0], "uv": [0, 22]}
+					]
+				},
+				{
+					"name": "punt2",
+					"parent": "bone2",
+					"pivot": [-3, 27, -7.6],
+					"cubes": [
+						{"origin": [-5, 24.5, -9.6], "size": [4, 4, 4], "inflate": -0.4, "pivot": [-3, 27, -7.6], "rotation": [0, -25, 0], "uv": [23, 21]}
+					]
+				},
+				{
+					"name": "stick",
+					"parent": "anchor",
+					"pivot": [-2, 25, 0],
+					"cubes": [
+						{"origin": [-6, 26, -1], "size": [12, 2, 2], "uv": [0, 0]},
+						{"origin": [3, 26, -1], "size": [5, 2, 2], "inflate": 0.2, "uv": [22, 17]},
+						{"origin": [-9, 25, -2], "size": [4, 4, 4], "inflate": -0.2, "pivot": [-7, 27, 0], "rotation": [0, 47.5, 0], "uv": [26, 0]}
+					]
+				}
+			]
+		}
+	]
+}
